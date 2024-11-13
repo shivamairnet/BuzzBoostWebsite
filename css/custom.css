@@ -96,7 +96,7 @@ body {
 
 
 .video-custom {
-    border-radius: 15px; /* Adjust for the desired roundness */
+    border-radius: 25px !important;  /* Adjust for the desired roundness */
    /* Adds a subtle shadow */
     overflow: hidden; /* Ensures the video stays within rounded border */
 }

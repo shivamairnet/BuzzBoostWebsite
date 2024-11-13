@@ -126,7 +126,7 @@ p {
 }
 
 #header .header-container {
-		min-height: 100px;
+		min-height: 70px;
 }
 
 @media (min-width: 992px) {

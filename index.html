@@ -152,15 +152,6 @@
 			/* Ensure card is on top */
 		}
 
-
-
-		/* For small laptops or large tablets (between 768px and 992px) */
-		/* @media (min-width: 992px) {
-			.card-custom {
-				height: 400px;
-			}
-		} */
-
 		
 		@media (max-width: 767px) {
 			.card-custom {
@@ -221,13 +212,65 @@
 			max-width: 1000px;
 		}
 
-		.hero-img img {
-			width: 100%;
-			height: auto;
-			border-radius: 8px;
+	
+
+
+
+		@media (max-width:2600px) {
+			.custom-ustom-card {
+				height: 86vh;
+			}
+
+			.new-width {
+				width: 270px;
+			}
 		}
 
 
+
+		@media(min-width:1025px) {
+			.custom-margin {
+				margin-top: 400px;
+			}
+
+		}
+
+		.custom-btn {
+			background-color: #426CC1;
+			color: #fff;
+		}
+
+		/* Darker color on hover */
+		.custom-btn:hover {
+			background-color: #6b42c1;
+			color: #fff;
+			/* Slightly darker shade of #7f56d9 */
+		}
+
+		.rounded-image {
+			
+			max-width: 100%;
+			
+			/* Ensures the image doesn't exceed the container width */
+			height: 110px;
+			/* Maintains the image aspect ratio */
+			border-radius: 10%;
+			/* Rounds the image */
+			object-fit: cover;
+			/* Ensures image content is properly scaled within the rounded shape */
+		}
+
+		.custom-spacing-main{
+			margin-top: 2rem;
+		}
+
+		.custom-spacing-h3{
+			margin-top: 2rem;
+		}
+
+		.custom-spacing-p{
+			margin-top: 2rem;
+		}
 
 		@media (max-width:2600px) {
 			.custom-ustom-card {
@@ -311,38 +354,48 @@
 			/* Slightly darker shade of #7f56d9 */
 		}
 
-		.rounded-image {
-			
-			max-width: 100%;
-			
-			/* Ensures the image doesn't exceed the container width */
-			height: 110px;
-			/* Maintains the image aspect ratio */
-			border-radius: 10%;
-			/* Rounds the image */
-			object-fit: cover;
-			/* Ensures image content is properly scaled within the rounded shape */
-		}
 
-		.custom-spacing-main{
-			margin-top: 2rem;
-		}
+		/* Media query for screens smaller than 768px (mobile devices) */
+@media (max-width: 767px) {
+    .hero-section .row {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
 
-		.custom-spacing-h3{
-			margin-top: 2rem;
-		}
+    .hero-text {
+        margin-top: 20px;
+        text-align: center;
+    }
 
-		.custom-spacing-p{
-			margin-top: 2rem;
-		}
+    .hero-img {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .hero-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .custom-btn {
+        width: 100%;
+    }
+}
+@media(max-width :768px)
+{
+	.three-card-section{
+		margin-top: 350px !important;
+	}
+}
+
 	</style>
-
-
 	<script src="vendor/modernizr/modernizr.min.js"></script>
 
 </head>
 
-<body class="alternative-font-5" style="background-color:#f0efeb ;">
+<body class="alternative-font-5">
 
 	<div class="body mt-0">
 		<!-- <div class="notice-top-bar p-relative z-index-1 bg-secondary">
@@ -358,14 +411,14 @@
 		<header id="header" class="header-transparent "
 			data-plugin-options="{'stickyScrollUp': true, 'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 42, 'stickyHeaderContainerHeight': 70}">
 			<div class="header-body header-body-bottom-border border-top-0 h-auto">
-				<div class="header-container container p-static">
-					<div class="header-row">
+				<div class="header-container container p-static" style="height: 70px !important;">
+					<div class="header-row" style="height: 70px !important;">
 						<div class="header-column">
 							<div class="header-row">
 								<div class="header-logo">
 									<a href="demo-business-consulting-5.html">
-										<img src="img/BuzzBoostImg/file.png" class="img-fluid" width="90px"
-											height="95px" alt="" />
+										<img src="img/BuzzBoostImg/file.png" class="img-fluid" width="70px"
+											height="70px" alt="" />
 									</a>
 								</div>
 							</div>
@@ -398,13 +451,9 @@
 														<li><a class="dropdown-item" href="business.html">Business</a>
 														</li>
 														<li><a class="dropdown-item"
-																href="consulting.html">Influencer</a></li>
+																href="Influencer.html">Influencer</a></li>
 													</ul>
 												</li>
-
-
-
-
 												<li>
 													<a class="nav-link" href="blog-large-image-full-width.html">
 														Blog
@@ -453,114 +502,115 @@
 		</header>
 
 		<div role="main" class="main">
+       <!--section-1-->
+<section class="container" style="margin: 2px auto; padding: 15px; background-color: #000;">
+	<div class="row align-items-center" style="height: 450px;padding-left: 28px;">
+		<!-- Left Content Section -->
+		<div class="col-lg-6 hero-text text-center text-md-center text-xl-start text-lg-start">
+			<h1 class="display-4 fw-bold text-white" style="font-size: 44px;">Boost Your Brand’s Influence with
+				Buzz Boost.</h1>
+			<p class="lead text-4 line-height-5 text-white">
+				Welcome to BuzzBoost, your go-to platform for
+				connecting <br> with top influencers across various industries.
+			</p>
+			<a href="#"
+				class="btn btn-modern box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5 custom-btn">
+				Get In Touch 
+			</a>
+		</div>
 
-			<section class="hero-section container">
-				<div class="row align-items-center">
-					<!-- Left Content Section -->
-					<div class="col-lg-6 hero-text text-center text-md-center text-xl-start text-lg-start">
-						<h1 class="display-4 fw-bold ">Boost Your Brand’s Influence with
-							Buzz Boost.</h1>
-						<p class="lead text-4 line-height-5">
-							Welcome to BuzzBoost, your go-to platform for
-							connecting <br> with top influencers across various industries.
-						</p>
-						<a href="#"
-							class="btn btn-modern box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5 custom-btn">
-							Get In Touch
-						</a>
-					</div>
-
-					<!-- Right Image Section -->
-					<div class="col-lg-6 hero-img d-lg-block d-none">
-						<img src="img/BuzzBoostImg/Section 1 - Header Image.png" alt="Hero Image">
-					</div>
-				</div>
-			</section>
+		<!-- Right Image Section -->
+		<div class="col-lg-6 hero-img d-lg-block" style="text-align: center;padding-right: 64px;">
+			<img src="img/BuzzBoostImg/Home Page Header.png" alt="Hero Image" width="450px" height="400px">
+		</div>
+	</div>
+</section>
 
 
-
-			<div class="container">
-				<!-- <div class="row align-items-center justify-content-around mt-5">
-					<div class="col-lg-5 text-end p-relative pt-5 max-width-custom-1">
-						<div class="p-absolute right-0">
-							<div data-plugin-float-element
-								data-plugin-options="{'startPos': 'top', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
-								<img width="470" height="451" src="img/demos/business-consulting-5/svg/icon-bg-1.svg"
-									alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': ''}" />
-							</div>
-						</div>
+		 <!-- carousel section -->
+		 <div class="container" style="background: linear-gradient(to bottom, #E4EDFF, #FFFFFF);padding: 10px;padding-top: 45px;padding-bottom: 45px;">
+			<!-- <div class="row align-items-center justify-content-around mt-5">
+				<div class="col-lg-5 text-end p-relative pt-5 max-width-custom-1">
+					<div class="p-absolute right-0">
 						<div data-plugin-float-element
-							data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
-							<img width="376" height="350" src="img/demos/business-consulting-5/svg/icon-1.svg" alt=""
-								data-icon
-								data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary mt-5 pt-5'}" />
+							data-plugin-options="{'startPos': 'top', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
+							<img width="470" height="451" src="img/demos/business-consulting-5/svg/icon-bg-1.svg"
+								alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': ''}" />
 						</div>
 					</div>
-					<div class="col-lg-4 text-center text-lg-start">
-						<h3 class="mt-5 pt-4">Improving Your <br />Content Marketing</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget eleifend dolor, et
-							maximus enim. Donec metus tellus, ornare in fermentum in, vulputate ut lorem.</p>
-						<a href="#"
-							class="btn btn-modern btn-primary box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5">Learn
-							More</a>
+					<div data-plugin-float-element
+						data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
+						<img width="376" height="350" src="img/demos/business-consulting-5/svg/icon-1.svg" alt=""
+							data-icon
+							data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary mt-5 pt-5'}" />
 					</div>
 				</div>
-				<div class="row align-items-center justify-content-around mt-5">
-					<div class="col-lg-4 text-center text-lg-start">
-						<h3 class="mt-5 pt-4">Ongoing analysis of your<br>industry competitors</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget eleifend dolor, et
-							maximus enim. Donec metus tellus, ornare in fermentum in, vulputate ut lorem.</p>
-						<a href="#"
-							class="btn btn-modern btn-secondary box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5">Learn
-							More</a>
-					</div>
-					<div class="col-lg-5 p-relative pt-5 max-width-custom-1">
-						<div class="p-absolute left-0">
-							<div data-plugin-float-element
-								data-plugin-options="{'startPos': 'top', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
-								<img width="470" height="451" src="img/demos/business-consulting-5/svg/icon-bg-2.svg"
-									alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': ''}" />
-							</div>
-						</div>
-						<div data-plugin-float-element
-							data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
-							<img width="376" height="350" src="img/demos/business-consulting-5/svg/icon-2.svg" alt=""
-								data-icon
-								data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-secondary mt-5 pt-5'}" />
-						</div>
-					</div>
-				</div> -->
-				<div class="row">
-					<div class="col text-center">
-						<h3 class="pt-4">Trusted Brands Trust BuzzBoost</h3>
-						<p>We are trusted by industry-leading brands who have successfully grown with our
-							network of influencers across diverse industries.</p>
-					</div>
-				</div>
-				<div class="row align-items-center text-center mt-2">
-					<div class="col-sm-4 col-xl-2 mb-5 mb-xl-0">
-						<img src="img/BuzzBoostImg/acme.png" alt class="img-fluid" style="max-width: 90px;" />
-					</div>
-					<div class="col-sm-4 col-xl-2 mb-5 mb-xl-0">
-						<img src="img/BuzzBoostImg/circle.png" alt class="img-fluid" style="max-width: 140px;" />
-					</div>
-					<div class="col-sm-4 col-xl-2 mb-5 mb-xl-0">
-						<img src="img/BuzzBoostImg/fox-hub-black.png" alt class="img-fluid" style="max-width: 140px;" />
-					</div>
-					<div class="col-sm-4 col-xl-2 mb-5 mb-lg-0">
-						<img src="img/BuzzBoostImg/Group M.png" alt class="img-fluid" style="max-width: 140px;" />
-					</div>
-					<div class="col-sm-4 col-xl-2 mb-5 mb-lg-0">
-						<img src="img/BuzzBoostImg/hexa.png" alt class="img-fluid" style="max-width: 100px;" />
-					</div>
-					<div class="col-sm-4 col-xl-2">
-						<img src="img/BuzzBoostImg/stari.png" alt class="img-fluid" style="max-width: 100px;" />
-					</div>
+				<div class="col-lg-4 text-center text-lg-start">
+					<h3 class="mt-5 pt-4">Improving Your <br />Content Marketing</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget eleifend dolor, et
+						maximus enim. Donec metus tellus, ornare in fermentum in, vulputate ut lorem.</p>
+					<a href="#"
+						class="btn btn-modern btn-primary box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5">Learn
+						More</a>
 				</div>
 			</div>
+			<div class="row align-items-center justify-content-around mt-5">
+				<div class="col-lg-4 text-center text-lg-start">
+					<h3 class="mt-5 pt-4">Ongoing analysis of your<br>industry competitors</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget eleifend dolor, et
+						maximus enim. Donec metus tellus, ornare in fermentum in, vulputate ut lorem.</p>
+					<a href="#"
+						class="btn btn-modern btn-secondary box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5">Learn
+						More</a>
+				</div>
+				<div class="col-lg-5 p-relative pt-5 max-width-custom-1">
+					<div class="p-absolute left-0">
+						<div data-plugin-float-element
+							data-plugin-options="{'startPos': 'top', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
+							<img width="470" height="451" src="img/demos/business-consulting-5/svg/icon-bg-2.svg"
+								alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': ''}" />
+						</div>
+					</div>
+					<div data-plugin-float-element
+						data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
+						<img width="376" height="350" src="img/demos/business-consulting-5/svg/icon-2.svg" alt=""
+							data-icon
+							data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-secondary mt-5 pt-5'}" />
+					</div>
+				</div>
+			</div> -->
+			<div class="row">
+				<div class="col text-center">
+					<h3 class="pt-4">Trusted Brands Trust BuzzBoost</h3>
+					<p class="text-black">We are trusted by industry-leading brands who have successfully grown with</br> our
+						network of influencers across diverse industries.</p>
+				</div>
+			</div>
+			<div class="row align-items-center text-center mt-2">
+				<div class="col-sm-4 col-xl-2 mt-5 mb-5 mb-xl-0">
+					<img src="img/BuzzBoostImg/acme.png" alt class="img-fluid" style="max-width: 90px;" />
+				</div>
+				<div class="col-sm-4 col-xl-2 mb-5 mb-xl-0">
+					<img src="img/BuzzBoostImg/circle.png" alt class="img-fluid" style="max-width: 140px;" />
+				</div>
+				<div class="col-sm-4 col-xl-2 mb-5 mb-xl-0">
+					<img src="img/BuzzBoostImg/fox-hub-black.png" alt class="img-fluid" style="max-width: 140px;" />
+				</div>
+				<div class="col-sm-4 col-xl-2 mb-5 mb-lg-0">
+					<img src="img/BuzzBoostImg/Group M.png" alt class="img-fluid" style="max-width: 140px;" />
+				</div>
+				<div class="col-sm-4 col-xl-2 mb-5 mb-lg-0">
+					<img src="img/BuzzBoostImg/hexa.png" alt class="img-fluid" style="max-width: 100px;" />
+				</div>
+				<div class="col-sm-4 col-xl-2">
+					<img src="img/BuzzBoostImg/stari.png" alt class="img-fluid" style="max-width: 100px;" />
+				</div>
+			</div>
+		</div>
+       
 
 			<!-- Large Screen View -->
-			<div class="container" style="margin-bottom: 50px; margin-top: 150px;" id="mainContainer">
+			<div class="container" style="margin-bottom: 80px; margin-top: 90px;" id="mainContainer">
 				<h3 class="text-center">Multi-Industry Influencers to Elevate Every Brand</h3>
 
 				<div class="row new-row">
@@ -568,7 +618,7 @@
 						<div class="new-card small-screen" style="background-color: #fff  ;">
 							<div class="row p-3">
 								<div class="col-7 ">
-									<span class="d-block text-muted fs-5 lh-5 mb-1 custom-spacing-main">Foods & Drinks</span>
+									<span class="d-block text-muted fs-5 lh-5 mb-1 custom-spacing-main" style="color: #426CC1 !important;">Foods & Drinks</span>
 
 									<h3 class="fs-3 fs-md-4 lh-sm-1 lh-md-2 lh-5 text-center text-md-start mb-2 custom-spacing-h3">
 										Savor the Moment with Influencers Who Make Every Bite Count!
@@ -577,13 +627,13 @@
 									<div
 										class="text-block d-flex flex-wrap justify-content-center justify-content-md-start">
 										<p
-											class="text-center custom-spacing-p text-md-start fs-5 fs-md-5 lh-sm-1 lh-md-5 lh-lg mb-0 custom-text-class">
+											class="text-black text-center custom-spacing-p text-md-start fs-5 fs-md-5 lh-sm-1 lh-md-5 lh-5 mb-0 custom-text-class">
 											Create enchanting moments, attract new foodies, and benefit from
 											collaborations with influencers and creators.
 										</p>
 									</div>
 								</div>
-								<div class="col-5">
+								<div class="col-5" style="padding-top:15px">
 									<div class="d-flex justify-content-center">
 										<video class="video-custom"
 											src="video/New folder/BuzzBoost Home Page Videos/Foods & Drinks Compressed Final.mp4"
@@ -598,14 +648,14 @@
 						<div class="new-card" style="background-color: #fff  ;">
 							<div class="row p-3">
 								<div class="col-7">
-									<span class="d-block text-muted fs-5 lh-2 mb-1 custom-spacing-main">Events</span>
-									<h3 class="fs-3 fs-md-4 lh-sm-1 lh-md-2 lh-5 text-center text-md-start mb-2 ">Turn
+									<span class="d-block text-muted fs-5 lh-5 mb-1 custom-spacing-main" style="color: #426CC1 !important;">Events</span>
+									<h3 class="fs-3 fs-md-4 lh-sm-1 lh-md-2 lh-5 text-center custom-spacing-h3 text-md-start mb-2 ">Turn
 										Every Event into an
 										Unforgettable Experience!</h3>
 									<div
 										class="text-block d-flex flex-wrap justify-content-center justify-content-md-start">
 										<p
-											class="text-center text-md-start fs-5 fs-md-5 lh-sm-1 lh-md-5 mb-0 custom-text-class">
+											class="text-black text-center text-md-start fs-5 fs-md-5 lh-sm-1 lh-md-5 lh-5 mb-0 custom-text-class custom-spacing-p">
 											BuzzBoost offers
 											more than
 											just promotion. We turn moments into movements. Expect sustained attention,
@@ -615,7 +665,7 @@
 										</p>
 									</div>
 								</div>
-								<div class="col-5">
+								<div class="col-5" style="padding-top:15px">
 									<div class="d-flex justify-content-center">
 										<video class="video-custom"
 											src="video/New folder/BuzzBoost Home Page Videos/Events Compressed Final.mp4"
@@ -632,15 +682,15 @@
 						<div class="new-card" style="background-color: #fff  ;">
 							<div class="row p-3">
 								<div class="col-7">
-									<span class="d-block text-muted fs-5 lh-2 mb-1 custom-spacing-main">Beauty & Fashion</span>
+									<span class="d-block text-muted fs-5 lh-2 mb-1 custom-spacing-main" style="color: #426CC1 !important;">Beauty & Fashion</span>
 									<h3 class="fs-3 fs-md-4 lh-sm-1 lh-md-2 lh-5 text-center text-md-start mb-2 custom-spacing-h3">
 										Highlight the Trends and
 										Elevate
 										Your Brand in Style!</h3>
 									<div
-										class="text-block d-flex flex-wrap justify-content-center justify-content-md-start">
+										class="text-black text-block d-flex flex-wrap justify-content-center justify-content-md-start" style="color: #000 !important;">
 										<p
-											class="text-center text-md-start fs-5 fs-md-5 lh-sm-1 lh-md-5  mb-0 custom-text-class d-block text-muted fs-5 lh-5 mb-1 " style="margin-top: 2rem;">
+											class="text-black text-center text-md-start fs-5 fs-md-5 lh-sm-1 lh-md-5  mb-0 custom-text-class d-block fs-5 lh-5 mb-1 " style="margin-top: 2rem;">
 											Elevate the
 											allure of
 											your beauty and fashion brand, showcase your signature style, and ignite
@@ -650,7 +700,7 @@
 										</p>
 									</div>
 								</div>
-								<div class="col-5">
+								<div class="col-5" style="padding-top:15px">
 									<div class="d-flex justify-content-center">
 										<video class="video-custom"
 											src="video/New folder/BuzzBoost Home Page Videos/Beauty & Fashion Compressed Final.mp4"
@@ -665,22 +715,22 @@
 						<div class="new-card" style="background-color: #fff ;">
 							<div class="row p-3">
 								<div class="col-7">
-									<span class="d-block text-muted fs-5 lh-2 mb-1 custom-spacing-main">Lifestyle</span>
+									<span class="d-block text-muted fs-5 lh-2 mb-1 custom-spacing-main" style="color: #426CC1 !important;">Lifestyle</span>
 									<h3 class="fs-3 fs-md-4 lh-sm-1 lh-md-2 lh-5 text-center text-md-start mb-2 custom-spacing-h3">Put
 										your Lifestyle brand <br> in  the spotlight!</h3>
 									<div
 										class="text-block d-flex flex-wrap justify-content-center justify-content-md-start">
 										<p
-											class="text-center  text-md-start fs-5 fs-md-5 lh-sm-1 lh-md-5 custom-text-class mb-0 custom-text-class" style="margin-top: 1rem;">
+											class="text-black text-center  text-md-start fs-5 fs-md-5 lh-sm-1 lh-md-5 custom-text-class mb-0 custom-text-class" style="margin-top: 1rem;">
 											BuzzBoost enhances
 											life’s
 											little moments, making them unforgettable. Anticipate loyal followers,
 											authentic
-											connections, and an audience that’s all in for a <br> better lifestyle.
+											connections, and an audience that’s all in for a better lifestyle.
 										</p>
 									</div>
 								</div>
-								<div class="col-5">
+								<div class="col-5" style="padding-top:15px">
 									<div class="d-flex justify-content-center">
 										<video class="video-custom"
 											src="video/New folder/BuzzBoost Home Page Videos/Lifestyle Compressed Final (1).mp4"
@@ -697,7 +747,7 @@
 						<div class="new-card" style="background-color: #fff  ;">
 							<div class="row p-3">
 								<div class="col-7">
-									<span class="d-block text-muted fs-5 lh-2 mb-1 custom-spacing-main">Sports</span>
+									<span class="d-block text-muted fs-5 lh-2 mb-1 custom-spacing-main" style="color: #426CC1 !important;">Sports</span>
 									<h3 class="fs-3 fs-md-4 lh-sm-1 lh-md-2 lh-5 text-center text-md-start mb-2 custom-spacing-h3">
 										Energize Your Brand with <br>
 										Athletic
@@ -705,7 +755,7 @@
 									<div
 										class="text-block d-flex flex-wrap justify-content-center justify-content-md-start">
 										<p
-											class="text-center text-md-start fs-5 fs-md-5 lh-sm-1 lh-md-5  mb-0 custom-text-class custom-spacing-p">
+											class="text-black text-center text-md-start fs-5 fs-md-5 lh-sm-1 lh-md-5  mb-0 custom-text-class custom-spacing-p">
 											Our sports
 											influencers
 											bring strength, motivation, and action, aligning your brand with the world
@@ -716,7 +766,7 @@
 										</p>
 									</div>
 								</div>
-								<div class="col-5">
+								<div class="col-5" style="padding-top:15px">
 									<div class="d-flex justify-content-center">
 										<video class="video-custom"
 											src="video/New folder/BuzzBoost Home Page Videos/Sports Compressed Final.mp4"
@@ -731,8 +781,8 @@
 						<div class="new-card" style="background-color: #fff  ;">
 							<div class="row p-3">
 								<div class="col-7">
-									<span class="d-block text-muted fs-5 lh-2 mb-1 custom-spacing-main">Tech Innovators</span>
-									<h3 class="fs-3 fs-md-4 lh-sm-1 lh-md-2 lh-5 text-center text-md-start mb-2 ">Lead
+									<span class="d-block text-muted fs-5 lh-2 mb-1 custom-spacing-main" style="color: #426CC1 !important;">Tech Innovators</span>
+									<h3 class="fs-3 fs-md-4 lh-sm-1 lh-md-2 lh-5 text-center text-md-start mb-2 custom-spacing-h3 ">Lead
 										the Future with
 										Influencers
 										Who Love Innovation!
@@ -740,7 +790,7 @@
 									<div
 										class="text-block d-flex flex-wrap justify-content-center justify-content-md-start">
 										<p
-											class="text-center text-md-start fs-5 fs-md-5 lh-sm-1 lh-md-5 custom-text-class mb-0">
+											class="text-black text-center text-md-start fs-5 fs-md-5 lh-sm-1 lh-md-5 custom-text-class mb-0 custom-spacing-p">
 											Our tech
 											innovators engage
 											audiences who are eager for the latest advancements, making them ideal
@@ -749,7 +799,7 @@
 										</p>
 									</div>
 								</div>
-								<div class="col-5">
+								<div class="col-5" style="padding-top:15px">
 									<div class="d-flex justify-content-center">
 										<video class="video-custom"
 											src="video/New folder/BuzzBoost Home Page Videos/Tech Innovators Compressed Final.mp4"
@@ -906,14 +956,14 @@
 
 
 			<!-- Other CTA -->
-			<section class=" styled-section" style="margin: 45px; background-color: #fff;">
+			<section class="styled-section" style="width: 1300px; margin: 45px auto; background-color: #E4EDFF;">
 				<div class="container">
 					<div class="row">
 						<div
 							class="col-xl-7 col-lg-7 col-md-12 col-sm-12 order-xl-1 order-lg-1 order-2 order-md-2 d-flex flex-column justify-content-center">
 							<div class="row custom-border text-md-center text-lg-start text-xl-start text-center">
 								<div class="col-12">
-									<span class="text-3 line-height-2 font-weight-bold text-color-grey">Other</span>
+									<span class="text-3 line-height-2 font-weight-bold" style="color: #426CC1;">Other</span>
 								</div>
 								<div class="col-12">
 									<h3 class="text-6 line-height-2">Is your industry not listed?</h3>
@@ -927,250 +977,111 @@
 								</div>
 								<div class="col-12">
 									<button
-										class="btn mt-2 py-3 px-xl-5  box-shadow-6 border-0 text-transform-none btn-dash ms-2  d-xl-inline-block custom-btn">
+										class="btn mt-2 py-3 px-xl-5 box-shadow-6 border-0 text-transform-none btn-dash ms-2 d-xl-inline-block custom-btn">
 										Connect With Us
 									</button>
 								</div>
 							</div>
 						</div>
 						<div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 order-xl-2 order-lg-2 order-md-1 order-1 ms-1 ms-xl-0 ms-lg-0 ms-md-0"
-							style="display: flex; align-items: center;justify-content: center;">
+							style="display: flex; align-items: center; justify-content: center;">
 							<img src="img/BuzzBoostImg/Frame 80.png" width="350px" height="350px" />
 						</div>
 					</div>
-					<!-- <div class="row">
-						<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12"  style="display: flex; align-items: start;justify-content: start;">
-							
-								<button class="btn   box-shadow-6 border-0 text-transform-none btn-dash ms-2  d-xl-inline-block custom-btn">
-									Connect With Us
-								</button>						
-							
-						</div> -->
 				</div>
+			</section>
+
+			<!-- Cards Section -->
+	<div class=" section-default" style="background-color: #f8f6f6;" style="margin-top: 90px !important;padding-top: 15px !important;padding-bottom: 50px !important;">
+		<h2 class="text-center mb-5 font-weight-semi-bold mt-5 mb-5" style="padding-top: 40px !important;">Accelerate Your Business Growth & ROI With BuzzBoost</h2>
+		<div class="container my-4 d-flex justify-content-center">
+			
+
+			<!-- cards section -->
+			<div class="three-card-section d-flex justify-content-around flex-wrap" style="padding-bottom: 40px;">
+				<!-- Card 1 -->
+				<div 				
+					style="background-image: url('img/Home Page Section 2 Cards (1)/Boost ROI.png'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 300px; height: 200px; margin: 10px; border-radius: 8px;">
+				</div>
+			
+				<!-- Card 2 -->
+				<div 					
+					style="background-image: url('img/Home Page Section 2 Cards (1)/Campaign Support (2).png'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 300px; height: 200px; margin: 10px; border-radius: 8px;">
+				</div>
+			
+				<!-- Card 3 -->
+				<div 					
+					style="background-image: url('img/Home Page Section 2 Cards (1)/Influencer Partnership.png'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 300px; height: 200px; margin: 10px; border-radius: 8px;">
+				</div>
+			</div>
+			
 		</div>
-		</section>
+	</div>
+			
 
 		<!-- Zig-Zag -->
-		<div class="container" style="margin-top: 50px;">
-			<h3 class="text-center mt-3">Find Your Next Perfect Influencer Match!</h3>
-			<div class="row align-items-center justify-content-around mt-5">
-				<div class="col-lg-5 text-center p-relative pt-5 max-width-custom-1 order-1 order-lg-1">
-					<div class="p-absolute right-0">
-
-					</div>
-					<div data-plugin-float-element
-						data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
-						<img width="360" height="480" src="img/BuzzBoostImg/Section 4 - Mega Influencer.png" alt="" />
+		<div class="container" style="margin-top: 48px;">
+			<h3 class="text-center mt-5 mb-15" style="padding-top: 40px;padding-bottom: 40px;">Find Your Next Perfect Influencer Match!</h3>
+		
+			<!-- Mega Influencers -->
+			<div class="row align-items-center justify-content-center mt-5">
+				<div class="col-lg-5 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-1">
+					<div class="p-absolute right-0"></div>
+					<div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
+						<img width="260" height="320" src="img/Types Of Influencers (1)/Mega Influencer (2).png" alt="" />
 					</div>
 				</div>
-				<div class="col-lg-4 text-center text-lg-start  order-2 order-lg-2 lg-mt-0 mt-5">
-					<h3 class="mt-5 pt-4">Mega Influencers</h3>
-					<p>Reach millions and go viral! Ideal for brands and businesses who are looking for large-scale
-						campaigns, providing maximum exposure to your brand & business.</p>
-					<!-- <a href="#"
-							class="btn btn-modern btn-primary box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5">Get
-							In Touch</a> -->
+				<div class="col-lg-5 text-center text-lg-start order-2 order-lg-2 mt-2">
+					<h3 class="mt-2 pt-2">Mega Influencers</h3>
+					<p>Reach millions and go viral! Ideal for brands and businesses who are looking for large-scale campaigns, providing maximum exposure to your brand & business.</p>
 				</div>
 			</div>
-			<div class="row align-items-center justify-content-around mt-5 ">
-				<div class="col-lg-4 text-center text-lg-start order-2 order-lg-1 lg-mt-0 mt-5">
-					<h3 class="mt-5 pt-4">Macro Influencers</h3>
-					<p> With hundreds of thousands of followers, macro influencers offer impactful engagement with
-						strong visibility, making them perfect for connecting with a wider audience.
-					</p>
-					<!-- <a href="#"
-							class="btn btn-modern btn-secondary box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5">Get
-							In Touch</a> -->
+		
+			<!-- Macro Influencers -->
+			<div class="row align-items-center justify-content-center mt-5">
+				<div class="col-lg-5 text-center text-lg-start order-2 order-lg-1 mt-2" style="padding-left: 25px;">
+					<h3 class="mt-2 pt-2">Macro Influencers</h3>
+					<p>With hundreds of thousands of followers, macro influencers offer impactful engagement with strong visibility, making them perfect for connecting with a wider audience.</p>
 				</div>
-				<div class="col-lg-5 text-center p-relative pt-5 max-width-custom-1 order-1 order-lg-2">
-					<div class="p-absolute left-0">
-
-					</div>
-					<div data-plugin-float-element
-						data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
-						<img width="360" height="480" src="img/BuzzBoostImg/Section 4 - Macro Influencer.png" alt="" />
+				<div class="col-lg-5 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-2">
+					<div class="p-absolute left-0"></div>
+					<div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
+						<img width="260" height="320" src="img/Types Of Influencers (1)/Marco Influencer (1).png" alt="" />
 					</div>
 				</div>
 			</div>
-			<div class="row align-items-center justify-content-around mt-5">
-				<div class="col-lg-5 text-center p-relative pt-5 max-width-custom-1 order-1 order-lg-1 ">
-					<div class="p-absolute right-0">
-
-					</div>
-					<div data-plugin-float-element
-						data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
-						<img width="360" height="380" src="img/BuzzBoostImg//Section 4 - Micro Influencer.png" alt="" />
+		
+			<!-- Micro Influencers -->
+			<div class="row align-items-center justify-content-center mt-5">
+				<div class="col-lg-5 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-1">
+					<div class="p-absolute right-0"></div>
+					<div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
+						<img width="280" height="320" src="img/Types Of Influencers (1)/Micro Influencer (2).png" alt="" />
 					</div>
 				</div>
-				<div class="col-lg-4 text-center text-lg-start order-2 order-lg-2 lg-mt-0 mt-5">
-					<h3 class="mt-5 pt-4">Micro Influencers</h3>
-					<p> Foster deeper connections with loyal followers. Micro influencers have tens of thousands of
-						engaged fans, delivering authentic recommendations and building brand trust.
-					</p>
-					<!-- <a href="#"
-							class="btn btn-modern btn-primary box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5">Get
-							In Touch</a> -->
+				<div class="col-lg-5 text-center text-lg-start order-2 order-lg-2 mt-2">
+					<h3 class="mt-2 pt-2">Micro Influencers</h3>
+					<p>Foster deeper connections with loyal followers. Micro influencers have tens of thousands of engaged fans, delivering authentic recommendations and building brand trust.</p>
 				</div>
 			</div>
-			<div class="row align-items-center justify-content-around mt-5" style="margin-bottom: 150px;">
-				<div class="col-lg-4 text-center text-lg-start order-2 order-lg-1 lg-mt-0 mt-5">
-					<h3 class="mt-5 pt-4">Nano Influencers </h3>
-					<p> Engage niche audiences with high loyalty. Nano influencers boast a small but highly engaged
-						following, perfect for targeted campaigns and personal connections.
-					</p>
-					<!-- <a href="#"
-							class="btn btn-modern btn-secondary box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5">Get
-							In Touch</a> -->
+		
+			<!-- Nano Influencers -->
+			<div class="row align-items-center justify-content-center mt-5" style="margin-bottom: 40px;">
+				<div class="col-lg-5 text-center text-lg-start order-2 order-lg-1 mt-2" style="padding-left: 25px;">
+					<h3 class="mt-2 pt-2">Nano Influencers</h3>
+					<p>Engage niche audiences with high loyalty. Nano influencers boast a small but highly engaged following, perfect for targeted campaigns and personal connections.</p>
 				</div>
-				<div class="col-lg-5 text-center p-relative pt-5 max-width-custom-1 order-1 order-lg-2">
-					<div class="p-absolute left-0">
-
-					</div>
-					<div data-plugin-float-element
-						data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
-						<img width="360" height="380" src="img/BuzzBoostImg/Section 4 - Nano Influencer.png" alt="" />
+				<div class="col-lg-5 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-2">
+					<div class="p-absolute left-0"></div>
+					<div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
+						<img width="280" height="320" src="img/Types Of Influencers (1)/Nano Influencer (2).png" alt="" />
 					</div>
 				</div>
 			</div>
-
 		</div>
-
-		<!-- Cards Section -->
-		<section class=" section-default" style="background-color: #fff;">
-			<h2 class="text-center mb-5 font-weight-semi-bold">Accelerate Your Business Growth & ROI With BuzzBoost</h2>
-			<div class="container my-4 d-flex justify-content-center">
-				<div class="row row-custom-cards justify-content-center">
-					<!-- Card 1 -->
-					<div
-						class="col-md-6 col-sm-12 col-xl-4 col-lg-4 mt-lg-0 mt-xl-0 mt-md-0 d-flex justify-content-center align-items-center">
-						<div class="custom-card  ">
-							<div class="card-body">
-								<div class="d-flex align-items-start mb-3 ">
-									<!-- Icon Image -->
-									<div class="icon-background">
-										<img src="img/BuzzBoostImg/icons/Graph (2).png" alt="ROI Icon"
-											style="width: 24px; height: 24px;">
-									</div>
-									<!-- Boost ROI Text -->
-									<h4 class="ms-2 text-4">Boost ROI</h4>
-								</div>
-								<div class="d-flex align-items-center justify-content-start">
-									<div class="comparison-box text-center">
-										<h5 class="mb-0"
-											style="background-color: #FF4D4D; padding: 15px; border-radius: 5px; color: white; width: 70px;">
-											50%</h5>
-										<p class="mb-0 font-weight-bold" style="font-size: 0.9rem; color: black;">
-											Without <br> BuzzBoost</p>
-									</div>
-									<div class="text-center"
-										style="color: #66BB6A; margin-left: 40px; margin-bottom: 40px;">
-										<img src="img/BuzzBoostImg/icons/increase (1).png" alt="ROI Icon"
-											style="width: 24px; height: 24px;">
-										<div class="long-arrow"></div>
-										<p class="m-0" style="font-size: 1.0rem;">+350%</p>
-									</div>
-									<div class="comparison-box text-center ms-4">
-										<h5 class="mb-0 text-1"
-											style="background-color: #66BB6A; padding: 10px; border-radius: 5px; color: white; width: 70px; ">
-											225+%</h5>
-										<p class="mb-0 font-weight-bold" style="font-size: 0.9rem; color: black;">With
-											<br> BuzzBoost
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div
-						class="col-md-6 col-sm-12 col-xl-4 col-lg-4 mt-lg-0 mt-xl-0 mt-md-0 mt-sm-5 mt-5 d-flex justify-content-center align-items-center">
-						<div class="custom-card ">
-							<div class="card-body">
-								<div class="d-flex align-items-start mb-3">
-									<!-- Icon Image -->
-									<div class="icon-background">
-										<img src="img/BuzzBoostImg/icons/Collab.png" alt="ROI Icon"
-											style="width: 24px; height: 24px;">
-									</div>
-									<!-- Boost ROI Text -->
-									<h4 class="text-4">Influencer Partnerships</h4>
-								</div>
-								<div class="d-flex align-items-center justify-content-start">
-									<div class="comparison-box text-center">
-										<h5 class="mb-0"
-											style="background-color: #FF4D4D; padding: 15px; border-radius: 5px; color: white; width: 70px;">
-											50%</h5>
-										<p class="mb-0 font-weight-bold" style="font-size: 0.9rem; color: black;">
-											Without <br> BuzzBoost</p>
-									</div>
-									<div class="text-center"
-										style="color: #66BB6A; margin-left: 40px; margin-bottom: 40px;">
-										<img src="img/BuzzBoostImg/icons/increase (1).png" alt="ROI Icon"
-											style="width: 24px; height: 24px;">
-										<div class="long-arrow"></div>
-										<p class="m-0" style="font-size: 1.0rem;">+300%</p>
-									</div>
-									<div class="comparison-box text-center ms-4">
-										<h5 class="mb-0 text-1"
-											style="background-color: #66BB6A; padding: 10px; border-radius: 5px; color: white; width: 70px; ">
-											200+</h5>
-										<p class="mb-0 font-weight-bold" style="font-size: 0.9rem; color: black;">With
-											<br> BuzzBoost
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div
-						class="col-md-6 col-sm-12 col-xl-4 col-lg-4 mt-lg-0 mt-xl-0 mt-md-5 mt-sm-5 mt-5 d-flex justify-content-center align-items-center">
-						<div class="custom-card ">
-							<div class="card-body">
-								<div class="d-flex align-items-start mb-3">
-									<!-- Icon Image -->
-									<div class="icon-background">
-										<img src="img/BuzzBoostImg/icons/campaign support.png" alt="ROI Icon"
-											style="width: 24px; height: 24px;">
-									</div>
-									<!-- Boost ROI Text -->
-									<h4 class="ms-2 text-4">Campaign Support</h4>
-								</div>
-								<div class="d-flex align-items-center justify-content-start">
-									<div class="comparison-box text-center">
-										<h5 class="mb-0 text-1"
-											style="background-color: #FF4D4D; padding: 10px; border-radius: 5px; color: white; width: 70px; height: 50px;">
-											10 <br> Hours</h5>
-										<p class="mb-0 font-weight-bold" style="font-size: 0.9rem; color: black;">
-											Without <br> BuzzBoost</p>
-									</div>
-									<div class="text-center"
-										style="color: #66BB6A; margin-left: 40px; margin-bottom: 50px;">
-										<img src="img/BuzzBoostImg/icons/increase (1).png" alt="ROI Icon"
-											style="width: 24px; height: 24px;">
-										<div class="long-arrow"></div>
-										<!-- <p class="m-0" style="font-size: 1.0rem;"></p> -->
-									</div>
-									<div class="comparison-box text-center ms-5">
-										<h5 class="mb-0 text-1"
-											style="background-color: #66BB6A; padding: 10px; border-radius: 5px; color: white; width: 70px; height: 50px;">
-											24/7 <br> Hours</h5>
-										<p class="mb-0 font-weight-bold" style="font-size: 0.9rem; color: black;">With
-											<br> BuzzBoost
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Repeat the above block for Card 2 and Card 3 -->
-				</div>
-			</div>
-		</section>
-
-
-
-
-
-
+		
+		
+    <!-- section form -->
 		<section class="section m-0 border-0">
 			<div class="container">
 				<div class="row justify-content-between align-items-center ">
@@ -1185,7 +1096,7 @@
 
 						<i class="icons icon-phone text-8 text-color-primary me-2"></i>
 						<a href="tel:+1234567890" style="color: #000;"
-							class="text-5 p-relative bottom-9 font-weight-semi-bold  ">888
+							class="text-5 p-relative bottom-9 font-weight-semi-bold">888
 							123 4567</a>
 
 					</div>
@@ -1262,6 +1173,7 @@
 
 	</div>
 
+	<!-- section footer -->
 	<footer id="footer" class="position-relative  border-top-0 " style="background-color: #426CC1;">
 
 		<div class="container pt-5-5 pb-3">
@@ -1318,10 +1230,15 @@
 		<div class="footer-copyright bg-transparent pb-5">
 			<div class="container">
 				<hr>
-				<div class="row">
+				<div class="row" style="text-align: center;">
 					<div class="col mt-4 mb-4">
-						<p class="text-3 mb-0 opacity-6 text-white">BuzzBoost © 2024. All Rights Reserved.
+						<p class="text-3 mb-0 text-center text-white">BuzzBoost © 2024. All Rights Reserved.
 						</p>
+						<p class="text-3 mb-0 text-center text-white">Developed By:-
+						</p>
+						<a href="https://ascentialabs.com/" target="_blank">
+							<img class="Ascentia text-3 mt-2 mb-0 text-center text-white" alt="Ascentia Labs" width="240" height="40" style="margin-bottom: 10px;color: #426CC1;" src="img\Ascentia Logo (1).png">
+						  </a>	
 					</div>
 				</div>
 			</div>

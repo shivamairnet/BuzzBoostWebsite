@@ -1355,7 +1355,7 @@ html.sticky-header-active #header.header-bottom-slider .header-body {
 html #header.header-transparent {
 	min-height: 0 !important;
 	width: 100%;
-	position: absolute;
+	/* position: absolute; */
 }
 
 html #header.header-transparent .header-body:not(.header-border-bottom) {
@@ -1560,9 +1560,9 @@ html.sticky-header-enabled.sticky-header-active #header .header-logo-sticky-chan
 
 	#header .header-nav-main nav > ul > li.dropdown .dropdown-menu li a {
 		border-bottom: 1px solid #f7f7f7;
-		color: #777;
+		color: #000;
 		font-size: 0.83em;
-		font-weight: 400;
+		font-weight: 500;
 		padding: 6px 18px 6px 18px;
 		position: relative;
 		text-transform: none;
