@@ -158,6 +158,18 @@
     }
 }
 
+.custom-btn {
+            background-color: #426CC1;
+            color: #fff;
+        }
+
+        /* Darker color on hover */
+        .custom-btn:hover {
+            background-color: #ffbf78;
+            color: black;
+            /* Slightly darker shade of #7f56d9 */
+        }
+
 @media(min-width:1200px){
 
 	.section-1{
@@ -235,6 +247,13 @@
 
     }
 
+        /* Darker color on hover */
+        .custom-btn:hover {
+            background-color: #ffbf78 !important;
+            color: black !important;
+            /* Slightly darker shade of #7f56d9 */
+        }
+
 		</style>
 	</head>
 	<body class="alternative-font-5">
@@ -246,7 +265,7 @@
 							<div class="header-column">
 								<div class="header-row">
 									<div class="header-logo">
-										<a href="demo-business-consulting-5.html">
+										<a href="index.html">
 											<img src="img/BuzzBoostImg/file.png" class="img-fluid"
 												width="70px" height="70px" alt="" />
 										</a>
@@ -311,12 +330,15 @@
 										</li>
 									</ul>
 	
-									<div class="">
-										<a href="#" class="btn btn-modern btn-primary box-shadow-6 border-0 btn-dash text-transform-none mt-2 py-2 px-3" style="background-color: #426CC1;">Get In Touch</a>
-										</div>
-	
-										<button class="btn header-btn-collapse-nav" style="background-color: #426CC1; color: #ffffff; border: none; padding: 10px 15px; border-radius: 5px;" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
-										</button>
+									<a href="#"
+                                    class="btn btn-modern  box-shadow-6 border-0 text-transform-none btn-dash ms-3 d-none d-xl-inline-block custom-btn">Get
+                                    In Touch</a>
+
+                                <button class="btn header-btn-collapse-nav"
+                                    style="background-color: #426CC1; color: #ffffff; border: none; padding: 10px 15px; border-radius: 5px;"
+                                    data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
+                                    <i class="fas fa-bars" style="color: #ffffff; font-size: 1.2em;"></i>
+                                </button>
 										
 								</div>
 							</div>
@@ -349,18 +371,18 @@
 								</p>
 								<div class="button-container" style="display: flex; gap: 1rem; margin-top: 5px; flex-wrap: wrap;">
 									<div class="pt-5 pb-5 text-left">
-										<a href="#" class="button-1 btn btn-modern btn-primary box-shadow-6 border-0 text-transform-none mt-2 py-3 px-3" style="background-color: #426CC1;color: white;">Get In Touch</a>
+										<a href="#" class="custom-btn btn btn-modern btn-dash btn-primary box-shadow-6 border-0 text-transform-none mt-2 py-3 px-3" style="background-color: #426CC1;color: white;">Get In Touch</a>
 									</div>
 									<div class="pt-5 pb-5 text-left">
-										<a href="#" class="button-2 btn btn-modern btn-primary box-shadow-6 border-0 text-transform-none mt-2 py-3 px-3" style="background-color:#426CC1;color: white;">Connect Via Whatsapp</a>
+										<a href="#" class="custom-btn button-2 btn btn-dash btn-modern btn-primary box-shadow-6 border-0 text-transform-none mt-2 py-3 px-3" style="background-color:#426CC1;color: white;">Connect Via Whatsapp</a>
 									</div>
 								</div>
 							</div>
-							<div class="col-xl-6 hero d-lg-block text-center custom-top-margin" style="text-align: center;">
+							<div class="col-xl-6 hero d-lg-block custom-top-margin" style="text-align: right;">
 								<div class="z-index-7 p-relative appear-animation" data-appear-animation="fadeIn"
 									data-appear-animation-delay="500">
 									<img src="img\Influencer Page Images (2)\Influencer Header.png"
-										 style="height: auto; max-height: 700px; max-width:600px; padding-left: 65px;margin-top: 45px;" 
+										 style="height: auto; max-height: 700px; max-width:600px; padding-right: 165px;margin-top: 45px;" 
 										 alt="Flexible Contracting Options Image" />
 								</div>
 							</div>
@@ -482,7 +504,7 @@
 						</div>
 					</div>
 					<div class="pt-5 pb-5 text-center">
-	                <a href="#" class="btn btn-modern btn-primary box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5" style="background-color: #426CC1;">Other Industries</a>
+	                <a href="#" class="custom-btn btn btn-modern btn-primary box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5" style="background-color: #426CC1;">Other Industries</a>
 				    </div>		
 				</div>
 			
@@ -555,7 +577,7 @@
 											<div class="form-group col">
 												<div class="d-grid gap-2">
 													<div class="pt-5 pb-5 text-left">
-														<a href="#" class="btn btn-modern btn-primary box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5" style="background-color: #426CC1;">Get In Touch</a>
+														<a href="#" class="custom-btn btn btn-modern btn-primary box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5" style="background-color: #426CC1;">Get In Touch</a>
 														</div>
 												</div>
 											</div>
@@ -710,10 +732,15 @@
 				<div class="footer-copyright bg-transparent pb-5">
 					<div class="container">
 						<hr>
-						<div class="row">
-							<div class="col mt-4 mb-4">
-								<p class="text-3 mb-0 opacity-6 text-white">BuzzBoost © 2024. All Rights Reserved.
+						<div class="row" style="text-align: center;">
+							<div class="col mt-2 mb-2">
+								<p class="text-3 mb-0 text-center text-white">BuzzBoost © 2024. All Rights Reserved.
 								</p>
+								<p class="text-3 mb-0 text-center text-white mt-2">Developed By:-
+								</p>
+								<a href="https://ascentialabs.com/" target="_blank">
+									<img class="Ascentia text-3 mt-2 mb-0 text-center text-white" alt="Ascentia Labs" width="200" height="40" style="margin-bottom: 10px;color: #426CC1;" src="img\BuzzBoostImg\AscentiaLogo.png">
+								</a>
 							</div>
 						</div>
 					</div>
