@@ -336,7 +336,12 @@
 		.custom-btn:hover {
 			background-color: #426CC1;
 			color: #fff;
+			
 		}
+
+		#whatsappButton:hover .whatsapp-icon {
+    content: url("img/BuzzBoostImg/whatsapp (1).png") !important; /* Replace with your hover image path */
+}
 
 
 		.custom-btn {
@@ -496,43 +501,67 @@
 }
 
 /* media query for section-1 */
-@media (max-width: 767px) {
-    .section1.container {
-        margin: 10px auto !important;
-        padding: 20px !important;
-        background-color: #000 !important;
+
+@media screen and (max-width: 768px) {
+    .section1 {
+        /* Ensure the section covers the viewport */
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        justify-content: center; /* Center items vertically */
+        text-align: center; /* Center-align text */
+        padding: 15px; /* Adjust padding */
     }
 
-    .section1 .row {
-        flex-direction: column !important;
-        padding: 0 !important;
-        text-align: center !important;
+    .section1-div {
+        flex-direction: column; /* Stack elements vertically */
+        padding-left: 0; /* Remove left padding */
     }
 
     .section1-h1 {
-        font-size: 32px !important; /* Smaller font size for mobile */
-        line-height: 1.2 !important;
+        font-size: 1.8rem; /* Smaller font size for heading */
+        margin-bottom: 20px; /* Add space below the heading */
+        color: white;
     }
 
     .section1-p {
-        font-size: 1.1rem !important;
-        line-height: 1.4 !important;
-        margin-top: 10px !important;
+        font-size: 1.2rem; /* Smaller font size for paragraph */
+        margin-bottom: 30px; /* Add space below the paragraph */
+        color: white;
+    }
+
+    .section1-img1 {
+        margin: 0 auto 20px auto; /* Center the image and add space below */
+        height: auto; /* Maintain aspect ratio */
+        max-width: 90%; /* Ensure the image is responsive */
     }
 
     .section1-btn {
-        width: 100% !important; /* Full-width button on mobile */
-        padding: 12px 0 !important;
-        font-size: 1rem !important;
-        margin-top: 15px !important;
+        margin-top: 20px; /* Space above the button */
+        font-size: 1rem; /* Adjust font size for button */
+        padding: 12px 20px; /* Adjust padding for button */
     }
 
-    .section1-img img {
-        width: 80% !important; /* Resize image for mobile */
-        height: auto !important;
-        max-width: 300px !important; /* Ensure image isn’t too large on mobile */
-        margin-top: 15px !important;
-    }
+	  /* mobile responsive for section-1 */
+.section1-div{
+    padding-left: 0px !important;
+    height: 800px !important;
+}
+
+.section-1{
+    /* height: 1000px !important; */
+}
+
+.section1-btn{
+    margin-top: 300px !important;
+}
+
+.section1-img1{
+    margin-top: -450px !important;
+    height: 250px !important;
+    margin: auto;
+
+}
 }
 
 .card-section {
@@ -660,7 +689,7 @@
 		<div role="main" class="main">
        <!--section-1-->
 <section class="section1 container" style="margin: 2px auto; padding: 15px; background-color: #000;">
-	<div class="row align-items-center" style="height: 450px;padding-left: 28px;">
+	<div class="section1-div row align-items-center" style="height: 450px;padding-left: 28px;">
 		<!-- Left Content Section -->
 		<div class="col-lg-6 hero-text text-center text-md-center text-xl-start text-lg-start">
 			<h1 class="section1-h1 display-4 fw-bold text-white" style="font-size: 48px;">
@@ -679,7 +708,7 @@
 
 		<!-- Right Image Section -->
 		<div class="section1-img col-lg-6 hero-img d-lg-block" style="text-align: center;">
-			<img src="img/BuzzBoostImg/Home Page Header.png" alt="Hero Image" width="450px" height="400px">
+			<img class="section1-img1" src="img/BuzzBoostImg/Home Page Header.png" alt="Hero Image" width="450px" height="400px">
 		</div>
 	</div>
 </section>
@@ -774,7 +803,7 @@
 		       
 
 			<!-- Large Screen View -->
-			<div class="container" style="margin-bottom: 80px; margin-top: 90px;" id="mainContainer">
+			<div class="container" style="margin-bottom: 80px; margin-top: 50px;" id="mainContainer">
 				<h3 class="text-center">Multi-Industry Influencers to Elevate Every Brand</h3>
 
 				<div class="row new-row">
@@ -1057,9 +1086,9 @@
 					<div class="row ms-xl-4 ms-md-2 ">
 						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-1 order-lg-2 order-md-2 order-2">
 							<span class="text-2 line-height-1" style="color: #426CC1;">Foods & Drinks</span>
-							<h3 class="text-7  line-height-2" style="padding-left:2px;padding-right: 2px;padding-top: 5px;">Savor the Moment with Influencers
+							<h3 class="text-6  line-height-2" style="padding-left:5px;padding-right: 5px;padding-top: 5px;">Savor the Moment with Influencers
 								Who Make Every Bite Count!</h3>
-							<p class="text-left text-4 line-height-3" style="padding-left: 4px;padding-right: 4px;">Create enchanting moments,
+							<p class="text-left text-3 line-height-3" style="padding-left: 10px;padding-right: 10px;">Create enchanting moments,
 								attract new foodies and benefit from collaborations with influencers and creators.
 							</p>
 
@@ -1076,16 +1105,16 @@
 					<div class="row ms-xl-4 ms-md-2 ">
 						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-1 order-lg-2 order-md-2 order-2">
 							<span class="text-2 line-height-1" style="color: #426CC1;">Events</span>
-							<h3 class="text-7 line-height-2" style="padding-left:2px;padding-right: 2px;padding-top: 5px;">Turn Every Event into an
+							<h3 class="text-6 line-height-2" style="padding-left:5px;padding-right: 5px;padding-top: 5px;">Turn Every Event into an
 								Unforgettable Experience!</h3>
-							<p class="text-left text-4 line-height-3" style="padding-left: 4px;padding-right: 4px;">BuzzBoost offers more than
+							<p class="text-left text-3 line-height-3" style="padding-left: 10px;padding-right: 10px;">BuzzBoost offers more than
 								just promotion. We turn moments into movements. Expect sustained attention, heightened
 								excitement, and audiences who remember your event long after it’s over.
 								#BuzzBoostYourEvent.
 							</p>
 						</div>
 						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-2 order-lg-1 order-md-1 order-1">
-							<div class="d-flex justify-content-center align-items-center" style="padding-top: 95px;">
+							<div class="d-flex justify-content-center align-items-center" style="padding-top: 45px;">
 								<img src="img/MobileImgs/compressed-images/Events.jpg" class="img-fluid rounded-image"
 									 />
 							</div>
@@ -1096,9 +1125,9 @@
 					<div class="row ms-xl-4 ms-md-2 ">
 						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-1 order-lg-2 order-md-2 order-2">
 							<span class="text-2 line-height-1" style="color: #426CC1;">Beauty & Fashion</span>
-							<h3 class="text-7 line-height-2" style="padding-left:2px;padding-right: 2px;padding-top: 5px;">Highlight the Trends and Elevate
+							<h3 class="text-6 line-height-2" style="padding-left:5px;padding-right: 5px;padding-top: 5px;">Highlight the Trends and Elevate
 								Your Brand in Style!</h3>
-							<p class="text-left text-4 line-height-3" style="padding-left: 4px;padding-right: 4px;"> Elevate the allure of
+							<p class="text-left text-3 line-height-3" style="padding-left: 10px;padding-right: 10px;"> Elevate the allure of
 								your beauty and fashion brand, showcase your signature style, and ignite excitement that
 								captivates audiences. #BuzzBoostYourStyle.
 
@@ -1116,9 +1145,9 @@
 					<div class="row ms-xl-4 ms-md-2 ">
 						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-1 order-lg-2 order-md-2 order-2">
 							<span class="text-2 line-height-1" style="color: #426CC1;">Lifestyle</span>
-							<h3 class="text-7 line-height-2" style="padding-left:2px;padding-right: 2px;padding-top: 5px;">Put your Lifestyle brand in the
+							<h3 class="text-6 line-height-2" style="padding-left:5px;padding-right: 5px;padding-top: 5px;">Put your Lifestyle brand in the
 								spotlight!</h3>
-							<p class="text-left text-4 line-height-3"  style="padding-left: 4px;padding-right: 4px;">BuzzBoost enhances life’s
+							<p class="text-left text-3 line-height-3"  style="padding-left: 10px;padding-right: 10px;">BuzzBoost enhances life’s
 								little moments, making them unforgettable. Anticipate loyal followers, authentic
 								connections, and an audience that’s all in for a better lifestyle.
 							</p>
@@ -1135,9 +1164,9 @@
 					<div class="row ms-xl-4 ms-md-2 ">
 						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-1 order-lg-2 order-md-2 order-2">
 							<span class="text-2 line-height-1" style="color: #426CC1;">Sports</span>
-							<h3 class="text-7 line-height-2" style="padding-left:2px;padding-right: 2px;padding-top: 5px;">Energize Your Brand with Athletic
+							<h3 class="text-6 line-height-2" style="padding-left:5px;padding-right: 5px;padding-top: 5px;">Energize Your Brand with Athletic
 								Influencers!</h3>
-							<p class="text-left text-4 line-height-3"  style="padding-left: 4px;padding-right: 4px;">Our sports influencers
+							<p class="text-left text-3 line-height-3"  style="padding-left: 10px;padding-right: 10px;">Our sports influencers
 								bring strength, motivation, and action, aligning your brand with the world of fitness,
 								wellness, and athleticism that their audience craves.
 
@@ -1155,16 +1184,16 @@
 					<div class="row ms-xl-4 ms-md-2 ">
 						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-1 order-lg-2 order-md-2 order-2">
 							<span class="text-2 line-height-1" style="color: #426CC1;">Tech Innovators</span>
-							<h3 class="text-7 line-height-2" style="padding-left:2px;padding-right: 2px;padding-top: 5px;">Lead the Future with Influencers
+							<h3 class="text-6 line-height-2" style=" padding-left:5px;padding-right: 5px;padding-top: 5px;">Lead the Future with Influencers
 								Who Love Innovation!
 							</h3>
-							<p class="text-left text-4 line-height-3" style="padding-left: 4px;padding-right: 4px;">Our tech innovators engage
+							<p class="text-left text-3 line-height-3" style="padding-left: 10px;padding-right: 10px;">Our tech innovators engage
 								audiences who are eager for the latest advancements, making them ideal ambassadors for
 								brands looking to showcase cutting-edge products and ideas.
 							</p>
 						</div>
 						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-2 order-lg-1 order-md-1 order-1">
-							<div class="d-flex justify-content-center" style="padding-top: 85px;">
+							<div class="d-flex justify-content-center" style="padding-top: 45px;">
 								<img src="img/MobileImgs/compressed-images/Tech Innovators.jpg" class="img-fluid rounded-image" />
 							</div>
 						</div>
@@ -1234,7 +1263,7 @@
 			
 
 			<!-- cards section -->
-			<div class="three-card-section d-flex gap-4 justify-content-between flex-wrap" style="padding-bottom: 10px;">
+			<div class="three-card-section d-flex gap-4 justify-content-between flex-wrap" style="padding-bottom: 10px;margin-top: 40px;">
 				<!-- Card 1 -->
 				<div class="card-section"				
 					style="background-image: url('img/HomePageCardsFinal2/Frame 119.png'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 377px; height: 233px; border-radius: 17px;">
@@ -1261,8 +1290,8 @@
 	
 
 		<!-- Zig-Zag -->
-		<div class="container" style="margin-top: 48px;">
-			<h3 class="text-center mt-5 mb-15" style="padding-top: 40px;padding-bottom: 40px;">Find Your Next Perfect Influencer Match!</h3>
+		<div class="container" style="margin-top: 30px;">
+			<h3 class="text-center mt-5 mb-15" style="padding-top: 20px;padding-bottom: 40px;">Find Your Next Perfect Influencer Match!</h3>
 		
 			<!-- Mega Influencers -->
 			<div class="row align-items-center justify-content-center mt-5">
@@ -1335,7 +1364,7 @@
 						<p class="text-4  line-height-4 opacity-6 mb-4">Got questions? Need guidance on
 							finding the right influencers? Our team is just a WhatsApp message away!</p>
 
-						<i class="icons icon-phone text-8 text-color-primary me-2"></i>
+						<i class="icons icon-phone text-8 text-color-primary me-2" style="color: #000;"></i>
 						<a href="tel:+1234567890" style="color: #000;"
 							class="text-5 p-relative bottom-9 font-weight-semi-bold">888
 							123 4567</a>
@@ -1378,7 +1407,7 @@
 											<div class="d-grid gap-2">
 												<button id="whatsappButton"
 													class="btn btn-sm border-0 text-color-hover-light text-color-light text-3-5 p-3 custom-btn">
-													<img src="img/BuzzBoostImg/whatsapp (1).png" width="20" height="20"
+													<img src="img\whatsapp.png" width="20" height="20"
 														alt="WhatsApp Icon" style="margin-right: 8px;">
 													Get In Touch
 												</button>
@@ -1456,10 +1485,10 @@
 						<div class="col-lg-6">
 							<h4 class="text-color-dark font-weight-bold mb-3">Services</h4>
 							<ul class="list list-unstyled columns-lg-1">
-								<li><a href="#" class="text-color-light text-color-hover-light">Agency</a>
+								<li><a href="agency.html" class="text-color-light text-color-hover-light">Agency</a>
 								</li>
-								<li><a href="#" class="text-color-light text-color-hover-light">Business</a></li>
-								<li><a href="#" class="text-color-light text-color-hover-light">Influencers</a></li>
+								<li><a href="business.html" class="text-color-light text-color-hover-light">Business</a></li>
+								<li><a href="Influencer.html" class="text-color-light text-color-hover-light">Influencers</a></li>
 								<!-- <li><a href="#" class="text-color-grey text-color-hover-primary">CRM and Sales</a></li> -->
 								<!-- <li><a href="#" class="text-color-grey text-color-hover-primary">Strategy</a></li> -->
 							</ul>

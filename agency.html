@@ -92,6 +92,139 @@
             margin-top: 171px;
         }
     }
+
+    			/* for footer mobile responsive */
+	@media (max-width: 768px) {
+    /* Stack the columns vertically */
+    #footer .row {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    /* Center align the header and social icons on mobile */
+    #footer .col-lg-4 {
+        text-align: center !important;
+        margin-bottom: 20px !important;
+    }
+
+    /* Make social icons display inline and center them */
+    #footer .social-icons {
+        display: flex !important;
+        justify-content: center !important;
+        gap: 1rem !important;
+    }
+
+    /* Stack the 'Company' and 'Services' sections vertically */
+    #footer .col-lg-8 .row {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    /* Center align the headings and lists */
+    #footer .col-lg-6 {
+        text-align: center !important;
+        margin-bottom: 20px !important;
+    }
+
+    /* Adjust the footer text and copyright */
+    #footer .footer-copyright {
+        text-align: center !important;
+    }
+    
+    /* Adjust padding for smaller screens */
+    #footer .container {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    /* Adjust the 'Company' and 'Services' section list for better spacing */
+    #footer .list-unstyled {
+        padding-left: 0 !important;
+        list-style-type: none !important;
+    }
+
+    #footer .list-unstyled li {
+        margin-bottom: 10px !important;
+    }
+
+	.company-services {
+    flex-direction: column !important; /* Stack the company and services vertically */
+  }
+
+  .company, .services {
+    margin-bottom: 20px !important; /* Add space between the two sections */
+  }
+
+
+  /* mobile responsive for section-1 */
+.section1-div{
+    padding-left: 0px !important;
+    height: 800px !important;
+}
+
+.section-1{
+    /* height: 1000px !important; */
+}
+
+.section1-btn{
+    margin-top: 300px !important;
+}
+
+.section1-img1{
+    margin-top: -450px !important;
+    height: 250px !important;
+    margin: auto;
+
+}
+
+.card-img-top{
+    /* width: 0px !important; */
+}
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .section1 {
+        /* Ensure the section covers the viewport */
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        justify-content: center; /* Center items vertically */
+        text-align: center; /* Center-align text */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .section1-div {
+        flex-direction: column; /* Stack elements vertically */
+        padding-left: 0; /* Remove left padding */
+    }
+
+    .section1-h1 {
+        font-size: 1.8rem; /* Smaller font size for heading */
+        margin-bottom: 20px; /* Add space below the heading */
+        color: white;
+    }
+
+    .section1-p {
+        font-size: 1.2rem; /* Smaller font size for paragraph */
+        margin-bottom: 30px; /* Add space below the paragraph */
+        color: white;
+    }
+
+    .section1-img1 {
+        margin: 0 auto 20px auto; /* Center the image and add space below */
+        height: auto; /* Maintain aspect ratio */
+        max-width: 90%; /* Ensure the image is responsive */
+    }
+
+    .section1-btn {
+        margin-top: 20px; /* Space above the button */
+        font-size: 1rem; /* Adjust font size for button */
+        padding: 12px 20px; /* Adjust padding for button */
+    }
+}
+
     </style>
 
 </head>
@@ -199,7 +332,7 @@
 
         <!-- section-1 -->
         <section class="section1 container" style="margin: 2px auto; padding: 15px;background: linear-gradient(to right, #314D91, #426CC1, #8AA2D7)">
-            <div class="row align-items-center" style="height: 450px;padding-left: 28px;">
+            <div class="section1-div row align-items-center" style="height: 450px;padding-left: 28px;">
                 <!-- Left Content Section -->
                 <div class="col-lg-6 hero-text text-center text-md-center text-xl-start text-lg-start">
                     <h1 class="section1-h1 display-4 fw-bold text-white" style="font-size: 48px;">Find the Perfect Influencers for Your Next Big Campaign</h1>
@@ -214,7 +347,7 @@
         
                 <!-- Right Image Section -->
                 <div class="section1-img col-lg-6 hero-img d-lg-block" style="text-align: right;">
-                    <img src="img\Agency Page Images\iloveimg-compressed (1)\Header Image.png" alt="Hero Image" width="460px" height="400px" style="padding-right: 60px;margin-top: 62px;">
+                    <img class="section1-img1" src="img\Agency Page Images\iloveimg-compressed (1)\Header Image.png" alt="Hero Image" width="460px" height="400px" style="padding-right: 60px;margin-top: 62px;">
                 </div>
             </div>
         </section>
@@ -735,7 +868,7 @@ document.getElementById('industry-select').addEventListener('change', function()
                                         <div class="form-group  col-xl-7 col-lg-9 col-md-6 col-sm-12">
                                             <div class="d-grid gap-2">
                                                 <button id="whatsappButton" class="btn btn-sm border-0 text-color-hover-light text-color-light text-3-5 p-3 custom-btn">
-                                                    <img src="img/BuzzBoostImg/whatsapp (1).png" width="20" height="20" alt="WhatsApp Icon" style="margin-right: 8px;">
+                                                    <img src="img\whatsapp.png" width="20" height="20" alt="WhatsApp Icon" style="margin-right: 8px;">
                                                     Get In Touch
                                                 </button>
                                             </div>
