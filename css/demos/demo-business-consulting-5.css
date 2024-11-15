@@ -111,7 +111,7 @@ p {
 		width: 20px;
 		height: 2px;
 		display: inline-block;
-		background: white;
+		background: black;
 		margin-right: 10px;
 		position: relative;
 		top: -3px;
@@ -119,7 +119,7 @@ p {
 
 .btn-dash:hover:before {
 		animation: btnDashEffect ease-out .3s;
-		background: #000;
+		background: white;
 }
 
 .btn-dash.text-color-primary:before {

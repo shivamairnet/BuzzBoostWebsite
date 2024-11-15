@@ -7,15 +7,15 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Demo Business Consulting 5 | Porto - Multipurpose Website Template</title>
+	<title>BuzzBoost</title>
 
 	<meta name="keywords" content="WebSite Template" />
 	<meta name="description" content="Porto - Multipurpose Website Template">
 	<meta name="author" content="okler.net">
 
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+	<link rel="shortcut icon" href="img/BuzzBoostImg/file.png" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="img/BuzzBoostImg/file.png">
 
 	<!-- Mobile Metas -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
@@ -236,17 +236,7 @@
 
 		}
 
-		.custom-btn {
-			background-color: #426CC1;
-			color: #fff;
-		}
-
-		/* Darker color on hover */
-		.custom-btn:hover {
-			background-color: #6b42c1;
-			color: #fff;
-			/* Slightly darker shade of #7f56d9 */
-		}
+		
 
 		.rounded-image {
 			
@@ -343,12 +333,13 @@
 
 		}
 
-		.custom-btn {
+		.custom-btn:hover {
 			background-color: #426CC1;
 			color: #fff;
 		}
 
-		.custom-btn:hover{
+
+		.custom-btn {
 			background-color: #FFBF78;
 			color: #000;
 		}
@@ -450,8 +441,8 @@
 /* media query for cta section */
 @media (max-width: 767px) {
     .cta-section.styled-section {
-        width: 100% !important;
-        margin: 20px auto !important;
+        width: 90% !important;
+        margin: 40px auto !important;
         padding: 20px !important;
     }
 
@@ -506,57 +497,53 @@
 
 /* media query for section-1 */
 @media (max-width: 767px) {
-    .section1 {
-        padding: 15px !important;
-        margin: 2px auto !important;
-        height: auto !important; /* Removed fixed height */
+    .section1.container {
+        margin: 10px auto !important;
+        padding: 20px !important;
+        background-color: #000 !important;
     }
 
     .section1 .row {
-        flex-direction: column !important; /* Stack elements vertically */
-        align-items: center !important;     /* Center content horizontally */
-        text-align: center !important;      /* Center text */
+        flex-direction: column !important;
+        padding: 0 !important;
+        text-align: center !important;
     }
 
-    /* Left Content Section */
-    .section1 .col-lg-6.hero-text {
-        order: 1 !important;               /* Ensure this comes first */
-        text-align: center !important;     /* Center text */
+    .section1-h1 {
+        font-size: 32px !important; /* Smaller font size for mobile */
+        line-height: 1.2 !important;
     }
 
-    .section1 .section1-h1 {
-        font-size: 2rem !important;         /* Adjust font size for mobile */
-        line-height: 1.3 !important;
-        margin-bottom: 10px !important;     /* Spacing between heading and paragraph */
+    .section1-p {
+        font-size: 1.1rem !important;
+        line-height: 1.4 !important;
+        margin-top: 10px !important;
     }
 
-    .section1 .section1-p {
-        font-size: 1.2rem !important;       /* Adjust font size for mobile */
-        margin-bottom: 15px !important;     /* Spacing between paragraph and button */
-    }
-
-    .section1 .section1-btn {
-        order: 4 !important;               /* Ensure the button comes last */
+    .section1-btn {
+        width: 100% !important; /* Full-width button on mobile */
+        padding: 12px 0 !important;
         font-size: 1rem !important;
-        width: 100% !important;             /* Full width button */
-        margin-top: 15px !important;        /* Adjust space above the button */
+        margin-top: 15px !important;
     }
 
-    /* Right Image Section */
-    .section1 .section1-img {
-        order: 2 !important;               /* Ensure the image comes after the text */
-        width: 100% !important;            /* Ensure the image container takes full width */
-        display: flex !important;
-        justify-content: center !important; /* Center image horizontally */
-        margin-top: 15px !important;        /* Adjust space above the image */
-    }
-
-    .section1 .section1-img img {
-        max-width: 100% !important;         /* Prevent image overflow */
-        height: auto !important;           /* Maintain aspect ratio */
-        margin: 0 auto !important;         /* Center the image */
+    .section1-img img {
+        width: 80% !important; /* Resize image for mobile */
+        height: auto !important;
+        max-width: 300px !important; /* Ensure image isn’t too large on mobile */
+        margin-top: 15px !important;
     }
 }
+
+.card-section {
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.card-section:hover {
+    box-shadow: 0 0 10px #426CC1, 0 0 10px #426CC1, 0 0 10px #426CC1; /* Glowing effect */
+    transform: scale(1.025); /* Slight zoom effect */
+}
+
 
 
 	</style>
@@ -677,7 +664,7 @@
 		<!-- Left Content Section -->
 		<div class="col-lg-6 hero-text text-center text-md-center text-xl-start text-lg-start">
 			<h1 class="section1-h1 display-4 fw-bold text-white" style="font-size: 48px;">
-				Boost Your Brand’s Influence with <span style="color: #426CC1;">BuzzBoost</span>
+				Boost Your Brand’s Influence with <span style="color: #FFBF78;">BuzzBoost</span>
 			</h1>
 			
 			<p class="section1-p lead line-height-5 text-white" style="font-size: 1.5rem;letter-spacing: normal;">
@@ -759,7 +746,7 @@
 			</div>
 			<div class="row align-items-center text-center mt-2">
 				<div class="col-sm-4 col-xl-2 mb-5 mb-xl-0">
-					<img src="img/BuzzBoostImg/acme.png" alt class="img-fluid" style="max-width: 100px;" />
+					<img src="img/BuzzBoostImg/acme.png" alt class="img-fluid" style="max-width: 140px;" />
 				</div>
 				<div class="col-sm-4 col-xl-2 mb-5 mb-xl-0">
 					<img src="img/BuzzBoostImg/circle.png" alt class="img-fluid" style="max-width: 140px;" />
@@ -781,7 +768,8 @@
 
 		
 	<div style="margin: 20px 0; display: flex; justify-content: center;">
-		<img src="img/line partion.png" alt="" style="height: 10px; width: 250px;">
+		<!-- <img src="img/line partion.png" alt="" style="height: 10px; width: 250px;"> -->
+		 <!-- <hr style="height: 2px; width: 1450px;color:f9f9f9;" /> -->
 	</div>
 		       
 
@@ -838,7 +826,7 @@
 								<div class="col-5" style="padding-top:15px">
 									<div class="d-flex justify-content-center">
 										<div style="width: 210px; height: 360px; background: linear-gradient(45deg, #426CC1, #E4EDFF); padding: 5px; border-radius: 8px; box-sizing: border-box;">
-											<video style="width: 100%; height: 100%; border-radius: 4px;" src="video/New folder/BuzzBoost Home Page Videos/Foods &amp; Drinks Compressed Final.mp4" autoplay loop muted preload="metadata">
+											<video style="width: 100%; height: 100%; border-radius: 4px;" src="video/New folder/BuzzBoost Home Page Videos/Foods &amp; Drinks Compressed Final.mp4" loading="lazy"  autoplay loop muted preload="metadata">
 											</video>
 										</div>
 									</div>
@@ -878,6 +866,7 @@
 								<div class="col-5" style="padding-top:15px" style="border: #426CC1 !important;border-width: 2px !important; ">
 									<div style="width: 210px; height: 360px; background: linear-gradient(45deg, #426CC1, #E4EDFF); padding: 5px; border-radius: 8px; box-sizing: border-box;">
 										<video style="width: 100%; height: 100%; border-radius: 8px;"
+										loading="lazy" 
 											   src="video/New folder/BuzzBoost Home Page Videos/Events Compressed Final.mp4"
 											   autoplay loop muted preload="metadata">
 										</video>
@@ -922,7 +911,8 @@
 									<div style="width: 210px; height: 360px; background: linear-gradient(45deg, #426CC1, #E4EDFF); padding: 5px; border-radius: 8px; box-sizing: border-box;">
 										<video style="width: 100%; height: 100%; border-radius: 8px;"
 											   src="video/New folder/BuzzBoost Home Page Videos/Beauty & Fashion Compressed Final.mp4"
-											   autoplay loop muted preload="metadata">
+											   autoplay loop muted preload="metadata"
+											   loading="lazy" >
 										</video>
 									</div>
 								</div>
@@ -960,7 +950,8 @@
 									<div style="width: 210px; height: 360px; background: linear-gradient(45deg, #426CC1, #E4EDFF); padding: 5px; border-radius: 8px; box-sizing: border-box;">
 										<video style="width: 100%; height: 100%; border-radius: 8px;"
 											   src="video/New folder/BuzzBoost Home Page Videos/Lifestyle Compressed Final (1).mp4"
-											   autoplay loop muted preload="metadata">
+											   autoplay loop muted preload="metadata"
+											   loading="lazy" >
 										</video>
 									</div>
 								</div>
@@ -1003,8 +994,9 @@
 								<div class="col-5" style="padding-top:15px" style="border: #426CC1 !important;border-width: 2px !important; ">
 									<div style="width: 210px; height: 360px; background: linear-gradient(45deg, #426CC1, #E4EDFF); padding: 5px; border-radius: 8px; box-sizing: border-box;">
 										<video style="width: 100%; height: 100%; border-radius: 8px;"
-											   src="video/New folder/BuzzBoost Home Page Videos/Sports Compressed Final.mp4"
-											   autoplay loop muted preload="metadata">
+											   src="video\New folder\BuzzBoost Home Page Videos\sportsnew.mp4"
+											   autoplay loop muted preload="metadata"
+											   loading="lazy" >
 										</video>
 									</div>
 								</div>
@@ -1045,7 +1037,8 @@
 									<div style="width: 210px; height: 360px; background: linear-gradient(45deg, #426CC1, #E4EDFF); padding: 5px; border-radius: 8px; box-sizing: border-box;">
 										<video style="width: 100%; height: 100%; border-radius: 8px;"
 											   src="video/New folder/BuzzBoost Home Page Videos/Tech Innovators Compressed Final.mp4"
-											   autoplay loop muted preload="metadata">
+											   autoplay loop muted preload="metadata"
+											   loading="lazy" >
 										</video>
 									</div>
 								</div>
@@ -1063,10 +1056,10 @@
 				<div class="card-custom text-center" id="card1" style="background-color:#fff;box-shadow: 0px 4px 15px rgba(66, 108, 193, 0.5);">
 					<div class="row ms-xl-4 ms-md-2 ">
 						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-1 order-lg-2 order-md-2 order-2">
-							<span class="text-2 line-height-1">Foods & Drinks</span>
-							<h3 class="text-7  line-height-2">Savor the Moment with Influencers
+							<span class="text-2 line-height-1" style="color: #426CC1;">Foods & Drinks</span>
+							<h3 class="text-7  line-height-2" style="padding-left:2px;padding-right: 2px;padding-top: 5px;">Savor the Moment with Influencers
 								Who Make Every Bite Count!</h3>
-							<p class="text-left text-4 line-height-3">Create enchanting moments,
+							<p class="text-left text-4 line-height-3" style="padding-left: 4px;padding-right: 4px;">Create enchanting moments,
 								attract new foodies and benefit from collaborations with influencers and creators.
 							</p>
 
@@ -1076,25 +1069,23 @@
 								<img src="img/MobileImgs/compressed-images/Food And Drinks.jpg"
 									class="img-fluid rounded-image" />
 							</div>
-
 						</div>
-
 					</div>
 				</div>
 				<div class="card-custom text-center" id="card2" style="background-color: #fff; box-shadow: 0px 4px 15px rgba(247, 202, 113, 0.5);">
 					<div class="row ms-xl-4 ms-md-2 ">
 						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-1 order-lg-2 order-md-2 order-2">
-							<span class="text-2 line-height-1">Events</span>
-							<h3 class="text-7 line-height-2">Turn Every Event into an
+							<span class="text-2 line-height-1" style="color: #426CC1;">Events</span>
+							<h3 class="text-7 line-height-2" style="padding-left:2px;padding-right: 2px;padding-top: 5px;">Turn Every Event into an
 								Unforgettable Experience!</h3>
-							<p class="text-left text-4 line-height-3">BuzzBoost offers more than
+							<p class="text-left text-4 line-height-3" style="padding-left: 4px;padding-right: 4px;">BuzzBoost offers more than
 								just promotion. We turn moments into movements. Expect sustained attention, heightened
 								excitement, and audiences who remember your event long after it’s over.
 								#BuzzBoostYourEvent.
 							</p>
 						</div>
 						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-2 order-lg-1 order-md-1 order-1">
-							<div class="d-flex justify-content-center align-items-center">
+							<div class="d-flex justify-content-center align-items-center" style="padding-top: 95px;">
 								<img src="img/MobileImgs/compressed-images/Events.jpg" class="img-fluid rounded-image"
 									 />
 							</div>
@@ -1104,10 +1095,10 @@
 				<div class="card-custom text-center" id="card3" style="background-color: #fff;box-shadow: 0px 4px 15px rgba(66, 108, 193, 0.5);">
 					<div class="row ms-xl-4 ms-md-2 ">
 						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-1 order-lg-2 order-md-2 order-2">
-							<span class="text-2 line-height-1">Beauty & Fashion</span>
-							<h3 class="text-7 line-height-2">Highlight the Trends and Elevate
+							<span class="text-2 line-height-1" style="color: #426CC1;">Beauty & Fashion</span>
+							<h3 class="text-7 line-height-2" style="padding-left:2px;padding-right: 2px;padding-top: 5px;">Highlight the Trends and Elevate
 								Your Brand in Style!</h3>
-							<p class="text-left text-4 line-height-3"> Elevate the allure of
+							<p class="text-left text-4 line-height-3" style="padding-left: 4px;padding-right: 4px;"> Elevate the allure of
 								your beauty and fashion brand, showcase your signature style, and ignite excitement that
 								captivates audiences. #BuzzBoostYourStyle.
 
@@ -1124,10 +1115,10 @@
 				<div class="card-custom text-center" id="card4" style="background-color: #fff;box-shadow: 0px 4px 15px rgba(247, 202, 113, 0.5);">
 					<div class="row ms-xl-4 ms-md-2 ">
 						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-1 order-lg-2 order-md-2 order-2">
-							<span class="text-2 line-height-1">Lifestyle</span>
-							<h3 class="text-7 line-height-2">Put your Lifestyle brand in the
+							<span class="text-2 line-height-1" style="color: #426CC1;">Lifestyle</span>
+							<h3 class="text-7 line-height-2" style="padding-left:2px;padding-right: 2px;padding-top: 5px;">Put your Lifestyle brand in the
 								spotlight!</h3>
-							<p class="text-left text-4 line-height-3">BuzzBoost enhances life’s
+							<p class="text-left text-4 line-height-3"  style="padding-left: 4px;padding-right: 4px;">BuzzBoost enhances life’s
 								little moments, making them unforgettable. Anticipate loyal followers, authentic
 								connections, and an audience that’s all in for a better lifestyle.
 							</p>
@@ -1143,10 +1134,10 @@
 				<div class="card-custom text-center" id="card5" style="background-color: #fff;box-shadow: 0px 4px 15px rgba(66, 108, 193, 0.5);">
 					<div class="row ms-xl-4 ms-md-2 ">
 						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-1 order-lg-2 order-md-2 order-2">
-							<span class="text-2 line-height-1">Sports</span>
-							<h3 class="text-7 line-height-2">Energize Your Brand with Athletic
+							<span class="text-2 line-height-1" style="color: #426CC1;">Sports</span>
+							<h3 class="text-7 line-height-2" style="padding-left:2px;padding-right: 2px;padding-top: 5px;">Energize Your Brand with Athletic
 								Influencers!</h3>
-							<p class="text-left text-4 line-height-3">Our sports influencers
+							<p class="text-left text-4 line-height-3"  style="padding-left: 4px;padding-right: 4px;">Our sports influencers
 								bring strength, motivation, and action, aligning your brand with the world of fitness,
 								wellness, and athleticism that their audience craves.
 
@@ -1163,17 +1154,17 @@
 				<div class="card-custom text-center" id="card6" style="background-color: #fff;box-shadow: 0px 4px 15px rgba(247, 202, 113, 0.5);">
 					<div class="row ms-xl-4 ms-md-2 ">
 						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-1 order-lg-2 order-md-2 order-2">
-							<span class="text-2 line-height-1">Tech Innovators</span>
-							<h3 class="text-7 line-height-2">Lead the Future with Influencers
+							<span class="text-2 line-height-1" style="color: #426CC1;">Tech Innovators</span>
+							<h3 class="text-7 line-height-2" style="padding-left:2px;padding-right: 2px;padding-top: 5px;">Lead the Future with Influencers
 								Who Love Innovation!
 							</h3>
-							<p class="text-left text-4 line-height-3">Our tech innovators engage
+							<p class="text-left text-4 line-height-3" style="padding-left: 4px;padding-right: 4px;">Our tech innovators engage
 								audiences who are eager for the latest advancements, making them ideal ambassadors for
 								brands looking to showcase cutting-edge products and ideas.
 							</p>
 						</div>
 						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-2 order-lg-1 order-md-1 order-1">
-							<div class="d-flex justify-content-center">
+							<div class="d-flex justify-content-center" style="padding-top: 85px;">
 								<img src="img/MobileImgs/compressed-images/Tech Innovators.jpg" class="img-fluid rounded-image" />
 							</div>
 						</div>
@@ -1199,7 +1190,7 @@
 
 
 			<!-- Other CTA -->
-			<section class="cta-section styled-section" style="width: 1300px; margin: 45px auto; background-color: #E4EDFF;">
+			<section class="cta-section styled-section" style="width: 1200px; margin: 45px auto; background-color: #E4EDFF;">
 				<div class="container">
 					<div class="row">
 						<div
@@ -1237,25 +1228,26 @@
 
 			<!-- Cards Section -->
 	<div class=" section-default" style="margin-top: 20px !important;padding-top: 5px !important; padding-bottom: 5px !important;">
-		<h2 class="text-center mb-5 font-weight-semi-bold mt-5 mb-5" style="padding-top: 10px !important;">Accelerate Your Business Growth & ROI With BuzzBoost</h2>
+		<h2 class="text-center mb-4 font-weight-semi-bold mt-5" style="padding-top: 10px !important;">Accelerate Your Business Growth & ROI With BuzzBoost</h2>
+		<p class="text-center mb-5 text-black">Fuel your business growth with the right influencer and 24/7 support.</p>
 		<div class="container my-4 d-flex justify-content-center">
 			
 
 			<!-- cards section -->
-			<div class="three-card-section d-flex justify-content-around flex-wrap" style="padding-bottom: 10px;">
+			<div class="three-card-section d-flex gap-4 justify-content-between flex-wrap" style="padding-bottom: 10px;">
 				<!-- Card 1 -->
 				<div class="card-section"				
-					style="background-image: url('img/Home Page Section 2 Cards (1)/Boost ROI.png'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 300px; height: 200px; border-radius: 8px;">
+					style="background-image: url('img/HomePageCardsFinal2/Frame 119.png'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 377px; height: 233px; border-radius: 17px;">
 				</div>
 			
 				<!-- Card 2 -->
 				<div class="card-section"				
-					style="background-image: url('img/Home Page Section 2 Cards (1)/Campaign Support (2).png'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 300px; height: 200px; border-radius: 8px;">
+					style="background-image: url('img/HomePageCardsFinal2/Frame 120.png'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 377px; height: 233px; border-radius: 17px;">
 				</div>
 			
 				<!-- Card 3 -->
 				<div class="card-section"					
-					style="background-image: url('img/Home Page Section 2 Cards (1)/Influencer Partnership.png'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 300px; height: 200px; border-radius: 8px;">
+					style="background-image: url('img/HomePageCardsFinal2/Frame 121.png'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 378px; height: 233px; border-radius: 17px;">
 				</div>
 			</div>
 			
@@ -1263,7 +1255,7 @@
 	</div>		
 
 	<div style="margin: 20px 0; display: flex; justify-content: center;">
-		<img src="img/line partion.png" alt="" style="height: 10px; width: 250px;">
+		<!-- <img src="img/line partion.png" alt="" style="height: 10px; width: 250px;"> -->
 	</div>
 	
 	
