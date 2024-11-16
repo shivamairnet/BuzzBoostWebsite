@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll Section</title>
+</head>
+<body style="margin: 0; font-family: Arial, sans-serif; overflow-x: hidden;">
+
+  <div id="scroll-section" style="position: relative; width: 100%; height: 100vh; overflow-y: scroll; scroll-snap-type: y mandatory;">
+    <div class="scroll-point" style="display: flex; justify-content: space-between; align-items: center; height: 100vh; padding: 20px; scroll-snap-align: start; opacity: 0; transform: translateY(50px); transition: opacity 0.5s ease, transform 0.5s ease;">
+      <div style="flex: 1; padding: 20px;">
+        <h2 style="margin: 0;">Point 1 Heading</h2>
+        <p>Point 1 description goes here.</p>
+      </div>
+      <div style="flex: 1; text-align: center;">
+        <img src="img\whatsapp.png" alt="Image for Point 1" style="max-width: 100%; height: auto;">
+      </div>
+    </div>
+    <div class="scroll-point" style="display: flex; justify-content: space-between; align-items: center; height: 100vh; padding: 20px; scroll-snap-align: start; opacity: 0; transform: translateY(50px); transition: opacity 0.5s ease, transform 0.5s ease;">
+      <div style="flex: 1; padding: 20px;">
+        <h2 style="margin: 0;">Point 2 Heading</h2>
+        <p>Point 2 description goes here.</p>
+      </div>
+      <div style="flex: 1; text-align: center;">
+        <img src="img\whatsapp.png" alt="Image for Point 2" style="max-width: 100%; height: auto;">
+      </div>
+    </div>
+    <!-- Add more points as needed -->
+  </div>
+
+  <script>
+    document.addEventListener('scroll', () => {
+      const scrollPoints = document.querySelectorAll('.scroll-point');
+      const triggerPoint = window.innerHeight / 1.5;
+
+      scrollPoints.forEach((point) => {
+        const pointTop = point.getBoundingClientRect().top;
+
+        if (pointTop < triggerPoint) {
+          point.style.opacity = '1';
+          point.style.transform = 'translateY(0)';
+        } else {
+          point.style.opacity = '0';
+          point.style.transform = 'translateY(50px)';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
