@@ -266,7 +266,7 @@
 							<div class="header-column">
 								<div class="header-row">
 									<div class="header-logo">
-										<a href="index.html">
+										<a href="home.html">
 											<img src="img/BuzzBoostImg/file.png" class="img-fluid"
 												width="70px" height="70px" alt="" />
 										</a>
@@ -298,7 +298,7 @@
 														<ul class="dropdown-menu" aria-labelledby="servicesDropdown">
 															<li><a class="dropdown-item" href="agency.html">Agency</a></li>
 															<li><a class="dropdown-item" href="business.html">Business</a></li>
-															<li><a class="dropdown-item" href="consulting.html">Influencer</a></li>
+															<li><a class="dropdown-item" href="Influencer.html">Influencer</a></li>
 														</ul>
 													</li>													
 												<!-- <li>
@@ -372,7 +372,7 @@
 								</p>
 								<div class="button-container" style="display: flex; gap: 1rem; margin-top: 5px; flex-wrap: wrap;">
 									<div class="text-left">
-										<a href="contact.html" class="custom-btn btn btn-modern btn-dash btn-primary box-shadow-6 border-0 text-transform-none mt-2 py-3 px-3">Get In Touch</a>
+										<a class="custom-btn btn btn-modern btn-dash btn-primary box-shadow-6 border-0 text-transform-none mt-2 py-3 px-3" onclick="openModal()">Request A Quote</a>
 									</div>
 									<div class="text-left">
 										<a href="#" class="custom-btn button-2 btn btn-dash btn-modern btn-primary box-shadow-6 border-0 text-transform-none mt-2 py-3 px-3">Connect Via Whatsapp</a>
@@ -588,105 +588,129 @@
 						</div>
 					</div>
 					<div class="pt-5 pb-5 text-center">
-	                <a href="#" class="custom-btn btn btn-modern btn-primary box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5" style="background-color: #426CC1;">Other Industries</a>
+	                <a href="home.html#industries-section" class="custom-btn btn btn-modern btn-primary box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5" style="background-color: #426CC1;">Other Industries</a>
 				    </div>		
 				</div>
 			
 
 					<!-- request a quote section 4 -->
-					<div class="" style="display: flex; text-align: center;justify-content: center;padding-top: 10px;margin-top: 20px;">
-						<div class="col-xxl-5 align-self-end pb-4">
-							<div class="card border-radius bg-color-light border-0 box-shadow-1 mb-5 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="700">
-								<div class="card-body p-5 m-2 text-center">
-									<h4 class="card-title mb-2 text-6">Request Quote Form</h4>
-					
-									<form class="contact-form" action="php/contact-form.php" method="POST">
-										<div class="contact-form-success alert alert-success d-none mt-4">
-											<strong>Success!</strong> Your message has been sent to us.
+					       <!-- flexible section modal -->
+						   <div id="requestQuoteModal1" style="display: none; position: fixed; z-index: 1000; padding-top: 100px; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0, 0, 0, 0.5);">
+							<div style="background-color: #fff; padding: 20px; border-radius: 8px; max-width: 800px; margin: auto; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); position: relative;">
+								<span style="position: absolute; top: 5px; right: 20px; font-size: 24px; cursor: pointer;" onclick="closeModal()">&times;</span>                    
+						<div class="card m-4 border-radius bg-color-light border-0 box-shadow-1 mb-5 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="700">
+							<div class="card-body p-5 m-2 text-center">
+								<h4 class="card-title mb-4 text-6">Request Quote Form</h4>
+				
+								<form class="contact-form" action="php/contact-form.php" method="POST">
+									<!-- Success Message -->
+									<div class="contact-form-success alert alert-success d-none mt-4">
+										<strong>Success!</strong> Your message has been sent to us.
+									</div>
+				
+									<!-- Error Message -->
+									<div class="contact-form-error alert alert-danger d-none mt-4">
+										<strong>Error!</strong> There was an error sending your message.
+										<span class="mail-error-message text-1 d-block"></span>
+									</div>
+				
+									<!-- Agency Name and Contact Person -->
+									<div class="row">
+										<div class="form-group col-md-6 col text-start">
+											<input type="text" value="" placeholder="Agency Name *" data-msg-required="Please enter agency name." maxlength="100" class="form-control text-2-5 p-3" name="agency" required>
 										</div>
-					
-										<div class="contact-form-error alert alert-danger d-none mt-4">
-											<strong>Error!</strong> There was an error sending your message.
-											<span class="mail-error-message text-1 d-block"></span>
+										<div class="form-group col-md-6 col text-start">
+											<input type="text" value="" placeholder="Contact Person *" data-msg-required="Please enter contact person" maxlength="100" class="form-control text-2-5 p-3" name="contactperson" required>
 										</div>
-					
-										<div class="row">
-											<div class="form-group col-md-6 col text-start">
-												<input type="text" value="" placeholder="Agency Name *" data-msg-required="Please enter agency name." maxlength="100" class="form-control text-2-5 p-3" name="agency" required>
-											</div>
-											<div class="form-group col-md-6 col text-start">
-												<input type="text" value="" placeholder="Contact Person *" data-msg-required="Please enter contact person" maxlength="100" class="form-control text-2-5 p-3" name="contactperson" required>
-											</div>
+									</div>
+				
+									<!-- Email and Phone Number -->
+									<div class="row">
+										<div class="form-group col-md-6 col text-start">
+											<input type="text" value="" placeholder="Email*" data-msg-required="Please enter email" maxlength="100" class="form-control text-2-5 p-3" name="email" required>
 										</div>
-					
-										<div class="row">
-											<div class="form-group col-md-6 col text-start">
-												<input type="text" value="" placeholder="Email*" data-msg-required="Please enter email" maxlength="100" class="form-control text-2-5 p-3" name="email" required>
-											</div>
-											<div class="form-group col-md-6 col text-start">
-												<input type="text" value="" placeholder="Phone Number *" data-msg-required="Please enter phone number" maxlength="100" class="form-control text-2-5 p-3" name="phone" required>
-											</div>
+										<div class="form-group col-md-6 col text-start">
+											<input type="text" value="" placeholder="Phone Number *" data-msg-required="Please enter phone number" maxlength="100" class="form-control text-2-5 p-3" name="phone" required>
 										</div>
-					
-										<div class="row">
-											<div class="form-group col-md-6 col text-start">
-												<input type="text" value="" placeholder="Address*" data-msg-required="Please enter address" maxlength="100" class="form-control text-2-5 p-3" name="address" required>
-											</div>
-											<div class="form-group col-md-6 col text-start">
-												<input type="text" value="" placeholder="Your Phone *" data-msg-required="Please enter your phone" maxlength="100" class="form-control text-2-5 p-3" name="yourphone" required>
-											</div>
+									</div>
+				
+									<!-- Address and Your Phone -->
+									<div class="row">
+										<div class="form-group col-md-6 col text-start">
+											<input type="text" value="" placeholder="Address*" data-msg-required="Please enter address" maxlength="100" class="form-control text-2-5 p-3" name="address" required>
 										</div>
-					
-										<!-- New Row for Industry Dropdown and Text Field -->
-										<div class="row">
-											<div class="form-group col-md-6 col text-start">
-												<select name="industry" class="form-control text-2-5 p-3" required>
-													<option value="" disabled selected>Select Industry *</option>
-													<option value="Foods and Drinks">Foods and Drinks</option>
-													<option value="Events">Events</option>
-													<option value="Beauty and Fashion ">Beauty and Fashion </option>
-													<option value="Lifestyle">Lifestyle</option>
-													<option value="Sports">Sports</option>
-													<option value="Tech Innovators">Tech Innovators</option>
-													<option value="Lifestyle">Lifestyle</option>
-													
-												</select>
-											</div>
-											<div class="form-group col-md-6 col text-start">
-												<input type="text" value="" placeholder="Additional Details" maxlength="100" class="form-control text-2-5 p-3" name="additional_details">
-											</div>
+										<!-- <div class="form-group col-md-6 col text-start">
+											<input type="text" value="" placeholder="Your Phone *" data-msg-required="Please enter your phone" maxlength="100" class="form-control text-2-5 p-3" name="yourphone" required>
+										</div> -->
+										<div class="form-group col-md-6 col text-start">
+											<select name="industry" class="form-control text-2-5 p-3" required id="industry-select">
+												<option value="" disabled selected>Select Industry *</option>
+												<option value="Foods and Drinks">Foods and Drinks</option>
+												<option value="Events">Events</option>
+												<option value="Beauty and Fashion">Beauty and Fashion</option>
+												<option value="Lifestyle">Lifestyle</option>
+												<option value="Sports">Sports</option>
+												<option value="Tech Innovators">Tech Innovators</option>
+												<option value="Other">Other</option>
+											</select>
 										</div>
-					
-										<div class="row" style="width:250px; text-align: center;">
-											<div class="form-group col">
-												<div class="d-grid gap-2">
-													<div class="pt-5 pb-5 text-left">
-														<a href="contact.html" class="custom-btn btn btn-modern btn-primary box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5" style="background-color: #426CC1;">Get In Touch</a>
-														</div>
+									</div>
+				
+									<!-- Industry Dropdown and Additional Details -->
+									<div class="row">
+										<!-- <div class="form-group col-md-6 col text-start">
+											<select name="industry" class="form-control text-2-5 p-3" required id="industry-select">
+												<option value="" disabled selected>Select Industry *</option>
+												<option value="Foods and Drinks">Foods and Drinks</option>
+												<option value="Events">Events</option>
+												<option value="Beauty and Fashion">Beauty and Fashion</option>
+												<option value="Lifestyle">Lifestyle</option>
+												<option value="Sports">Sports</option>
+												<option value="Tech Innovators">Tech Innovators</option>
+												<option value="Other">Other</option>
+											</select>
+										</div> -->
+										<div class="form-group col-md-12 col text-start" id="other-industry-container" style="display: none;">
+											<input type="text" value="" placeholder="Enter Custom Industry" maxlength="100" class="form-control text-2-5 p-3" name="other_industry" id="other-industry">
+										</div>
+									</div>
+				
+									<!-- Additional Details Text Field -->
+									<div class="row">
+										<div class="form-group col-md-12 col text-start">
+											<input type="text" value="" placeholder="Additional Details" maxlength="100" class="form-control text-2-5 p-3" name="additional_details">
+										</div>
+									</div>
+				
+									<!-- Submit Button -->
+									<div class="d-flex justify-content-center align-items-center" style="width: 100%; margin-top: 20px;">
+										<a href="#" class="btn btn-modern box-shadow-6 border-0 text-transform-none btn-dash py-3 px-5 custom-btn">
+											Request A Quote
+										</a>
+									</div>                                
+									
+				
+									<!-- Contact Info -->
+									<div class="row">
+										<div class="col pt-4">
+											<div class="hstack gap-3">
+												<div class="ms-auto">
+													<i class="icons icon-envelope text-4 p-relative top-5 me-2"></i>
+													<a href="mailto:you@domain.com" class="text-decoration-none text-2 text-dark text-color-hover-primary ws-nowrap font-weight-semi-bold">email@gmail.com</a>		
+												</div>
+												<div class="vr"></div>
+												<div class="me-auto">
+													<i class="icons icon-phone text-4 p-relative top-5 me-2"></i>
+													<a href="tel:+1234567890" class="text-decoration-none text-2 text-dark text-color-hover-primary ws-nowrap font-weight-semi-bold">888 123 4567</a>
 												</div>
 											</div>
 										</div>
-					
-										<div class="row">
-											<div class="col pt-4">
-												<div class="hstack gap-3">
-													<div class="ms-auto">
-														<i class="icons icon-envelope text-4 p-relative top-5 me-2"></i>
-														<a href="mailto:you@domain.com" class="text-decoration-none text-2 text-dark text-color-hover-primary ws-nowrap font-weight-semi-bold">email@gmail.com</a>		
-													</div>
-													<div class="vr"></div>
-													<div class="me-auto">
-														<i class="icons icon-phone text-4 p-relative top-5 me-2"></i>
-														<a href="tel:+1234567890" class="text-decoration-none text-2 text-dark text-color-hover-primary ws-nowrap font-weight-semi-bold">888 123 4567</a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</form>
-								</div>
+									</div>
+								</form>
 							</div>
 						</div>
 					</div>
+				</div>
 					
 
 				<!-- section form 5 -->
@@ -745,7 +769,7 @@
 													<div class="d-grid gap-2">
 														<button id="whatsappButton" class="btn btn-sm border-0 text-3-5 p-3 custom-btn">
 															<img id="whatsappIcon" src="img\whatsapp.png" width="20" height="20" alt="WhatsApp Icon" style="margin-right: 8px;color: #426CC1 !important;">
-															Get In Touch
+															Contact Us
 														</button>
 													</div>
 												</div>
@@ -790,9 +814,9 @@
 								<div class="col-lg-6 mb-4 mb-lg-0 company-section">
 									<h4 class="text-color-hover-light font-weight-bold mb-3">Company</h4>
 									<ul class="list list-unstyled columns-lg-1">
-										<li><a href="home.html" class="text-color-light text-color-hover-light">Home</a></li>
-										<li><a href="aboutus.html" class="text-color-light text-color-hover-light">About Us</a></li>
-										<li><a href="contact.html" class="text-color-light text-color-hover-light">Pricing</a></li>
+										<li><a href="home.html" class="text-color-light text-color-hover-light" style="text-decoration: none;">Home</a></li>
+										<li><a href="aboutus.html" class="text-color-light text-color-hover-light" style="text-decoration: none;">About Us</a></li>
+										<li><a href="contact.html" class="text-color-light text-color-hover-light" style="text-decoration: none;">Pricing</a></li>
 										<!-- <li><a href="#" class="text-color-grey text-color-hover-primary">Team</a></li> -->
 										<!-- <li><a href="#" class="text-color-light text-color-hover-light">Blog</a></li> -->
 										<!-- <li><a href="#" class="text-color-light text-color-hover-light">Contact Us</a></li> -->
@@ -801,10 +825,10 @@
 								<div class="col-lg-6 services-section">
 									<h4 class="text-color-hover-light font-weight-bold mb-3">Services</h4>
 									<ul class="list list-unstyled columns-lg-1">
-										<li><a href="agency.html" class="text-color-light text-color-hover-light">Agency</a>
+										<li><a href="agency.html" class="text-color-light text-color-hover-light" style="text-decoration: none;">Agency</a>
 										</li>
-										<li><a href="business.html" class="text-color-light text-color-hover-light">Business</a></li>
-										<li><a href="Influencer.html" class="text-color-light text-color-hover-light">Influencers</a></li>
+										<li><a href="business.html" class="text-color-light text-color-hover-light" style="text-decoration: none;">Business</a></li>
+										<li><a href="Influencer.html" class="text-color-light text-color-hover-light" style="text-decoration: none;">Influencers</a></li>
 										<!-- <li><a href="#" class="text-color-grey text-color-hover-primary">CRM and Sales</a></li> -->
 										<!-- <li><a href="#" class="text-color-grey text-color-hover-primary">Strategy</a></li> -->
 									</ul>
@@ -815,7 +839,7 @@
 				</div>
 				<div class="footer-copyright bg-transparent pb-5">
 					<div class="container">
-						<hr>
+						<!-- <hr> -->
 						<div class="row" style="text-align: center;">
 							<div class="col mt-2 mb-2">
 								<p class="text-3 mb-0 text-center text-white">BuzzBoost © 2024. All Rights Reserved.
@@ -857,6 +881,23 @@
 
 		<!-- Theme Initialization Files -->
 		<script src="js/theme.init.js"></script>
+		<script>
+	function openModal() {
+    document.getElementById('requestQuoteModal1').style.display = 'block';
+}
+
+function closeModal() {
+    document.getElementById('requestQuoteModal1').style.display = 'none';
+}
+
+// Close modal when clicking outside of the modal content
+window.onclick = function(event) {
+    var modal = document.getElementById('requestQuoteModal');
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+}
+		</script>
 
 	</body>
 </html>
