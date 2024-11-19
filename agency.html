@@ -63,8 +63,12 @@
 
         .custom-btn:hover {
 			background-color: #426CC1;
-			color: #fff;
+			color: #fff !important;
 		}
+
+        #whatsappButton:hover #whatsappIcon {
+        content: url('img/whatsapphover.png');
+        }
 
 
 		.custom-btn {
@@ -161,73 +165,172 @@
   }
 
 
-  /* mobile responsive for section-1 */
-.section1-div{
-    padding-left: 0px !important;
-    height: 800px !important;
-}
-
-.section-1{
-    /* height: 1000px !important; */
-}
-
-.section1-btn{
-    margin-top: 300px !important;
-}
-
-.section1-img1{
-    margin-top: -450px !important;
-    height: 250px !important;
-    margin: auto;
-
-}
-
-.card-img-top{
-    /* width: 0px !important; */
-}
-
 }
 
 
-@media screen and (max-width: 768px) {
-    .section1 {
-        /* Ensure the section covers the viewport */
-        display: flex;
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items horizontally */
-        justify-content: center; /* Center items vertically */
-        text-align: center; /* Center-align text */
-        padding: 15px; /* Adjust padding */
+
+/* Default Styles */
+.carousel-inner .mobile-view {
+    display: none !important; /* Hidden by default */
+}
+
+.carousel-inner .large-screen-view {
+    display: block !important; /* Shown by default */
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+    .carousel-inner .mobile-view {
+        display: block !important; /* Show mobile view */
     }
 
-    .section1-div {
-        flex-direction: column; /* Stack elements vertically */
-        padding-left: 0; /* Remove left padding */
+    .carousel-inner .large-screen-view {
+        display: none !important; /* Hide large-screen view */
     }
 
-    .section1-h1 {
-        font-size: 1.8rem; /* Smaller font size for heading */
-        margin-bottom: 20px; /* Add space below the heading */
-        color: white;
+    .carousel-inner .d-flex {
+        overflow-x: auto !important; /* Horizontal scrolling */
+        scroll-snap-type: x mandatory !important;
+        gap: 20px !important;
     }
 
-    .section1-p {
-        font-size: 1.2rem; /* Smaller font size for paragraph */
-        margin-bottom: 30px; /* Add space below the paragraph */
-        color: white;
+    .carousel-inner .card {
+        min-width: 290px !important; /* Ensure cards fit mobile view */
+        scroll-snap-align: start !important;
+    }
+}
+
+/* Large Screen Layout */
+@media (min-width: 769px) {
+    .carousel-inner .mobile-view {
+        display: none !important; /* Hide mobile view */
     }
 
-    .section1-img1 {
-        margin: 0 auto 20px auto; /* Center the image and add space below */
-        height: auto; /* Maintain aspect ratio */
-        max-width: 90%; /* Ensure the image is responsive */
+    .carousel-inner .large-screen-view {
+        display: block !important; /* Show large-screen view */
+    }
+}
+
+
+/* mobile query for flexible section */
+@media (max-width: 768px) {
+    .section4 {
+        max-height: 900px !important; /* Remove height restrictions */
+        padding: 20px !important; /* Add some padding */
     }
 
-    .section1-btn {
-        margin-top: 20px; /* Space above the button */
-        font-size: 1rem; /* Adjust font size for button */
-        padding: 12px 20px; /* Adjust padding for button */
+    .section4 .row {
+        flex-direction: column !important; /* Stack elements vertically */
+        align-items: flex-start !important; /* Align content to the start */
     }
+
+    .section4 .custom-col-1 {
+        padding: 20px !important; /* Reduce padding for mobile */
+        text-align: center !important; /* Center-align text on mobile */
+    }
+
+    .section4 h3 {
+        font-size: 1.8rem !important; /* Adjust heading size */
+    }
+
+    .section4 p {
+        font-size: 1.2rem !important; /* Adjust paragraph size */
+        line-height: 1.5 !important; /* Improve readability */
+        margin-top: 365px !important;
+    }
+
+    .section4 .button-section4 {
+        width: 100% !important; /* Full-width button */
+        text-align: center !important; /* Center the button */
+        padding: 1rem !important; /* Adjust padding */
+        margin-top: 10px !important;
+    }
+
+    .section4 .hero {
+        display: flex !important; /* Ensure image is displayed */
+        justify-content: center !important; /* Center the image */
+        margin-top: 20px !important; /* Add spacing between text and image */
+    }
+
+    .section4 .hero img {
+        max-width: 100% !important; /* Responsive image */
+        padding-right: 0 !important; /* Remove padding on mobile */
+        max-height: 320px !important;
+        margin-top: 111px !important;
+        padding-left: 0px !important;
+        text-align: center !important;
+        margin-left: 20px !important;
+        margin-right: 80px !important;
+    }
+
+
+}
+
+
+@media (max-width: 768px) {
+    .hero-section-agency {
+        margin: 0 auto !important; 
+        padding: 15px !important;
+        background: linear-gradient(to right, #314D91, #426CC1, #8AA2D7) !important;
+        max-height: 950px !important;
+    }
+
+    .hero-section-agency .section1-div {
+        flex-direction: column !important; /* Stack content vertically */
+        height: 850px !important; /* Allow height to adjust based on content */
+        width: 100% !important; /* Ensure full width for mobile */
+        padding: 0 10px !important; /* Adjust padding for mobile */
+        
+    }
+
+    .hero-section-agency .hero-text {
+        text-align: center !important; /* Center-align text */
+        margin-bottom: 20px !important; /* Add spacing below text */
+        margin-top: 40px !important;
+    }
+
+    .hero-section-agency .section1-h1 {
+        font-size: 44px !important; /* Adjust heading size for mobile */
+        font-weight: bold !important;
+    }
+
+    .hero-section-agency .section1-p {
+        font-size: 1.5rem !important; /* Adjust paragraph size */
+        line-height: 1.5 !important; /* Improve readability */
+        margin-bottom: 15px !important; /* Add spacing below paragraph */
+        margin-top: 320px !important;
+    }
+
+    .hero-section-agency .section1-btnnew {
+        padding: 10px 20px !important; /* Adjust button size */
+        width: auto !important; /* Allow button to fit content */
+        margin: 0 auto !important; /* Center the button */
+        margin-top: 10px !important;
+    }
+
+    .hero-section-agency .section1-img {
+        text-align: center !important; /* Center-align the image */
+        margin-top: -270px !important; /* Add spacing above image */
+        margin-bottom: 20px !important;
+
+    }
+
+    .hero-section-agency .section1-img1 {
+        width: 90% !important; /* Scale image to fit inside screen */
+        max-width: 300px !important; /* Limit maximum width */
+        height: 335px !important; /* Maintain aspect ratio */
+        margin-top: -110px !important;
+    }
+
+    .section1-btn{
+        display: none !important;
+    }
+
+    .lshead{
+        display: none !important;
+    }
+
+   
 }
 
     </style>
@@ -331,78 +434,94 @@
         </header>
 
         <!-- section-1 -->
-        <section class="section1" style="margin: 2px auto; padding: 15px;background: linear-gradient(to right, #314D91, #426CC1, #8AA2D7)">
-            <div class="section1-div row align-items-center" style="height: 450px;padding-left: 28px;display: flex; justify-content: center; align-items: center;width: 1400px;margin: 2px auto;">
-                <!-- Left Content Section -->
-                <div class="col-lg-6 hero-text text-center text-md-center text-xl-start text-lg-start">
-                    <h1 class="section1-h1 display-4 fw-bold text-white" style="font-size: 48px;">Find the Perfect Influencers for Your Next Big Campaign</h1>
-                    <p class="section1-p lead line-height-5 text-white" style="font-size: 1.5rem;letter-spacing: normal;">
-                        Trusted collaborations with top influencers and creators to elevate your clients' brands. 
-                    </p>
-                    <a href="#"
-                        class="section1-btn btn btn-modern box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5 custom-btn" style="font-weight: bold" onclick="openModal()">
-                        Request A Quote
-                    </a>
+               <!-- section-1 -->
+               <section class="section1" style="margin: 2px auto; padding: 15px;background: linear-gradient(to right, #314D91, #426CC1, #8AA2D7)">
+                <div class="section1-div row align-items-center" style="height: 450px;padding-left: 28px;display: flex; justify-content: center; align-items: center;width: 1400px;margin: 2px auto;">
+                    <!-- Left Content Section -->
+                    <div class="col-lg-6 hero-text text-center text-md-center text-xl-start text-lg-start">
+                        <h1 class="section1-h1 display-4 fw-bold text-white" style="font-size: 48px;">Find the Perfect Influencers for Your Next Big Campaign</h1>
+                        <p class="section1-p lead line-height-5 text-white" style="font-size: 1.5rem;letter-spacing: normal;">
+                            Trusted collaborations with top influencers and creators to elevate your clients' brands. 
+                        </p>
+                        <a href="#"
+                            class="section1-btn btn btn-modern box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5 custom-btn" style="font-weight: bold" onclick="openModal()">
+                            Request A Quote
+                        </a>
+                    </div>
+            
+                    <!-- Right Image Section -->
+                    <div class="section1-img col-lg-6 hero-img d-lg-block" style="text-align: right;">
+                        <img class="section1-img1" src="img\Agency Page Images\iloveimg-compressed (1)\Header Image.png" alt="Hero Image" width="500px" height="420px" style="padding-right: 60px;margin-top: 40px;">
+                    </div>
                 </div>
+            </section>
         
-                <!-- Right Image Section -->
-                <div class="section1-img col-lg-6 hero-img d-lg-block" style="text-align: right;">
-                    <img class="section1-img1" src="img\Agency Page Images\iloveimg-compressed (1)\Header Image.png" alt="Hero Image" width="500px" height="420px" style="padding-right: 60px;margin-top: 40px;">
-                </div>
-            </div>
-        </section>
 
-        <!-- section-2 carousel -->
-        <section class="section">
-            <div class="container text-center">
-                <h3 class="pt-4" style="font-weight: bold;font-size: 36px;">Choose From A List Of Influencers For Your Client</h3>
-                <p class="pt-1">BuzzBoost offers you to collaborate with the best influencers across industries, styles, and audiences</br> to find the perfect fit for your brand.</p>
-                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000"> <!-- Faster transition speed (3 seconds) -->
+        <!-- section2imp -->
+
+        <!-- large screen carousel -->
+        <section class="section lshead">
+            <div class="container text-center large-screen-view">
+                <!-- Section Header -->
+                <h3 class="pt-4" style="font-weight: bold; font-size: 36px;">
+                    Choose From A List Of Influencers For Your Client
+                </h3>
+                <p class="pt-1">
+                    BuzzBoost offers you to collaborate with the best influencers across industries, styles, and audiences</br> 
+                    to find the perfect fit for your brand.
+                </p>
+        
+                <!-- Carousel -->
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
                     <!-- Indicators/Dots -->
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
                         <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="4" aria-label="Slide 5"></button>
                     </div>
         
                     <!-- Carousel Items -->
                     <div class="carousel-inner">
-                        <!-- First Slide -->
-                        <div class="carousel-item active">
-                            <div class="row" style="display: flex; justify-content: space-between; margin-left: -15px; margin-right: -15px;">
-                                <!-- Cards for Images with spacing -->
-                                <div class="col-md-2" style="margin-bottom: 15px; padding-left: 15px; padding-right: 15px;"> 
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active large-screen-view">
+                            <div class="row justify-content-center">
+                                <div class="col-md-2" style="margin: 0 20px;">
                                     <div class="card">
-                                        <img src="img\Agency Page Images\iloveimg-compressed (1)\Frame 89.png" class="card-img-top" alt="Image 1" style="height: 388px; width: 290px;">
+                                        <img src="img/Agency Page Images/iloveimg-compressed (1)/Frame 89.png" class="card-img-top" alt="Image 1" style="height:'388px'; width:'380px'">
                                     </div>
                                 </div>
-                                <div class="col-md-2" style="margin-bottom: 15px; padding-left: 15px; padding-right: 15px;">
+                                <div class="col-md-2" style="margin: 0 20px;">
                                     <div class="card">
-                                        <img src="img\Agency Page Images\iloveimg-compressed (1)\Frame 90.png" class="card-img-top" alt="Image 2" style="height: 388px; width: 290px;">
+                                        <img src="img/Agency Page Images/iloveimg-compressed (1)/Frame 90.png" class="card-img-top" alt="Image 2" style="height:'388px'; width:'380px'">
                                     </div>
                                 </div>
-                                <div class="col-md-2" style="margin-bottom: 15px; padding-left: 15px; padding-right: 15px;">
+                                <div class="col-md-2" style="margin: 0 20px;">
                                     <div class="card">
-                                        <img src="img\Agency Page Images\iloveimg-compressed (1)\Frame 91.png" class="card-img-top" alt="Image 3" style="height: 388px; width: 290px;">
+                                        <img src="img/Agency Page Images/iloveimg-compressed (1)/Frame 91.png" class="card-img-top" alt="Image 3" style="height:'388px'; width:'380px'">
                                     </div>
                                 </div>
-                                <div class="col-md-2" style="margin-bottom: 15px; padding-left: 15px; padding-right: 15px;">
+                         
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 2 -->
+                        <div class="carousel-item large-screen-view">
+                            <div class="row justify-content-center">
+                                <div class="col-md-2" style="margin: 0 20px;">
                                     <div class="card">
-                                        <img src="img\Agency Page Images\iloveimg-compressed (1)\Frame 97.png" class="card-img-top" alt="Image 4" style="height: 388px; width: 290px;">
+                                        <img src="img/Agency Page Images/iloveimg-compressed (1)/Frame 97.png" class="card-img-top" alt="Image 4" style="height:'388px'; width:'380px'">
                                     </div>
                                 </div>
-                                <div class="col-md-2" style="margin-bottom: 15px; padding-left: 15px; padding-right: 15px;">
+                                <div class="col-md-2" style="margin: 0 20px;">
                                     <div class="card">
-                                        <img src="img\Agency Page Images\iloveimg-compressed (1)\Frame 98.png" class="card-img-top" alt="Image 5" style="height: 388px; width: 290px;">
+                                        <img src="img/Agency Page Images/iloveimg-compressed (1)/Frame 98.png" class="card-img-top" alt="Image 5" style="height:'388px'; width:'380px'">
                                     </div>
                                 </div>
+                                
                             </div>
                         </div>
         
-                        <!-- Additional Slides (if needed) -->
-                        <!-- You can add more slides here if necessary with 5 images per slide -->
+                        <!-- Additional Slides -->
                     </div>
         
                     <!-- Navigation Arrows -->
@@ -417,6 +536,48 @@
                 </div>
             </div>
         </section>
+
+        <!-- small screen carousel -->
+        <section class="section">
+            <div class="container text-center mobile-view">
+                <!-- Section Header -->
+                <h3 class="pt-4" style="font-weight: bold; font-size: 36px;">
+                    Choose From A List Of Influencers For Your Client
+                </h3>
+                <p class="pt-1">
+                    BuzzBoost offers you to collaborate with the best influencers across industries, styles, and audiences<br>
+                    to find the perfect fit for your brand.
+                </p>
+        
+                <!-- Continuous Carousel -->
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                    <!-- Carousel Items -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active  mobile-view" style="padding: 20px;">
+                            <div class="d-flex overflow-auto" style="scroll-snap-type: x mandatory; gap: 40px !important;">
+                                <!-- Card Items -->
+                                <div class="card" style="min-width: 290px; flex-shrink: 0;">
+                                    <img src="img/Agency Page Images/iloveimg-compressed (1)/Frame 89.png" class="card-img-top" alt="Image 1" style="height: 388px;width: 325px;">
+                                </div>
+                                <div class="card" style="min-width: 290px; flex-shrink: 0;">
+                                    <img src="img/Agency Page Images/iloveimg-compressed (1)/Frame 90.png" class="card-img-top" alt="Image 2" style="height: 388px;width: 325px;">
+                                </div>
+                                <div class="card" style="min-width: 290px; flex-shrink: 0;">
+                                    <img src="img/Agency Page Images/iloveimg-compressed (1)/Frame 91.png" class="card-img-top" alt="Image 3" style="height: 388px;width: 325px;">
+                                </div>
+                                <div class="card" style="min-width: 290px; flex-shrink: 0;">
+                                    <img src="img/Agency Page Images/iloveimg-compressed (1)/Frame 97.png" class="card-img-top" alt="Image 4" style="height: 388px;width: 325px;">
+                                </div>
+                                <div class="card" style="min-width: 290px; flex-shrink: 0;">
+                                    <img src="img/Agency Page Images/iloveimg-compressed (1)/Frame 98.png" class="card-img-top" alt="Image 5" style="height: 388px;width: 325px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
 
             <!-- section-3 request a form-->
                     <div id="requestQuoteModal" style="display: none; position: fixed; z-index: 1000; padding-top: 100px; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0, 0, 0, 0.5);">
@@ -750,7 +911,7 @@ document.getElementById('industry-select').addEventListener('change', function()
 
         <!-- section-5-zig-zag -->
 	 <div class="container" style="margin-top: 48px;">
-		<h3 class="text-center mt-5 mb-15" style="padding-top: 40px;padding-bottom: 40px;font-weight: bold;font-size: 36px;">Find Your Next Perfect Influencer Match!</h3>
+		<h3 class="text-center mt-5 mb-15" style="padding-top: 40px;padding-bottom: 40px;font-weight: bold !important;font-size: 44px;">Find Your Next Perfect Influencer Match!</h3>
 	
 		<!-- Mega Influencers -->
 		<div class="row align-items-center justify-content-center mt-5">
@@ -866,7 +1027,7 @@ document.getElementById('industry-select').addEventListener('change', function()
                                         <div class="form-group  col-xl-7 col-lg-9 col-md-6 col-sm-12">
                                             <div class="d-grid gap-2">
                                                 <button id="whatsappButton" class="btn btn-sm border-0 text-black text-3-5 p-3 custom-btn" style="font-weight: bold;">
-                                                    <img src="img\whatsapp.png" width="20" height="20" alt="WhatsApp Icon" style="margin-right: 8px;">
+                                                    <img id="whatsappIcon" src="img\whatsapp.png" width="20" height="20" alt="WhatsApp Icon" style="margin-right: 8px;">
                                                     Get In Touch
                                                 </button>
                                             </div>
@@ -969,6 +1130,13 @@ document.getElementById('industry-select').addEventListener('change', function()
                 </div>
             </div>
 		</footer>
+        <div style="position: fixed; bottom: 30px; right: 20px; z-index: 9999; width: 55px; height: 55px;">
+            <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+                <img src="img\whatsappiconfixed.png" 
+                     alt="WhatsApp" 
+                     style="width: 100%; height: 100%; border-radius: 50%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); cursor: pointer;" />
+            </a>
+        </div>
 
         <script>
             document.getElementById('preferred-industry').addEventListener('change', function () {

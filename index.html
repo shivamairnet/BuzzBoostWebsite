@@ -344,14 +344,14 @@
 			
 		}
 
-		#whatsappButton:hover .whatsapp-icon {
-    content: url("img/BuzzBoostImg/whatsapp (1).png") !important; /* Replace with your hover image path */
-}
+		#whatsappButton:hover #whatsappIcon {
+    content: url('img/whatsapphover.png');
+  }
 
 
 		.custom-btn {
 			background-color: #FFBF78;
-			color: #000;
+			color: #000 !important;
 		}
 
 
@@ -578,6 +578,47 @@
     transform: scale(1.025); /* Slight zoom effect */
 }
 
+/* media query for the carousel section */
+@media (max-width: 768px) {
+  /* Ensures all carousel items are in a single row */
+  #brandCarousel .carousel-inner {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    overflow: hidden;
+  }
+
+  .carousel-item {
+    display: flex;
+    flex: 0 0 auto;
+    width: auto; /* Prevents slides from occupying full width */
+  }
+
+  .carousel-item img {
+    max-width: 120px; /* Adjust image size to fit */
+    margin-right: 15px; /* Adds space between images */
+  }
+
+  /* Set continuous horizontal scrolling for small screens */
+  #brandCarousel .carousel-inner {
+    animation: scrollImages 20s linear infinite;
+  }
+
+  @keyframes scrollImages {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  /* Hide controls on small screens */
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+}
+
 
 
 	</style>
@@ -720,85 +761,105 @@
 
 
 		 <!-- carousel section -->
-		 <div class="container" style="padding: 10px;padding-top: 45px;padding-bottom: 45px;">
-			<!-- <div class="row align-items-center justify-content-around mt-5">
-				<div class="col-lg-5 text-end p-relative pt-5 max-width-custom-1">
-					<div class="p-absolute right-0">
-						<div data-plugin-float-element
-							data-plugin-options="{'startPos': 'top', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
-							<img width="470" height="451" src="img/demos/business-consulting-5/svg/icon-bg-1.svg"
-								alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': ''}" />
-						</div>
-					</div>
-					<div data-plugin-float-element
-						data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
-						<img width="376" height="350" src="img/demos/business-consulting-5/svg/icon-1.svg" alt=""
-							data-icon
-							data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary mt-5 pt-5'}" />
-					</div>
-				</div>
-				<div class="col-lg-4 text-center text-lg-start">
-					<h3 class="mt-5 pt-4">Improving Your <br />Content Marketing</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget eleifend dolor, et
-						maximus enim. Donec metus tellus, ornare in fermentum in, vulputate ut lorem.</p>
-					<a href="#"
-						class="btn btn-modern btn-primary box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5">Learn
-						More</a>
-				</div>
-			</div>
-			<div class="row align-items-center justify-content-around mt-5">
-				<div class="col-lg-4 text-center text-lg-start">
-					<h3 class="mt-5 pt-4">Ongoing analysis of your<br>industry competitors</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget eleifend dolor, et
-						maximus enim. Donec metus tellus, ornare in fermentum in, vulputate ut lorem.</p>
-					<a href="#"
-						class="btn btn-modern btn-secondary box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5">Learn
-						More</a>
-				</div>
-				<div class="col-lg-5 p-relative pt-5 max-width-custom-1">
-					<div class="p-absolute left-0">
-						<div data-plugin-float-element
-							data-plugin-options="{'startPos': 'top', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
-							<img width="470" height="451" src="img/demos/business-consulting-5/svg/icon-bg-2.svg"
-								alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': ''}" />
-						</div>
-					</div>
-					<div data-plugin-float-element
-						data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
-						<img width="376" height="350" src="img/demos/business-consulting-5/svg/icon-2.svg" alt=""
-							data-icon
-							data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-secondary mt-5 pt-5'}" />
-					</div>
-				</div>
-			</div> -->
+		 <div class="container" style="padding: 10px; padding-top: 45px; padding-bottom: 45px;">			
 			<div class="row">
 				<div class="col text-center">
 					<h3 class="pt-4">Trusted Brands Trust BuzzBoost</h3>
-					<p class="text-black">We are trusted by industry-leading brands who have successfully grown with</br> our
-						network of influencers across diverse industries.</p>
+					<p class="text-black">
+						We are trusted by industry-leading brands who have successfully grown with</br> 
+						our network of influencers across diverse industries.
+					</p>
 				</div>
 			</div>
-			<div class="row align-items-center text-center mt-2">
-				<div class="col-sm-4 col-xl-2 mb-5 mb-xl-0">
-					<img src="img/BuzzBoostImg/acme.png" alt class="img-fluid" style="max-width: 140px;" />
+		
+			<!-- carousel for large screens -->
+			<!-- Carousel Start -->
+			<div id="brandCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+				<div class="carousel-inner text-center">
+					<!-- First Slide -->
+					<div class="carousel-item active">
+						<div class="row align-items-center justify-content-center">
+							<div class="col-sm-4 col-xl-2 mb-4">
+								<img src="img/BuzzBoostImg/acme.png" alt class="img-fluid" style="max-width: 140px;" />
+							</div>
+							<div class="col-sm-4 col-xl-2 mb-4">
+								<img src="img/BuzzBoostImg/circle.png" alt class="img-fluid" style="max-width: 140px;" />
+							</div>
+							<div class="col-sm-4 col-xl-2 mb-4">
+								<img src="img/BuzzBoostImg/fox-hub-black.png" alt class="img-fluid" style="max-width: 140px;" />
+							</div>
+						</div>
+					</div>
+					<!-- Second Slide -->
+					<div class="carousel-item">
+						<div class="row align-items-center justify-content-center">
+							<div class="col-sm-4 col-xl-2 mb-4">
+								<img src="img/BuzzBoostImg/Group M.png" alt class="img-fluid" style="max-width: 140px;" />
+							</div>
+							<div class="col-sm-4 col-xl-2 mb-4">
+								<img src="img/BuzzBoostImg/hexa.png" alt class="img-fluid" style="max-width: 100px;" />
+							</div>
+							<div class="col-sm-4 col-xl-2 mb-4">
+								<img src="img/BuzzBoostImg/stari.png" alt class="img-fluid" style="max-width: 100px;" />
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="col-sm-4 col-xl-2 mb-5 mb-xl-0">
-					<img src="img/BuzzBoostImg/circle.png" alt class="img-fluid" style="max-width: 140px;" />
-				</div>
-				<div class="col-sm-4 col-xl-2 mb-5 mb-xl-0">
-					<img src="img/BuzzBoostImg/fox-hub-black.png" alt class="img-fluid" style="max-width: 140px;" />
-				</div>
-				<div class="col-sm-4 col-xl-2 mb-5 mb-lg-0">
-					<img src="img/BuzzBoostImg/Group M.png" alt class="img-fluid" style="max-width: 140px;" />
-				</div>
-				<div class="col-sm-4 col-xl-2 mb-5 mb-lg-0">
-					<img src="img/BuzzBoostImg/hexa.png" alt class="img-fluid" style="max-width: 100px;" />
-				</div>
-				<div class="col-sm-4 col-xl-2">
-					<img src="img/BuzzBoostImg/stari.png" alt class="img-fluid" style="max-width: 100px;" />
-				</div>
+				<!-- Carousel Controls -->
+				<button class="carousel-control-prev" type="button" data-bs-target="#brandCarousel" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#brandCarousel" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
 			</div>
+			<!-- Carousel End -->
+
+			<!-- checkerr start for mobile carousel -->
+			<!-- carousel for small screens -->
+			<div id="brandCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+				<div class="carousel-inner text-center">
+					<!-- First Slide -->
+					<div class="carousel-item active">
+						<div class="row align-items-center justify-content-center">
+							<div class="col-sm-4 col-xl-2 mb-4">
+								<img src="img/BuzzBoostImg/acme.png" alt class="img-fluid" style="max-width: 140px;" />
+							</div>
+							<div class="col-sm-4 col-xl-2 mb-4">
+								<img src="img/BuzzBoostImg/circle.png" alt class="img-fluid" style="max-width: 140px;" />
+							</div>
+							<div class="col-sm-4 col-xl-2 mb-4">
+								<img src="img/BuzzBoostImg/fox-hub-black.png" alt class="img-fluid" style="max-width: 140px;" />
+							</div>
+							<div class="col-sm-4 col-xl-2 mb-4">
+								<img src="img/BuzzBoostImg/Group M.png" alt class="img-fluid" style="max-width: 140px;" />
+							</div>
+							<div class="col-sm-4 col-xl-2 mb-4">
+								<img src="img/BuzzBoostImg/hexa.png" alt class="img-fluid" style="max-width: 100px;" />
+							</div>
+							<div class="col-sm-4 col-xl-2 mb-4">
+								<img src="img/BuzzBoostImg/stari.png" alt class="img-fluid" style="max-width: 100px;" />
+							</div>
+						</div>
+					</div>
+				
+				</div>
+				<!-- Carousel Controls -->
+				<button class="carousel-control-prev" type="button" data-bs-target="#brandCarousel" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#brandCarousel" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+
+			<!-- checker till here -->
 		</div>
+		
 
 		
 	<div style="margin: 20px 0; display: flex; justify-content: center;">
@@ -1261,36 +1322,31 @@
 			
 
 			<!-- Cards Section -->
-	<div class=" section-default" style="margin-top: 20px !important;padding-top: 5px !important; padding-bottom: 5px !important;">
+	<!-- <div class="section-default" style="margin-top: 20px !important;padding-top: 5px !important; padding-bottom: 5px !important;">
 		<h2 class="text-center mb-4 font-weight-semi-bold mt-5" style="padding-top: 10px !important;">Accelerate Your Business Growth & ROI With BuzzBoost</h2>
 		<p class="text-center mb-5 text-black">Fuel your business growth with the right influencer and 24/7 support.</p>
 		<div class="container my-4 d-flex justify-content-center">
 			
-
-			<!-- cards section -->
-			<div class="three-card-section d-flex gap-4 justify-content-between flex-wrap" style="padding-bottom: 10px;margin-top: 40px;">
-				<!-- Card 1 -->
+			
+			<div class="three-card-section d-flex gap-4 justify-content-between flex-wrap" style="padding-bottom: 10px;margin-top: 40px;">			
 				<div class="card-section"				
 					style="background-image: url('img/HomePageCardsFinal2/Frame 119.png'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 377px; height: 233px; border-radius: 17px;">
 				</div>
-			
-				<!-- Card 2 -->
+						
 				<div class="card-section"				
 					style="background-image: url('img/HomePageCardsFinal2/Frame 120.png'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 377px; height: 233px; border-radius: 17px;">
-				</div>
-			
-				<!-- Card 3 -->
+				</div>			
+				
 				<div class="card-section"					
 					style="background-image: url('img/HomePageCardsFinal2/Frame 121.png'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 378px; height: 233px; border-radius: 17px;">
 				</div>
 			</div>
-			
 		</div>
-	</div>		
+	</div>		 -->
 
-	<div style="margin: 20px 0; display: flex; justify-content: center;">
-		<!-- <img src="img/line partion.png" alt="" style="height: 10px; width: 250px;"> -->
-	</div>
+	<!-- <div style="margin: 20px 0; display: flex; justify-content: center;">
+		
+	</div> -->
 	
 	
 
@@ -1411,11 +1467,11 @@
 										<div class="form-group  col-xl-7 col-lg-9 col-md-6 col-sm-12">
 											<div class="d-grid gap-2">
 												<button id="whatsappButton"
-													class="btn btn-sm border-0 text-color-hover-light text-color-light text-3-5 p-3 custom-btn">
-													<img src="img\whatsapp.png" width="20" height="20"
-														alt="WhatsApp Icon" style="margin-right: 8px;">
-													Get In Touch
-												</button>
+    class="whatsappicon btn btn-sm border-0 text-color-hover-light  text-3-5 p-3 custom-btn">
+    <img id="whatsappIcon" src="img/whatsapp.png" width="20" height="20"
+        alt="WhatsApp" style="margin-right: 8px;">
+    Get In Touch
+</button>
 											</div>
 										</div>
 										<div class="col"></div>
@@ -1519,6 +1575,13 @@
 			</div>
 		</div>
 	</footer>
+	<div style="position: fixed; bottom: 30px; right: 20px; z-index: 9999; width: 55px; height: 55px;">
+		<a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+			<img src="img\whatsappiconfixed.png" 
+				 alt="WhatsApp" 
+				 style="width: 100%; height: 100%; border-radius: 50%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); cursor: pointer;" />
+		</a>
+	</div>
 	</div>
 
 

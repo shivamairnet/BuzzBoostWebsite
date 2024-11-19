@@ -1,52 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Scroll Section</title>
-</head>
-<body style="margin: 0; font-family: Arial, sans-serif; overflow-x: hidden;">
+@media (max-width: 768px) {
+  .hero-section-agency {
+      margin: 0 auto !important; 
+      padding: 15px !important;
+      background: linear-gradient(to right, #314D91, #426CC1, #8AA2D7) !important;
+      max-height: 950px !important;
+  }
 
-  <div id="scroll-section" style="position: relative; width: 100%; height: 100vh; overflow-y: scroll; scroll-snap-type: y mandatory;">
-    <div class="scroll-point" style="display: flex; justify-content: space-between; align-items: center; height: 100vh; padding: 20px; scroll-snap-align: start; opacity: 0; transform: translateY(50px); transition: opacity 0.5s ease, transform 0.5s ease;">
-      <div style="flex: 1; padding: 20px;">
-        <h2 style="margin: 0;">Point 1 Heading</h2>
-        <p>Point 1 description goes here.</p>
-      </div>
-      <div style="flex: 1; text-align: center;">
-        <img src="img\whatsapp.png" alt="Image for Point 1" style="max-width: 100%; height: auto;">
-      </div>
-    </div>
-    <div class="scroll-point" style="display: flex; justify-content: space-between; align-items: center; height: 100vh; padding: 20px; scroll-snap-align: start; opacity: 0; transform: translateY(50px); transition: opacity 0.5s ease, transform 0.5s ease;">
-      <div style="flex: 1; padding: 20px;">
-        <h2 style="margin: 0;">Point 2 Heading</h2>
-        <p>Point 2 description goes here.</p>
-      </div>
-      <div style="flex: 1; text-align: center;">
-        <img src="img\whatsapp.png" alt="Image for Point 2" style="max-width: 100%; height: auto;">
-      </div>
-    </div>
-    <!-- Add more points as needed -->
-  </div>
+  .hero-section-agency .section1-div {
+      flex-direction: column !important; /* Stack content vertically */
+      height: 850px !important; /* Allow height to adjust based on content */
+      width: 100% !important; /* Ensure full width for mobile */
+      padding: 0 10px !important; /* Adjust padding for mobile */
+      
+  }
 
-  <script>
-    document.addEventListener('scroll', () => {
-      const scrollPoints = document.querySelectorAll('.scroll-point');
-      const triggerPoint = window.innerHeight / 1.5;
+  .hero-section-agency .hero-text {
+      text-align: center !important; /* Center-align text */
+      margin-bottom: 20px !important; /* Add spacing below text */
+      margin-top: 40px !important;
+  }
 
-      scrollPoints.forEach((point) => {
-        const pointTop = point.getBoundingClientRect().top;
+  .hero-section-agency .section1-h1 {
+      font-size: 44px !important; /* Adjust heading size for mobile */
+      font-weight: bold !important;
+  }
 
-        if (pointTop < triggerPoint) {
-          point.style.opacity = '1';
-          point.style.transform = 'translateY(0)';
-        } else {
-          point.style.opacity = '0';
-          point.style.transform = 'translateY(50px)';
-        }
-      });
-    });
-  </script>
+  .hero-section-agency .section1-p {
+      font-size: 1.5rem !important; /* Adjust paragraph size */
+      line-height: 1.5 !important; /* Improve readability */
+      margin-bottom: 15px !important; /* Add spacing below paragraph */
+      margin-top: 320px !important;
+  }
 
-</body>
-</html>
+  .hero-section-agency .section1-btnnew {
+      padding: 10px 20px !important; /* Adjust button size */
+      width: auto !important; /* Allow button to fit content */
+      margin: 0 auto !important; /* Center the button */
+      margin-top: 10px !important;
+  }
+
+  .hero-section-agency .section1-img {
+      text-align: center !important; /* Center-align the image */
+      margin-top: -270px !important; /* Add spacing above image */
+      margin-bottom: 20px !important;
+
+  }
+
+  .hero-section-agency .section1-img1 {
+      width: 90% !important; /* Scale image to fit inside screen */
+      max-width: 300px !important; /* Limit maximum width */
+      height: 335px !important; /* Maintain aspect ratio */
+      margin-top: -110px !important;
+  }
+
+  .section1-btn{
+      display: none !important;
+  }
+
+  .lshead{
+      display: none !important;
+  }
+
+ 
+}

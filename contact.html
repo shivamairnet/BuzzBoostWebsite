@@ -57,9 +57,12 @@
 
 		.custom-btn:hover {
 			background-color: #426CC1;
-			color: #fff;
-			
+			color: #fff !important;		
 		}
+
+		#whatsappButton:hover #whatsappIcon {
+        content: url('img/whatsapphover.png');
+        }
 
 	
 	/* for footer mobile responsive */
@@ -302,7 +305,7 @@
 											<div class="d-grid gap-2">
 												<button id="whatsappButton"
 													class="btn btn-sm border-0 text-3-5 p-3 custom-btn">
-													<img src="img\whatsapp.png" width="20" height="20"
+													<img id="whatsappIcon" src="img\whatsapp.png" width="20" height="20"
 														alt="WhatsApp Icon" style="margin-right: 8px;">
 													Get In Touch
 												</button>
@@ -409,6 +412,13 @@
 			</div>
 		</div>
 	</footer>
+	<div style="position: fixed; bottom: 30px; right: 20px; z-index: 9999; width: 55px; height: 55px;">
+		<a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+			<img src="img\whatsappiconfixed.png" 
+				 alt="WhatsApp" 
+				 style="width: 100%; height: 100%; border-radius: 50%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); cursor: pointer;" />
+		</a>
+	</div>
 		</div>
 
 		<!-- Vendor -->

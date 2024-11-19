@@ -220,8 +220,6 @@
 
 	
 
-
-
 		@media (max-width:2600px) {
 			.custom-ustom-card {
 				height: 86vh;
@@ -344,10 +342,9 @@
 			
 		}
 
-		#whatsappButton:hover .whatsapp-icon {
-    content: url("img/BuzzBoostImg/whatsapp (1).png") !important; /* Replace with your hover image path */
-}
-
+	#whatsappButton:hover #whatsappIcon {
+    content: url('img\whatsapphover.png') !important;
+  }
 
 		.custom-btn {
 			background-color: #FFBF78;
@@ -579,6 +576,57 @@
 }
 
 
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 20px !important; /* Adjust padding for smaller screens */
+    }
+
+    .hero-section-content {
+        flex-direction: column !important; /* Stack content vertically */
+        height: auto !important; /* Remove fixed height */
+        width: 100% !important; /* Make it full width */
+        margin: 0 auto !important;
+    }
+
+    .hero-text {
+        text-align: center !important; /* Center-align text for mobile */
+        margin-bottom: 20px !important; /* Add spacing below text */
+		margin-top: 10px !important;
+    }
+
+    .hero-title {
+        font-size: 44px !important; /* Adjust font size for headings */
+		margin-top: -300px !important;
+    }
+
+    .hero-description {
+        font-size: 1.5rem !important; /* Adjust font size for better fit */
+        line-height: 1.5 !important; /* Improve readability */
+        margin-bottom: 15px !important;
+		margin-top: 360px !important;
+    }
+
+    .hero-btn {
+        padding: 10px 20px !important; /* Adjust button padding */
+        width: auto !important; /* Button should auto-adjust */
+        
+    }
+
+    .hero-image {
+        text-align: center !important; /* Center-align the image */
+        margin-top: -560px !important; /* Add spacing above the image */
+    }
+
+    .hero-img {
+        width: 100% !important; /* Scale image to fit inside the screen */
+        max-width: 300px !important; /* Limit maximum width */
+        height: auto !important; /* Maintain aspect ratio */
+        margin: 0 auto !important; /* Center the image */
+    }
+}
+
+
+
 
 	</style>
 	<script src="vendor/modernizr/modernizr.min.js"></script>
@@ -693,30 +741,33 @@
 
 		<div role="main" class="main">
        <!--section-1-->
-<section class="section1" style="margin: 2px auto; padding: 15px; background-color: #000;">
-	<div class="section1-div row align-items-center" style="height: 450px;padding-left: 28px;padding: 0 20px;display: flex; justify-content: center; align-items: center;width: 1400px;margin: 2px auto;">
+
+
+<section class="hero-section" style="margin: 2px auto; padding: 15px; background-color: #000;">
+	<div class="hero-section-content row align-items-center" style="height: 450px; padding: 0 20px; display: flex; justify-content: center; align-items: center; width: 1400px; margin: 2px auto;">
 		<!-- Left Content Section -->
 		<div class="col-lg-6 hero-text text-center text-md-center text-xl-start text-lg-start">
-			<h1 class="section1-h1 display-4 fw-bold text-white" style="font-size: 48px;">
+			<h1 class="hero-title display-4 fw-bold text-white" style="font-size: 48px;">
 				Boost Your Brand’s Influence with <span style="color: #FFBF78;">BuzzBoost</span>
 			</h1>
 			
-			<p class="section1-p lead line-height-5 text-white" style="font-size: 1.5rem;letter-spacing: normal;">
+			<p class="hero-description lead line-height-5 text-white" style="font-size: 1.5rem; letter-spacing: normal;">
 				Welcome to BuzzBoost, your go-to platform for
 				connecting with top influencers across various industries
 			</p>
-			<a href="contact.html
-				class="section1-btn btn btn-modern box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5 custom-btn">
+			<a href="contact.html"
+				class="hero-btn btn btn-modern box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5 custom-btn">
 				Get In Touch 
 			</a>
 		</div>
 
 		<!-- Right Image Section -->
-		<div class="section1-img col-lg-6 hero-img d-lg-block" style="text-align: center;">
-			<img class="section1-img1" src="img/BuzzBoostImg/Home Page Header.png" alt="Hero Image" width="450px" height="400px">
+		<div class="hero-image col-lg-6 d-lg-block" style="text-align: center;">
+			<img class="hero-img" src="img/BuzzBoostImg/Home Page Header.png" alt="Hero Image" width="450px" height="400px">
 		</div>
 	</div>
 </section>
+
 
 
 		 <!-- carousel section -->
@@ -805,7 +856,64 @@
 		<!-- <img src="img/line partion.png" alt="" style="height: 10px; width: 250px;"> -->
 		 <!-- <hr style="height: 2px; width: 1450px;color:f9f9f9;" /> -->
 	</div>
-		       
+		      
+	
+	<!-- zig-zag section1 -->
+	 	<!-- Zig-Zag -->
+		 <div class="container" style="margin-top: 30px;">
+			<h2 class="text-center mt-5 mb-4" style="padding-top: 20px;font-size: 44px;font-weight: bold;">Empowering Connections, Driving Success</h2>
+			<p class="text-center mb-10" style="padding-bottom: 40px;color: #000;">Empowering Meaningful Partnerships for Mutual Growth</p>
+		
+			<!-- Agencies -->
+			<div class="row align-items-center justify-content-center mt-5">
+				<div class="col-lg-5 text-center text-lg-start order-2 order-lg-1 mt-2" style="padding-left: 25px;">
+					<p class="">Agencies</p>
+					<h3 class="mt-2 pt-2">Streamline Your Campaigns</h3>
+					<p>Discover, manage, and optimize influencer partnerships effortlessly. BuzzBoost helps agencies scale campaigns with precision and measurable success.</p>
+					<a href="agency.html" class="btn mt-2 py-3 px-xl-5 box-shadow-6 border-0 text-transform-none btn-dash ms-2 d-xl-inline-block custom-btn">Agencies</a>
+				</div>
+				<div class="col-lg-5 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-2">
+					<div class="p-absolute left-0"></div>
+					<div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
+						<img width="260" height="320" src="img/Types Of Influencers (1)/Marco Influencer (1).png" alt="" />
+					</div>
+				</div>
+			</div>
+		
+			<!-- Business -->
+			<div class="row align-items-center justify-content-center mt-5">
+				<div class="col-lg-5 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-1">
+					<div class="p-absolute right-0"></div>
+					<div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
+						<img width="280" height="320" src="img/Types Of Influencers (1)/Micro Influencer (2).png" alt="" />
+					</div>
+				</div>
+				<div class="col-lg-5 text-center text-lg-start order-2 order-lg-2 mt-2">
+					<p class="">Business</p>
+					<h3 class="mt-2 pt-2">Amplify Your Brand's Reach</h3>
+					<p>Tap into the power of authentic influencer marketing. Connect with the right creators to boost your brand awareness and drive tangible results.</p>
+					<a href="business.html" class="btn mt-2 py-3 px-xl-5 box-shadow-6 border-0 text-transform-none btn-dash ms-2 d-xl-inline-block custom-btn">Business</a>
+				</div>
+			</div>
+		
+			<!-- Influencers -->
+			<div class="row align-items-center justify-content-center mt-5" style="margin-bottom: 40px;">
+				<div class="col-lg-5 text-center text-lg-start order-2 order-lg-1 mt-2" style="padding-left: 25px;">
+					<p class="">Influencers</p>
+					<h3 class="mt-2 pt-2">Grow Your Opportunities</h3>
+					<p>Partner with top-tier brands and agencies. BuzzBoost ensures fair collaborations, timely payments, and growth in your influencer journey.</p>
+					<a href="Influencer.html" class="btn mt-2 py-3 px-xl-5 box-shadow-6 border-0 text-transform-none btn-dash ms-2 d-xl-inline-block custom-btn">Influencers</a>
+				</div>
+				<div class="col-lg-5 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-2">
+					<div class="p-absolute left-0"></div>
+					<div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
+						<img width="280" height="320" src="img/Types Of Influencers (1)/Nano Influencer (2).png" alt="" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+
 
 			<!-- Large Screen View -->
 			<div class="container" style="margin-bottom: 80px; margin-top: 50px;" id="mainContainer">
@@ -846,7 +954,7 @@
 						<div class="new-card small-screen" style="background-color: #426CC1; box-shadow: 0px 4px 15px rgba(10, 10, 10, 0.5);">
 							<div class="row p-3">
 								<div class="col-7">
-									<span class="d-block text-muted fs-5 lh-5 mb-1 custom-spacing-main" style="color: white !important;background-color:#FFA559;width: 160px;padding-left:2px ;padding-right: 2px;border-radius: 15px;font-weight: bold;padding: 5px;">Foods &amp; Drinks</span>
+									<span class="d-block text-muted fs-5 lh-5 mb-1 custom-spacing-main" style=" box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); color: white !important;background-color:#FFA559;width: 160px;padding-left:2px ;padding-right: 2px;border-radius: 15px;font-weight: bold;padding: 5px;">Foods &amp; Drinks</span>
 									<h3 class="fs-3 fs-md-4 lh-sm-1 lh-md-2 lh-5 text-center text-md-start mb-2 custom-spacing-h3" style="color: white;">
 										Savor the Moment with Influencers Who Make Every Bite Count!
 									</h3>
@@ -869,10 +977,10 @@
 						</div>
 					</div>
 					<div class="col-xl-6 col-md-12">
-						<div class="new-card" style="background-color:#FFA559; box-shadow: 0px 4px 15px rgba(10, 10, 10, 0.5);">
+						<div class="new-card" style="background-color:#FFA559; box-shadow: 0px 4px 10px rgba(10, 10, 10, 0.5);">
 							<div class="row p-3">
 								<div class="col-7">
-									<span class="d-block text-muted fs-5 lh-5 mb-1 custom-spacing-main" style="color: white !important;background-color:#426CC1;width: 80px;padding-left:2px ;padding-right: 2px;border-radius: 15px;font-weight: bold;padding: 5px;">Events</span>
+									<span class="d-block text-muted fs-5 lh-5 mb-1 custom-spacing-main" style=" box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); color: white !important;background-color:#426CC1;width: 80px;padding-left:2px ;padding-right: 2px;border-radius: 15px;font-weight: bold;padding: 5px;">Events</span>
 									<h3 class="fs-3 fs-md-4 lh-sm-1 lh-md-2 lh-5 text-center custom-spacing-h3 text-md-start mb-2 " style="color: white;">Turn
 										Every Event into an
 										Unforgettable Experience!</h3>
@@ -897,7 +1005,7 @@
 											style="width: 200px; height: 350px;"></video>
 									</div>
 								</div> -->
-								<div class="col-5" style="padding-top:15px" style="border: #426CC1 !important;border-width: 2px !important; ">
+								<div class="col-5" style="padding-top:15px" style="box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); border: #426CC1 !important;border-width: 2px !important; ">
 									<div style="width: 210px; height: 360px; padding: 5px; border-radius: 8px; box-sizing: border-box;">
 										<video style="width: 100%; height: 100%; border-radius: 8px;"
 										loading="lazy" 
@@ -915,7 +1023,7 @@
 						<div class="new-card" style="background-color: #426CC1; box-shadow: 0px 4px 15px rgba(9, 9, 9, 0.5);">
 							<div class="row p-3">
 								<div class="col-7">
-									<span class="d-block text-muted fs-5 lh-2 mb-1 custom-spacing-main" style="color: white !important;background-color:#FFA559;width: 180px;padding-left:2px ;padding-right: 2px;border-radius: 15px;font-weight: bold;padding: 5px;">Beauty & Fashion</span>
+									<span class="d-block text-muted fs-5 lh-2 mb-1 custom-spacing-main" style="box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); color: white !important;background-color:#FFA559;width: 180px;padding-left:2px ;padding-right: 2px;border-radius: 15px;font-weight: bold;padding: 5px;">Beauty & Fashion</span>
 									<h3 class="fs-3 fs-md-4 lh-sm-1 lh-md-2 lh-5 text-center text-md-start mb-2 custom-spacing-h3" style="color: white;">
 										Highlight the Trends and
 										Elevate
@@ -957,7 +1065,7 @@
 						<div class="new-card" style="background-color: #FFA559;box-shadow: 0px 4px 15px rgba(6, 6, 6, 0.5);">
 							<div class="row p-3">
 								<div class="col-7">
-									<span class="d-block text-muted fs-5 lh-2 mb-1 custom-spacing-main" style="color: white !important;background-color:#426CC1;width: 90px;padding-left:2px ;padding-right: 2px;border-radius: 15px;font-weight: bold;padding: 5px;">Lifestyle</span>
+									<span class="d-block text-muted fs-5 lh-2 mb-1 custom-spacing-main" style="box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); color: white !important;background-color:#426CC1;width: 90px;padding-left:2px ;padding-right: 2px;border-radius: 15px;font-weight: bold;padding: 5px;">Lifestyle</span>
 									<h3 class="fs-3 fs-md-4 lh-sm-1 lh-md-2 lh-5 text-center text-md-start mb-2 custom-spacing-h3" style="color: white;">Put
 										your Lifestyle brand <br> in  the spotlight!</h3>
 									<div
@@ -998,7 +1106,7 @@
 						<div class="new-card" style="background-color: #426CC1;box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);">
 							<div class="row p-3">
 								<div class="col-7">
-									<span class="d-block text-muted fs-5 lh-2 mb-1 custom-spacing-main" style="color: white !important;background-color:#FFA559;width: 80px;padding-left:2px ;padding-right: 2px;border-radius: 15px;font-weight: bold;padding: 5px;">Sports</span>
+									<span class="d-block text-muted fs-5 lh-2 mb-1 custom-spacing-main" style="box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); color: white !important;background-color:#FFA559;width: 80px;padding-left:2px ;padding-right: 2px;border-radius: 15px;font-weight: bold;padding: 5px;">Sports</span>
 									<h3 class="fs-3 fs-md-4 lh-sm-1 lh-md-2 lh-5 text-center text-md-start mb-2 custom-spacing-h3" style="color: white;">
 										Energize Your Brand with <br>
 										Athletic
@@ -1041,7 +1149,7 @@
 						<div class="new-card" style="background-color: #FFA559;box-shadow: 0px 4px 15px rgba(11, 11, 11, 0.5);">
 							<div class="row p-3">
 								<div class="col-7">
-									<span class="d-block text-muted fs-5 lh-2 mb-1 custom-spacing-main" style="color: white !important;background-color:#426CC1;width: 170px;padding-left:2px ;padding-right: 2px;border-radius: 15px;font-weight: bold;padding: 5px;">Tech Innovators</span>
+									<span class="d-block text-muted fs-5 lh-2 mb-1 custom-spacing-main" style="box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); color: white !important;background-color:#426CC1;width: 170px;padding-left:2px ;padding-right: 2px;border-radius: 15px;font-weight: bold;padding: 5px;">Tech Innovators</span>
 									<h3 class="fs-3 fs-md-4 lh-sm-1 lh-md-2 lh-5 text-center text-md-start mb-2 custom-spacing-h3 " style="color: white;">Lead
 										the Future with
 										Influencers
@@ -1224,7 +1332,7 @@
 
 
 			<!-- Other CTA -->
-			<section class="cta-section styled-section" style="width: 1200px; margin: 45px auto; background-color: #E4EDFF;">
+			<section class="cta-section styled-section" style="width: 1380px; margin: 45px auto; background-color: #E4EDFF;">
 				<div class="container">
 					<div class="row">
 						<div
@@ -1261,40 +1369,40 @@
 			
 
 			<!-- Cards Section -->
-	<div class=" section-default" style="margin-top: 20px !important;padding-top: 5px !important; padding-bottom: 5px !important;">
+	<!-- <div class=" section-default" style="margin-top: 20px !important;padding-top: 5px !important; padding-bottom: 5px !important;">
 		<h2 class="text-center mb-4 font-weight-semi-bold mt-5" style="padding-top: 10px !important;">Accelerate Your Business Growth & ROI With BuzzBoost</h2>
 		<p class="text-center mb-5 text-black">Fuel your business growth with the right influencer and 24/7 support.</p>
 		<div class="container my-4 d-flex justify-content-center">
 			
 
-			<!-- cards section -->
+		
 			<div class="three-card-section d-flex gap-4 justify-content-between flex-wrap" style="padding-bottom: 10px;margin-top: 40px;">
-				<!-- Card 1 -->
+				
 				<div class="card-section"				
-					style="background-image: url('img/HomePageCardsFinal2/Frame 119.png'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 377px; height: 233px; border-radius: 17px;">
+					style="background-image: url('img/HomePageCardsFinal2/Frame 119.png'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 377px; height: 233px; border-radius: 15px;">
 				</div>
 			
-				<!-- Card 2 -->
+				
 				<div class="card-section"				
-					style="background-image: url('img/HomePageCardsFinal2/Frame 120.png'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 377px; height: 233px; border-radius: 17px;">
+					style="background-image: url('img/HomePageCardsFinal2/Frame 120.png'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 377px; height: 233px; border-radius: 15px;">
 				</div>
 			
-				<!-- Card 3 -->
+				
 				<div class="card-section"					
-					style="background-image: url('img/HomePageCardsFinal2/Frame 121.png'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 378px; height: 233px; border-radius: 17px;">
+					style="background-image: url('img/HomePageCardsFinal2/Frame 121.png'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 378px; height: 233px; border-radius: 15px;">
 				</div>
 			</div>
 			
 		</div>
-	</div>		
+	</div>		 -->
 
-	<div style="margin: 20px 0; display: flex; justify-content: center;">
-		<!-- <img src="img/line partion.png" alt="" style="height: 10px; width: 250px;"> -->
-	</div>
+	<!-- <div style="margin: 20px 0; display: flex; justify-content: center;">
+		
+	</div> -->
 	
 	
 
-		<!-- Zig-Zag -->
+		<!-- Zig-Zag section2-->
 		<div class="container" style="margin-top: 30px;">
 			<h3 class="text-center mt-5 mb-15" style="padding-top: 20px;padding-bottom: 40px;">Find Your Next Perfect Influencer Match!</h3>
 		
@@ -1519,6 +1627,15 @@
 			</div>
 		</div>
 	</footer>
+
+	<div style="position: fixed; bottom: 30px; right: 20px; z-index: 9999; width: 55px; height: 55px;">
+		<a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+			<img src="img\whatsappiconfixed.png" 
+				 alt="WhatsApp" 
+				 style="width: 100%; height: 100%; border-radius: 50%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); cursor: pointer;" />
+		</a>
+	</div>
+	
 	</div>
 
 

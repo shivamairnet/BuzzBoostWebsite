@@ -173,91 +173,83 @@
 
 /* <!-- Mobile Media Query --> */
 
-    @media (max-width: 767px) {
-        .container {
-            padding: 0 15px !important;
-        }
-
-		.section-1h1{
-			color: white !important;
-		}
-
-        .custom-col-1 {
-            padding: 20px !important;
-            text-align: center !important;
-        }
-
-        .section-1-text {
-            font-size: 1rem !important;
-			margin-top: 225px !important;
-        }
-       
-		.button-2{
-            margin-top: 10px !important;
-			padding: 10px 20px !important;
-		}
-		.button-1{
-            margin-top: -45px !important;
-			padding: 10px 20px !important;
-		}
-
-		.section1head{
-			height: 900px !important;
-		}
-
-		.hero img {
-	  margin-top: 365px !important;
-      padding-left:0px !important ;
-      width: 100% !important; /* Ensure the image takes full width on mobile */
-      max-width: 300px !important;
-      height: 215px !important; /* Let the image scale properly */
-	  padding-right: 15px !important;
+@media (max-width: 768px) {
+    .section1head {
+        margin-top: 20px !important;
+        padding: 10px !important;
+        background: black !important;
+		height: 1200px !important;
     }
 
-	.hero{
-		right: +5% !important;
-	}
+    .section1 {
+        display: flex !important;
+        flex-direction: column !important; /* Stack content vertically */
+        width: 100% !important;
+        margin: 0 auto !important;
+        padding: 0 10px !important;
+		height: 1200px !important;
+    }
 
-    .col-xl-6 {
-      padding-left: 15px !important; /* Adjust padding for mobile */
-      padding-right: 15px !important; /* Adjust padding for mobile */
+    .section1 .row {
+        flex-direction: column !important; /* Stack rows */
+        align-items: center !important;
+        text-align: center !important; /* Center-align text and elements */
+    }
+
+    .custom-col-1 {
+        padding: 20px !important;
+        text-align: center !important; /* Center text for mobile */
+        order: 1 !important; /* Ensure this comes first */
+    }
+
+    .hero {
+        margin-top: 20px !important;
+        text-align: center !important;
+        order: 2 !important; /* Ensure this comes second */
+    }
+
+    .hero img {
+        max-width: 100% !important; /* Fit image within the screen */
+        height: 350px !important; /* Maintain aspect ratio */
+        padding: 0 !important; /* Remove extra padding */
+		margin-top: 370px !important;
+    }
+
+    .section-1h1 {
+        font-size: 44px !important;
+        line-height: 1.3 !important;
+        padding-bottom: 15px !important;
+		margin-top: 200px !important;
+    }
+
+    .section-1-text {
+        font-size: 1.5rem !important;
+        line-height: 1.5 !important;
+        padding-bottom: 15px !important;
     }
 
     .button-container {
-      display: block !important; /* Stack buttons vertically on mobile */
-      gap: 1rem !important;
-      margin-top: 30px !important;
-	  flex-direction: column !important;
-            gap: 0.5rem !important;
-            margin-top: 30px !important;
+        /* margin-top: 20px !important; */
+        flex-direction: column !important;
+        align-items: center !important;
     }
 
-	.button-section4{
-		margin-top: -40px !important;
-		padding: 10px 20px !important;
-		margin-left: 100px !important;
-		margin-right: 100px !important;
-		padding-left: 0px !important;
-		
+	.custom1-btn1{
+		margin-top: 200px !important;
+		width: 100% !important; /* Full width buttons on mobile */
+        max-width: 280px !important;
+        padding: 10px 20px !important;
 	}
 
-	.section4{
-		padding-top: 80px !important;
+	.custom1-btn2{
+		margin-top: 210px !important;
+		width: 100% !important; /* Full width buttons on mobile */
+        max-width: 280px !important;
+        padding: 10px 20px !important;
 	}
+}
 
-	.section-1{
-		height: 1000px !important;
-	}
 
-	.zig-zag{
-		margin-top: 10px !important;
-	}
-
-	.section-2{
-		margin-top: 1rem !important;
-	}
-
-    }
 
 	.zig-zag {
     margin-top: 5px !important;
@@ -305,6 +297,62 @@
 			color: #000 !important;
 		}
 
+		#whatsappButton:hover #whatsappIcon {
+        content: url('img/whatsapphover.png');
+        }
+
+
+		/* mobile query for flexible section */
+@media (max-width: 768px) {
+    .section4 {
+        max-height: 900px !important; /* Remove height restrictions */
+        padding: 20px !important; /* Add some padding */
+    }
+
+    .section4 .row {
+        flex-direction: column !important; /* Stack elements vertically */
+        align-items: flex-start !important; /* Align content to the start */
+    }
+
+    .section4 .custom-col-1 {
+        padding: 20px !important; /* Reduce padding for mobile */
+        text-align: center !important; /* Center-align text on mobile */
+    }
+
+    .section4 h3 {
+        font-size: 1.8rem !important; /* Adjust heading size */
+    }
+
+    .section4 p {
+        font-size: 1.2rem !important; /* Adjust paragraph size */
+        line-height: 1.5 !important; /* Improve readability */
+        margin-top: 365px !important;
+    }
+
+    .section4 .button-section4 {
+        width: 100% !important; /* Full-width button */
+        text-align: center !important; /* Center the button */
+        padding: 1rem !important; /* Adjust padding */
+        margin-top: 10px !important;
+    }
+
+    .section4 .hero {
+        display: flex !important; /* Ensure image is displayed */
+        justify-content: center !important; /* Center the image */
+        margin-top: 20px !important; /* Add spacing between text and image */
+    }
+
+    .section4 .hero img {
+        max-width: 100% !important; /* Responsive image */
+        padding-right: 0 !important; /* Remove padding on mobile */
+        max-height: 320px !important;
+        margin-top: 111px !important;
+        padding-left: 0px !important;
+        text-align: center !important;
+        margin-left: 20px !important;
+        margin-right: 80px !important;
+    }
+}
 
 		</style>
 	</head>
@@ -423,10 +471,10 @@
 								</p>
 								<div class="button-container" style="display: flex; gap: 1rem; margin-top: 50px; flex-wrap: wrap;">
 									<div class="text-left">
-										<a href="#" class="custom-btn btn-dash button-1 btn btn-modern btn-primary box-shadow-6 border-0 text-transform-none mt-2 py-3 px-3">Get In Touch</a>
+										<a href="contact.html" class="custom1-btn1 custom-btn btn-dash button-1 btn btn-modern btn-primary box-shadow-6 border-0 text-transform-none mt-2 py-3 px-3">Get In Touch</a>
 									</div>
 									<div class="text-left">
-										<a href="#" class="custom-btn btn-dash button-2 btn btn-modern btn-primary box-shadow-6 border-0 text-transform-none mt-2 py-3 px-3">Connect Via Whatsapp</a>
+										<a href="#" class="custom1-btn2 custom-btn btn-dash button-2 btn btn-modern btn-primary box-shadow-6 border-0 text-transform-none mt-2 py-3 px-3">Connect Via Whatsapp</a>
 									</div>
 								</div>
 							</div>
@@ -801,7 +849,7 @@
 												<div class="form-group  col-xl-7 col-lg-9 col-md-6 col-sm-12">
 													<div class="d-grid gap-2">
 														<button id="whatsappButton" class="btn btn-sm border-0 text-3-5 p-3 custom-btn" style="background-color: #426CC1;color: white;" style="font-weight: bold;">
-															<img src="img\whatsapp.png" width="20" height="20" alt="WhatsApp Icon" style="margin-right: 8px;color: #426CC1 !important;">
+															<img id="whatsappIcon" src="img\whatsapp.png" width="20" height="20" alt="WhatsApp Icon" style="margin-right: 8px;color: #426CC1 !important;">
 															Get In Touch
 														</button>
 													</div>
@@ -906,6 +954,13 @@
 					</div>
 				</div>
 			</footer>
+			<div style="position: fixed; bottom: 30px; right: 20px; z-index: 9999; width: 55px; height: 55px;">
+				<a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+					<img src="img\whatsappiconfixed.png" 
+						 alt="WhatsApp" 
+						 style="width: 100%; height: 100%; border-radius: 50%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); cursor: pointer;" />
+				</a>
+			</div>
 		</div>
 
 		<!-- Vendor -->
