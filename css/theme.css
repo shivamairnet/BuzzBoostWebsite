@@ -675,7 +675,7 @@ pre {
 	margin-right: -25px;
 	margin-top: 30px;
 	transition: opacity .2s ease-out;
-	pointer-events: none;
+	/* pointer-events: none; */
 }
 
 #header .header-nav-features .header-nav-features-dropdown:before {
@@ -3605,7 +3605,7 @@ html.sticky-header-enabled.sticky-header-active #header .header-logo-sticky-chan
 
 	#header .header-nav-main nav > ul li.dropdown.open > .dropdown-menu {
 		display: block;
-		margin-left: 20px;
+		margin-left: 0px;
 	}
 
 	#header .header-nav-main nav > ul li.dropdown-mega .dropdown-mega-sub-title {
