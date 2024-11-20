@@ -241,13 +241,85 @@
 
                 <section class="page-header page-header-modern bg-transparent">
 					<div class="container">
-						<div class="row py-2">
-							<div class="col text-center">
-								<h1 class="text-color-dark text-8 font-weight-bold">Contact Us</h1>
-							</div>
-						</div>
+						
 					</div>
 				</section>
+
+				<!-- contact form -->
+				           <!-- flexible section modal -->                   
+						   <div class="d-flex flex-wrap flex-lg-nowrap m-4 border-radius border-0 mb-5 appear-animation" 
+						   data-appear-animation="fadeIn" data-appear-animation-delay="700">
+						
+						<!-- Form Section -->
+						<div class="p-3 m-2 text-left flex-grow-1" style="flex: 0 0 50%;max-width: 50%;">
+						  <h4 class="mb-4 text-6">Let's Connect!</h4>
+						  <p class="mb-4 text-3-5">We would love to hear from you so please get in touch.</p>
+					  
+						  <form class="contact-form" action="php/contact-form.php" method="POST">
+							<!-- Success Message -->
+							<div class="contact-form-success alert alert-success d-none mt-4">
+							  <strong>Success!</strong> Your message has been sent to us.
+							</div>
+					  
+							<!-- Error Message -->
+							<div class="contact-form-error alert alert-danger d-none mt-4">
+							  <strong>Error!</strong> There was an error sending your message.
+							  <span class="mail-error-message text-1 d-block"></span>
+							</div>
+					  
+							<!-- Input Fields -->
+							<div class="row">
+							  <div class="form-group col-md-6 text-start">
+								<input type="text" placeholder="First Name *" maxlength="100" class="form-control text-2-5 p-3" name="firstname" required>
+							  </div>
+							  <div class="form-group col-md-6 text-start">
+								<input type="text" placeholder="Last Name *" maxlength="100" class="form-control text-2-5 p-3" name="lastname" required>
+							  </div>
+							</div>
+					  
+							<div class="row">
+							  <div class="form-group col-md-6 text-start">
+								<input type="email" placeholder="Email*" maxlength="100" class="form-control text-2-5 p-3" name="email" required>
+							  </div>
+							  <div class="form-group col-md-6 text-start">
+								<input type="text" placeholder="Phone Number *" maxlength="100" class="form-control text-2-5 p-3" name="phone" required>
+							  </div>
+							</div>
+					  
+							<div class="row">
+							  <div class="form-group col-md-6 text-start">
+								<input type="text" placeholder="Country*" maxlength="100" class="form-control text-2-5 p-3" name="country" required>
+							  </div>
+							  <div class="form-group col-md-6 text-start">
+								<input type="text" placeholder="Subject*" maxlength="100" class="form-control text-2-5 p-3" name="subject" required>
+							  </div>
+							</div>
+					  
+							<div class="row">
+							  <div class="form-group col-md-12 text-start">
+								<input type="text" placeholder="Additional Details" maxlength="100" class="form-control text-2-5 p-3" name="additional_details">
+							  </div>
+							</div>
+					  
+							<!-- Submit Button -->
+							<div class="text-center mt-4">
+							  <button type="submit" class="btn btn-modern box-shadow-6 border-0 text-transform-none btn-dash py-3 px-5 custom-btn">
+								Let's Talk
+							  </button>
+							</div>
+						  </form>
+						</div>
+					  
+						<!-- Grid Section -->
+						<div class="d-flex flex-wrap gap-2 justify-content-center align-items-start" style="max-width: 500px;">
+						  <img src="img/contact and aboutus page/Contact Us Page Image 2 (1).png" alt="Image 1" class="rounded" style="width: 180px; height: 220px;">
+						  <img src="img/contact and aboutus page/Contact Us Page Image (1).png" alt="Image 2" class="rounded" style="width: 180px; height: 220px;">
+						  <img src="img/contact and aboutus page/Contact Us Page Image 3 (1).png" alt="Image 3" class="rounded" style="width: 180px; height: 220px;">
+						  <img src="img/contact and aboutus page/Contact Us Page Image 4.png" alt="Image 4" class="rounded" style="width: 180px; height: 220px;">
+						</div>
+					  </div>
+					  
+				
 
 	    <!-- section form -->
 		<section class="section m-0 border-0">

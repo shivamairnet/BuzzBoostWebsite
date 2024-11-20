@@ -625,7 +625,457 @@
     }
 }
 
+/* responsiveness gitcode */
+* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
 
+		@media(min-width:1600px) {
+			.custom-top-margin {
+				margin-top: 200px;
+			}
+		}
+
+
+
+		.card-new {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-size: cover;
+			background-position: center;
+			height: 600px;
+			/* Set a fixed height for the cards */
+			/* color: white; */
+		}
+
+		.new-card {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 412px;
+			border-radius: 20px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+			margin: 10px 0;
+			opacity: 1 !important;
+			visibility: visible;
+			display: block;
+
+
+		}
+
+		.new-row {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+			position: sticky;
+			top: 100px;
+			/* Start sticking here */
+
+			/* transition: transform 0.2s; */
+			/* Smooth transition */
+			z-index: 1;
+
+		}
+
+		.card h5 {
+			margin-top: 10px;
+			/* Add some spacing at the top of the heading */
+		}
+
+		.card h6 {
+			margin-bottom: 10px;
+			/* Add some spacing at the bottom of the subheading */
+		}
+
+
+
+		.container-custom {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			/* padding: 40px; */
+			position: relative;
+
+			/* Adds spacing on the sides */
+			/* Optional: Centers vertically if needed */
+		}
+
+		.card-custom {
+
+			width: 80vw;
+			max-width: 700px;
+			height: 400px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+			margin: 50px 0;
+			position: sticky;
+			top: 100px;
+			/* Start sticking here */
+			border-radius: 20px;
+			box-shadow: 0 4px 8px rgba(70, 44, 193, 0.2);
+
+			transition: transform 0.2s;
+			/* Smooth transition */
+			z-index: 1;
+
+
+
+			/* Ensure card is on top */
+		}
+
+		
+		@media (max-width: 767px) {
+			.card-custom {
+				height:550px;
+			}
+		}
+
+		
+		@media (max-width: 425px) {
+			.card-custom {
+				height: 600px;
+			}
+		}
+
+		@media(max-width: 374px){
+			.card-custom{
+				height: 630px;
+			}
+		}
+
+		#card1 {
+			--index: 1;
+		}
+
+		#card2 {
+			--index: 2;
+		}
+
+		#card3 {
+			--index: 3;
+		}
+
+		#card4 {
+			--index: 4;
+		}
+
+		#card5 {
+			--index: 5;
+		}
+
+		#card6 {
+			--index: 6;
+		}
+
+		#card7 {
+			--index: 7;
+		}
+
+
+		.hero-section {
+			min-height: 100vh;
+			display: flex;
+			align-items: center;
+			padding: 2rem 1rem;
+		}
+
+		.hero-text {
+			max-width: 1000px;
+		}
+
+	
+
+
+
+		@media (max-width:2600px) {
+			.custom-ustom-card {
+				height: 86vh;
+			}
+
+			.new-width {
+				width: 270px;
+			}
+		}
+
+
+
+		@media(min-width:1025px) {
+			.custom-margin {
+				margin-top: 400px;
+			}
+
+		}
+
+		
+
+		.rounded-image {
+			
+			max-width: 100%;
+			
+			/* Ensures the image doesn't exceed the container width */
+			height: 110px;
+			/* Maintains the image aspect ratio */
+			border-radius: 10%;
+			/* Rounds the image */
+			object-fit: cover;
+			/* Ensures image content is properly scaled within the rounded shape */
+		}
+
+		.custom-spacing-main{
+			margin-top: 1rem;
+		}
+
+		.custom-spacing-h3{
+			margin-top: 1.5rem;
+		}
+
+		.custom-spacing-p{
+			margin-top: 1rem;
+		}
+
+		@media (max-width:2600px) {
+			.custom-ustom-card {
+				height: 86vh;
+			}
+
+			.new-width {
+				width: 270px;
+			}
+		}
+
+
+
+		@media (max-width: 1536px) {
+			.custom-custom-card {
+				height: 74vh;
+				/* Further reduce height on extra small screens */
+			}
+		}
+
+		@media (max-width: 1440px) {
+			.custom-custom-card {
+				height: 85vh;
+				/* Further reduce height on extra small screens */
+			}
+		}
+
+		@media (max-width: 1024px) {
+			.custom-custom-card {
+				height: 85vh;
+				/* Further reduce height on extra small screens */
+			}
+		}
+
+		@media (max-width: 768px) {
+			.custom-custom-card {
+				height: 85vh;
+				/* Further reduce height on extra small screens */
+			}
+		}
+
+		@media(max-width:425px) {
+			.custom-custom-card {
+				height: 85vh;
+				/* Further reduce height on extra small screens */
+			}
+
+			.new-width {
+				width: 300px;
+			}
+		}
+
+
+		@media (max-width: 375px) {
+			.custom-custom-card {
+				height: 90vh;
+				/* Further reduce height on extra small screens */
+			}
+
+			.new-width {
+				width: 290px;
+			}
+		}
+
+		@media(min-width:1025px) {
+			.custom-margin {
+				margin-top: 400px;
+			}
+
+		}
+
+		.custom-btn:hover {
+			background-color: #426CC1;
+			color: #fff;
+			
+		}
+
+		#whatsappButton:hover .whatsapp-icon {
+    content: url("img/BuzzBoostImg/whatsapp (1).png") !important; /* Replace with your hover image path */
+}
+
+
+		.custom-btn {
+			background-color: #FFBF78;
+			color: #000;
+		}
+
+
+		/* Media query for screens smaller than 768px (mobile devices) */
+@media (max-width: 767px) {
+    .hero-section .row {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    /* .hero-text {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .hero-img {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .hero-img img {
+        width: 100%;
+        height: auto;
+    } */
+
+    /* .custom-btn {
+        width: 100%;
+    } */
+}
+@media(max-width :768px)
+{
+	.three-card-section{
+		margin-top: 35px !important;
+	}
+}
+
+
+/* .card-section:hover {
+ box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+} */
+
+/* mobile footer */
+
+@media (max-width: 767px) {
+    #footer .container {
+        padding-top: 2rem;
+        padding-bottom: 1.5rem;
+    }
+
+    #footer .col-lg-4, #footer .col-lg-8 {
+        text-align: center;
+    }
+
+    #footer .col-lg-8 {
+        margin-top: 1.5rem;
+    }
+
+    #footer h4 {
+        font-size: 1.2rem;
+    }
+
+    #footer .social-icons {
+        justify-content: center;
+        padding: 0;
+        margin: 1rem 0;
+    }
+
+    #footer .social-icons li {
+        margin: 0 5px;
+    }
+
+    #footer .list {
+        text-align: center;
+        padding: 0;
+    }
+
+    #footer .footer-copyright hr {
+        width: 80%;
+        margin: 1.5rem auto;
+    }
+
+    #footer .text-3 {
+        font-size: 0.9rem;
+    }
+
+    #footer .Ascentia {
+        margin: 0 auto;
+        display: block;
+        width: 150px;
+        height: auto;
+    }
+
+}
+
+/* media query for cta section */
+@media (max-width: 767px) {
+    .cta-section.styled-section {
+        width: 90% !important;
+        margin: 40px auto !important;
+        padding: 20px !important;
+    }
+
+    .cta-section .container {
+        padding: 0 !important;
+    }
+
+    .cta-section .row {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    .cta-section .col-xl-7, .cta-section .col-xl-5 {
+        order: unset !important;
+        margin: 0 auto !important;
+    }
+
+    .cta-section .col-xl-7 .text-3 {
+        order: 1 !important;
+    }
+
+    .cta-section .col-xl-7 h3 {
+        order: 2 !important;
+        font-size: 1.5rem !important;
+        line-height: 1.3 !important;
+    }
+
+    .cta-section .col-xl-7 p {
+        order: 3 !important;
+        font-size: 1rem !important;
+        line-height: 1.5 !important;
+        margin-bottom: 15px !important;
+    }
+
+    .cta-section .col-xl-5 img {
+        order: 4 !important;
+        width: 80% !important;
+        height: auto !important;
+        max-width: 250px !important;
+        margin-top: 15px !important;
+    }
+
+    .cta-section .col-xl-7 .industry-button {
+        order: 5 !important;
+        padding: 10px 20px !important;
+        font-size: 1rem !important;
+        width: 100% !important;
+        margin-top: 15px !important;
+    }
+}
 
 
 	</style>
@@ -766,45 +1216,7 @@
 					</div>
 				</div>
 			</section>
-
-        <!-- section-1 cta -->
-		<section class="cta-section styled-section" style="width: 1420px; margin: 45px auto; background-color: #E4EDFF;">
-			<div class="container">
-				<div class="row">
-					<div
-						class="col-xl-7 col-lg-7 col-md-12 col-sm-12 order-xl-1 order-lg-1 order-2 order-md-2 d-flex flex-column justify-content-center">
-						<div class="row custom-border text-md-center text-lg-start text-xl-start text-center">
-							<div class="col-12">
-								<h3 class="text-6 line-height-2">Empowering Connections, Driving Success</h3>
-							</div>
-							<div class="col-12">
-								<p class="text-left text-4 line-height-8">Empower Meaningful Partnerships for Mutual Growth Between Brands & Influencers!
-								</p>
-							</div>
-							<div class="flex col-12 industry-button">
-								<a href="agency.html"
-									class="btn mt-2 py-3 px-3 box-shadow-6 border-0 text-transform-none btn-dash ms-2 d-xl-inline-block custom-btn">
-									For Agencies
-							</a>
-								<a href="business.html"
-									class="btn mt-2 py-3 px-3 box-shadow-6 border-0 text-transform-none btn-dash ms-2 d-xl-inline-block custom-btn">
-									For Business
-							 </a>
-								<a href="Influencer.html"
-									class="btn mt-2 py-3 px-3 box-shadow-6 border-0 text-transform-none btn-dash ms-2 d-xl-inline-block custom-btn">
-									For Influencers
-							</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 order-xl-2 order-lg-2 order-md-1 order-1 ms-1 ms-xl-0 ms-lg-0 ms-md-0"
-						style="display: flex; align-items: center; justify-content: center;">
-						<img src="img\HomePageCardsfinal\Home Page CTA Section.png" width="350px" height="350px" />
-					</div>
-				</div>
-			</div>
-		</section>
-		
+	
 
 		 <!-- carousel section -->
 		 <div class="container" style="padding: 10px;padding-top: 45px;padding-bottom: 45px;">
@@ -886,6 +1298,44 @@
 				</div>
 			</div>
 		</div>
+
+		  <!-- section-1 cta -->
+		  <section class="cta-section styled-section" style="width: 1420px; margin: 45px auto; background-color: #E4EDFF;">
+			<div class="container">
+				<div class="row">
+					<div
+						class="col-xl-7 col-lg-7 col-md-12 col-sm-12 order-xl-1 order-lg-1 order-2 order-md-2 d-flex flex-column justify-content-center">
+						<div class="row custom-border text-md-center text-lg-start text-xl-start text-center">
+							<div class="col-12">
+								<h3 class="text-6 line-height-2">Empowering Connections, Driving Success</h3>
+							</div>
+							<div class="col-12">
+								<p class="text-left text-4 line-height-8">Empower Meaningful Partnerships for Mutual Growth Between Brands & Influencers!
+								</p>
+							</div>
+							<div class="flex col-12 industry-button">
+								<a href="agency.html"
+									class="btn mt-2 py-3 px-3 box-shadow-6 border-0 text-transform-none btn-dash ms-2 d-xl-inline-block custom-btn">
+									For Agencies
+							</a>
+								<a href="business.html"
+									class="btn mt-2 py-3 px-3 box-shadow-6 border-0 text-transform-none btn-dash ms-2 d-xl-inline-block custom-btn">
+									For Business
+							 </a>
+								<a href="Influencer.html"
+									class="btn mt-2 py-3 px-3 box-shadow-6 border-0 text-transform-none btn-dash ms-2 d-xl-inline-block custom-btn">
+									For Influencers
+							</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 order-xl-2 order-lg-2 order-md-1 order-1 ms-1 ms-xl-0 ms-lg-0 ms-md-0"
+						style="display: flex; align-items: center; justify-content: center;">
+						<img src="img\HomePageCardsfinal\Home Page CTA Section.png" width="378px" height="290px" />
+					</div>
+				</div>
+			</div>
+		</section>
 
 			<!-- Large Screen View -->
 			<div id="industries-section" class="container" style="margin-bottom: 80px; margin-top: 50px;" id="mainContainer">
@@ -1268,9 +1718,8 @@
 							<h3 class="text-6 line-height-2" style=" padding-left:5px;padding-right: 5px;padding-top: 5px;">Lead the Future with Influencers
 								Who Love Innovation!
 							</h3>
-							<p class="text-left text-3 line-height-3" style="padding-left: 10px;padding-right: 10px;">Our tech innovators engage
-								audiences who are eager for the latest advancements, making them ideal ambassadors for
-								brands looking to showcase cutting-edge products and ideas.
+							<p class="text-left text-3 line-height-3" style="padding-left: 10px;padding-right: 10px;">Our tech innovators captivate audiences eager for innovation, making them perfect ambassadors for cutting-edge brands.
+							
 							</p>
 						</div>
 						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-2 order-lg-1 order-md-1 order-1">
