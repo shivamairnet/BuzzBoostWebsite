@@ -132,30 +132,30 @@
 
     /* media query for the mobile for  */
 
-	.section-2main {
+	/* .section-2main {
 		display: flex !important;
 	}
 
     .section-2 h3 {
 		display: flex !important;
-        font-size: 1.25rem !important; /* Adjust font size as needed */
+        font-size: 1.25rem !important; 
     }
 
     .section-2 h2 {
-        font-size: 1.5rem !important; /* Adjust font size as needed */
+        font-size: 1.5rem !important; 
         font-weight: bold !important;
     }
 
     .image-section2 img {
-        width: 100% !important; /* Make the image responsive */
+        width: 100% !important;
         height: auto !important;
 		margin-top: 25rem !important;
     }
 
     .section-2 p {
-        font-size: 1rem !important; /* Adjust font size as needed */
+        font-size: 1rem !important; 
         margin-top: 28rem !important;
-    }
+    } */
 }
 
 .custom-btn:hover {
@@ -183,7 +183,6 @@
 }
 
 /* <!-- Mobile Media Query --> */
-
     @media (max-width: 767px) {
         .container {
             padding: 0 15px !important;
@@ -264,10 +263,26 @@
 
 /* mobile responsive for scroll section */
 
-	
-
     }
 
+	/* mobile -large screen toggle */
+	@media(max-width:768px){
+
+		.section-2large-screen{
+			display: none !important;
+		}
+
+		.section-2mobile-screen{
+			max-height: 3400px !important;
+		}
+	}
+
+	@media(min-width:769px){
+		.section-2mobile-screen{
+			display: none !important;
+		}
+
+	}
 
 		</style>
 	</head>
@@ -409,7 +424,8 @@
 
 		    
 			<!-- section-2 -->
-			<div class="section-2 container pt-4 pb-5 mb-5">
+			 <!-- for large screen -->
+			<div class="section-2large-screen container pt-4 pb-5 mb-5">
 				<div class="row justify-content-center">
 				  <div class="col">
 					<div id="first">
@@ -425,7 +441,7 @@
 			  
 						<!-- Sticky Section -->
 						<div
-						  style="position: relative; height: 100vh; overflow: hidden; display: flex;padding-left: 20px;padding-right: 20px;"
+						  style="position: relative; height: 100vh; overflow: hidden; display: flex;padding-left: 20px;padding-right: 20px;margin-top: 20px;"
 						>
 						  <!-- Fixed Image -->
 						  <div
@@ -449,7 +465,7 @@
 							  data-image="img/Influencer Page and about us page/Monetise Your Reach (2)_1_11zon.png"
 							  style="margin-top: 35vh;"
 							>
-							  <h2>Monetise Your Reach</h2>
+							  <h2 class="font-weight-bold">Monetise Your Reach</h2>
 							  <p>
 								Turn your followers into a revenue stream! With BuzzBoost, you can earn from every campaign you take on, making the most out of your audience engagement. We connect you with top brands looking for influencers just like you, so you can monetize your unique voice and reach. 
 							  </p>
@@ -460,7 +476,7 @@
 							  data-image="img/Influencer Page and about us page/Enhance Your Business Portfolio (2).png"
 							  style="margin-top: 35vh;"
 							>
-							  <h2>Enhance Your Business Portfolio</h2>
+							  <h2 class="font-weight-bold">Enhance Your Business Portfolio</h2>
 							  <p>
 								BuzzBoost offers you a personalized portfolio space so that you can showcase your work, past partnerships, and success stories with different brands. Impress your potential clients and build a professional presence that makes brands take notice of your work.
 							  </p>
@@ -471,7 +487,7 @@
 							  data-image="img/Influencer Page and about us page/Work with Higher Reach Influencers (3).png"
 							  style="margin-top: 35vh;"
 							>
-							  <h2>Work with Higher Reach Influencers</h2>
+							  <h2 class="font-weight-bold">Work with Higher Reach Influencers</h2>
 							  <p>
 								With BuzzBoost, you can join a community of influencers with diverse audience followings and facilitate collaborations with influencers who have substantial reach, helping you expand your own follower base, increase your visibility, and achieve exponential growth. 
 							  </p>
@@ -482,7 +498,7 @@
 							  data-image="img/Influencer Page and about us page/Get Featured on Our Advertisements (2).png"
 							  style="margin-top: 35vh;"
 							>
-							  <h2>Get Featured on Our Advertisements</h2>
+							  <h2 class="font-weight-bold">Get Featured on Our Advertisements</h2>
 							  <p>
 								Stand out and get recognized! When you work with BuzzBoost, you have the chance to be in the spotlight in our promotional content. Being featured in our advertisements not only boosts your credibility but also increases your visibility across our wide network of brands and potential followers.
 							  </p>
@@ -493,7 +509,7 @@
 							data-image="img\Influencer Page and about us page\Get Your Own Management Team.png"
 							style="margin-top: 35vh;"
 						  >
-							<h2>Get Your Own Management Team</h2>
+							<h2 class="font-weight-bold">Get Your Own Management Team</h2>
 							<p>
 								With BuzzBoost, you’re not alone. Our dedicated management team is always there to support you, offering guidance, negotiating contracts, and helping you make the right moves in your influencer journey.						  
 							  
@@ -539,6 +555,82 @@
 				  </div>
 				</div>
 			  </div>
+
+			  <!-- for small screen -->
+			  <div class="section-2mobile-screen container pt-4 pb-5 mb-5">
+				<div class="row justify-content-center">
+				  <div class="col">
+					<div id="first">
+					  <div class="section-2main row align-items-center justify-content-around mt-0 mb-5" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+						<h2 class="text-center mt-3" style="font-weight: bold; font-size: 2.4em; text-align: center;">
+						  Transform Your Reach Into Profits With Strategic Partnerships
+						</h2>
+			  
+						<!-- First Point Block -->
+						<div class="point-block" style="margin-top: 20px;">
+						  <img src="img/Influencer Page and about us page/Monetise Your Reach (2)_1_11zon.png" alt="Monetise Your Reach" style="width: 100%; height: auto; margin-bottom: 20px;" />
+						  <div class="point-text">
+							<h2 style="font-weight: bold;">Monetise Your Reach</h2>
+							<p>
+							  Turn your followers into a revenue stream! With BuzzBoost, you can earn from every campaign you take on...
+							</p>
+						  </div>
+						</div>
+			  
+						<!-- Second Point Block -->
+						<div class="point-block" style="margin-top: 20px;">
+						  <img src="img/Influencer Page and about us page/Enhance Your Business Portfolio (2).png" alt="Enhance Your Business Portfolio" style="width: 100%; height: auto; margin-bottom: 20px;" />
+						  <div class="point-text">
+							<h2 style="font-weight: bold;">Enhance Your Business Portfolio</h2>
+							<p>
+							  BuzzBoost offers you a personalized portfolio space so that you can showcase your work, past partnerships...
+							</p>
+						  </div>
+						</div>
+			  
+						<!-- Third Point Block -->
+						<div class="point-block" style="margin-top: 20px;">
+						  <img src="img/Influencer Page and about us page/Work with Higher Reach Influencers (3).png" alt="Work with Higher Reach Influencers" style="width: 100%; height: auto; margin-bottom: 20px;" />
+						  <div class="point-text">
+							<h2 style="font-weight: bold;">Work with Higher Reach Influencers</h2>
+							<p>
+							  With BuzzBoost, you can join a community of influencers with diverse audience followings and collaborate...
+							</p>
+						  </div>
+						</div>
+			  
+						<!-- Fourth Point Block -->
+						<div class="point-block" style="margin-top: 20px;">
+						  <img src="img/Influencer Page and about us page/Get Featured on Our Advertisements (2).png" alt="Get Featured on Our Advertisements" style="width: 100%; height: auto; margin-bottom: 20px;" />
+						  <div class="point-text">
+							<h2 style="font-weight: bold;">Get Featured on Our Advertisements</h2>
+							<p>
+							  Stand out and get recognized! When you work with BuzzBoost, you have the chance to be in the spotlight...
+							</p>
+						  </div>
+						</div>
+			  
+						<!-- Fifth Point Block -->
+						<div class="point-block" style="margin-top: 20px;">
+						  <img src="img/Influencer Page and about us page/Get Your Own Management Team.png" alt="Get Your Own Management Team" style="width: 100%; height: auto; margin-bottom: 20px;" />
+						  <div class="point-text">
+							<h2 style="font-weight: bold;">Get Your Own Management Team</h2>
+							<p>
+							  With BuzzBoost, you’re not alone. Our dedicated management team is always there to support you, offering...
+							</p>
+						  </div>
+						</div>
+			  
+					  </div>
+					</div>
+			  
+					<div class="pt-1">
+					  <hr class="my-1" />
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  
 			  
 					
                    <!-- section 3 -->
