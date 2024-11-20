@@ -117,22 +117,21 @@ body {
 
 
 /* Dropdown styling */
-/* Wrapper for dropdown and custom arrow */
-.dropdown-container {
+
+/* .dropdown-container {
     position: relative;
     display: inline-block;
     width: 100%;
 }
 
-/* Dropdown styling */
+
 .dropdown-container select {
-    appearance: none; /* Remove default arrow */
+    appearance: none; 
     width: 100%;
-    padding-right: 2rem; /* Space for custom arrow */
+    padding-right: 2rem; 
     font-size: 1rem;
 }
 
-/* Custom arrow styling */
 .arrow-icon {
     position: absolute;
     right: 1rem;
@@ -140,11 +139,10 @@ body {
     transform: translateY(-50%);
     font-size: 1rem;
     color: #000;
-    pointer-events: none; /* Makes sure arrow doesn’t interfere with dropdown click */
+    pointer-events: none; 
 }
 
-/* Rotate arrow when dropdown is open (with focus) */
 .dropdown-container select:focus + .arrow-icon {
-    transform: translateY(-50%) rotate(180deg); /* Rotate on open */
-}
+    transform: translateY(-50%) rotate(180deg); 
+} */
 

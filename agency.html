@@ -164,16 +164,6 @@
 }
 
 
-
-/* Default Styles */
-.carousel-inner .mobile-view {
-    display: none !important; /* Hidden by default */
-}
-
-.carousel-inner .large-screen-view {
-    display: block !important; /* Shown by default */
-}
-
 /* Mobile Layout */
 @media (max-width: 768px) {
     .carousel-inner .mobile-view {
@@ -288,14 +278,14 @@
     .section1-h1 {
         font-size: 36px !important; /* Adjust heading size for mobile */
         font-weight: bold !important;
-        margin-top: -100px !important;
+        margin-top: -250px !important;
     }
 
     .section1-p {
         font-size: 1.5rem !important; /* Adjust paragraph size */
         line-height: 1.5 !important; /* Improve readability */
         margin-bottom: 15px !important; /* Add spacing below paragraph */
-        margin-top: 320px !important;
+        margin-top: 335px !important;
     }
 
     .section1-btnnew {
@@ -308,15 +298,16 @@
     .section1-img {
         text-align: center !important; /* Center-align the image */
         margin-top: -370px !important; /* Add spacing above image */
-        margin-bottom: 20px !important;
+        margin-bottom: 40px !important;
 
     }
 
     .section1-img1 {
-        width: 90% !important; /* Scale image to fit inside screen */
+        width: 100% !important; /* Scale image to fit inside screen */
         max-width: 300px !important; /* Limit maximum width */
-        height: 335px !important; /* Maintain aspect ratio */
-        margin-top: -110px !important;
+        height: 290px !important; /* Maintain aspect ratio */
+        margin-top: -125px !important;
+        margin-bottom: 20px !important;
     }
 
     .section1-btn{
@@ -474,7 +465,7 @@
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <!-- <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
                     </div>
         
                     <!-- Carousel Items -->
@@ -497,12 +488,22 @@
                                         <img src="img/Agency Page Images/iloveimg-compressed (1)/Frame 91.png" class="card-img-top" alt="Image 3" style="height:'388px'; width:'380px'">
                                     </div>
                                 </div>
+                                <div class="col-md-2" style="margin: 0 20px;">
+                                    <div class="card">
+                                        <img src="img/Agency Page Images/iloveimg-compressed (1)/Frame 97.png" class="card-img-top" alt="Image 4" style="height:'388px'; width:'380px'">
+                                    </div>
+                                </div>
+                                <div class="col-md-2" style="margin: 0 20px;">
+                                    <div class="card">
+                                        <img src="img/Agency Page Images/iloveimg-compressed (1)/Frame 98.png" class="card-img-top" alt="Image 5" style="height:'388px'; width:'380px'">
+                                    </div>
+                                </div>
                          
                             </div>
                         </div>
                         
                         <!-- Slide 2 -->
-                        <div class="carousel-item large-screen-view">
+                        <!-- <div class="carousel-item large-screen-view">
                             <div class="row justify-content-center">
                                 <div class="col-md-2" style="margin: 0 20px;">
                                     <div class="card">
@@ -516,7 +517,7 @@
                                 </div>
                                 
                             </div>
-                        </div>
+                        </div> -->
         
                         <!-- Additional Slides -->
                     </div>
@@ -907,65 +908,70 @@ document.getElementById('industry-select').addEventListener('change', function()
 </script>
 
         <!-- section-5-zig-zag -->
-	 <div class="container" style="margin-top: 48px;">
-		<h3 class="text-center mt-5 mb-15" style="padding-top: 40px;padding-bottom: 40px;font-weight: bold !important;font-size: 44px;">Find Your Next Perfect Influencer Match!</h3>
-	
-		<!-- Mega Influencers -->
-		<div class="row align-items-center justify-content-center mt-5">
-			<div class="col-lg-5 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-1">
-				<div class="p-absolute right-0"></div>
-				<div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
-					<img width="260" height="320" src="img/Types Of Influencers (1)/Mega Influencer (2).png" alt="" />
+        <div class="container" style="margin-top: 48px;">
+			<h3 class="text-center mt-5 mb-15" style="padding-top: 40px;padding-bottom: 40px;font-size: 36px;font-weight: bold !important;">Find Your Next Perfect Influencer Match!</h3>
+		
+			<!-- Mega Influencers -->
+			<div class="row align-items-center justify-content-center mt-5">
+				<div class="col-lg-5 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-1">
+					<div class="p-absolute right-0"></div>
+					<div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
+						<img width="353" height="465" src="img/Types Of Influencers (1)/Mega Influencer (2).png" alt="" />
+					</div>
+				</div>
+				<div class="col-lg-5 text-center text-lg-start order-2 order-lg-2 mt-2">
+					<h3 class="mt-2 pt-2" style="font-size: 36px;font-weight: bold;">Mega Influencers</h3>
+					<p class="" style="font-size: 23px;font-weight: bold;color: #FFBF78;">Reach Millions, And Go Viral!</p>
+					<p>Mega influencers are the celebrities of the social media world, commanding millions of followers across platforms. Whether launching a new product or amplifying brand awareness, these influencers ensure your message reaches a massive audience with unmatched impact.</p>
 				</div>
 			</div>
-			<div class="col-lg-5 text-center text-lg-start order-2 order-lg-2 mt-2">
-				<h3 class="mt-2 pt-2" style="font-weight: bold;font-size: 36px;">Mega Influencers</h3>
-				<p>Reach millions and go viral! Ideal for brands and businesses who are looking for large-scale campaigns, providing maximum exposure to your brand & business.</p>
+		
+			<!-- Macro Influencers -->
+			<div class="row align-items-center justify-content-center mt-5">
+				<div class="col-lg-5 text-center text-lg-start order-2 order-lg-1 mt-2" style="padding-left: 25px;">
+					<h3 class="mt-2 pt-2" style="font-size: 36px;font-weight: bold;">Macro Influencers</h3>
+					<p class="" style="font-size: 23px;font-weight: bold;color: #426CC1;">Powerhouse of Engagement And Reach!</p>
+					
+					<p>With hundreds of thousands of followers, macro influencers blend significant reach with strong audience trust. Macro influencers are perfect for campaigns that require a balance of visibility and engagement, making them ideal for mid to large-scale brands looking to connect with audiences beyond local markets while retaining a personal touch.</p>
+				</div>
+				<div class="col-lg-5 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-2">
+					<div class="p-absolute left-0"></div>
+					<div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
+						<img width="353" height="465" src="img/Types Of Influencers (1)/Marco Influencer (1).png" alt="" />
+					</div>
+				</div>
 			</div>
-		</div>
-	
-		<!-- Macro Influencers -->
-		<div class="row align-items-center justify-content-center mt-5">
-			<div class="col-lg-5 text-center text-lg-start order-2 order-lg-1 mt-2" style="padding-left: 25px;">
-				<h3 class="mt-2 pt-2" style="font-weight: bold;font-size: 36px;">Macro Influencers</h3>
-				<p>With hundreds of thousands of followers, macro influencers offer impactful engagement with strong visibility, making them perfect for connecting with a wider audience.</p>
+		
+			<!-- Micro Influencers -->
+			<div class="row align-items-center justify-content-center mt-5">
+				<div class="col-lg-5 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-1">
+					<div class="p-absolute right-0"></div>
+					<div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
+						<img width="353" height="460" src="img/Types Of Influencers (1)/Micro Influencer (2).png" alt="" />
+					</div>
+				</div>
+				<div class="col-lg-5 text-center text-lg-start order-2 order-lg-2 mt-2">
+					<h3 class="mt-2 pt-2" style="font-size: 36px;font-weight: bold;">Micro Influencers</h3>
+					<p class="" style="font-size: 23px;font-weight: bold;color: #FFBF78;">Authenticity That Resonates!</p>
+					<p>Micro influencers may have tens of thousands of followers, but their real strength lies in the quality of their engagement. Their audiences often view them as relatable and trustworthy, valuing their opinions and recommendations. These influencers are perfect for brands focusing on building deep, meaningful connections with specific communities. </p>
+				</div>
 			</div>
-			<div class="col-lg-5 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-2">
-				<div class="p-absolute left-0"></div>
-				<div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
-					<img width="260" height="320" src="img/Types Of Influencers (1)/Marco Influencer (1).png" alt="" />
+		
+			<!-- Nano Influencers -->
+			<div class="row align-items-center justify-content-center mt-5" style="margin-bottom: 40px;">
+				<div class="col-lg-5 text-center text-lg-start order-2 order-lg-1 mt-2" style="padding-left: 25px;">
+					<h3 class="mt-2 pt-2" style="font-size: 36px;font-weight: bold;">Nano Influencers</h3>
+					<p class="" style="font-size: 23px;font-weight: bold;color: #426CC1;">Big Impact In Small Communities!</p>
+					<p>Nano influencers may have a smaller following, typically ranging from a few hundred to a few thousand, but their engagement rates are often the highest. These are everyday individuals with a strong influence in their local or niche circles. Ideal for businesses aiming to connect with hyper-specific audiences and establish a personal rapport.</p>
+				</div>
+				<div class="col-lg-5 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-2">
+					<div class="p-absolute left-0"></div>
+					<div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
+						<img width="353" height="460" src="img/Types Of Influencers (1)/Nano Influencer (2).png" alt="" />
+					</div>
 				</div>
 			</div>
 		</div>
-	
-		<!-- Micro Influencers -->
-		<div class="row align-items-center justify-content-center mt-5">
-			<div class="col-lg-5 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-1">
-				<div class="p-absolute right-0"></div>
-				<div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
-					<img width="280" height="320" src="img/Types Of Influencers (1)/Micro Influencer (2).png" alt="" />
-				</div>
-			</div>
-			<div class="col-lg-5 text-center text-lg-start order-2 order-lg-2 mt-2">
-				<h3 class="mt-2 pt-2" style="font-weight: bold;font-size: 36px;">Micro Influencers</h3>
-				<p>Foster deeper connections with loyal followers. Micro influencers have tens of thousands of engaged fans, delivering authentic recommendations and building brand trust.</p>
-			</div>
-		</div>
-	
-		<!-- Nano Influencers -->
-		<div class="row align-items-center justify-content-center mt-5" style="margin-bottom: 40px;">
-			<div class="col-lg-5 text-center text-lg-start order-2 order-lg-1 mt-2" style="padding-left: 25px;">
-				<h3 class="mt-2 pt-2" style="font-weight: bold;font-size: 36px;">Nano Influencers</h3>
-				<p>Engage niche audiences with high loyalty. Nano influencers boast a small but highly engaged following, perfect for targeted campaigns and personal connections.</p>
-			</div>
-			<div class="col-lg-5 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-2">
-				<div class="p-absolute left-0"></div>
-				<div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
-					<img width="280" height="320" src="img/Types Of Influencers (1)/Nano Influencer (2).png" alt="" />
-				</div>
-			</div>
-		</div>
-	</div>
     
 
         <!-- section-6 -->

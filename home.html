@@ -207,12 +207,7 @@
 		}
 
 
-		.hero-section {
-			min-height: 100vh;
-			display: flex;
-			align-items: center;
-			padding: 2rem 1rem;
-		}
+		
 
 		.hero-text {
 			max-width: 1000px;
@@ -504,66 +499,70 @@
 
 /* media query for section-1 */
 
-@media screen and (max-width: 768px) {
-    .section1 {
-        /* Ensure the section covers the viewport */
-        display: flex;
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items horizontally */
-        justify-content: center; /* Center items vertically */
-        text-align: center; /* Center-align text */
-        padding: 15px; /* Adjust padding */
+@media (max-width: 768px) {
+    .section-1 {
+        margin: 0 auto !important; 
+        padding: 15px !important;
+        background: linear-gradient(to right, #314D91, #426CC1, #8AA2D7) !important;
+        max-height: 1200px !important;
     }
 
     .section1-div {
-        flex-direction: column; /* Stack elements vertically */
-        padding-left: 0; /* Remove left padding */
+        flex-direction: column !important; /* Stack content vertically */
+        height: 850px !important; /* Allow height to adjust based on content */
+        width: 100% !important; /* Ensure full width for mobile */
+        padding: 0 10px !important; /* Adjust padding for mobile */
+        
     }
 
+    /* .hero-section-agency .hero-text {
+        text-align: center !important; 
+        margin-bottom: 20px !important; 
+        margin-top: 40px !important;
+    } */
+
     .section1-h1 {
-        font-size: 1.8rem; /* Smaller font size for heading */
-        margin-bottom: 20px; /* Add space below the heading */
-        color: white;
+        font-size: 36px !important; /* Adjust heading size for mobile */
+        font-weight: bold !important;
+        margin-top: -250px !important;
     }
 
     .section1-p {
-        font-size: 1.2rem; /* Smaller font size for paragraph */
-        margin-bottom: 30px; /* Add space below the paragraph */
-        color: white;
+        font-size: 1.5rem !important; /* Adjust paragraph size */
+        line-height: 1.5 !important; /* Improve readability */
+        margin-bottom: 15px !important; /* Add spacing below paragraph */
+        margin-top: 345px !important;
+    }
+
+    .section1-btnnew {
+        padding: 10px 20px !important; /* Adjust button size */
+        width: auto !important; /* Allow button to fit content */
+        margin: 0 auto !important; /* Center the button */
+        margin-top: 40px !important;
+    }
+
+    .section1-img {
+        text-align: center !important; /* Center-align the image */
+        margin-top: -370px !important; /* Add spacing above image */
+        margin-bottom: 40px !important;
+
     }
 
     .section1-img1 {
-        margin: 0 auto 20px auto; /* Center the image and add space below */
-        height: auto; /* Maintain aspect ratio */
-        max-width: 90%; /* Ensure the image is responsive */
+        width: 100% !important; /* Scale image to fit inside screen */
+        max-width: 300px !important; /* Limit maximum width */
+        height: 290px !important; /* Maintain aspect ratio */
+        margin-top: -140px !important;
+        margin-bottom: 20px !important;
     }
 
-    .section1-btn {
-        margin-top: 20px; /* Space above the button */
-        font-size: 1rem; /* Adjust font size for button */
-        padding: 12px 20px; /* Adjust padding for button */
+    
+
+    .lshead{
+        display: none !important;
     }
 
-	  /* mobile responsive for section-1 */
-.section1-div{
-    padding-left: 0px !important;
-    height: 800px !important;
-}
-
-.section-1{
-    /* height: 1000px !important; */
-}
-
-.section1-btn{
-    margin-top: 300px !important;
-}
-
-.section1-img1{
-    margin-top: -450px !important;
-    height: 250px !important;
-    margin: auto;
-
-}
+   
 }
 
 .card-section {
@@ -1195,7 +1194,7 @@
 			<section class="section1" style="margin: 2px auto; padding: 15px; background-color: #000;">
 				<div class="section1-div row align-items-center" style="height: 450px;padding-left: 28px;padding: 0 20px;display: flex; justify-content: center; align-items: center;width: 1400px;margin: 2px auto;">
 					<!-- Left Content Section -->
-					<div class="col-lg-6 hero-text text-center text-md-center text-xl-start text-lg-start">
+					<div class="col-lg-6 text-center text-md-center text-xl-start text-lg-start">
 						<h1 class="section1-h1 display-4 fw-bold text-white" style="font-size: 48px;">
 							Boost Your Brand’s Influence with <span style="color: #FFBF78;">BuzzBoost</span>
 						</h1>
@@ -1211,7 +1210,7 @@
 					</div>
 			
 					<!-- Right Image Section -->
-					<div class="section1-img col-lg-6 hero-img d-lg-block" style="text-align: center;">
+					<div class="section1-img col-lg-6 d-lg-block" style="text-align: center;">
 						<img class="section1-img1" src="img/BuzzBoostImg/Home Page Header.png" alt="Hero Image" width="450px" height="400px">
 					</div>
 				</div>
@@ -1338,7 +1337,7 @@
 		</section>
 
 			<!-- Large Screen View -->
-			<div id="industries-section" class="container" style="margin-bottom: 80px; margin-top: 50px;" id="mainContainer">
+			<div class="container" style="margin-bottom: 80px; margin-top: 50px;" id="mainContainer">
 				<h3 class="text-center">Multi-Industry Influencers to Elevate Every Brand</h3>
 
 				<div class="row new-row">
@@ -1833,7 +1832,7 @@
 				</div>
 				<div class="col-lg-5 text-center text-lg-start order-2 order-lg-2 mt-2">
 					<h3 class="mt-2 pt-2" style="font-size: 36px;font-weight: bold;">Mega Influencers</h3>
-					<p class="mt-2 pt-2" style="font-size: 23px;font-weight: bold;color: #FFBF78;">Reach Millions, And Go Viral!</p>
+					<p class="" style="font-size: 23px;font-weight: bold;color: #FFBF78;">Reach Millions, And Go Viral!</p>
 					<p>Mega influencers are the celebrities of the social media world, commanding millions of followers across platforms. Whether launching a new product or amplifying brand awareness, these influencers ensure your message reaches a massive audience with unmatched impact.</p>
 				</div>
 			</div>
@@ -1842,7 +1841,7 @@
 			<div class="row align-items-center justify-content-center mt-5">
 				<div class="col-lg-5 text-center text-lg-start order-2 order-lg-1 mt-2" style="padding-left: 25px;">
 					<h3 class="mt-2 pt-2" style="font-size: 36px;font-weight: bold;">Macro Influencers</h3>
-					<p class="mt-2 pt-2" style="font-size: 23px;font-weight: bold;color: #426CC1;">Powerhouse of Engagement And Reach!</p>
+					<p class="" style="font-size: 23px;font-weight: bold;color: #426CC1;">Powerhouse of Engagement And Reach!</p>
 					
 					<p>With hundreds of thousands of followers, macro influencers blend significant reach with strong audience trust. Macro influencers are perfect for campaigns that require a balance of visibility and engagement, making them ideal for mid to large-scale brands looking to connect with audiences beyond local markets while retaining a personal touch.</p>
 				</div>
@@ -1864,7 +1863,7 @@
 				</div>
 				<div class="col-lg-5 text-center text-lg-start order-2 order-lg-2 mt-2">
 					<h3 class="mt-2 pt-2" style="font-size: 36px;font-weight: bold;">Micro Influencers</h3>
-					<p class="mt-2 pt-2" style="font-size: 23px;font-weight: bold;color: #FFBF78;">Authenticity That Resonates!</p>
+					<p class="" style="font-size: 23px;font-weight: bold;color: #FFBF78;">Authenticity That Resonates!</p>
 					<p>Micro influencers may have tens of thousands of followers, but their real strength lies in the quality of their engagement. Their audiences often view them as relatable and trustworthy, valuing their opinions and recommendations. These influencers are perfect for brands focusing on building deep, meaningful connections with specific communities. </p>
 				</div>
 			</div>
@@ -1873,7 +1872,7 @@
 			<div class="row align-items-center justify-content-center mt-5" style="margin-bottom: 40px;">
 				<div class="col-lg-5 text-center text-lg-start order-2 order-lg-1 mt-2" style="padding-left: 25px;">
 					<h3 class="mt-2 pt-2" style="font-size: 36px;font-weight: bold;">Nano Influencers</h3>
-					<p class="mt-2 pt-2" style="font-size: 23px;font-weight: bold;color: #426CC1;">Big Impact In Small Communities!</p>
+					<p class="" style="font-size: 23px;font-weight: bold;color: #426CC1;">Big Impact In Small Communities!</p>
 					<p>Nano influencers may have a smaller following, typically ranging from a few hundred to a few thousand, but their engagement rates are often the highest. These are everyday individuals with a strong influence in their local or niche circles. Ideal for businesses aiming to connect with hyper-specific audiences and establish a personal rapport.</p>
 				</div>
 				<div class="col-lg-5 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-2">
