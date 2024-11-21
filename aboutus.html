@@ -143,15 +143,44 @@
 	margin-top: 60px;
 }
 
-.team-section{
-	display: flex !important;
-	align-items: center !important;
-	margin-right: 0px !important;
-	padding-right: 0px !important;
-	/* margin:4px auto !important;  */
 }
 
+@media (max-width: 768px) {
+  .team-section {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center; /* Center-align text for better readability */
+  }
+
+  .team-section .container {
+    flex-direction: column; /* Stack the elements vertically */
+    padding: 10px;
+  }
+
+  .team-section .col-lg-7 {
+    margin-bottom: 20px; /* Add spacing between sections */
+    padding: 0 10px; /* Reduce padding for better fit */
+  }
+
+  .team-section .col-lg-5 {
+    padding: 0; /* Remove extra padding */
+  }
+
+  .team-section img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .team-section h2 {
+    font-size: 1.8rem; /* Adjust heading size */
+    margin-top: 20px; /* Add spacing at the top */
+  }
+
+  .team-section p {
+    font-size: 1rem; /* Adjust paragraph size */
+  }
 }
+
 
 
 .custom-btn:hover {
