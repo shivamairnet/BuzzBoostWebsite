@@ -582,7 +582,14 @@
 }
 
 
-
+@media (max-width: 768px) {
+  .override-inline {
+    position: static !important; /* Override position */
+    inset: unset !important;     /* Reset inset */
+    transform: none !important;  /* Disable transform */
+    margin: 0 !important;        /* Adjust margin as needed */
+  }
+}
 
 	</style>
 	<script src="vendor/modernizr/modernizr.min.js"></script>
@@ -640,7 +647,7 @@
 														role="button" data-bs-toggle="dropdown" aria-expanded="false">
 														Services
 													</a>
-													<ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+													<ul class="dropdown-menu override-inline" aria-labelledby="servicesDropdown">
 														<li><a class="dropdown-item" href="agency.html">Agency</a></li>
 														<li><a class="dropdown-item" href="business.html">Business</a>
 														</li>
@@ -1419,10 +1426,10 @@
 										<div class="form-group  col-xl-7 col-lg-9 col-md-6 col-sm-12">
 											<div class="d-grid gap-2">
 												<button id="whatsappButton"
-    class="whatsappicon btn btn-sm border-0 text-color-hover-light  text-3-5 p-3 custom-btn">
+    class="whatsappicon btn btn-sm border-0 text-color-hover-light text-black  text-3-5 p-3 custom-btn">
     <img id="whatsappIcon" src="img/whatsapp.png" width="20" height="20"
         alt="WhatsApp" style="margin-right: 8px;">
-    Get In Touch
+    Contact Us
 </button>
 											</div>
 										</div>
@@ -1585,6 +1592,19 @@
 
 		window.addEventListener('resize', handleScreeSizeChange);
 		handleScreeSizeChange();
+
+		function updateStyles() {
+  const element = document.querySelector('#targetElement');
+  if (window.innerWidth <= 768) {
+    element.style.position = 'static'; // Disable position absolute
+    element.style.inset = ''; // Reset inset
+    element.style.transform = ''; // Disable transform
+    element.style.margin = '0'; // Reset margin
+  }
+}
+
+window.addEventListener('resize', updateStyles);
+updateStyles(); // Run on page load
 	</script>
 
 	<!-- Vendor -->

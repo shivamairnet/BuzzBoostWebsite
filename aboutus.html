@@ -198,6 +198,14 @@
 			color: #000 !important;
 		}
 
+		@media (max-width: 768px) {
+  .override-inline {
+    position: static !important; /* Override position */
+    inset: unset !important;     /* Reset inset */
+    transform: none !important;  /* Disable transform */
+    margin: 0 !important;        /* Adjust margin as needed */
+  }
+}
 
 		</style>
 	</head>
@@ -252,7 +260,7 @@
 														role="button" data-bs-toggle="dropdown" aria-expanded="false">
 														Services
 													</a>
-													<ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+													<ul class="dropdown-menu override-inline" aria-labelledby="servicesDropdown">
 														<li><a class="dropdown-item" href="agency.html">Agency</a></li>
 														<li><a class="dropdown-item" href="business.html">Business</a>
 														</li>

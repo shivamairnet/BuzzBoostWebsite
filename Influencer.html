@@ -297,6 +297,15 @@
     border: 2px solid #e0e0e0 !important; /* Adds spacing */
   }
 
+  @media (max-width: 768px) {
+  .override-inline {
+    position: static !important; /* Override position */
+    inset: unset !important;     /* Reset inset */
+    transform: none !important;  /* Disable transform */
+    margin: 0 !important;        /* Adjust margin as needed */
+  }
+}
+
 
 
 		</style>
@@ -339,7 +348,7 @@
 														<a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 															Services
 														</a>
-														<ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+														<ul class="dropdown-menu override-inline" aria-labelledby="servicesDropdown">
 															<li><a class="dropdown-item" href="agency.html">Agency</a></li>
 															<li><a class="dropdown-item" href="business.html">Business</a></li>
 															<li><a class="dropdown-item" href="Influencer.html">Influencer</a></li>
@@ -716,12 +725,12 @@
 
 					<!-- request a quote section 4 -->
 					       <!-- flexible section modal -->
-						   <div id="requestQuoteModal1" style="display: none; position: fixed; z-index: 1000; padding-top: 100px; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0, 0, 0, 0.5);">
-							<div style="background-color: #fff; padding: 20px; border-radius: 8px; max-width: 800px; margin: auto; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); position: relative;">
+						   <div id="requestQuoteModal1" style="display: none; position: fixed; z-index: 1000; padding-top: 70px; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0, 0, 0, 0.5);">
+							<div style="background-color: #fff; padding: 15px; border-radius: 8px; max-width: 800px; margin: auto; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); position: relative;">
 								<span style="position: absolute; top: 5px; right: 20px; font-size: 24px; cursor: pointer;" onclick="closeModal()">&times;</span>                    
-						<div class="card m-4 border-radius bg-color-light border-0 box-shadow-1 mb-5 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="700">
-							<div class="card-body p-5 m-2 text-center">
-								<h4 class="card-title mb-4 text-6">Enrollment Form</h4>
+						<div class="card m-3 border-radius bg-color-light border-0 box-shadow-1 mb-3 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="700">
+							<div class="card-body p-4 m-2 text-center">
+								<h4 class="card-title mb-2 text-6">Enrollment Form</h4>
 				
 								<form class="contact-form" action="php/contact-form.php" method="POST">
 									<!-- Success Message -->
@@ -738,20 +747,20 @@
 									<!--  Name  -->
 									<div class="row">
 										<div class="form-group col-md-6 col text-start">
-											<input type="text" value="" placeholder="First Name *" data-msg-required="Please enter First Name" maxlength="100" class="form-control text-2-5 p-3" name="firstname" required>
+											<input type="text" value="" placeholder="First Name *" data-msg-required="Please enter First Name" maxlength="100" class="form-control text-2-5 p-2" name="firstname" required>
 										</div>
 										<div class="form-group col-md-6 col text-start">
-											<input type="text" value="" placeholder="Last Name *" data-msg-required="Please enter Second Name" maxlength="100" class="form-control text-2-5 p-3" name="secondname" required>
+											<input type="text" value="" placeholder="Last Name *" data-msg-required="Please enter Second Name" maxlength="100" class="form-control text-2-5 p-2" name="secondname" required>
 										</div>
 									</div>
 				
 									<!-- Email and Phone Number -->
 									<div class="row">
 										<div class="form-group col-md-6 col text-start">
-											<input type="text" value="" placeholder="Email*" data-msg-required="Please enter email" maxlength="100" class="form-control text-2-5 p-3" name="email" required>
+											<input type="text" value="" placeholder="Email*" data-msg-required="Please enter email" maxlength="100" class="form-control text-2-5 p-2" name="email" required>
 										</div>
 										<div class="form-group col-md-6 col text-start">
-											<input type="text" value="" placeholder="Phone Number *" data-msg-required="Please enter phone number" maxlength="100" class="form-control text-2-5 p-3" name="phone" required>
+											<input type="text" value="" placeholder="Phone Number *" data-msg-required="Please enter phone number" maxlength="100" class="form-control text-2-5 p-2" name="phone" required>
 										</div>
 									</div>
 				
@@ -764,7 +773,7 @@
 											<input type="text" value="" placeholder="Your Phone *" data-msg-required="Please enter your phone" maxlength="100" class="form-control text-2-5 p-3" name="yourphone" required>
 										</div> -->
 										<div class="form-group col-md-6 col text-start">
-											<select name="industry" class="form-control text-2-5 p-3" required id="industry-select">
+											<select name="industry" class="form-control text-2-5 p-2" required id="industry-select">
 												<option value="" disabled selected>Select Industry *</option>
 												<option value="Foods and Drinks">Foods and Drinks</option>
 												<option value="Events">Events</option>
@@ -775,10 +784,14 @@
 												<option value="Other">Other</option>
 											</select>
 										</div>
+
+										<div class="form-group col-md-6 col text-start" id="other-industry-container" style="display: none;">
+											<input type="text" value="" placeholder="Enter Custom Industry" maxlength="100" class="form-control text-2-5 p-2" name="other_industry" id="other-industry">
+										</div>
 									</div>
 				
 									<!-- Industry Dropdown and Additional Details -->
-									<div class="row">
+									
 										<!-- <div class="form-group col-md-6 col text-start">
 											<select name="industry" class="form-control text-2-5 p-3" required id="industry-select">
 												<option value="" disabled selected>Select Industry *</option>
@@ -791,20 +804,18 @@
 												<option value="Other">Other</option>
 											</select>
 										</div> -->
-										<div class="form-group col-md-12 col text-start" id="other-industry-container" style="display: none;">
-											<input type="text" value="" placeholder="Enter Custom Industry" maxlength="100" class="form-control text-2-5 p-3" name="other_industry" id="other-industry">
-										</div>
-									</div>
+										
+									
 				
 									<!-- Additional Details Text Field -->
 									<div class="row">
 										<div class="form-group col-md-12 col text-start">
-											<input type="text" value="" placeholder="Additional Details" maxlength="100" class="form-control text-2-5 p-3" name="additional_details">
+											<input type="text" value="" placeholder="Additional Details" maxlength="100" class="form-control text-2-5 p-2" name="additional_details">
 										</div>
 									</div>
 				
 									<!-- Submit Button -->
-									<div class="d-flex justify-content-center align-items-center" style="width: 100%; margin-top: 20px;">
+									<div class="d-flex justify-content-center align-items-center" style="width: 100%; margin-top: 10px;">
 										<a href="#" class="btn btn-modern box-shadow-6 border-0 text-transform-none btn-dash py-3 px-5 custom-btn">
 											Submit
 										</a>
@@ -812,7 +823,7 @@
 									
 				
 									<!-- Contact Info -->
-									<div class="row">
+									<!-- <div class="row">
 										<div class="col pt-4">
 											<div class="hstack gap-3">
 												<div class="ms-auto">
@@ -826,12 +837,27 @@
 												</div>
 											</div>
 										</div>
-									</div>
+									</div> -->
 								</form>
 							</div>
 						</div>
 					</div>
 				</div>
+
+				<script>
+					
+// Show "Other" industry field when selected
+document.getElementById('industry-select').addEventListener('change', function() {
+    var selectedIndustry = this.value;
+    var otherIndustryContainer = document.getElementById('other-industry-container');
+    
+    if (selectedIndustry === 'Other') {
+        otherIndustryContainer.style.display = 'block';
+    } else {
+        otherIndustryContainer.style.display = 'none';
+    }
+});
+				</script>
 					
 
 				<!-- section form 5 -->
