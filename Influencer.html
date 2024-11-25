@@ -306,9 +306,12 @@
   }
 }
 
-
-
 		</style>
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
 	</head>
 	<body class="alternative-font-5">
 		<header id="header" class="header-transparent "
@@ -377,14 +380,14 @@
 													style="color: #000; text-decoration: none; transition: color 0.3s ease;"
 													onmouseover="this.style.color='#426CC1'; this.style.textDecoration='underline';"
 													onmouseout="this.style.color='#000'; this.style.textDecoration='none';">
-													888 123 4567
+													91 9796297972 
 												</a>
 	
 											</div>
 										</li>
 									</ul>
 	
-									<a href="#"
+									<a href="contact.html"
                                     class="btn btn-modern  box-shadow-6 border-0 text-transform-none btn-dash ms-3 d-none d-xl-inline-block custom-btn">Get
                                     In Touch</a>
 
@@ -444,9 +447,7 @@
 					</div>
 				</div>
 				
-								
-
-		    
+								    
 			<!-- section-2 -->
 			 <!-- for large screen -->
 			<div class="section-2large-screen container pt-4 pb-5 mb-5">
@@ -654,9 +655,7 @@
 				  </div>
 				</div>
 			  </div>
-			  
-			  
-					
+			  			
                    <!-- section 3 -->
 					<div class="container">
 						<h2 class="text-center mt-3" style="font-weight: bold;font-size: 2.4em;">Industries Served By Our Platform</h2>
@@ -718,7 +717,7 @@
 						</div>
 					</div>
 					<div class="pt-5 pb-5 text-center">
-	                <a href="home.html#industries-section" class="custom-btn btn btn-modern btn-primary box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5" style="background-color: #426CC1;">Other Industries</a>
+	                <a href="home.html#mainContainer" class="custom-btn btn btn-modern btn-primary box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5" style="background-color: #426CC1;">Other Industries</a>
 				    </div>		
 				</div>
 			
@@ -732,7 +731,7 @@
 							<div class="card-body p-4 m-2 text-center">
 								<h4 class="card-title mb-2 text-6">Enrollment Form</h4>
 				
-								<form class="contact-form" action="php/contact-form.php" method="POST">
+								<form class="contact-form" id="contact-form" method="POST">
 									<!-- Success Message -->
 									<div class="contact-form-success alert alert-success d-none mt-4">
 										<strong>Success!</strong> Your message has been sent to us.
@@ -747,33 +746,28 @@
 									<!--  Name  -->
 									<div class="row">
 										<div class="form-group col-md-6 col text-start">
-											<input type="text" value="" placeholder="First Name *" data-msg-required="Please enter First Name" maxlength="100" class="form-control text-2-5 p-2" name="firstname" required>
+											<input type="text" value="" name="firstname" placeholder="First Name *" data-msg-required="Please enter First Name" maxlength="100" class="form-control text-2-5 p-2" name="firstname" id="firstname" required>
 										</div>
 										<div class="form-group col-md-6 col text-start">
-											<input type="text" value="" placeholder="Last Name *" data-msg-required="Please enter Second Name" maxlength="100" class="form-control text-2-5 p-2" name="secondname" required>
+											<input type="text" value="" name="lastname" placeholder="Last Name *" data-msg-required="Please enter Second Name" maxlength="100" class="form-control text-2-5 p-2" name="secondname" id="lastname" required>
 										</div>
 									</div>
 				
 									<!-- Email and Phone Number -->
 									<div class="row">
 										<div class="form-group col-md-6 col text-start">
-											<input type="text" value="" placeholder="Email*" data-msg-required="Please enter email" maxlength="100" class="form-control text-2-5 p-2" name="email" required>
+											<input type="text" name="email" value="" placeholder="Email*" data-msg-required="Please enter email" maxlength="100" class="form-control text-2-5 p-2" name="email" id="email" required>
 										</div>
 										<div class="form-group col-md-6 col text-start">
-											<input type="text" value="" placeholder="Phone Number *" data-msg-required="Please enter phone number" maxlength="100" class="form-control text-2-5 p-2" name="phone" required>
+											<input type="text" name-="phone" value="" placeholder="Phone Number *" data-msg-required="Please enter phone number" maxlength="100" class="form-control text-2-5 p-2" name="phone" id="phone" required>
 										</div>
 									</div>
 				
 									<!-- Address and Your Phone -->
 									<div class="row">
-										<!-- <div class="form-group col-md-6 col text-start">
-											<input type="text" value="" placeholder="Address*" data-msg-required="Please enter address" maxlength="100" class="form-control text-2-5 p-3" name="address" required>
-										</div> -->
-										<!-- <div class="form-group col-md-6 col text-start">
-											<input type="text" value="" placeholder="Your Phone *" data-msg-required="Please enter your phone" maxlength="100" class="form-control text-2-5 p-3" name="yourphone" required>
-										</div> -->
+									
 										<div class="form-group col-md-6 col text-start">
-											<select name="industry" class="form-control text-2-5 p-2" required id="industry-select">
+											<select name="industry" name="industry" class="form-control text-2-5 p-2" id="industry" required id="industry-select">
 												<option value="" disabled selected>Select Industry *</option>
 												<option value="Foods and Drinks">Foods and Drinks</option>
 												<option value="Events">Events</option>
@@ -785,65 +779,32 @@
 											</select>
 										</div>
 
-										<div class="form-group col-md-6 col text-start" id="other-industry-container" style="display: none;">
-											<input type="text" value="" placeholder="Enter Custom Industry" maxlength="100" class="form-control text-2-5 p-2" name="other_industry" id="other-industry">
+										<div class="form-group col-md-6 col text-start" id="other-industry-container" id="customindustry" style="display: none;">
+											<input type="text" value="" name="customindustry" placeholder="Enter Custom Industry" maxlength="100" class="form-control text-2-5 p-2" name="other_industry" id="other-industry">
 										</div>
 									</div>
-				
-									<!-- Industry Dropdown and Additional Details -->
-									
-										<!-- <div class="form-group col-md-6 col text-start">
-											<select name="industry" class="form-control text-2-5 p-3" required id="industry-select">
-												<option value="" disabled selected>Select Industry *</option>
-												<option value="Foods and Drinks">Foods and Drinks</option>
-												<option value="Events">Events</option>
-												<option value="Beauty and Fashion">Beauty and Fashion</option>
-												<option value="Lifestyle">Lifestyle</option>
-												<option value="Sports">Sports</option>
-												<option value="Tech Innovators">Tech Innovators</option>
-												<option value="Other">Other</option>
-											</select>
-										</div> -->
-										
-									
 				
 									<!-- Additional Details Text Field -->
 									<div class="row">
 										<div class="form-group col-md-12 col text-start">
-											<input type="text" value="" placeholder="Additional Details" maxlength="100" class="form-control text-2-5 p-2" name="additional_details">
+											<input type="text" value="" name="additional_details" placeholder="Additional Details" maxlength="100" class="form-control text-2-5 p-2" name="additional_details">
 										</div>
 									</div>
 				
 									<!-- Submit Button -->
 									<div class="d-flex justify-content-center align-items-center" style="width: 100%; margin-top: 10px;">
-										<a href="#" class="btn btn-modern box-shadow-6 border-0 text-transform-none btn-dash py-3 px-5 custom-btn">
+										<a href="#" onclick="sendForm()" class="btn btn-modern box-shadow-6 border-0 text-transform-none btn-dash py-3 px-5 custom-btn">
 											Submit
 										</a>
 									</div>                                
-									
-				
-									<!-- Contact Info -->
-									<!-- <div class="row">
-										<div class="col pt-4">
-											<div class="hstack gap-3">
-												<div class="ms-auto">
-													<i class="icons icon-envelope text-4 p-relative top-5 me-2"></i>
-													<a href="mailto:you@domain.com" class="text-decoration-none text-2 text-dark text-color-hover-primary ws-nowrap font-weight-semi-bold">email@gmail.com</a>		
-												</div>
-												<div class="vr"></div>
-												<div class="me-auto">
-													<i class="icons icon-phone text-4 p-relative top-5 me-2"></i>
-													<a href="tel:+1234567890" class="text-decoration-none text-2 text-dark text-color-hover-primary ws-nowrap font-weight-semi-bold">888 123 4567</a>
-												</div>
-											</div>
-										</div>
-									</div> -->
+
 								</form>
 							</div>
 						</div>
 					</div>
 				</div>
 
+				<!-- form script -->
 				<script>
 					
 // Show "Other" industry field when selected
@@ -857,7 +818,43 @@ document.getElementById('industry-select').addEventListener('change', function()
         otherIndustryContainer.style.display = 'none';
     }
 });
-				</script>
+
+			</script>
+			<script type="text/javascript">
+				// Initialize EmailJS
+				emailjs.init("RA-DC0AgaNqfzUKOG"); // Replace with your actual user ID
+			  
+				function sendForm() {
+					// Prevent default form submission
+					const form = document.getElementById('contact-form');
+					if (!form) {
+						console.error("Form element not found!");
+						return;
+					}
+			  
+					// Collect form data manually into a params object
+					const params = {
+						firstname: form.firstname.value,
+						lastname: form.lastname.value,
+						// Add other form fields here
+						email: form.email.value,
+						// message: form.message.value,
+					};
+			  
+					// Use EmailJS to send the params object
+					emailjs.send("service_x1vdou9", "template_ghvxogn", params)
+					// console.log(params)
+						.then(function(response) {
+							console.log("Success:", response);
+							// Show success message
+							document.querySelector(".contact-form-success").classList.remove("d-none");
+						}, function(error) {
+							console.error("Error:", error);
+							// Show error message
+							document.querySelector(".contact-form-error").classList.remove("d-none");
+						});
+				}
+			  </script>
 					
 
 				<!-- section form 5 -->
@@ -874,55 +871,45 @@ document.getElementById('industry-select').addEventListener('change', function()
 									finding the right influencers? Our team is just a WhatsApp message away!</p>
 	
 								<i class="icons icon-phone text-8 text-color-primary me-2"></i>
-								<a href="tel:+1234567890" style="color: #000;"
+								<a href="tel:91 9796297972" style="color: #000;"
 								
-									class="text-5 p-relative bottom-9 font-weight-semi-bold  ">888123 4567</a>
+									class="text-5 p-relative bottom-9 font-weight-semi-bold  ">91 9796297972</a>
 	
 							</div>
 							<div class="col-lg-5 py-5">
 								<div class="border-radius bg-color-light border-0 box-shadow-3">
 									<div class="card-body p-5 m-2 text-center">
-										<h4 class="card-title mb-2 text-6">Get In Touch</h4>
-										<p class="card-text">Fill your details and tap the button below to start a chat with
-											our support team.</p>
-	
-										<form class="contact-form" action="php/contact-form.php" method="POST">
-											<div class="contact-form-success alert alert-success d-none mt-4">
-												<strong>Success!</strong> Your message has been sent to us.
-											</div>
-	
-											<div class="contact-form-error alert alert-danger d-none mt-4">
-												<strong>Error!</strong> There was an error sending your message.
-												<span class="mail-error-message text-1 d-block"></span>
-											</div>
-	
+										<h4 class="card-title mb-2 text-6" style="font-weight: bold;">Get In Touch</h4>
+										<p class="card-text">Fill your details and tap the button below to start a chat with our support team.</p>
+							
+										<form id="whatsappForm" class="contact-form">
 											<div class="row">
 												<div class="form-group col text-start">
-													<input type="text" value="" placeholder="Your Name *"
-														data-msg-required="Please enter your name." maxlength="100"
-														class="form-control text-2-5 p-3" name="name" required>
+													<input type="text" id="name" placeholder="Your Name *" maxlength="100"
+														class="form-control text-2-5 p-3" required>
 												</div>
 											</div>
 											<div class="row">
 												<div class="form-group col text-start">
-													<input type="text" value="" placeholder="Your Phone *"
-														data-msg-required="Please enter your phone" maxlength="100"
-														class="form-control text-2-5 p-3" name="phone" required>
+													<input type="text" id="phone" placeholder="Your Phone *" maxlength="100"
+														class="form-control text-2-5 p-3" required>
 												</div>
 											</div>
 											<div class="row">
 												<div class="col"></div>
-												<div class="form-group  col-xl-7 col-lg-9 col-md-6 col-sm-12">
+												<div class="form-group col-xl-7 col-lg-9 col-md-6 col-sm-12">
 													<div class="d-grid gap-2">
-														<button id="whatsappButton" class="btn btn-sm border-0 text-3-5 p-3 custom-btn">
-															<img id="whatsappIcon" src="img\whatsapp.png" width="20" height="20" alt="WhatsApp Icon" style="margin-right: 8px;color: #426CC1 !important;">
+														<button id="whatsappButton" type="button" class="btn btn-sm border-0 text-3-5 p-3 custom-btn" 
+															style="background-color: #426CC1; color: white; font-weight: bold;">
+															<img id="whatsappIcon" src="img/whatsapp.png" width="20" height="20" alt="WhatsApp Icon" 
+																style="margin-right: 8px;">
 															Contact Us
 														</button>
 													</div>
 												</div>
 												<div class="col"></div>
-											</div>					
-                                        </form>
+											</div>
+										</form>
 									</div>
 								</div>
 							</div>
@@ -1028,6 +1015,8 @@ document.getElementById('industry-select').addEventListener('change', function()
 
 		<!-- Theme Initialization Files -->
 		<script src="js/theme.init.js"></script>
+
+		<!-- modal script -->
 		<script>
 	function openModal() {
     document.getElementById('requestQuoteModal1').style.display = 'block';
@@ -1045,6 +1034,28 @@ window.onclick = function(event) {
     }
 }
 		</script>
+
+		<!-- whatsapp redirection -->
+		<script>
+			document.getElementById("whatsappButton").addEventListener("click", function () {
+				const name = document.getElementById("name").value;
+				const phone = document.getElementById("phone").value;
+		
+				if (name && phone) {
+					// Replace with your WhatsApp number (including country code)
+					const whatsappNumber = "919796297972"; 
+					const message = `Hello, my name is ${name}. My phone number is ${phone}. I'd like to get in touch.`;
+					const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+					
+					// Redirect to WhatsApp
+					window.open(whatsappURL, "_blank");
+				} else {
+					alert("Please fill in all the required fields.");
+				}
+			});
+		</script>
+		
+
 
 	</body>
 </html>

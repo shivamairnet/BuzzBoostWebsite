@@ -287,11 +287,11 @@
 									<li class="d-none d-sm-inline-flex ms-0 font-weight-semibold">
 										<div class="d-flex align-items-center">
 											<i class="icons icon-phone text-8 me-2"></i>
-											<a href="tel:+1234567890" class="text-3 text-dark"
+											<a href="tel:91 9796297972" class="text-3 text-dark"
 												style="color: #000; text-decoration: none; transition: color 0.3s ease;"
 												onmouseover="this.style.color='#426CC1'; this.style.textDecoration='underline';"
 												onmouseout="this.style.color='#000'; this.style.textDecoration='none';">
-												888 123 4567
+												91 9796297972
 											</a>
 
 										</div>
@@ -320,7 +320,7 @@
 
 				  <!-- Curved Background Section -->
   <div style="position: relative; height: 400px; background: #426CC1; overflow: hidden; color: #fff; text-align: center; padding: 20px;">
-    <h1 class="text-white text-white text-7 font-weight-bold mt-3 mb-2">About Us</h1>
+    <h1 class="text-white text-white text-7 font-weight-bold mt-5 mb-2">About Us</h1>
 	<h2 class="text-white text-4 font-weight-bold mt-2 mb-2">Empowering Connections, Amplifying Impact</h2>
     <p class="text-3 text-white mt-2 mb-4">At BuzzBoost, we bring brands, influencers, and agencies together to create</br> impactful collaborations that resonate with audiences.</p>
 	<!-- <a href="contact.html" class="custom-btn btn btn-modern box-shadow-6 border-0 text-transform-none btn-dash mt-5 py-3 px-5">Get In Touch</a> -->
@@ -440,50 +440,38 @@
 							finding the right influencers? Our team is just a WhatsApp message away!</p>
 
 						<i class="icons icon-phone text-8 text-color-primary me-2" style="color: #000;"></i>
-						<a href="tel:+1234567890" style="color: #000;"
-							class="text-5 p-relative bottom-9 font-weight-semi-bold">888
-							123 4567</a>
+						<a href="tel:91 9796297972" style="color: #000;"
+							class="text-5 p-relative bottom-9 font-weight-semi-bold">91 9796297972
+							</a>
 
 					</div>
 					<div class="col-lg-5 py-5">
 						<div class="border-radius bg-color-light border-0 box-shadow-3">
 							<div class="card-body p-5 m-2 text-center">
-								<h4 class="card-title mb-2 text-6">Get In Touch</h4>
-								<p class="card-text">Fill your details and tap the button below to start a chat with
-									our support team.</p>
-
-								<form class="contact-form" action="php/contact-form.php" method="POST">
-									<div class="contact-form-success alert alert-success d-none mt-4">
-										<strong>Success!</strong> Your message has been sent to us.
-									</div>
-
-									<div class="contact-form-error alert alert-danger d-none mt-4">
-										<strong>Error!</strong> There was an error sending your message.
-										<span class="mail-error-message text-1 d-block"></span>
-									</div>
-
+								<h4 class="card-title mb-2 text-6" style="font-weight: bold;">Get In Touch</h4>
+								<p class="card-text">Fill your details and tap the button below to start a chat with our support team.</p>
+					
+								<form id="whatsappForm" class="contact-form">
 									<div class="row">
 										<div class="form-group col text-start">
-											<input type="text" value="" placeholder="Your Name *"
-												data-msg-required="Please enter your name." maxlength="100"
-												class="form-control text-2-5 p-3" name="name" required>
+											<input type="text" id="name" placeholder="Your Name *" maxlength="100"
+												class="form-control text-2-5 p-3" required>
 										</div>
 									</div>
 									<div class="row">
 										<div class="form-group col text-start">
-											<input type="text" value="" placeholder="Your Phone *"
-												data-msg-required="Please enter your phone" maxlength="100"
-												class="form-control text-2-5 p-3" name="phone" required>
+											<input type="text" id="phone" placeholder="Your Phone *" maxlength="100"
+												class="form-control text-2-5 p-3" required>
 										</div>
 									</div>
 									<div class="row">
 										<div class="col"></div>
-										<div class="form-group  col-xl-7 col-lg-9 col-md-6 col-sm-12">
+										<div class="form-group col-xl-7 col-lg-9 col-md-6 col-sm-12">
 											<div class="d-grid gap-2">
-												<button id="whatsappButton"
-													class="btn btn-sm border-0 text-3-5 p-3 custom-btn">
-													<img id="whatsappIcon" src="img\whatsapp.png" width="20" height="20"
-														alt="WhatsApp Icon" style="margin-right: 8px;">
+												<button id="whatsappButton" type="button" class="btn btn-sm border-0 text-3-5 p-3 custom-btn" 
+													>
+													<img id="whatsappIcon" src="img/whatsapp.png" width="20" height="20" alt="WhatsApp Icon" 
+														style="margin-right: 8px;">
 													Contact Us
 												</button>
 											</div>
@@ -593,6 +581,26 @@
 
 		<!-- Theme Initialization Files -->
 		<script src="js/theme.init.js"></script>
+
+		<!-- whatsapp redirection -->
+		<script>
+			document.getElementById("whatsappButton").addEventListener("click", function () {
+				const name = document.getElementById("name").value;
+				const phone = document.getElementById("phone").value;
+		
+				if (name && phone) {
+					
+					const whatsappNumber = "919796297972"; 
+					const message = `Hello, my name is ${name}. My phone number is ${phone}. I'd like to get in touch.`;
+					const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+					
+					
+					window.open(whatsappURL, "_blank");
+				} else {
+					alert("Please fill in all the required fields.");
+				}
+			});
+		</script>
 
 	</body>
 </html>
