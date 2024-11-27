@@ -157,18 +157,35 @@
         .section-1 {
           display: flex !important;
           flex-direction: column !important;
+          
         }
 
         .mobile-full-width {
           flex: 0 0 100% !important; /* Full width */
           max-width: 100% !important; /* Full width */
+          
         }
 
-        .grid-section {
-          margin-top: 20px !important;
-          padding-left: 0px !important;
-          width: 100% !important;
-        }
+        @media (max-width: 768px) {
+  .grid-section {
+  
+    display: grid !important; /* Use grid layout for precise control */
+    grid-template-columns: repeat(2, 1fr) !important; /* Two columns layout */
+    gap: 1 !important; /* No gap between items */
+    padding: 0 !important; /* Remove padding */
+    margin: 0 auto !important; /* Center the grid on the screen */
+    width: 100% !important; /* Full width for the container */
+  }
+
+  .grid-section img {
+    margin-top: 10px !important;
+    width: 100% !important; /* Full width for grid items */
+    height: 250px !important; /* Maintain aspect ratio */
+    object-fit: cover !important; /* Ensure images fill their grid cells */
+  }
+}
+
+
       }
 
       @media (max-width: 768px) {
@@ -297,7 +314,7 @@
                       <div class="d-flex align-items-center">
                         <i class="icons icon-phone text-8 me-2"></i>
                         <a
-                          href="tel:91 9796297972"
+                          href="tel:+91 9796297972"
                           class="text-3 text-dark"
                           style="
                             color: #000;
@@ -307,7 +324,7 @@
                           onmouseover="this.style.color='#426CC1'; this.style.textDecoration='underline';"
                           onmouseout="this.style.color='#000'; this.style.textDecoration='none';"
                         >
-                          91 9796297972
+                          +91 9796297972
                         </a>
                       </div>
                     </li>
@@ -530,10 +547,10 @@
                   style="color: #000"
                 ></i>
                 <a
-                  href="tel:91 9796297972"
+                  href="tel:+919796297972"
                   style="color: #000"
                   class="text-5 p-relative bottom-9 font-weight-semi-bold"
-                  >91 9796297972
+                  >+91 9796297972
                 </a>
               </div>
               <div class="col-lg-5 py-5">
@@ -621,7 +638,7 @@
             <div class="col-lg-4">
               <h4 class="text-color-light font-weight-bold mb-3">BuzzBoost</h4>
 
-              <ul class="social-icons">
+              <!-- <ul class="social-icons">
                 <li class="social-icons-instagram">
                   <a
                     href="http://www.instagram.com/"
@@ -649,7 +666,7 @@
                     <i class="fab fa-facebook-f"></i>
                   </a>
                 </li>
-              </ul>
+              </ul> -->
             </div>
             <div class="col-lg-8">
               <div class="row mb-5-5">
@@ -755,7 +772,7 @@
         "
       >
         <a
-          href="https://wa.me/1234567890"
+          href="https://wa.me/+919796297972"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -835,7 +852,7 @@
           const phone = document.getElementById("phone").value;
 
           if (name && phone) {
-            const whatsappNumber = "919796297972";
+            const whatsappNumber = "+919796297972";
             const message = `Hello, my name is ${name}. My phone number is ${phone}. I'd like to get in touch.`;
             const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
               message

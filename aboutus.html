@@ -207,6 +207,26 @@
   }
 }
 
+@media (max-width: 768px) {
+        #brandCarousel {
+			display: none !important;        
+        }
+    }
+
+	@media (max-width: 768px) {
+        #smallbrandCarousel .carousel-item .row .col-12 {
+            flex: 0 0 100%; /* Full width on mobile */
+            max-width: 100%;
+        }
+    }
+
+	@media (min-width: 769px) {
+        #smallbrandCarousel {
+         display: none !important;
+        }
+    }
+
+
 		</style>
 	</head>
 
@@ -287,11 +307,11 @@
 									<li class="d-none d-sm-inline-flex ms-0 font-weight-semibold">
 										<div class="d-flex align-items-center">
 											<i class="icons icon-phone text-8 me-2"></i>
-											<a href="tel:91 9796297972" class="text-3 text-dark"
+											<a href="tel:+91 9796297972" class="text-3 text-dark"
 												style="color: #000; text-decoration: none; transition: color 0.3s ease;"
 												onmouseover="this.style.color='#426CC1'; this.style.textDecoration='underline';"
 												onmouseout="this.style.color='#000'; this.style.textDecoration='none';">
-												91 9796297972
+												+91 9796297972
 											</a>
 
 										</div>
@@ -319,17 +339,17 @@
 
 
 				  <!-- Curved Background Section -->
-  <div style="position: relative; height: 400px; background: #426CC1; overflow: hidden; color: #fff; text-align: center; padding: 20px;">
+  <div style="position: relative; height: 420px; background: #426CC1; overflow: hidden; color: #fff; text-align: center; padding: 20px;">
     <h1 class="text-white text-white text-7 font-weight-bold mt-5 mb-2">About Us</h1>
 	<h2 class="text-white text-4 font-weight-bold mt-2 mb-2">Empowering Connections, Amplifying Impact</h2>
     <p class="text-3 text-white mt-2 mb-4">At BuzzBoost, we bring brands, influencers, and agencies together to create</br> impactful collaborations that resonate with audiences.</p>
 	<!-- <a href="contact.html" class="custom-btn btn btn-modern box-shadow-6 border-0 text-transform-none btn-dash mt-5 py-3 px-5">Get In Touch</a> -->
-	<a href="contact.html" class="custom1-btn1 custom-btn btn-dash button-1 btn btn-modern btn-primary box-shadow-6 border-0 text-transform-none mt-2 py-3 px-3" style="position: relative;z-index: 10;">Get In Touch</a>
+	<a href="contact.html" class="custom1-btn1 custom-btn btn-dash button-1 btn btn-modern btn-primary box-shadow-6 border-0 text-transform-none mt-1 py-3 px-3" style="position: relative;z-index: 10;">Get In Touch</a>
 	
   
 
     <!-- Inline SVG for Circular Bulge -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="position: absolute; bottom: 0; left: 0; width: 100%;z-index: 1;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="position: absolute; bottom: 0; left: 0; width: 100%;z-index: 1;overflow: hidden;">
       <path fill="#ffffff" fill-opacity="1" d="M0,160C360,320,1080,320,1440,160L1440,320L0,320Z"></path>
     </svg>
   </div>
@@ -423,6 +443,47 @@
 				</button>
 			</div>
 			<!-- Carousel End -->
+
+			<!-- carousel for small screens -->
+			 <!-- Carousel Start -->
+<div id="smallbrandCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000" style="padding-top: 40px;">
+    <div class="carousel-inner text-center">
+        <!-- First Slide -->
+        <div class="carousel-item active">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <img src="img/BuzzBoostImg/acme.png" alt="BuzzBoost" class="img-fluid" style="max-width: 140px;" />
+                </div>
+            </div>
+        </div>
+        <!-- Second Slide -->
+        <div class="carousel-item">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <img src="img/BuzzBoostImg/circle.png" alt="BuzzBoost" class="img-fluid" style="max-width: 140px;" />
+                </div>
+            </div>
+        </div>
+        <!-- Third Slide -->
+        <div class="carousel-item">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <img src="img/BuzzBoostImg/fox-hub-black.png" alt="BuzzBoost" class="img-fluid" style="max-width: 140px;" />
+                </div>
+            </div>
+        </div>
+        <!-- Add More Slides as Needed -->
+    </div>
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#brandCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#brandCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
 		</div>
 			
 			
@@ -440,8 +501,8 @@
 							finding the right influencers? Our team is just a WhatsApp message away!</p>
 
 						<i class="icons icon-phone text-8 text-color-primary me-2" style="color: #000;"></i>
-						<a href="tel:91 9796297972" style="color: #000;"
-							class="text-5 p-relative bottom-9 font-weight-semi-bold">91 9796297972
+						<a href="tel:+919796297972" style="color: #000;"
+							class="text-5 p-relative bottom-9 font-weight-semi-bold">+91 9796297972
 							</a>
 
 					</div>
@@ -492,7 +553,7 @@
 			<div class="row gy-5">
 				<div class="col-lg-4">
 					<h4 class="text-color-light font-weight-bold mb-3">BuzzBoost</h4>
-					<ul class="social-icons ">
+					<!-- <ul class="social-icons ">
 						<li class="social-icons-instagram">
 							<a href="http://www.instagram.com/" target="_blank" title="Instagram">
 								<i class="fab fa-instagram"></i>
@@ -508,7 +569,7 @@
 								<i class="fab fa-facebook-f"></i>
 							</a>
 						</li>
-					</ul>
+					</ul> -->
 				</div>
 				<div class="col-lg-8">
 					<div class="row mb-5-5">
@@ -556,7 +617,7 @@
 		</div>
 	</footer>
 	<div style="position: fixed; bottom: 30px; right: 20px; z-index: 9999; width: 55px; height: 55px;">
-		<a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+		<a href="https://wa.me/+919796297972" target="_blank" rel="noopener noreferrer">
 			<img src="img\whatsappiconfixed.png" 
 				 alt="WhatsApp" 
 				 style="width: 100%; height: 100%; border-radius: 50%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); cursor: pointer;" />
@@ -590,7 +651,7 @@
 		
 				if (name && phone) {
 					
-					const whatsappNumber = "919796297972"; 
+					const whatsappNumber = "+919796297972"; 
 					const message = `Hello, my name is ${name}. My phone number is ${phone}. I'd like to get in touch.`;
 					const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 					
@@ -600,6 +661,27 @@
 					alert("Please fill in all the required fields.");
 				}
 			});
+		</script>
+
+<!-- carousel showing -->
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+    const carousel = document.getElementById("brandCarousel");
+    const checkScreenSize = () => {
+        if (window.innerWidth < 768) {
+            // Enable continuous scroll for small screens
+            carousel.setAttribute("data-bs-ride", "carousel");
+        } else {
+            // Disable continuous scroll for larger screens
+            carousel.removeAttribute("data-bs-ride");
+        }
+    };
+
+    // Initial check and on resize
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+});
+
 		</script>
 
 	</body>

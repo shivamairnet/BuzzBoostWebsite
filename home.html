@@ -555,7 +555,7 @@
         width: 100% !important; /* Scale image to fit inside screen */
         max-width: 300px !important; /* Limit maximum width */
         height: 290px !important; /* Maintain aspect ratio */
-        margin-top: -155px !important;
+        margin-top: -134px !important;
         margin-bottom: 20px !important;
     }
 
@@ -828,6 +828,7 @@
 			/* Rounds the image */
 			object-fit: cover;
 			/* Ensures image content is properly scaled within the rounded shape */
+			margin-top: -35px !important;
 		}
 
 		.custom-spacing-main{
@@ -1088,6 +1089,25 @@
   }
 }
 
+@media (max-width: 768px) {
+        #brandCarousel {
+			display: none !important;        
+        }
+    }
+
+	@media (max-width: 768px) {
+        #smallbrandCarousel .carousel-item .row .col-12 {
+            flex: 0 0 100%; /* Full width on mobile */
+            max-width: 100%;
+        }
+    }
+
+	@media (min-width: 769px) {
+        #smallbrandCarousel {
+         display: none !important;
+        }
+    }
+
 
 	</style>
 	<script src="vendor/modernizr/modernizr.min.js"></script>
@@ -1172,11 +1192,11 @@
 									<li class="d-none d-sm-inline-flex ms-0 font-weight-semibold">
 										<div class="d-flex align-items-center">
 											<i class="icons icon-phone text-8   me-2"></i>
-											<a href="tel:91 9796297972" class="text-3 text-dark"
+											<a href="tel:+91 9796297972" class="text-3 text-dark"
 												style="color: #000; text-decoration: none; transition: color 0.3s ease;"
 												onmouseover="this.style.color='#426CC1'; this.style.textDecoration='underline';"
 												onmouseout="this.style.color='#000'; this.style.textDecoration='none';">
-												91 9796297972
+												+91 9796297972
 											</a>
 
 										</div>
@@ -1207,8 +1227,8 @@
 				<div class="section1-div row align-items-center" style="height: 450px;padding-left: 28px;padding: 0 20px;display: flex; justify-content: center; align-items: center;width: 1400px;margin: 2px auto;">
 					<!-- Left Content Section -->
 					<div class="section1-text col-lg-6 text-center text-md-center text-xl-start text-lg-start">
-						<h1 class="section1-h1 display-4 fw-bold text-white" style="font-size: 48px;">
-							Boost Your Brand’s Influence with <span style="color: #FFBF78;">BuzzBoost</span>
+						<h1 class="section1-h1 display-4 fw-bold text-white" style="font-size: 44px;">
+							Boost Your Brand’s Influence<br> with <span style="color: #FFBF78;">BuzzBoost</span>
 						</h1>
 						
 						<p class="section1-p lead line-height-5 text-white" style="font-size: 1.5rem;letter-spacing: normal;">
@@ -1239,7 +1259,7 @@
 						network of influencers across diverse industries.</p>
 				</div>
 			</div>
-			<div class="row align-items-center text-center mt-2">
+			<!-- <div class="row align-items-center text-center mt-2">
 				<div class="col-sm-4 col-xl-2 mb-5 mb-xl-0">
 					<img src="img/BuzzBoostImg/acme.png" alt class="img-fluid" style="max-width: 140px;" />
 				</div>
@@ -1258,7 +1278,89 @@
 				<div class="col-sm-4 col-xl-2">
 					<img src="img/BuzzBoostImg/stari.png" alt class="img-fluid" style="max-width: 100px;" />
 				</div>
+			</div> -->
+			<div id="brandCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000" style="padding-top: 40px;">
+				<div class="carousel-inner text-center">
+					<!-- First Slide -->
+					<div class="carousel-item active">
+						<div class="row align-items-center justify-content-center">
+							<div class="col-sm-4 col-xl-2 mb-4">
+								<img src="img/BuzzBoostImg/acme.png" alt class="img-fluid" style="max-width: 140px;" alt="BuzzBoost" />
+							</div>
+							<div class="col-sm-4 col-xl-2 mb-4">
+								<img src="img/BuzzBoostImg/circle.png" alt class="img-fluid" style="max-width: 140px;" alt="BuzzBoost" />
+							</div>
+							<div class="col-sm-4 col-xl-2 mb-4">
+								<img src="img/BuzzBoostImg/fox-hub-black.png" alt class="img-fluid" style="max-width: 140px;" alt="BuzzBoost" />
+							</div>
+						</div>
+					</div>
+					<!-- Second Slide -->
+					<div class="carousel-item">
+						<div class="row align-items-center justify-content-center">
+							<div class="col-sm-4 col-xl-2 mb-4">
+								<img src="img/BuzzBoostImg/Group M.png" alt class="img-fluid" style="max-width: 140px;" />
+							</div>
+							<div class="col-sm-4 col-xl-2 mb-4">
+								<img src="img/BuzzBoostImg/hexa.png" alt class="img-fluid" style="max-width: 100px;" />
+							</div>
+							<div class="col-sm-4 col-xl-2 mb-4">
+								<img src="img/BuzzBoostImg/stari.png" alt class="img-fluid" style="max-width: 100px;" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Carousel Controls -->
+				<button class="carousel-control-prev" type="button" data-bs-target="#brandCarousel" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#brandCarousel" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
 			</div>
+
+						<!-- carousel for small screens -->
+			 <!-- Carousel Start -->
+<div id="smallbrandCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000" style="padding-top: 40px;">
+    <div class="carousel-inner text-center">
+        <!-- First Slide -->
+        <div class="carousel-item active">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <img src="img/BuzzBoostImg/acme.png" alt="BuzzBoost" class="img-fluid" style="max-width: 140px;" />
+                </div>
+            </div>
+        </div>
+        <!-- Second Slide -->
+        <div class="carousel-item">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <img src="img/BuzzBoostImg/circle.png" alt="BuzzBoost" class="img-fluid" style="max-width: 140px;" />
+                </div>
+            </div>
+        </div>
+        <!-- Third Slide -->
+        <div class="carousel-item">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <img src="img/BuzzBoostImg/fox-hub-black.png" alt="BuzzBoost" class="img-fluid" style="max-width: 140px;" />
+                </div>
+            </div>
+        </div>
+        <!-- Add More Slides as Needed -->
+    </div>
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#brandCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#brandCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
 		</div>
 
 		  <!-- section-1 cta -->
@@ -1607,7 +1709,7 @@
 							</p>
 						</div>
 						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-2 order-lg-1 order-md-1 order-1">
-							<div class="d-flex justify-content-center align-items-center" style="padding-top: 45px;">
+							<div class="d-flex justify-content-center align-items-center" style="padding-top: 20px;">
 								<img src="img/MobileImgs/compressed-images/Events.jpg" class="img-fluid rounded-image"
 									 />
 							</div>
@@ -1685,7 +1787,7 @@
 							</p>
 						</div>
 						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-2 order-lg-1 order-md-1 order-1">
-							<div class="d-flex justify-content-center" style="padding-top: 45px;">
+							<div class="d-flex justify-content-center" style="padding-top: 3px;">
 								<img src="img/MobileImgs/compressed-images/Tech Innovators.jpg" class="img-fluid rounded-image" />
 							</div>
 						</div>
@@ -1862,8 +1964,8 @@
 							finding the right influencers? Our team is just a WhatsApp message away!</p>
 
 						<i class="icons icon-phone text-8 text-color-primary me-2" style="color: #000;"></i>
-						<a href="tel:91 9796297972" style="color: #000;"
-							class="text-5 p-relative bottom-9 font-weight-semi-bold">91 9796297972
+						<a href="tel:+919796297972" style="color: #000;"
+							class="text-5 p-relative bottom-9 font-weight-semi-bold">+91 9796297972
 							</a>
 
 					</div>
@@ -1918,7 +2020,7 @@
 				<div class="col-lg-4">
 					<h4 class="text-color-light font-weight-bold mb-3">BuzzBoost</h4>
 
-					<ul class="social-icons ">
+					<!-- <ul class="social-icons ">
 						<li class="social-icons-instagram">
 							<a href="http://www.instagram.com/" target="_blank" title="Instagram">
 								<i class="fab fa-instagram"></i>
@@ -1934,7 +2036,7 @@
 								<i class="fab fa-facebook-f"></i>
 							</a>
 						</li>
-					</ul>
+					</ul> -->
 				</div>
 				<div class="col-lg-8">
 					<div class="row mb-5-5">
@@ -1983,7 +2085,7 @@
 	</footer>
 
 	<div style="position: fixed; bottom: 30px; right: 20px; z-index: 9999; width: 55px; height: 55px;">
-		<a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+		<a href="https://wa.me/+919796297972" target="_blank" rel="noopener noreferrer">
 			<img src="img\whatsappiconfixed.png" 
 				 alt="WhatsApp" 
 				 style="width: 100%; height: 100%; border-radius: 50%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); cursor: pointer;" />
@@ -2069,7 +2171,7 @@
 	
 			if (name && phone) {
 				// Replace with your WhatsApp number (including country code)
-				const whatsappNumber = "919796297972"; 
+				const whatsappNumber = "+919796297972"; 
 				const message = `Hello, my name is ${name}. My phone number is ${phone}. I'd like to get in touch.`;
 				const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 				
