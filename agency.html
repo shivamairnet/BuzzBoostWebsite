@@ -52,6 +52,9 @@
 
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
+    <!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 
     <style>
         * {
@@ -246,7 +249,7 @@
         max-width: 100% !important; /* Responsive image */
         padding-right: 0 !important; /* Remove padding on mobile */
         max-height: 320px !important;
-        margin-top: 111px !important;
+        margin-top: 140px !important;
         padding-left: 0px !important;
         text-align: center !important;
         margin-left: 20px !important;
@@ -343,7 +346,7 @@
 </head>
 
 <body class="alternative-font-5">
-    <div class="body mt-0">
+
 
         <header style="background-color: #fff;" id="header" class="header-transparent "
             data-plugin-options="{'stickyScrollUp': true, 'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 42, 'stickyHeaderContainerHeight': 70}">
@@ -391,11 +394,6 @@
                                                         <li><a class="dropdown-item" href="Influencer.html">Influencer</a></li>
                                                     </ul>
                                                 </li>
-                                                <!-- <li>
-                                                    <a class="nav-link" href="blog-large-image-full-width.html">
-                                                        Blog
-                                                    </a>
-                                                </li> -->
                                                 <li>
                                                     <a class="nav-link" href="contact.html">
                                                         Pricing
@@ -552,46 +550,63 @@
             </div>
         </section>
 
-        <!-- small screen carousel -->
-        <section class="small-screen-carousel section">
-            <div class="container text-center mobile-view">
-                <!-- Section Header -->
-                <h3 class="pt-4" style="font-weight: bold; font-size: 36px;">
-                    Choose From A List Of Influencers For Your Client
-                </h3>
-                <p class="pt-1">
-                    BuzzBoost offers you to collaborate with the best influencers across industries, styles, and audiences<br>
-                    to find the perfect fit for your brand.
-                </p>
-        
-                <!-- Continuous Carousel -->
-                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-                    <!-- Carousel Items -->
-                    <div class="carousel-inner">
-                        <div class="carousel-item active  mobile-view" style="padding: 20px;">
-                            <div class="d-flex overflow-auto" style="scroll-snap-type: x mandatory; gap: 40px !important;">
-                                <!-- Card Items -->
-                                <div class="card" style="min-width: 290px; flex-shrink: 0;">
-                                    <img src="img/Agency Page Images/iloveimg-compressed (1)/Frame 89.png" class="card-img-top" alt="Image 1" style="height: 388px;width: 325px;">
-                                </div>
-                                <div class="card" style="min-width: 290px; flex-shrink: 0;">
-                                    <img src="img/Agency Page Images/iloveimg-compressed (1)/Frame 90.png" class="card-img-top" alt="Image 2" style="height: 388px;width: 325px;">
-                                </div>
-                                <div class="card" style="min-width: 290px; flex-shrink: 0;">
-                                    <img src="img/Agency Page Images/iloveimg-compressed (1)/Frame 91.png" class="card-img-top" alt="Image 3" style="height: 388px;width: 325px;">
-                                </div>
-                                <div class="card" style="min-width: 290px; flex-shrink: 0;">
-                                    <img src="img/Agency Page Images/iloveimg-compressed (1)/Frame 97.png" class="card-img-top" alt="Image 4" style="height: 388px;width: 325px;">
-                                </div>
-                                <div class="card" style="min-width: 290px; flex-shrink: 0;">
-                                    <img src="img/Agency Page Images/iloveimg-compressed (1)/Frame 98.png" class="card-img-top" alt="Image 5" style="height: 388px;width: 325px;">
-                                </div>
-                            </div>
+<!-- Small Screen Carousel -->
+<section class="small-screen-carousel section">
+    <div class="container text-center mobile-view">
+        <!-- Section Header -->
+        <h3 class="pt-4" style="font-weight: bold; font-size: 36px;">
+            Choose From A List Of Influencers For Your Client
+        </h3>
+        <p class="pt-1">
+            BuzzBoost offers you to collaborate with the best influencers across industries, styles, and audiences<br>
+            to find the perfect fit for your brand.
+        </p>
+
+        <!-- Continuous Carousel -->
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <!-- Carousel Items -->
+            <div class="carousel-inner">
+                <div class="carousel-item active mobile-view" style="padding: 20px;">
+                    <div class="d-flex overflow-auto" style="scroll-snap-type: x mandatory; gap: 40px !important;">
+                        <!-- Card Items -->
+                        <div class="card" style="min-width: 290px; flex-shrink: 0;border-radius: 12px;">
+                            <img src="img/Agency Page Images/iloveimg-compressed (1)/Frame 89.png" class="card-img-top" alt="Image 1" style="height: 388px;width: 325px;">
+                        </div>
+                        <div class="card" style="min-width: 290px; flex-shrink: 0;border-radius: 12px;">
+                            <img src="img/Agency Page Images/iloveimg-compressed (1)/Frame 90.png" class="card-img-top" alt="Image 2" style="height: 388px;width: 325px;">
+                        </div>
+                        <div class="card" style="min-width: 290px; flex-shrink: 0;border-radius: 12px;">
+                            <img src="img/Agency Page Images/iloveimg-compressed (1)/Frame 91.png" class="card-img-top" alt="Image 3" style="height: 388px;width: 325px;">
+                        </div>
+                        <div class="card" style="min-width: 290px; flex-shrink: 0;border-radius: 12px;">
+                            <img src="img/Agency Page Images/iloveimg-compressed (1)/Frame 97.png" class="card-img-top" alt="Image 4" style="height: 388px;width: 325px;">
+                        </div>
+                        <div class="card" style="min-width: 290px; flex-shrink: 0;border-radius: 12px;">
+                            <img src="img/Agency Page Images/iloveimg-compressed (1)/Frame 98.png" class="card-img-top" alt="Image 5" style="height: 388px;width: 325px;">
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+
+            <!-- Navigation Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev"
+                style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background-color: rgba(0, 0, 0, 0.5); width: 40px; height: 40px; border-radius: 50%; display: flex; justify-content: center; align-items: center; border: none;">
+                <span class="carousel-control-prev-icon" aria-hidden="true"
+                    style="display: inline-block; width: 10px; height: 10px; border: solid white; border-width: 0 2px 2px 0; transform: rotate(135deg);"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next"
+                style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background-color: rgba(0, 0, 0, 0.5); width: 40px; height: 40px; border-radius: 50%; display: flex; justify-content: center; align-items: center; border: none;">
+                <span class="carousel-control-next-icon" aria-hidden="true"
+                    style="display: inline-block; width: 10px; height: 10px; border: solid white; border-width: 0 2px 2px 0; transform: rotate(-45deg);"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+
+
         
 
             <!-- section-3 request a form-->
@@ -639,9 +654,6 @@
                                     <div class="form-group col-md-6 col text-start">
                                         <input type="text" value="" placeholder="Address*" data-msg-required="Please enter address" maxlength="100" class="form-control text-2-5 p-3" name="address" required>
                                     </div>
-                                    <!-- <div class="form-group col-md-6 col text-start">
-                                        <input type="text" value="" placeholder="Your Phone *" data-msg-required="Please enter your phone" maxlength="100" class="form-control text-2-5 p-3" name="yourphone" required>
-                                    </div> -->
                                     <div class="form-group col-md-6 col text-start">
                                         <select name="industry" class="form-control text-2-5 p-3" required id="industry-select">
                                             <option value="" disabled selected>Select Industry *</option>
@@ -658,18 +670,6 @@
             
                                 <!-- Industry Dropdown and Additional Details -->
                                 <div class="row">
-                                    <!-- <div class="form-group col-md-6 col text-start">
-                                        <select name="industry" class="form-control text-2-5 p-3" required id="industry-select">
-                                            <option value="" disabled selected>Select Industry *</option>
-                                            <option value="Foods and Drinks">Foods and Drinks</option>
-                                            <option value="Events">Events</option>
-                                            <option value="Beauty and Fashion">Beauty and Fashion</option>
-                                            <option value="Lifestyle">Lifestyle</option>
-                                            <option value="Sports">Sports</option>
-                                            <option value="Tech Innovators">Tech Innovators</option>
-                                            <option value="Other">Other</option>
-                                        </select>
-                                    </div> -->
                                     <div class="form-group col-md-12 col text-start" id="other-industry-container" style="display: none;">
                                         <input type="text" value="" placeholder="Enter Custom Industry" maxlength="100" class="form-control text-2-5 p-3" name="other_industry" id="other-industry">
                                     </div>
@@ -688,9 +688,6 @@
                                         Request A Quote
                                     </a>
                                 </div>                                
-                                
-            
-                          
                             </form>
                         </div>
                     </div>
@@ -824,18 +821,6 @@
         
                             <!-- Industry Dropdown and Additional Details -->
                             <div class="row">
-                                <!-- <div class="form-group col-md-6 col text-start">
-                                    <select name="industry" class="form-control text-2-5 p-3" required id="industry-select">
-                                        <option value="" disabled selected>Select Industry *</option>
-                                        <option value="Foods and Drinks">Foods and Drinks</option>
-                                        <option value="Events">Events</option>
-                                        <option value="Beauty and Fashion">Beauty and Fashion</option>
-                                        <option value="Lifestyle">Lifestyle</option>
-                                        <option value="Sports">Sports</option>
-                                        <option value="Tech Innovators">Tech Innovators</option>
-                                        <option value="Other">Other</option>
-                                    </select>
-                                </div> -->
                                 <div class="form-group col-md-12 col text-start" id="other-industry-container" style="display: none;">
                                     <input type="text" value="" placeholder="Enter Custom Industry" maxlength="100" class="form-control text-2-5 p-3" name="other_industry" id="other-industry">
                                 </div>
@@ -854,8 +839,6 @@
                                     Request A Quote
                                 </a>
                             </div>                                
-                            
-    
                         </form>
                     </div>
                 </div>
@@ -976,7 +959,7 @@ document.getElementById('industry-select').addEventListener('change', function()
                         <i class="icons icon-phone text-8 text-color-primary me-2"></i>
                         <a href="tel:+919796297972" style="color: #000;"
                         
-                            class="text-5 p-relative bottom-9 font-weight-semi-bold">+91 9796297972
+                            class="text-5 p-relative bottom-9 font-weight-semi-bold text-decoration-none">+91 9796297972
                             </a>
 
                     </div>
@@ -1027,25 +1010,7 @@ document.getElementById('industry-select').addEventListener('change', function()
 				<div class="row gy-5">
 					<div class="col-lg-4">
 						<h4 class="text-color-light font-weight-bold mb-3">BuzzBoost</h4>
-
-						<!-- <ul class="social-icons ">
-							<li class="social-icons-instagram">
-								<a href="http://www.instagram.com/" target="_blank" title="Instagram">
-									<i class="fab fa-instagram"></i>
-								</a>
-							</li>
-							<li class="social-icons-twitter">
-								<a href="http://www.twitter.com/" target="_blank" title="Twitter">
-									<i class="fab fa-twitter"></i>
-								</a>
-							</li>
-							<li class="social-icons-facebook">
-								<a href="http://www.facebook.com/" target="_blank" title="Facebook">
-									<i class="fab fa-facebook-f"></i>
-								</a>
-							</li>
-						</ul> -->
-					</div>
+                    </div>
 					<div class="col-lg-8">
 						<div class="row mb-5-5">
 							<div class="col-lg-6 mb-4 mb-lg-0 ">

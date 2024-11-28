@@ -42,11 +42,6 @@
 
 	<!-- Demo CSS -->
 	<link rel="stylesheet" href="css/demos/demo-business-consulting-5.css">
- <!-- Bootstrap CSS -->
-<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
-
-<!-- Bootstrap Bundle with Popper -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> -->
 
 	<!-- Skin CSS -->
 	<link id="skinCSS" rel="stylesheet" href="css/skins/skin-business-consulting-5.css">
@@ -67,6 +62,572 @@
 		}
 
 
+
+		.card-new {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-size: cover;
+			background-position: center;
+			height: 600px;
+			/* Set a fixed height for the cards */
+			/* color: white; */
+		}
+
+		.new-card {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 412px;
+			border-radius: 20px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+			margin: 10px 0;
+			opacity: 1 !important;
+			visibility: visible;
+			display: block;
+		}
+
+		.new-row {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+			position: sticky;
+			top: 100px;
+			/* Start sticking here */
+
+			/* transition: transform 0.2s; */
+			/* Smooth transition */
+			z-index: 1;
+
+		}
+
+		.card h5 {
+			margin-top: 10px;
+			/* Add some spacing at the top of the heading */
+		}
+
+		.card h6 {
+			margin-bottom: 10px;
+		}
+
+
+		.container-custom {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			/* padding: 40px; */
+			position: relative;
+		}
+
+		.card-custom {
+			width: 80vw;
+			max-width: 700px;
+			height: 400px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+			margin: 50px 0;
+			position: sticky;
+			top: 100px;
+			/* Start sticking here */
+			border-radius: 20px;
+			box-shadow: 0 4px 8px rgba(70, 44, 193, 0.2);
+
+			transition: transform 0.2s;
+			/* Smooth transition */
+			z-index: 1;
+
+
+
+			/* Ensure card is on top */
+		}
+
+		
+		@media (max-width: 767px) {
+			.card-custom {
+				height:550px;
+			}
+		}
+
+		
+		@media (max-width: 425px) {
+			.card-custom {
+				height: 600px;
+			}
+		}
+
+		@media(max-width: 374px){
+			.card-custom{
+				height: 630px;
+			}
+		}
+
+		#card1 {
+			--index: 1;
+		}
+
+		#card2 {
+			--index: 2;
+		}
+
+		#card3 {
+			--index: 3;
+		}
+
+		#card4 {
+			--index: 4;
+		}
+
+		#card5 {
+			--index: 5;
+		}
+
+		#card6 {
+			--index: 6;
+		}
+
+		#card7 {
+			--index: 7;
+		}
+
+
+		
+
+		.hero-text {
+			max-width: 1000px;
+		}
+
+	
+
+		@media (max-width:2600px) {
+			.custom-ustom-card {
+				height: 86vh;
+			}
+
+			.new-width {
+				width: 270px;
+			}
+		}
+
+
+
+		@media(min-width:1025px) {
+			.custom-margin {
+				margin-top: 400px;
+			}
+
+		}
+
+		
+
+		.rounded-image {
+			
+			max-width: 100%;
+			
+			/* Ensures the image doesn't exceed the container width */
+			height: 110px;
+			/* Maintains the image aspect ratio */
+			border-radius: 10%;
+			/* Rounds the image */
+			object-fit: cover;
+			/* Ensures image content is properly scaled within the rounded shape */
+		}
+
+		.custom-spacing-main{
+			margin-top: 1rem;
+		}
+
+		.custom-spacing-h3{
+			margin-top: 1.5rem;
+		}
+
+		.custom-spacing-p{
+			margin-top: 1rem;
+		}
+
+		@media (max-width:2600px) {
+			.custom-ustom-card {
+				height: 86vh;
+			}
+
+			.new-width {
+				width: 270px;
+			}
+		}
+
+
+
+		@media (max-width: 1536px) {
+			.custom-custom-card {
+				height: 74vh;
+				/* Further reduce height on extra small screens */
+			}
+		}
+
+		@media (max-width: 1440px) {
+			.custom-custom-card {
+				height: 85vh;
+				/* Further reduce height on extra small screens */
+			}
+		}
+
+		@media (max-width: 1024px) {
+			.custom-custom-card {
+				height: 85vh;
+				/* Further reduce height on extra small screens */
+			}
+		}
+
+		@media (max-width: 768px) {
+			.custom-custom-card {
+				height: 85vh;
+				/* Further reduce height on extra small screens */
+			}
+		}
+
+		@media(max-width:425px) {
+			.custom-custom-card {
+				height: 85vh;
+				/* Further reduce height on extra small screens */
+			}
+
+			.new-width {
+				width: 300px;
+			}
+		}
+
+
+		@media (max-width: 375px) {
+			.custom-custom-card {
+				height: 90vh;
+				/* Further reduce height on extra small screens */
+			}
+
+			.new-width {
+				width: 290px;
+			}
+		}
+
+		@media(min-width:1025px) {
+			.custom-margin {
+				margin-top: 400px;
+			}
+
+		}
+
+		.custom-btn:hover {
+			background-color: #426CC1 !important;
+			color: #fff !important;
+			
+		}
+
+		#whatsappButton:hover #whatsappIcon {
+        content: url('img/whatsapphover.png') !important;
+        }
+
+		.custom-btn {
+			background-color: #FFBF78 !important;
+			color: #000 !important;
+		}
+
+
+		/* Media query for screens smaller than 768px (mobile devices) */
+@media (max-width: 767px) {
+    .hero-section .row {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    /* .hero-text {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .hero-img {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .hero-img img {
+        width: 100%;
+        height: auto;
+    } */
+
+    /* .custom-btn {
+        width: 100%;
+    } */
+}
+@media(max-width :768px)
+{
+	.three-card-section{
+		margin-top: 35px !important;
+	}
+}
+
+
+/* .card-section:hover {
+ box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+} */
+
+/* mobile footer */
+
+@media (max-width: 767px) {
+    #footer .container {
+        padding-top: 2rem;
+        padding-bottom: 1.5rem;
+    }
+
+    #footer .col-lg-4, #footer .col-lg-8 {
+        text-align: center;
+    }
+
+    #footer .col-lg-8 {
+        margin-top: 1.5rem;
+    }
+
+    #footer h4 {
+        font-size: 1.2rem;
+    }
+
+    #footer .social-icons {
+        justify-content: center;
+        padding: 0;
+        margin: 1rem 0;
+    }
+
+    #footer .social-icons li {
+        margin: 0 5px;
+    }
+
+    #footer .list {
+        text-align: center;
+        padding: 0;
+    }
+
+    #footer .footer-copyright hr {
+        width: 80%;
+        margin: 1.5rem auto;
+    }
+
+    #footer .text-3 {
+        font-size: 0.9rem;
+    }
+
+    #footer .Ascentia {
+        margin: 0 auto;
+        display: block;
+        width: 150px;
+        height: auto;
+    }
+
+}
+
+/* media query for cta section */
+@media (max-width: 767px) {
+    .cta-section.styled-section {
+        width: 90% !important;
+        margin: 40px auto !important;
+        padding: 20px !important;
+    }
+
+    .cta-section .container {
+        padding: 0 !important;
+    }
+
+    .cta-section .row {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    .cta-section .col-xl-7, .cta-section .col-xl-5 {
+        order: unset !important;
+        margin: 0 auto !important;
+    }
+
+    .cta-section .col-xl-7 .text-3 {
+        order: 1 !important;
+    }
+
+    .cta-section .col-xl-7 h3 {
+        order: 2 !important;
+        font-size: 1.5rem !important;
+        line-height: 1.3 !important;
+    }
+
+    .cta-section .col-xl-7 p {
+        order: 3 !important;
+        font-size: 1rem !important;
+        line-height: 1.5 !important;
+        margin-bottom: 15px !important;
+    }
+
+    .cta-section .col-xl-5 img {
+        order: 4 !important;
+        width: 80% !important;
+        height: auto !important;
+        max-width: 250px !important;
+        margin-top: 15px !important;
+    }
+
+    .cta-section .col-xl-7 .industry-button {
+        order: 5 !important;
+        padding: 10px 20px !important;
+        font-size: 1rem !important;
+        width: 100% !important;
+        margin-top: 15px !important;
+    }
+}
+
+/* media query for section-1 */
+
+@media (max-width: 768px) {
+    .section-1 {
+        margin: 0 auto !important; 
+        padding: 15px !important;
+        background: linear-gradient(to right, #314D91, #426CC1, #8AA2D7) !important;
+        max-height: 1200px !important;
+    }
+
+	.section1-text{
+		/* margin-top: 20px !important; */
+		height: 410px !important;
+	}
+
+    .section1-div {
+        flex-direction: column !important; /* Stack content vertically */
+        height: 850px !important; /* Allow height to adjust based on content */
+        width: 100% !important; /* Ensure full width for mobile */
+        padding: 0 10px !important; /* Adjust padding for mobile */
+        
+    }
+
+    /* .hero-section-agency .hero-text {
+        text-align: center !important; 
+        margin-bottom: 20px !important; 
+        margin-top: 40px !important;
+    } */
+
+    .section1-h1 {
+        font-size: 36px !important; /* Adjust heading size for mobile */
+        font-weight: bold !important;
+        margin-top: -250px !important;
+    }
+
+    .section1-p {
+        font-size: 1.5rem !important; /* Adjust paragraph size */
+        line-height: 1.5 !important; /* Improve readability */
+        margin-bottom: 15px !important; /* Add spacing below paragraph */
+        margin-top: 345px !important;
+    }
+
+    .section1-btnnew {
+        padding: 10px 20px !important; /* Adjust button size */
+        width: auto !important; /* Allow button to fit content */
+        margin: 0 auto !important; /* Center the button */
+        margin-top: 40px !important;
+    }
+
+    .section1-img {
+        text-align: center !important; /* Center-align the image */
+        margin-top: -370px !important; /* Add spacing above image */
+        margin-bottom: 40px !important;
+
+    }
+
+    .section1-img1 {
+        width: 100% !important; /* Scale image to fit inside screen */
+        max-width: 300px !important; /* Limit maximum width */
+        height: 290px !important; /* Maintain aspect ratio */
+        margin-top: -134px !important;
+        margin-bottom: 20px !important;
+    }
+
+    
+
+    .lshead{
+        display: none !important;
+    }
+
+   
+}
+
+.card-section {
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.card-section:hover {
+    box-shadow: 0 0 10px #426CC1, 0 0 10px #426CC1, 0 0 10px #426CC1; /* Glowing effect */
+    transform: scale(1.025); /* Slight zoom effect */
+}
+
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 20px !important; /* Adjust padding for smaller screens */
+    }
+
+    .hero-section-content {
+        flex-direction: column !important; /* Stack content vertically */
+        height: auto !important; /* Remove fixed height */
+        width: 100% !important; /* Make it full width */
+        margin: 0 auto !important;
+    }
+
+    .hero-text {
+        text-align: center !important; /* Center-align text for mobile */
+        margin-bottom: 20px !important; /* Add spacing below text */
+		margin-top: 10px !important;
+    }
+
+    .hero-title {
+        font-size: 44px !important; /* Adjust font size for headings */
+		margin-top: -300px !important;
+    }
+
+    .hero-description {
+        font-size: 1.5rem !important; /* Adjust font size for better fit */
+        line-height: 1.5 !important; /* Improve readability */
+        margin-bottom: 15px !important;
+		margin-top: 360px !important;
+    }
+
+    .hero-btn {
+        padding: 10px 20px !important; /* Adjust button padding */
+        width: auto !important; /* Button should auto-adjust */
+        
+    }
+
+    .hero-image {
+        text-align: center !important; /* Center-align the image */
+        margin-top: -560px !important; /* Add spacing above the image */
+    }
+
+    .hero-img {
+        width: 100% !important; /* Scale image to fit inside the screen */
+        max-width: 300px !important; /* Limit maximum width */
+        height: auto !important; /* Maintain aspect ratio */
+        margin: 0 auto !important; /* Center the image */
+    }
+}
+
+/* responsiveness gitcode */
+* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		@media(min-width:1600px) {
+			.custom-top-margin {
+				margin-top: 200px;
+			}
+		}
 
 		.card-new {
 			display: flex;
@@ -248,13 +809,14 @@
 			max-width: 100%;
 			
 			/* Ensures the image doesn't exceed the container width */
-			height: 110px;
+			height: 140px;
 			/* Maintains the image aspect ratio */
 			border-radius: 10%;
 			/* Rounds the image */
 			object-fit: cover;
 			/* Ensures image content is properly scaled within the rounded shape */
-			margin-top: -35px !important;
+			margin-top: -65px !important;
+			margin-bottom: 20px !important;
 		}
 
 		.custom-spacing-main{
@@ -341,18 +903,18 @@
 
 		.custom-btn:hover {
 			background-color: #426CC1;
-			color: #fff !important;
+			color: #fff;
 			
 		}
 
-		#whatsappButton:hover #whatsappIcon {
-    content: url('img/whatsapphover.png');
-  }
+		#whatsappButton:hover .whatsapp-icon {
+    content: url("img/BuzzBoostImg/whatsapp (1).png") !important; /* Replace with your hover image path */
+}
 
 
 		.custom-btn {
 			background-color: #FFBF78;
-			color: #000 !important;
+			color: #000;
 		}
 
 
@@ -506,83 +1068,6 @@
     }
 }
 
-/* media query for section-1 */
-
-@media (max-width: 768px) {
-    .section-1 {
-        margin: 0 auto !important; 
-        padding: 15px !important;
-        background: linear-gradient(to right, #314D91, #426CC1, #8AA2D7) !important;
-        max-height: 1200px !important;
-    }
-
-    .section1-div {
-        flex-direction: column !important; /* Stack content vertically */
-        height: 850px !important; /* Allow height to adjust based on content */
-        width: 100% !important; /* Ensure full width for mobile */
-        padding: 0 10px !important; /* Adjust padding for mobile */
-        
-    }
-
-	.section1-text{
-		/* margin-top: 40px !important; */
-		height: 410px !important;
-	}
-
-    /* .hero-section-agency .hero-text {
-        text-align: center !important; 
-        margin-bottom: 20px !important; 
-        margin-top: 40px !important;
-    } */
-
-    .section1-h1 {
-        font-size: 36px !important; /* Adjust heading size for mobile */
-        font-weight: bold !important;
-        margin-top: -250px !important;
-    }
-
-    .section1-p {
-        font-size: 1.5rem !important; /* Adjust paragraph size */
-        line-height: 1.5 !important; /* Improve readability */
-        margin-bottom: 15px !important; /* Add spacing below paragraph */
-        margin-top: 345px !important;
-    }
-
-    .section1-btnnew {
-        padding: 10px 20px !important; /* Adjust button size */
-        width: auto !important; /* Allow button to fit content */
-        margin: 0 auto !important; /* Center the button */
-        margin-top: 40px !important;
-    }
-
-    .section1-img {
-        text-align: center !important; /* Center-align the image */
-        margin-top: -370px !important; /* Add spacing above image */
-        margin-bottom: 40px !important;
-
-    }
-
-    .section1-img1 {
-        width: 100% !important; /* Scale image to fit inside screen */
-        max-width: 300px !important; /* Limit maximum width */
-        height: 290px !important; /* Maintain aspect ratio */
-        margin-top: -134px !important;
-        margin-bottom: 20px !important;
-    }
-
-   
-}
-
-.card-section {
-    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition */
-}
-
-.card-section:hover {
-    box-shadow: 0 0 10px #426CC1, 0 0 10px #426CC1, 0 0 10px #426CC1; /* Glowing effect */
-    transform: scale(1.025); /* Slight zoom effect */
-}
-
-
 @media (max-width: 768px) {
   .override-inline {
     position: static !important; /* Override position */
@@ -610,6 +1095,7 @@
          display: none !important;
         }
     }
+
 
 	</style>
 	<script src="vendor/modernizr/modernizr.min.js"></script>
@@ -723,59 +1209,77 @@
 		</header>
 
 		<div role="main" class="main">
-       <!--section-1-->
-<section class="section1" style="margin: 2px auto; padding: 15px; background-color: #000;">
-	<div class="section1-div row align-items-center" style="height: 450px;padding-left: 28px;padding: 0 20px;display: flex; justify-content: center; align-items: center;width: 1400px;margin: 2px auto;">
-		<!-- Left Content Section -->
-		<div class="section1-text col-lg-6 text-center text-md-center text-xl-start text-lg-start">
-			<h1 class="section1-h1 display-4 fw-bold text-white" style="font-size: 44px;">
-				Boost Your Brand’s Influence<br> with <span style="color: #FFBF78;">BuzzBoost</span>
-			</h1>
+     
+			<!--section-1-->
+			<section class="section1" style="margin: 2px auto; padding: 15px; background-color: #000;">
+				<div class="section1-div row align-items-center" style="height: 450px;padding-left: 28px;padding: 0 20px;display: flex; justify-content: center; align-items: center;width: 1400px;margin: 2px auto;">
+					<!-- Left Content Section -->
+					<div class="section1-text col-lg-6 text-center text-md-center text-xl-start text-lg-start">
+						<h1 class="section1-h1 display-4 fw-bold text-white" style="font-size: 44px;">
+							Boost Your Brand’s Influence<br> with <span style="color: #FFBF78;">BuzzBoost</span>
+						</h1>
+						
+						<p class="section1-p lead line-height-5 text-white" style="font-size: 1.5rem;letter-spacing: normal;">
+							Welcome to BuzzBoost, your go-to platform for
+							connecting with top influencers across various industries
+						</p>
+						<a href="contact.html"
+							class="section1-btn btn btn-modern box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5 custom-btn">
+							Get In Touch 
+						</a>
+					</div>
 			
-			<p class="section1-p lead line-height-5 text-white" style="font-size: 1.5rem;letter-spacing: normal;">
-				Welcome to BuzzBoost, your go-to platform for
-				connecting with top influencers across various industries
-			</p>
-			<a href="contact.html"
-				class="section1-btn btn btn-modern box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5 custom-btn">
-				Get In Touch 
-			</a>
-		</div>
-
-		<!-- Right Image Section -->
-		<div class="section1-img col-lg-6 d-lg-block" style="text-align: center;">
-			<img class="section1-img1" src="img/BuzzBoostImg/Home Page Header.png" alt="Hero Image" width="450px" height="405px">
-		</div>
-	</div>
-</section>
+					<!-- Right Image Section -->
+					<div class="section1-img col-lg-6 d-lg-block" style="text-align: center;">
+						<img class="section1-img1" src="img/BuzzBoostImg/Home Page Header.png" alt="BuzzBoost" width="450px" height="405px">
+					</div>
+				</div>
+			</section>
+	
 
 		 <!-- carousel section -->
-		 <div class="container" style="padding: 10px; padding-top: 45px; padding-bottom: 45px;">			
+		 <div class="container" style="padding: 10px;padding-top: 45px;padding-bottom: 45px;">
+		
 			<div class="row">
 				<div class="col text-center">
 					<h3 class="pt-4">Trusted Brands Trust BuzzBoost</h3>
-					<p class="text-black" style="padding-top: 20px;">
-						We are trusted by industry-leading brands who have successfully grown with</br> 
-						our network of influencers across diverse industries.
-					</p>
+					<p class="text-black">We are trusted by industry-leading brands who have successfully grown with</br> our
+						network of influencers across diverse industries.</p>
 				</div>
 			</div>
-		
-			<!-- carousel for large screens -->
-			<!-- Carousel Start -->
+			<!-- <div class="row align-items-center text-center mt-2">
+				<div class="col-sm-4 col-xl-2 mb-5 mb-xl-0">
+					<img src="img/BuzzBoostImg/acme.png" alt class="img-fluid" style="max-width: 140px;" />
+				</div>
+				<div class="col-sm-4 col-xl-2 mb-5 mb-xl-0">
+					<img src="img/BuzzBoostImg/circle.png" alt class="img-fluid" style="max-width: 140px;" />
+				</div>
+				<div class="col-sm-4 col-xl-2 mb-5 mb-xl-0">
+					<img src="img/BuzzBoostImg/fox-hub-black.png" alt class="img-fluid" style="max-width: 140px;" />
+				</div>
+				<div class="col-sm-4 col-xl-2 mb-5 mb-lg-0">
+					<img src="img/BuzzBoostImg/Group M.png" alt class="img-fluid" style="max-width: 140px;" />
+				</div>
+				<div class="col-sm-4 col-xl-2 mb-5 mb-lg-0">
+					<img src="img/BuzzBoostImg/hexa.png" alt class="img-fluid" style="max-width: 100px;" />
+				</div>
+				<div class="col-sm-4 col-xl-2">
+					<img src="img/BuzzBoostImg/stari.png" alt class="img-fluid" style="max-width: 100px;" />
+				</div>
+			</div> -->
 			<div id="brandCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000" style="padding-top: 40px;">
 				<div class="carousel-inner text-center">
 					<!-- First Slide -->
 					<div class="carousel-item active">
 						<div class="row align-items-center justify-content-center">
 							<div class="col-sm-4 col-xl-2 mb-4">
-								<img src="img/BuzzBoostImg/acme.png" alt class="img-fluid" style="max-width: 140px;" />
+								<img src="img/BuzzBoostImg/acme.png" alt class="img-fluid" style="max-width: 140px;" alt="BuzzBoost" />
 							</div>
 							<div class="col-sm-4 col-xl-2 mb-4">
-								<img src="img/BuzzBoostImg/circle.png" alt class="img-fluid" style="max-width: 140px;" />
+								<img src="img/BuzzBoostImg/circle.png" alt class="img-fluid" style="max-width: 140px;" alt="BuzzBoost" />
 							</div>
 							<div class="col-sm-4 col-xl-2 mb-4">
-								<img src="img/BuzzBoostImg/fox-hub-black.png" alt class="img-fluid" style="max-width: 140px;" />
+								<img src="img/BuzzBoostImg/fox-hub-black.png" alt class="img-fluid" style="max-width: 140px;" alt="BuzzBoost" />
 							</div>
 						</div>
 					</div>
@@ -804,7 +1308,6 @@
 					<span class="visually-hidden">Next</span>
 				</button>
 			</div>
-			<!-- Carousel End -->
 
 						<!-- carousel for small screens -->
 			 <!-- Carousel Start -->
@@ -885,9 +1388,9 @@
 				</div>
 			</div>
 		</section>
-		
-		       
 
+		<!-- industry section cards -->
+		<div id="industry-other-button"></div>
 			<!-- Large Screen View -->
 			<div class="container" style="margin-bottom: 80px; margin-top: 50px;" id="mainContainer">
 				<h3 class="text-center">Multi-Industry Influencers to Elevate Every Brand</h3>
@@ -924,7 +1427,7 @@
 						</div>
 					</div> -->
 					<div class="col-xl-6 col-md-12">
-						<div class="new-card small-screen" style="background:linear-gradient(to bottom, hsl(212.9, 48.7%, 85.1%), hsl(30.2, 94%, 91.1%));">
+						<div class="new-card small-screen"  style="background:linear-gradient(to bottom, hsl(212.9, 48.7%, 85.1%), hsl(30.2, 94%, 91.1%));">
 							<div class="row p-3">
 								<div class="col-7">
 									<span class="d-block text-muted fs-5 lh-5 mb-1 custom-spacing-main" style=" box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); color: white !important;background-color:#FFA559;width: 160px;padding-left:2px ;padding-right: 2px;border-radius: 15px;font-weight: bold;padding: 5px;">Foods &amp; Drinks</span>
@@ -993,7 +1496,7 @@
 				</div>
 				<div class="row new-row">
 					<div class="col-xl-6 col-md-12">
-						<div class="new-card" style="background:linear-gradient(to bottom, hsl(212.9, 48.7%, 85.1%), hsl(30.2, 94%, 91.1%));">
+						<div class="new-card"  style="background:linear-gradient(to bottom, hsl(212.9, 48.7%, 85.1%), hsl(30.2, 94%, 91.1%));">
 							<div class="row p-3">
 								<div class="col-7">
 									<span class="d-block text-muted fs-5 lh-2 mb-1 custom-spacing-main" style="box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); color: white !important;background-color:#FFA559;width: 180px;padding-left:2px ;padding-right: 2px;border-radius: 15px;font-weight: bold;padding: 5px;">Beauty & Fashion</span>
@@ -1035,7 +1538,7 @@
 						</div>
 					</div>
 					<div class="col-xl-6 col-md-12">
-						<div class="new-card" style="background:linear-gradient(to bottom, hsl(212.9, 48.7%, 85.1%), hsl(30.2, 94%, 91.1%));">
+						<div class="new-card"  style="background:linear-gradient(to bottom, hsl(212.9, 48.7%, 85.1%), hsl(30.2, 94%, 91.1%));">
 							<div class="row p-3">
 								<div class="col-7">
 									<span class="d-block text-muted fs-5 lh-2 mb-1 custom-spacing-main" style="box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); color: white !important;background-color:#426CC1;width: 90px;padding-left:2px ;padding-right: 2px;border-radius: 15px;font-weight: bold;padding: 5px;">Lifestyle</span>
@@ -1076,7 +1579,7 @@
 				</div>
 				<div class="row new-row">
 					<div class="col-xl-6 col-md-12">
-						<div class="new-card" style="background:linear-gradient(to bottom, hsl(212.9, 48.7%, 85.1%), hsl(30.2, 94%, 91.1%));">
+						<div class="new-card"  style="background:linear-gradient(to bottom, hsl(212.9, 48.7%, 85.1%), hsl(30.2, 94%, 91.1%));">
 							<div class="row p-3">
 								<div class="col-7">
 									<span class="d-block text-muted fs-5 lh-2 mb-1 custom-spacing-main" style="box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); color: white!important;background-color:#FFA559;width: 80px;padding-left:2px ;padding-right: 2px;border-radius: 15px;font-weight: bold;padding: 5px;">Sports</span>
@@ -1166,9 +1669,9 @@
 				<h3 class="text-center mt-3">Multi-Industry Influencers to Elevate Every Brand</h3>
 				<div class="card-custom text-center" id="card1" style="background-color:#fff;box-shadow: 0px 4px 15px rgba(8, 8, 8, 0.5);">
 					<div class="row ms-xl-4 ms-md-2 ">
-						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-1 order-lg-2 order-md-2 order-2 mt-2">
-							<span class="text-2 line-height-1" style="color: #426CC1;">Foods & Drinks</span>
-							<h3 class="text-6  line-height-2" style="padding-left:5px;padding-right: 5px;padding-top: 5px;">Savor the Moment with Influencers
+						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-1 order-lg-2 order-md-2 order-2">
+							<span class="text-3 line-height-1" style="color: #426CC1;padding-top: 8px;">Foods & Drinks</span>
+							<h3 class="text-6  line-height-2" style="padding-left:5px;padding-right: 5px;padding-top: 10px;">Savor the Moment with Influencers
 								Who Make Every Bite Count!</h3>
 							<p class="text-left text-3 line-height-3" style="padding-left: 10px;padding-right: 10px;">Create enchanting moments,
 								attract new foodies and benefit from collaborations with influencers and creators.
@@ -1185,9 +1688,9 @@
 				</div>
 				<div class="card-custom text-center" id="card2" style="background-color: #fff; box-shadow: 0px 4px 15px rgba(4, 4, 4, 0.5);">
 					<div class="row ms-xl-4 ms-md-2 ">
-						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-1 order-lg-2 order-md-2 order-2 mt-2">
-							<span class="text-2 line-height-1" style="color: #426CC1;">Events</span>
-							<h3 class="text-6 line-height-2" style="padding-left:5px;padding-right: 5px;padding-top: 5px;">Turn Every Event into an
+						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-1 order-lg-2 order-md-2 order-2">
+							<span class="text-3 line-height-1" style="color: #426CC1;padding-top: 8px;">Events</span>
+							<h3 class="text-6 line-height-2" style="padding-left:5px;padding-right: 5px;padding-top: 10px;">Turn Every Event into an
 								Unforgettable Experience!</h3>
 							<p class="text-left text-3 line-height-3" style="padding-left: 10px;padding-right: 10px;">BuzzBoost offers more than
 								just promotion. We turn moments into movements. Expect sustained attention, heightened
@@ -1196,7 +1699,7 @@
 							</p>
 						</div>
 						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-2 order-lg-1 order-md-1 order-1">
-							<div class="d-flex justify-content-center align-items-center" style="padding-top: 45px;">
+							<div class="d-flex justify-content-center align-items-center" style="padding-top: 35px !important;">
 								<img src="img/MobileImgs/compressed-images/Events.jpg" class="img-fluid rounded-image"
 									 />
 							</div>
@@ -1205,9 +1708,9 @@
 				</div>
 				<div class="card-custom text-center" id="card3" style="background-color: #fff;box-shadow: 0px 4px 15px rgba(6, 6, 6, 0.5);">
 					<div class="row ms-xl-4 ms-md-2 ">
-						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-1 order-lg-2 order-md-2 order-2 mt-2">
-							<span class="text-2 line-height-1" style="color: #426CC1;">Beauty & Fashion</span>
-							<h3 class="text-6 line-height-2" style="padding-left:5px;padding-right: 5px;padding-top: 5px;">Highlight the Trends and Elevate
+						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-1 order-lg-2 order-md-2 order-2">
+							<span class="text-3 line-height-1" style="color: #426CC1;padding-top: 8px;">Beauty & Fashion</span>
+							<h3 class="text-6 line-height-2" style="padding-left:5px;padding-right: 5px;padding-top: 10px;">Highlight the Trends and Elevate
 								Your Brand in Style!</h3>
 							<p class="text-left text-3 line-height-3" style="padding-left: 10px;padding-right: 10px;"> Elevate the allure of
 								your beauty and fashion brand, showcase your signature style, and ignite excitement that
@@ -1225,9 +1728,9 @@
 				</div>
 				<div class="card-custom text-center" id="card4" style="background-color: #fff;box-shadow: 0px 4px 15px rgba(9, 9, 9, 0.5);">
 					<div class="row ms-xl-4 ms-md-2 ">
-						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-1 order-lg-2 order-md-2 order-2 mt-2">
-							<span class="text-2 line-height-1" style="color: #426CC1;">Lifestyle</span>
-							<h3 class="text-6 line-height-2" style="padding-left:5px;padding-right: 5px;padding-top: 5px;">Put your Lifestyle brand in the
+						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-1 order-lg-2 order-md-2 order-2">
+							<span class="text-3 line-height-1" style="color: #426CC1;padding-top: 8px;">Lifestyle</span>
+							<h3 class="text-6 line-height-2" style="padding-left:5px;padding-right: 5px;padding-top: 10px;">Put your Lifestyle brand in the
 								spotlight!</h3>
 							<p class="text-left text-3 line-height-3"  style="padding-left: 10px;padding-right: 10px;">BuzzBoost enhances life’s
 								little moments, making them unforgettable. Anticipate loyal followers, authentic
@@ -1244,9 +1747,9 @@
 				</div>
 				<div class="card-custom text-center" id="card5" style="background-color: #fff;box-shadow: 0px 4px 15px rgba(10, 10, 10, 0.5);">
 					<div class="row ms-xl-4 ms-md-2 ">
-						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-1 order-lg-2 order-md-2 order-2 mt-2">
-							<span class="text-2 line-height-1" style="color: #426CC1;">Sports</span>
-							<h3 class="text-6 line-height-2" style="padding-left:5px;padding-right: 5px;padding-top: 5px;">Energize Your Brand with Athletic
+						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-1 order-lg-2 order-md-2 order-2">
+							<span class="text-3 line-height-1" style="color: #426CC1;padding-top: 8px;">Sports</span>
+							<h3 class="text-6 line-height-2" style="padding-left:5px;padding-right: 5px;padding-top: 10px;">Energize Your Brand with Athletic
 								Influencers!</h3>
 							<p class="text-left text-3 line-height-3"  style="padding-left: 10px;padding-right: 10px;">Our sports influencers
 								bring strength, motivation, and action, aligning your brand with the world of fitness,
@@ -1264,9 +1767,9 @@
 				</div>
 				<div class="card-custom text-center" id="card6" style="background-color: #fff;box-shadow: 0px 4px 15px rgba(9, 9, 9, 0.5);">
 					<div class="row ms-xl-4 ms-md-2 ">
-						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-1 order-lg-2 order-md-2 order-2 mt-2">
-							<span class="text-2 line-height-1" style="color: #426CC1;">Tech Innovators</span>
-							<h3 class="text-6 line-height-2" style=" padding-left:5px;padding-right: 5px;padding-top: 5px;">Lead the Future with Influencers
+						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-1 order-lg-2 order-md-2 order-2">
+							<span class="text-3 line-height-1" style="color: #426CC1;padding-top: 8px;">Tech Innovators</span>
+							<h3 class="text-6 line-height-2" style=" padding-left:5px;padding-right: 5px;padding-top: 10px;">Lead the Future with Influencers
 								Who Love Innovation!
 							</h3>
 							<p class="text-left text-3 line-height-3" style="padding-left: 10px;padding-right: 10px;">Our tech innovators captivate audiences eager for innovation, making them perfect ambassadors for cutting-edge brands.
@@ -1274,7 +1777,7 @@
 							</p>
 						</div>
 						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-2 order-lg-1 order-md-1 order-1">
-							<div class="d-flex justify-content-center" style="padding-top: 15px;">
+							<div class="d-flex justify-content-center">
 								<img src="img/MobileImgs/compressed-images/Tech Innovators.jpg" class="img-fluid rounded-image" />
 							</div>
 						</div>
@@ -1298,7 +1801,8 @@
 				</div> -->
 			</div>
 
-			<!-- Other CTA section2-->
+
+			<!-- Other CTA -->
 			<section class="cta-section styled-section" style="width: 1220px; margin: 45px auto; background-color: #E4EDFF;">
 				<div class="container">
 					<div class="row">
@@ -1319,10 +1823,10 @@
 									</p>
 								</div>
 								<div class="col-12 industry-button">
-									<a href="contact.html"
+									<button
 										class="btn mt-2 py-3 px-xl-5 box-shadow-6 border-0 text-transform-none btn-dash ms-2 d-xl-inline-block custom-btn">
-										Get In Touch
-								</a>
+										Connect With Us
+									</button>
 								</div>
 							</div>
 						</div>
@@ -1336,25 +1840,30 @@
 			
 
 			<!-- Cards Section -->
-	<!-- <div class="section-default" style="margin-top: 20px !important;padding-top: 5px !important; padding-bottom: 5px !important;">
+	<!-- <div class=" section-default" style="margin-top: 20px !important;padding-top: 5px !important; padding-bottom: 5px !important;">
 		<h2 class="text-center mb-4 font-weight-semi-bold mt-5" style="padding-top: 10px !important;">Accelerate Your Business Growth & ROI With BuzzBoost</h2>
 		<p class="text-center mb-5 text-black">Fuel your business growth with the right influencer and 24/7 support.</p>
 		<div class="container my-4 d-flex justify-content-center">
 			
-			
-			<div class="three-card-section d-flex gap-4 justify-content-between flex-wrap" style="padding-bottom: 10px;margin-top: 40px;">			
+
+		
+			<div class="three-card-section d-flex gap-4 justify-content-between flex-wrap" style="padding-bottom: 10px;margin-top: 40px;">
+				
 				<div class="card-section"				
-					style="background-image: url('img/HomePageCardsFinal2/Frame 119.png'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 377px; height: 233px; border-radius: 17px;">
+					style="background-image: url('img/HomePageCardsFinal2/Frame 119.png'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 377px; height: 233px; border-radius: 15px;">
 				</div>
-						
+			
+				
 				<div class="card-section"				
-					style="background-image: url('img/HomePageCardsFinal2/Frame 120.png'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 377px; height: 233px; border-radius: 17px;">
-				</div>			
+					style="background-image: url('img/HomePageCardsFinal2/Frame 120.png'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 377px; height: 233px; border-radius: 15px;">
+				</div>
+			
 				
 				<div class="card-section"					
-					style="background-image: url('img/HomePageCardsFinal2/Frame 121.png'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 378px; height: 233px; border-radius: 17px;">
+					style="background-image: url('img/HomePageCardsFinal2/Frame 121.png'); background-size: cover; background-position: center; background-repeat: no-repeat; width: 378px; height: 233px; border-radius: 15px;">
 				</div>
 			</div>
+			
 		</div>
 	</div>		 -->
 
@@ -1364,7 +1873,6 @@
 	
 	
 
-		<!-- Zig-Zag -->
 		<!-- Zig-Zag section2-->
 		<div class="container" style="margin-top: 48px;">
 			<h3 class="text-center mt-5 mb-15" style="padding-top: 40px;padding-bottom: 40px;font-size: 36px;font-weight: bold !important;">Find Your Next Perfect Influencer Match!</h3>
@@ -1447,7 +1955,7 @@
 
 						<i class="icons icon-phone text-8 text-color-primary me-2" style="color: #000;"></i>
 						<a href="tel:+919796297972" style="color: #000;"
-							class="text-5 p-relative bottom-9 font-weight-semi-bold">+91 9796297972
+							class="text-5 p-relative bottom-9 font-weight-semi-bold text-decoration-none">+91 9796297972
 							</a>
 
 					</div>
@@ -1525,9 +2033,9 @@
 						<div class="col-lg-6 mb-4 mb-lg-0 ">
 							<h4 class="text-color-hover-light font-weight-bold mb-3">Company</h4>
 							<ul class="list list-unstyled columns-lg-1">
-								<li><a href="home.html" class="text-color-light text-color-hover-light">Home</a></li>
-								<li><a href="aboutus.html" class="text-color-light text-color-hover-light">About Us</a></li>
-								<li><a href="contact.html" class="text-color-light text-color-hover-light">Pricing</a></li>
+								<li><a href="home.html" class="text-color-light text-color-hover-light" style="text-decoration: none;">Home</a></li>
+								<li><a href="aboutus.html" class="text-color-light text-color-hover-light" style="text-decoration: none;">About Us</a></li>
+								<li><a href="contact.html" class="text-color-light text-color-hover-light" style="text-decoration: none;">Pricing</a></li>
 								<!-- <li><a href="#" class="text-color-grey text-color-hover-primary">Team</a></li> -->
 								<!-- <li><a href="#" class="text-color-light text-color-hover-light">Blog</a></li> -->
 								<!-- <li><a href="#" class="text-color-light text-color-hover-light">Contact Us</a></li> -->
@@ -1536,10 +2044,10 @@
 						<div class="col-lg-6">
 							<h4 class="text-color-hover-light font-weight-bold mb-3">Services</h4>
 							<ul class="list list-unstyled columns-lg-1">
-								<li><a href="agency.html" class="text-color-light text-color-hover-light">Agency</a>
+								<li><a href="agency.html" class="text-color-light text-color-hover-light" style="text-decoration: none;">Agency</a>
 								</li>
-								<li><a href="business.html" class="text-color-light text-color-hover-light">Business</a></li>
-								<li><a href="Influencer.html" class="text-color-light text-color-hover-light">Influencers</a></li>
+								<li><a href="business.html" class="text-color-light text-color-hover-light" style="text-decoration: none;">Business</a></li>
+								<li><a href="Influencer.html" class="text-color-light text-color-hover-light" style="text-decoration:none">Influencers</a></li>
 								<!-- <li><a href="#" class="text-color-grey text-color-hover-primary">CRM and Sales</a></li> -->
 								<!-- <li><a href="#" class="text-color-grey text-color-hover-primary">Strategy</a></li> -->
 							</ul>
@@ -1565,15 +2073,15 @@
 			</div>
 		</div>
 	</footer>
+
 	<div style="position: fixed; bottom: 30px; right: 20px; z-index: 9999; width: 55px; height: 55px;">
 		<a href="https://wa.me/+919796297972" target="_blank" rel="noopener noreferrer">
 			<img src="img\whatsappiconfixed.png" 
 				 alt="WhatsApp" 
 				 style="width: 100%; height: 100%; border-radius: 50%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); cursor: pointer;" />
 		</a>
+	</div>	
 	</div>
-	</div>
-
 
 
 	<script>
@@ -1597,7 +2105,7 @@
 
 
 		// document.getElementById("whatsappButton").onclick = function () {
-		// 	const phone = "91919796297972";
+		// 	const phone = "911234567890";
 		// 	const message = "Hello, I would like to get in touch";
 
 		// 	window.open(`https://api.whatsapp.com/send?phone=${phone}&text=${message}`);
@@ -1623,19 +2131,6 @@
 
 		window.addEventListener('resize', handleScreeSizeChange);
 		handleScreeSizeChange();
-
-		function updateStyles() {
-  const element = document.querySelector('#targetElement');
-  if (window.innerWidth <= 768) {
-    element.style.position = 'static'; // Disable position absolute
-    element.style.inset = ''; // Reset inset
-    element.style.transform = ''; // Disable transform
-    element.style.margin = '0'; // Reset margin
-  }
-}
-
-window.addEventListener('resize', updateStyles);
-updateStyles(); // Run on page load
 	</script>
 
 	<!-- Vendor -->
@@ -1656,25 +2151,25 @@ updateStyles(); // Run on page load
 	<!-- Theme Initialization Files -->
 	<script src="js/theme.init.js"></script>
 
-		<!-- whatsapp redirection -->
-		<script>
-			document.getElementById("whatsappButton").addEventListener("click", function () {
-				const name = document.getElementById("name").value;
-				const phone = document.getElementById("phone").value;
-		
-				if (name && phone) {
-					// Replace with your WhatsApp number (including country code)
-					const whatsappNumber = "+919796297972"; 
-					const message = `Hello, my name is ${name}. My phone number is ${phone}. I'd like to get in touch.`;
-					const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
-					
-					// Redirect to WhatsApp
-					window.open(whatsappURL, "_blank");
-				} else {
-					alert("Please fill in all the required fields.");
-				}
-			});
-		</script>
+	<!-- whatsapp redirection -->
+	<script>
+		document.getElementById("whatsappButton").addEventListener("click", function () {
+			const name = document.getElementById("name").value;
+			const phone = document.getElementById("phone").value;
+	
+			if (name && phone) {
+				// Replace with your WhatsApp number (including country code)
+				const whatsappNumber = "+919796297972"; 
+				const message = `Hello, my name is ${name}. My phone number is ${phone}. I'd like to get in touch.`;
+				const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+				
+				// Redirect to WhatsApp
+				window.open(whatsappURL, "_blank");
+			} else {
+				alert("Please fill in all the required fields.");
+			}
+		});
+	</script>
 
 </body>
 
