@@ -332,7 +332,7 @@
 
                   <a
                     href="contact.html"
-                    class="btn btn-modern box-shadow-6 border-0 text-transform-none btn-dash ms-3 d-none d-xl-inline-block custom-btn"
+                    class="btn btn-modern box-shadow-6 border-0 text-transform-none btn-dash ms-3 d-none d-xl-inline-block custom-btn text-2-5 py-2 "
                     >Get In Touch</a
                   >
 
@@ -429,7 +429,7 @@
                     maxlength="100"
                     class="form-control text-2-5 p-3"
                     name="email"
-                    required
+                    
                   />
                 </div>
                 <div class="form-group col-md-6 text-start">
@@ -841,6 +841,79 @@
 				}, );
 		}
 	  </script>
+    <!-- <script>
+      function sendForm() {
+          // Prevent default form submission
+          event.preventDefault();
+  
+          // Get form elements
+          const firstname = document.getElementById("firstname");
+          const lastname = document.getElementById("lastname");
+          const email = document.getElementById("email");
+          const phone = document.getElementById("phone");
+          const country = document.getElementById("country");
+          const subject = document.getElementById("subject");
+          const additionalDetails = document.getElementById("additional_details");
+  
+          let isValid = true;
+  
+          // Clear previous error messages
+          document.querySelectorAll(".error-message").forEach(el => el.remove());
+  
+          // Utility to display error messages
+          function showError(input, message) {
+              isValid = false;
+              const error = document.createElement("small");
+              error.classList.add("error-message", "text-danger");
+              error.textContent = message;
+              input.parentElement.appendChild(error);
+          }
+  
+          // Validate First Name
+          if (firstname.value.trim() === "") {
+              showError(firstname, "First Name is required.");
+          }
+  
+          // Validate Last Name
+          if (lastname.value.trim() === "") {
+              showError(lastname, "Last Name is required.");
+          }
+  
+          // Validate Email
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (email.value.trim() === "" || !emailRegex.test(email.value)) {
+              showError(email, "Please enter a valid email.");
+          }
+  
+          // Validate Phone
+          const phoneRegex = /^[0-9]{10,15}$/;
+          if (phone.value.trim() === "" || !phoneRegex.test(phone.value)) {
+              showError(phone, "Please enter a valid phone number (10-15 digits).");
+          }
+  
+          // Validate Country
+          if (country.value.trim() === "") {
+              showError(country, "Country is required.");
+          }
+  
+          // Validate Subject
+          if (subject.value.trim() === "") {
+              showError(subject, "Subject is required.");
+          }
+  
+          // Additional Details (optional)
+          if (additionalDetails.value.trim() !== "" && additionalDetails.value.length > 100) {
+              showError(additionalDetails, "Additional details should not exceed 100 characters.");
+          }
+  
+          // Submit form if valid
+          if (isValid) {
+              alert("Form submitted successfully!");
+              // Add form submission logic here (e.g., AJAX call)
+          }
+      }
+  </script> -->
+  
 	   
 
     <!-- whatsapp redirection -->

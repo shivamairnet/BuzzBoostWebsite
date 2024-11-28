@@ -284,18 +284,7 @@
 
 	}
 
-	/* scroller styling */
-	#pointer-container::-webkit-scrollbar {
-    width: 8px !important; /* Width of the scrollbar */
-  }
-  #pointer-container::-webkit-scrollbar-track {
-    background: #e0e0e0 !important; /* Background of the scrollbar track */
-  }
-  #pointer-container::-webkit-scrollbar-thumb {
-    background-color: #426CC1 !important; /* Color of the scrollbar thumb */
-    border-radius: 10px !important; /* Rounded corners */
-    border: 2px solid #e0e0e0 !important; /* Adds spacing */
-  }
+
 
   @media (max-width: 768px) {
   .override-inline {
@@ -307,25 +296,14 @@
 }
 
 #pointer-container {
-
-  width: 50% !important; /* Adjust the width as needed */
-  overflow-y: scroll !important; /* Make it scrollable vertically */
-  scrollbar-width: 0px !important; /* For Firefox */
-  scrollbar-color: #426CC1 !important; /* Adjust colors for the scrollbar */
+  scrollbar-width: none !important; /* For Firefox */
+  -ms-overflow-style: none !important; /* For Internet Explorer and Edge */
 }
 
-/* For Webkit browsers (Chrome, Safari, etc.) */
 #pointer-container::-webkit-scrollbar {
-  width: 0px !important;
+  display: none !important; /* For Chrome, Safari, and Opera */
 }
 
-#pointer-container::-webkit-scrollbar-thumb {
-  background-color: #426CC1 !important; /* Color of the thumb */
-}
-
-#pointer-container::-webkit-scrollbar-track {
-  background-color: #333 !important;
-}
 
 
 		</style>
@@ -335,7 +313,7 @@
 </script>
 
 	</head>
-	<body class="alternative-font-5">
+	<body class="alternative-font-7">
 		<header id="header" class="header-transparent "
 				data-plugin-options="{'stickyScrollUp': true, 'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 42, 'stickyHeaderContainerHeight': 70}">
 				<div class="header-body header-body-bottom-border border-top-0 h-auto">
@@ -410,8 +388,8 @@
 									</ul>
 	
 									<a href="contact.html"
-                                    class="btn btn-modern  box-shadow-6 border-0 text-transform-none btn-dash ms-3 d-none d-xl-inline-block custom-btn">Get
-                                    In Touch</a>
+									class="btn btn-modern  box-shadow-6 border-0 text-transform-none btn-dash ms-3 d-none d-xl-inline-block custom-btn text-3 font-weight-semi-bold py-2">Get
+									In Touch</a>
 
                                 <button class="btn header-btn-collapse-nav"
                                     style="background-color: #426CC1; color: #ffffff; border: none; padding: 10px 15px; border-radius: 5px;"
@@ -452,9 +430,9 @@
 									<div class="text-left">
 										<a class="custom-btn btn btn-modern btn-dash btn-primary box-shadow-6 border-0 text-transform-none mt-2 py-3 px-3" onclick="openModal()">Enroll With Us</a>
 									</div>
-									<div class="text-left">
-										<a href="#" class="custom-btn button-2 btn btn-dash btn-modern btn-primary box-shadow-6 border-0 text-transform-none mt-2 py-3 px-3">Connect Via Whatsapp</a>
-									</div>
+									<!-- <div class="text-left">
+										<a href="contact.html" class="custom-btn button-2 btn btn-dash btn-modern btn-primary box-shadow-6 border-0 text-transform-none mt-2 py-3 px-3">Get In Touch</a>
+									</div> -->
 								</div>
 							</div>
 							<div class="col-xl-6 hero d-lg-block custom-top-margin" style="text-align: right;">
@@ -488,7 +466,7 @@
 			  
 						<!-- Sticky Section -->
 						<div
-						  style="position: relative; height: 75vh; overflow: hidden; display: flex;padding-left: 150px;margin-top: 20px;"
+						  style="position: relative; height: 78vh; overflow: hidden; display: flex;padding-left: 150px;margin-top: 10px;"
 						>
 						  <!-- Fixed Image -->
 						  <div
@@ -498,14 +476,14 @@
 							  id="fixed-image"
 							  src="img/Influencer Page and about us page/Monetise Your Reach (2)_1_11zon.png"
 							  alt="Monetise reach"
-							  style="height: 75vh; object-fit: contain; margin-right: 20px;width: 550px;"
+							  style="height: 70vh; object-fit: contain; margin-right: 20px;width: 480px;"
 							/>
 						  </div>
 			  
 						  <!-- Scrollable Pointers -->
 						  <div
 							id="pointer-container"
-							style="flex: 2; overflow-y: scroll;width: 350px;margin-top: 50px; margin-bottom: 50px; padding-top: 100px;padding-bottom: 200px; height: 50vh; padding-left: 8rem;padding-right: 12rem; scrollbar-color: #426CC1;top: 50px;"
+							style="flex: 2; overflow-y: scroll;width: 350px;margin-top: 90px; margin-bottom: 50px; padding-top: 100px;padding-bottom: 200px; height: 50vh; padding-left: 5rem;padding-right: 10rem; scrollbar-color: #426CC1;top: 50px;"
 						  >
 							<div
 							  id="point1"
@@ -877,101 +855,174 @@ document.getElementById('industry-select').addEventListener('change', function()
 						});
 				}
 			  </script>
+			  <!-- <script>
+				function sendForm() {
+					// Prevent default behavior
+					event.preventDefault();
+			
+					// Get form elements
+					const firstname = document.getElementById("firstname");
+					const lastname = document.getElementById("lastname");
+					const email = document.getElementById("email");
+					const phone = document.getElementById("phone");
+					const industry = document.getElementById("industry");
+					const customIndustry = document.getElementById("other-industry");
+					const otherIndustryContainer = document.getElementById("other-industry-container");
+					const additionalDetails = document.querySelector("input[name='additional_details']");
+			
+					let isValid = true;
+			
+					// Clear all previous error messages
+					document.querySelectorAll(".error-message").forEach(el => el.remove());
+			
+					// Utility to show error message
+					function showError(input, message) {
+						isValid = false;
+						const error = document.createElement("small");
+						error.classList.add("error-message", "text-danger");
+						error.textContent = message;
+						input.parentElement.appendChild(error);
+					}
+			
+					// Validate First Name
+					if (firstname.value.trim() === "") {
+						showError(firstname, "First Name is required.");
+					}
+			
+					// Validate Last Name
+					if (lastname.value.trim() === "") {
+						showError(lastname, "Last Name is required.");
+					}
+			
+					// Validate Email
+					const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+					if (email.value.trim() === "" || !emailRegex.test(email.value)) {
+						showError(email, "Please enter a valid email.");
+					}
+			
+					// Validate Phone Number
+					const phoneRegex = /^[0-9]{10,15}$/;
+					if (phone.value.trim() === "" || !phoneRegex.test(phone.value)) {
+						showError(phone, "Please enter a valid phone number (10-15 digits).");
+					}
+			
+					// Validate Industry Selection
+					if (industry.value === "") {
+						showError(industry, "Please select an industry.");
+					}
+			
+					// Show custom industry input if "Other" is selected
+					if (industry.value === "Other") {
+						otherIndustryContainer.style.display = "block";
+						if (customIndustry.value.trim() === "") {
+							showError(customIndustry, "Please specify your industry.");
+						}
+					} else {
+						otherIndustryContainer.style.display = "none";
+					}
+			
+					// Additional Details validation (optional)
+					if (additionalDetails.value.trim() === "") {
+						showError(additionalDetails, "Please provide additional details if needed.");
+					}
+			
+					// Submit form if valid
+					if (isValid) {
+						alert("Form submitted successfully!");
+						// Add AJAX submission logic here if needed
+					}
+				}
+			
+				// Handle 'Other' industry selection visibility
+				document.getElementById("industry").addEventListener("change", function () {
+					const otherIndustryContainer = document.getElementById("other-industry-container");
+					if (this.value === "Other") {
+						otherIndustryContainer.style.display = "block";
+					} else {
+						otherIndustryContainer.style.display = "none";
+					}
+				});
+			</script> -->
+			
 					
 
-				<!-- section form 5 -->
-				<section class="section-5 section m-0 border-0">
-					<div class="container">
-						<div class="row justify-content-between align-items-center ">
-							<div class="col-lg-6 text-center text-lg-start py-5">
-								<h3 class="mb-4 ready-to-transform">
-									Ready To Transform
-									<span>→</span>
-									Let’s Chat <br> on WhatsApp
-								</h3>
-								<p class="text-4  line-height-4 opacity-6 mb-4">Got questions? Need guidance on
-									finding the right influencers? Our team is just a WhatsApp message away!</p>
-	
-								<i class="icons icon-phone text-8 text-color-primary me-2"></i>
-								<a href="tel:+919796297972" style="color: #000;"
-								
-									class="text-5 p-relative bottom-9 font-weight-semi-bold text-decoration-none">+91 9796297972</a>
-	
-							</div>
-							<div class="col-lg-5 py-5">
-								<div class="border-radius bg-color-light border-0 box-shadow-3">
-									<div class="card-body p-5 m-2 text-center">
-										<h4 class="card-title mb-2 text-6" style="font-weight: bold;">Get In Touch</h4>
-										<p class="card-text">Fill your details and tap the button below to start a chat with our support team.</p>
-							
-										<form id="whatsappForm" class="contact-form" onsubmit="return validateForm()">
-											<div class="row">
-												<div class="form-group col text-start">
-													<input type="text" id="name" placeholder="Your Name *" maxlength="100"
-														class="form-control text-2-5 p-3" required>
-												</div>
-											</div>
-											<div class="row">
-												<div class="form-group col text-start">
-													<input type="text" id="phone" placeholder="Your Phone *" maxlength="15"
-														class="form-control text-2-5 p-3" required pattern="^\+?[1-9]\d{1,14}$">
-												</div>
-											</div>
-											<div class="row">
-												<div class="col"></div>
-												<div class="form-group col-xl-7 col-lg-9 col-md-6 col-sm-12">
-													<div class="d-grid gap-2">
-														<button id="whatsappButton" type="button" class="btn btn-sm border-0 text-3-5 p-3 custom-btn" 
-															style="background-color: #426CC1; color: white; font-weight: bold;">
-															<img id="whatsappIcon" src="img/whatsapp.png" width="20" height="20" alt="WhatsApp Icon" 
-																style="margin-right: 8px;">
-															Contact Us
-														</button>
-													</div>
-												</div>
-												<div class="col"></div>
-											</div>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
+			<!-- section form 5 -->
+<section class="section-5 section m-0 border-0">
+	<div class="container">
+	  <div class="row justify-content-between align-items-center">
+		<div class="col-lg-6 text-center text-lg-start py-5">
+		  <h3 class="mb-4 ready-to-transform">
+			Ready To Transform
+			<span>→</span>
+			Let’s Chat <br> on WhatsApp
+		  </h3>
+		  <p class="text-4 line-height-4 opacity-6 mb-4">Got questions? Need guidance on finding the right influencers? Our team is just a WhatsApp message away!</p>
+  
+		  <i class="icons icon-phone text-8 text-color-primary me-2"></i>
+		  <a href="tel:+919796297972" style="color: #000;"
+			class="text-5 p-relative bottom-9 font-weight-semi-bold text-decoration-none">+91 9796297972</a>
+		</div>
+		<div class="col-lg-5 py-5">
+		  <div class="border-radius bg-color-light border-0 box-shadow-3">
+			<div class="card-body p-5 m-2 text-center">
+			  <h4 class="card-title mb-2 text-6" style="font-weight: bold;">Get In Touch</h4>
+			  <p class="card-text">Fill your details and tap the button below to start a chat with our support team.</p>
+  
+			  <form id="whatsappForm" class="contact-form">
+				<div class="row">
+				  <div class="form-group col text-start">
+					<input type="text" id="name" placeholder="Your Name *" maxlength="100" class="form-control text-2-5 p-3" required>
+				  </div>
+				</div>
+				<div class="row">
+				  <div class="form-group col text-start">
+					<input type="text" id="phone" placeholder="Your Phone *" maxlength="15" class="form-control text-2-5 p-3" required pattern="^\+?[1-9]\d{1,14}$">
+				  </div>
+				</div>
+				<div class="row">
+				  <div class="col"></div>
+				  <div class="form-group col-xl-7 col-lg-9 col-md-6 col-sm-12">
+					<div class="d-grid gap-2">
+					  <button type="button" id="whatsappButton" class="btn btn-sm border-0 text-3-5 p-3 custom-btn"
+						style="background-color: #426CC1; color: white; font-weight: bold;">
+						<img src="img/whatsapp.png" width="20" height="20" alt="WhatsApp Icon"
+						  style="margin-right: 8px;">
+						Contact Us
+					  </button>
 					</div>
-				</section>
-
-				<!-- vaildation form script -->
-				<script>
-					function validateForm() {
-						// Get form elements
-						var name = document.getElementById("name").value;
-						var phone = document.getElementById("phone").value;
-						var phoneError = document.getElementById("phoneError");
-				
-						// Reset error messages
-						phoneError.style.display = "none";
-				
-						// Validate Name
-						if (name === "") {
-							alert("Please enter your name.");
-							return false;
-						}
-				
-						// Validate Phone Number
-						var phonePattern = /^\+?[1-9]\d{1,14}$/;
-						if (phone === "") {
-							alert("Please enter your phone number.");
-							return false;
-						} else if (!phonePattern.test(phone)) {
-							phoneError.style.display = "block"; // Show phone error message
-							return false;
-						}
-				
-						// If all validations pass
-						return true;
-					}
-				</script>
-				
-			
+				  </div>
+				  <div class="col"></div>
+				</div>
+			  </form>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </section>
+  
+  <!-- Form Validation and WhatsApp Redirect Script -->
+  <script>
+	document.getElementById("whatsappButton").addEventListener("click", function () {
+	  const name = document.getElementById("name").value;
+	  const phone = document.getElementById("phone").value;
+  
+	  // Check if name and phone are filled
+	  if (name && phone) {
+		// Replace with your WhatsApp number (including country code)
+		const whatsappNumber = "+919796297972"; 
+		const message = `Hello, my name is ${name}. My phone number is ${phone}. I'd like to get in touch.`;
+		const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+  
+		// Open WhatsApp with the pre-filled message
+		window.open(whatsappURL, "_blank");
+	  } else {
+		// If fields are not filled, show alert
+		alert("Please fill in all the required fields.");
+	  }
+	});
+  </script>
+  		
 
 			<!-- footer section 6 -->
 			<footer id="footer" class="position-relative  border-top-0 " style="background-color: #426CC1;">
@@ -1089,28 +1140,6 @@ window.onclick = function(event) {
     }
 }
 		</script>
-
-		<!-- whatsapp redirection -->
-		<script>
-			document.getElementById("whatsappButton").addEventListener("click", function () {
-				const name = document.getElementById("name").value;
-				const phone = document.getElementById("phone").value;
-		
-				if (name && phone) {
-					// Replace with your WhatsApp number (including country code)
-					const whatsappNumber = "+919796297972"; 
-					const message = `Hello, my name is ${name}. My phone number is ${phone}. I'd like to get in touch.`;
-					const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
-					
-					// Redirect to WhatsApp
-					window.open(whatsappURL, "_blank");
-				} else {
-					alert("Please fill in all the required fields.");
-				}
-			});
-		</script>
-		
-
 
 	</body>
 </html>

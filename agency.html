@@ -345,7 +345,7 @@
 
 </head>
 
-<body class="alternative-font-5">
+<body class="alternative-font-7">
 
 
         <header style="background-color: #fff;" id="header" class="header-transparent "
@@ -420,8 +420,8 @@
                                 </ul>
 
                                 <a href="contact.html"
-                                    class="section1-btn btn font-weight-bold btn-modern box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-3 custom-btn" >Get
-                                    In Touch</a>
+                                class="btn btn-modern  box-shadow-6 border-0 text-transform-none btn-dash ms-3 d-none d-xl-inline-block custom-btn text-3-5 font-weight-semi-bold py-2 px-4">Get
+                                In Touch</a>
 
                                 <button class="btn header-btn-collapse-nav"
                                     style="background-color: #426CC1; color: #ffffff; border: none; padding: 10px 15px; border-radius: 5px;"
@@ -447,7 +447,7 @@
                             Trusted collaborations with top influencers and creators to elevate your clients' brands. 
                         </p>
                         <a href="contact.html"
-                            class="section1-btnnew btn btn-modern box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5 custom-btn" style="font-weight: bold" onclick="openModal()">
+                            class="section1-btnnew btn btn-modern box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5 custom-btn" style="font-weight: bold">
                             Get In Touch
                         </a>
                     </div>
@@ -689,6 +689,90 @@
                                     </a>
                                 </div>                                
                             </form>
+                            <script>
+                                document.getElementById("contact-form").addEventListener("submit", function (e) {
+                                    e.preventDefault(); // Prevent form submission to validate manually
+                            
+                                    // Get form elements
+                                    const agency = document.querySelector("input[name='agency']");
+                                    const contactPerson = document.querySelector("input[name='contactperson']");
+                                    const email = document.querySelector("input[name='email']");
+                                    const phone = document.querySelector("input[name='phone']");
+                                    const address = document.querySelector("input[name='address']");
+                                    const industry = document.querySelector("select[name='industry']");
+                                    const otherIndustry = document.querySelector("input[name='other_industry']");
+                            
+                                    let isValid = true;
+                            
+                                    // Clear previous errors
+                                    document.querySelectorAll(".error-message").forEach(el => el.remove());
+                            
+                                    // Utility to show error message
+                                    function showError(input, message) {
+                                        isValid = false;
+                                        const error = document.createElement("small");
+                                        error.classList.add("error-message", "text-danger");
+                                        error.textContent = message;
+                                        input.parentElement.appendChild(error);
+                                    }
+                            
+                                    // Validate Agency Name
+                                    if (agency.value.trim() === "") {
+                                        showError(agency, "Agency Name is required.");
+                                    }
+                            
+                                    // Validate Contact Person
+                                    if (contactPerson.value.trim() === "") {
+                                        showError(contactPerson, "Contact Person is required.");
+                                    }
+                            
+                                    // Validate Email
+                                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                                    if (email.value.trim() === "" || !emailRegex.test(email.value)) {
+                                        showError(email, "Please enter a valid email.");
+                                    }
+                            
+                                    // Validate Phone Number
+                                    const phoneRegex = /^[0-9]{10,15}$/;
+                                    if (phone.value.trim() === "" || !phoneRegex.test(phone.value)) {
+                                        showError(phone, "Please enter a valid phone number (10-15 digits).");
+                                    }
+                            
+                                    // Validate Address
+                                    if (address.value.trim() === "") {
+                                        showError(address, "Address is required.");
+                                    }
+                            
+                                    // Validate Industry
+                                    if (industry.value === "") {
+                                        showError(industry, "Please select an industry.");
+                                    }
+                            
+                                    // Show 'Other Industry' field if 'Other' is selected
+                                    if (industry.value === "Other") {
+                                        if (otherIndustry.value.trim() === "") {
+                                            showError(otherIndustry, "Please specify your industry.");
+                                        }
+                                    }
+                            
+                                    // If form is valid, submit it
+                                    if (isValid) {
+                                        alert("Form submitted successfully!");
+                                        // Add your form submission logic here (e.g., AJAX request)
+                                    }
+                                });
+                            
+                                // Show/hide 'Other Industry' field
+                                document.getElementById("industry-select").addEventListener("change", function () {
+                                    const otherIndustryContainer = document.getElementById("other-industry-container");
+                                    if (this.value === "Other") {
+                                        otherIndustryContainer.style.display = "block";
+                                    } else {
+                                        otherIndustryContainer.style.display = "none";
+                                    }
+                                });
+                            </script>
+                            
                         </div>
                     </div>
                 </div>
@@ -740,7 +824,7 @@
 								</p>
 								<div class="pt-3 pb-5" style="text-align: left;">
 									<a href="contact.html" class="button-section4 btn btn-modern box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5 custom-btn" 
-									   style="padding: 1rem 1.5rem; text-decoration: none;font-weight: bold;" onclick="openModal()">
+									   style="padding: 1rem 1.5rem; text-decoration: none;font-weight: bold;">
 										Get In Touch
 									</a>
 								</div>
