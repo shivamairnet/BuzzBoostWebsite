@@ -304,6 +304,44 @@
   display: none !important; /* For Chrome, Safari, and Opera */
 }
 
+/* General styles for 800px to 1200px screen size */
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+  .amplify-section.container {
+    margin-top: 50px !important; /* Adjust spacing */
+    padding: 0 10px !important;  /* Add some padding for a snug fit */
+	/* max-width: 400px !important; */
+  }
+
+  .amplify-head {
+    font-size: 36px !important; /* Reduce the font size for the heading */
+    line-height: 1.3 !important; /* Adjust line height */
+	width: 500px !important;
+  }
+
+  .amplify-para {
+    font-size: 26px !important; /* Reduce the font size for the heading */
+    line-height: 1.2 !important; /* Adjust line height */
+	width: 500px !important;
+  }
+
+  
+
+  .custom-col-1 {
+    padding: 30px 20px !important; /* Reduce padding for better fit */
+  }
+
+  .hero img {
+    max-height: 500px !important; /* Reduce image height */
+    max-width: 400px !important; /* Scale image width */
+    padding-right: 100px !important; /* Adjust padding */
+    margin-top: 30px !important; /* Adjust top margin */
+  }
+
+  .button-container a {
+    font-size: 0.9rem !important; /* Slightly reduce button font size */
+    padding: 10px 15px !important; /* Adjust button padding */
+  }
+}
 
 
 		</style>
@@ -415,15 +453,15 @@
 				</div> -->
 			
 				<!-- section-1 -->
-				<div class="container p-relative" style="margin-top: 85px; padding: 0; margin: 2px auto;">
+				<div class="amplify-section container p-relative" style="margin-top: 85px; padding: 0; margin: 2px auto;">
 					<div class="container p-relative z-index-9 text-center" style="max-height: 700px; max-width: 1200px; width: 100%; margin: 0 auto; padding: 0 20px;">
 						<div class="row justify-content-between align-items-center">
 							<div class="col-xl-6 custom-col-1 appear-animation" data-appear-animation="fadeInUpShorter"
 								data-appear-animation-delay="900" style="padding: 60px 35px; text-align: left;">
-								<h1 class="text-black" style="font-weight: bold; padding-bottom: 20px; font-size: 44px;line-height: normal;">
+								<h1 class="amplify-head text-black" style="font-weight: bold; padding-bottom: 20px; font-size: 44px;line-height: normal;">
 									Amplify Your Influence With BuzzBoost  
 								</h1>
-								<p class="section-1-text text-black line-height-5" style="padding-bottom: 10px; font-size: 1.5rem;letter-spacing: normal;">
+								<p class="amplify-para section-1-text text-black line-height-5" style="padding-bottom: 10px; font-size: 1.5rem;letter-spacing: normal;">
 									Connect with brands that align with your style and voice, and turn your passion into opportunity. 
 								</p>
 								<div class="button-container" style="display: flex; gap: 1rem; margin-top: 5px; flex-wrap: wrap;">

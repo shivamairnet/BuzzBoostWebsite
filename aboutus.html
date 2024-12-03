@@ -226,6 +226,41 @@
         }
     }
 
+	@media screen and (min-width: 800px) and (max-width: 1200px) {
+  .team-section {
+    flex-direction: column !important; /* Stack items vertically for better layout */
+    padding: 18px !important; /* Adjust padding */
+    text-align: center !important; /* Center-align content */
+  }
+
+  .team-section .container {
+    flex-direction: column !important; /* Stack elements vertically in the container */
+    padding: 10px !important; /* Reduce padding */
+  }
+
+  .team-section .col-lg-7 {
+    padding: 10px !important; /* Reduce padding for the text column */
+    margin-bottom: 20px !important; /* Add spacing below text column */
+  }
+
+  .team-section h2 {
+    font-size: 32px !important; /* Scale down heading font size */
+    margin-bottom: 15px !important; /* Add spacing below the heading */
+  }
+
+  .team-section p {
+    font-size: 26px !important; /* Reduce paragraph font size for better readability */
+    line-height: 1.3 !important; /* Adjust line height */
+  }
+
+  .team-section .col-lg-5 img {
+    width: 300px !important; /* Scale image width */
+    height: auto !important; /* Maintain aspect ratio */
+    max-width: 100% !important; /* Ensure image doesn’t overflow */
+  }
+}
+
+
 
 		</style>
 	</head>

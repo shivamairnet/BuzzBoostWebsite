@@ -166,7 +166,7 @@
           
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 1068px) {
   .grid-section {
   
     display: grid !important; /* Use grid layout for precise control */
@@ -196,6 +196,34 @@
           margin: 0 !important; /* Adjust margin as needed */
         }
       }
+
+
+   /* General adjustments for screens between 800px and 1200px */
+   @media (min-width: 800px) and (max-width: 1200px) {
+    .section-1 {
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 1rem !important;
+  }
+
+  .mobile-full-width {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .grid-section {
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    gap: 1rem !important;
+  }
+
+  .grid-section img {
+    width: calc(20% - 0.25rem) !important; /* Two images per row */
+    height: auto;
+  }
+}
+
     </style>
 
 <script type="text/javascript"
