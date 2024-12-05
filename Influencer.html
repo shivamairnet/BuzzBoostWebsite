@@ -227,6 +227,7 @@
 	  flex-direction: column !important;
             gap: 0.5rem !important;
 			margin-bottom: 25px !important;
+			z-index: 10 !important;
     }
 
 	.button-section4{
@@ -235,11 +236,20 @@
 		margin-left: 100px !important;
 		margin-right: 100px !important;
 		padding-left: 0px !important;
+		z-index: 10 !important;
 		
 	}
 
 	.section4{
 		padding-top: 80px !important;
+	}
+
+	.button-z{
+		/* z-index: 100 !important; */
+		z-index: 10 !important; /* Ensure a high value */
+		position: relative !important;
+
+
 	}
 
 	/* section-2 */
@@ -458,7 +468,7 @@
 								</p>
 								<div class="button-container" style="display: flex; gap: 1rem; margin-top: 5px; flex-wrap: wrap;">
 									<div class="text-left">
-										<a class="custom-btn btn btn-modern btn-dash btn-primary box-shadow-6 border-0 text-transform-none mt-2 py-3 px-3" onclick="openModal()" style="font-size: large;">Enroll With Us</a>
+										<a class="button-z custom-btn btn btn-modern btn-dash btn-primary box-shadow-6 border-0 text-transform-none mt-2 py-3 px-3" onclick="openModal()" style="font-size: large;">Enroll With Us</a>
 									</div>
 									<!-- <div class="text-left">
 										<a href="contact.html" class="custom-btn button-2 btn btn-dash btn-modern btn-primary box-shadow-6 border-0 text-transform-none mt-2 py-3 px-3">Get In Touch</a>
