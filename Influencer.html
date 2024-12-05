@@ -192,11 +192,13 @@
         .custom-col-1 {
             padding: 20px !important;
             text-align: center !important;
+
         }
 
         .section-1-text {
-            font-size: 1rem !important;
+            font-size: 1.5rem !important;
 			margin-top: 295px !important;
+			
         }
        
 		.button-2{
@@ -209,7 +211,7 @@
 		}
 
 		.hero img {
-	  margin-top: 215px !important;
+	  margin-top: 230px !important;
       padding-left:0px !important ;
       width: 100% !important; /* Ensure the image takes full width on mobile */
       max-width: 240px !important;
@@ -230,10 +232,10 @@
     .button-container {
       display: block !important; /* Stack buttons vertically on mobile */
       gap: 2rem !important;
-      margin-top: 90px !important;
+      margin-top: -8px !important;
 	  flex-direction: column !important;
             gap: 0.5rem !important;
-			margin-bottom: 20px !important;
+			margin-bottom: 25px !important;
     }
 
 	.button-section4{
@@ -305,7 +307,7 @@
 }
 
 /* General styles for 800px to 1200px screen size */
-@media screen and (min-width: 800px) and (max-width: 1200px) {
+@media screen and (min-width: 769px) and (max-width: 1200px) {
   .amplify-section.container {
     margin-top: 50px !important; /* Adjust spacing */
     padding: 0 10px !important;  /* Add some padding for a snug fit */
@@ -323,8 +325,6 @@
     line-height: 1.2 !important; /* Adjust line height */
 	width: 500px !important;
   }
-
-  
 
   .custom-col-1 {
     padding: 30px 20px !important; /* Reduce padding for better fit */
@@ -402,7 +402,7 @@
 													</li> -->
 													<li>
 														<a class="nav-link" href="contact.html">
-															Pricing
+															Register
 														</a>
 													</li>
 												</ul>
@@ -789,20 +789,25 @@
 										<div class="form-group col-md-6 col text-start">
 											<input type="text" value="" name="lastname" placeholder="Last Name *" data-msg-required="Please enter Second Name" maxlength="100" class="form-control text-2-5 p-2" name="secondname" id="lastname" required>
 										</div>
-									</div>
+									</div>									
 				
 									<!-- Email and Phone Number -->
 									<div class="row">
 										<div class="form-group col-md-6 col text-start">
-											<input type="text" name="email" value="" placeholder="Email*" data-msg-required="Please enter email" maxlength="100" class="form-control text-2-5 p-2" name="email" id="email" required>
+											<input type="text" name="email" value="" placeholder="Email *" data-msg-required="Please enter email" maxlength="100" class="form-control text-2-5 p-2" name="email" id="email" required>
 										</div>
 										<div class="form-group col-md-6 col text-start">
 											<input type="text" name-="phone" value="" placeholder="Phone Number *" data-msg-required="Please enter phone number" maxlength="100" class="form-control text-2-5 p-2" name="phone" id="phone" required>
 										</div>
 									</div>
 				
-									<!-- Address and Your Phone -->
+									<!-- Industry and  -->
 									<div class="row">
+								
+											<div class="form-group col-md-6 col text-start">
+												<input type="text" name="instagram" value="" placeholder="Instagram Link *" data-msg-required="Please enter your instagram link" maxlength="100" class="form-control text-2-5 p-2" name="instagram" id="instagram" required>
+											</div>
+									
 									
 										<div class="form-group col-md-6 col text-start">
 											<select name="industry" name="industry" class="form-control text-2-5 p-2" id="industry" required id="industry-select">
@@ -817,15 +822,17 @@
 											</select>
 										</div>
 
-										<div class="form-group col-md-6 col text-start" id="other-industry-container" id="customindustry" style="display: none;">
-											<input type="text" value="" name="customindustry" placeholder="Enter Custom Industry" maxlength="100" class="form-control text-2-5 p-2" name="other_industry" id="other-industry">
+										<div class="form-group col-md-12 col text-start" id="customindustry" style="display: none;">
+											<input type="text" value="" placeholder="Enter Other Industry" maxlength="100" class="form-control text-2-5 p-2" name="otherindustry" id="other-industry">
 										</div>
+
+									
 									</div>
 				
 									<!-- Additional Details Text Field -->
 									<div class="row">
 										<div class="form-group col-md-12 col text-start">
-											<input type="text" value="" name="additional_details" placeholder="Additional Details" maxlength="100" class="form-control text-2-5 p-2" name="additional_details">
+											<input type="text" value="" name="additional_details" placeholder="Additional Details" maxlength="100" class="form-control text-2-5 p-2">
 										</div>
 									</div>
 				
@@ -846,9 +853,9 @@
 				<script>
 					
 // Show "Other" industry field when selected
-document.getElementById('industry-select').addEventListener('change', function() {
+document.getElementById('industry').addEventListener('change', function() {
     var selectedIndustry = this.value;
-    var otherIndustryContainer = document.getElementById('other-industry-container');
+    var otherIndustryContainer = document.getElementById('customindustry');
     
     if (selectedIndustry === 'Other') {
         otherIndustryContainer.style.display = 'block';
@@ -869,18 +876,24 @@ document.getElementById('industry-select').addEventListener('change', function()
 						console.error("Form element not found!");
 						return;
 					}
-			  
+					
 					// Collect form data manually into a params object
 					const params = {
 						firstname: form.firstname.value,
 						lastname: form.lastname.value,
-						// Add other form fields here
+						industry: form.industry.value,
+				
 						email: form.email.value,
-						// message: form.message.value,
+						phone:form.phone.value,
+						instagram: form.instagram.value,
+						additional_details: form.additional_details.value,
 					};
+
+					console.log(form);
+					console.log(params);
 			  
 					// Use EmailJS to send the params object
-					emailjs.send("service_x1vdou9", "template_ghvxogn", params)
+					emailjs.send("service_x1vdou9", "template_l8573kv", params)
 					// console.log(params)
 						.then(function(response) {
 							console.log("Success:", response);
@@ -893,96 +906,6 @@ document.getElementById('industry-select').addEventListener('change', function()
 						});
 				}
 			  </script>
-			  <!-- <script>
-				function sendForm() {
-					// Prevent default behavior
-					event.preventDefault();
-			
-					// Get form elements
-					const firstname = document.getElementById("firstname");
-					const lastname = document.getElementById("lastname");
-					const email = document.getElementById("email");
-					const phone = document.getElementById("phone");
-					const industry = document.getElementById("industry");
-					const customIndustry = document.getElementById("other-industry");
-					const otherIndustryContainer = document.getElementById("other-industry-container");
-					const additionalDetails = document.querySelector("input[name='additional_details']");
-			
-					let isValid = true;
-			
-					// Clear all previous error messages
-					document.querySelectorAll(".error-message").forEach(el => el.remove());
-			
-					// Utility to show error message
-					function showError(input, message) {
-						isValid = false;
-						const error = document.createElement("small");
-						error.classList.add("error-message", "text-danger");
-						error.textContent = message;
-						input.parentElement.appendChild(error);
-					}
-			
-					// Validate First Name
-					if (firstname.value.trim() === "") {
-						showError(firstname, "First Name is required.");
-					}
-			
-					// Validate Last Name
-					if (lastname.value.trim() === "") {
-						showError(lastname, "Last Name is required.");
-					}
-			
-					// Validate Email
-					const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-					if (email.value.trim() === "" || !emailRegex.test(email.value)) {
-						showError(email, "Please enter a valid email.");
-					}
-			
-					// Validate Phone Number
-					const phoneRegex = /^[0-9]{10,15}$/;
-					if (phone.value.trim() === "" || !phoneRegex.test(phone.value)) {
-						showError(phone, "Please enter a valid phone number (10-15 digits).");
-					}
-			
-					// Validate Industry Selection
-					if (industry.value === "") {
-						showError(industry, "Please select an industry.");
-					}
-			
-					// Show custom industry input if "Other" is selected
-					if (industry.value === "Other") {
-						otherIndustryContainer.style.display = "block";
-						if (customIndustry.value.trim() === "") {
-							showError(customIndustry, "Please specify your industry.");
-						}
-					} else {
-						otherIndustryContainer.style.display = "none";
-					}
-			
-					// Additional Details validation (optional)
-					if (additionalDetails.value.trim() === "") {
-						showError(additionalDetails, "Please provide additional details if needed.");
-					}
-			
-					// Submit form if valid
-					if (isValid) {
-						alert("Form submitted successfully!");
-						// Add AJAX submission logic here if needed
-					}
-				}
-			
-				// Handle 'Other' industry selection visibility
-				document.getElementById("industry").addEventListener("change", function () {
-					const otherIndustryContainer = document.getElementById("other-industry-container");
-					if (this.value === "Other") {
-						otherIndustryContainer.style.display = "block";
-					} else {
-						otherIndustryContainer.style.display = "none";
-					}
-				});
-			</script> -->
-			
-					
 
 			<!-- section form 5 -->
 <section class="section-5 section m-0 border-0">
@@ -1021,12 +944,11 @@ document.getElementById('industry-select').addEventListener('change', function()
 				  <div class="col"></div>
 				  <div class="form-group col-xl-7 col-lg-9 col-md-6 col-sm-12">
 					<div class="d-grid gap-2">
-					  <button type="button" id="whatsappButton" class="btn btn-sm border-0 text-3-5 p-3 custom-btn"
-						style="background-color: #426CC1; color: white; font-weight: bold;">
-						<img src="img/whatsapp.png" width="20" height="20" alt="WhatsApp Icon"
-						  style="margin-right: 8px;">
-						Contact Us
-					  </button>
+						<button id="whatsappButton" type="button" class="btn mt-2 py-3 px-2 box-shadow-6 border-0 text-transform-none ms-2 d-xl-inline-block custom-btn" style="font-size: large;color: black; font-weight: bold;">
+							<img id="whatsappIcon" src="img/whatsapp.png" width="20" height="20" alt="WhatsApp Icon" 
+								style="margin-right: 8px;">
+							Contact Us
+						</button>
 					</div>
 				  </div>
 				  <div class="col"></div>
@@ -1094,7 +1016,7 @@ document.getElementById('industry-select').addEventListener('change', function()
 									<ul class="list list-unstyled columns-lg-1">
 										<li><a href="home.html" class="text-color-light text-color-hover-light" style="text-decoration: none;">Home</a></li>
 										<li><a href="aboutus.html" class="text-color-light text-color-hover-light" style="text-decoration: none;">About Us</a></li>
-										<li><a href="contact.html" class="text-color-light text-color-hover-light" style="text-decoration: none;">Pricing</a></li>
+										<li><a href="contact.html" class="text-color-light text-color-hover-light" style="text-decoration: none;">Register</a></li>
 										<!-- <li><a href="#" class="text-color-grey text-color-hover-primary">Team</a></li> -->
 										<!-- <li><a href="#" class="text-color-light text-color-hover-light">Blog</a></li> -->
 										<!-- <li><a href="#" class="text-color-light text-color-hover-light">Contact Us</a></li> -->

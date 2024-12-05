@@ -327,7 +327,7 @@
 												</li> -->
                           <li>
                             <a class="nav-link active" href="contact.html">
-                              Pricing
+                              Register
                             </a>
                           </li>
                         </ul>
@@ -515,7 +515,7 @@
               <div class="text-center mt-4">
                 <button
                   type="submit" onclick="sendForm()"
-                  class="btn btn-modern box-shadow-6 border-0 text-transform-none btn-dash py-3 px-5 custom-btn"
+                  class="btn btn-modern box-shadow-6 border-0 text-transform-none btn-dash py-3 px-5 custom-btn" style="font-size: large;"
                 >
                   Let's Talk
                 </button>
@@ -629,9 +629,7 @@
                             <button
                               id="whatsappButton"
                               type="button"
-                              class="btn btn-sm border-0 text-3-5 p-3 custom-btn"
-                              style="color: white; font-weight: bold"
-                            >
+                              class="btn mt-2 py-3 px-2 box-shadow-6 border-0 text-transform-none ms-2 d-xl-inline-block custom-btn" style="font-size: large;color: black; font-weight: bold;">
                               <img
                                 id="whatsappIcon"
                                 src="img/whatsapp.png"
@@ -721,7 +719,7 @@
                       <a
                         href="contact.html"
                         class="text-color-light text-color-hover-light"
-                        >Pricing</a
+                        >Register</a
                       >
                     </li>
                     <!-- <li><a href="#" class="text-color-grey text-color-hover-primary">Team</a></li> -->
@@ -854,6 +852,10 @@
 			const params = {
 				firstname: form.firstname.value,
 				lastname: form.lastname.value,
+        phone: form.phone.value,
+        subject:form.subject.value,
+        additional_details:form.additional_details.value,
+
 				// Add other form fields here
 				email: form.email.value,
 				// message: form.message.value,
