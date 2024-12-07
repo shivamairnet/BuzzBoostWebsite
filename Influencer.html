@@ -202,7 +202,7 @@
 		}
 
 		.hero img {
-	  margin-top: 230px !important;
+	  margin-top: 212px !important;
       padding-left:0px !important ;
       width: 100% !important; /* Ensure the image takes full width on mobile */
       max-width: 240px !important;
@@ -326,6 +326,7 @@
     font-size: 26px !important; /* Reduce the font size for the heading */
     line-height: 1.2 !important; /* Adjust line height */
 	width: 500px !important;
+	margin-top: 55px !important;
   }
 
   .custom-col-1 {
@@ -343,6 +344,65 @@
     font-size: 0.9rem !important; /* Slightly reduce button font size */
     padding: 10px 15px !important; /* Adjust button padding */
   }
+}
+
+@media (max-width: 768px) {
+  /* Modal container styles for mobile */
+  #requestQuoteModal1 {
+    padding-top: 20px !important;
+  }
+
+  #requestQuoteModal1 > div {
+    width: 95% !important; /* Adjust modal width for smaller screens */
+    padding: 4px !important; /* Reduce padding for compact layout */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3) !important; /* Reduce shadow intensity */
+  }
+
+  /* Close button adjustment */
+  #requestQuoteModal1 > div > span {
+    font-size: 10px !important; /* Smaller font size for close button */
+    top: 10px !important;
+    right: 15px !important;
+  }
+
+  /* Card styles within the modal */
+  #requestQuoteModal1 .card {
+    margin: 0 !important; /* Remove outer margins */
+    box-shadow: none !important; /* Remove card shadow */
+  }
+
+  /* Form field adjustments */
+  #requestQuoteModal1 .form-group {
+    padding: 0 !important; /* Remove unnecessary padding */
+  }
+
+  #requestQuoteModal1 .form-control {
+    font-size: 12px !important; /* Smaller text for mobile */
+    padding: 4px !important; /* Compact padding */
+  }
+
+  /* Dropdown and additional fields */
+  #requestQuoteModal1 #industry-select,
+  #requestQuoteModal1 #other-industry {
+    font-size: 12px !important; /* Adjust dropdown font size */
+    padding: 4px !important;
+  }
+
+  /* Submit button styling */
+  #requestQuoteModal1 .custom-btn {
+    width: 100% !important; /* Full-width button on mobile */
+    font-size: 16px !important; /* Adjust font size */
+    padding: 6px !important; /* Compact padding */
+	position: relative !important;
+	z-index: 10 !important;
+  }
+
+  /* Alignment fixes within the modal */
+  #requestQuoteModal1 .d-flex {
+    flex-direction: column !important; /* Stack elements vertically */
+    align-items: center !important; /* Center-align items */
+  }
+
 }
 
 
