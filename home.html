@@ -524,7 +524,7 @@
 
     .section1-h1 {
         font-size: 40px !important; /* Adjust heading size for mobile */
-        font-weight: bold !important;
+        
         margin-top: -255px !important;
     }
 
@@ -1045,17 +1045,18 @@
 
     .cta-section .col-xl-7 .text-3 {
         order: 1 !important;
+		font-size: 1.2rem !important;
     }
 
     .cta-section .col-xl-7 h3 {
         order: 2 !important;
-        font-size: 1.5rem !important;
+        font-size: 2rem !important;
         line-height: 1.3 !important;
     }
 
     .cta-section .col-xl-7 p {
         order: 3 !important;
-        font-size: 1rem !important;
+        font-size: 1.2rem !important;
         line-height: 1.5 !important;
         margin-bottom: 15px !important;
     }
@@ -1245,19 +1246,55 @@
   }
 
   .section1-btn {
-    font-size: 1rem; /* Adjust button font size */
-    padding: 10px 20px; /* Reduce button padding */
+    font-size: 1rem !important; /* Adjust button font size */
+    padding: 10px 20px !important; /* Reduce button padding */
   }
 
   .section1-img {
-    text-align: center;
-    padding-left: 15px; /* Add spacing between the image and text */
+    text-align: center !important;
+    padding-left: 15px !important; /* Add spacing between the image and text */
   }
 
   .section1-img1 {
-    width: 100%; /* Make the image responsive */
-    max-width: 350px; /* Limit the max width for medium screens */
-    height: auto; /* Maintain the aspect ratio */
+    width: 100% !important; /* Make the image responsive */
+    max-width: 350px !important; /* Limit the max width for medium screens */
+    height: auto !important; /* Maintain the aspect ratio */
+  }
+}
+
+
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .connections-cta {
+    width: 100% !important;
+    padding: 20px !important;
+  }
+
+  .connections-cta .text-6 {
+    font-size: 2rem !important;
+  }
+
+  .connections-cta .text-4-5 {
+    font-size: 1.5rem !important;
+    text-align: center !important;
+  }
+
+  .connections-cta .d-flex {
+    flex-direction: column !important;
+    gap: 30px !important;
+    align-items: center !important;
+  }
+
+  .connections-cta img {
+    width: 100% !important;
+    max-width: 200px !important;
+    height: auto !important;
+  }
+
+  .connections-cta a {
+    font-size: 1rem !important;
+    padding: 10px 20px !important;
   }
 }
 
@@ -1584,7 +1621,7 @@
 		</div>
 
 		  <!-- section-1 cta -->
-		  <section class="cta-section styled-section" style="width: 1220px; margin: 45px auto; background-color: #EFF4FF;">
+		  <section class="connections-cta" style="width: 1220px; margin: 45px auto; background-color: #EFF4FF;">
 			<div class="container">
 				<div class="row">
 					<div
