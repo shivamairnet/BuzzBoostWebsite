@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<!-- Basic -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>About BuzzBoost | Blog</title>	
+
+		<meta name="keywords" content="WebSite Template" />
+		<meta name="description" content="BuzzBoost is a unified platform where global leading agencies, businesses, and influencers connect, collaborate, and drive impactful growth for each other.">
+		<meta name="author" content="okler.net">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="img/BuzzBoostImg/file.png" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="img/BuzzBoostImg/file.png">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+		<!-- Web Fonts  -->
+		<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" type="text/css">
+
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
+		<link rel="stylesheet" href="vendor/animate/animate.compat.css">
+		<link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css">
+		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css">
+		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="css/theme.css">
+		<link rel="stylesheet" href="css/theme-elements.css">
+		<link rel="stylesheet" href="css/theme-blog.css">
+		<link rel="stylesheet" href="css/theme-shop.css">
+
+		<!-- Demo CSS -->
+		<link rel="stylesheet" href="css/demos/demo-business-consulting-5.css">
+
+		<!-- Skin CSS -->
+		<link id="skinCSS" rel="stylesheet" href="css/skins/skin-business-consulting-5.css">
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- Head Libs -->
+		<script src="vendor/modernizr/modernizr.min.js"></script>
+
+		<style>
+			.custom-btn {
+			background-color: #FFBF78;
+			color: #000;
+		}
+
+		.custom-btn:hover {
+			background-color: #426CC1;
+			color: #fff;			
+		}
+
+		#whatsappButton:hover #whatsappIcon {
+        content: url('img/whatsapphover.png');
+        }
+
+		.custom1-btn1:hover{
+			border: #FFBF78 !important;
+		}
+	
+	/* for footer mobile responsive */
+	@media (max-width: 768px) {
+    /* Stack the columns vertically */
+    #footer .row {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    /* Center align the header and social icons on mobile */
+    #footer .col-lg-4 {
+        text-align: center !important;
+        margin-bottom: 20px !important;
+    }
+
+    /* Make social icons display inline and center them */
+    #footer .social-icons {
+        display: flex !important;
+        justify-content: center !important;
+        gap: 1rem !important;
+    }
+
+    /* Stack the 'Company' and 'Services' sections vertically */
+    #footer .col-lg-8 .row {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    /* Center align the headings and lists */
+    #footer .col-lg-6 {
+        text-align: center !important;
+        margin-bottom: 20px !important;
+    }
+
+    /* Adjust the footer text and copyright */
+    #footer .footer-copyright {
+        text-align: center !important;
+    }
+    
+    /* Adjust padding for smaller screens */
+    #footer .container {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    /* Adjust the 'Company' and 'Services' section list for better spacing */
+    #footer .list-unstyled {
+        padding-left: 0 !important;
+        list-style-type: none !important;
+    }
+
+    #footer .list-unstyled li {
+        margin-bottom: 10px !important;
+    }
+
+	.company-services {
+    flex-direction: column !important; /* Stack the company and services vertically */
+  }
+
+  .company, .services {
+    margin-bottom: 20px !important; /* Add space between the two sections */
+  }
+
+  .mobile-trusted-section{
+ font-size: 1.5rem;
+  }
+  .mobile-trusted-section br{
+	display: none;
+
+  }
+
+}
+
+
+
+
+.custom-btn:hover {
+			background-color: #426CC1 !important;
+			color: #fff !important;
+			
+		}
+
+		#whatsappButton:hover #whatsappIcon {
+        content: url('img/whatsapphover.png') !important;
+        }
+
+		.custom-btn {
+			background-color: #FFBF78 !important;
+			color: #000 !important;
+		}
+
+		@media (max-width: 768px) {
+  .override-inline {
+    position: static !important; /* Override position */
+    inset: unset !important;     /* Reset inset */
+    transform: none !important;  /* Disable transform */
+    margin: 0 !important;        /* Adjust margin as needed */
+  }
+}
+
+@media (max-width: 767px) {
+    .zig-zag {
+        flex-direction: column !important; /* Stack elements vertically */
+    }
+
+    /* Ensure the columns are stacked in the correct order */
+    .zig-zag .col-lg-5,
+    .zig-zag .col-lg-4 {
+        order: unset !important; /* Remove default order on mobile */
+    }
+
+    /* Apply the desired order */
+    .zig-zag .col-lg-5 {
+        order: 1 !important; /* Image first */
+    }
+
+    .zig-zag .col-lg-4 {
+        order: 2 !important; /* Text second */
+    }
+
+    .zig-zag h3 {
+        order: unset !important; /* Ensure heading order is normal */
+    }
+
+    .zig-zag p {
+        order: unset !important; /* Ensure paragraph order is normal */
+    }
+}
+
+
+
+
+		</style>
+		<meta name= "robots" content="index, follow">
+	</head>
+
+	<body class="alternative-font-7">
+		<div class="body mt-0">
+			<!-- <div class="notice-top-bar p-relative z-index-1 bg-secondary">
+				<div class="container">
+					<div class="row justify-content-center py-2">
+						<div class="col-9 col-md-12 text-center">
+							<p class="text-color-light mb-0 font-weight-semibold text-2">Join our Community of Marketers. <a href="#" class="btn btn-link text-decoration-none p-0 m-0 btn-dash ms-1 text-light">Apply Now</a></p>
+						</div>
+					</div>
+				</div>
+			</div> -->
+
+            <header id="header" class="header-transparent "
+			data-plugin-options="{'stickyScrollUp': true, 'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 42, 'stickyHeaderContainerHeight': 70}">
+			<div class="header-body header-body-bottom-border border-top-0 h-auto">
+				<div class="header-container container p-static" style="height: 70px !important;">
+					<div class="header-row" style="height: 70px !important;">
+						<div class="header-column">
+							<div class="header-row">
+								<div class="header-logo">
+									<a href="home.html">
+										<img src="img/BuzzBoostImg/file.png" class="img-fluid" width="70px"
+											height="70px" alt="BuzzBoost" />
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="header-column justify-content-end">
+							<div class="header-row">
+								<div
+									class="header-nav header-nav-line header-nav-bottom-line header-nav-bottom-line-effect-1">
+									<div
+										class="header-nav-main header-nav-main-text-capitalize header-nav-main-square header-nav-main-arrows header-nav-main-dropdown-no-borders header-nav-main-effect-2 header-nav-main-sub-effect-1">
+										<nav class="collapse header-collapse-background">
+											<ul class="nav nav-pills" id="mainNav">
+												<li>
+													<a href="home.html" class="nav-link">
+														Home
+													</a>
+												</li>
+												<li>
+													<a href="aboutus.html" class="nav-link">
+														About Us
+													</a>
+												</li>
+												<li class="nav-item dropdown">
+													<a class="nav-link dropdown-toggle" href="#" id="servicesDropdown"
+														role="button" data-bs-toggle="dropdown" aria-expanded="false">
+														Services
+													</a>
+													<ul class="dropdown-menu override-inline" aria-labelledby="servicesDropdown">
+														<li><a class="dropdown-item" href="agency.html">Agency</a></li>
+														<li><a class="dropdown-item" href="business.html">Business</a>
+														</li>
+														<li><a class="dropdown-item"
+																href="Influencer.html">Influencer</a></li>
+													</ul>
+												</li>
+												<li>
+													<a class="nav-link active" href="blog.html">
+														Blog
+													</a>
+												</li>
+												<!-- <li>
+													<a class="nav-link" href="contact.html">
+														Register
+													</a>
+												</li> -->
+											</ul>
+										</nav>
+									</div>
+								</div>
+
+								<ul class="header-extra-info d-none d-xxl-block mt-2 mx-3">
+									<li class="d-none d-sm-inline-flex ms-0 font-weight-semibold">
+										<div class="d-flex align-items-center">
+											<i class="icons icon-phone text-8   me-2"></i>
+											<a href="tel:+91 9796297972" class="text-3 text-dark"
+												style="color: #000; text-decoration: none; transition: color 0.3s ease;"
+												onmouseover="this.style.color='#426CC1'; this.style.textDecoration='underline';"
+												onmouseout="this.style.color='#000'; this.style.textDecoration='none';">
+												+91 9796297972
+											</a>
+
+										</div>
+									</li>
+								</ul>
+
+								<a href="contact.html"
+									class="btn btn-modern box-shadow-6 border-0 text-transform-none ms-3 d-none d-xl-inline-block custom-btn text-2 py-2 " style="border-radius: 25px;font-weight: 500;">Get
+									In Touch</a>
+
+								<button class="btn header-btn-collapse-nav"
+									style="background-color: #426CC1; color: #ffffff; border: none; padding: 10px 15px; border-radius: 5px !important;"
+									data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
+									<i class="fas fa-bars" style="color: #ffffff; font-size: 1.2em;"></i>
+								</button>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div role="main" class="main">
+            <section class="page-header page-header-modern page-header-lg bg-tertiary border-0 my-0">
+                <div class="container my-3">
+                    <div class="row">
+                        <div class="col-md-12 align-self-center p-static order-2 text-center">
+                            <h1 class="font-weight-bold text-10">Lorem ipsum dolor</h1>
+                        </div>
+                        <div class="col-md-12 align-self-center order-1">
+                            <ul class="breadcrumb breadcrumb-light d-block text-center">
+                                <li><a href="#">Home</a></li>
+                                <li class="active">Blog</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section position-relative border-0 m-0">
+                <div class="container py-4">
+                    <div class="row">
+                        <div class="col-lg-8 mb-5 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1600">
+
+                            <article>
+                                <div class="card border-0 custom-box-shadow-1">
+                                    <div class="card-body px-4 pt-3 pb-4 z-index-1">
+                                        <p class="text-uppercase text-1 mb-3 text-color-default"><time pubdate datetime="2023-01-10">10 Jan 2023</time> <span class="opacity-3 d-inline-block px-2">|</span> 3 Comments <span class="opacity-3 d-inline-block px-2">|</span> John Doe</p>
+
+                                        <div class="post-image pb-4">
+                                            <img class="card-img-top border-radius-0" src="img/BlogPage/Influencer Blog Image.jpg" alt="Card Image">
+                                        </div>
+
+                                        <div class="card-body p-0">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lectus lacus, rutrum sit amet placerat et, bibendum nec mauris. Duis molestie, purus eget placerat viverra, nisi odio gravida sapien, congue tincidunt nisl ante nec tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, massa fringilla consequat blandit, mauris ligula porta nisi, non tristique enim sapien vel nisl. Suspendisse vestibulum lobortis dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent nec tempus nibh. Donec mollis commodo metus et fringilla. Etiam venenatis, diam id adipiscing convallis, nisi eros lobortis tellus, feugiat adipiscing ante ante sit amet dolor. Vestibulum vehicula scelerisque facilisis. Sed faucibus placerat bibendum. Maecenas sollicitudin commodo justo, quis hendrerit leo consequat ac. Proin sit amet risus sapien, eget interdum dui. Proin justo sapien, varius sit amet hendrerit id, egestas quis mauris.</p>
+                                            <p>Ut ac elit non mi pharetra dictum nec quis nibh. Pellentesque ut fringilla elit. Aliquam non ipsum id leo eleifend sagittis id a lorem. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam massa mauris, viverra et rhoncus a, feugiat ut sem. Quisque ultricies diam tempus quam molestie vitae sodales dolor sagittis. Praesent commodo sodales purus. Maecenas scelerisque ligula vitae leo adipiscing a facilisis nisl ullamcorper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+                                            <p>Curabitur non erat quam, id volutpat leo. Nullam pretium gravida urna et interdum. Suspendisse in dui tellus. Cras luctus nisl vel risus adipiscing aliquet. Phasellus convallis lorem dui. Quisque hendrerit, lectus ut accumsan gravida, leo tellus porttitor mi, ac mattis eros nunc vel enim. Nulla facilisi. Nam non nulla sed nibh sodales auctor eget non augue. Pellentesque sollicitudin consectetur mauris, eu mattis mi dictum ac. Etiam et sapien eu nisl dapibus fermentum et nec tortor.</p>
+
+                                            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                                            <div class="addthis_inline_share_toolbox"></div>
+                                            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60ba220dbab331b0"></script>
+
+                                            <hr class="my-5">
+
+                                            <div class="post-block post-author">
+                                                <h3 class="text-color-secondary text-capitalize font-weight-bold text-5 m-0 mb-3">Author</h3>
+                                                <div class="img-thumbnail img-thumbnail-no-borders d-block pb-3">
+                                                    <a href="blog-post.html">
+                                                        <img src="img/avatars/avatar.jpg" class="rounded-circle" alt="">
+                                                    </a>
+                                                </div>
+                                                <p><strong class="name"><a href="#" class="text-4 text-dark pb-2 pt-2 d-block">John Doe</a></strong></p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus.</p>
+                                            </div>
+
+                                            <hr class="my-5">
+
+                                            <div id="comments" class="post-block post-comments">
+                                                <h3 class="text-color-secondary text-capitalize font-weight-bold text-5 m-0 mb-3">3 comments for "An Interview with John Doe"</h3>
+
+                                                <ul class="comments">
+                                                    <li>
+                                                        <div class="comment">
+                                                            <div class="img-thumbnail img-thumbnail-no-borders d-none d-sm-block">
+                                                                <img class="avatar rounded-circle" alt="" src="img/avatars/avatar-2.jpg">
+                                                            </div>
+                                                            <div class="comment-block">
+                                                                <div class="comment-arrow"></div>
+                                                                <span class="comment-by">
+                                                                    <strong class="text-dark">John Doe</strong>
+                                                                    <span class="float-end">
+                                                                        <span> <a href="#"><i class="fas fa-reply"></i> Reply</a></span>
+                                                                    </span>
+                                                                </span>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae, gravida pellentesque urna varius vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim ornare nisi, vitae mattis nulla ante id dui.</p>
+                                                                <span class="date float-end">January 12, 2023 at 1:38 pm</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <ul class="comments reply">
+                                                            <li>
+                                                                <div class="comment">
+                                                                    <div class="img-thumbnail img-thumbnail-no-borders d-none d-sm-block">
+                                                                        <img class="avatar rounded-circle" alt="" src="img/avatars/avatar-3.jpg">
+                                                                    </div>
+                                                                    <div class="comment-block">
+                                                                        <div class="comment-arrow"></div>
+                                                                        <span class="comment-by">
+                                                                            <strong class="text-dark">John Doe</strong>
+                                                                            <span class="float-end">
+                                                                                <span> <a href="#"><i class="fas fa-reply"></i> Reply</a></span>
+                                                                            </span>
+                                                                        </span>
+                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae, gravida pellentesque urna varius vitae.</p>
+                                                                        <span class="date float-end">January 12, 2023 at 1:38 pm</span>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="comment">
+                                                                    <div class="img-thumbnail img-thumbnail-no-borders d-none d-sm-block">
+                                                                        <img class="avatar rounded-circle" alt="" src="img/avatars/avatar-4.jpg">
+                                                                    </div>
+                                                                    <div class="comment-block">
+                                                                        <div class="comment-arrow"></div>
+                                                                        <span class="comment-by">
+                                                                            <strong class="text-dark">John Doe</strong>
+                                                                            <span class="float-end">
+                                                                                <span> <a href="#"><i class="fas fa-reply"></i> Reply</a></span>
+                                                                            </span>
+                                                                        </span>
+                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae, gravida pellentesque urna varius vitae.</p>
+                                                                        <span class="date float-end">January 12, 2023 at 1:38 pm</span>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <div class="comment">
+                                                            <div class="img-thumbnail img-thumbnail-no-borders d-none d-sm-block">
+                                                                <img class="avatar rounded-circle" alt="" src="img/avatars/avatar.jpg">
+                                                            </div>
+                                                            <div class="comment-block">
+                                                                <div class="comment-arrow"></div>
+                                                                <span class="comment-by">
+                                                                    <strong class="text-dark">John Doe</strong>
+                                                                    <span class="float-end">
+                                                                        <span> <a href="#"><i class="fas fa-reply"></i> Reply</a></span>
+                                                                    </span>
+                                                                </span>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                                <span class="date float-end">January 12, 2023 at 1:38 pm</span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="comment">
+                                                            <div class="img-thumbnail img-thumbnail-no-borders d-none d-sm-block">
+                                                                <img class="avatar rounded-circle" alt="" src="img/avatars/avatar.jpg">
+                                                            </div>
+                                                            <div class="comment-block">
+                                                                <div class="comment-arrow"></div>
+                                                                <span class="comment-by">
+                                                                    <strong class="text-dark">John Doe</strong>
+                                                                    <span class="float-end">
+                                                                        <span> <a href="#"><i class="fas fa-reply"></i> Reply</a></span>
+                                                                    </span>
+                                                                </span>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                                <span class="date float-end">January 12, 2023 at 1:38 pm</span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+
+                                                <h3 class="text-color-secondary text-capitalize font-weight-bold text-5 m-0 mb-3 mt-5">Leave a Reply</h3>
+
+                                                <form class="custom-form-simple-validation p-4 rounded bg-color-grey" action="/" method="POST">			
+                                                    <div class="p-2">
+                                                        <div class="row">
+                                                            <div class="form-group col-lg-6">
+                                                                <label class="form-label required mb-1 font-weight-bold text-dark">Full Name</label>
+                                                                <input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control py-3 px-3 border-0 box-shadow-none" name="name" id="name" required>
+                                                            </div>
+                                                            <div class="form-group col-lg-6">
+                                                                <label class="form-label required mb-1 font-weight-bold text-dark">Email Address</label>
+                                                                <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control py-3 px-3 border-0 box-shadow-none" name="email" id="email" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-group col">
+                                                                <label class="form-label required mb-1 font-weight-bold text-dark">Comment</label>
+                                                                <textarea maxlength="5000" data-msg-required="Please enter your message." rows="8" class="form-control p-3 border-0 box-shadow-none" name="message" id="message" required></textarea>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-group col mb-0">
+                                                                <input type="submit" value="Post Comment" class="btn btn-primary btn-modern" data-loading-text="Loading...">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div>
+                        <div class="blog-sidebar col-lg-4 pt-4 pt-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1800">
+                            <aside class="sidebar">
+                                <div class="px-3 mb-4">
+                                    <h3 class="text-color-quaternary text-capitalize font-weight-bold text-5 m-0 mb-3">About The Blog</h3>
+                                    <p class="m-0">Lorem ipsum dolor sit amet, conse elit porta. Vestibulum ante justo, volutpat quis porta diam.</p>
+                                </div>
+                                <div class="py-1 clearfix">
+                                    <hr class="my-2">
+                                </div>
+                                <div class="px-3 mt-4">
+                                    <form action="page-search-results.html" method="get">
+                                        <div class="input-group mb-3 pb-1">
+                                            <input class="form-control box-shadow-none text-1 border-0 bg-color-grey" placeholder="Search..." name="s" id="s" type="text">
+                                            <button type="submit" class="btn bg-color-grey text-1 p-2"><i class="fas fa-search m-2"></i></button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="py-1 clearfix">
+                                    <hr class="my-2">
+                                </div>
+                                <div class="px-3 mt-4">
+                                    <h3 class="text-color-quaternary text-capitalize font-weight-bold text-5 m-0 mb-3">Recent Posts</h3>
+                                    <div class="pb-2 mb-1">
+                                        <a href="#" class="text-color-default text-uppercase text-1 mb-0 d-block text-decoration-none">10 Jan 2023 <span class="opacity-3 d-inline-block px-2">|</span> 3 Comments <span class="opacity-3 d-inline-block px-2">|</span> John Doe</a>
+                                        <a href="#" class="text-color-dark text-hover-primary font-weight-bold text-3 d-block pb-3 line-height-4">Lorem ipsum dolor sit amet</a>
+                                        <a href="#" class="text-color-default text-uppercase text-1 mb-0 d-block text-decoration-none">10 Jan 2023 <span class="opacity-3 d-inline-block px-2">|</span> 3 Comments <span class="opacity-3 d-inline-block px-2">|</span> John Doe</a>
+                                        <a href="#" class="text-color-dark text-hover-primary font-weight-bold text-3 d-block pb-3 line-height-4">Consectetur adipiscing elit</a>
+                                        <a href="#" class="text-color-default text-uppercase text-1 mb-0 d-block text-decoration-none">10 Jan 2023 <span class="opacity-3 d-inline-block px-2">|</span> 3 Comments <span class="opacity-3 d-inline-block px-2">|</span> John Doe</a>
+                                        <a href="#" class="text-color-dark text-hover-primary font-weight-bold text-3 d-block pb-3 line-height-4">Vivamus sollicitudin nibh luctus</a>
+                                    </div>
+                                </div>
+                                <div class="py-1 clearfix">
+                                    <hr class="my-2">
+                                </div>
+                                <div class="px-3 mt-4">
+                                    <h3 class="text-color-quaternary text-capitalize font-weight-bold text-5 m-0 mb-3">Recent Comments</h3>
+                                    <div class="pb-2 mb-1">
+                                        <a href="#" class="text-color-default text-2 mb-0 d-block text-decoration-none line-height-4">Admin on <strong class="text-color-dark text-hover-primary text-4">Vivamus sollicitudin</strong> <span class="text-uppercase text-1 d-block pt-1 pb-3">10 Jan 2023</span></a>
+                                        <a href="#" class="text-color-default text-2 mb-0 d-block text-decoration-none line-height-4">John Doe on <strong class="text-color-dark text-hover-primary text-4">Lorem ipsum dolor</strong> <span class="text-uppercase text-1 d-block pt-1 pb-3">10 Jan 2023</span></a>
+                                        <a href="#" class="text-color-default text-2 mb-0 d-block text-decoration-none line-height-4">Admin on <strong class="text-color-dark text-hover-primary text-4">Consectetur adipiscing</strong> <span class="text-uppercase text-1 d-block pt-1 pb-3">10 Jan 2023</span></a>
+                                    </div>
+                                </div>
+                                <div class="py-1 clearfix">
+                                    <hr class="my-2">
+                                </div>
+                                <div class="px-3 mt-4">
+                                    <h3 class="text-color-quaternary text-capitalize font-weight-bold text-5 m-0">Categories</h3>
+                                    <ul class="nav nav-list flex-column mt-2 mb-0 p-relative right-9">
+                                        <li class="nav-item"><a class="nav-link bg-transparent border-0" href="#">Design (2)</a></li>
+                                        <li class="nav-item">
+                                            <a class="nav-link bg-transparent border-0 active" href="#">Photos (4)</a>
+                                            <ul>
+                                                <li class="nav-item"><a class="nav-link bg-transparent border-0" href="#">Animals</a></li>
+                                                <li class="nav-item"><a class="nav-link bg-transparent border-0 active" href="#">Business</a></li>
+                                                <li class="nav-item"><a class="nav-link bg-transparent border-0" href="#">Sports</a></li>
+                                                <li class="nav-item"><a class="nav-link bg-transparent border-0" href="#">People</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link bg-transparent border-0" href="#">Videos (3)</a></li>
+                                        <li class="nav-item"><a class="nav-link bg-transparent border-0" href="#">Lifestyle (2)</a></li>
+                                        <li class="nav-item"><a class="nav-link bg-transparent border-0" href="#">Technology (1)</a></li>
+                                    </ul>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- section-content -->
+             <section>
+
+                <img src="" alt="">
+                <p>Agencies and businesses that ignore influencer marketing may obviously find themselves at a disadvantage. In today’s world, where technology is in the hands of the consumers and consumers are overpowered with the ads, those agencies and businesses that miss or are too slow to adopt influencer marketing may find their business falling behind their competitors. 
+
+                    In the upcoming years, relying solely on the traditional marketing methods for organic reach may not be enough. Agencies and businesses that ignore influencer collaborations may miss out on the valuable opportunities, engagement, and the trust that influencers offer to connect with the new customers and may soon struggle to grow their brand and to make themselves stand out from the oversaturated market.</p>
+
+
+
+                <h2 style="font-size: 50px;background: linear-gradient(to right, #FFBF78, rgba(255, 191, 120, 0));">Real Life Success Stories</h2>
+
+
+                <p>To understand the true potential of influencer marketing, let’s look at a few examples of businesses that saw a significant growth in their revenue after collaborating with influencers:</p>
+                <p>Example 1: Daniel Wellington (Watch Brand)
+
+                    Strategy: Daniel Wellington a popular watch brand, partnered with influencers from Instagram, including micro influencers, to reach and showcase it;s company products to right set of people.
+                    
+                    Result: The brand saw an increase in its revenue to $230 million within just 5 years. Their influencer collaboration strategy worked wonders for them and they were able to establish a strong presence in the fashion accessories market.</p>
+
+                <p>Example 2: Example 2: Chipotle (Fast Food Chain)
+
+                    Strategy: Daniel Wellington a popular watch brand, partnered with influencers from Instagram, including micro influencers, to reach and showcase it;s company products to right set of people.
+                    
+                    Result: The brand saw an increase in its revenue to $230 million within just 5 years. Their influencer collaboration strategy worked wonders for them and they were able to establish a strong presence in the fashion accessories market.</p>
+                
+                <img src="img/BlogPage/Blog Image 8.jpg" alt="" style="border-radius: 15px;width: 800px;height: 500px;">
+                <div>
+                    <h2>Conclusion</h2>
+                    <p>
+                        There we have it; in this blog we have discussed the various advantages agencies and businesses can have when they opt for influencer marketing and the disadvantages when they don't opt. Also, as we look ahead in the upcoming years, influencer marketing will continue to grow and will act as a key component for any business and agency success. Hiring the right set of influencers can not only build trust, drive sales, and increase revenue but also significantly increase your brand awareness and reach the right set of consumers. 
+                        
+                        Don't stay behind; if you are still on the fence about influencer marketing, now is the time to take action and react to it. Don't let your competitors grow and take the upper hand on you. Leverage the power of influencer marketing and see the game-changing results for your agencies and businesses.</p>
+
+                </div>
+             </section>
+
+            <!-- Section zig-zag section2 -->
+				<div class="container" style="margin-top: 48px;">
+					<h3 class="text-center mt-5 mb-15" style="padding-top: 40px;padding-bottom: 40px;font-size: 50px;font-weight: 500 !important;">Why Agencies & Businesses Should Hire Influencers</h3>
+				
+					<!-- 1st point -->
+                    <div class="row align-items-center justify-content-center mt-5">
+						<div class="col-lg-5 text-center text-lg-start order-2 order-lg-1 mt-2" style="padding-left: 25px;">
+							<h3 class="mt-2 pt-2" style="font-size: 50px;">1. Authenticity & Credibility</h3>
+							<!-- <p class="" style="font-size: 28px;color: #426CC1;">Powerhouse of Engagement And Reach!</p> -->
+							
+							<p style="font-size: 20px;">
+                                Today, in a world where almost 70% of people use social media, consumers are more likely to trust a product recommended by an influencer they follow rather than from a brand pushing a traditional advertisement. Influencers have already created a sense of authenticity and credibility with their followers. 
+                                
+                                When they speak about your product or service, it comes across as genuine rather than a forced sales pitch to their followers, which arouses the interest of the consumers to try that particular product or service, which helps boost your brand’s credibility and reputation among consumers and ultimately increases your revenue.</p>
+						</div>
+						<div class="col-lg-5 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-2">
+							<div class="p-absolute left-0"></div>
+							<div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
+								<img width="353" height="465" src="img/BlogPage/Blog Image 2.png" alt="Macro Influencer" />
+							</div>
+						</div>
+					</div>
+					
+				
+					<!-- 2nd point -->
+					<div class="row align-items-center justify-content-center mt-5">
+						<div class="col-lg-5 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-1">
+							<div class="p-absolute right-0"></div>
+							<div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
+								<img width="353" height="465" src="img/BlogPage/Blog Image 3.png" alt="Mega Influencer" />
+							</div>
+						</div>
+						<div class="col-lg-5 text-center text-lg-start order-2 order-lg-2 mt-2">
+							<h3 class="mt-2 pt-2" style="font-size: 50px;">2. Increased Agency & Business Visibility and Reach</h3>
+							
+							<p style="font-size: 20px;">
+
+                                When any agency and business collaborate with an influencer, they already started tapping into their established audience. Influencers have already built trust with their followers, and their engagement and convincing power with their audience carry more weight than any other traditional ads or marketing tactics run by different agencies and businesses. 
+                                
+                                This increased engagement exposes agencies and businesses to new and highly engaged consumers from niche segment of demographics that can very much align with their services and products, thus helping them to expand their brand awareness and potential business market.</p>
+						</div>
+					</div>
+				
+					<!-- 3rd point -->
+                    <div class="row align-items-center justify-content-center mt-5" style="margin-bottom: 40px;">
+						<div class="col-lg-5 text-center text-lg-start order-2 order-lg-1 mt-2" style="padding-left: 25px;">
+							<h3 class="mt-2 pt-2" style="font-size: 50px;">3. Increase in Sales and Customer Conversions</h3>
+							
+							<p style="font-size: 20px;">
+                                Influencers don’t just help with your brand awareness—they drive actionable actions. Influencers have the power to convince and convert their audience into paying customers, through affiliate links, discount codes, or direct calls to action. 
+                                
+                                This makes influencers an excellent tool for businesses and agencies looking to increase their sales volume and revenue.</p>
+						</div>
+						<div class="col-lg-5 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-2">
+							<div class="p-absolute left-0"></div>
+							<div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
+								<img width="353" height="400" src="img/BlogPage/Blog Image 4.png" alt="Nano Influencer" />
+							</div>
+						</div>
+					</div>
+					
+				
+					<!-- 4th point -->
+					<div class="row align-items-center justify-content-center mt-5">
+						<div class="col-lg-5 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-1">
+							<div class="p-absolute right-0"></div>
+							<div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
+								<img width="353" height="400" src="img/BlogPage/Blog Image 5.png" alt="Micro Influencer" />
+							</div>
+						</div>
+						<div class="col-lg-5 text-center text-lg-start order-2 order-lg-2 mt-2">
+							<h3 class="mt-2 pt-2" style="font-size: 50px;">4. Targeted Marketing</h3>
+							
+							<p style="font-size: 20px;">
+                                One of the key advantages of hiring the influencers in [2025] is their ability to target specific audiences from different demographics. 
+                                
+                                Unlike mass advertising, influencers can help your agencies and businesses to connect with a highly relevant and niche audience that can very much align with your product and service, which ensures and helps you to reach and market your product and services to the right set of people, thereby helping your agency and business to grow at a rapid fast speed. </p>
+						</div>
+					</div>
+				</div>
+
+            <!-- section small cta type -->
+            <section class="cta-section styled-section" style="width: 1220px; margin: 45px auto; background-color: #426CC1;">
+				<div class="container">
+					<div class="row">
+						<div
+							class="col-xl-12 col-lg-12 col-md-12 col-sm-12 order-xl-1 order-lg-1 order-2 order-md-2 d-flex flex-column justify-content-center">
+							<div class="row text-md-center text-lg-start text-xl-start text-center">
+								<div class="col-12">
+									<h3 class="text-6 line-height-2 text-white" style="line-height: 1.5;font-size: 36px !important;">Ready to take your agency and business to the next level? Talk with our experts today and discover the power of influencer partnerships for your agency or business!</h3>
+								</div>
+								
+								<div class="col-12 industry-button text-center">
+									<a href="contact.html"
+										class="btn mt-2 py-3 px-xl-5 box-shadow-6 border-0 text-transform-none ms-2 d-xl-inline-block custom-btn" style="font-size: large;border-radius: 25px;font-weight: 500;">
+										Get In Touch
+                                </a>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</section>
+
+            
+            <!-- section blogs carousel -->
+             <section>
+
+             </section>
+
+            <!-- section form 7 -->
+				<section class="section m-0 border-0">
+					<div class="container">
+						<div class="row justify-content-between align-items-center ">
+							<div class="col-lg-6 text-center text-lg-start py-5">
+								<h2 class="mb-4 ready-to-transform" style="font-weight:400;font-size: 44px;">
+									Ready To Transform
+									<span>→</span>
+									Let’s Chat on WhatsApp
+								</h2>
+								<p class="text-4  line-height-4 opacity-6 mb-4">Got questions? Need guidance on
+									finding the right influencers? Our team is just a WhatsApp message away!</p>
+		
+								<i class="icons icon-phone text-8 text-color-primary me-2"></i>
+								<a href="tel:+919796297972" style="color: #000;"
+								
+									class="text-6 p-relative bottom-9 text-decoration-none">+91 9796297972
+									</a>
+		
+							</div>
+							<div class="col-lg-5 py-5">
+								<div class="border-radius bg-color-light border-0 box-shadow-3">
+									<div class="card-body p-5 m-2 text-center">
+										<h4 class="card-title mb-2 text-6">Get In Touch</h4>
+										<p class="card-text">Fill your details and tap the button below to start a chat with our support team.</p>
+							
+										<form id="whatsappForm" class="contact-form">
+											<div class="row">
+												<div class="form-group col text-start">
+													<input type="text" id="name" placeholder="Your Name *" maxlength="100"
+														class="form-control text-2-5 p-3" required>
+												</div>
+											</div>
+											<div class="row">
+												<div class="form-group col text-start">
+													<input type="text" id="phone" placeholder="Your Phone *" maxlength="100"
+														class="form-control text-2-5 p-3" required>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col"></div>
+												<div class="form-group col-xl-7 col-lg-9 col-md-6 col-sm-12">
+													<div class="d-grid gap-2">
+														<button id="whatsappButton" type="button" class="btn btn-sm border-0 text-3-5 p-3 custom-btn" 
+															style="color: black;border-radius: 25px;">
+															<img id="whatsappIcon" src="img/whatsapp.png" width="20" height="20" alt="WhatsApp Icon" 
+																style="margin-right: 8px;">
+															Contact Us
+														</button>
+													</div>
+												</div>
+												<div class="col"></div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+		<!-- section footer -->
+	<footer id="footer" class="position-relative  border-top-0 " style="background-color: #426CC1;">
+		<div class="container pt-5-5 pb-3">
+			<div class="row gy-5">
+				<div class="col-lg-4">
+					<h4 class="text-color-light font-weight-bold mb-3">BuzzBoost</h4>
+					<ul class="social-icons">
+						<li class="social-icons-instagram">
+						  <a
+							href="https://www.instagram.com/thebuzzzboost?igsh=MTltemR0Z2c4aHR3dA=="
+							target="_blank"
+							title="Instagram"
+						  >
+							<img src="img\Influencer Page and about us page\Instagram Logo.png" alt="instagram" height="30px" width="30px">
+						  </a>
+						</li>
+						<!-- <li class="social-icons-twitter">
+						  <a
+							href="http://www.twitter.com/"
+							target="_blank"
+							title="Twitter"
+						  >
+							<i class="fab fa-twitter"></i>
+						  </a>
+						</li> -->
+					  
+					  </ul>
+					<!-- <ul class="social-icons ">
+						<li class="social-icons-instagram">
+							<a href="http://www.instagram.com/" target="_blank" title="Instagram">
+								<i class="fab fa-instagram"></i>
+							</a>
+						</li>
+						<li class="social-icons-twitter">
+							<a href="http://www.twitter.com/" target="_blank" title="Twitter">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</li>
+						<li class="social-icons-facebook">
+							<a href="http://www.facebook.com/" target="_blank" title="Facebook">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+						</li>
+					</ul> -->
+				</div>
+				<div class="col-lg-8">
+					<div class="row mb-5-5">
+						<div class="col-lg-6 mb-4 mb-lg-0 ">
+							<h4 class="text-color-hover-light font-weight-bold mb-3">Company</h4>
+							<ul class="list list-unstyled columns-lg-1">
+								<li><a href="home.html" class="text-color-light text-color-hover-light" style="text-decoration: none;">Home</a></li>
+								<li><a href="aboutus.html" class="text-color-light text-color-hover-light" style="text-decoration: none;">About Us</a></li>
+								<!-- <li><a href="contact.html" class="text-color-light text-color-hover-light" style="text-decoration: none;">Register</a></li> -->
+								<!-- <li><a href="#" class="text-color-grey text-color-hover-primary">Team</a></li> -->
+								<!-- <li><a href="#" class="text-color-light text-color-hover-light">Blog</a></li> -->
+								<!-- <li><a href="#" class="text-color-light text-color-hover-light">Contact Us</a></li> -->
+							</ul>
+						</div>
+						<div class="col-lg-6">
+							<h4 class="text-color-hover-light font-weight-bold mb-3">Services</h4>
+							<ul class="list list-unstyled columns-lg-1">
+								<li><a href="agency.html" class="text-color-light text-color-hover-light" style="text-decoration: none;">Agency</a>
+								</li>
+								<li><a href="business.html" class="text-color-light text-color-hover-light" style="text-decoration: none;">Business</a></li>
+								<li><a href="Influencer.html" class="text-color-light text-color-hover-light" style="text-decoration: none;">Influencers</a></li>
+								<!-- <li><a href="#" class="text-color-grey text-color-hover-primary">CRM and Sales</a></li> -->
+								<!-- <li><a href="#" class="text-color-grey text-color-hover-primary">Strategy</a></li> -->
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright bg-transparent pb-5">
+			<div class="container">
+				<!-- <hr> -->
+				<div class="row" style="text-align: center;">
+					<div class="col mt-2 mb-2">
+						<p class="text-3 mb-0 text-center text-white">BuzzBoost © 2024. All Rights Reserved.
+						</p>
+						<p class="text-3 mb-0 text-center text-white mt-2">Developed By:-
+						</p>
+						<a href="https://ascentialabs.com/" target="_blank">
+							<img class="Ascentia text-3 mt-2 mb-0 text-center text-white" alt="Ascentia Labs" width="200" height="40" style="margin-bottom: 10px;color: #426CC1;" src="img\BuzzBoostImg\AscentiaLogo.png">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div style="position: fixed; bottom: 30px; right: 20px; z-index: 9999; width: 55px; height: 55px;">
+		<a href="https://wa.me/+919796297972" target="_blank" rel="noopener noreferrer">
+			<img src="img\whatsappiconfixed.png" 
+				 alt="WhatsApp" 
+				 style="width: 100%; height: 100%; border-radius: 50%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); cursor: pointer;" />
+		</a>
+	</div>
+</div>
+
+		<!-- Vendor -->
+		<script src="vendor/plugins/js/plugins.min.js"></script>
+
+		<!-- Theme Base, Components and Settings -->
+		<script src="js/theme.js"></script>
+
+		<!-- Current Page Vendor and Views -->
+		<script src="js/views/view.contact.js"></script>
+
+		<!-- Demo -->
+		<script src="js/demos/demo-business-consulting-5.js"></script>
+
+		<!-- Theme Custom -->
+		<script src="js/custom.js"></script>
+
+		<!-- Theme Initialization Files -->
+		<script src="js/theme.init.js"></script>
+
+		<!-- whatsapp redirection -->
+		<script>
+			document.getElementById("whatsappButton").addEventListener("click", function () {
+				const name = document.getElementById("name").value;
+				const phone = document.getElementById("phone").value;
+		
+				if (name && phone) {
+					
+					const whatsappNumber = "+919796297972"; 
+					const message = `Hello, my name is ${name}. My phone number is ${phone}. I'd like to get in touch.`;
+					const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+					
+					
+					window.open(whatsappURL, "_blank");
+				} else {
+					alert("Please fill in all the required fields.");
+				}
+			});
+		</script>
+	</body>
+</html>

@@ -63,7 +63,7 @@ html .text-hover-tertiary:hover {
 
 html .text-color-quaternary,
 html .text-quaternary {
-	color: #f9f9f9 !important;
+	color: black !important;
 }
 
 html .text-color-hover-quaternary:hover,
@@ -1084,25 +1084,25 @@ html .overlay-color-light:not(.no-skin):before {
 }
 
 .btn-link {
-	color: #ff6716;
+	color: #FFBF78;
 }
 
 .btn-link:hover {
-	color: #ff7830;
+	color: #426cc1;
 }
 
 .btn-link:active {
-	color: #fb5700;
+	color: #FFBF78;
 }
 
 html .btn-primary {
-	background-color: #ff6716;
-	border-color: #ff6716 #ff6716 #e24f00;
+	background-color:#FFBF78;
+	border-color: #FFBF78 #FFBF78 #FFBF78;
 	color: #FFF;
-	--color: #ff6716;
-	--hover: #ff803c;
-	--disabled: #ff6716;
-	--active: #ef5300;
+	--color: #FFBF78;
+	--hover: #FFBF78;
+	--disabled: #FFBF78;
+	--active: #FFBF78;
 }
 
 html .btn-primary:hover,
