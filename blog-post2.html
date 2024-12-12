@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<!-- Basic -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Blog-Post | BuzzBoost</title>	
+
+		<meta name="keywords" content="WebSite Template" />
+		<meta name="description" content="BuzzBoost is a unified platform where global leading agencies, businesses, and influencers connect, collaborate, and drive impactful growth for each other.">
+		<meta name="author" content="okler.net">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="img/BuzzBoostImg/file.png" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="img/BuzzBoostImg/file.png">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+		<!-- Web Fonts  -->
+		<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" type="text/css">
+
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
+		<link rel="stylesheet" href="vendor/animate/animate.compat.css">
+		<link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css">
+		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css">
+		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="css/theme.css">
+		<link rel="stylesheet" href="css/theme-elements.css">
+		<link rel="stylesheet" href="css/theme-blog.css">
+		<link rel="stylesheet" href="css/theme-shop.css">
+
+		<!-- Demo CSS -->
+		<link rel="stylesheet" href="css/demos/demo-business-consulting-5.css">
+
+		<!-- Skin CSS -->
+		<link id="skinCSS" rel="stylesheet" href="css/skins/skin-business-consulting-5.css">
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- Head Libs -->
+		<script src="vendor/modernizr/modernizr.min.js"></script>
+
+		<style>
+			.custom-btn {
+			background-color: #FFBF78;
+			color: #000;
+		}
+
+		.custom-btn:hover {
+			background-color: #426CC1;
+			color: #fff;			
+		}
+
+		#whatsappButton:hover #whatsappIcon {
+        content: url('img/whatsapphover.png');
+        }
+
+		.custom1-btn1:hover{
+			border: #FFBF78 !important;
+		}
+	
+	/* for footer mobile responsive */
+	@media (max-width: 768px) {
+    /* Stack the columns vertically */
+    #footer .row {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    /* Center align the header and social icons on mobile */
+    #footer .col-lg-4 {
+        text-align: center !important;
+        margin-bottom: 20px !important;
+    }
+
+    /* Make social icons display inline and center them */
+    #footer .social-icons {
+        display: flex !important;
+        justify-content: center !important;
+        gap: 1rem !important;
+    }
+
+    /* Stack the 'Company' and 'Services' sections vertically */
+    #footer .col-lg-8 .row {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    /* Center align the headings and lists */
+    #footer .col-lg-6 {
+        text-align: center !important;
+        margin-bottom: 20px !important;
+    }
+
+    /* Adjust the footer text and copyright */
+    #footer .footer-copyright {
+        text-align: center !important;
+    }
+    
+    /* Adjust padding for smaller screens */
+    #footer .container {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    /* Adjust the 'Company' and 'Services' section list for better spacing */
+    #footer .list-unstyled {
+        padding-left: 0 !important;
+        list-style-type: none !important;
+    }
+
+    #footer .list-unstyled li {
+        margin-bottom: 10px !important;
+    }
+
+	.company-services {
+    flex-direction: column !important; /* Stack the company and services vertically */
+  }
+
+  .company, .services {
+    margin-bottom: 20px !important; /* Add space between the two sections */
+  }
+
+  .mobile-trusted-section{
+ font-size: 1.5rem;
+  }
+  .mobile-trusted-section br{
+	display: none;
+
+  }
+
+}
+
+
+
+
+.custom-btn:hover {
+			background-color: #426CC1 !important;
+			color: #fff !important;
+			
+		}
+
+		#whatsappButton:hover #whatsappIcon {
+        content: url('img/whatsapphover.png') !important;
+        }
+
+		.custom-btn {
+			background-color: #FFBF78 !important;
+			color: #000 !important;
+		}
+
+		@media (max-width: 768px) {
+  .override-inline {
+    position: static !important; /* Override position */
+    inset: unset !important;     /* Reset inset */
+    transform: none !important;  /* Disable transform */
+    margin: 0 !important;        /* Adjust margin as needed */
+  }
+}
+
+@media (max-width: 767px) {
+    .zig-zag {
+        flex-direction: column !important; /* Stack elements vertically */
+    }
+
+    /* Ensure the columns are stacked in the correct order */
+    .zig-zag .col-lg-5,
+    .zig-zag .col-lg-4 {
+        order: unset !important; /* Remove default order on mobile */
+    }
+
+    /* Apply the desired order */
+    .zig-zag .col-lg-5 {
+        order: 1 !important; /* Image first */
+    }
+
+    .zig-zag .col-lg-4 {
+        order: 2 !important; /* Text second */
+    }
+
+    .zig-zag h3 {
+        order: unset !important; /* Ensure heading order is normal */
+    }
+
+    .zig-zag p {
+        order: unset !important; /* Ensure paragraph order is normal */
+    }
+}
+
+@media (max-width: 768px) {
+  .cta-section {
+    margin: 20px auto !important; /* Adjust margins */
+    padding: 20px !important; /* Add inner padding */
+    background-color: #426CC1 !important; /* Ensure consistent background */
+  }
+
+  .cta-section h3 {
+    font-size: 18px !important; /* Smaller font size for readability */
+    line-height: 1.3 !important; /* Adjust line spacing */
+    text-align: center !important; /* Center-align text */
+    margin-bottom: 15px !important; /* Add spacing below heading */
+    margin-top: 15px !important;
+  }
+
+  .industry-button a {
+    font-size: 14px !important; /* Reduce button font size */
+    padding: 10px 80px !important; /* Adjust button padding */
+    display: inline-block !important; /* Ensure proper alignment */
+    text-align: center !important; /* Center the text inside the button */
+    margin-top: 10px !important;
+  }
+
+  .cta-section .d-flex {
+    flex-direction: column !important; /* Stack elements vertically */
+    align-items: center !important; /* Center-align content */
+    text-align: center !important; /* Center-align text inside */
+  }
+
+  .cta-section .col-7, 
+  .cta-section .col-5 {
+    width: 100% !important; /* Full width for both columns */
+    margin: 0 auto !important; /* Center the columns */
+  }
+
+  .cta-section img {
+    width: 200px !important; /* Adjust image size */
+    height: auto !important; /* Maintain aspect ratio */
+    margin: 20px 0 !important; /* Add spacing around the image */
+  }
+}
+
+.blog-sidebar a {
+    color: black; /* Original color */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.blog-sidebar a:hover {
+    color: #426CC1; /* Blue color on hover */
+}
+
+
+
+
+
+
+		</style>
+		<meta name= "robots" content="index, follow">
+	</head>
+
+	<body class="alternative-font-7">
+		<div class="body mt-0" style="background-color: white !important;">
+			<!-- <div class="notice-top-bar p-relative z-index-1 bg-secondary">
+				<div class="container">
+					<div class="row justify-content-center py-2">
+						<div class="col-9 col-md-12 text-center">
+							<p class="text-color-light mb-0 font-weight-semibold text-2">Join our Community of Marketers. <a href="#" class="btn btn-link text-decoration-none p-0 m-0 btn-dash ms-1 text-light">Apply Now</a></p>
+						</div>
+					</div>
+				</div>
+			</div> -->
+
+            <header id="header" class="header-transparent "
+			data-plugin-options="{'stickyScrollUp': true, 'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 42, 'stickyHeaderContainerHeight': 70}">
+			<div class="header-body header-body-bottom-border border-top-0 h-auto">
+				<div class="header-container container p-static" style="height: 70px !important;">
+					<div class="header-row" style="height: 70px !important;">
+						<div class="header-column">
+							<div class="header-row">
+								<div class="header-logo">
+									<a href="home.html">
+										<img src="img/BuzzBoostImg/file.png" class="img-fluid" width="70px"
+											height="70px" alt="BuzzBoost" />
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="header-column justify-content-end">
+							<div class="header-row">
+								<div
+									class="header-nav header-nav-line header-nav-bottom-line header-nav-bottom-line-effect-1">
+									<div
+										class="header-nav-main header-nav-main-text-capitalize header-nav-main-square header-nav-main-arrows header-nav-main-dropdown-no-borders header-nav-main-effect-2 header-nav-main-sub-effect-1">
+										<nav class="collapse header-collapse-background">
+											<ul class="nav nav-pills" id="mainNav">
+												<li>
+													<a href="home.html" class="nav-link">
+														Home
+													</a>
+												</li>
+												<li>
+													<a href="aboutus.html" class="nav-link">
+														About Us
+													</a>
+												</li>
+												<li class="nav-item dropdown">
+													<a class="nav-link dropdown-toggle" href="#" id="servicesDropdown"
+														role="button" data-bs-toggle="dropdown" aria-expanded="false">
+														Services
+													</a>
+													<ul class="dropdown-menu override-inline" aria-labelledby="servicesDropdown">
+														<li><a class="dropdown-item" href="agency.html">Agency</a></li>
+														<li><a class="dropdown-item" href="business.html">Business</a>
+														</li>
+														<li><a class="dropdown-item"
+																href="Influencer.html">Influencer</a></li>
+													</ul>
+												</li>
+                                                <li class="nav-item dropdown">
+													<a class="nav-link dropdown-toggle" href="#" id="servicesDropdown"
+														role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Resources
+													</a>
+													<ul class="dropdown-menu override-inline" aria-labelledby="servicesDropdown">
+														<li><a class="dropdown-item" href="blog.html">Blog</a></li>
+													</ul>
+												</li>
+
+												<!-- <li>
+													<a class="nav-link" href="contact.html">
+														Register
+													</a>
+												</li> -->
+											</ul>
+										</nav>
+									</div>
+								</div>
+
+								<ul class="header-extra-info d-none d-xxl-block mt-2 mx-3">
+									<li class="d-none d-sm-inline-flex ms-0 font-weight-semibold">
+										<div class="d-flex align-items-center">
+											<i class="icons icon-phone text-8   me-2"></i>
+											<a href="tel:+91 9796297972" class="text-3 text-dark"
+												style="color: #000; text-decoration: none; transition: color 0.3s ease;"
+												onmouseover="this.style.color='#426CC1'; this.style.textDecoration='underline';"
+												onmouseout="this.style.color='#000'; this.style.textDecoration='none';">
+												+91 9796297972
+											</a>
+
+										</div>
+									</li>
+								</ul>
+
+								<a href="contact.html"
+									class="btn btn-modern box-shadow-6 border-0 text-transform-none ms-3 d-none d-xl-inline-block custom-btn text-2 py-2 " style="border-radius: 25px;font-weight: 500;">Get
+									In Touch</a>
+
+								<button class="btn header-btn-collapse-nav"
+									style="background-color: #426CC1; color: #ffffff; border: none; padding: 10px 15px; border-radius: 5px !important;"
+									data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
+									<i class="fas fa-bars" style="color: #ffffff; font-size: 1.2em;"></i>
+								</button>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div role="main" class="main" style="background-color: white !important;">
+            <section class="page-header page-header-modern page-header-lg bg-tertiary border-0 my-0">
+                <div class="container d-flex ">
+                    <div class="row">
+                        <div class="col-md-6 align-self-center p-static text-left" style="color: white;">
+                            <p style="color: white;font-size: 40px;margin-bottom: 120px;line-height: normal;">Top Influencer Marketing Trends To Watch In [2025]</p> 
+                            <div class="d-flex mt-5 mb-5">
+                                <span style="font-size: 1.5rem;margin-right:30px;margin-left: 20px;"><img src="img/BlogPage/user (1) 1.png" alt="user" height="15px" width="15px" style="margin-right: 4px;">John </span>
+                                <span style="font-size: 1.5rem;margin-right:30px;"><img src="img/BlogPage/calendar 1.png" alt="user" height="15px" width="15px" style="margin-right: 4px;">18/06/2024</span>
+                                <span style="font-size: 1.5rem;"><img src="img/BlogPage/wall-clock 1.png" alt="user" height="15px" width="15px" style="margin-right: 4px;">7 min</span>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6 align-self-center p-static text-right" style="color: white;">
+                            <img src="img\BlogPage\Top Influencer Marketing Trends To Watch In 2025.png" alt="" width="500px" height="350px">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section position-relative border-0 m-0" style="background-color: #ffffff !important;">
+                <div class="container py-4">
+                    <div class="row">
+                        <div class="blog-sidebar col-lg-3 pt-4 pt-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1800">
+                            <aside class="sidebar">
+                                <div class="px-3 mb-4 border-right">
+                                    <h3 class="text-color-quaternary text-capitalize text-5 m-0 mb-3" style="text-decoration: underline;text-align: center;">Table Of Content</h3>
+                                    <p class="m-0"><a href="blog-post2.html#introduction">1.Introduction</a> </p>
+                                    <p class="m-0"><a href="blog-post2.html#ai-driven">2.Artificial Intelligence (AI) Driven Personalizations</a></p>
+                                    <p class="m-0"><a href="blog-post2.html#centerstage">3.Micro & Nano-Influencers Taking The Center Stage</a> </p>
+                                    <p class="m-0"><a href="blog-post2.html#shoppable">4.Shoppable Live Streaming and Social Commerce</a> </p>
+                                    <p class="m-0"><a href="blog-post.html#trust">5.Trust Authenticity, Credibility And Transparency</a></p>
+                                    <p class="m-0"><a href="blog-post.html#long-term">6.Long Term Influencer Partnerships</a></p>
+                                    <p class="m-0"><a href="blog-post.html#metaverse">7.Rise of Metaverse and VR Influencers</a> </p>
+                                    <p class="m-0"><a href="blog-post2.html#final-conclusion">8.Final Conclusion</a></p>
+                                </div>
+                                <div class="py-1 clearfix">
+                                    <hr class="my-2">
+                                </div>
+                            </aside>
+                        </div>
+                        <div class="col-lg-9 mb-5 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1600">
+
+                            <article>
+                                <div class="card border-0 custom-box-shadow-1">
+                                    <div class="card-body px-4 pt-3 pb-4 z-index-1">
+
+                                        <div class="card-body p-0" id="introduction">
+                                        
+                                            <h3 class="text-left mb-15" style="padding-top: 5px;padding-bottom: 5px;font-size: 32px;font-weight: 500 !important;background: linear-gradient(to right, #FFBF78, rgba(255, 171, 120, 0));padding-left:15px;border-radius: 15px;">Introduction</h3>
+
+                                            <p>As the technology evolves with each passing year, influencer marketing is also continuing to evolve at a rapid, fast rate, promising new ways for agencies and businesses to connect, inspire, and engage with their audience. 
+
+                                                In order to stay ahead of the curve and your competitors, it is essential for every agency and business to watch out for these emerging and upcoming influencer marketing trends, which will help them to not only create their brand awareness among the consumers but also build a sense of authenticity and credibility among them. So, let's deep dive and look for some of the top influencer marketing trends every agency and business should look out for in the upcoming years.
+                                                </p>
+
+                                                <h3 class="mt-5 mb-15" id="ai-driven" style="padding-top: 5px;padding-bottom: 5px;font-size: 32px;font-weight: 500 !important;background: linear-gradient(to right, #FFBF78, rgba(255, 171, 120, 0));padding-left:15px;border-radius: 15px;">Artificial Intelligence (AI) Driven Personalizations</h3>
+                                                <p>In every industry, artificial intelligence is becoming a game-changer, and so in influencer marketing. AI tools are transforming how agencies and businesses are identifying the right set of influencers and analyzing their campaign performance, helping them to choose the best and right influencer for their agency and business.
+
+                                                    To have a more better knowledge on the role of AI in influencer marketing, let’s discuss and understand two major points how AI can help agencies and businesses:</p>
+                                               
+                                                    <p style="font-size: 1.3rem;text-align: left !important;"><img src="img/BlogPage/Arrow.png" alt="" height="30px" width="70px" style="margin-right: 2px;"><strong> Targeting Right Set of Influencers: </strong>With the help of AI, agencies and businesses can easily target the right set of influencers across various demographics whose audience can match with the brand’s services and products.
+
+                                                       
+                                                                             
+                                                        <br><br><img src="img/BlogPage/Arrow.png" alt="" height="30px" width="70px" style="margin-right: 2px;"><strong> Real-Time Analytics:</strong> AI-powered analytical tools offer in-depth insights about engagement rate, audience preferences, consumer behavioral data and campaign performance, which further enables agencies & businesses to optimize their campaigns in a more efficient manner.
+                                                                    
+                                                        <img src="img/BlogPage/Blog Image 7.png" alt="" style="border-radius: 15px;width: 920px;height: 256px;margin-bottom: 40px;">
+                                    
+                                                  
+                                                  
+                                                  
+                                                        <p style="font-size: 1.3rem;text-align: left;margin-bottom: 40px;">Now, since we have seen some of the advantages AI can offer to agencies and businesses; let's look at a real-life example and a case study of a brand that used AI and marketed their campaign in a more personal, interactive, and fun way. 
+
+                                                            <strong><br><br>Example:</strong> Burger King's "Million Dollar Whopper" campaign is one such example of the brand who used AI and encouraged their customers to get creative and design their own Whopper burger using an AI-powered personalized tool. Customers can choose their favorite ingredient that they want to add to their Whopper burger, and AI will generate a custom image of their burger with an addition of a personalized jingle for a more unique customer experience. 
+                                                            
+                                                            </p> 
+                                                    <img src="img/BlogPage/Blog Image 8.jpg" alt="" style="border-radius: 15px;width: 500px;height: 300px;margin-bottom: 40px;">
+                                               
+                                                    <div class="text-center">
+                                                <img src="img/BlogPage/Blog Image 1.png" alt="" width="783px" height="351px">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+          
+ 
+             <!-- Section zig-zag section2 -->
+                 <div class="container" style="margin-top: 48px;" >
+                     <h3 class="text-left mt-5 mb-15" id="centerstage" style="padding-top: 5px;padding-bottom: 5px;font-size: 32px;font-weight: 500 !important;background: linear-gradient(to right, #FFBF78, rgba(255, 171, 120, 0));padding-left:15px;border-radius: 15px;">Micro & Nano-Influencers Taking The Center Stage</h3>
+                 
+                     <!-- 1st point -->
+                     <div class="row align-items-center justify-content-center mt-5">
+                         <div class="col-lg-5 text-center text-lg-start order-2 order-lg-1 mt-2" style="padding-left: 25px;border-left: #FFBF78;">
+                            
+                             <h3 class="mt-2 pt-2" style="font-size: 28px;text-decoration: underline;">1. Authenticity & Credibility</h3>
+                             <!-- <p class="" style="font-size: 28px;color: #426CC1;">Powerhouse of Engagement And Reach!</p> -->
+                             <p style="font-size: 18px;border-left: #000 !important;">
+                                
+                                 Today, in a world where almost 70% of people use social media, consumers are more likely to trust a product recommended by an influencer they follow rather than from a brand pushing a traditional advertisement. Influencers have already created a sense of authenticity and credibility with their followers. 
+                                 
+                                 When they speak about your product or service, it comes across as genuine rather than a forced sales pitch to their followers, which arouses the interest of the consumers to try that particular product or service, which helps boost your brand’s credibility and reputation among consumers and ultimately increases your revenue.</p>
+                        
+                        </div>
+                         <div class="col-lg-5 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-2">
+                             <div class="p-absolute left-0"></div>
+                             <div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
+                                 <img width="371" height="456" src="img/BlogPage/Blog Image 2.png" alt="Authenticity and Credibility" />
+                             </div>
+                         </div>
+                     </div>
+                     
+                 
+                     <!-- 2nd point -->
+                     <div class="row align-items-center justify-content-center mt-5">
+                         <div class="col-lg-5 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-1">
+                             <div class="p-absolute right-0"></div>
+                             <div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
+                                 <img width="350" height="421" src="img/BlogPage/image-3.png" alt="Increase visibility" />
+                             </div>
+                         </div>
+                         <div class="col-lg-5 text-center text-lg-start order-2 order-lg-2 mt-2">
+                             <h3 class="mt-2 pt-2" style="font-size: 28px;text-decoration: underline;">2. Increased Agency & Business Visibility and Reach</h3>
+                             
+                             <p style="font-size: 18px;">
+ 
+                                 When any agency and business collaborate with an influencer, they already started tapping into their established audience. Influencers have already built trust with their followers, and their engagement and convincing power with their audience carry more weight than any other traditional ads or marketing tactics run by different <a href="agency.html" style="color: #426CC1;text-decoration: underline;">agencies</a> and <a href="business.html" style="color: #426CC1;text-decoration: underline;">businesses</a>. 
+                                 
+                                 This increased engagement exposes agencies and businesses to new and highly engaged consumers from niche segment of demographics that can very much align with their services and products, thus helping them to expand their brand awareness and potential business market.</p>
+                         </div>
+                     </div>
+                 
+                     <!-- 3rd point -->
+                     <div class="row align-items-center justify-content-center mt-5" style="margin-bottom: 40px;">
+                         <div class="col-lg-5 text-center text-lg-start order-2 order-lg-1 mt-2" style="padding-left: 25px;">
+                             <h3 class="mt-2 pt-2" style="font-size: 28px;text-decoration: underline;">3. Increase in Sales and Customer Conversions</h3>
+                             
+                             <p style="font-size: 18px;">
+                                 Influencers don’t just help with your brand awareness—they drive actionable actions. Influencers have the power to convince and convert their audience into paying customers, through affiliate links, discount codes, or direct calls to action. 
+                                 
+                                 This makes influencers an excellent tool for businesses and agencies looking to increase their sales volume and revenue.</p>
+                         </div>
+                         <div class="col-lg-5 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-2">
+                             <div class="p-absolute left-0"></div>
+                             <div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
+                                 <img width="400" height="450" src="img/BlogPage/Blog Image 4.png" alt="Increase in conversion" />
+                             </div>
+                         </div>
+                     </div>
+                     
+                 
+                     <!-- 4th point -->
+                     <div class="row align-items-center justify-content-center mt-5">
+                         <div class="col-lg-5 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-1">
+                             <div class="p-absolute right-0"></div>
+                             <div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
+                                 <img width="315" height="350" src="img/BlogPage/Blog Image 5.png" alt="Targeted Marketing" />
+                             </div>
+                         </div>
+                         <div class="col-lg-5 text-center text-lg-start order-2 order-lg-2 mt-2">
+                            <div class="vertical-line" style="display: inline-block; margin: 0 10px;"></div>
+                             <h3 class="mt-2 pt-2" style="font-size: 28px;text-decoration: underline;">4. Targeted Marketing</h3>
+                             
+                             <p style="font-size: 18px;">
+                                 One of the key advantages of hiring the influencers in [2025] is their ability to target specific audiences from different demographics. 
+                                 
+                                 Unlike mass advertising, influencers can help your <a href="agency.html" style="color: #426CC1;text-decoration: underline;">agencies</a>  and <a href="business.html" style="color: #426CC1;text-decoration: underline;">businesses</a>  to connect with a highly relevant and niche audience that can very much align with your product and service, which ensures and helps you to reach and market your product and services to the right set of people, thereby helping your agency and business to grow at a rapid fast speed. </p>
+                         </div>
+                     </div>
+                 </div>
+ 
+             <!-- section small cta type -->
+             <section class="cta-section styled-section" style=" margin: 45px auto; background-color: #426CC1;height: 285px;">
+                 <div class="container">
+                     <div class="row">
+                         <div
+                             class="col-xl-12 col-lg-12 col-md-12 col-sm-12 order-xl-1 order-lg-1 order-2 order-md-2 d-flex flex-column justify-content-center">
+                             <div class="row text-md-center text-lg-start text-xl-start text-center">
+                                <div class="d-flex">
+                                    <div class="flex-column col-7">
+                                 <div>
+                                     <h3 class="text-white" style="line-height: 1.5;font-size: 24px !important;">Ready to take your agency and business to the next level? Talk with our experts today and discover the power of influencer partnerships for your agency or business!</h3>
+                                 </div>
+                                 
+                                 <div class="industry-button text-left">
+                                     <a href="contact.html"
+                                         class="btn mt-3 py-2 px-xl-5 box-shadow-6 border-0 text-transform-none ms-2 d-xl-inline-block custom-btn" style="font-size: large;border-radius: 25px;font-weight: 500;width: 250px;">
+                                         Let's Talk
+                                 </a>
+                                 </div>
+                                </div>
+                                 <div class="text-right col-5" style="text-align: right !important;">
+                                    <img src="img/BlogPage/CTA.png" alt="" width="200px" height="200px" style="margin-bottom: 25px !important;">
+                                </div>
+                            </div>
+                             </div>
+                         </div>
+                         
+                     </div>
+                 </div>
+             </section>
+
+                                  <!-- section-content -->
+                                  <section class="container text-center" style="margin-top: 28px;">
+                                    <h2 class="text-left" id="shoppable" style="padding-top: 5px;padding-bottom: 5px;font-size: 32px;font-weight: 500 !important;background: linear-gradient(to right, #FFBF78, rgba(255, 171, 120, 0));padding-left:15px;border-radius: 15px;text-align: start;">Shoppable Live Streaming & Social Commerce</h2>
+                     
+                                     <p style="font-size: 1.3rem;text-align: left;">We talked and looked at some of the advantages agencies and businesses can have when they hire the right influencers for their agencies and businesses; now let's deep dive and look at the other side of it, i.e., what effect does an influencer have on agencies and businesses that ignore influencer marketing?</p>
+                                     
+                                     <img src="img/BlogPage/Blog Image 6.png" alt="" style="border-radius: 15px;width: 750px;height: 500px;">
+                                     <p style="font-size: 1.3rem;text-align: left;">Agencies and businesses that ignore influencer marketing may obviously find themselves at a disadvantage. In today’s world, where technology is in the hands of the consumers and consumers are overpowered with the ads, those agencies and businesses that miss or are too slow to adopt influencer marketing may find their business falling behind their competitors. 
+                     
+                                       <br><br>  In the upcoming years, relying solely on the traditional marketing methods for organic reach may not be enough. Agencies and businesses that ignore influencer collaborations may miss out on the valuable opportunities, engagement, and the trust that influencers offer to connect with the new customers and may soon struggle to grow their brand and to make themselves stand out from the oversaturated market.</p>
+                     
+                     
+                     
+                                     <h2 class="text-left" id="real" style="padding-top: 5px;padding-bottom: 5px;font-size: 32px;font-weight: 500 !important;background: linear-gradient(to right, #FFBF78, rgba(255, 171, 120, 0));padding-left:15px;border-radius: 15px;text-align: start;">Real Life Success Stories</h2>
+                     
+                     
+                                     <p style="font-size: 1.3rem;text-align: left !important;">To understand the true potential of influencer marketing, let’s look at a few examples of businesses that saw a significant growth in their revenue after collaborating with influencers:</p>
+                                    
+                                     <p style="font-size: 1.3rem;text-align: left !important;"><img src="img/BlogPage/Arrow.png" alt="" height="30px" width="70px" style="margin-right: 2px;"><strong>Example 1:</strong> Daniel Wellington (Watch Brand)
+                     
+                                         <br><br><img src="img/BlogPage/Arrow.png" alt="" height="30px" width="70px" style="margin-right: 2px;"><strong>Strategy:</strong> Daniel Wellington a popular watch brand, partnered with influencers from Instagram, including <span><a href="agency.html#micro" style="color: #426CC1 !important;text-decoration: underline;"> micro influencers</a></span>, to reach and showcase it;s company products to right set of people.
+                                         
+                                         <br><br><img src="img/BlogPage/Arrow.png" alt="" height="30px" width="70px" style="margin-right: 2px;"><strong>Result:</strong> The brand saw an increase in its revenue to $230 million within just 5 years. Their influencer collaboration strategy worked wonders for them and they were able to establish a strong presence in the fashion accessories market.</p>
+                     
+                                         <img src="img/BlogPage/Blog Image 7.png" alt="" style="border-radius: 15px;width: 920px;height: 256px;margin-bottom: 40px;">
+                     
+                                     <p style="font-size: 1.3rem;text-align: left;margin-bottom: 40px;"><img src="img/BlogPage/Arrow.png" alt="" height="30px" width="70px" style="margin-right: 2px;"><strong>Example 2:</strong> Chipotle (Fast Food Chain)
+                     
+                                        <br><br><img src="img/BlogPage/Arrow.png" alt="" height="30px" width="70px" style="margin-right: 2px;"><strong>Strategy:</strong>Chipotle brand collaborated with many TikTok influencers and created a viral challenge, the "Lid Flip Challenge.
+                                         
+                                         <br><br><img src="img/BlogPage/Arrow.png" alt="" height="30px" width="70px" style="margin-right: 2px;"><strong>Result:</strong> The campaign saw record-breaking digital sales for the brand, with the brand reporting approximately 90% increase in their overall digital revenue in a quarter.</p>
+                                     
+                                     <img src="img/BlogPage/Blog Image 8.jpg" alt="" style="border-radius: 15px;width: 500px;height: 300px;margin-bottom: 40px;">
+                                   
+
+                                     <div>
+                                        <h2 id="shoppable" style="padding-top: 5px;padding-bottom: 5px;font-size: 32px;font-weight: 500 !important;background: linear-gradient(to right, #FFBF78, rgba(255, 171, 120, 0));padding-left:15px;border-radius: 15px;text-align: start;">Shoppable Live Streaming & Social Commerce</h2>
+                                        <p style="font-size: 1.3rem;text-align: left;">
+                                            With more than 5.22 billion people worldwide using different social media platforms, shoppable live streaming and social commerce are set to become the powerhouse and revolutionize the influencer marketing trend in 2025. This trend blurs the lines between content and commerce, and blends entertainment with e-commerce enabling influencers to seamlessly integrate product promotions into real-time. Many social media platforms like Instagram, TikTok, Youtube are updating their live streaming features, to make it easy for influencers to showcase services or products in real-time, and enabling their audiences to engage with influencers, ask questions, and make purchases directly from the live stream, creating a dynamic and immersive shopping experience for them. 
+
+<br><br>In [2025], live streaming of shopping and fashion events is predicted to become a major revenue driver for the agencies and businesses. According to the reports, 73% of the consumers worldwide are more likely to purchase the service or product after watching a live streaming event, and out of those 73%, 47% are more likely to make an impulse purchase during the ongoing live stream event. In the US, live commerce sales are projected to grow by 36% by 2026, and a report by KPMG, social e-commerce in India is projected to grow with an astonishing rate of 31% CAGR and reach $37 billion by the end of 2025.
+
+<br><br>An interesting example of this trend is the brand Telfar - a New York based fashion brand that became the standout case who benefitted largely after leveraging the live streaming of it;s products.
+</p>
+                                    </div>
+                                     
+                                     <div>
+                                        <h2 id="trust" style="padding-top: 5px;padding-bottom: 5px;font-size: 32px;font-weight: 500 !important;background: linear-gradient(to right, #FFBF78, rgba(255, 171, 120, 0));padding-left:15px;border-radius: 15px;text-align: start;">Trust Authenticity, Credibility And Transparency</h2>
+                                        <p style="font-size: 1.3rem;text-align: left;">
+                                            In an interconnected world driven by information and relationships, trust, authenticity, credibility, and transparency, consumers are demanding genuine partnerships between agencies, businesses and influencers. Therefore it is essential for the agencies and businesses to hire the right set of influencers, who can authentically advocate their services and products, and recommend them to their audience.
+                                           <br> <img src="" alt="" height="350px" width="350px" style="margin: 0 auto;">
+                                            <br><br> Influencers and businesses need to trust one another in order to build a lasting, business relationship. Authenticity also ensures that agencies and businesses act according to the values they want the public to perceive; Consistency is what bequeaths credibility; as one maintains integrity and delivers results—then automatically the belief his or her word (or action). It reinforces accountability, making transparency essential to the promotion of openness and honesty.
+                                              As these principles cooperate, they lead to a positive feedback loop. By working together to share this information, businesses and influencers can connect on a more human level fostering stronger alliances based on mutual respect.
+
+                                            </p>
+                                    </div>
+                                     <div>
+                                        <h2 id="long-term" style="padding-top: 5px;padding-bottom: 5px;font-size: 32px;font-weight: 500 !important;background: linear-gradient(to right, #FFBF78, rgba(255, 171, 120, 0));padding-left:15px;border-radius: 15px;text-align: start;">Long Term Influencer Partnerships</h2>
+                                        <p style="font-size: 1.3rem;text-align: left;">
+                                            While many different influencers can yield different results for agencies and businesses, building a long-lasting partnership with some influencers can actually benefit more and will lead to a broader brand advocacy with more sustainable engagement in 2025. With long-term partnerships with the influencers, agencies, and businesses can cultivate deeper trust and familiarity with their followers, making the influencers' endorsements more genuine. This strategy also benefits influencers, allowing them to enhance their portfolios, showcase long-term partnerships with brands, and allowing them to collaborate with bigger agencies and businesses in the future.</p>
+                                    </div>
+                                   
+                                    <div>
+                                        <h2 id="metaverse" style="padding-top: 5px;padding-bottom: 5px;font-size: 32px;font-weight: 500 !important;background: linear-gradient(to right, #FFBF78, rgba(255, 171, 120, 0));padding-left:15px;border-radius: 15px;text-align: start;">Rise of Metaverse and VR Influencers</h2>
+                                        <p style="font-size: 1.3rem;text-align: left;">
+                                            The growing popularity of the metaverse and virtual reality (VR) influencers will change how influencer marketing works in 2025. VR influencers provide engaging experiences that connect the virtual and real worlds. As platforms like Decentraland, Roblox, and Meta Horizons become more popular, VR influencers are using these platforms to create special, interactive content that attracts their audiences.
+                                           <br><br> These digital characters, like Kyra and Naina, made using AI and CGI and often shown as avatars, are changing how businesses work with influencers, organize virtual events, and boost online shopping in ways that regular influencers can't. By combining creativity with advanced technology, these digital figures are building stronger connections with audiences and offering new ways to tell stories. AI-powered influencers are also easier for brands to manage, which reduces mistakes and the risk of unexpected issues compared to traditional influencers. This trend is expected to grow even more in the future.
+                                           </p>
+                                    </div>
+                                   
+                                     <div>
+                                         <h2 id="final-conclusion" style="padding-top: 5px;padding-bottom: 5px;font-size: 32px;font-weight: 500 !important;background: linear-gradient(to right, #FFBF78, rgba(255, 171, 120, 0));padding-left:15px;border-radius: 15px;text-align: start;">Final Conclusion</h2>
+                                         <p style="font-size: 1.3rem;text-align: left;">
+                                            As we move forward, in the upcoming years, trends in influencer marketing are clearly on the edge of big changes. Trends like AI-driven personalization, the role of micro and nano influencers, live streaming of events, trust, authenticity and credibility, long-term partnerships with influencers, and the rise of VR influencers—all these trends are reshaping the way agencies and businesses can connect with the people. Moreover, these trends are not only about the technology; they are about meeting and targeting new consumers, growing expectations, and the authenticity and credibility of their brand among the consumers in a more meaningful way.
+
+                                       <br><br>     So, which of these trends will really take off? Will agencies and businesses lean more towards AI to deliver highly personalized campaigns to their consumers, or will the VR influencers become the driving force? Think about which of these trends will best fit your agency and business. Now’s the perfect time to explore these trends and decide how they can help your agency and business to stay relevant and competitive, connect with people, and lead the way in influencer marketing’s next exciting chapter.
+                                            </p>
+                     
+                                     </div>
+                                    </section>
+
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+             <!-- section blogs carousel -->
+             <section style="width: 1300px;margin:0px auto;">
+                <h3 class="text-center" style="font-size: 40px;color: #426CC1;">Other Blogs</h3>
+                <div style="display: grid; grid-template-columns: repeat(3, 2fr); gap: 95px; padding: 50px;">
+                    <!-- Card Template -->
+                    <div style="background-color: #fff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; position: relative;">
+                        <img src="img\BlogPage\Influencer Blog Image.jpg" alt="Card Image" style="width: 100%; height: 150px; object-fit: cover;">
+                        <div style="padding: 5px; flex-grow: 1;">
+                            <h3 style="font-size: 1.2rem; margin: 0 0 10px;">Why Hiring Influencers Can Be a Game-Changer for Your Agency and Business in [2025]</h3>
+                            <p style="font-size: 0.9rem; color: #555; margin: 0 0 5px;">This is a brief explanation of the card content. It gives the reader a quick overview of the topic.</p>
+                        </div>
+                        <hr>
+                        <a href="#" style="color: #007BFF; text-decoration: none; font-size: 0.9rem;text-align: end;padding-right: 15px;">Read More</a>
+                        <div style="border-top: 1px solid #fff; display: flex; justify-content: space-between; align-items: center; padding: 10px 15px; font-size: 0.8rem; background-color: #f9f9f9;">
+                            <span style="color: #888;">Written by: John Doe</span>
+                            <span style="color: #888;">Published on: 12/12/2024</span>
+                        </div>
+                    </div>
+                    <div style="background-color: #fff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; position: relative;">
+                        <img src="https://via.placeholder.com/300" alt="Card Image" style="width: 100%; height: 150px; object-fit: cover;">
+                        <div style="padding: 15px; flex-grow: 1;">
+                            <h3 style="font-size: 1.2rem; margin: 0 0 10px;">Card Title</h3>
+                            <p style="font-size: 0.9rem; color: #555; margin: 0 0 20px;">This is a brief explanation of the card content. It gives the reader a quick overview of the topic.</p>
+                        </div>
+                        <hr>
+                        <a href="#" style="color: #007BFF; text-decoration: none; font-size: 0.9rem;text-align: end;padding-right: 15px;">Read More</a>
+                        <div style="border-top: 1px solid #fff; display: flex; justify-content: space-between; align-items: center; padding: 10px 15px; font-size: 0.8rem; background-color: #f9f9f9;">
+                            <span style="color: #888;">Written by: John Doe</span>
+                            <span style="color: #888;">Published on: 12/12/2024</span>
+                        </div>
+                    </div>
+                    <div style="background-color: #fff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; position: relative;">
+                        <img src="https://via.placeholder.com/300" alt="Card Image" style="width: 100%; height: 150px; object-fit: cover;">
+                        <div style="padding: 15px; flex-grow: 1;">
+                            <h3 style="font-size: 1.2rem; margin: 0 0 10px;">Card Title</h3>
+                            <p style="font-size: 0.9rem; color: #555; margin: 0 0 20px;">This is a brief explanation of the card content. It gives the reader a quick overview of the topic.</p>
+                        </div>
+                        <hr>
+                        <a href="#" style="color: #007BFF; text-decoration: none; font-size: 0.9rem;text-align: end;padding-right: 15px;">Read More</a>
+                        <div style="border-top: 1px solid #fff; display: flex; justify-content: space-between; align-items: center; padding: 10px 15px; font-size: 0.8rem; background-color: #f9f9f9;">
+                            <span style="color: #888;">Written by: John Doe</span>
+                            <span style="color: #888;">Published on: 12/12/2024</span>
+                        </div>
+                    </div>
+                   
+                    <!-- Repeat the card structure 36 times for 6x6 grid -->
+                </div>
+ 
+              </section>
+
+         
+
+ <!-- section form 7 -->
+ <section class="section m-0 border-0">
+    <div class="container">
+        <div class="row justify-content-between align-items-center ">
+            <div class="col-lg-6 text-center text-lg-start py-5">
+                <h2 class="mb-4 ready-to-transform" style="font-weight:400;font-size: 44px;">
+                    Ready To Transform
+                    <span>→</span>
+                    Let’s Chat on WhatsApp
+                </h2>
+                <p class="text-4  line-height-4 opacity-6 mb-4">Got questions? Need guidance on
+                    finding the right influencers? Our team is just a WhatsApp message away!</p>
+
+                <i class="icons icon-phone text-8 text-color-primary me-2"></i>
+                <a href="tel:+919796297972" style="color: #000;"
+                
+                    class="text-6 p-relative bottom-9 text-decoration-none">+91 9796297972
+                    </a>
+
+            </div>
+            <div class="col-lg-5 py-5">
+                <div class="border-radius bg-color-light border-0 box-shadow-3">
+                    <div class="card-body p-5 m-2 text-center">
+                        <h4 class="card-title mb-2 text-6">Get In Touch</h4>
+                        <p class="card-text">Fill your details and tap the button below to start a chat with our support team.</p>
+            
+                        <form id="whatsappForm" class="contact-form">
+                            <div class="row">
+                                <div class="form-group col text-start">
+                                    <input type="text" id="name" placeholder="Your Name *" maxlength="100"
+                                        class="form-control text-2-5 p-3" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col text-start">
+                                    <input type="text" id="phone" placeholder="Your Phone *" maxlength="100"
+                                        class="form-control text-2-5 p-3" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col"></div>
+                                <div class="form-group col-xl-7 col-lg-9 col-md-6 col-sm-12">
+                                    <div class="d-grid gap-2">
+                                        <button id="whatsappButton" type="button" class="btn btn-sm border-0 text-3-5 p-3 custom-btn" 
+                                            style="color: black;border-radius: 25px;">
+                                            <img id="whatsappIcon" src="img/whatsapp.png" width="20" height="20" alt="WhatsApp Icon" 
+                                                style="margin-right: 8px;">
+                                            Contact Us
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+		<!-- section footer -->
+	<footer id="footer" class="position-relative  border-top-0 " style="background-color: #426CC1;">
+		<div class="container pt-5-5 pb-3">
+			<div class="row gy-5">
+				<div class="col-lg-4">
+					<h4 class="text-color-light font-weight-bold mb-3">BuzzBoost</h4>
+					<ul class="social-icons">
+						<li class="social-icons-instagram">
+						  <a
+							href="https://www.instagram.com/thebuzzzboost?igsh=MTltemR0Z2c4aHR3dA=="
+							target="_blank"
+							title="Instagram"
+						  >
+							<img src="img\Influencer Page and about us page\Instagram Logo.png" alt="instagram" height="30px" width="30px">
+						  </a>
+						</li>
+						<!-- <li class="social-icons-twitter">
+						  <a
+							href="http://www.twitter.com/"
+							target="_blank"
+							title="Twitter"
+						  >
+							<i class="fab fa-twitter"></i>
+						  </a>
+						</li> -->
+					  
+					  </ul>
+					<!-- <ul class="social-icons ">
+						<li class="social-icons-instagram">
+							<a href="http://www.instagram.com/" target="_blank" title="Instagram">
+								<i class="fab fa-instagram"></i>
+							</a>
+						</li>
+						<li class="social-icons-twitter">
+							<a href="http://www.twitter.com/" target="_blank" title="Twitter">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</li>
+						<li class="social-icons-facebook">
+							<a href="http://www.facebook.com/" target="_blank" title="Facebook">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+						</li>
+					</ul> -->
+				</div>
+				<div class="col-lg-8">
+					<div class="row mb-5-5">
+						<div class="col-lg-6 mb-4 mb-lg-0 ">
+							<h4 class="text-color-hover-light font-weight-bold mb-3">Company</h4>
+							<ul class="list list-unstyled columns-lg-1">
+								<li><a href="home.html" class="text-color-light text-color-hover-light" style="text-decoration: none;">Home</a></li>
+								<li><a href="aboutus.html" class="text-color-light text-color-hover-light" style="text-decoration: none;">About Us</a></li>
+								<!-- <li><a href="contact.html" class="text-color-light text-color-hover-light" style="text-decoration: none;">Register</a></li> -->
+								<!-- <li><a href="#" class="text-color-grey text-color-hover-primary">Team</a></li> -->
+								<li><a href="blog.html" class="text-color-light text-color-hover-light">Blog</a></li>
+								<!-- <li><a href="#" class="text-color-light text-color-hover-light">Contact Us</a></li> -->
+							</ul>
+						</div>
+						<div class="col-lg-6">
+							<h4 class="text-color-hover-light font-weight-bold mb-3">Services</h4>
+							<ul class="list list-unstyled columns-lg-1">
+								<li><a href="agency.html" class="text-color-light text-color-hover-light" style="text-decoration: none;">Agency</a>
+								</li>
+								<li><a href="business.html" class="text-color-light text-color-hover-light" style="text-decoration: none;">Business</a></li>
+								<li><a href="Influencer.html" class="text-color-light text-color-hover-light" style="text-decoration: none;">Influencers</a></li>
+								<!-- <li><a href="#" class="text-color-grey text-color-hover-primary">CRM and Sales</a></li> -->
+								<!-- <li><a href="#" class="text-color-grey text-color-hover-primary">Strategy</a></li> -->
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright bg-transparent pb-5">
+			<div class="container">
+				<!-- <hr> -->
+				<div class="row" style="text-align: center;">
+					<div class="col mt-2 mb-2">
+						<p class="text-3 mb-0 text-center text-white">BuzzBoost © 2024. All Rights Reserved.
+						</p>
+						<p class="text-3 mb-0 text-center text-white mt-2">Developed By:-
+						</p>
+						<a href="https://ascentialabs.com/" target="_blank">
+							<img class="Ascentia text-3 mt-2 mb-0 text-center text-white" alt="Ascentia Labs" width="200" height="40" style="margin-bottom: 10px;color: #426CC1;" src="img\BuzzBoostImg\AscentiaLogo.png">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div style="position: fixed; bottom: 30px; right: 20px; z-index: 9999; width: 55px; height: 55px;">
+		<a href="https://wa.me/+919796297972" target="_blank" rel="noopener noreferrer">
+			<img src="img\whatsappiconfixed.png" 
+				 alt="WhatsApp" 
+				 style="width: 100%; height: 100%; border-radius: 50%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); cursor: pointer;" />
+		</a>
+	</div>
+</div>
+
+		<!-- Vendor -->
+		<script src="vendor/plugins/js/plugins.min.js"></script>
+
+		<!-- Theme Base, Components and Settings -->
+		<script src="js/theme.js"></script>
+
+		<!-- Current Page Vendor and Views -->
+		<script src="js/views/view.contact.js"></script>
+
+		<!-- Demo -->
+		<script src="js/demos/demo-business-consulting-5.js"></script>
+
+		<!-- Theme Custom -->
+		<script src="js/custom.js"></script>
+
+		<!-- Theme Initialization Files -->
+		<script src="js/theme.init.js"></script>
+
+		<!-- whatsapp redirection -->
+		<script>
+			document.getElementById("whatsappButton").addEventListener("click", function () {
+				const name = document.getElementById("name").value;
+				const phone = document.getElementById("phone").value;
+		
+				if (name && phone) {
+					
+					const whatsappNumber = "+919796297972"; 
+					const message = `Hello, my name is ${name}. My phone number is ${phone}. I'd like to get in touch.`;
+					const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+					
+					
+					window.open(whatsappURL, "_blank");
+				} else {
+					alert("Please fill in all the required fields.");
+				}
+			});
+		</script>
+	</body>
+</html>
