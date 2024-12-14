@@ -177,6 +177,7 @@
 @media (max-width: 767px) {
     .zig-zag {
         flex-direction: column !important; /* Stack elements vertically */
+        text-align: center !important;
     }
 
     /* Ensure the columns are stacked in the correct order */
@@ -196,9 +197,11 @@
 
     .zig-zag h3 {
         order: unset !important; /* Ensure heading order is normal */
+        text-align: center !important;
     }
 
     .zig-zag p {
+        text-align: center !important;
         order: unset !important; /* Ensure paragraph order is normal */
     }
 }
@@ -208,6 +211,7 @@
     margin: 20px auto !important; /* Adjust margins */
     padding: 20px !important; /* Add inner padding */
     background-color: #426CC1 !important; /* Ensure consistent background */
+    height: 650px !important;
   }
 
   .cta-section h3 {
@@ -239,7 +243,7 @@
   }
 
   .cta-section img {
-    width: 200px !important; /* Adjust image size */
+    width: 100% !important; /* Adjust image size */
     height: auto !important; /* Maintain aspect ratio */
     margin: 20px 0 !important; /* Add spacing around the image */
   }
@@ -254,10 +258,105 @@
     color: #426CC1; /* Blue color on hover */
 }
 
+@media(max-width:992px)
+{
+    p,h2,h3{
+            text-align: center !important;
+        }
 
+    .top-influencer{
+        max-width: 100% !important;
+        height: auto !important;
+    }
 
+    .ai-image{
+        max-width: 100% !important;
+        height: 250px !important;
+    }
 
+    .burger-image{
+        max-width: 100% !important;
+        height: auto !important;
+    }
 
+    .micro-macro{
+        max-width: 100% !important;
+    }
+    
+    .shoppable{
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    .meta-verse,.influencer-partnership,.trust-image{
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    .disadvantage-image{
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    .real-life-story-image{
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .blog-sidebar {
+        display: none !important;
+    }
+
+}
+
+@media (max-width: 768px) {
+  
+  .section-blog-content{
+      margin-bottom: 0 !important;
+  }
+  
+  
+    .carousel-blogs {
+      width: 100% !important;
+      margin: 0 auto !important;
+      padding: 0 10px !important;
+    }
+  
+    .carousel-blogs h3 {
+      font-size: 34px !important;
+      margin-bottom: 20px !important;
+    }
+  
+    .carousel-blogs > div {
+      display: grid;
+      grid-template-columns: 1fr !important; /* Stack cards vertically */
+      gap: 20px !important; /* Space between stacked cards */
+      padding: 0 !important;
+    }
+  
+    .carousel-blogs div img {
+      width: 100% !important;
+      height: auto !important; /* Maintain aspect ratio */
+    }
+  
+    .carousel-blogs div h3 {
+      font-size: 1rem !important; /* Adjust title font size */
+      line-height: 1.4 !important;
+    }
+  
+    .carousel-blogs div a {
+      font-size: 0.85rem !important;
+      padding: 8px 12px !important;
+      border-radius: 20px !important;
+      text-align: center;
+      background-color: #334a9e !important;
+    }
+  
+    .carousel-blogs div span {
+      font-size: 0.75rem !important; /* Smaller font for metadata */
+      color: #666;
+    }
+  }
 
 		</style>
 		<meta name= "robots" content="index, follow">
@@ -380,14 +479,14 @@
                         <div class="col-md-6 align-self-center p-static text-left" style="color: white;">
                             <p style="color: white;font-size: 40px;margin-bottom: 80px;line-height: normal;margin-top: 40px;">Top Influencer Marketing Trends To Watch In [2025]</p> 
                             <div class="d-flex mt-5 mb-5">
-                                <span style="font-size: 1.5rem;margin-right:30px;margin-left: 20px;"><img src="img/BlogPage/user (1) 1.png" alt="user" height="20px" width="20px" style="margin-right: 4px;">John </span>
+                                <span style="font-size: 1.5rem;margin-right:30px;margin-left: 20px;"><img src="img/BlogPage/user (1) 1.png" alt="user" height="20px" width="20px" style="margin-right: 4px;">Arham Jain</span>
                                 <span style="font-size: 1.5rem;margin-right:30px;"><img src="img/BlogPage/calendar 1.png" alt="user" height="20px" width="20px" style="margin-right: 4px;">18/06/2024</span>
                                 <span style="font-size: 1.5rem;"><img src="img/BlogPage/wall-clock 1.png" alt="user" height="20px" width="20px" style="margin-right: 4px;">7 min</span>
 
                             </div>
                         </div>
                         <div class="col-md-6 align-self-center p-static text-right" style="color: white;">
-                            <img src="img\BlogPage\Top Influencer Marketing Trends To Watch In 2025.png" alt="" width="600px" height="350px">
+                            <img class="top-influencer" src="img\BlogPage\Top Influencer Marketing Trends To Watch In 2025.png" alt="" width="600px" height="350px">
                         </div>
                     </div>
                 </div>
@@ -440,7 +539,7 @@
                                                                              
                                                         <br><br><img src="img/BlogPage/Arrow.png" alt="" height="30px" width="70px" style="margin-right: 2px;"><strong> Real-Time Analytics:</strong> AI-powered analytical tools offer in-depth insights about engagement rate, audience preferences, consumer behavioral data and campaign performance, which further enables <a href="agency.html" style="color: #426CC2;text-decoration: underline;">agencies</a> & <a href="business.html" style="color: #426CC2;">businesses</a> to optimize their campaigns in a more efficient manner.
                                                         <div class="text-center">        
-                                                        <img src="img/BlogPage/Blog-post2/Artificial Intelligence (AI) Driven Personalizations.png" alt="" style="border-radius: 15px;width: 650px;height: 400px;margin-bottom: 30px;margin-top: 40px;">
+                                                        <img class="ai-image" src="img/BlogPage/Blog-post2/Artificial Intelligence (AI) Driven Personalizations.png" alt="" style="border-radius: 15px;width: 650px;height: 400px;margin-bottom: 30px;margin-top: 40px;">
                                                         </div>  
                                                   
                                                   
@@ -451,7 +550,7 @@
                                                             
                                                             </p> 
                                                             <div class="text-center">
-                                                               <img src="img/BlogPage/Blog-post2/Burger King Example.jpg" alt="" height="350px" width="600px">
+                                                               <img class="burger-image" src="img/BlogPage/Blog-post2/Burger King Example.jpg" alt="" height="350px" width="600px">
                                                             </div>       
                                         </div>
                                     </div>
@@ -465,10 +564,10 @@
                      <h3 class="text-left mt-5 mb-15" id="centerstage" style="padding-bottom: 5px;font-size: 32px;font-weight: 500 !important;background: linear-gradient(to right, #FFBF78, rgba(255, 171, 120, 0));padding-left:15px;border-radius: 15px;">Micro & Nano-Influencers Taking The Center Stage</h3>
                      <p style="font-size: 1.3rem">Marketing your service and product in the right demographic with the right set of targeted customers is the key component for any agency and business to increase their product and brand awareness. Obviously, whenever any agency and business want to roll out their new service or a product, they want to target a niche audience first, get the required feedback from them, and then accordingly change their marketing campaign to target a large demographic and audience.
 
-                        <br><br>This is where the role of <a href="agency.html#micro" style="color: #426CC2;">micro</a> and <a href="agency.html#nano" style="color: #426CC2;">nano</a> influencers comes into the picture. These specific types of influencers have a very niche audience, and often their audience is genuine and trustworthy enough for <a href="agency.html" style="color: #426CC2;">agencies</a> and <a href="business.html" style="color: #426CC2;">businesses</a> to test their services or products. In the upcoming year, <a href="agency.html#micro" style="color: #426CC2;">micro</a> and <a href="agency.html#nano" style="color: #426CC2;">nano</a> influencers will become an indispensable asset for the brands. Their trustworthy audience, relatable content often drives large engagement for agencies and businesses as when compared with mega influencers. 
+                        <br><br>This is where the role of <a href="agency.html#micro" style="color: #426CC2;text-decoration: underline;">micro</a> and <a href="agency.html#nano" style="color: #426CC2;text-decoration: underline;">nano</a> influencers comes into the picture. These specific types of influencers have a very niche audience, and often their audience is genuine and trustworthy enough for <a href="agency.html" style="color: #426CC2;text-decoration: underline;">agencies</a> and <a href="business.html" style="color: #426CC2;text-decoration: underline;">businesses</a> to test their services or products. In the upcoming year, <a href="agency.html#micro" style="color: #426CC2;text-decoration: underline;">micro</a> and <a href="agency.html#nano" style="color: #426CC2;text-decoration: underline;">nano</a> influencers will become an indispensable asset for the brands. Their trustworthy audience, relatable content often drives large engagement for agencies and businesses as when compared with mega influencers. 
                         </p>
                         <div class="text-center">
-                        <img src="img/BlogPage/Blog-post2/Micro & Nano-Influencers Taking The Center Stage.png" alt="" height="400px" width="550px" style="margin-bottom: 30px;margin-top: 40px;">
+                        <img class="micro-macro" src="img/BlogPage/Blog-post2/Micro & Nano-Influencers Taking The Center Stage.png" alt="" height="400px" width="550px" style="margin-bottom: 30px;margin-top: 40px;">
                         </div>
                         <p style="font-size: 1.3rem">Let's gather our understand and know why in [2025] brands will prioritize micro and nano influencers:
                         </p>
@@ -479,7 +578,7 @@
                  </div>
 
                                   <!-- section-content -->
-                                  <section class="container text-center" style="margin-top: 28px;">
+                                  <section class="section-blog-content container text-center" style="margin-top: 28px;">
 
                                      <div>
                                         <h2 id="shoppable" style="padding-top: 5px;padding-bottom: 5px;font-size: 32px;font-weight: 500 !important;background: linear-gradient(to right, #FFBF78, rgba(255, 171, 120, 0));padding-left:15px;border-radius: 15px;text-align: start;">Shoppable Live Streaming & Social Commerce</h2>
@@ -491,7 +590,7 @@
 <br><br>An interesting example of this trend is the brand <strong>Telfar - a New York</strong> based <strong>fashion brand</strong> that became the standout case who benefitted largely after leveraging the live streaming of it;s products.
 </p>
 
-<img src="img/BlogPage/Blog-post2/Shoppable Live Streaming & Social Commerce.jpg" alt="shopping" height="400px" width="920px" style="margin-bottom: 40px;margin-top: 30px;">
+<img class="shoppable" src="img/BlogPage/Blog-post2/Shoppable Live Streaming & Social Commerce.jpg" alt="shopping" height="400px" width="920px" style="margin-bottom: 40px;margin-top: 30px;">
 <p style="text-align: left;font-size: 1.3rem">
     <strong style="text-decoration: underline;">Scenario:</strong>Telfar, famous for its "Fashion Shopping Bags" (dubbed the "Bushwick Birkin"), faced challenges with bots and scalpers buying up the majority of their inventory, leaving it's genuine customers unable to purchase their products. To solve this, Telfar started introducing it's products on the TV platform.
 
@@ -541,17 +640,17 @@
                                             In an interconnected world driven by information and relationships, trust, authenticity, credibility, and transparency, consumers are demanding genuine partnerships between agencies, businesses and influencers. Therefore it is essential for the agencies and businesses to hire the right set of influencers, who can authentically advocate their services and products, and recommend them to their audience.
                                            <br> 
                                            <div class="text-center">
-                                           <img src="img/BlogPage/Blog-post2/trust-image.jpg" alt="" height="350px" width="450px" style="margin: 0 auto;margin-bottom: 30px;margin-top: 40px;">
+                                           <img class="trust-image" src="img/BlogPage/Blog-post2/trust-image.jpg" alt="" height="350px" width="450px" style="margin: 0 auto;margin-bottom: 30px;margin-top: 40px;">
                                            </div>
-                                            <br><br> <p class="text-left" style="text-align: left;font-size: 1.3rem;"><a href="Influencer.html" style="color: #426CC2;">Influencers </a>and <a href="business.html" style="color: #426CC2;"> businesses </a>need to trust one another in order to build a lasting, business relationship. Authenticity also ensures that <a href="agency.html" style="color: #426CC2;">agencies </a> and <a href="business.html" style="color: #426CC2;">businesses</a> act according to the values they want the public to perceive; Consistency is what bequeaths credibility; as one maintains integrity and delivers results—then automatically the belief his or her word (or action). It reinforces accountability, making transparency essential to the promotion of openness and honesty.
-                                              As these principles cooperate, they lead to a positive feedback loop. By working together to share this information, businesses and <a href="Influencer.html" style="color: #426CC2;">influencers </a> can connect on a more human level fostering stronger alliances based on mutual respect.
+                                            <br><br> <p class="text-left" style="text-align: left;font-size: 1.3rem;"><a href="Influencer.html" style="color: #426CC2;text-decoration: underline;">Influencers </a>and <a href="business.html" style="color: #426CC2;text-decoration: underline;"> businesses </a>need to trust one another in order to build a lasting, business relationship. Authenticity also ensures that <a href="agency.html" style="color: #426CC2;text-decoration: underline;">agencies </a> and <a href="business.html" style="color: #426CC2;text-decoration: underline;">businesses</a> act according to the values they want the public to perceive; Consistency is what bequeaths credibility; as one maintains integrity and delivers results—then automatically the belief his or her word (or action). It reinforces accountability, making transparency essential to the promotion of openness and honesty.
+                                              As these principles cooperate, they lead to a positive feedback loop. By working together to share this information, businesses and <a href="Influencer.html" style="color: #426CC2;text-decoration: underline;">influencers </a> can connect on a more human level fostering stronger alliances based on mutual respect.
                                             </p>
                                     </div>
                                      <div>
                                         <h2 id="long-term" style="padding-top: 5px;padding-bottom: 5px;font-size: 32px;font-weight: 500 !important;background: linear-gradient(to right, #FFBF78, rgba(255, 171, 120, 0));padding-left:15px;border-radius: 15px;text-align: start;">Long Term Influencer Partnerships</h2>
                                         <p style="font-size: 1.3rem;text-align: left;">
-                                            While many different <a href="Influencer.html" style="color: #426CC2;">influencers </a>can yield different results for <a href="agency.html" style="color: #426CC2;">agencies</a> and <a href="business.html" style="color: #426CC2;">businesses</a>, building a long-lasting partnership with some <a href="Influencer.html" style="color: #426CC2;">influencers </a>can actually benefit more and will lead to a broader brand advocacy with more sustainable engagement in 2025. With long-term partnerships with the influencers, agencies, and businesses can cultivate deeper trust and familiarity with their followers, making the influencers' endorsements more genuine. This strategy also benefits influencers, allowing them to enhance their portfolios, showcase long-term partnerships with brands, and allowing them to collaborate with bigger agencies and businesses in the future.</p>
-                                        <img src="img/BlogPage/Blog-post2/Long Term Influencer Partnerships.png" alt="long-term-influencer" height="450px" width="650px" style="margin-top: 25px;margin-bottom: 35px;">
+                                            While many different <a href="Influencer.html" style="color: #426CC2;text-decoration: underline;">influencers </a>can yield different results for <a href="agency.html" style="color: #426CC2;text-decoration: underline;">agencies</a> and <a href="business.html" style="color: #426CC2;text-decoration: underline;">businesses</a>, building a long-lasting partnership with some <a href="Influencer.html" style="color: #426CC2;text-decoration: underline;">influencers </a>can actually benefit more and will lead to a broader brand advocacy with more sustainable engagement in 2025. With long-term partnerships with the influencers, agencies, and businesses can cultivate deeper trust and familiarity with their followers, making the influencers' endorsements more genuine. This strategy also benefits influencers, allowing them to enhance their portfolios, showcase long-term partnerships with brands, and allowing them to collaborate with bigger agencies and businesses in the future.</p>
+                                        <img class="influencer-partnership" src="img/BlogPage/Blog-post2/Long Term Influencer Partnerships.png" alt="long-term-influencer" height="450px" width="650px" style="margin-top: 25px;margin-bottom: 35px;">
                                         </div>
                                    
                                     <div>
@@ -560,7 +659,7 @@
                                             The growing popularity of the metaverse and virtual reality (VR) influencers will change how influencer marketing works in 2025. VR influencers provide engaging experiences that connect the virtual and real worlds. As platforms like Decentraland, Roblox, and Meta Horizons become more popular, VR influencers are using these platforms to create special, interactive content that attracts their audiences.
                                            <br><br> These digital characters, like Kyra and Naina, made using AI and CGI and often shown as avatars, are changing how businesses work with influencers, organize virtual events, and boost online shopping in ways that regular influencers can't. By combining creativity with advanced technology, these digital figures are building stronger connections with audiences and offering new ways to tell stories. AI-powered influencers are also easier for brands to manage, which reduces mistakes and the risk of unexpected issues compared to traditional influencers. This trend is expected to grow even more in the future.
                                            </p>
-                                           <img src="img/BlogPage/Blog-post2/Rise of Metaverse and VR Influencers.png" alt="" height="400px" width="650px" style="margin-top: 20px;margin-bottom: 30px;">
+                                           <img class="meta-verse" src="img/BlogPage/Blog-post2/Rise of Metaverse and VR Influencers.png" alt="" height="400px" width="650px" style="margin-top: 20px;margin-bottom: 30px;">
                                     </div>
                                    
                                      <div>
@@ -581,7 +680,7 @@
             </section>
 
              <!-- section blogs carousel -->
-             <section style="width: 1300px;margin:0px auto;">
+             <section class="carousel-blogs" style="width: 1300px;margin:0px auto;">
                 <h3 class="text-center" style="font-size: 40px;color: #426CC1;">Other Blogs</h3>
                 <div style="display: grid; grid-template-columns: repeat(3, 2fr); gap: 95px; padding: 50px;margin-left: 50px;margin-right: 50px;">
                     <!-- Card Template -->
@@ -595,7 +694,7 @@
                              </div>
                         </div>
                         <div style="border-top: 1px solid #fff; display: flex; justify-content: space-between; align-items: center; padding: 10px 15px; font-size: 0.8rem; background-color: #f9f9f9;">
-                            <span style="color: #888;">Written by: John Doe</span>
+                            <span style="color: #888;">Written by: Arham Jain</span>
                             <span style="color: #888;">Published on: 12/12/2024</span>
                         </div>
                     </div>

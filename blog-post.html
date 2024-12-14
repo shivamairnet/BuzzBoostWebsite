@@ -201,6 +201,7 @@
     margin: 20px auto !important; /* Adjust margins */
     padding: 20px !important; /* Add inner padding */
     background-color: #426CC1 !important; /* Ensure consistent background */
+    height: 650px !important;
   }
 
   .cta-section h3 {
@@ -212,6 +213,7 @@
   }
 
   .industry-button a {
+
     font-size: 14px !important; /* Reduce button font size */
     padding: 10px 80px !important; /* Adjust button padding */
     display: inline-block !important; /* Ensure proper alignment */
@@ -232,7 +234,8 @@
   }
 
   .cta-section img {
-    width: 200px !important; /* Adjust image size */
+
+    width: 100% !important; /* Adjust image size */
     height: auto !important; /* Maintain aspect ratio */
     margin: 20px 0 !important; /* Add spacing around the image */
   }
@@ -249,12 +252,108 @@
 
 @media(max-width:992px)
 {
-    .p{
+    p,h2,h3{
             text-align: center !important;
         }
+
+    .why-hiring {
+        text-align: center !important;
+        max-width: 100% !important;
+    }
+
+    .img-why-hiring{
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    .influencer-market{
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    .business-visibility{
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    .increased-visibility{
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    
+    .conversion-image{
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    .target-marketing{
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    .disadvantage-image{
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    .real-life-story-image{
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .blog-sidebar {
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+  
+.section-blog-content{
+    margin-bottom: 0 !important;
 }
 
 
+  .carousel-blogs {
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 10px !important;
+  }
+
+  .carousel-blogs h3 {
+    font-size: 34px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .carousel-blogs > div {
+    display: grid;
+    grid-template-columns: 1fr !important; /* Stack cards vertically */
+    gap: 20px !important; /* Space between stacked cards */
+    padding: 0 !important;
+  }
+
+  .carousel-blogs div img {
+    width: 100% !important;
+    height: auto !important; /* Maintain aspect ratio */
+  }
+
+  .carousel-blogs div h3 {
+    font-size: 1rem !important; /* Adjust title font size */
+    line-height: 1.4 !important;
+  }
+
+  .carousel-blogs div a {
+    font-size: 0.85rem !important;
+    padding: 8px 12px !important;
+    border-radius: 20px !important;
+    text-align: center;
+    background-color: #334a9e !important;
+  }
+
+  .carousel-blogs div span {
+    font-size: 0.75rem !important; /* Smaller font for metadata */
+    color: #666;
+  }
+}
 
 		</style>
 		<meta name= "robots" content="index, follow">
@@ -377,20 +476,20 @@
                         <div class="col-md-6 align-self-center p-static text-left" style="color: white;">
                             <p style="color: white;font-size: 40px;margin-bottom: 80px;line-height: normal;margin-top: 40px;">Why Hiring Influencers Can Be a Game-Changer for Your Agency and Business in [2025]</p> 
                             <div class="d-flex mt-5 mb-5">
-                                <span style="font-size: 1.5rem;margin-right:30px;margin-left: 20px;"><img src="img/BlogPage/user (1) 1.png" alt="user" height="20px" width="20px" style="margin-right: 4px;">John </span>
+                                <span style="font-size: 1.5rem;margin-right:30px;margin-left: 20px;"><img src="img/BlogPage/user (1) 1.png" alt="user" height="20px" width="20px" style="margin-right: 4px;">Arham Jain </span>
                                 <span style="font-size: 1.5rem;margin-right:30px;"><img src="img/BlogPage/calendar 1.png" alt="user" height="20px" width="20px" style="margin-right: 4px;">18/06/2024</span>
                                 <span style="font-size: 1.5rem;"><img src="img/BlogPage/wall-clock 1.png" alt="user" height="20px" width="20px" style="margin-right: 4px;">7 min</span>
 
                             </div>
                         </div>
-                        <div class="col-md-6 align-self-center p-static text-right" style="color: white;">
-                            <img src="img/BlogPage/Influencer Blog Image.jpg" alt="" width="600px" height="350px">
+                        <div class="why-hiring col-md-6 align-self-center p-static text-right" style="color: white;">
+                            <img class="img-why-hiring" src="img/BlogPage/Influencer Blog Image.jpg" alt="Hiring challenge" width="600px" height="350px">
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="section position-relative border-0 m-0" style="background-color: #ffffff !important;">
+            <section class="section-blog-content section position-relative border-0 m-0" style="background-color: #ffffff !important;">
                 <div class="container py-4">
                     <div class="row">
                         <div class="blog-sidebar col-lg-3 pt-4 pt-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1800">
@@ -426,7 +525,7 @@
                                                 <h3 class="mt-5 mb-15" id="power" style="padding-top: 5px;padding-bottom: 5px;font-size: 32px;font-weight: 500 !important;background: linear-gradient(to right, #FFBF78, rgba(255, 171, 120, 0));padding-left:15px;border-radius: 15px;">The Power Of Influence In 2025</h3>
                                                 <p>As we move further in the upcoming years, consumers are becoming more judicious. Traditional advertising and marketing methods are no longer as effective as they were once used to be. Today, customers seek authenticity and connection with the brand and business over mere product quality and price. Influencers, with their loyal followings, offer <a href="agency.html" style="color: #426CC1;text-decoration: underline;">agencies</a> and <a href="business.html" style="color: #426CC1;text-decoration: underline;">businesses</a>  a unique way to engage with the right set of audiences on a personal level, making their recommendations much more impactful than a standard ad.</p>
                                                 <div class="text-center">
-                                                <img src="img/BlogPage/Blog Image 1.png" alt="" width="783px" height="351px">
+                                                <img class="influencer-market" src="img/BlogPage/Blog Image 1.png" alt="" width="783px" height="351px">
                                             </div>
                                         </div>
                                     </div>
@@ -455,7 +554,7 @@
                          <div class="col-lg-6 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-2">
                              <div class="p-absolute left-0"></div>
                              <div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
-                                 <img width="371" height="456" src="img/BlogPage/Increased Agency & Business Visibility and Reach (2).png" alt="Authenticity and Credibility" />
+                                 <img class="business-visiblity" width="371" height="456" src="img/BlogPage/Increased Agency & Business Visibility and Reach (2).png" alt="Authenticity and Credibility" />
                              </div>
                          </div>
                      </div>
@@ -466,7 +565,7 @@
                          <div class="col-lg-6 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-1">
                              <div class="p-absolute right-0"></div>
                              <div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
-                                 <img width="350" height="421" src="img/BlogPage/Blog Image 2.png" alt="Increase visibility" />
+                                 <img class="increased-visiblity" width="350" height="421" src="img/BlogPage/Blog Image 2.png" alt="Increase visibility" />
                              </div>
                          </div>
                          <div class="col-lg-6 text-center text-lg-start order-2 order-lg-2 mt-2 border-left" style="border-left: 3px solid #FFBF78 !important;">
@@ -492,7 +591,7 @@
                          <div class="col-lg-6 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-2">
                              <div class="p-absolute left-0"></div>
                              <div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
-                                 <img width="400" height="450" src="img/BlogPage/Blog Image 5.png" alt="Increase in conversion" />
+                                 <img class="conversion-image" width="400" height="450" src="img/BlogPage/Blog Image 5.png" alt="Increase in conversion" />
                              </div>
                          </div>
                      </div>
@@ -503,7 +602,7 @@
                          <div class="col-lg-6 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-1">
                              <div class="p-absolute right-0"></div>
                              <div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
-                                 <img width="380" height="450" src="img/BlogPage/Blog Image 4.png" alt="Targeted Marketing" />
+                                 <img class="target-marketing" width="380" height="450" src="img/BlogPage/Blog Image 4.png" alt="Targeted Marketing" />
                              </div>
                          </div>
                          <div class="col-lg-6 text-center text-lg-start order-2 order-lg-2 mt-2 border-left" style="border-left: 3px solid #FFBF78 !important;">
@@ -539,7 +638,7 @@
                                  </div>
                                 </div>
                                  <div class="text-right col-5" style="text-align: right !important;">
-                                    <img src="img/BlogPage/CTA.png" alt="" width="200px" height="200px" style="margin-bottom: 25px !important;">
+                                    <img class="cta-image" src="img/BlogPage/CTA.png" alt="" width="200px" height="200px" style="margin-bottom: 25px !important;">
                                 </div>
                             </div>
                              </div>
@@ -555,7 +654,7 @@
                      
                                      <p style="font-size: 1.3rem;text-align: left;">We talked and looked at some of the advantages agencies and businesses can have when they hire the right influencers for their agencies and businesses; now let's deep dive and look at the other side of it, i.e., what effect does an influencer have on agencies and businesses that ignore influencer marketing?</p>
                                      
-                                     <img src="img/BlogPage/Blog Image 6.png" alt="" style="border-radius: 15px;width: 750px;height: 500px;">
+                                     <img class="disadvantage-image" src="img/BlogPage/Blog Image 6.png" alt="" style="border-radius: 15px;width: 750px;height: 500px;">
                                      <p style="font-size: 1.3rem;text-align: left;">Agencies and businesses that ignore influencer marketing may obviously find themselves at a disadvantage. In today’s world, where technology is in the hands of the consumers and consumers are overpowered with the ads, those agencies and businesses that miss or are too slow to adopt influencer marketing may find their business falling behind their competitors. 
                      
                                        <br><br>  In the upcoming years, relying solely on the traditional marketing methods for organic reach may not be enough. Agencies and businesses that ignore influencer collaborations may miss out on the valuable opportunities, engagement, and the trust that influencers offer to connect with the new customers and may soon struggle to grow their brand and to make themselves stand out from the oversaturated market.</p>
@@ -573,7 +672,7 @@
                                          
                                          <br><br><img src="img/BlogPage/Arrow.png" alt="" height="30px" width="70px" style="margin-right: 2px;"><strong>Result:</strong> The brand saw an increase in its revenue to $230 million within just 5 years. Their influencer collaboration strategy worked wonders for them and they were able to establish a strong presence in the fashion accessories market.</p>
                      
-                                         <img src="img/BlogPage/Blog Image 7.png" alt="" style="border-radius: 15px;width: 920px;height: 256px;margin-bottom: 40px;">
+                                         <img class="real-life-story-image" src="img/BlogPage/Blog Image 7.png" alt="" style="border-radius: 15px;width: 920px;height: 256px;margin-bottom: 40px;">
                      
                                      <p style="font-size: 1.3rem;text-align: left;margin-bottom: 40px;"><img src="img/BlogPage/Arrow.png" alt="" height="30px" width="70px" style="margin-right: 2px;"><strong>Example 2:</strong> Chipotle (Fast Food Chain)
                      
@@ -581,7 +680,7 @@
                                          
                                          <br><br><img src="img/BlogPage/Arrow.png" alt="" height="30px" width="70px" style="margin-right: 2px;"><strong>Result:</strong> The campaign saw record-breaking digital sales for the brand, with the brand reporting approximately 90% increase in their overall digital revenue in a quarter.</p>
                                      
-                                     <img src="img/BlogPage/Blog Image 8.jpg" alt="" style="border-radius: 15px;width: 500px;height: 300px;margin-bottom: 40px;">
+                                     <img class="real-life-story-image" src="img/BlogPage/Blog Image 8.jpg" alt="" style="border-radius: 15px;width: 500px;height: 300px;margin-bottom: 40px;">
                                      <div>
                                          <h2 id="conclusion" style="padding-top: 5px;padding-bottom: 5px;font-size: 32px;font-weight: 500 !important;background: linear-gradient(to right, #FFBF78, rgba(255, 171, 120, 0));padding-left:15px;border-radius: 15px;text-align: start;">Conclusion</h2>
                                          <p style="font-size: 1.3rem;text-align: left;">
@@ -599,7 +698,7 @@
             </section>
 
              <!-- section blogs carousel -->
-             <section style="width: 1300px;margin:0px auto;">
+             <section class="carousel-blogs" style="width: 1300px;margin:0px auto;">
                 <h3 class="text-center" style="font-size: 40px;color: #426CC1;">Other Blogs</h3>
                 <div style="display: grid; grid-template-columns: repeat(3, 2fr); gap: 95px; padding: 50px;margin-left: 50px;margin-right: 50px;">
                     <!-- Card Template -->
@@ -613,7 +712,7 @@
                              </div>
                         </div>
                         <div style="border-top: 1px solid #fff; display: flex; justify-content: space-between; align-items: center; padding: 10px 15px; font-size: 0.8rem; background-color: #f9f9f9;">
-                            <span style="color: #888;">Written by: John Doe</span>
+                            <span style="color: #888;">Written by: Arham Jain</span>
                             <span style="color: #888;">Published on: 12/12/2024</span>
                         </div>
                     </div>
@@ -626,7 +725,7 @@
                         <hr>
                         <a href="#" style="color: #007BFF; text-decoration: none; font-size: 0.9rem;text-align: end;padding-right: 15px;">Read More</a>
                         <div style="border-top: 1px solid #fff; display: flex; justify-content: space-between; align-items: center; padding: 10px 15px; font-size: 0.8rem; background-color: #f9f9f9;">
-                            <span style="color: #888;">Written by: John Doe</span>
+                            <span style="color: #888;">Written by: Arham Jain</span>
                             <span style="color: #888;">Published on: 12/12/2024</span>
                         </div>
                     </div>
@@ -639,7 +738,7 @@
                         <hr>
                         <a href="#" style="color: #007BFF; text-decoration: none; font-size: 0.9rem;text-align: end;padding-right: 15px;">Read More</a>
                         <div style="border-top: 1px solid #fff; display: flex; justify-content: space-between; align-items: center; padding: 10px 15px; font-size: 0.8rem; background-color: #f9f9f9;">
-                            <span style="color: #888;">Written by: John Doe</span>
+                            <span style="color: #888;">Written by: Arham Jain</span>
                             <span style="color: #888;">Published on: 12/12/2024</span>
                         </div>
                     </div>
