@@ -503,6 +503,7 @@
 /* media query for section-1 */
 
 @media (max-width: 768px) {
+	
     .section-1 {
         margin: 0 auto !important; 
         padding: 15px !important;
@@ -526,7 +527,7 @@
 
     .section1-h1 {
         font-size: 40px !important; /* Adjust heading size for mobile */
-		font-weight: 500 !important;
+        font-weight: 500 !important;
         margin-top: -255px !important;
     }
 
@@ -924,8 +925,8 @@
 
 
 		.custom-btn {
-			background-color: #000 !important;
-			color: white !important;
+			background-color: #FFBF78;
+			color: #000;
 		}
 
 
@@ -1271,6 +1272,7 @@
   .connections-cta {
     width: 100% !important;
     padding: 20px !important;
+
   }
 
   .connections-cta .text-6 {
@@ -1339,7 +1341,7 @@
 								<div class="header-logo" style="margin-right: 0px;">
 					 
 										<a href="home.html">
-										<img src="img/BuzzBoost Home Page Images/BuzzBoost Logo.png" class="img-fluid" width="160px"
+										<img src="img\BuzzBoost Home Page Images\BuzzBoost Logo.png" class="img-fluid" width="160px"
 											height="70px" alt="BuzzBoost" />
 									</a>
 								</div>
@@ -1383,7 +1385,6 @@
 														Blog
 													</a>
 												</li>
-												
 											</ul>
 										</nav>
 									</div>
@@ -1424,15 +1425,15 @@
 		<div role="main" class="main">
      
 			<!--section-1-->
-			<section class="section1" style="margin: 2px auto; padding: 15px;">
+			<section class="section1" style="margin: 2px auto; padding: 15px; background-color: #000;">
 				<div class="section1-div row align-items-center" style="height: 450px;padding-left: 28px;padding: 0 20px;display: flex; justify-content: center; align-items: center;width: 1400px;margin: 2px auto;">
 					<!-- Left Content Section -->
 					<div class="section1-text col-lg-6 text-center text-md-center text-xl-start text-lg-start">
-						<h1 class="section1-h1 display-4 text-black" style="font-size: 50px;">
-							Boost Your Brand’s Influence<br> with <span style="color: #426CC1;">BuzzBoost</span>
+						<h1 class="section1-h1 display-4 text-white" style="font-size: 50px;">
+							Boost Your Brand’s Influence<br> with <span style="color: #FFBF78;">BuzzBoost</span>
 						</h1>
 						
-						<p class="section1-p lead line-height-5 text-black" style="font-size: 1.5rem;letter-spacing: normal;">
+						<p class="section1-p lead line-height-5 text-white" style="font-size: 1.5rem;letter-spacing: normal;">
 							Welcome to BuzzBoost, your go-to platform for
 							connecting with top influencers across various industries
 						</p>
@@ -1444,7 +1445,7 @@
 			
 					<!-- Right Image Section -->
 					<div class="section1-img col-lg-6 d-lg-block" style="text-align: center;">
-						<img class="section1-img1" src="img\BuzzBoost Home Page Images\Home Page 2 (1).png" alt="BuzzBoost" width="450px" height="405px">
+						<img class="section1-img1" src="img/BuzzBoostImg/Home Page Header.png" alt="BuzzBoost" width="450px" height="405px">
 					</div>
 				</div>
 			</section>
@@ -1455,7 +1456,7 @@
 		
 			<div class="row">
 				<div class="col text-center">
-					<h3 class="pt-4" style="font-size: 50px;">Our Clients</h3>
+					<h3 class="pt-4" style="font-size: 50px;">Trusted Brands Trust BuzzBoost</h3>
 					<p class="trustedbrand text-black" style="font-size: 1.5rem;line-height: 1.5 !important;">We are trusted by industry-leading brands who have successfully grown with</br> our
 						network of influencers across diverse industries.</p>
 				</div>
@@ -1480,7 +1481,7 @@
 					<img src="img/BuzzBoostImg/stari.png" alt class="img-fluid" style="max-width: 100px;" />
 				</div>
 			</div> -->
-			<div id="brandCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000" style="padding-top: 60px;height: 260px;">
+			<div id="brandCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000" style="padding-top: 60px;height: 260px;">
 				<div class="carousel-inner text-center">
 					<!-- First Slide -->
 					<div class="carousel-item active">
@@ -1644,35 +1645,32 @@
 								<p class="text-left text-4-5 line-height-5" style="font-size: 1.5rem;color: #555555;">Empower Meaningful Partnerships for Mutual Growth Between Brands & Influencers!
 								</p>
 							</div>
-							<div class="d-flex justify-content-center align-items-start gap-4 p-4 flex-wrap">
-								<!-- Card 1 -->
-								<div style="width: 22rem; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); border-radius: 10px;height: 400px;padding-top: 55px;">
-									<div>
-										<h2>Agencies</h2>
-										<img src="img\BuzzBoost Home Page Images\Agencies.png" alt="For Agencies" class="img-fluid mb-3" width="200" height="200">
-										<a href="agency.html" class="btn btn-primary industry-button1 px-4 py-2" style="border-radius: 25px; font-size: 16px;color: white;background-color: #000;border: #000;">For Agencies</a>
-									</div>
+							<div class="d-flex justify-content-center align-items-center gap-5 p-4">
+								<div class="d-flex flex-column align-items-center" style="margin-right: 10px;">
+									<img src="img/homepagelatestimages/foragencies.png" alt="" width="350px" height="266px" style="margin-right: -10px;">
+								  <a href="agency.html"
+									class="industry-button1 btn mt-2 py-3 px-xl-5 box-shadow-6 border-0 text-transform-none ms-2 d-xl-inline-block custom-btn" style="font-size: 20px;border-radius: 25px;font-weight: 500 !important;">
+									For Agencies
+                                  </a>
 								</div>
 							
-								<!-- Card 2 -->
-								<div style="width: 22rem; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); border-radius: 10px;height: 400px;padding-top: 60px;">
-									<div>
-										<h2>Business</h2>
-										<img src="img\BuzzBoost Home Page Images\Businesses.png" alt="For Business" class="img-fluid mb-3" width="200" height="250" style="padding-top: 15px;">
-										<a href="business.html" class="btn btn-primary industry-button1 px-4 py-2" style="border-radius: 25px; font-size: 16px;color: white;background-color: #000;border: #000;">For Business</a>
-									</div>
+								<div class="d-flex flex-column justify-content-center align-items-center" > 
+									<img src="img/homepagelatestimages/forbusiness.png" alt="" width="350px" height="266px" style="margin-right:-85px;">
+									<a href="business.html"
+									class="industry-button1 btn mt-2 py-3 px-xl-5 box-shadow-6 border-0 text-transform-none ms-2 d-xl-inline-block custom-btn" style="font-size: 20px;border-radius: 25px;font-weight: 500 !important;">
+									For Business
+							        </a>
 								</div>
-							
-								<!-- Card 3 -->
-								<div style="width: 22rem; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); border-radius: 10px;height: 400px;padding-top: 60px;">
-									<div>
-										<h2>Influencer</h2>
-										<img src="img\BuzzBoost Home Page Images\Influencers.png" alt="For Influencers" class="img-fluid mb-3" width="200" height="250" style="padding-top: 10px;">
-										<a href="Influencer.html" class="btn btn-primary industry-button1 px-4 py-2" style="border-radius: 25px; font-size: 16px;color: white;background-color: #000;border: #000;">For Influencers</a>
-									</div>
-								</div>
+
+								<div class="d-flex flex-column justify-content-center align-items-center">
+									<img src="img/homepagelatestimages/forinfluencer.png" alt="" width="350px" height="266px" style="margin-left:70px;">
+									<a href="Influencer.html"
+									class="industry-button1 btn mt-2 py-3 px-xl-5 box-shadow-6 border-0 text-transform-none ms-2 d-xl-inline-block custom-btn" style="font-size: 20px;border-radius: 25px;font-weight: 500 !important;margin-right: -70px;">
+									For Influencers
+							        </a>
+								</div>								
+								
 							</div>
-							
 						</div>
 					</div>
 					
@@ -2173,12 +2171,12 @@
 				<div class="col-lg-5 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-1">
 					<div class="p-absolute right-0"></div>
 					<div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
-						<img width="353" height="465" src="img/BuzzBoost Home Page Images/Mega Influencers.png" alt="Mega Influencer" />
+						<img width="353" height="465" src="img/Types Of Influencers (1)/Mega Influencer (2).png" alt="Mega Influencer" />
 					</div>
 				</div>
 				<div class="col-lg-5 text-center text-lg-start order-2 order-lg-2 mt-2">
 					<h3 class="mt-2 pt-2" style="font-size: 48px;">Mega Influencers</h3>
-					<p class="" style="font-size: 28px;color: #426CC1;">Reach Millions, And Go Viral!</p>
+					<p class="" style="font-size: 28px;color: #FFBF78;">Reach Millions, And Go Viral!</p>
 					<p style="font-size: 20px;">Mega influencers are the celebrities of the social media world, commanding millions of followers across platforms. Whether launching a new product or amplifying brand awareness, these influencers ensure your message reaches a massive audience with unmatched impact.</p>
 				</div>
 			</div>
@@ -2204,12 +2202,12 @@
 				<div class="col-lg-5 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-1">
 					<div class="p-absolute right-0"></div>
 					<div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
-						<img width="353" height="400" src="img/BuzzBoost Home Page Images/Micro Influencers.png" alt="Micro Influencer" />
+						<img width="353" height="400" src="img/Types Of Influencers (1)/Micro Influencer (2).png" alt="Micro Influencer" />
 					</div>
 				</div>
 				<div class="col-lg-5 text-center text-lg-start order-2 order-lg-2 mt-2">
 					<h3 class="mt-2 pt-2" style="font-size: 48px;">Micro Influencers</h3>
-					<p class="" style="font-size: 28px;color: #426CC1;">Authenticity That Resonates!</p>
+					<p class="" style="font-size: 28px;color: #FFBF78;">Authenticity That Resonates!</p>
 					<p style="font-size: 20px;">Micro influencers may have tens of thousands of followers, but their real strength lies in the quality of their engagement. Their audiences often view them as relatable and trustworthy, valuing their opinions and recommendations. These influencers are perfect for brands focusing on building deep, meaningful connections with specific communities. </p>
 				</div>
 			</div>
