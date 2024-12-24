@@ -320,18 +320,20 @@
 
 		.custom-btn:hover {
 			background-color: #426CC1 !important;
-			color: #fff !important;
+			color: white !important;
+			/* border-color: #000 !important; */
 			
 		}
 
-		#whatsappButton:hover #whatsappIcon {
+		/* #whatsappButton:hover #whatsappIcon {
         content: url('img/whatsapphover.png') !important;
-        }
+        } */
 
 		.custom-btn {
-			background-color: #FFBF78 !important;
-			color: #000 !important;
+			background-color: black !important;
+			color: white !important;
 		}
+		
 
 
 		/* Media query for screens smaller than 768px (mobile devices) */
@@ -826,7 +828,7 @@
 			/* Rounds the image */
 			object-fit: cover;
 			/* Ensures image content is properly scaled within the rounded shape */
-			margin-top: -65px !important;
+			margin-top: -25px !important;
 			margin-bottom: 20px !important;
 		}
 
@@ -851,6 +853,46 @@
 				width: 270px;
 			}
 		}
+
+		/* Tablet screens (768px to 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .section1-div {
+    flex-direction: column !important; /* Stack the text and image vertically */
+    height: auto !important;
+    padding: 20px !important; /* Add some padding for spacing */
+    width: 100% !important; /* Make it responsive to the screen size */
+  }
+
+  .section1-text {
+    text-align: center !important; /* Center align the text */
+    padding: 10px !important; /* Reduce padding for better fit */
+  }
+
+  .section1-h1 {
+    font-size: 32px !important; /* Adjust font size for tablets */
+  }
+
+  .section1-p {
+    font-size: 1rem !important; /* Adjust paragraph font size */
+  }
+
+  .section1-btn {
+    font-size: 0.9rem !important; /* Adjust button font size */
+    padding: 10px 20px !important; /* Adjust padding for button */
+  }
+
+  .section1-img {
+    margin-top: 20px !important; /* Add spacing between text and image */
+  }
+
+  .section1-img1 {
+    width: 400px !important; /* Adjust image size */
+    height: auto !important; /* Maintain aspect ratio */
+  }
+}
+
+
+
 
 
 
@@ -1089,20 +1131,20 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
         #brandCarousel {
 			display: none !important;        
         }
     }
 
-	@media (max-width: 768px) {
+	@media (max-width: 1200px) {
         #smallbrandCarousel .carousel-item .row .col-12 {
             flex: 0 0 100%; /* Full width on mobile */
             max-width: 100%;
         }
     }
 
-	@media (min-width: 769px) {
+	@media (min-width: 1201px) {
         #smallbrandCarousel {
          display: none !important;
         }
@@ -1309,6 +1351,36 @@
   }
 }
 
+@media (max-width: 1200px) and (min-width: 768px) {
+  .empowering-section > div > div {
+    flex-wrap: nowrap !important; /* Prevent wrapping */
+    overflow-x: auto !important; 
+    justify-content: flex-start !important; /* Align cards to the left */
+    gap: 10px !important; /* Add spacing between cards */
+  }
+
+  .empowering-section > div > div > div {
+    flex: 0 0 auto !important; /* Prevent shrinking or stretching */
+    width: 19.5rem !important; /* Set a consistent width for cards */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* Specific styles for smallScreenContainer on tablet */
+  #smallScreenContainer {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 10 auto !important;
+  }
+
+  /* Optional: Ensure the layout adapts well on tablet */
+  #smallScreenContainer .d-flex {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+}
 
 	</style>
 	<script src="vendor/modernizr/modernizr.min.js"></script>
@@ -1430,7 +1502,7 @@
 			<section class="section1" style="margin: 2px auto; padding: 15px;">
 				<div class="section1-div row align-items-center" style="height: 450px;padding-left: 28px;padding: 0 20px;display: flex; justify-content: center; align-items: center;width: 1400px;margin: 2px auto;">
 					<!-- Left Content Section -->
-					<div class="section1-text col-lg-6 text-center text-md-center text-xl-start text-lg-start" style="padding-left: 35px;padding-right: 15px;">
+					<div class="section1-text col-lg-6 text-center text-md-center text-xl-start text-lg-start" style="padding-left: 90px;padding-right: 10px;">
 						<h1 class="section1-h1 display-4 text-black" style="font-size: 40px;">
 							Boost Your Brand’s Influence<br> with <span style="color: #426CC1;">BuzzBoost</span>
 						</h1>
@@ -1447,7 +1519,7 @@
 			
 					<!-- Right Image Section -->
 					<div class="section1-img col-lg-6 d-lg-block" style="text-align: center;">
-						<img class="section1-img1" src="img\BuzzBoost Home Page Images\Home Page 2 (1).png" alt="BuzzBoost" width="450px" height="405px">
+						<img class="section1-img1" src="img\BuzzBoost Home Page Images\Home Page 2 (1).png" alt="BuzzBoost" width="385px" height="325px">
 					</div>
 				</div>
 			</section>
@@ -1458,7 +1530,7 @@
 		
 			<div class="row">
 				<div class="col text-center">
-					<h3 class="pt-4" style="font-size: 30px;">Our Business Partners</h3>
+					<h3 class="pt-4" style="font-size: 30px;">Our Clients</h3>
 					<p class="trustedbrand text-black" style="font-size: 1.25rem;line-height: 1.5 !important;">We are trusted by industry-leading brands who have successfully grown with</br> our
 						network of influencers across diverse industries.</p>
 				</div>
@@ -1537,13 +1609,13 @@
 
 						<!-- carousel for small screens -->
 			 <!-- Carousel Start -->
-			 <div id="smallbrandCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000" style="padding-top: 40px;">
+			 <div id="smallbrandCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000" style="padding-top: 40px;margin: auto !important;">
 				<div class="carousel-inner text-center" style="height: 170px;padding-top: 20px;">
 					<!-- First Slide -->
 					<div class="carousel-item active">
 						<div class="row">
 							<div class="col-12 d-flex justify-content-center">
-								<img src="img/BuzzBoostImg/Fireshot Entertainment Logo.png" alt="Fireshot" class="img-fluid" style="max-width: 140px;height: 80px;" />
+								<img src="img/BuzzBoostImg/Fireshot Entertainment Logo.png" alt="Fireshot" class="img-fluid" style="max-width: 180px;height: 80px;" />
 							</div>
 						</div>
 					</div>
@@ -1553,7 +1625,7 @@
 					<div class="carousel-item">
 						<div class="row">
 							<div class="col-12 d-flex justify-content-center">
-								<img src="img/BuzzBoostImg/fox-hub-black.png" alt="fox-hub-black" class="img-fluid" style="max-width: 140px;height: 80px;" />
+								<img src="img/BuzzBoostImg/fox-hub-black.png" alt="fox-hub-black" class="img-fluid" style="max-width: 180px;height: 80px;" />
 							</div>
 						</div>
 					</div>
@@ -1561,7 +1633,7 @@
 					<div class="carousel-item">
 						<div class="row">
 							<div class="col-12 d-flex justify-content-center">
-								<img src="img/Newclientscarousel/educationlane logo.png" alt="educationlane" class="img-fluid" style="max-width: 140px;height: 80px;" />
+								<img src="img/Newclientscarousel/educationlane logo.png" alt="educationlane" class="img-fluid" style="max-width: 180px;height: 80px;" />
 							</div>
 						</div>
 					</div>
@@ -1569,7 +1641,7 @@
 					<div class="carousel-item">
 						<div class="row">
 							<div class="col-12 d-flex justify-content-center">
-								<img src="img/Newclientscarousel/Magent Co Work Image.png" alt="magnet-co-work" class="img-fluid" style="max-width: 140px;height: 80px;" />
+								<img src="img/Newclientscarousel/Magent Co Work Image.png" alt="magnet-co-work" class="img-fluid" style="max-width: 180px;height: 80px;" />
 							</div>
 						</div>
 					</div>
@@ -1577,7 +1649,7 @@
 					<div class="carousel-item">
 						<div class="row">
 							<div class="col-12 d-flex justify-content-center">
-								<img src="img/Newclientscarousel/themayfairhouse logo.png" alt="themayfairhouse" class="img-fluid" style="max-width: 140px;height: 80px;" />
+								<img src="img/Newclientscarousel/themayfairhouse logo.png" alt="themayfairhouse" class="img-fluid" style="max-width: 180px;height: 80px;" />
 							</div>
 						</div>
 					</div>
@@ -1587,7 +1659,7 @@
 					<div class="carousel-item">
 						<div class="row">
 							<div class="col-12 d-flex justify-content-center">
-								<img src="img/Newclientscarousel/pluchdesign logo.png" alt="pluchdesign" class="img-fluid" style="max-width: 250px;height: 80px;" />	
+								<img src="img/Newclientscarousel/pluchdesign logo.png" alt="pluchdesign" class="img-fluid" style="max-width: 280px;height: 80px;" />	
 							</div>
 						</div>
 					</div>
@@ -1599,7 +1671,7 @@
 					<div class="carousel-item">
 						<div class="row">
 							<div class="col-12 d-flex justify-content-center">
-								<img src="img/BuzzBoostImg/fav1.png" alt="fav1" class="img-fluid" style="max-width: 140px;height: 80px;" />
+								<img src="img/BuzzBoostImg/fav1.png" alt="fav1" class="img-fluid" style="max-width: 260px;height: 80px;" />
 							</div>
 						</div>
 					</div>
@@ -1608,14 +1680,14 @@
 					<div class="carousel-item">
 						<div class="row">
 							<div class="col-12 d-flex justify-content-center">
-								<img src="img/BuzzBoostImg/Aroma Cabinets Logo.png" alt="aroma" class="img-fluid" style="max-width: 140px;height: 80px;" />
+								<img src="img/BuzzBoostImg/Aroma Cabinets Logo.png" alt="aroma" class="img-fluid" style="max-width: 180px;height: 80px;" />
 							</div>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<div class="row">
 							<div class="col-12 d-flex justify-content-center">
-								<img src="img/Newclientscarousel/The Besopke Logo.png" alt="aroma" class="img-fluid" style="max-width: 140px;height: 80px;" />
+								<img src="img/Newclientscarousel/The Besopke Logo.png" alt="aroma" class="img-fluid" style="max-width: 180px;height: 80px;" />
 							</div>
 						</div>
 					</div>
@@ -1634,7 +1706,7 @@
 		</div>
 
 		  <!-- section-1 cta -->
-		  <section class="container" style=" margin: 45px auto; padding: 15px;background-color: #f7f7f7;border-radius: 25px;">
+		  <section class="container empowering-section" style=" margin: 45px auto; padding: 15px;background-color: #f7f7f7;border-radius: 25px;">
 			<div style="max-width: 100%; margin: 0 auto;padding-top: 5px;padding-bottom: 5px;">
 			  <div style="text-align: center; margin-bottom: 20px;">
 				<h3 style="font-size: 30px; line-height: 2;">Empowering Connections, Driving Success</h3>
@@ -1655,7 +1727,7 @@
 				  <p style="flex-grow: 1; font-size: 14px; color: #555555; margin: 10px 0; padding: 0 10px;">
 					Discover, manage, and optimize influencer partnerships effortlessly with BuzzBoost.
 				  </p>
-				  <a href="agency.html"
+				  <a class="custom-btn" href="agency.html"
 					style="border-radius: 25px; font-size: 16px; color: white; background-color: #000; border: none; padding: 8px 15px; text-decoration: none;margin-bottom: 20px;">For
 					Agencies</a>
 				</div>
@@ -1671,7 +1743,7 @@
 				  <p style="flex-grow: 1; font-size: 14px; color: #555555; margin: 10px 0; padding: 0 10px;">
 					Connect with the right creators to boost your brand awareness and drive tangible results.
 				  </p>
-				  <a href="business.html"
+				  <a class="custom-btn" href="business.html"
 					style="border-radius: 25px; font-size: 16px; color: white; background-color: #000; border: none; padding: 8px 15px; text-decoration: none;margin-bottom: 20px;">For
 					Business</a>
 				</div>
@@ -1687,7 +1759,7 @@
 				  <p style="flex-grow: 1; font-size: 14px; color: #555555; margin: 10px 0; padding: 0 10px;">
 					BuzzBoost ensures fair collaborations, timely payments, and growth in your influencer journey.
 				  </p>
-				  <a href="influencer.html"
+				  <a class="custom-btn" href="influencer.html"
 					style="border-radius: 25px; font-size: 16px; color: white; background-color: #000; border: none; padding: 8px 15px; text-decoration: none;margin-bottom: 20px;">For
 					Influencers</a>
 				</div>
@@ -1738,8 +1810,8 @@
 							<div class="row p-3">
 								<div class="col-7">
 									<span class="d-block text-muted fs-5 lh-5 mb-1 custom-spacing-main" style=" box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); color: white !important;background-color:black;width: 160px;padding-left:17px ;padding-right: 3px;border-radius: 15px;padding-top: 5px;padding-bottom:5px;">Foods &amp; Drinks</span>
-									<h3 class="fs-md-4 lh-sm-1 lh-md-2 lh-5 text-center text-md-start mb-2 custom-spacing-h3" style="color: black;font-size: 1.95rem;">
-										Savor the Moment with Influencers Who Make Every Bite Count!
+									<h3 class="fs-md-4 lh-sm-1 lh-md-2 lh-5 text-center text-md-start mb-2 custom-spacing-h3" style="color: black;font-size: 1.75rem;">
+										Bite Into Moments with Top Foodies!
 									</h3>
 									<div class="text-block d-flex flex-wrap justify-content-center justify-content-md-start" style="color: black;">
 										<p class="text-center custom-spacing-p text-md-start fs-md-5 lh-sm-1 lh-md-5 lh-5 mb-0 custom-text-class" style="color:#555555;font-size: 1.4rem;">
@@ -1764,9 +1836,8 @@
 							<div class="row p-3">
 								<div class="col-7">
 									<span class="d-block text-muted fs-5 lh-5 mb-1 custom-spacing-main" style=" box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); color:white !important;background-color:black;width: 80px;padding-left:2px ;padding-right: 2px;border-radius: 15px;padding-top: 5px;padding-bottom: 5px;padding-left: 14px;padding-right: 12px;">Events</span>
-									<h3 class="fs-md-4 lh-sm-1 lh-md-2 lh-5 text-center custom-spacing-h3 text-md-start mb-2 " style="color: black;color: black;font-size: 1.95rem;">Turn
-										Every Event into an
-										Unforgettable Experience!</h3>
+									<h3 class="fs-md-4 lh-sm-1 lh-md-2 lh-5 text-center custom-spacing-h3 text-md-start mb-2 " style="color: black;color: black;font-size: 1.75rem;">Turn
+										Make Every Event Unforgettable!</h3>
 									<div
 										class="text-block d-flex flex-wrap justify-content-center justify-content-md-start">
 										<p
@@ -1806,11 +1877,9 @@
 						<div class="new-card"  style="background:linear-gradient(to bottom, hsl(212.9, 48.7%, 85.1%), hsl(30.2, 94%, 91.1%));">
 							<div class="row p-3">
 								<div class="col-7">
-									<span class="d-block text-muted fs-5 lh-2 mb-1 custom-spacing-main" style="box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); color: white !important;background-color:black;width: 180px;border-radius: 15px;padding-top: 5px;padding-bottom: 5px;padding-left: 20px;padding-right: 10px;">Beauty & Fashion</span>
+									<span class="d-block text-muted fs-5 lh-2 mb-1 custom-spacing-main" style="box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); color: white !important;background-color:black;width: 190px;border-radius: 15px;padding-top: 5px;padding-bottom: 5px;padding-left: 20px;padding-right: 10px;">Beauty & Fashion</span>
 									<h3 class="fs-md-4 lh-sm-1 lh-md-2 lh-5 text-center text-md-start mb-2 custom-spacing-h3" style="color: black;color: black;font-size: 1.90rem;">
-										Highlight the Trends and
-										Elevate
-										Your Brand in Style!</h3>
+										Trends That Define Your Style!</h3>
 									<div
 										class="text-white text-block d-flex flex-wrap justify-content-center justify-content-md-start" style="color: #000 !important;">
 										<p
@@ -1849,8 +1918,7 @@
 							<div class="row p-3">
 								<div class="col-7">
 									<span class="d-block text-muted fs-5 lh-2 mb-1 custom-spacing-main" style="box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); color: white !important;background-color:black;width: 90px;padding-left:2px ;padding-right: 2px;border-radius: 15px;padding-top: 5px;padding-bottom: 5px;padding-left: 12px;padding-right: 12px;">Lifestyle</span>
-									<h3 class="fs-md-4 lh-sm-1 lh-md-2 lh-5 text-center text-md-start mb-2 custom-spacing-h3" style="color: black;font-size: 1.95rem;">Put
-										your Lifestyle brand <br> in  the spotlight!</h3>
+									<h3 class="fs-md-4 lh-sm-1 lh-md-2 lh-5 text-center text-md-start mb-2 custom-spacing-h3" style="color: black;font-size: 1.75rem;"> Showcase Your Lifestyle in Style!</h3>
 									<div
 										class="text-block d-flex flex-wrap justify-content-center justify-content-md-start">
 										<p
@@ -1890,10 +1958,8 @@
 							<div class="row p-3">
 								<div class="col-7">
 									<span class="d-block text-muted fs-5 lh-2 mb-1 custom-spacing-main" style="box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); color: white!important;background-color:black;width: 80px;border-radius: 15px;padding-top: 5px;padding-bottom: 5px;padding-left: 15px;padding-right: 12px;">Sports</span>
-									<h3 class="fs-md-4 lh-sm-1 lh-md-2 lh-5 text-center text-md-start mb-2 custom-spacing-h3" style="color: black;font-size: 1.95rem;">
-										Energize Your Brand with <br>
-										Athletic
-										Influencers!</h3>
+									<h3 class="fs-md-4 lh-sm-1 lh-md-2 lh-5 text-center text-md-start mb-2 custom-spacing-h3" style="color: black;font-size: 1.75rem;">
+										Fuel Your Brand with Fitness Stars!</h3>
 									<div
 										class="text-block d-flex flex-wrap justify-content-center justify-content-md-start">
 										<p
@@ -1932,11 +1998,8 @@
 						<div class="new-card" style="background:linear-gradient(to bottom, hsl(212.9, 48.7%, 85.1%), hsl(30.2, 94%, 91.1%));">
 							<div class="row p-3">
 								<div class="col-7">
-									<span class="d-block text-muted fs-5 lh-2 mb-1 custom-spacing-main" style="box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); color: white !important;background-color:black;width: 170px;padding-left:2px ;padding-right: 2px;border-radius: 15px;padding-top: 5px;padding-bottom: 5px;padding-left: 20px;padding-right: 12px;">Tech Innovators</span>
-									<h3 class="fs-md-4 lh-sm-1 lh-md-2 lh-5 text-center text-md-start mb-2 custom-spacing-h3 " style="color: black;font-size: 1.95rem;">Lead
-										the Future with
-										Influencers
-										Who Love Innovation!
+									<span class="d-block text-muted fs-5 lh-2 mb-1 custom-spacing-main" style="box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); color: white !important;background-color:black;width: 185px;padding-left:2px ;padding-right: 2px;border-radius: 15px;padding-top: 5px;padding-bottom: 5px;padding-left: 20px;padding-right: 12px;">Tech Innovators</span>
+									<h3 class="fs-md-4 lh-sm-1 lh-md-2 lh-5 text-center text-md-start mb-2 custom-spacing-h3 " style="color: black;font-size: 1.75rem;">Influencers Driving Innovation!
 									</h3>
 									<div
 										class="text-block d-flex flex-wrap justify-content-center justify-content-md-start">
@@ -1978,8 +2041,7 @@
 					<div class="row ms-xl-4 ms-md-2 ">
 						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-1 order-lg-2 order-md-2 order-2">
 							<span class="text-3 line-height-1" style="color: black;padding-top: 8px;">Foods & Drinks</span>
-							<h3 class="text-6  line-height-2" style="padding-left:5px;padding-right: 5px;padding-top: 10px;">Savor the Moment with Influencers
-								Who Make Every Bite Count!</h3>
+							<h3 class="text-6  line-height-2" style="padding-left:5px;padding-right: 5px;padding-top: 10px;">Bite Into Moments with Top Foodies!</h3>
 							<p class="text-left text-3 line-height-3" style="padding-left: 10px;padding-right: 10px;">Create enchanting moments,
 								attract new foodies and benefit from collaborations with influencers and creators.
 							</p>
@@ -1997,8 +2059,7 @@
 					<div class="row ms-xl-4 ms-md-2 ">
 						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-1 order-lg-2 order-md-2 order-2">
 							<span class="text-3 line-height-1" style="color: black;padding-top: 8px;">Events</span>
-							<h3 class="text-6 line-height-2" style="padding-left:5px;padding-right: 5px;padding-top: 10px;">Turn Every Event into an
-								Unforgettable Experience!</h3>
+							<h3 class="text-6 line-height-2" style="padding-left:5px;padding-right: 5px;padding-top: 10px;">Make Every Event Unforgettable!</h3>
 							<p class="text-left text-3 line-height-3" style="padding-left: 10px;padding-right: 10px;">BuzzBoost offers more than
 								just promotion. We turn moments into movements. Expect sustained attention, heightened
 								excitement, and audiences who remember your event long after it’s over.
@@ -2017,8 +2078,8 @@
 					<div class="row ms-xl-4 ms-md-2 ">
 						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-1 order-lg-2 order-md-2 order-2">
 							<span class="text-3 line-height-1" style="color: black;padding-top: 8px;">Beauty & Fashion</span>
-							<h3 class="text-6 line-height-2" style="padding-left:5px;padding-right: 5px;padding-top: 10px;">Highlight the Trends and Elevate
-								Your Brand in Style!</h3>
+							<h3 class="text-6 line-height-2" style="padding-left:5px;padding-right: 5px;padding-top: 10px;">Trends That Define Your Style!
+								</h3>
 							<p class="text-left text-3 line-height-3" style="padding-left: 10px;padding-right: 10px;"> Elevate the allure of
 								your beauty and fashion brand, showcase your signature style, and ignite excitement that
 								captivates audiences. #BuzzBoostYourStyle.
@@ -2037,8 +2098,7 @@
 					<div class="row ms-xl-4 ms-md-2 ">
 						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-1 order-lg-2 order-md-2 order-2">
 							<span class="text-3 line-height-1" style="color:black;padding-top: 8px;">Lifestyle</span>
-							<h3 class="text-6 line-height-2" style="padding-left:5px;padding-right: 5px;padding-top: 10px;">Put your Lifestyle brand in the
-								spotlight!</h3>
+							<h3 class="text-6 line-height-2" style="padding-left:5px;padding-right: 5px;padding-top: 10px;"> Showcase Your Lifestyle in Style!</h3>
 							<p class="text-left text-3 line-height-3"  style="padding-left: 10px;padding-right: 10px;">BuzzBoost enhances life’s
 								little moments, making them unforgettable. Anticipate loyal followers, authentic
 								connections, and an audience that’s all in for a better lifestyle.
@@ -2056,8 +2116,7 @@
 					<div class="row ms-xl-4 ms-md-2 ">
 						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-1 order-lg-2 order-md-2 order-2">
 							<span class="text-3 line-height-1" style="color: black;padding-top: 8px;">Sports</span>
-							<h3 class="text-6 line-height-2" style="padding-left:5px;padding-right: 5px;padding-top: 10px;">Energize Your Brand with Athletic
-								Influencers!</h3>
+							<h3 class="text-6 line-height-2" style="padding-left:5px;padding-right: 5px;padding-top: 10px;">Fuel Your Brand with Fitness Stars!</h3>
 							<p class="text-left text-3 line-height-3"  style="padding-left: 10px;padding-right: 10px;">Our sports influencers
 								bring strength, motivation, and action, aligning your brand with the world of fitness,
 								wellness, and athleticism that their audience craves.
@@ -2076,8 +2135,7 @@
 					<div class="row ms-xl-4 ms-md-2 ">
 						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-xl-1 order-lg-2 order-md-2 order-2">
 							<span class="text-3 line-height-1" style="color: black;padding-top: 8px;">Tech Innovators</span>
-							<h3 class="text-6 line-height-2" style=" padding-left:5px;padding-right: 5px;padding-top: 10px;">Lead the Future with Influencers
-								Who Love Innovation!
+							<h3 class="text-6 line-height-2" style=" padding-left:5px;padding-right: 5px;padding-top: 10px;">Influencers Driving Innovation!
 							</h3>
 							<p class="text-left text-3 line-height-3" style="padding-left: 10px;padding-right: 10px;">Our tech innovators captivate audiences eager for innovation, making them perfect ambassadors for cutting-edge brands.
 							
@@ -2288,9 +2346,10 @@
                                     <div class="row">
                                         <div class="col"></div>
                                         <div class="form-group col-xl-7 col-lg-9 col-md-6 col-sm-12">
-                                            <div class="d-grid gap-2">
-                                                <button id="whatsappButton" type="button" 
-													class="btn mt-2 py-2 px-2 box-shadow-6 border-0 text-transform-none ms-2 d-xl-inline-block custom-btn" style="font-size: medium;color: black;border-radius: 25px;font-weight: 500;">
+                                            <div class="">
+                                                <button id="whatsappButton" type="button"
+												class="section1-btn btn btn-modern box-shadow-6 border-0 text-transform-none mt-2 py-2 px-4 custom-btn" style="font-size: medium;border-radius: 25px !important;font-weight: 500;" 
+													>
                                                     <!-- <img id="whatsappIcon" src="img/whatsapp.png" width="20" height="20" alt="WhatsApp Icon"  -->
                                                         <!-- style="margin-right: 8px;"> -->
                                                     Contact Us
