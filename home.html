@@ -504,71 +504,7 @@
 
 /* media query for section-1 */
 
-@media (max-width: 768px) {
-    .section-1 {
-        margin: 0 auto !important; 
-        padding: 15px !important;
-        background: linear-gradient(to right, #314D91, #426CC1, #8AA2D7) !important;
-        max-height: 1200px !important;
-    }
 
-	.section1-text{
-		/* margin-top: 20px !important; */
-		height: 410px !important;
-	}
-
-    .section1-div {
-        flex-direction: column !important; /* Stack content vertically */
-        height: 850px !important; /* Allow height to adjust based on content */
-        width: 100% !important; /* Ensure full width for mobile */
-        padding: 0 10px !important; /* Adjust padding for mobile */
-        
-    }
-
-
-    .section1-h1 {
-        font-size: 40px !important; /* Adjust heading size for mobile */
-		font-weight: 500 !important;
-        margin-top: -255px !important;
-    }
-
-    .section1-p {
-        font-size: 1.5rem !important; /* Adjust paragraph size */
-        line-height: 1.5 !important; /* Improve readability */
-        margin-bottom: 15px !important; /* Add spacing below paragraph */
-        margin-top: 345px !important;
-    }
-
-    .section1-btnnew {
-        padding: 10px 20px !important; /* Adjust button size */
-        width: auto !important; /* Allow button to fit content */
-        margin: 0 auto !important; /* Center the button */
-        margin-top: 40px !important;
-    }
-
-    .section1-img {
-        text-align: center !important; /* Center-align the image */
-        margin-top: -370px !important; /* Add spacing above image */
-        margin-bottom: 40px !important;
-
-    }
-
-    .section1-img1 {
-        width: 100% !important; /* Scale image to fit inside screen */
-        max-width: 300px !important; /* Limit maximum width */
-        height: 290px !important; /* Maintain aspect ratio */
-        margin-top: -134px !important;
-        margin-bottom: 20px !important;
-    }
-
-    
-
-    .lshead{
-        display: none !important;
-    }
-
-   
-}
 
 .card-section {
     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition */
@@ -854,42 +790,7 @@
 			}
 		}
 
-		/* Tablet screens (768px to 1024px) */
-@media (max-width: 1199px) and (min-width: 992px) {
-  .section1-div {
-    flex-direction: column !important; /* Stack the text and image vertically */
-    height: auto !important;
-    padding: 20px !important; /* Add some padding for spacing */
-    width: 100% !important; /* Make it responsive to the screen size */
-  }
 
-  .section1-text {
-    text-align: center !important; /* Center align the text */
-    padding: 10px !important; /* Reduce padding for better fit */
-  }
-
-  .section1-h1 {
-    font-size: 32px !important; /* Adjust font size for tablets */
-  }
-
-  .section1-p {
-    font-size: 1rem !important; /* Adjust paragraph font size */
-  }
-
-  .section1-btn {
-    font-size: 0.9rem !important; /* Adjust button font size */
-    padding: 10px 20px !important; /* Adjust padding for button */
-  }
-
-  .section1-img {
-    margin-top: 20px !important; /* Add spacing between text and image */
-  }
-
-  .section1-img1 {
-    width: 400px !important; /* Adjust image size */
-    height: auto !important; /* Maintain aspect ratio */
-  }
-}
 
 
 
@@ -1150,7 +1051,7 @@
         }
     }
 
-	@media screen and (min-width: 800px) and (max-width: 1200px) {
+	@media (min-width: 800px) and (max-width: 1200px) {
   .cta-section {
     width: 100%  !important; /* Ensure the section takes up the full width */
     margin: 30px auto !important; /* Reduce margin for better alignment */
@@ -1212,54 +1113,9 @@
   }
 }
 
-@media screen and (min-width: 800px) and (max-width: 1000px) {
-  .section1 {
-    width: 100%;
-    margin: 20px auto;
-    padding: 15px;
-  }
 
-  .section1-div {
-    flex-direction: column; /* Stack the text and image vertically */
-    height: auto; /* Let the height adjust dynamically */
-    padding: 20px;
-    width: 100%; /* Ensure the section fits within the screen width */
-  }
 
-  .section1-text {
-    text-align: center; /* Center-align the text */
-    padding: 15px;
-  }
-
-  .section1-h1 {
-    font-size: 36px; /* Scale down the heading size */
-    line-height: 1.3;
-    margin-bottom: 15px;
-  }
-
-  .section1-p {
-    font-size: 1.2rem; /* Scale down paragraph text size */
-    margin-bottom: 20px;
-  }
-
-  .section1-btn {
-    font-size: 1rem; /* Adjust button font size */
-    padding: 10px 20px; /* Reduce button padding */
-  }
-
-  .section1-img {
-    margin-top: 20px; /* Add spacing between text and image */
-    text-align: center;
-  }
-
-  .section1-img1 {
-    width: 100%; /* Make the image responsive */
-    max-width: 400px; /* Limit the max width for medium screens */
-    height: auto; /* Maintain the aspect ratio */
-  }
-}
-
-@media screen and (min-width: 1001px) and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .section1 {
     width: 100% !important; /* Ensure the section takes up the full screen width */
     margin: 20px auto !important;
@@ -1290,6 +1146,9 @@
   }
 
   .section1-btn {
+	display: flex !important;
+	text-align: center !important;
+	justify-content: center !important;
     font-size: 1rem !important; /* Adjust button font size */
     padding: 10px 20px !important; /* Reduce button padding */
   }
@@ -1306,6 +1165,61 @@
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .section1 {
+    margin: 10px auto !important;
+    padding: 10px !important;
+  }
+
+  .section1-div {
+    flex-direction: column !important;
+    height: auto !important;
+    padding: 10px !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .section1-text {
+    padding: 10px !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  .section1-h1 {
+    font-size: 28px !important;
+    line-height: 1.5 !important;
+    text-align: center !important;
+  }
+
+  .section1-p {
+    font-size: 1rem !important;
+    text-align: center !important;
+  }
+
+  .section1-btn {
+    font-size: 0.9rem !important;
+    padding: 10px 20px !important;
+    border-radius: 20px !important;
+    display: inline-block !important;
+    margin: 10px auto !important;
+  }
+
+  .section1-img {
+    text-align: center !important;
+    margin-top: 20px !important;
+    width: 100% !important;
+  }
+
+  .section1-img1 {
+    width: 100% !important;
+    max-width: 300px !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+}
 
 
 /* Mobile responsive styles */
@@ -1809,7 +1723,7 @@
 						<div class="new-card small-screen" style="background:linear-gradient(to bottom, hsl(212.9, 48.7%, 85.1%), hsl(30.2, 94%, 91.1%));">
 							<div class="row p-3">
 								<div class="col-7">
-									<span class="d-block text-muted fs-5 lh-5 mb-1 custom-spacing-main" style=" box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); color: white !important;background-color:black;width: 160px;padding-left:17px ;padding-right: 3px;border-radius: 15px;padding-top: 5px;padding-bottom:5px;">Foods &amp; Drinks</span>
+									<span class="d-block text-muted fs-5 lh-5 mb-1 custom-spacing-main" style=" box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); color: white !important;background-color:black;width: 163px;padding-left:17px ;padding-right: 3px;border-radius: 15px;padding-top: 5px;padding-bottom:5px;">Foods &amp; Drinks</span>
 									<h3 class="fs-md-4 lh-sm-1 lh-md-2 lh-5 text-center text-md-start mb-2 custom-spacing-h3" style="color: black;font-size: 1.65rem;">
 										Bite Into Moments with Top Foodies!
 									</h3>
