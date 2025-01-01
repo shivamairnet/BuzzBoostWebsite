@@ -1124,7 +1124,6 @@
     width: 100% !important; /* Ensure the section takes up the full screen width */
     margin: 20px auto !important;
     padding: 15px !important;
-	text-align: center !important;
   }
 
   .section1-div {
@@ -1132,24 +1131,21 @@
     padding: 10px 15px !important; /* Reduce padding for better fit */
     width: 90% !important; /* Add some margin for smaller screens */
     margin: 0 auto !important;
-	text-align: center !important;
-
-
   }
 
   .section1-text {
-    text-align: center !important; /* Keep the text aligned to the left */
+    text-align: left !important; /* Keep the text aligned to the left */
     padding: 0 15px !important; /* Adjust inner padding */
   }
 
   .section1-h1 {
-    font-size: 40px !important; /* Scale down the heading size */
+    font-size: 36px !important; /* Scale down the heading size */
     line-height: 1.3 !important;
     margin-bottom: 15px !important;
   }
 
   .section1-p {
-    font-size: 1.5rem !important; /* Adjust paragraph font size */
+    font-size: 1.2rem !important; /* Adjust paragraph font size */
     margin-bottom: 20px !important;
   }
 
@@ -1159,7 +1155,6 @@
 	justify-content: center !important;
     font-size: 1rem !important; /* Adjust button font size */
     padding: 10px 20px !important; /* Reduce button padding */
-	width: 250px;
   }
 
   .section1-img {
@@ -1171,12 +1166,6 @@
     width: 100% !important; /* Make the image responsive */
     max-width: 350px !important; /* Limit the max width for medium screens */
     height: auto !important; /* Maintain the aspect ratio */
-  }
-
-  .button-align{
-	display: flex !important;
-	justify-content: center !important;
-	text-align: center !important;
   }
 }
 
@@ -1203,13 +1192,13 @@
   }
 
   .section1-h1 {
-    font-size: 40px !important;
+    font-size: 28px !important;
     line-height: 1.5 !important;
     text-align: center !important;
   }
 
   .section1-p {
-    font-size: 1.5rem !important;
+    font-size: 1rem !important;
     text-align: center !important;
   }
 
@@ -1325,6 +1314,13 @@
 }
 
 @media(max-width:768px){
+	/* #sidebarMenu .nav-link :hover{
+		display: none !important;
+	} */
+
+	/* #sidebarMenu .nav-link:hover{
+		color: aquamarine !important;
+	} */
 
 	#sidebarMenu .nav-link {
     color: white !important;
@@ -1338,134 +1334,29 @@
 	}
 
 	@media (max-width: 768px) {
-  .client-column-section {
-    padding: 20px 0 !important;
-    margin-top: 10px !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-  }
-
-  .client-column-section > div {
-    display: flex !important;
-    flex-direction: column !important; /* Stack text and image vertically */
-    align-items: center !important; /* Ensure everything is horizontally centered */
-    justify-content: center !important;
-    gap: 20px !important;
-    width: 100% !important; /* Ensure full-width alignment */
-    margin: 0 auto !important; /* Center-align container within the viewport */
-    padding: 0 !important;
-  }
-
-  /* Text Column */
-  .client-column-section > div > div:nth-child(1) {
-    text-align: center !important;
-    padding: 0 !important; /* Remove all padding */
-    margin: 0 auto !important; /* Center-align within the container */
-    width: 90% !important; /* Constrain width for better readability */
-  }
-
-  .client-column-section h2 {
-    font-size: 2.5rem !important;
-    margin-bottom: 10px !important;
-    text-align: center !important;
-    padding-left: 0 !important;
-  }
-
-  .client-column-section p {
-    font-size: 1.25rem !important;
-    line-height: 1.5 !important;
-    text-align: center !important;
-    margin: 0 auto !important;
-    max-width: 90% !important; /* Constrain text width */
-  }
-
-  /* Image Column */
-  .client-column-section > div > div:nth-child(2) {
-    text-align: center !important;
-    padding: 0 !important;
-    margin: 0 auto !important; /* Center-align within the container */
-    width: 90% !important; /* Constrain image column width */
-  }
-
-  .client-column-section img {
-    max-width: 100% !important; /* Ensure the image is fully responsive */
-    height: auto !important;
-    border-radius: 10px !important;
-    margin: 15px 0 !important; /* Add spacing around the image */
-  }
-}
-
-
+      .client-column-section > div {
+        flex-direction: column !important; /* Stack the columns vertically */
+        align-items: center !important; /* Center both the text and image */
+        justify-content: center !important; /* Vertically center the content */
+      }
+      .client-column-section > div > div {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+      }
+      .client-column-section h2 {
+        font-size: 2.5rem !important; /* Adjust heading size */
+        text-align: center !important; /* Center the headings */
+      }
+      .client-column-section p {
+        font-size: 1.2rem !important; /* Adjust paragraph size */
+        text-align: center !important; /* Center the paragraph text */
+      }
+      .client-column-section img {
+        margin: 20px 0 !important; /* Add some space around the image */
+        max-width: 100% !important; /* Ensure image scales correctly */
+      }
+    }
  
-	@media (max-width: 1024px) {
-        .section1-div {
-            height: auto; /* Allow content to adjust height */
-            flex-direction: column; /* Stack content vertically */
-            padding-left: 20px;
-            padding-right: 20px;
-			text-align: center !important;
-        }
-
-        .section1-h1 {
-            font-size: 45px; /* Adjust font size for tablets */
-			text-align: center !important;
-        }
-
-        .section1-p {
-            font-size: 1.5rem; /* Adjust font size for tablets */
-			text-align: center !important;
-        }
-
-        .section1-btn {
-            font-size: 16px; /* Adjust button size for tablets */
-			text-align: center !important;
-        }
-    }
-
-    /* For mobile screens */
-    @media (max-width: 768px) {
-        .section1-div {
-            height: auto; /* Allow content to adjust height */
-            flex-direction: column; /* Stack content vertically */
-            padding-left: 15px;
-            padding-right: 15px;
-			text-align: center !important;
-        }
-
-        .section1-h1 {
-            font-size: 40px; /* Adjust font size for mobile */
-			text-align: center !important;
-        }
-
-        .section1-p {
-            font-size: 1.5rem; /* Adjust font size for mobile */
-			text-align: center !important;
-        }
-
-        .section1-btn {
-            font-size: 15px; /* Adjust button size for mobile */
-            padding: 10px 20px; /* Adjust padding for mobile */
-			text-align: center !important;
-        }
-    }
-
-    /* For very small mobile screens */
-    @media (max-width: 480px) {
-        .section1-h1 {
-            font-size: 34px; /* Adjust font size further for very small screens */
-        }
-
-        .section1-p {
-            font-size: 1.5rem; /* Adjust font size for small mobile screens */
-        }
-
-        .section1-btn {
-            font-size: 14px; /* Further adjust button size */
-            padding: 8px 18px; /* Adjust padding for small screens */
-        }
-    }
 
 	</style>
 	<script src="vendor/modernizr/modernizr.min.js"></script>
@@ -1587,7 +1478,7 @@
                     <!-- Logo Section -->
                     <div class="header-logo">
                         <a href="home.html">
-                            <img src="img\BuzzBoost Home Page Images\BuzzBoostLogoWhite.png" 
+                            <img src="img/BuzzBoost Home Page Images/BuzzBoost Logo.png" 
                                 style="width: 160px; height: 50px;" 
                                 alt="BuzzBoost" />
                         </a>
@@ -1595,9 +1486,9 @@
     
                     <!-- Sidebar Toggle Button -->
                     <button class="btn header-btn-collapse-nav"
-                        style="background-color: white; color: black; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; display: flex; align-items: center; gap: 8px;"
+                        style="background-color: #426CC1; color: #ffffff; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; display: flex; align-items: center; gap: 8px;"
                         onclick="toggleSidebar()">
-                        <i class="fas fa-bars" style="color: black; font-size: 1.2em;"></i>
+                        <i class="fas fa-bars" style="color: #ffffff; font-size: 1.2em;"></i>
                         <!-- <span style="font-size: 1em; font-weight: 500;">Menu</span> -->
                     </button>
     
@@ -1686,7 +1577,7 @@
      
 			<!--section-1-->
 			<section class="section1" style="margin: 2px auto; padding: 15px;">
-				<div class="section1-div row align-items-center" style="height: 450px;padding-left: 28px;padding: 0 20px;display: flex !important; justify-content: center !important; align-items: center !important;width: 1400px;margin: 2px auto;">
+				<div class="section1-div row align-items-center" style="height: 450px;padding-left: 28px;padding: 0 20px;display: flex; justify-content: center; align-items: center;width: 1400px;margin: 2px auto;">
 					<!-- Left Content Section -->
 					<div class="section1-text col-lg-12 text-center">
 						<h1 class="section1-h1 display-4" style="font-size: 55px;color:white">
@@ -1697,12 +1588,10 @@
 							Welcome to BuzzBoost, your go-to platform for <br>
 							connecting with top influencers across various industries.
 						</p>
-						<div class="button-align">
 						<a href="contact.html"
 							class="landing-button section1-btn btn btn-modern box-shadow-6 border-0 text-transform-none mt-2 py-2 px-4" style="background-color:white!important;color: #000 !important; font-size: 17px;border-radius: 25px !important;font-weight: 500;">
 							Get In Touch 
 						</a>
-					</div>
 					</div>
 				</div>
 			</section>
@@ -1715,12 +1604,12 @@
 				  style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; justify-content: center;"
 				>
 				  <!-- Text Column -->
-				  <div class="text-column"
+				  <div
 					style="flex: 1; min-width: 300px; text-align: left;padding-left: 50px;padding-right: 20px;margin-top: 20px;"
 				  >
-				  <h2 class="heading" style="color: #426CC1;font-size: 1.75rem;margin-bottom: 15px;padding-left: 5px;">Partners</h2>
+				  <h2 style="color: #426CC1;font-size: 1.75rem;margin-bottom: 15px;padding-left: 5px;">Partners</h2>
 					<h2
-					  style="font-size: 3rem; margin-bottom: 20px; color: black; font-weight: bold; text-align: left;"
+					  style="font-size: 3.5rem; margin-bottom: 20px; color: black; font-weight: bold; text-align: left;"
 					>
 					Our Trusted Clients
 					</h2>
@@ -1731,7 +1620,7 @@
 					</p>
 				  </div>
 				  <!-- Image Column -->
-				  <div class="image-column" style="flex: 1; min-width: 350px; text-align: center;padding-right: 40px;">
+				  <div style="flex: 1; min-width: 350px; text-align: center;padding-right: 40px;">
 					<img
 					  src="img\BuzzBoostImg\Buzzboostlatest\ClientImage.png"
 					  alt="Description of the image"
