@@ -49,11 +49,6 @@
 	<!-- Theme Custom CSS -->
 	<link rel="stylesheet" href="css/custom.css">
 	<style>
-
-
- /* Hover effect */
-
- 
 		* {
 			margin: 0;
 			padding: 0;
@@ -339,6 +334,10 @@
 			color: white !important;
 		}
 		
+		.landing-button:hover {
+			background-color: #426CC1 !important;
+			color: white !important;
+		}
 
 
 		/* Media query for screens smaller than 768px (mobile devices) */
@@ -368,10 +367,6 @@
     /* .custom-btn {
         width: 100%;
     } */
-	.list-hover:hover {
-        color: blue !important;  /* Change text color on hover */
-        background-color: rgba(255, 255, 255, 0.1) !important; /* Optional: background color */
-    }
 }
 @media(max-width :768px)
 {
@@ -1272,11 +1267,6 @@
 	margin-top: 15px !important;
 	
   }
-
-  #sidebarMenu .nav-link {
-    color: white !important;
-    
-}
 }
 
 @media (max-width: 1200px) and (min-width: 800px) {
@@ -1323,9 +1313,50 @@
 
 }
 
+@media(max-width:768px){
+	/* #sidebarMenu .nav-link :hover{
+		display: none !important;
+	} */
 
+	/* #sidebarMenu .nav-link:hover{
+		color: aquamarine !important;
+	} */
 
+	#sidebarMenu .nav-link {
+    color: white !important;
+    
+}
 
+}
+
+#header .header-nav.header-nav-links:not(.header-nav-light-text) nav > ul > li > a, #header .header-nav.header-nav-line:not(.header-nav-light-text) nav > ul > li > a {
+		color: rgba(255, 255, 255, 0.6)
+	}
+
+	@media (max-width: 768px) {
+      .client-column-section > div {
+        flex-direction: column !important; /* Stack the columns vertically */
+        align-items: center !important; /* Center both the text and image */
+        justify-content: center !important; /* Vertically center the content */
+      }
+      .client-column-section > div > div {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+      }
+      .client-column-section h2 {
+        font-size: 2.5rem !important; /* Adjust heading size */
+        text-align: center !important; /* Center the headings */
+      }
+      .client-column-section p {
+        font-size: 1.2rem !important; /* Adjust paragraph size */
+        text-align: center !important; /* Center the paragraph text */
+      }
+      .client-column-section img {
+        margin: 20px 0 !important; /* Add some space around the image */
+        max-width: 100% !important; /* Ensure image scales correctly */
+      }
+    }
+ 
 
 	</style>
 	<script src="vendor/modernizr/modernizr.min.js"></script>
@@ -1345,11 +1376,11 @@
 					</div>
 				</div>
 			</div> -->
-
+       <div class="landing-section" style="background-image: url('img/BuzzBoostImg/Buzzboostlatest/BuzzBoostlandingImage.png');background-position: center;background-size: cover;background-repeat: no-repeat;">
 		<header id="header" class="header-transparent header-desktop-tablet"
 			data-plugin-options="{'stickyScrollUp': true, 'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 42, 'stickyHeaderContainerHeight': 70}">
 			<div class="header-body header-body-bottom-border border-top-0 h-auto">
-				<div class="header-container container p-static" style="height: 70px !important;">
+				<div class="header-container container p-static" style="height: 70px !important;color: white !important">
 					<div class="header-row" style="height: 70px !important;">
 						<div class="header-column">
 							<div class="header-row" style="display: flex;align-items: center;">
@@ -1371,7 +1402,7 @@
 										<nav class="collapse header-collapse-background">
 											<ul class="nav nav-pills" id="mainNav">
 												<li>
-													<a href="home.html" class="nav-link active">
+													<a href="home.html" class="nav-link">
 														Home
 													</a>
 												</li>
@@ -1409,9 +1440,9 @@
 								<ul class="header-extra-info d-none d-xxl-block mt-2 mx-3">
 									<li class="d-none d-sm-inline-flex ms-0 font-weight-semibold">
 										<div class="d-flex align-items-center">
-											<i class="icons icon-phone text-8   me-2"></i>
-											<a href="tel:+91 9796297972" class="text-3 text-dark"
-												style="color: #000; text-decoration: none; transition: color 0.3s ease;"
+											<i class="icons icon-phone text-8 me-2"></i>
+											<a href="tel:+91 9796297972" class="text-3"
+												style="color: rgba(255, 255, 255, 0.6); text-decoration: none; transition: color 0.3s ease;"
 												onmouseover="this.style.color='#426CC1'; this.style.textDecoration='underline';"
 												onmouseout="this.style.color='#000'; this.style.textDecoration='none';">
 												+91 9796297972
@@ -1422,11 +1453,11 @@
 								</ul>
 
 								<a href="contact.html"
-									class="btn btn-modern box-shadow-6 border-0 text-transform-none ms-3 d-none d-xl-inline-block custom-btn text-2 py-2 " style="border-radius: 25px;font-weight: 500;">Get
+									class="btn btn-modern box-shadow-6 border-0 text-transform-none ms-3 d-none d-xl-inline-block landing-button text-2 py-2 " style="background-color: white !important;color:#000 !important; border-radius: 25px;font-weight: 500;">Get
 									In Touch</a>
 
 								<button class="btn header-btn-collapse-nav"
-									style="background-color: #426CC1; color: #ffffff; border: none; padding: 10px 15px; border-radius: 5px !important;"
+									style="background-color: rgba(255, 255, 255, 0.6); color: black; border: none; padding: 10px 15px; border-radius: 5px !important;"
 									data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
 									<i class="fas fa-bars" style="color: #ffffff; font-size: 1.2em;"></i>
 								</button>
@@ -1463,53 +1494,52 @@
     
                     <!-- Sidebar Navigation -->
                     <div id="sidebarMenu"
-                        style="position: fixed; top: 0; right: -250px; width: 250px; height: 100%; background: #2f2f2ff2; backdrop-filter: blur(2px); box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; z-index: 1050; overflow-y: auto; padding: 20px;">
+                        style="position: fixed; top: 0; right: -250px; width: 250px; height: 100%;background: #2f2f2ff2; backdrop-filter: blur(2px); box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3); transition: transform 0.3s ease; z-index: 1050; overflow-y: auto; padding: 20px;">
                         <button onclick="toggleSidebar()" style="float: right; border: none; background: none; font-size: 1.25em; cursor: pointer; color: white;">&times;</button>
                         <ul style="list-style: none; padding: 0; margin: 20px 0 0;">
-                            <li class="list-hover">
-                                <a href="home.html" class="nav-link active"
+                            <li>
+                                <a href="home.html" class="nav-link hover-link active"
                                     style="display: flex; align-items: center; padding: 10px; color: #fff; font-weight: 500; text-decoration: none; border-radius: 4px; transition: all 0.2s ease;">
                                     <i class="fas fa-home" style="margin-right: 10px;"></i> Home
                                 </a>
                             </li>
-                            <li class="list-hover">
-                                <a href="aboutus.html" class="nav-link"
+                            <li>
+                                <a href="aboutus.html" class="nav-link hover-link"
                                     style="display: flex; align-items: center; padding: 10px; color: #fff; font-weight: 500; text-decoration: none; border-radius: 4px; transition: all 0.2s ease;">
                                     <i class="fas fa-info-circle" style="margin-right: 10px;"></i> About Us
                                 </a>
                             </li>
-                            <li class="list-hover">
-                                <a href="agency.html" class="nav-link"
+                            <li>
+                                <a href="agency.html" class="nav-link hover-link"
                                     style="display: flex; align-items: center; padding: 10px; color: #fff; font-weight: 500; text-decoration: none; border-radius: 4px; transition: all 0.2s ease;">
                                     <i class="fas fa-building" style="margin-right: 10px;"></i> Agency
                                 </a>
                             </li>
-                            <li class="list-hover">
+                            <li>
                                 <a href="business.html" class="nav-link"
                                     style="display: flex; align-items: center; padding: 10px; color: #fff; font-weight: 500; text-decoration: none; border-radius: 4px; transition: all 0.2s ease;">
                                     <i class="fas fa-briefcase" style="margin-right: 10px;"></i> Business
                                 </a>
                             </li>
-                            <li class="list-hover">
+                            <li>
                                 <a href="Influencer.html" class="nav-link"
                                     style="display: flex; align-items: center; padding: 10px; color: #fff; font-weight: 500; text-decoration: none; border-radius: 4px; transition: all 0.2s ease;">
                                     <i class="fas fa-user" style="margin-right: 10px;"></i> Influencer
                                 </a>
                             </li>
-                            <li class="list-hover">
+                            <li>
                                 <a href="blog.html" class="nav-link"
                                     style="display: flex; align-items: center; padding: 10px; color: #fff; font-weight: 500; text-decoration: none; border-radius: 4px; transition: all 0.2s ease;">
                                     <i class="fas fa-blog" style="margin-right: 10px;"></i> Blog
                                 </a>
                             </li>
-                            <li class="list-hover">
+							<li>
 								<a href="contact.html" class="nav-link"
 								   style="display: flex; align-items: center; padding: 10px; color: #fff; font-weight: 500; text-decoration: none; border-radius: 4px; transition: all 0.2s ease;">
 									<i class="fas fa-phone-alt" style="margin-right: 10px; transform: scaleX(-1);"></i> Contact Us
 								</a>
 							</li>
-							
-                            <li class="list-hover">
+                            <li>
                                 <a href="https://www.instagram.com/thebuzzzboost?igsh=MTltemR0Z2c4aHR3dA==" class="nav-link"
                                     style="display: flex; align-items: center; padding: 10px; color: #fff; font-weight: 500; text-decoration: none; border-radius: 4px; transition: all 0.2s ease;" target="_blank">
                                     <i class="fab fa-instagram" style="margin-right: 10px;"></i> Instagram
@@ -1543,214 +1573,63 @@
 
 		<hr style="margin-top: 1px;margin-bottom: 1px;">
 
-		<div role="main" class="main">
+		
      
 			<!--section-1-->
 			<section class="section1" style="margin: 2px auto; padding: 15px;">
 				<div class="section1-div row align-items-center" style="height: 450px;padding-left: 28px;padding: 0 20px;display: flex; justify-content: center; align-items: center;width: 1400px;margin: 2px auto;">
 					<!-- Left Content Section -->
-					<div class="section1-text col-lg-6 text-center text-md-center text-xl-start text-lg-start" style="padding-left: 90px;padding-right: 10px;">
-						<h1 class="section1-h1 display-4 text-black" style="font-size: 40px;">
+					<div class="section1-text col-lg-12 text-center">
+						<h1 class="section1-h1 display-4" style="font-size: 55px;color:white">
 							Boost Your Brand’s Influence<br> with <span style="color: #426CC1;">BuzzBoost</span>
 						</h1>
 						
-						<p class="section1-p lead line-height-5 text-black" style="font-size: 1.25rem;letter-spacing: normal;">
-							Welcome to BuzzBoost, your go-to platform for
-							connecting with top influencers across various industries
+						<p class="section1-p lead line-height-5" style="font-size: 1.65rem;letter-spacing: normal;color: white;">
+							Welcome to BuzzBoost, your go-to platform for <br>
+							connecting with top influencers across various industries.
 						</p>
 						<a href="contact.html"
-							class="section1-btn btn btn-modern box-shadow-6 border-0 text-transform-none mt-2 py-2 px-4 custom-btn" style="font-size: medium;border-radius: 25px !important;font-weight: 500;">
+							class="landing-button section1-btn btn btn-modern box-shadow-6 border-0 text-transform-none mt-2 py-2 px-4" style="background-color:white!important;color: #000 !important; font-size: 17px;border-radius: 25px !important;font-weight: 500;">
 							Get In Touch 
 						</a>
 					</div>
-			
-					<!-- Right Image Section -->
-					<div class="section1-img col-lg-6 d-lg-block" style="text-align: center;">
-						<img class="section1-img1" src="img\BuzzBoost Home Page Images\Home Page 2 (1).png" alt="BuzzBoost" width="385px" height="325px">
-					</div>
 				</div>
 			</section>
-	
-
-		 <!-- carousel section -->
-		 <div class="container" style="padding: 10px;padding-top: 45px;">
-		
-			<div class="row">
-				<div class="col text-center">
-					<h3 class="pt-4" style="font-size: 30px;">Our Clients</h3>
-					<p class="trustedbrand text-black" style="font-size: 1.25rem;line-height: 1.5 !important;">We are trusted by industry-leading brands who have successfully grown with</br> our
-						network of influencers across diverse industries.</p>
-				</div>
-			</div>
-			<!-- <div class="row align-items-center text-center mt-2">
-				<div class="col-sm-4 col-xl-2 mb-5 mb-xl-0">
-					<img src="img/BuzzBoostImg/acme.png" alt class="img-fluid" style="max-width: 140px;" />
-				</div>
-				<div class="col-sm-4 col-xl-2 mb-5 mb-xl-0">
-					<img src="img/BuzzBoostImg/circle.png" alt class="img-fluid" style="max-width: 140px;" />
-				</div>
-				<div class="col-sm-4 col-xl-2 mb-5 mb-xl-0">
-					<img src="img/BuzzBoostImg/fox-hub-black.png" alt class="img-fluid" style="max-width: 140px;" />
-				</div>
-				<div class="col-sm-4 col-xl-2 mb-5 mb-lg-0">
-					<img src="img/BuzzBoostImg/Group M.png" alt class="img-fluid" style="max-width: 140px;" />
-				</div>
-				<div class="col-sm-4 col-xl-2 mb-5 mb-lg-0">
-					<img src="img/BuzzBoostImg/hexa.png" alt class="img-fluid" style="max-width: 100px;" />
-				</div>
-				<div class="col-sm-4 col-xl-2">
-					<img src="img/BuzzBoostImg/stari.png" alt class="img-fluid" style="max-width: 100px;" />
-				</div>
-			</div> -->
-			<div id="brandCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000" style="padding-top: 60px;height: 260px;">
-				<div class="carousel-inner text-center">
-					<!-- First Slide -->
-					<div class="carousel-item active">
-						<div class="row align-items-center justify-content-center">
-							
-							<div class="col-sm-3 col-xl-2 mb-4">
-								<img src="img/Newclientscarousel/The Besopke Logo.png" alt="fox-hub-black" class="img-fluid" style="max-width: 160px;height: 80px;"/>
-							</div>
-							<div class="col-sm-3 col-xl-2 mb-4">
-								<img src="img/BuzzBoostImg/Aroma Cabinets Logo.png" class="img-fluid" style="max-width: 140px;height: 80px;" alt="Aroma" />
-								<!-- <img src="img/BuzzBoostImg/acme.png" class="img-fluid" style="max-width: 140px;height: 50px;" alt="Acme" /> -->
-							</div>
-							<div class="col-sm-4 col-xl-2 mb-4">
-								<img src="img/Newclientscarousel/themayfairhouse logo.png" alt="fair-house" class="img-fluid" style="max-width: 240px;height: 110px;" />
-							</div>
-							
-							<div class="col-sm-3 col-xl-2 mb-4">
-								<img src="img/Newclientscarousel/pluchdesign logo.png" alt="pluchdesign" class="img-fluid" style="max-width: 250px;height: 130px;" />
-							</div>
-						</div>
-					</div>
-					<!-- Second Slide -->
-					<div class="carousel-item">
-						<div class="row align-items-center justify-content-center">
-							<div class="col-sm-3 col-xl-2 mb-4">
-								<img src="img/Newclientscarousel/educationlane logo.png" alt="educationlane" class="img-fluid" style="max-width: 140px;height: 120px;" />
-							</div>
-							<div class="col-sm-3 col-xl-2 mb-4">
-								<img src="img/BuzzBoostImg/fav1.png" alt="fav1" class="img-fluid" style="max-width: 140px;height: 120px;" />
-							</div>
-							<div class="col-sm-3 col-xl-2 mb-4">
-								<img src="img/BuzzBoostImg/Fireshot Entertainment Logo.png" alt="fireshot" class="img-fluid" style="max-width: 180px;height: 70px;" />
-							</div>
-							
-							<div class="col-sm-4 col-xl-2 mb-4">
-								<img src="img/Newclientscarousel/Magent Co Work Image.png" alt="magnet-co-work" class="img-fluid" style="max-width: 250px;height: 110px;" />
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- Carousel Controls -->
-				<button class="carousel-control-prev" type="button" data-bs-target="#brandCarousel" data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
-				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#brandCarousel" data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
-				</button>
-			</div>
-
-						<!-- carousel for small screens -->
-			 <!-- Carousel Start -->
-			 <div id="smallbrandCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000" style="padding-top: 40px;margin: auto !important;">
-				<div class="carousel-inner text-center" style="height: 170px;padding-top: 20px;">
-					<!-- First Slide -->
-					<div class="carousel-item active">
-						<div class="row">
-							<div class="col-12 d-flex justify-content-center">
-								<img src="img/BuzzBoostImg/Fireshot Entertainment Logo.png" alt="Fireshot" class="img-fluid" style="max-width: 180px;height: 80px;" />
-							</div>
-						</div>
-					</div>
-					<!-- Second Slide -->
-					
-					<!-- Third Slide -->
-					<div class="carousel-item">
-						<div class="row">
-							<div class="col-12 d-flex justify-content-center">
-								<img src="img/BuzzBoostImg/fox-hub-black.png" alt="fox-hub-black" class="img-fluid" style="max-width: 180px;height: 80px;" />
-							</div>
-						</div>
-					</div>
-					<!-- Fourth Slide -->
-					<div class="carousel-item">
-						<div class="row">
-							<div class="col-12 d-flex justify-content-center">
-								<img src="img/Newclientscarousel/educationlane logo.png" alt="educationlane" class="img-fluid" style="max-width: 180px;height: 80px;" />
-							</div>
-						</div>
-					</div>
-					<!-- Fifth Slide -->
-					<div class="carousel-item">
-						<div class="row">
-							<div class="col-12 d-flex justify-content-center">
-								<img src="img/Newclientscarousel/Magent Co Work Image.png" alt="magnet-co-work" class="img-fluid" style="max-width: 180px;height: 80px;" />
-							</div>
-						</div>
-					</div>
-					<!-- Sixth Slide -->
-					<div class="carousel-item">
-						<div class="row">
-							<div class="col-12 d-flex justify-content-center">
-								<img src="img/Newclientscarousel/themayfairhouse logo.png" alt="themayfairhouse" class="img-fluid" style="max-width: 180px;height: 80px;" />
-							</div>
-						</div>
-					</div>
-					<!-- seventh slide -->
-				
-					<!-- eightth slide -->
-					<div class="carousel-item">
-						<div class="row">
-							<div class="col-12 d-flex justify-content-center">
-								<img src="img/Newclientscarousel/pluchdesign logo.png" alt="pluchdesign" class="img-fluid" style="max-width: 280px;height: 80px;" />	
-							</div>
-						</div>
-					</div>
-					<!-- ninth slide -->
-					
-					<!-- tenth slide -->
-					
-					<!-- eleventh slide -->
-					<div class="carousel-item">
-						<div class="row">
-							<div class="col-12 d-flex justify-content-center">
-								<img src="img/BuzzBoostImg/fav1.png" alt="fav1" class="img-fluid" style="max-width: 260px;height: 80px;" />
-							</div>
-						</div>
-					</div>
-			
-					<!-- twelfth slide -->
-					<div class="carousel-item">
-						<div class="row">
-							<div class="col-12 d-flex justify-content-center">
-								<img src="img/BuzzBoostImg/Aroma Cabinets Logo.png" alt="aroma" class="img-fluid" style="max-width: 180px;height: 80px;" />
-							</div>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="row">
-							<div class="col-12 d-flex justify-content-center">
-								<img src="img/Newclientscarousel/The Besopke Logo.png" alt="aroma" class="img-fluid" style="max-width: 180px;height: 80px;" />
-							</div>
-						</div>
-					</div>
-					<!-- Add More Slides as Needed -->
-				</div>
-				<!-- Carousel Controls -->
-				<button class="carousel-control-prev" type="button" data-bs-target="#brandCarousel" data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
-				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#brandCarousel" data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
-				</button>
-			</div>
 		</div>
+		<div role="main" class="main">
+
+			<!-- client new section -->	
+			<section class="client-column-section" style="padding: 50px 20px;margin-top: 20px;">
+				<div
+				  style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; justify-content: center;"
+				>
+				  <!-- Text Column -->
+				  <div
+					style="flex: 1; min-width: 300px; text-align: left;padding-left: 50px;padding-right: 20px;margin-top: 20px;"
+				  >
+				  <h2 style="color: #426CC1;font-size: 1.75rem;margin-bottom: 15px;padding-left: 5px;">Partners</h2>
+					<h2
+					  style="font-size: 3.5rem; margin-bottom: 20px; color: black; font-weight: bold; text-align: left;"
+					>
+					Our Trusted Clients
+					</h2>
+					<p
+					  style="font-size: 1.5rem; line-height: 1.6; color: #666; text-align: left;"
+					>
+					We are trusted by industry-leading brands who have successfully grown with our network of influencers across diverse industries.
+					</p>
+				  </div>
+				  <!-- Image Column -->
+				  <div style="flex: 1; min-width: 350px; text-align: center;padding-right: 40px;">
+					<img
+					  src="img\BuzzBoostImg\Buzzboostlatest\ClientImage.png"
+					  alt="Description of the image"
+					  style="max-width: 100%; height: auto; border-radius: 10px;"
+					/>
+				  </div>
+				</div>
+			  </section>
+			  
 
 		  <!-- section-1 cta -->
 		  <section class="container empowering-section" style=" margin: 45px auto; padding: 15px;background-color: #f7f7f7;border-radius: 25px;">
