@@ -4857,7 +4857,7 @@ html.side-header-hamburguer-sidebar-narrow-bar .slider-container {
 
 /* Page Header */
 .page-header {
-	background-color: #212529;
+	/* background-color: #212529; */
 	margin: 0 0 35px 0;
 	padding: 0px 0;
 	position: relative;
