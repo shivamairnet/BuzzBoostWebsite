@@ -1,23 +1,125 @@
-.scroll-section {
-    position: relative !important;
-    height: 100vh !important; 
-    overflow: hidden !important; 
-    background: white !important;
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div style="display: flex; flex-direction: column; height: 100%; width: 100%; overflow: hidden;">
+    <!-- Section 1 -->
+    <div style="height: 100px; padding: 20px; background-color: #ddd; text-align: center;">
+        Section 1 (Header)
+    </div>
   
-  .inner-scroll {
-    position:absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    bottom: 0 !important;
-    overflow-y: scroll !important; 
-    box-sizing: border-box !important;
-    padding-bottom: 15px !important;
-    scrollbar-width: none;
-    
-  }
+    <!-- Row containing Sections 2, 3, and 4 -->
+    <div style="display: flex; flex: 1; overflow: hidden;">
+        <!-- Section 2 (Table of Contents) -->
+        <div style="flex: 1; overflow-y: auto; background-color: #f8f9fa; padding: 20px;">
+            <ul style="list-style-type: none; padding: 0; margin: 0;">
+                <li style="margin-bottom: 10px;">
+                    <a href="#subsection1" class="toc-item" style="display: block; padding: 10px; background-color: #e9ecef; text-decoration: none; color: #333; border-radius: 5px;">Subsection 1</a>
+                </li>
+                <li style="margin-bottom: 10px;">
+                    <a href="#subsection2" class="toc-item" style="display: block; padding: 10px; background-color: #e9ecef; text-decoration: none; color: #333; border-radius: 5px;">Subsection 2</a>
+                </li>
+                <li>
+                    <a href="#subsection3" class="toc-item" style="display: block; padding: 10px; background-color: #e9ecef; text-decoration: none; color: #333; border-radius: 5px;">Subsection 3</a>
+                </li>
+                <li style="margin-bottom: 10px;">
+                  <a href="#subsection4" class="toc-item" style="display: block; padding: 10px; background-color: #e9ecef; text-decoration: none; color: #333; border-radius: 5px;">Subsection 4</a>
+              </li>
+              <li style="margin-bottom: 10px;">
+                <a href="#subsection5" class="toc-item" style="display: block; padding: 10px; background-color: #e9ecef; text-decoration: none; color: #333; border-radius: 5px;">Subsection 5</a>
+            </li><li style="margin-bottom: 10px;">
+              <a href="#subsection6" class="toc-item" style="display: block; padding: 10px; background-color: #e9ecef; text-decoration: none; color: #333; border-radius: 5px;">Subsection 6</a>
+          </li>
+            </ul>
+        </div>
   
-  .inner-scroll::-webkit-scrollbar {
-    display: none; 
-  }
+        <!-- Section 3 (Scrollable Content) -->
+        <div style="flex: 2; overflow-y: auto; background-color: #fff; padding: 20px; max-height: 400px;">
+            <div id="subsection1" class="subsection" style="margin-bottom: 50px;">
+                <h2>Subsection 1</h2>
+                <p>Content for Subsection 1...</p>
+            </div>
+            <div id="subsection2" class="subsection" style="margin-bottom: 50px;">
+                <h2>Subsection 2</h2>
+                <p>Content for Subsection 2...</p>
+            </div>
+            <div id="subsection3" class="subsection" style="margin-bottom: 50px;">
+                <h2>Subsection 3</h2>
+                <p>Content for Subsection 3...</p>
+            </div>
+            <div id="subsection4" class="subsection" style="margin-bottom: 50px;">
+                <h2>Subsection 4</h2>
+                <p>Content for Subsection 4...</p>
+            </div>
+            <div id="subsection5" class="subsection" style="margin-bottom: 50px;">
+              <h2>Subsection 5</h2>
+              <p>Content for Subsection 5...</p>
+          </div>
+          <div id="subsection6" class="subsection" style="margin-bottom: 50px;">
+            <h2>Subsection 6</h2>
+            <p>Content for Subsection 6...</p>
+        </div>
+        </div>
+  
+        <!-- Section 4 (Static) -->
+        <div style="flex: 1; background-color: #f8f9fa; padding: 20px; text-align: center;">
+            Section 4 (Static)
+        </div>
+    </div>
+  </div>
+  
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const tocItems = document.querySelectorAll(".toc-item");
+    const subsections = document.querySelectorAll(".subsection");
+
+    // Highlight TOC items as corresponding subsections are scrolled into view
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    tocItems.forEach((item) =>
+                        item.style.backgroundColor = "#e9ecef"
+                    );
+                    tocItems.forEach((item) => item.style.color = "#333");
+
+                    const activeItem = document.querySelector(
+                        `.toc-item[href="#${entry.target.id}"]`
+                    );
+
+                    if (activeItem) {
+                        activeItem.style.backgroundColor = "#007bff";
+                        activeItem.style.color = "white";
+                    }
+                }
+            });
+        },
+        { threshold: 0.5 } // Adjust this to control when the highlight triggers
+    );
+
+    subsections.forEach((subsection) => observer.observe(subsection));
+
+    // Smooth scroll for TOC clicks
+    tocItems.forEach((item) =>
+        item.addEventListener("click", (e) => {
+            e.preventDefault();
+            const targetId = item.getAttribute("href").substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                });
+            }
+        })
+    );
+});
+
+</script>
+</body>
+</html>

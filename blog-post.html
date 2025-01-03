@@ -440,7 +440,7 @@
 /* Section 2 (Scrollable Content) */
 .section2 {
     flex: 1;
-    height: 100vh;
+    height: 85vh;
     overflow-y: auto; /* Enable vertical scrolling for this section */
     background-color: #ffffff; /* Example background color */
 }
@@ -457,7 +457,24 @@
     overscroll-behavior: none; /* Prevent bounce effects */
 }
 
+.section2::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar for webkit browsers (Chrome, Safari) */
+}
 
+.section2 {
+    -ms-overflow-style: none;  /* Hides scrollbar for Internet Explorer and Edge */
+    scrollbar-width: none;     /* Hides scrollbar for Firefox */
+}
+
+.section1::-webkit-scrollbar-thumb {
+    background-color: #426CC1;  /* Color of the thumb (the part you drag) */
+   
+}
+
+.section1::-webkit-scrollbar {
+    width: 8px;  /* Width of the scrollbar */
+    background-color: #426CC1; /* Background color of the scrollbar */
+}
 
 
 		</style>
@@ -701,17 +718,29 @@
             <section class="section-blog-content position-relative border-0 m-0" style="background-color: #ffffff !important;">
                 <div class="container py-4" style="margin-top: 10px;">
                     <div class="row" style="display: flex;justify-content: center;">
-                        <div class="section1 blog-sidebar col-lg-2 pt-4 pt-lg-0 appear-animation" style="display: flex;justify-content: flex-start;" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1800">
+                        <div class="section1 blog-sidebar col-lg-2 pt-4 pt-lg-0 appear-animation" style="display: flex;justify-content: flex-start;max-height: 450px;overflow-y: auto;" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1800" >
                             <aside class="sidebar">
                                 <div class="px-3 mb-4 pt-4 pb-4 pl-3 pr-3 border-right" style="background-color: #e7e7e7;border-radius: 12px;">
                                     <h3 class="text-color-quaternary text-capitalize text-3-5 m-0 mb-3" style="text-decoration: underline;text-align: center;">Table Of Content</h3>
+                                    <div>
                                     <p class="mt-2 m-0" style="font-size: 0.85rem;"><a href="blog-post.html#introduction">1. Introduction</a> </p>
                                     <p class="mt-2 m-0" style="font-size: 0.85rem;"><a href="blog-post.html#power">2. The Power Of Influence In 2025</a></p>
                                     <p class="mt-2 m-0" style="font-size: 0.85rem;"><a href="blog-post.html#agencies">3. Why Agencies & Businesses Should Hire Influencers</a> </p>
+                                    <ul style="list-style-type: disc; margin-left: 20px; padding-left: 0; font-size: 0.8rem;">
+                                        <li><a href="blog-post.html#visibility">3.1 Increased Agency And Business Visibility And Reach</a></li>
+                                        <li><a href="blog-post.html#authenticity">3.2 Authenticity And Credibility</a></li>
+                                        <li><a href="blog-post.html#targeted">3.3 Targeted Marketing</a></li>
+                                        <li><a href="blog-post.html#conversions">3.4 Increase In Sales And Customer Conversions</a></li>
+                                    </ul>
                                     <p class="mt-2 m-0" style="font-size: 0.85rem;"><a href="blog-post.html#ignoring">4. The Cost of Ignoring Influencer Marketing in [2025]</a> </p>
                                     <p class="mt-2 m-0" style="font-size: 0.85rem;"><a href="blog-post.html#real">5. Real Life Success Stories</a></p>
+                                    <ul style="list-style-type: disc; margin-left: 20px; padding-left: 0; font-size: 0.8rem;">
+                                        <li><a href="blog-post.html#eg1">5.1 Example 1: Daniel Wellington (Watch Brand)</a></li>
+                                        <li><a href="blog-post.html#eg2">5.2 Example 2: Chipotle (Fast Food Chain) </a></li>
+                                    </ul>
                                     <p class="mt-2 m-0" style="font-size: 0.85rem;"><a href="blog-post.html#conclusion">6. Conclusion</a></p>
                                 </div>
+                            </div>
                               
                             </aside>
                         </div>
@@ -749,7 +778,7 @@
                      <div class="row align-items-center justify-content-center mt-5">
                          <div class="col-lg-5 text-center text-lg-start order-2 order-lg-1 mt-2 border-left" style="padding-right: 0px; border-left: 3px solid #FFBF78 !important;">
                             
-                             <h3 class="pl-2 mt-2 pt-2" style="font-size: 24px;text-decoration: underline;">1. Authenticity & Credibility</h3>
+                             <h3 id="authenticity" class="pl-2 mt-2 pt-2" style="font-size: 24px;text-decoration: underline;">1. Authenticity & Credibility</h3>
                              <!-- <p class="" style="font-size: 28px;color: #426CC1;">Powerhouse of Engagement And Reach!</p> -->
                              <p class="pl-2" style="font-size: 0.95rem;border-left: #000 !important;color: #333;line-height: 23px;letter-spacing: normal;">
                                 
@@ -776,7 +805,7 @@
                              </div>
                          </div>
                          <div class="col-lg-6 text-center text-lg-start order-2 order-lg-2 mt-2 border-left" style="border-left: 3px solid #FFBF78 !important;">
-                             <h3 class="pl-2 mt-2 pt-2" style="font-size: 24px;text-decoration: underline;">2. Increased Agency & Business Visibility and Reach</h3>
+                             <h3 id="visibility" class="pl-2 mt-2 pt-2" style="font-size: 24px;text-decoration: underline;">2. Increased Agency & Business Visibility and Reach</h3>
                              
                              <p class="pl-2" style="font-size: 0.95rem;color: #333;line-height: 23px;letter-spacing: normal; ">
  
@@ -789,7 +818,7 @@
                      <!-- 3rd point -->
                      <div class="row align-items-center justify-content-center mt-5" style="margin-bottom: 40px;">
                          <div class="col-lg-6 text-center text-lg-start order-2 order-lg-1 mt-2 border-left" style="padding-left: 0px;border-left: 3px solid #FFBF78 !important;">
-                             <h3 class="pl-2 mt-2 pt-2" style="font-size: 24px;text-decoration: underline;padding-left: 12px;">3. Increase in Sales and Customer Conversions</h3>
+                             <h3 id="conversions" class="pl-2 mt-2 pt-2" style="font-size: 24px;text-decoration: underline;padding-left: 12px;">3. Increase in Sales and Customer Conversions</h3>
                              <p class="pl-2" style="font-size: 0.95rem;padding-left: 12px;color: #333;line-height: 23px;letter-spacing: normal;">
                                  Influencers don’t just help with your brand awareness—they drive actionable actions. Influencers have the power to convince and convert their audience into paying customers, through affiliate links, discount codes, or direct calls to action. 
                                  
@@ -814,7 +843,7 @@
                          </div>
                          <div class="col-lg-6 text-center text-lg-start order-2 order-lg-2 mt-2 border-left" style="border-left: 3px solid #FFBF78 !important;">
                             
-                             <h3 class="pl-2 mt-2 pt-2" style="font-size: 24px;text-decoration: underline;">4. Targeted Marketing</h3>
+                             <h3 id="targeted" class="pl-2 mt-2 pt-2" style="font-size: 24px;text-decoration: underline;">4. Targeted Marketing</h3>
                              
                              <p class="pl-2" style="font-size: 0.95rem;color: #333;line-height: 23px;letter-spacing: normal;">
                                  One of the key advantages of hiring the influencers in [2025] is their ability to target specific audiences from different demographics. 
@@ -825,7 +854,7 @@
                  </div>
  
              <!-- section small cta type -->
-             <section class="cta-section styled-section" style=" margin: 45px auto; background: linear-gradient(180deg, #1F335C 6%, #426CC2 100%); background-size: cover; background-repeat: no-repeat;height: 285px;">
+             <section class="cta-section styled-section" style=" margin: 45px auto; background: linear-gradient(180deg, #1F335C 6%, #426CC2 100%); background-size: cover; background-repeat: no-repeat;height: 238px;">
                  <div class="container">
                      <div class="row">
                          <div
@@ -834,18 +863,18 @@
                                 <div class="d-flex">
                                     <div class="flex-column col-7">
                                  <div>
-                                     <h3 class="text-white" style="line-height: 1.5;font-size: 20px !important;">Ready to take your agency and business to the next level? Talk with our experts today and discover the power of influencer partnerships for your agency or business!</h3>
+                                     <h3 class="text-white" style="line-height: 1.5;font-size: 18px !important;">Ready to take your agency and business to the next level? Talk with our experts today and discover the power of influencer partnerships for your agency or business!</h3>
                                  </div>
                                  
                                  <div class="industry-button text-left">
                                      <a href="contact.html"
-                                         class="btn mt-3 py-2 px-xl-5 box-shadow-6 border-0 text-transform-none ms-2 d-xl-inline-block custom-btn" style="font-size: large;border-radius: 25px;font-weight: 500;width: 250px;">
+                                         class="btn mt-2 py-2 px-xl-5 box-shadow-6 border-0 text-transform-none ms-2 d-xl-inline-block custom-btn" style="font-size: large;border-radius: 25px;font-weight: 500;width: 171px;">
                                          Let's Talk
                                  </a>
                                  </div>
                                 </div>
                                  <div class="text-right col-5" style="text-align: right !important;">
-                                    <img class="cta-image" src="img/BlogPage/CTA.png" alt="Influencer" width="200px" height="200px" style="margin-bottom: 25px !important;">
+                                    <img class="cta-image" src="img/BlogPage/CTA.png" alt="Influencer" width="200px" height="200px" style="margin-bottom: 25px !important;margin-top: -25px;">
                                 </div>
                             </div>
                              </div>
@@ -873,7 +902,7 @@
                      
                                      <p style="font-size: 0.95rem;text-align: left !important;color: #333;line-height: 23px;letter-spacing: normal;">To understand the true potential of influencer marketing, let’s look at a few examples of businesses that saw a significant growth in their revenue after collaborating with influencers:</p>
                                     
-                                     <p style="font-size: 0.95rem;text-align: left !important;color: #333;line-height: 23px;letter-spacing: normal;"><img src="img/BlogPage/Arrow.png" alt="influencer-pointer" height="30px" width="70px" style="margin-right: 2px;"><strong>Example 1:</strong> Daniel Wellington (Watch Brand)
+                                     <p id="eg1" style="font-size: 0.95rem;text-align: left !important;color: #333;line-height: 23px;letter-spacing: normal;"><img src="img/BlogPage/Arrow.png" alt="influencer-pointer" height="30px" width="70px" style="margin-right: 2px;"><strong> Example 1:</strong> Daniel Wellington (Watch Brand)
                      
                                          <br><br><img src="img/BlogPage/Arrow.png" alt="influencer-pointer" height="30px" width="70px" style="margin-right: 2px;"><strong>Strategy:</strong> Daniel Wellington a popular watch brand, partnered with influencers from Instagram, including <span><a href="agency.html#micro" style="color: #426CC1 !important;text-decoration: underline;"> micro influencers</a></span>, to reach and showcase it;s company products to right set of people.
                                          
@@ -881,7 +910,7 @@
                      
                                          <img class="real-life-story-image" src="img/BlogPage/Blog Image 7.png" alt="influencer-pointer" style="border-radius: 15px;width: 680px;height: 210px;margin-bottom: 40px;">
                      
-                                     <p style="font-size: 0.95rem;text-align: left !important;margin-bottom: 40px;color: #333;line-height: 23px;letter-spacing: normal;"><img src="img/BlogPage/Arrow.png" alt="influencer-pointer" height="30px" width="70px" style="margin-right: 2px;"><strong>Example 2:</strong> Chipotle (Fast Food Chain)
+                                     <p id="eg2" style="font-size: 0.95rem;text-align: left !important;margin-bottom: 40px;color: #333;line-height: 23px;letter-spacing: normal;"><img src="img/BlogPage/Arrow.png" alt="influencer-pointer" height="30px" width="70px" style="margin-right: 2px;"><strong>Example 2:</strong> Chipotle (Fast Food Chain)
                      
                                         <br><br><img src="img/BlogPage/Arrow.png" alt="influencer-pointer" height="30px" width="70px" style="margin-right: 2px;"><strong>Strategy:</strong>Chipotle brand collaborated with many TikTok influencers and created a viral challenge, the "Lid Flip Challenge.
                                          
@@ -899,9 +928,10 @@
                                     </section>
                                 </div>
                         </div>
+                    
                         <div class="section3 cta-section col-lg-2 px-2 ml-5 display-flex justify-content-end" 
-                        style="height: 450px; position: relative;border-radius: 15px;overflow:hidden; background: url('img/blog/Buzzboost Blog Images/Buzzboost Blog Images/ctablog1.png') no-repeat center center; background-size: cover; padding-left: 10px; padding-right: 20px;margin-right: 10px;">
-                       
+                        style="max-height: 450px;overflow-y:hidden; position: relative;border-radius: 15px; background: url('img/blog/Buzzboost Blog Images/Buzzboost Blog Images/ctablog1.png') no-repeat center center; background-size: cover; padding-left: 10px; padding-right: 20px;margin-right: 10px;">
+                        <div class="secion3main" style="max-height: 420px; overflow-y: hidden;">
                        <!-- Form Overlay -->
                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: rgba(0, 0, 0, 0.5); color: #fff;">
                            <form style="text-align: center; max-width: 80%; margin-top:80px;">
@@ -922,6 +952,7 @@
                            </form>
                        </div>
                    </div>
+                </div>
                    
 
                         
