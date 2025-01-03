@@ -1467,38 +1467,7 @@
         }
     }
 
-/* Initial state for the animation */
-.text-column, .image-column {
-  opacity: 0 !important;
-  transform: translateX(50px) !important ;
-  animation-duration: 1s !important;
-  animation-fill-mode: forwards !important;
-}
 
-/* Slide in from left */
-.slide-in-left {
-  animation-name: slideInLeft !important;
-}
-
-/* Slide in from right */
-.slide-in-right {
-  animation-name: slideInRight !important;
-}
-
-/* Keyframes for the animations */
-@keyframes slideInLeft {
-  to {
-    opacity: 1;
-    transform: translateX(0) !important;
-  }
-}
-
-@keyframes slideInRight {
-  to {
-    opacity: 1 !important;
-    transform: translateX(0) !important;
-  }
-}
 
 
 
@@ -1719,28 +1688,36 @@
 
 		
      
-			<!--section-1-->
-			<section class="section1" style="margin: 2px auto; padding: 15px;">
-				<div class="section1-div row align-items-center" style="height: 450px;padding-left: 28px;padding: 0 20px;display: flex !important; justify-content: center !important; align-items: center !important;width: 1400px;margin: 2px auto;">
-					<!-- Left Content Section -->
-					<div class="section1-text col-lg-12 text-center">
-						<h1 class="section1-h1 display-4" style="font-size: 55px;color:white">
-							Boost Your Brand’s Influence<br> with <span style="color: #426CC1;">BuzzBoost</span>
-						</h1>
-						
-						<p class="section1-p lead line-height-5" style="font-size: 1.65rem;letter-spacing: normal;color: white;">
-							Welcome to BuzzBoost, your go-to platform for <br>
-							connecting with top influencers across various industries.
-						</p>
-						<div class="button-align">
-						<a href="contact.html"
-							class="landing-button section1-btn btn btn-modern box-shadow-6 border-0 text-transform-none mt-2 py-2 px-4" style="background-color:white!important;color: #000 !important; font-size: 17px;border-radius: 25px !important;font-weight: 500;">
-							Get In Touch 
-						</a>
-					</div>
-					</div>
-				</div>
-			</section>
+		<!--section-1-->
+<section class="section1" style="margin: 2px auto; padding: 15px;">
+    <div class="section1-div row align-items-center" 
+        style="height: 450px; padding: 0 20px; display: flex; justify-content: center; align-items: center; width: 100%; margin: 2px auto;">
+        
+        <!-- Left Content Section -->
+        <div class="section1-text text-center" style="max-width: 800px;">
+            <h1 class="section1-h1 display-4" 
+                style="font-size: 55px; color: white; margin-bottom: 20px; line-height: 1.2;">
+                Boost Your Brand’s Influence<br> with 
+                <span style="color: #426CC1;">BuzzBoost</span>
+            </h1>
+
+            <p class="section1-p lead" 
+                style="font-size: 1.65rem; letter-spacing: normal; color: white; margin-bottom: 30px;">
+                Welcome to BuzzBoost, your go-to platform for <br>
+                connecting with top influencers across various industries.
+            </p>
+
+            <div class="button-align">
+                <a href="contact.html" 
+                    class="landing-button section1-btn btn btn-modern box-shadow-6 border-0 text-transform-none mt-2 py-2 px-4" 
+                    style="background-color: white; color: #000; font-size: 17px; border-radius: 25px; font-weight: 500;">
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
 		</div>
 		<div role="main" class="main">
 
@@ -1754,19 +1731,22 @@
 					style="flex: 1; min-width: 300px; text-align: left;padding-left: 50px;padding-right: 20px;margin-top: 20px;"
 				  >
 				  <!-- <h2 class="heading" style="color: #426CC1;font-size: 1.75rem;margin-bottom: 15px;padding-left: 5px;">Partners</h2> -->
-					<h2
+					<h2 class="appear-animation" data-appear-animation="fadeInUpShorter"
+					data-appear-animation-delay="500"
 					  style="font-size: 2.5rem; margin-bottom: 20px; color: black; text-align: left;"
 					>
 					Our Trusted Clients
 					</h2>
-					<p
+					<p class="appear-animation" data-appear-animation="fadeInUpShorter"
+					data-appear-animation-delay="500"
 					  style="font-size: 1.5rem; line-height: 1.6; color: #666; text-align: left;"
 					>
 					We are trusted by industry-leading brands who have successfully grown with our network of influencers across diverse industries.
 					</p>
 				  </div>
 				  <!-- Image Column -->
-				  <div class="image-column" style="flex: 1; min-width: 350px; text-align: center;padding-right: 40px;">
+				  <div class="image-column appear-animation" data-appear-animation="fadeInUpShorter"
+				  data-appear-animation-delay="500" style="flex: 1; min-width: 350px; text-align: center;padding-right: 40px;">
 					<img
 					  src="img\BuzzBoostImg\Buzzboostlatest\ClientImage.png"
 					  alt="Description of the image"
@@ -1775,29 +1755,7 @@
 				  </div>
 				</div>
 			  </section>
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-  const elements = document.querySelectorAll(".slide-in-left, .slide-in-right");
 
-  const observer = new IntersectionObserver(
-    (entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.style.animationPlayState = "running";
-          observer.unobserve(entry.target); // Stop observing once animated
-        }
-      });
-    },
-    { threshold: 0.1 }
-  );
-
-  elements.forEach(el => {
-    el.style.animationPlayState = "paused"; // Pause animation until visible
-    observer.observe(el);
-  });
-});
-
-</script>
 
 			  
 
