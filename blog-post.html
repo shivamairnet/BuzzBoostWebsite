@@ -1320,20 +1320,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Prevent scrolling on Section 1 and Section 3 completely
-    const preventScroll = (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        return false;
-    };
+    // const preventScroll = (e) => {
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    //     return false;
+    // };
 
-    const section1 = document.querySelector(".section1");
-    const section3 = document.querySelector(".section3");
+    // const section1 = document.querySelector(".section1");
+    // const section3 = document.querySelector(".section3");
 
-    section1.addEventListener("wheel", preventScroll, { passive: false });
-    section1.addEventListener("touchmove", preventScroll, { passive: false });
+    // section1.addEventListener("wheel", preventScroll, { passive: false });
+    // section1.addEventListener("touchmove", preventScroll, { passive: false });
 
-    section3.addEventListener("wheel", preventScroll, { passive: false });
-    section3.addEventListener("touchmove", preventScroll, { passive: false });
+    // section3.addEventListener("wheel", preventScroll, { passive: false });
+    // section3.addEventListener("touchmove", preventScroll, { passive: false });
 });
 
 </script>
