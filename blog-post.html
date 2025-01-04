@@ -416,6 +416,11 @@
     overscroll-behavior: none; /* Prevent bounce effects */
 }
 
+.scrollable-content::-webkit-scrollbar {
+    width: 5px; /* Adjust scrollbar width */
+    height: 5px !important; /* Adjust scrollbar height */
+}
+
 .section2::-webkit-scrollbar {
     display: none; /* Hides the scrollbar for webkit browsers (Chrome, Safari) */
 }
@@ -435,142 +440,7 @@
     background-color: #426CC1; /* Background color of the scrollbar */
 }
 
-/* General Styles */
-.container.carousel-blogs {
-    margin: 30px auto !important;
-}
 
-.container.carousel-blogs h3 {
-    font-size: 40px !important;
-    color: #426CC1 !important;
-    margin-bottom: 30px !important;
-    margin-top: 60px !important;
-    text-align: center !important;
-}
-
-.grid-container {
-    display: grid !important;
-    gap: 70px !important;
-    padding: 50px !important;
-    margin-left: 50px !important;
-    margin-right: 50px !important;
-}
-
-/* Card Styles */
-.class-template {
-    background-color: #fff !important;
-    border-radius: 8px !important;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1) !important;
-    overflow: hidden !important;
-    display: flex !important;
-    flex-direction: column !important;
-    position: relative !important;
-    height: 275px !important;
-}
-
-.class-template img {
-    width: 100% !important;
-    height: 150px !important;
-    object-fit: contain !important;
-    margin: 0 !important;
-}
-
-.class-template h3 {
-    font-size: 1rem !important;
-    font-weight: 600 !important;
-    color: black !important;
-    line-height: 1.2 !important;
-    margin: 0 !important;
-}
-
-.class-template a {
-    text-decoration: none !important;
-    color: inherit !important;
-}
-
-.class-template div {
-    padding: 10px 10px !important;
-    background-color: white !important;
-    color: black !important;
-    margin: 0 !important;
-}
-
-.class-template .actions {
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    padding-top: 16px !important;
-    font-size: 0.75rem !important;
-    margin-top: 2px !important;
-}
-
-.class-template .actions div {
-    color: #888 !important;
-}
-
-.class-template .actions a {
-    text-decoration: none !important;
-    font-size: 0.65rem !important;
-    padding: 5px 10px !important;
-    color: white !important;
-    border-radius: 25px !important;
-    background-color: #426CC1 !important;
-}
-
-/* Media Queries */
-@media (max-width: 767px) {
-    .grid-container {
-        grid-template-columns: 1fr !important;
-        gap: 20px !important;
-        padding: 20px !important;
-        margin-left: 10px !important;
-        margin-right: 10px !important;
-    }
-
-    .container.carousel-blogs h3 {
-        font-size: 25px !important;
-    }
-
-    .class-template {
-        height: auto !important;
-    }
-
-    .class-template img {
-        height: auto !important;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 40px !important;
-        padding: 30px !important;
-        margin-left: 20px !important;
-        margin-right: 20px !important;
-    }
-
-    .container.carousel-blogs h3 {
-        font-size: 25px !important;
-    }
-
-    .class-template {
-        height: auto !important;
-    }
-
-    .class-template img {
-        height: auto !important;
-    }
-}
-
-@media (min-width: 1024px) {
-    .grid-container {
-        grid-template-columns: repeat(3, 1fr) !important;
-        gap: 70px !important;
-        padding: 50px !important;
-        margin-left: 50px !important;
-        margin-right: 50px !important;
-    }
-}
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
@@ -601,6 +471,56 @@
     }
 }
 
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .carousel-blogs .container {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 10px !important;
+        padding: 10px !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .carousel-blogs .container {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 20px !important;
+        padding: 10px !important;
+        margin: 0 auto !important; /* Center container on tablet */
+        width: 90% !important; /* Ensure the container doesn't stretch too wide */
+    }
+
+    .carousel-blogs .class-template {
+        margin: 0 auto !important; /* Center the cards */
+        width: 100% !important; /* Ensure full width */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .carousel-blogs .container {
+        grid-template-columns: 1fr !important;
+        display: flex;
+        flex-direction: column;
+        gap: 15px !important;
+        padding: 0 !important; /* Removed padding from container */
+        margin: 0 auto !important; /* Ensure auto margin for centering */
+        width: 90% !important; /* Adjust width to ensure it doesn't overflow */
+        justify-content: center !important;
+        align-items: center !important; /* Center the cards horizontally */
+    }
+
+    .carousel-blogs h3 {
+        font-size: 28px;
+        text-align: center; /* Ensure the heading is centered */
+    }
+
+    .carousel-blogs .class-template {
+        margin: 0 auto !important; /* Center cards inside flex */
+        width: 100% !important; /* Ensure full width */
+    }
+}
+
+       
 
 
 
@@ -845,11 +765,11 @@
             <section class="section-blog-content position-relative border-0 m-0" style="background-color: #ffffff !important;">
                 <div class="container py-4" style="margin-top: 10px;">
                     <div class="row" style="display: flex;justify-content: center;">
-                        <div class="section1 blog-sidebar col-lg-2 pt-4 pt-lg-0 appear-animation" style="display: flex;justify-content: flex-start;max-height: 450px;overflow-y: auto;" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600" >
+                        <div class="section1 blog-sidebar col-lg-2 pt-4 pt-lg-0 appear-animation" style="display: flex;justify-content: flex-start;max-height: 450px;" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500" >
                             <aside class="sidebar">
-                                <div class="px-3 mb-4 pt-4 pb-4 pl-3 pr-3 border-right" style="background-color: #e7e7e7;border-radius: 12px;">
+                                <div class="px-2 mb-4 pt-4 pb-4 pl-3 pr-3 border-right" style="background-color: #e7e7e7;border-radius: 12px;">
                                     <h3 class="text-color-quaternary text-capitalize text-3-5 m-0 mb-3" style="text-decoration: underline;text-align: center;">Table Of Content</h3>
-                                    <div>
+                                    <div style="max-height: 365px;overflow-y: auto;scrollbar-color: #007bff #e7e7e7; scrollbar-width: thin;padding-right: 10px;">
                                     <p class="mt-2 m-0" style="font-size: 0.85rem;"><a href="blog-post.html#introduction">1. Introduction</a> </p>
                                     <p class="mt-3 m-0" style="font-size: 0.85rem;"><a href="blog-post.html#power">2. The Power Of Influence In 2025</a></p>
                                     <p class="mt-3 m-0" style="font-size: 0.85rem;"><a href="blog-post.html#agencies">3. Why Agencies & Businesses Should Hire Influencers</a> </p>
@@ -1057,7 +977,7 @@
                         </div>
                     
                         <div class="section3 cta-section col-lg-2 px-2 ml-5 display-flex justify-content-end" 
-                        style="max-height: 450px;overflow-y:hidden; position: relative;border-radius: 15px; background: url('img/blog/Buzzboost Blog Images/Buzzboost Blog Images/ctablog1.png') no-repeat center center; background-size: cover; padding-left: 10px; padding-right: 20px;margin-right: 10px;">
+                        style="max-height: 450px;overflow-y:auto; position: relative;border-radius: 15px; background: url('img/blog/Buzzboost Blog Images/Buzzboost Blog Images/ctablog1.png') no-repeat center center; background-size: cover; padding-left: 10px; padding-right: 20px;margin-right: 10px;">
                         <div class="secion3main" style="max-height: 420px; overflow-y: hidden;">
                        <!-- Form Overlay -->
                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: rgba(0, 0, 0, 0.5); color: #fff;">
@@ -1087,51 +1007,97 @@
                 </div>
             </section>
 
-           
 
-            <!-- section blogs carousel -->
-<section class="container carousel-blogs" style="margin:30px auto;">
+   <!-- section blogs carousel -->
+   <section class="container carousel-blogs" style="margin:30px auto;">
     <h3 class="text-center" style="font-size: 40px;color: #426CC1;margin-bottom: 30px;margin-top: 60px;">Other Blogs</h3>
-    <div class="grid-container" style="display: grid; grid-template-columns: repeat(3, 2fr); gap: 70px; padding: 50px;margin-left: 50px;margin-right: 50px;">
+    <div class="container" style="display: grid; grid-template-columns: repeat(3, 2fr); gap: 70px; padding: 50px;margin-left: 50px;margin-right: 50px;">
         <!-- Card Template -->
-        <div class="class-template" style="background-color: #fff; border-radius: 8px; box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); overflow: hidden; display: flex; flex-direction: column; position: relative;height: 275px;">
+        <div class="class-template" style="background-color: #fff; border-radius: 8px; box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); overflow: hidden; display: flex; flex-direction: column; position: relative;height: 275px;width: 250px;">
             <!-- Adjusted image -->
             <img src="img\blog\Buzzboost Blog Images\Buzzboost Blog Images\Blog 2.png" alt="influencer-pointer" style="width: 100%; height: 150px; object-fit: contain; margin: 0;">
+        
+            <!-- Removed extra spacing -->
             <div style="padding: 10px 10px; background-color: white; color: black; margin: 0;">
+                <!-- Compact heading -->
                 <h3 style="font-size: 1rem;letter-spacing: normal; margin: 0;font-weight: 600; color: black; line-height: 1.2; font-weight: 500;">
                     <a href="blog-post2.html" style="text-decoration: none; color: inherit;">Top Influencer Marketing Trends To Watch In [2025]</a>
                 </h3>
                 <div style="display: flex;justify-content: space-between; align-items: center; padding-top: 16px; font-size: 0.75rem;margin-top: 2px;">
                     <div>
                         <span style="color: #888;margin-right: 15px;">Arham Jain</span>
-                        <span style="color: #888;margin-right: 30px;">24/12/2024</span>
+                    <span style="color: #888;margin-right: 30px;">24/12/2024</span>
                     </div>
                     <div>
-                        <a href="blog-post2.html" style="text-decoration: none; font-size: 0.65rem; padding: 5px 10px; color: white; border-radius: 25px; background-color: #426CC1;">Read More</a>
-                    </div>
+                    <a href="blog-post2.html" style="text-decoration: none; font-size: 0.65rem; padding: 5px 10px; color: white; border-radius: 25px; background-color: #426CC1;">Read More</a>
                 </div>
+                    <!-- <a href="blog-post.html" style="text-decoration: none; font-size: 0.75rem; padding: 3px 5px; color: white; border-radius: 25px; background-color: #426CC1;">Read More</a> -->
+                </div>
+           
             </div>
+        
+            <!-- Footer -->
+           
         </div>
-        <div class="class-template" style="background-color: #fff; border-radius: 8px; box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); overflow: hidden; display: flex; flex-direction: column; position: relative;height: 275px;">
+        <!-- Card Template -->
+        <div class="class-template" style="background-color: #fff; border-radius: 8px; box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); overflow: hidden; display: flex; flex-direction: column; position: relative;height: 275px;width: 250px;">
             <!-- Adjusted image -->
             <img src="img\blog\Buzzboost Blog Images\Buzzboost Blog Images\Blog 2.png" alt="influencer-pointer" style="width: 100%; height: 150px; object-fit: contain; margin: 0;">
+        
+            <!-- Removed extra spacing -->
             <div style="padding: 10px 10px; background-color: white; color: black; margin: 0;">
+                <!-- Compact heading -->
                 <h3 style="font-size: 1rem;letter-spacing: normal; margin: 0;font-weight: 600; color: black; line-height: 1.2; font-weight: 500;">
                     <a href="blog-post2.html" style="text-decoration: none; color: inherit;">Top Influencer Marketing Trends To Watch In [2025]</a>
                 </h3>
                 <div style="display: flex;justify-content: space-between; align-items: center; padding-top: 16px; font-size: 0.75rem;margin-top: 2px;">
                     <div>
                         <span style="color: #888;margin-right: 15px;">Arham Jain</span>
-                        <span style="color: #888;margin-right: 30px;">24/12/2024</span>
+                    <span style="color: #888;margin-right: 30px;">24/12/2024</span>
                     </div>
                     <div>
-                        <a href="blog-post2.html" style="text-decoration: none; font-size: 0.65rem; padding: 5px 10px; color: white; border-radius: 25px; background-color: #426CC1;">Read More</a>
-                    </div>
+                    <a href="blog-post2.html" style="text-decoration: none; font-size: 0.65rem; padding: 5px 10px; color: white; border-radius: 25px; background-color: #426CC1;">Read More</a>
                 </div>
+                    <!-- <a href="blog-post.html" style="text-decoration: none; font-size: 0.75rem; padding: 3px 5px; color: white; border-radius: 25px; background-color: #426CC1;">Read More</a> -->
+                </div>
+           
             </div>
+        
+            <!-- Footer -->
+           
         </div>
+         <!-- Card Template -->
+         <div class="class-template" style="background-color: #fff; border-radius: 8px; box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); overflow: hidden; display: flex; flex-direction: column; position: relative;height: 275px;width: 250px;">
+            <!-- Adjusted image -->
+            <img src="img\blog\Buzzboost Blog Images\Buzzboost Blog Images\Blog 2.png" alt="influencer-pointer" style="width: 100%; height: 150px; object-fit: contain; margin: 0;">
+        
+            <!-- Removed extra spacing -->
+            <div style="padding: 10px 10px; background-color: white; color: black; margin: 0;">
+                <!-- Compact heading -->
+                <h3 style="font-size: 1rem;letter-spacing: normal; margin: 0;font-weight: 600; color: black; line-height: 1.2; font-weight: 500;">
+                    <a href="blog-post2.html" style="text-decoration: none; color: inherit;">Top Influencer Marketing Trends To Watch In [2025]</a>
+                </h3>
+                <div style="display: flex;justify-content: space-between; align-items: center; padding-top: 16px; font-size: 0.75rem;margin-top: 2px;">
+                    <div>
+                        <span style="color: #888;margin-right: 15px;">Arham Jain</span>
+                    <span style="color: #888;margin-right: 30px;">24/12/2024</span>
+                    </div>
+                    <div>
+                    <a href="blog-post2.html" style="text-decoration: none; font-size: 0.65rem; padding: 5px 10px; color: white; border-radius: 25px; background-color: #426CC1;">Read More</a>
+                </div>
+                    <!-- <a href="blog-post.html" style="text-decoration: none; font-size: 0.75rem; padding: 3px 5px; color: white; border-radius: 25px; background-color: #426CC1;">Read More</a> -->
+                </div>
+           
+            </div>
+        
+            <!-- Footer -->
+           
+        </div>
+       
+        <!-- Repeat the card structure 36 times for 6x6 grid -->
     </div>
-</section>
+
+  </section>
 
 
          
