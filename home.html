@@ -1607,7 +1607,7 @@
     
                     <!-- Sidebar Navigation -->
                     <div id="sidebarMenu"
-                        style="position: fixed; top: 0; right: -250px; width: 250px; height: 100%;background: #2f2f2ff2; backdrop-filter: blur(2px); box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3); transition: transform 0.3s ease; z-index: 1050; overflow-y: auto; padding: 20px;">
+                        style="position: fixed; top: 0; right: -250px; width: 250px; height: 100%;background: #2f2f2ff2; backdrop-filter: blur(2px); box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3); transition: transform 0.3s ease; z-index: 1050; overflow-y: auto; padding: 20px;">
                         <button onclick="toggleSidebar()" style="float: right; border: none; background: none; font-size: 1.25em; cursor: pointer; color: white;">&times;</button>
                         <ul style="list-style: none; padding: 0; margin: 20px 0 0;">
                             <li>
@@ -1672,18 +1672,20 @@
     </header>
 
 	<script>
-function toggleSidebar() {
+
+	function toggleSidebar() {
     const sidebar = document.getElementById('sidebarMenu');
     const overlay = document.getElementById('sidebarOverlay');
-
-    // If the sidebar is off-screen, slide it in and show the overlay
-    if (sidebar.style.transform === 'translateX(0px)') {
-        sidebar.style.transform = 'translateX(-250px)'; // Slide sidebar off-screen
+    
+    if (sidebar.style.right === '0px') {
+        sidebar.style.right = '-250px'; // Hide sidebar
         overlay.style.display = 'none'; // Hide overlay
     } else {
-        sidebar.style.transform = 'translateX(0)'; // Slide sidebar on-screen
+        sidebar.style.right = '0px'; // Show sidebar
         overlay.style.display = 'block'; // Show overlay
     }
+
+
 }
 
 

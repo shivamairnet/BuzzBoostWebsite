@@ -452,7 +452,7 @@
 	
 					<!-- Sidebar Navigation -->
 					<div id="sidebarMenu"
-						style="position: fixed; top: 0; right: -250px; width: 250px; height: 100%; background: #2f2f2ff2; backdrop-filter: blur(2px); box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; z-index: 1050; overflow-y: auto; padding: 20px;">
+						style="position: fixed; top: 0; right: -250px; width: 250px; height: 100%; background: #2f2f2ff2; backdrop-filter: blur(2px); box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; z-index: 1050; overflow-y: auto; padding: 20px;">
 						<button onclick="toggleSidebar()" style="float: right; border: none; background: none; font-size: 1.25em; cursor: pointer; color: white;">&times;</button>
 						<ul style="list-style: none; padding: 0; margin: 20px 0 0;">
 							<li class="list-hover">
@@ -516,17 +516,19 @@
 		</div>
 	</header>
 	<script>
-		function toggleSidebar() {
-			const sidebar = document.getElementById('sidebarMenu');
-			const overlay = document.getElementById('sidebarOverlay');
-			if (sidebar.style.transform === 'translateX(250px)') {
-				sidebar.style.transform = 'translateX(-250px)';
-				overlay.style.display = 'none';
-			} else {
-				sidebar.style.transform = 'translateX(250px)';
-				overlay.style.display = 'block';
-			}
-		}
+		       function toggleSidebar() {
+    const sidebar = document.getElementById('sidebarMenu');
+    const overlay = document.getElementById('sidebarOverlay');
+    
+    if (sidebar.style.right === '0px') {
+        sidebar.style.right = '-250px'; // Hide sidebar
+        overlay.style.display = 'none'; // Hide overlay
+    } else {
+        sidebar.style.right = '0px'; // Show sidebar
+        overlay.style.display = 'block'; // Show overlay
+    }
+}
+
 	</script>
 
 			<div role="main" class="main">
