@@ -1672,18 +1672,21 @@
     </header>
 
 	<script>
-        function toggleSidebar() {
-            const sidebar = document.getElementById('sidebarMenu');
-            const overlay = document.getElementById('sidebarOverlay');
-            if (sidebar.style.transform === 'translateX(250px)') {
-                sidebar.style.transform = 'translateX(-250px)';
-                overlay.style.display = 'none';
-            } else {
-                sidebar.style.transform = 'translateX(250px)';
-                overlay.style.display = 'block';
-            }
-        }
-   
+function toggleSidebar() {
+    const sidebar = document.getElementById('sidebarMenu');
+    const overlay = document.getElementById('sidebarOverlay');
+
+    // If the sidebar is off-screen, slide it in and show the overlay
+    if (sidebar.style.transform === 'translateX(0px)') {
+        sidebar.style.transform = 'translateX(-250px)'; // Slide sidebar off-screen
+        overlay.style.display = 'none'; // Hide overlay
+    } else {
+        sidebar.style.transform = 'translateX(0)'; // Slide sidebar on-screen
+        overlay.style.display = 'block'; // Show overlay
+    }
+}
+
+
    </script>
 
 		<hr style="margin-top: 1px;margin-bottom: 1px;">
