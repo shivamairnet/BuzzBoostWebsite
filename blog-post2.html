@@ -461,8 +461,15 @@
     }
 }
 
+
+@media (min-width:1025px){
+    .container1{
+        max-width: 1000px;
+    }
+}
+
 @media (max-width: 1024px) {
-    .carousel-blogs .container {
+    .carousel-blogs .container1 {
         grid-template-columns: repeat(3, 1fr) !important;
         gap: 20px !important;
         padding: 10px !important;
@@ -478,7 +485,7 @@
 
 
 @media (max-width: 768px) {
-    .carousel-blogs .container {
+    .carousel-blogs .container1 {
         grid-template-columns: 1fr !important;
         display: flex;
         flex-direction: column;
@@ -968,7 +975,7 @@
             </section>
 
                 <!-- section blogs carousel -->
-             <section class="container carousel-blogs" style="margin:30px auto;">
+             <section class="container1 carousel-blogs" style="margin:30px auto;">
                 <h3 class="text-center" style="font-size: 40px;color: #426CC1;margin-bottom: 30px;margin-top: 60px;">Other Blogs</h3>
                 <div style="display: grid; grid-template-columns: repeat(3, 2fr); gap: 50px; padding: 50px;margin-left: 50px;margin-right: 50px;">
                     <!-- Card Template -->
