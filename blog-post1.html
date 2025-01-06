@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.section {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+#section1 {
+  background-color: #f1f1f1;
+}
+
+#section2 {
+  background-color: #e2e2e2;
+}
+
+.container {
+  display: flex;
+}
+
+.leftDiv {
+  width: 20%;
+  background-color: #c1c1c1;
+  padding: 20px;
+  /* Sticky positioning */
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  align-self: flex-start; /* Ensure it starts at the top */
+  height: fit-content;
+}
+
+.rightDiv {
+  width: 50%;
+  background-color: #d1d1d1;
+  padding: 20px;
+  height: 100rem;
+}
+
+.thirdDiv{
+    width: 20%;
+  background-color: #c1c1c1;
+  padding: 20px;
+  /* Sticky positioning */
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  align-self: flex-start; /* Ensure it starts at the top */
+  height: fit-content; /* Adjust height based on content */
+}
+
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sticky Div Example</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <section id="section1" class="section">
+    <h1>Section 1</h1>
+    <p>Content of section 1.</p>
+  </section>
+
+  <section id="section2" class="section">
+    <div class="container">
+      <div class="leftDiv">
+        <h2>Left Div</h2>
+        <p>This div will stay fixed while you are in Section 2.</p>
+      </div>
+      <div class="innerDiv">
+        <h2>Right Div</h2>
+        <p>Some content on the right side.</p>
+        <p>Scroll down to see the sticky effect.</p>
+        <!-- Add more content to make scrolling possible -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+        <p>... (Add more content as needed) ...</p>
+      </div>
+      <div class="rightDiv">
+        <div class="section3 cta-section col-lg-2 px-2 ml-5 display-flex justify-content-end" 
+        style="max-height: 450px;overflow-y:auto; position: relative;border-radius: 15px; background: url('img/blog/Buzzboost Blog Images/Buzzboost Blog Images/ctablog1.png') no-repeat center center; background-size: cover; padding-left: 10px; padding-right: 20px;margin-right: 10px;">
+        <div class="secion3main" style="max-height: 420px; overflow-y: hidden;">
+       <!-- Form Overlay -->
+       <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: rgba(0, 0, 0, 0.5); color: #fff;">
+           <form style="text-align: center; max-width: 80%; margin-top:80px;">
+               <h3 style="margin-bottom: 20px; font-size: 0.9rem;color: white;text-align: left;line-height: 17px;">Ready to amplify your brand's reach and impact in 2025?</h3>
+               <input type="text" name="name" placeholder="Your Name" 
+                      style="width: 100%; padding: 2px; margin-bottom: 10px; background: transparent; border-bottom: 1px solid white; color: white; outline: none; font-size: 0.7rem;border-top: none;border-left: none;border-right: none;">
+               <input type="email" name="email" placeholder="Your Email Address" 
+                      style="width: 100%; padding: 2px; margin-bottom: 10px; background: transparent; border-bottom: 1px solid white; color: white; outline: none; font-size: 0.7rem;border-top: none;border-left: none;border-right: none;">
+               <input type="text" name="phone" placeholder="Your Phone Number" 
+                      style="width: 100%; padding: 2px; margin-bottom: 10px; background: transparent; border-bottom: 1px solid white; color: white; outline: none; font-size: 0.7rem;border-top: none;border-left: none;border-right: none;">
+               <input type="text" name="message" placeholder="Message" 
+                      style="width: 100%; padding: 2px; margin-bottom: 10px; background: transparent; border-bottom: 1px solid white; color: white; outline: none; font-size: 0.7rem;border-top: none;border-left: none;border-right: none;">
+               
+               <button type="submit" 
+                       style="width: 100%; padding: 5px;margin-top: 10px; background: #426CC1; color: #fff; border: none; border-radius: 25px; cursor: pointer;">
+                   Submit
+               </button>
+           </form>
+       </div>
+   </div>
+</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section3" class="section">
+    <section class="container1 carousel-blogs" style="margin:30px auto;">
+        <h3 class="text-center" style="font-size: 40px;color: #426CC1;margin-bottom: 30px;margin-top: 60px;">Other Blogs</h3>
+        <div class="container" style="display: grid; grid-template-columns: repeat(3, 2fr); gap: 50px; padding: 50px;margin-left: 50px;margin-right: 50px;">
+            <!-- Card Template -->
+            <div class="class-template" style="background-color: #fff; border-radius: 8px; box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); overflow: hidden; display: flex; flex-direction: column; position: relative;height: 275px;width: 250px;">
+                <!-- Adjusted image -->
+                <img src="img\blog\Buzzboost Blog Images\Buzzboost Blog Images\Blog 2.png" alt="influencer-pointer" style="width: 100%; height: 150px; object-fit: contain; margin: 0;">
+            
+                <!-- Removed extra spacing -->
+                <div style="padding: 5px 5px; background-color: white; color: black; margin: 0;">
+                    <!-- Compact heading -->
+                    <h3 style="font-size: 1rem;letter-spacing: normal; margin: 0;font-weight: 600; color: black; line-height: 1.2; font-weight: 500;">
+                        <a href="blog-post2.html" style="text-decoration: none; color: inherit;">Top Influencer Marketing Trends To Watch In [2025]</a>
+                    </h3>
+                    <div style="display: flex;justify-content: space-between; align-items: center; padding-top: 16px; font-size: 0.75rem;margin-top: 2px;">
+                        <div>
+                            <span style="color: #888;margin-right: 15px;">Arham Jain</span>
+                        <span style="color: #888;">24/12/2024</span>
+                        </div>
+                        <div>
+                        <a href="blog-post2.html" style="text-decoration: none; font-size: 0.65rem; padding: 5px 8px; color: white; border-radius: 25px; background-color: #426CC1;width: 120px;">Read More</a>
+                    </div>
+                        <!-- <a href="blog-post.html" style="text-decoration: none; font-size: 0.75rem; padding: 3px 5px; color: white; border-radius: 25px; background-color: #426CC1;">Read More</a> -->
+                    </div>
+               
+                </div>
+            
+                <!-- Footer -->
+               
+            </div>
+            <!-- Card Template -->
+            <div class="class-template" style="background-color: #fff; border-radius: 8px; box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); overflow: hidden; display: flex; flex-direction: column; position: relative;height: 275px;width: 250px;">
+                <!-- Adjusted image -->
+                <img src="img\blog\Buzzboost Blog Images\Buzzboost Blog Images\Blog 2.png" alt="influencer-pointer" style="width: 100%; height: 150px; object-fit: contain; margin: 0;">
+            
+                <!-- Removed extra spacing -->
+                <div style="padding: 5px 5px; background-color: white; color: black; margin: 0;">
+                    <!-- Compact heading -->
+                    <h3 style="font-size: 1rem;letter-spacing: normal; margin: 0;font-weight: 600; color: black; line-height: 1.2; font-weight: 500;">
+                        <a href="blog-post2.html" style="text-decoration: none; color: inherit;">Top Influencer Marketing Trends To Watch In [2025]</a>
+                    </h3>
+                    <div style="display: flex;justify-content: space-between; align-items: center; padding-top: 16px; font-size: 0.75rem;margin-top: 2px;">
+                        <div>
+                            <span style="color: #888;margin-right: 15px;">Arham Jain</span>
+                        <span style="color: #888;">24/12/2024</span>
+                        </div>
+                        <div>
+                        <a href="blog-post2.html" style="text-decoration: none; font-size: 0.65rem; padding: 5px 8px; color: white; border-radius: 25px; background-color: #426CC1;width: 120px;">Read More</a>
+                    </div>
+                        <!-- <a href="blog-post.html" style="text-decoration: none; font-size: 0.75rem; padding: 3px 5px; color: white; border-radius: 25px; background-color: #426CC1;">Read More</a> -->
+                    </div>
+               
+                </div>
+            
+                <!-- Footer -->
+               
+            </div>
+             <!-- Card Template -->
+             <div class="class-template" style="background-color: #fff; border-radius: 8px; box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); overflow: hidden; display: flex; flex-direction: column; position: relative;height: 275px;width: 250px;">
+                <!-- Adjusted image -->
+                <img src="img\blog\Buzzboost Blog Images\Buzzboost Blog Images\Blog 2.png" alt="influencer-pointer" style="width: 100%; height: 150px; object-fit: contain; margin: 0;">
+            
+                <!-- Removed extra spacing -->
+                <div style="padding: 5px 5px; background-color: white; color: black; margin: 0;">
+                    <!-- Compact heading -->
+                    <h3 style="font-size: 1rem;letter-spacing: normal; margin: 0;font-weight: 600; color: black; line-height: 1.2; font-weight: 500;">
+                        <a href="blog-post2.html" style="text-decoration: none; color: inherit;">Top Influencer Marketing Trends To Watch In [2025]</a>
+                    </h3>
+                    <div style="display: flex;justify-content: space-between; align-items: center; padding-top: 16px; font-size: 0.75rem;margin-top: 2px;">
+                        <div>
+                            <span style="color: #888;margin-right: 15px;">Arham Jain</span>
+                        <span style="color: #888;">24/12/2024</span>
+                        </div>
+                        <div>
+                        <a href="blog-post2.html" style="text-decoration: none; font-size: 0.65rem; padding: 5px 8px; color: white; border-radius: 25px; background-color: #426CC1;width: 120px;">Read More</a>
+                    </div>
+                        <!-- <a href="blog-post.html" style="text-decoration: none; font-size: 0.75rem; padding: 3px 5px; color: white; border-radius: 25px; background-color: #426CC1;">Read More</a> -->
+                    </div>
+               
+                </div>
+            
+                <!-- Footer -->
+               
+            </div>
+           
+            <!-- Repeat the card structure 36 times for 6x6 grid -->
+        </div>
+    
+      </section>
+  </section>
+
+</body>
+</html>
+
+</body>
+</html>
