@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.section {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+#section1 {
+  background-color: #f1f1f1;
+}
+
+#section2 {
+  background-color: #e2e2e2;
+}
+
+.container {
+  display: flex;
+}
+
+.leftDiv {
+  width: 20%;
+  background-color: #c1c1c1;
+  padding: 20px;
+  /* Sticky positioning */
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  align-self: flex-start; /* Ensure it starts at the top */
+  height: fit-content;
+}
+
+.rightDiv {
+  width: 50%;
+  background-color: #d1d1d1;
+  padding: 20px;
+  height: 100rem;
+}
+
+.thirdDiv{
+    width: 20%;
+  background-color: #c1c1c1;
+  padding: 20px;
+  /* Sticky positioning */
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  align-self: flex-start; /* Ensure it starts at the top */
+  height: fit-content; /* Adjust height based on content */
+}
+
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sticky Div Example</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <section id="section1" class="section">
+    <h1>Section 1</h1>
+    <p>Content of section 1.</p>
+  </section>
+
+  <section id="section2" class="section">
+    <div class="container">
+      <div class="leftDiv">
+        <h2>Left Div</h2>
+        <p>This div will stay fixed while you are in Section 2.</p>
+      </div>
+      <div class="rightDiv">
+        <h2>Right Div</h2>
+        <p>Some content on the right side.</p>
+        <p>Scroll down to see the sticky effect.</p>
+        <!-- Add more content to make scrolling possible -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+        <p>... (Add more content as needed) ...</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="section3" class="section">
+    <h1>Section 3</h1>
+    <p>Content of section 3.</p>
+  </section>
+
+</body>
+</html>
+
+</body>
+</html>
