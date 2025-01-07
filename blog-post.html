@@ -661,6 +661,9 @@ height: 335rem;
 
 
 		</style>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
 		<meta name= "robots" content="index, follow">
 	</head>
 
@@ -1123,18 +1126,18 @@ height: 335rem;
                    
                    <!-- Form Overlay -->
                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: rgba(0, 0, 0, 0.5); color: #fff;">
-                       <form style="text-align: center; max-width: 80%; margin-top:80px;">
+                       <form style="text-align: center; max-width: 80%; margin-top:80px;" class="contact-form" id="contact-form" method="POST">
                            <h3 style="margin-bottom: 20px; font-size: 1.1rem;color: white;text-align: left;line-height: 21px;letter-spacing: normal;">Ready to amplify your brand's reach and impact in 2025?</h3>
-                           <input type="text" name="name" placeholder="Your Name" 
+                           <input type="text" name="name" placeholder="Your Name" id="name" 
                                   style="width: 100%; padding: 2px; margin-bottom: 10px; background: transparent; border-bottom: 1px solid white; color: white; outline: none; font-size: 0.9rem;border-top: none;border-left: none;border-right: none;">
-                           <input type="email" name="email" placeholder="Your Email Address" 
+                           <input type="email" name="email" placeholder="Your Email Address" id="email"
                                   style="width: 100%; padding: 2px; margin-bottom: 10px; background: transparent; border-bottom: 1px solid white; color: white; outline: none; font-size: 0.9rem;border-top: none;border-left: none;border-right: none;">
-                           <input type="text" name="phone" placeholder="Your Phone Number" 
+                           <input type="text" name="phone" placeholder="Your Phone Number" id="phone"
                                   style="width: 100%; padding: 2px; margin-bottom: 10px; background: transparent; border-bottom: 1px solid white; color: white; outline: none; font-size: 0.9rem;border-top: none;border-left: none;border-right: none;">
-                           <input type="text" name="message" placeholder="Message" 
+                           <input type="text" name="message" placeholder="Message" id="message"
                                   style="width: 100%; padding: 2px; margin-bottom: 10px; background: transparent; border-bottom: 1px solid white; color: white; outline: none; font-size: 0.9rem;border-top: none;border-left: none;border-right: none;">
                            
-                           <button type="submit" 
+                           <button type="submit" onclick="sendForm()"
                                    style="width: 100%; padding: 5px;margin-top: 10px; background: #426CC1; color: #fff; border: none; border-radius: 25px; cursor: pointer;">
                                Submit
                            </button>
@@ -1443,5 +1446,42 @@ height: 335rem;
 			});
 		</script>
             
+            	<!-- email -->
+	<script type="text/javascript">
+		// Initialize EmailJS
+		emailjs.init("RA-DC0AgaNqfzUKOG"); // Replace with your actual user ID
+	  
+		function sendForm() {
+			// Prevent default form submission
+			const form = document.getElementById('contact-form');
+			if (!form) {
+				console.error("Form element not found!");
+				return;
+			}
+	  
+			// Collect form data manually into a params object
+			const params = {
+				firstname: form.name.value,
+				// lastname: form.lastname.value,
+            
+        phone: form.phone.value,
+        subject:form.subject.value,
+        additional_details:form.message.value
+
+				// Add other form fields here
+				email: form.email.value,
+				// message: form.message.value,
+			};
+	  
+			// Use EmailJS to send the params object
+			emailjs.send("service_x1vdou9", "template_ghvxogn", params)
+			// console.log(params)
+				.then(function(response) {
+					console.log("Success:", response);
+					// Show success message
+					document.querySelector(".contact-form-success").classList.remove("d-none");
+				}, );
+		}
+	  </script>
 	</body>
 </html>
