@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.section {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+#section1 {
+  background-color: #f1f1f1;
+}
+
+#section2 {
+  background-color: #e2e2e2;
+}
+
+.container {
+  display: flex;
+}
+
+.leftDiv {
+  width: 20%;
+  background-color: #c1c1c1;
+  padding: 20px;
+  /* Sticky positioning */
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  align-self: flex-start; /* Ensure it starts at the top */
+  height: fit-content;
+}
+
+.innerDiv {
+  width: 60%;
+  background-color: #d1d1d1;
+  padding: 20px;
+  height: 100rem;
+}
+
+.rightDiv{
+    width: 20%;
+  background-color: #c1c1c1;
+  padding: 20px;
+  /* Sticky positioning */
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  align-self: flex-start; /* Ensure it starts at the top */
+  height: fit-content; /* Adjust height based on content */
+}
+
+@media (min-width:1300px) and (max-width:2700px){
+    .carousel-blogs{
+        max-width: 1100px !important;
+    }
+}
+
+
+.section-blog {
+  /* min-height: 100vh; */
+  /* padding: 20px; */
+}
+
+.container-blog {
+  display: flex;
+
+}
+
+.leftDiv {
+  width: 20%;
+  padding: 5px;
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  align-self: flex-start; /* Ensure it starts at the top */
+  height: 420px;
+}
+
+.innerDiv {
+  width: 60%;
+  padding: 5px;
+  height: 462rem;
+
+}
+
+.rightDiv{
+    width: 20%;
+  padding: 5px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  align-self: flex-start; /* Ensure it starts at the top */
+  height: 420px; /* Adjust height based on content */
+}
+
+@media (max-width: 992px) {
+  .container-blog {
+    flex-direction: column !important; /* Stack the divs vertically */
+  }
+
+  .innerDiv,
+  .rightDiv {
+    width: 100% !important; /* Full-width for all divs */
+
+  }
+
+  .leftDiv{
+    display: none !important;
+  }
+
+  .innerDiv{
+    /* height: auto !important; */
+  }
+  
+  .rightDiv {
+   height:430px !important ;
+   margin-top: 3850px !important;
+   width: 100% !important;
+  }
+
+  .rightDiv {
+    height: 430px !important; 
+  }
+  
+
+  h1, h2 {
+    font-size: 1.2rem; /* Adjust heading size for readability */
+  }
+
+  p {
+    font-size: 0.9rem; /* Adjust paragraph size */
+    line-height: 1.4; /* Improve text readability */
+    text-align: left !important;
+  }
+
+  .section-blog {
+    padding: 10px; /* Reduce section padding for smaller screens */
+  }
+
+  .section3{
+    margin-top: 50px !important;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sticky Div Example</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <section id="section1" class="section">
+    <section class="page-header page-header-modern page-header-lg border-0 my-0">
+        <div class="container d-flex justify-content-center align-items-center" style="height: 450px;">
+            <div class="row text-center">
+                <div class="col-md-12 align-self-center" style="color: white;">
+                    <p style="color: white; font-size: 48px; margin: 70px 0; line-height: normal; padding: 0 60px;">
+                        Why Hiring Influencers Can Be a Game-Changer for Your Agency and Business in [2025]
+                    </p>
+                    <div class="d-flex justify-content-center mt-5 mb-5">
+                        <span style="font-size: 1.5rem; margin-right: 30px;">
+                            <img src="img/BlogPage/user (1) 1.png" alt="user" height="20px" width="20px" style="margin-right: 4px;">Arham Jain
+                        </span>
+                        <span style="font-size: 1.5rem; margin-right: 30px;">
+                            <img src="img/BlogPage/calendar 1.png" alt="calendar" height="20px" width="20px" style="margin-right: 4px;">21/12/2024
+                        </span>
+                        <span style="font-size: 1.5rem;">
+                            <img src="img/BlogPage/wall-clock 1.png" alt="clock" height="20px" width="20px" style="margin-right: 4px;">7 min
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  </section>
+
+  <section id="section2" class="section">
+    <div class="container">
+      <div class="leftDiv">
+        <div class="blog-sidebar pt-4 pt-lg-0" style="display: flex;justify-content: flex-start;max-height: 450px;" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100" >
+            <aside class="sidebar">
+                <div class="px-2 mb-4 pt-4 pb-4 pl-3 pr-3 border-right" style="background-color: #e7e7e7;border-radius: 12px;">
+                    <h3 class="text-color-quaternary text-capitalize text-3-5 m-0 mb-3" style="text-decoration: underline;text-align: center;">Table Of Content</h3>
+                    <div style="max-height: 365px;overflow-y: auto;scrollbar-color: #007bff #e7e7e7; scrollbar-width: thin;padding-right: 10px;">
+                    <p class="mt-2 m-0" style="font-size: 0.85rem;"><a href="blog-post.html#introduction">1. Introduction</a> </p>
+                    <p class="mt-3 m-0" style="font-size: 0.85rem;"><a href="blog-post.html#power">2. The Power Of Influence In 2025</a></p>
+                    <p class="mt-3 m-0" style="font-size: 0.85rem;"><a href="blog-post.html#agencies">3. Why Agencies & Businesses Should Hire Influencers</a> </p>
+                    <ul style="list-style-type: disc; margin-left: 20px; padding-left: 0; font-size: 0.8rem;">
+                        <li><a href="blog-post.html#visibility">3.1 Increased Agency And Business Visibility And Reach</a></li>
+                        <li><a href="blog-post.html#authenticity">3.2 Authenticity And Credibility</a></li>
+                        <li><a href="blog-post.html#targeted">3.3 Targeted Marketing</a></li>
+                        <li><a href="blog-post.html#conversions">3.4 Increase In Sales And Customer Conversions</a></li>
+                    </ul>
+                    <p class="mt-3 m-0" style="font-size: 0.85rem;"><a href="blog-post.html#ignoring">4. The Cost of Ignoring Influencer Marketing in [2025]</a> </p>
+                    <p class="mt-3 m-0" style="font-size: 0.85rem;"><a href="blog-post.html#real">5. Real Life Success Stories</a></p>
+                    <ul style="list-style-type: disc; margin-left: 20px; padding-left: 0; font-size: 0.8rem;">
+                        <li><a href="blog-post.html#eg1">5.1 Example 1: Daniel Wellington (Watch Brand)</a></li>
+                        <li><a href="blog-post.html#eg2">5.2 Example 2: Chipotle (Fast Food Chain) </a></li>
+                    </ul>
+                    <p class="mt-3 m-0" style="font-size: 0.85rem;"><a href="blog-post.html#conclusion">6. Conclusion</a></p>
+                </div>
+            </div>
+              
+            </aside>
+        </div>
+      </div>
+      <div class="innerDiv">
+        <div class="mb-5 mb-lg-0" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100" style="margin-right: 10px;">
+            <div class="">
+                <article>
+                    <div class="border-0 custom-box-shadow-1">
+                        <div class="px-4 pb-4 z-index-1">
+
+                            <div class="p-0" id="introduction">
+                            
+                                <h2 class="text-left mb-3" style="padding-top: 2px;padding-bottom: 2px;font-size: 24px;font-weight: 600 !important;border-radius: 15px;">Introduction</h2>
+
+                                <p style="font-size: 0.95rem;color: #333;line-height: 23px;letter-spacing: normal;">In the fast-paced world of technology, where every agency and business, be it small, medium, or large enterprises, want quick growth for their respective companies, influencers are going to be one of the main sources for faster customer engagement with their business in 2025, which is why hiring the right set of influencers that can align well with your agency and business becomes crucial.
+
+                                    In this blog, we will explore why collaborating with the right influencers can be a game-changer for your agency and business in 2025.</p>
+
+                                    <h2 class="mt-3 mb-3" id="power" style="padding-top: 2px;padding-bottom: 2px;font-size: 24px;font-weight: 600 !important;border-radius: 15px;">The Power Of Influence In 2025</h2>
+                                    <p style="font-size: 0.95rem;color: #333;line-height: 23px;letter-spacing: normal;">As we move further in the upcoming years, consumers are becoming more judicious. Traditional advertising and marketing methods are no longer as effective as they were once used to be. Today, customers seek authenticity and connection with the brand and business over mere product quality and price. Influencers, with their loyal followings, offer <a href="agency.html" style="color: #426CC1;text-decoration: underline;">agencies</a> and <a href="business.html" style="color: #426CC1;text-decoration: underline;">businesses</a>  a unique way to engage with the right set of audiences on a personal level, making their recommendations much more impactful than a standard ad.</p>
+                                    <div class="text-center">
+                                    <img class="influencer-market" src="img/BlogPage/Blog Image 1.png" alt="Influencer" width="580px" height="280px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+
+
+ <!-- Section zig-zag section2 -->
+     <div class="container" style="margin-top: 48px;" >
+         <h2 class="text-left mt-3 mb-3" id="agencies" style="padding-top: 2px;padding-bottom: 2px;font-size: 24px;font-weight: 600 !important;border-radius: 15px;">Why Agencies & Businesses Should Hire Influencers</h2>
+     
+         <!-- 1st point -->
+         <div class="row align-items-center justify-content-center mt-5">
+             <div class="col-lg-5 text-center text-lg-start order-2 order-lg-1 mt-2 border-left" style="padding-right: 0px; border-left: 3px solid #FFBF78 !important;">
+                
+                 <h3 id="authenticity" class="pl-2 mt-2 pt-2" style="font-size: 24px;text-decoration: underline;">1. Authenticity & Credibility</h3>
+                 <!-- <p class="" style="font-size: 28px;color: #426CC1;">Powerhouse of Engagement And Reach!</p> -->
+                 <p class="pl-2" style="font-size: 0.95rem;border-left: #000 !important;color: #333;line-height: 23px;letter-spacing: normal;">
+                    
+                     Today, in a world where almost 70% of people use social media, consumers are more likely to trust a product recommended by an influencer they follow rather than from a brand pushing a traditional advertisement. Influencers have already created a sense of authenticity and credibility with their followers. 
+                     
+                     When they speak about your product or service, it comes across as genuine rather than a forced sales pitch to their followers, which arouses the interest of the consumers to try that particular product or service, which helps boost your brand’s credibility and reputation among consumers and ultimately increases your revenue.</p>
+            
+            </div>
+             <div class="col-lg-5 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-2">
+                 <div class="p-absolute left-0"></div>
+                 <div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
+                     <img class="business-visiblity" width="250" height="350" src="img/BlogPage/Increased Agency & Business Visibility and Reach (2).png" alt="Authenticity and Credibility" />
+                 </div>
+             </div>
+         </div>
+         
+     
+         <!-- 2nd point -->
+         <div class="row align-items-center justify-content-center mt-5">
+             <div class="col-lg-6 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-1">
+                 <div class="p-absolute right-0"></div>
+                 <div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
+                     <img class="increased-visiblity" width="280" height="380" src="img/BlogPage/Blog Image 2.png" alt="Increase visibility" />
+                 </div>
+             </div>
+             <div class="col-lg-6 text-center text-lg-start order-2 order-lg-2 mt-2 border-left" style="border-left: 3px solid #FFBF78 !important;">
+                 <h3 id="visibility" class="pl-2 mt-2 pt-2" style="font-size: 24px;text-decoration: underline;">2. Increased Agency & Business Visibility and Reach</h3>
+                 
+                 <p class="pl-2" style="font-size: 0.95rem;color: #333;line-height: 23px;letter-spacing: normal; ">
+
+                     When any agency and business collaborate with an influencer, they already started tapping into their established audience. Influencers have already built trust with their followers, and their engagement and convincing power with their audience carry more weight than any other traditional ads or marketing tactics run by different <a href="agency.html" style="color: #426CC1;text-decoration: underline;">agencies</a> and <a href="business.html" style="color: #426CC1;text-decoration: underline;">businesses</a>. 
+                     
+                     This increased engagement exposes agencies and businesses to new and highly engaged consumers from niche segment of demographics that can very much align with their services and products, thus helping them to expand their brand awareness and potential business market.</p>
+             </div>
+         </div>
+     
+         <!-- 3rd point -->
+         <div class="row align-items-center justify-content-center mt-5" style="margin-bottom: 40px;">
+             <div class="col-lg-6 text-center text-lg-start order-2 order-lg-1 mt-2 border-left" style="padding-left: 0px;border-left: 3px solid #FFBF78 !important;">
+                 <h3 id="conversions" class="pl-2 mt-2 pt-2" style="font-size: 24px;text-decoration: underline;padding-left: 12px;">3. Increase in Sales and Customer Conversions</h3>
+                 <p class="pl-2" style="font-size: 0.95rem;padding-left: 12px;color: #333;line-height: 23px;letter-spacing: normal;">
+                     Influencers don’t just help with your brand awareness—they drive actionable actions. Influencers have the power to convince and convert their audience into paying customers, through affiliate links, discount codes, or direct calls to action. 
+                     
+                     This makes influencers an excellent tool for businesses and agencies looking to increase their sales volume and revenue.</p>
+             </div>
+             <div class="col-lg-6 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-2">
+                 <div class="p-absolute left-0"></div>
+                 <div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
+                     <img class="conversion-image" width="280" height="330" src="img/BlogPage/Blog Image 5.png" alt="Increase in conversion" />
+                 </div>
+             </div>
+         </div>
+         
+     
+         <!-- 4th point -->
+         <div class="row align-items-center justify-content-center mt-5">
+             <div class="col-lg-6 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-1">
+                 <div class="p-absolute right-0"></div>
+                 <div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
+                     <img class="target-marketing" width="280" height="380" src="img/BlogPage/Blog Image 4.png" alt="Targeted Marketing" />
+                 </div>
+             </div>
+             <div class="col-lg-6 text-center text-lg-start order-2 order-lg-2 mt-2 border-left" style="border-left: 3px solid #FFBF78 !important;">
+                
+                 <h3 id="targeted" class="pl-2 mt-2 pt-2" style="font-size: 24px;text-decoration: underline;">4. Targeted Marketing</h3>
+                 
+                 <p class="pl-2" style="font-size: 0.95rem;color: #333;line-height: 23px;letter-spacing: normal;">
+                     One of the key advantages of hiring the influencers in [2025] is their ability to target specific audiences from different demographics. 
+                     
+                     Unlike mass advertising, influencers can help your <a href="agency.html" style="color: #426CC1;text-decoration: underline;">agencies</a>  and <a href="business.html" style="color: #426CC1;text-decoration: underline;">businesses</a>  to connect with a highly relevant and niche audience that can very much align with your product and service, which ensures and helps you to reach and market your product and services to the right set of people, thereby helping your agency and business to grow at a rapid fast speed. </p>
+             </div>
+         </div>
+     </div>
+
+ <!-- section small cta type -->
+ <section class="cta-section styled-section" style=" margin: 45px auto; background: linear-gradient(180deg, #1F335C 6%, #426CC2 100%); background-size: cover; background-repeat: no-repeat;height: 238px;">
+     <div class="container">
+         <div class="row">
+             <div
+                 class="col-xl-12 col-lg-12 col-md-12 col-sm-12 order-xl-1 order-lg-1 order-2 order-md-2 d-flex flex-column justify-content-center">
+                 <div class="row text-md-center text-lg-start text-xl-start text-center">
+                    <div class="d-flex">
+                        <div class="flex-column col-7">
+                     <div>
+                         <h3 class="text-white" style="line-height: 1.5;font-size: 18px !important;">Ready to take your agency and business to the next level? Talk with our experts today and discover the power of influencer partnerships for your agency or business!</h3>
+                     </div>
+                     
+                     <div class="industry-button text-left">
+                         <a href="contact.html"
+                             class="btn mt-2 py-2 px-xl-5 box-shadow-6 border-0 text-transform-none ms-2 d-xl-inline-block custom-btn" style="font-size: large;border-radius: 25px;font-weight: 500;width: 171px;">
+                             Let's Talk
+                     </a>
+                     </div>
+                    </div>
+                     <div class="text-right col-5" style="text-align: right !important;">
+                        <img class="cta-image" src="img/BlogPage/CTA.png" alt="Influencer" width="200px" height="200px" style="margin-bottom: 25px !important;margin-top: -25px;">
+                    </div>
+                </div>
+                 </div>
+             </div>
+             
+         </div>
+     </div>
+ </section>
+
+                      <!-- section-content -->
+                      <section class="container text-center" style="margin-top: 28px;">
+                        <h2 class="text-left" id="ignoring" style="padding-top: 2px;padding-bottom: 2px;font-size: 28px;font-weight: 600 !important;border-radius: 15px;text-align: start;">The Cost of Ignoring Influencer Marketing in [2025]</h2>
+         
+                         <p style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;letter-spacing: normal;">We talked and looked at some of the advantages agencies and businesses can have when they hire the right influencers for their agencies and businesses; now let's deep dive and look at the other side of it, i.e., what effect does an influencer have on agencies and businesses that ignore influencer marketing?</p>
+                         
+                         <img class="disadvantage-image" src="img/BlogPage/Blog Image 6.png" alt="Influencer" style="border-radius: 15px;width: 650px;height: 420px;">
+                         <p style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;letter-spacing: normal;">Agencies and businesses that ignore influencer marketing may obviously find themselves at a disadvantage. In today’s world, where technology is in the hands of the consumers and consumers are overpowered with the ads, those agencies and businesses that miss or are too slow to adopt influencer marketing may find their business falling behind their competitors. 
+         
+                           <br><br>  In the upcoming years, relying solely on the traditional marketing methods for organic reach may not be enough. Agencies and businesses that ignore influencer collaborations may miss out on the valuable opportunities, engagement, and the trust that influencers offer to connect with the new customers and may soon struggle to grow their brand and to make themselves stand out from the oversaturated market.</p>
+         
+         
+         
+                         <h2 class="text-left mt-3 mb-3" id="real" style="padding-top: 2px;padding-bottom: 2px;font-size: 24px;font-weight: 600 !important;border-radius: 15px;text-align: start;">Real Life Success Stories</h2>
+         
+         
+                         <p style="font-size: 0.95rem;text-align: left !important;color: #333;line-height: 23px;letter-spacing: normal;">To understand the true potential of influencer marketing, let’s look at a few examples of businesses that saw a significant growth in their revenue after collaborating with influencers:</p>
+                        
+                         <p id="eg1" style="font-size: 0.95rem;text-align: left !important;color: #333;line-height: 23px;letter-spacing: normal;"><img src="img/BlogPage/Arrow.png" alt="influencer-pointer" height="30px" width="70px" style="margin-right: 2px;"><strong> Example 1:</strong> Daniel Wellington (Watch Brand)
+         
+                             <br><br><img src="img/BlogPage/Arrow.png" alt="influencer-pointer" height="30px" width="70px" style="margin-right: 2px;"><strong>Strategy:</strong> Daniel Wellington a popular watch brand, partnered with influencers from Instagram, including <span><a href="agency.html#micro" style="color: #426CC1 !important;text-decoration: underline;"> micro influencers</a></span>, to reach and showcase it;s company products to right set of people.
+                             
+                             <br><br><img src="img/BlogPage/Arrow.png" alt="influencer-pointer" height="30px" width="70px" style="margin-right: 2px;"><strong>Result:</strong> The brand saw an increase in its revenue to $230 million within just 5 years. Their influencer collaboration strategy worked wonders for them and they were able to establish a strong presence in the fashion accessories market.</p>
+         
+                             <img class="real-life-story-image" src="img/BlogPage/Blog Image 7.png" alt="influencer-pointer" style="border-radius: 15px;width: 680px;height: 210px;margin-bottom: 40px;">
+         
+                         <p id="eg2" style="font-size: 0.95rem;text-align: left !important;margin-bottom: 40px;color: #333;line-height: 23px;letter-spacing: normal;"><img src="img/BlogPage/Arrow.png" alt="influencer-pointer" height="30px" width="70px" style="margin-right: 2px;"><strong>Example 2:</strong> Chipotle (Fast Food Chain)
+         
+                            <br><br><img src="img/BlogPage/Arrow.png" alt="influencer-pointer" height="30px" width="70px" style="margin-right: 2px;"><strong>Strategy:</strong>Chipotle brand collaborated with many TikTok influencers and created a viral challenge, the "Lid Flip Challenge.
+                             
+                             <br><br><img src="img/BlogPage/Arrow.png" alt="influencer-pointer" height="30px" width="70px" style="margin-right: 2px;"><strong>Result:</strong> The campaign saw record-breaking digital sales for the brand, with the brand reporting approximately 90% increase in their overall digital revenue in a quarter.</p>
+                         
+                         <img class="real-life-story-image" src="img/BlogPage/Blog Image 8.jpg" alt="influencer-pointer" style="border-radius: 15px;width: 500px;height: 300px;margin-bottom: 40px;">
+                         <div>
+                             <h2 class="mt-3 mb-3" id="conclusion" style="padding-top: 2px;padding-bottom: 2px;font-size: 24px;font-weight: 600 !important;border-radius: 15px;text-align: start;">Conclusion</h2>
+                             <p style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;letter-spacing: normal;">
+                                 There we have it; in this blog we have discussed the various advantages agencies and businesses can have when they opt for influencer marketing and the disadvantages when they don't opt. Also, as we look ahead in the upcoming years, influencer marketing will continue to grow and will act as a key component for any business and agency success. Hiring the right set of influencers can not only build trust, drive sales, and increase revenue but also significantly increase your brand awareness and reach the right set of consumers. 
+                                 
+                                 Don't stay behind; if you are still on the fence about influencer marketing, now is the time to take action and react to it. Don't let your competitors grow and take the upper hand on you. Leverage the power of influencer marketing and see the game-changing results for your agencies and businesses.</p>
+         
+                         </div>
+                        </section>
+                    </div>
+            </div>
+        <h2>Right Div</h2>
+        <p>Some content on the right side.</p>
+        <p>Scroll down to see the sticky effect.</p>
+        <!-- Add more content to make scrolling possible -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+        <p>... (Add more content as needed) ...</p>
+      </div>
+      <div class="rightDiv">
+        <div class="px-2 ml-5 display-flex justify-content-end" 
+        style="max-height: 450px;overflow-y:auto; position: relative;border-radius: 15px; background: url('img/blog/Buzzboost Blog Images/Buzzboost Blog Images/ctablog1.png') no-repeat center center; background-size: cover; padding-left: 10px; padding-right: 20px;margin-right: 10px;">
+        <div class="secion3main" style="max-height: 420px; overflow-y: hidden;">
+       <!-- Form Overlay -->
+       <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: rgba(0, 0, 0, 0.5); color: #fff;">
+           <form style="text-align: center; max-width: 80%; margin-top:80px;">
+               <h3 style="margin-bottom: 20px; font-size: 0.9rem;color: white;text-align: left;line-height: 17px;">Ready to amplify your brand's reach and impact in 2025?</h3>
+               <input type="text" name="name" placeholder="Your Name" 
+                      style="width: 100%; padding: 2px; margin-bottom: 10px; background: transparent; border-bottom: 1px solid white; color: white; outline: none; font-size: 0.7rem;border-top: none;border-left: none;border-right: none;">
+               <input type="email" name="email" placeholder="Your Email Address" 
+                      style="width: 100%; padding: 2px; margin-bottom: 10px; background: transparent; border-bottom: 1px solid white; color: white; outline: none; font-size: 0.7rem;border-top: none;border-left: none;border-right: none;">
+               <input type="text" name="phone" placeholder="Your Phone Number" 
+                      style="width: 100%; padding: 2px; margin-bottom: 10px; background: transparent; border-bottom: 1px solid white; color: white; outline: none; font-size: 0.7rem;border-top: none;border-left: none;border-right: none;">
+               <input type="text" name="message" placeholder="Message" 
+                      style="width: 100%; padding: 2px; margin-bottom: 10px; background: transparent; border-bottom: 1px solid white; color: white; outline: none; font-size: 0.7rem;border-top: none;border-left: none;border-right: none;">
+               
+               <button type="submit" 
+                       style="width: 100%; padding: 5px;margin-top: 10px; background: #426CC1; color: #fff; border: none; border-radius: 25px; cursor: pointer;">
+                   Submit
+               </button>
+           </form>
+       </div>
+   </div>
+</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section3" class="section">
+    <section class="container1 carousel-blogs" style="margin:30px auto;">
+        <h3 class="text-center" style="font-size: 40px;color: #426CC1;margin-bottom: 30px;margin-top: 60px;">Other Blogs</h3>
+        <div class="container" style="display: grid; grid-template-columns: repeat(3, 2fr); gap: 50px; padding: 50px;margin-left: 50px;margin-right: 50px;">
+            <!-- Card Template -->
+            <div class="class-template" style="background-color: #fff; border-radius: 8px; box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); overflow: hidden; display: flex; flex-direction: column; position: relative;height: 275px;width: 250px;">
+                <!-- Adjusted image -->
+                <img src="img\blog\Buzzboost Blog Images\Buzzboost Blog Images\Blog 2.png" alt="influencer-pointer" style="width: 100%; height: 150px; object-fit: contain; margin: 0;">
+            
+                <!-- Removed extra spacing -->
+                <div style="padding: 5px 5px; background-color: white; color: black; margin: 0;">
+                    <!-- Compact heading -->
+                    <h3 style="font-size: 1rem;letter-spacing: normal; margin: 0;font-weight: 600; color: black; line-height: 1.2; font-weight: 500;">
+                        <a href="blog-post2.html" style="text-decoration: none; color: inherit;">Top Influencer Marketing Trends To Watch In [2025]</a>
+                    </h3>
+                    <div style="display: flex;justify-content: space-between; align-items: center; padding-top: 16px; font-size: 0.75rem;margin-top: 2px;">
+                        <div>
+                            <span style="color: #888;margin-right: 15px;">Arham Jain</span>
+                        <span style="color: #888;">24/12/2024</span>
+                        </div>
+                        <div>
+                        <a href="blog-post2.html" style="text-decoration: none; font-size: 0.65rem; padding: 5px 8px; color: white; border-radius: 25px; background-color: #426CC1;width: 120px;">Read More</a>
+                    </div>
+                        <!-- <a href="blog-post.html" style="text-decoration: none; font-size: 0.75rem; padding: 3px 5px; color: white; border-radius: 25px; background-color: #426CC1;">Read More</a> -->
+                    </div>
+               
+                </div>
+            
+                <!-- Footer -->
+               
+            </div>
+            <!-- Card Template -->
+            <div class="class-template" style="background-color: #fff; border-radius: 8px; box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); overflow: hidden; display: flex; flex-direction: column; position: relative;height: 275px;width: 250px;">
+                <!-- Adjusted image -->
+                <img src="img\blog\Buzzboost Blog Images\Buzzboost Blog Images\Blog 2.png" alt="influencer-pointer" style="width: 100%; height: 150px; object-fit: contain; margin: 0;">
+            
+                <!-- Removed extra spacing -->
+                <div style="padding: 5px 5px; background-color: white; color: black; margin: 0;">
+                    <!-- Compact heading -->
+                    <h3 style="font-size: 1rem;letter-spacing: normal; margin: 0;font-weight: 600; color: black; line-height: 1.2; font-weight: 500;">
+                        <a href="blog-post2.html" style="text-decoration: none; color: inherit;">Top Influencer Marketing Trends To Watch In [2025]</a>
+                    </h3>
+                    <div style="display: flex;justify-content: space-between; align-items: center; padding-top: 16px; font-size: 0.75rem;margin-top: 2px;">
+                        <div>
+                            <span style="color: #888;margin-right: 15px;">Arham Jain</span>
+                        <span style="color: #888;">24/12/2024</span>
+                        </div>
+                        <div>
+                        <a href="blog-post2.html" style="text-decoration: none; font-size: 0.65rem; padding: 5px 8px; color: white; border-radius: 25px; background-color: #426CC1;width: 120px;">Read More</a>
+                    </div>
+                        <!-- <a href="blog-post.html" style="text-decoration: none; font-size: 0.75rem; padding: 3px 5px; color: white; border-radius: 25px; background-color: #426CC1;">Read More</a> -->
+                    </div>
+               
+                </div>
+            
+                <!-- Footer -->
+               
+            </div>
+             <!-- Card Template -->
+             <div class="class-template" style="background-color: #fff; border-radius: 8px; box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); overflow: hidden; display: flex; flex-direction: column; position: relative;height: 275px;width: 250px;">
+                <!-- Adjusted image -->
+                <img src="img\blog\Buzzboost Blog Images\Buzzboost Blog Images\Blog 2.png" alt="influencer-pointer" style="width: 100%; height: 150px; object-fit: contain; margin: 0;">
+            
+                <!-- Removed extra spacing -->
+                <div style="padding: 5px 5px; background-color: white; color: black; margin: 0;">
+                    <!-- Compact heading -->
+                    <h3 style="font-size: 1rem;letter-spacing: normal; margin: 0;font-weight: 600; color: black; line-height: 1.2; font-weight: 500;">
+                        <a href="blog-post2.html" style="text-decoration: none; color: inherit;">Top Influencer Marketing Trends To Watch In [2025]</a>
+                    </h3>
+                    <div style="display: flex;justify-content: space-between; align-items: center; padding-top: 16px; font-size: 0.75rem;margin-top: 2px;">
+                        <div>
+                            <span style="color: #888;margin-right: 15px;">Arham Jain</span>
+                        <span style="color: #888;">24/12/2024</span>
+                        </div>
+                        <div>
+                        <a href="blog-post2.html" style="text-decoration: none; font-size: 0.65rem; padding: 5px 8px; color: white; border-radius: 25px; background-color: #426CC1;width: 120px;">Read More</a>
+                    </div>
+                        <!-- <a href="blog-post.html" style="text-decoration: none; font-size: 0.75rem; padding: 3px 5px; color: white; border-radius: 25px; background-color: #426CC1;">Read More</a> -->
+                    </div>
+               
+                </div>
+            
+                <!-- Footer -->
+               
+            </div>
+           
+            <!-- Repeat the card structure 36 times for 6x6 grid -->
+        </div>
+    
+      </section>
+  </section>
+
+</body>
+</html>
+
+</body>
+</html>
