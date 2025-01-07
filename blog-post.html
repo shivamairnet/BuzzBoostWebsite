@@ -491,7 +491,51 @@
  
 }
 
-@media (min-width: 769px) and(max-width:992px) {
+@media (min-width:1001px) and (max-width: 1299px) {
+  .container-blog {
+    flex-direction: column !important; /* Stack the divs vertically */
+  }
+
+  .innerDiv,
+  .rightDiv {
+    width: 100% !important; /* Full-width for all divs */
+
+  }
+
+  .leftDiv{
+    display: none !important;
+  }
+
+  
+  
+  .rightDiv {
+   height:430px !important ;
+   width: 60% !important;
+   margin: -300px auto 0 auto !important;
+  }
+
+ 
+
+  h1, h2 {
+    font-size: 1.2rem; /* Adjust heading size for readability */
+  }
+
+  p {
+    font-size: 0.9rem; /* Adjust paragraph size */
+    line-height: 1.4; /* Improve text readability */
+    text-align: left !important;
+  }
+
+  .section-blog {
+    padding: 10px; /* Reduce section padding for smaller screens */
+  }
+
+  .section3{
+    margin-top: 50px !important;
+  }
+}
+
+@media (min-width: 769px) and(max-width:1000px) {
     .rightDiv {
    height:430px !important ;
    margin-top: 950px !important;
@@ -662,7 +706,7 @@ height: 335rem;
 @media (min-width: 769px) and (max-width: 1024px) {
   .carousel-blogs .class-template {
     margin: 0 auto !important;
-    width: 100% !important;
+    width: 120% !important;
   }
 }
 		</style>
