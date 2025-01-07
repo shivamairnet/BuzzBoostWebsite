@@ -201,7 +201,7 @@
     margin: 20px auto !important; /* Adjust margins */
     padding: 20px !important; /* Add inner padding */
     background-color: #426CC1 !important; /* Ensure consistent background */
-    height: 650px !important;
+    height: 310px !important;
   }
 
   .cta-section h3 {
@@ -213,9 +213,8 @@
   }
 
   .industry-button a {
-
     font-size: 14px !important; /* Reduce button font size */
-    padding: 10px 80px !important; /* Adjust button padding */
+    padding: 10px 20px !important; /* Adjust button padding */
     display: inline-block !important; /* Ensure proper alignment */
     text-align: center !important; /* Center the text inside the button */
     margin-top: 10px !important;
@@ -234,10 +233,9 @@
   }
 
   .cta-section img {
-
     width: 100% !important; /* Adjust image size */
     height: auto !important; /* Maintain aspect ratio */
-    margin: 20px 0 !important; /* Add spacing around the image */
+    margin: 0px 0 !important; /* Add spacing around the image */
   }
 }
 
@@ -387,62 +385,6 @@
     overflow: hidden; /* Prevent scrolling on the entire page */
 }
 
-/* Section 1 (Fixed Sidebar) */
-.section1 {
-    flex: 0 0 20%; /* Adjust width as needed */
-    height: 100vh;
-    position: sticky;
-    top: 0;
-    overflow: hidden; /* Prevent any scrolling within Section 1 */
-    /* background-color: #f5f5f5;  */
-   
-}
-
-/* Section 2 (Scrollable Content) */
-.section2 {
-    flex: 1;
-    height: 85vh;
-    overflow-y: auto; /* Enable vertical scrolling for this section */
-    background-color: #ffffff; /* Example background color */
-}
-
-/* Section 3 (Fixed CTA Section) */
-.section3 {
-    flex: 0 0 20%; /* Adjust width as needed */
-    height: 100vh;
-    position: sticky;
-    top: 0;
-    /* overflow: hidden; */
-    /* background-color: #eaeaea;  */
-    /* touch-action: none; 
-    overscroll-behavior: none; */
-}
-
-.scrollable-content::-webkit-scrollbar {
-    width: 5px; /* Adjust scrollbar width */
-    height: 5px !important; /* Adjust scrollbar height */
-}
-
-.section2::-webkit-scrollbar {
-    display: none; /* Hides the scrollbar for webkit browsers (Chrome, Safari) */
-}
-
-.section2 {
-    -ms-overflow-style: none;  /* Hides scrollbar for Internet Explorer and Edge */
-    scrollbar-width: none;     /* Hides scrollbar for Firefox */
-}
-
-.section1::-webkit-scrollbar-thumb {
-    background-color: #426CC1;  /* Color of the thumb (the part you drag) */
-   
-}
-
-.section1::-webkit-scrollbar {
-    width: 8px;  /* Width of the scrollbar */
-    background-color: #426CC1; /* Background color of the scrollbar */
-}
-
-
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
@@ -455,8 +397,8 @@
         margin-top: -25px !important;
     }
 
-    .page-header p {
-        font-size: 24px !important; /* Reduce font size for readability */
+    .page-header h2 {
+        font-size: 28px !important; /* Reduce font size for readability */
         margin: 40px 0 !important;
         padding: 0 10px !important; /* Reduce padding for smaller screens */
     }
@@ -487,47 +429,218 @@
         max-width: 1000px;
     }
 }
-@media (max-width: 1024px) {
-    .carousel-blogs .container1 {
-        grid-template-columns: repeat(3, 1fr) !important;
-        gap: 20px !important;
-        padding: 10px !important;
-        margin: 0 auto !important; /* Center container on tablet */
-        width: 90% !important; /* Ensure the container doesn't stretch too wide */
-    }
 
-    .carousel-blogs .class-template {
-        margin: 0 auto !important; /* Center the cards */
-        width: 100% !important; /* Ensure full width */
-    }
-}
 
 
 @media (max-width: 768px) {
-    .carousel-blogs .container1 {
-        grid-template-columns: 1fr !important;
-        display: flex;
-        flex-direction: column;
-        gap: 15px !important;
-        padding: 0 !important; /* Removed padding from container */
-        margin: 0 auto !important; /* Ensure auto margin for centering */
-        width: 90% !important; /* Adjust width to ensure it doesn't overflow */
-        justify-content: center !important;
-        align-items: center !important; /* Center the cards horizontally */
-    }
+  .carousel-blogs {
+    margin: 15px auto !important;
+  }
 
-    .carousel-blogs h3 {
-        font-size: 28px;
-        text-align: center; /* Ensure the heading is centered */
-    }
+  .carousel-blogs h3 {
+    font-size: 30px !important; /* Adjust the font size for mobile */
+    margin: 0 !important;
+    padding: 0 !important;
+  }
 
-    .carousel-blogs .class-template {
-        margin: 0 auto !important; /* Center cards inside flex */
-        width: 100% !important; /* Ensure full width */
-    }
+  .carousel-blogs div {
+    display: grid !important;
+    grid-template-columns: 1fr !important; /* Single column layout */
+    margin: 0 !important;
+
+  }
+
+  .class-template {
+    width: 100% !important; /* Make the cards take full width */
+    height:315px !important
+  }
+
+  .class-template img {
+    height: auto !important; /* Maintain aspect ratio for images */
+    object-fit: contain !important;
+  }
+
+  .class-template div {
+    /* padding: 10px !important; */
+    margin: 0 !important;
+  }
+
+  .class-template a {
+    font-size: 0.85rem !important; /* Adjust button font size */
+    /* padding: 6px 10px !important; */
+    width: auto !important; /* Allow buttons to fit content */
+  }
+
+  .class-template h3{
+    font-size: 1.1rem !important;
+    
+  }
+  .class-template div {
+
+    font-size: 0.85rem !important; /* Slightly larger font for mobile */
+    text-align: center !important; /* Center-align all text */
+  }
+
+  .class-template div span {
+    display: block !important; /* Stack author and date vertically */
+    color: #666 !important; /* Slightly darker color for better visibility */
+    margin:0 !important;
+
+  }
+ 
 }
 
-       
+@media (min-width: 769px) and(max-width:992px) {
+    .rightDiv {
+   height:430px !important ;
+   margin-top: 950px !important;
+   width: 100% !important;
+  }
+
+  .container-blog {
+    flex-direction: column !important; /* Stack the divs vertically */
+  }
+
+  .innerDiv,
+  .rightDiv {
+    width: 100% !important; /* Full-width for all divs */
+
+  }
+
+  .leftDiv{
+    display: none !important;
+  }
+}
+
+
+   
+.section-blog {
+  /* min-height: 100vh; */
+  /* padding: 20px; */
+}
+
+.container-blog {
+  display: flex;
+
+}
+
+.leftDiv {
+  width: 20%;
+  padding: 5px;
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  align-self: flex-start; /* Ensure it starts at the top */
+  height: 420px;
+}
+
+.innerDiv {
+  width: 60%;
+  padding: 5px;
+  height: 348rem;
+
+}
+
+.rightDiv{
+    width: 20%;
+  padding: 5px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  align-self: flex-start; /* Ensure it starts at the top */
+  height: 420px; /* Adjust height based on content */
+}
+
+
+
+
+@media (max-width: 768px) {
+  .container-blog {
+    flex-direction: column !important; /* Stack the divs vertically */
+  }
+
+  .innerDiv,
+  .rightDiv {
+    width: 100% !important; /* Full-width for all divs */
+
+  }
+
+  .leftDiv{
+    display: none !important;
+  }
+
+  
+  
+  .rightDiv {
+   height:430px !important ;
+   margin-top: 3250px !important;
+   width: 100% !important;
+  }
+
+ 
+
+  h1, h2 {
+    font-size: 1.2rem; /* Adjust heading size for readability */
+  }
+
+  p {
+    font-size: 0.9rem; /* Adjust paragraph size */
+    line-height: 1.4; /* Improve text readability */
+    text-align: left !important;
+  }
+
+  .section-blog {
+    padding: 10px; /* Reduce section padding for smaller screens */
+  }
+
+  .section3{
+    margin-top: 50px !important;
+  }
+}
+
+@media (min-width:769px) and (max-width: 992px) {
+  .container-blog {
+    flex-direction: column !important; /* Stack the divs vertically */
+  }
+
+  .innerDiv,
+  .rightDiv {
+    width: 100% !important; /* Full-width for all divs */
+
+  }
+
+  .leftDiv{
+    display: none !important;
+  }
+
+  
+  
+  .rightDiv {
+   height:430px !important ;
+   margin-top: 950px !important;
+   width: 100% !important;
+  }
+
+ 
+
+  h1, h2 {
+    font-size: 1.2rem; /* Adjust heading size for readability */
+  }
+
+  p {
+    font-size: 0.9rem; /* Adjust paragraph size */
+    line-height: 1.4; /* Improve text readability */
+    text-align: left !important;
+  }
+
+  .section-blog {
+    padding: 10px; /* Reduce section padding for smaller screens */
+  }
+
+  .section3{
+    margin-top: 50px !important;
+  }
+}
 
 
 
@@ -742,77 +855,80 @@
 }
 </script>
 
-<section class="page-header page-header-modern page-header-lg border-0 my-0">
-    <div class="container d-flex justify-content-center align-items-center" style="height: 450px;">
-        <div class="row text-center">
-            <div class="col-md-12 align-self-center" style="color: white;">
-                <p style="color: white; font-size: 48px; margin: 70px 0; line-height: normal; padding: 0 60px;">
-                    Why Hiring Influencers Can Be a Game-Changer for Your Agency and Business in [2025]
-                </p>
-                <div class="d-flex justify-content-center mt-5 mb-5">
-                    <span style="font-size: 1.5rem; margin-right: 30px;">
-                        <img src="img/BlogPage/user (1) 1.png" alt="user" height="20px" width="20px" style="margin-right: 4px;">Arham Jain
-                    </span>
-                    <span style="font-size: 1.5rem; margin-right: 30px;">
-                        <img src="img/BlogPage/calendar 1.png" alt="calendar" height="20px" width="20px" style="margin-right: 4px;">21/12/2024
-                    </span>
-                    <span style="font-size: 1.5rem;">
-                        <img src="img/BlogPage/wall-clock 1.png" alt="clock" height="20px" width="20px" style="margin-right: 4px;">7 min
-                    </span>
+
+<section id="section1" class="section-blog">
+    <section class="page-header page-header-modern page-header-lg border-0 my-0">
+        <div class="container d-flex justify-content-center align-items-center" style="height: 450px;">
+            <div class="row text-center">
+                <div class="col-md-12 align-self-center" style="color: white;">
+                    <h2 style="color: white; font-size: 48px; margin: 70px 0; line-height: normal; padding: 0 60px;">
+                        Why Hiring Influencers Can Be a Game-Changer for Your Agency and Business in [2025]
+                    </h2>
+                    <div class="d-flex justify-content-center mt-5 mb-5">
+                        <span style="font-size: 1.5rem; margin-right: 30px;">
+                            <img src="img/BlogPage/user (1) 1.png" alt="user" height="20px" width="20px" style="margin-right: 4px;">Arham Jain
+                        </span>
+                        <span style="font-size: 1.5rem; margin-right: 30px;">
+                            <img src="img/BlogPage/calendar 1.png" alt="calendar" height="20px" width="20px" style="margin-right: 4px;">21/12/2024
+                        </span>
+                        <span style="font-size: 1.5rem;">
+                            <img src="img/BlogPage/wall-clock 1.png" alt="clock" height="20px" width="20px" style="margin-right: 4px;">7 min
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+  </section>
 
             </div>
 
 		<div role="main" class="main" style="background-color: white !important;">
-           
-
-            <section class="section-blog-content position-relative border-0 m-0" style="background-color: #ffffff !important;">
-                <div class="container py-4" style="margin-top: 10px;">
-                    <div class="row" style="display: flex;justify-content: center;">
-                        <div class="section1 blog-sidebar col-lg-2 pt-4 pt-lg-0" style="display: flex;justify-content: flex-start;max-height: 450px;" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100" >
-                            <aside class="sidebar">
-                                <div class="px-2 mb-4 pt-4 pb-4 pl-3 pr-3 border-right" style="background-color: #e7e7e7;border-radius: 12px;">
-                                    <h3 class="text-color-quaternary text-capitalize text-3-5 m-0 mb-3" style="text-decoration: underline;text-align: center;">Table Of Content</h3>
-                                    <div style="max-height: 365px;overflow-y: auto;scrollbar-color: #007bff #e7e7e7; scrollbar-width: thin;padding-right: 10px;">
-                                    <p class="mt-2 m-0" style="font-size: 0.85rem;"><a href="blog-post.html#introduction">1. Introduction</a> </p>
-                                    <p class="mt-3 m-0" style="font-size: 0.85rem;"><a href="blog-post.html#power">2. The Power Of Influence In 2025</a></p>
-                                    <p class="mt-3 m-0" style="font-size: 0.85rem;"><a href="blog-post.html#agencies">3. Why Agencies & Businesses Should Hire Influencers</a> </p>
-                                    <ul style="list-style-type: disc; margin-left: 20px; padding-left: 0; font-size: 0.8rem;">
-                                        <li><a href="blog-post.html#visibility">3.1 Increased Agency And Business Visibility And Reach</a></li>
-                                        <li><a href="blog-post.html#authenticity">3.2 Authenticity And Credibility</a></li>
-                                        <li><a href="blog-post.html#targeted">3.3 Targeted Marketing</a></li>
-                                        <li><a href="blog-post.html#conversions">3.4 Increase In Sales And Customer Conversions</a></li>
-                                    </ul>
-                                    <p class="mt-3 m-0" style="font-size: 0.85rem;"><a href="blog-post.html#ignoring">4. The Cost of Ignoring Influencer Marketing in [2025]</a> </p>
-                                    <p class="mt-3 m-0" style="font-size: 0.85rem;"><a href="blog-post.html#real">5. Real Life Success Stories</a></p>
-                                    <ul style="list-style-type: disc; margin-left: 20px; padding-left: 0; font-size: 0.8rem;">
-                                        <li><a href="blog-post.html#eg1">5.1 Example 1: Daniel Wellington (Watch Brand)</a></li>
-                                        <li><a href="blog-post.html#eg2">5.2 Example 2: Chipotle (Fast Food Chain) </a></li>
-                                    </ul>
-                                    <p class="mt-3 m-0" style="font-size: 0.85rem;"><a href="blog-post.html#conclusion">6. Conclusion</a></p>
-                                </div>
+            <section id="section2" class="section-blog">
+                <div class="container container-blog">
+                  <div class="leftDiv mt-5">
+                    <div class="blog-sidebar pt-4 pt-lg-0" style="display: flex;justify-content: flex-start;max-height: 450px;" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100" >
+                        <aside class="sidebar">
+                            <div class="px-2 mb-4 pt-4 pb-4 pl-3 pr-3 border-right" style="background-color: #e7e7e7;border-radius: 12px;">
+                                <h3 class="text-color-quaternary text-capitalize text-3-5 m-0 mb-3" style="text-decoration: underline;text-align: center;">Table Of Content</h3>
+                                <div style="max-height: 365px;overflow-y: auto;scrollbar-color: #007bff #e7e7e7; scrollbar-width: thin;padding-right: 10px;">
+                                <p class="mt-2 m-0" style="font-size: 0.85rem;"><a href="blog-post.html#introduction">1. Introduction</a> </p>
+                                <p class="mt-3 m-0" style="font-size: 0.85rem;"><a href="blog-post.html#power">2. The Power Of Influence In 2025</a></p>
+                                <p class="mt-3 m-0" style="font-size: 0.85rem;"><a href="blog-post.html#agencies">3. Why Agencies & Businesses Should Hire Influencers</a> </p>
+                                <ul style="list-style-type: disc; margin-left: 20px; padding-left: 0; font-size: 0.8rem;">
+                                    <li><a href="blog-post.html#visibility">3.1 Increased Agency And Business Visibility And Reach</a></li>
+                                    <li><a href="blog-post.html#authenticity">3.2 Authenticity And Credibility</a></li>
+                                    <li><a href="blog-post.html#targeted">3.3 Targeted Marketing</a></li>
+                                    <li><a href="blog-post.html#conversions">3.4 Increase In Sales And Customer Conversions</a></li>
+                                </ul>
+                                <p class="mt-3 m-0" style="font-size: 0.85rem;"><a href="blog-post.html#ignoring">4. The Cost of Ignoring Influencer Marketing in [2025]</a> </p>
+                                <p class="mt-3 m-0" style="font-size: 0.85rem;"><a href="blog-post.html#real">5. Real Life Success Stories</a></p>
+                                <ul style="list-style-type: disc; margin-left: 20px; padding-left: 0; font-size: 0.8rem;">
+                                    <li><a href="blog-post.html#eg1">5.1 Example 1: Daniel Wellington (Watch Brand)</a></li>
+                                    <li><a href="blog-post.html#eg2">5.2 Example 2: Chipotle (Fast Food Chain) </a></li>
+                                </ul>
+                                <p class="mt-3 m-0" style="font-size: 0.85rem;"><a href="blog-post.html#conclusion">6. Conclusion</a></p>
                             </div>
-                              
-                            </aside>
                         </div>
-                        <div class="section2 scroll-section col-lg-7 mb-5 mb-lg-0" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100" style="margin-right: 10px;">
-                        <div class="inner-scroll">
+                          
+                        </aside>
+                    </div>
+                  </div>
+                  <div class="innerDiv mt-5">
+                    <div class="mb-5 mb-lg-0" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100" style="margin-right: 10px;">
+                        <div class="">
                             <article>
                                 <div class="border-0 custom-box-shadow-1">
                                     <div class="px-4 pb-4 z-index-1">
-
+            
                                         <div class="p-0" id="introduction">
                                         
                                             <h2 class="text-left mb-3" style="padding-top: 2px;padding-bottom: 2px;font-size: 24px;font-weight: 600 !important;border-radius: 15px;">Introduction</h2>
-
+            
                                             <p style="font-size: 0.95rem;color: #333;line-height: 23px;letter-spacing: normal;">In the fast-paced world of technology, where every agency and business, be it small, medium, or large enterprises, want quick growth for their respective companies, influencers are going to be one of the main sources for faster customer engagement with their business in 2025, which is why hiring the right set of influencers that can align well with your agency and business becomes crucial.
-
+            
                                                 In this blog, we will explore why collaborating with the right influencers can be a game-changer for your agency and business in 2025.</p>
-
+            
                                                 <h2 class="mt-3 mb-3" id="power" style="padding-top: 2px;padding-bottom: 2px;font-size: 24px;font-weight: 600 !important;border-radius: 15px;">The Power Of Influence In 2025</h2>
                                                 <p style="font-size: 0.95rem;color: #333;line-height: 23px;letter-spacing: normal;">As we move further in the upcoming years, consumers are becoming more judicious. Traditional advertising and marketing methods are no longer as effective as they were once used to be. Today, customers seek authenticity and connection with the brand and business over mere product quality and price. Influencers, with their loyal followings, offer <a href="agency.html" style="color: #426CC1;text-decoration: underline;">agencies</a> and <a href="business.html" style="color: #426CC1;text-decoration: underline;">businesses</a>  a unique way to engage with the right set of audiences on a personal level, making their recommendations much more impactful than a standard ad.</p>
                                                 <div class="text-center">
@@ -822,9 +938,9 @@
                                     </div>
                                 </div>
                             </article>
-
-          
- 
+            
+            
+            
              <!-- Section zig-zag section2 -->
                  <div class="container" style="margin-top: 48px;" >
                      <h2 class="text-left mt-3 mb-3" id="agencies" style="padding-top: 2px;padding-bottom: 2px;font-size: 24px;font-weight: 600 !important;border-radius: 15px;">Why Agencies & Businesses Should Hire Influencers</h2>
@@ -863,7 +979,7 @@
                              <h3 id="visibility" class="pl-2 mt-2 pt-2" style="font-size: 24px;text-decoration: underline;">2. Increased Agency & Business Visibility and Reach</h3>
                              
                              <p class="pl-2" style="font-size: 0.95rem;color: #333;line-height: 23px;letter-spacing: normal; ">
- 
+            
                                  When any agency and business collaborate with an influencer, they already started tapping into their established audience. Influencers have already built trust with their followers, and their engagement and convincing power with their audience carry more weight than any other traditional ads or marketing tactics run by different <a href="agency.html" style="color: #426CC1;text-decoration: underline;">agencies</a> and <a href="business.html" style="color: #426CC1;text-decoration: underline;">businesses</a>. 
                                  
                                  This increased engagement exposes agencies and businesses to new and highly engaged consumers from niche segment of demographics that can very much align with their services and products, thus helping them to expand their brand awareness and potential business market.</p>
@@ -907,7 +1023,7 @@
                          </div>
                      </div>
                  </div>
- 
+            
              <!-- section small cta type -->
              <section class="cta-section styled-section" style=" margin: 45px auto; background: linear-gradient(180deg, #1F335C 6%, #426CC2 100%); background-size: cover; background-repeat: no-repeat;height: 238px;">
                  <div class="container">
@@ -938,7 +1054,7 @@
                      </div>
                  </div>
              </section>
-
+            
                                   <!-- section-content -->
                                   <section class="container text-center" style="margin-top: 28px;">
                                     <h2 class="text-left" id="ignoring" style="padding-top: 2px;padding-bottom: 2px;font-size: 28px;font-weight: 600 !important;border-radius: 15px;text-align: start;">The Cost of Ignoring Influencer Marketing in [2025]</h2>
@@ -983,131 +1099,131 @@
                                     </section>
                                 </div>
                         </div>
-                    
-                        <div class="section3 cta-section col-lg-2 px-2 ml-5 display-flex justify-content-end" 
-                        style="max-height: 450px;overflow-y:auto; position: relative;border-radius: 15px; background: url('img/blog/Buzzboost Blog Images/Buzzboost Blog Images/ctablog1.png') no-repeat center center; background-size: cover; padding-left: 10px; padding-right: 20px;margin-right: 10px;">
-                        <div class="secion3main" style="max-height: 420px; overflow-y: hidden;">
-                       <!-- Form Overlay -->
-                       <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: rgba(0, 0, 0, 0.5); color: #fff;">
-                           <form style="text-align: center; max-width: 80%; margin-top:80px;">
-                               <h3 style="margin-bottom: 20px; font-size: 0.9rem;color: white;text-align: left;line-height: 17px;">Ready to amplify your brand's reach and impact in 2025?</h3>
-                               <input type="text" name="name" placeholder="Your Name" 
-                                      style="width: 100%; padding: 2px; margin-bottom: 10px; background: transparent; border-bottom: 1px solid white; color: white; outline: none; font-size: 0.7rem;border-top: none;border-left: none;border-right: none;">
-                               <input type="email" name="email" placeholder="Your Email Address" 
-                                      style="width: 100%; padding: 2px; margin-bottom: 10px; background: transparent; border-bottom: 1px solid white; color: white; outline: none; font-size: 0.7rem;border-top: none;border-left: none;border-right: none;">
-                               <input type="text" name="phone" placeholder="Your Phone Number" 
-                                      style="width: 100%; padding: 2px; margin-bottom: 10px; background: transparent; border-bottom: 1px solid white; color: white; outline: none; font-size: 0.7rem;border-top: none;border-left: none;border-right: none;">
-                               <input type="text" name="message" placeholder="Message" 
-                                      style="width: 100%; padding: 2px; margin-bottom: 10px; background: transparent; border-bottom: 1px solid white; color: white; outline: none; font-size: 0.7rem;border-top: none;border-left: none;border-right: none;">
-                               
-                               <button type="submit" 
-                                       style="width: 100%; padding: 5px;margin-top: 10px; background: #426CC1; color: #fff; border: none; border-radius: 25px; cursor: pointer;">
-                                   Submit
-                               </button>
-                           </form>
-                       </div>
+                
+                  </div>
+                  <div class="rightDiv mt-5">
+                    <div class="px-2 ml-5 display-flex justify-content-end" 
+                    style="height: 420px; position: relative;border-radius: 15px;overflow:hidden; background: url('img/blog/Buzzboost Blog Images/Buzzboost Blog Images/ctablog1.png') no-repeat center center; background-size: cover;">
+                   
+                   <!-- Form Overlay -->
+                   <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: rgba(0, 0, 0, 0.5); color: #fff;">
+                       <form style="text-align: center; max-width: 80%; margin-top:80px;">
+                           <h3 style="margin-bottom: 20px; font-size: 1.1rem;color: white;text-align: left;line-height: 21px;letter-spacing: normal;">Ready to amplify your brand's reach and impact in 2025?</h3>
+                           <input type="text" name="name" placeholder="Your Name" 
+                                  style="width: 100%; padding: 2px; margin-bottom: 10px; background: transparent; border-bottom: 1px solid white; color: white; outline: none; font-size: 0.9rem;border-top: none;border-left: none;border-right: none;">
+                           <input type="email" name="email" placeholder="Your Email Address" 
+                                  style="width: 100%; padding: 2px; margin-bottom: 10px; background: transparent; border-bottom: 1px solid white; color: white; outline: none; font-size: 0.9rem;border-top: none;border-left: none;border-right: none;">
+                           <input type="text" name="phone" placeholder="Your Phone Number" 
+                                  style="width: 100%; padding: 2px; margin-bottom: 10px; background: transparent; border-bottom: 1px solid white; color: white; outline: none; font-size: 0.9rem;border-top: none;border-left: none;border-right: none;">
+                           <input type="text" name="message" placeholder="Message" 
+                                  style="width: 100%; padding: 2px; margin-bottom: 10px; background: transparent; border-bottom: 1px solid white; color: white; outline: none; font-size: 0.9rem;border-top: none;border-left: none;border-right: none;">
+                           
+                           <button type="submit" 
+                                   style="width: 100%; padding: 5px;margin-top: 10px; background: #426CC1; color: #fff; border: none; border-radius: 25px; cursor: pointer;">
+                               Submit
+                           </button>
+                       </form>
                    </div>
                 </div>
-                   
+                  </div>
+                </div>
+              </section>
+            
+              <section id="section3" class="section-blog" style="margin-top: 80px;">
+                <div class="line" style=" width: 120px;height: 4px;background-color: #426cc1;margin: 0 auto 20px;"></div>
 
+                <section class="container1 carousel-blogs" style="margin:30px auto;">
+                    <h3 class="text-center" style="font-size: 40px;color: #426CC1;margin-bottom: 30px;margin-top: 20px;">Other Blogs</h3>
+                    <div class="container" style="display: grid; grid-template-columns: repeat(3, 2fr); gap: 50px; padding: 50px;">
+                        <!-- Card Template -->
+                        <div class="class-template" style="background-color: #fff; border-radius: 8px; box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); overflow: hidden; display: flex; flex-direction: column; position: relative;height: 270px;width: 265px;">
+                            <!-- Adjusted image -->
+                            <img src="img\blog\Buzzboost Blog Images\Buzzboost Blog Images\Blog 2.png" alt="influencer-pointer" style="width: 100%; height: 150px; object-fit: contain; margin: 0;">
                         
+                            <!-- Removed extra spacing -->
+                            <div style="padding: 5px 5px; background-color: white; color: black; margin: 0;">
+                                <!-- Compact heading -->
+                                <h3 style="font-size: 1.2rem;letter-spacing: normal; margin: 0;font-weight: 600; color: black; line-height: 1.2;font-weight: 500;">
+                                    <a href="blog-post2.html" style="text-decoration: none; color: inherit;">Top Influencer Marketing Trends To Watch In [2025]</a>
+                                </h3>
+                                <div style="display: flex;justify-content: space-between; align-items: center; padding-top: 16px; font-size: 0.75rem;margin-top: 2px;">
+                                    <div>
+                                        <span style="color: #888;margin-right: 15px;">Arham Jain</span>
+                                    <span style="color: #888;">24/12/2024</span>
+                                    </div>
+                                    <div>
+                                    <a href="blog-post2.html" style="text-decoration: none; font-size: 0.65rem; padding: 5px 8px; color: white; border-radius: 25px; background-color: #426CC1;width: 120px;">Read More</a>
+                                </div>
+                                    <!-- <a href="blog-post.html" style="text-decoration: none; font-size: 0.75rem; padding: 3px 5px; color: white; border-radius: 25px; background-color: #426CC1;">Read More</a> -->
+                                </div>
+                           
+                            </div>
+                        
+                            <!-- Footer -->
+                           
+                        </div>
+                        <!-- Card Template -->
+                        <div class="class-template" style="background-color: #fff; border-radius: 8px; box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); overflow: hidden; display: flex; flex-direction: column; position: relative;height: 270px;width: 265px;">
+                            <!-- Adjusted image -->
+                            <img src="img\blog\Buzzboost Blog Images\Buzzboost Blog Images\Blog 2.png" alt="influencer-pointer" style="width: 100%; height: 150px; object-fit: contain; margin: 0;">
+                        
+                            <!-- Removed extra spacing -->
+                            <div style="padding: 5px 5px; background-color: white; color: black; margin: 0;">
+                                <!-- Compact heading -->
+                                <h3 style="font-size: 1.2rem;letter-spacing: normal; margin: 0;font-weight: 600; color: black; line-height: 1.2; font-weight: 500;">
+                                    <a href="blog-post2.html" style="text-decoration: none; color: inherit;">Top Influencer Marketing Trends To Watch In [2025]</a>
+                                </h3>
+                                <div style="display: flex;justify-content: space-between; align-items: center; padding-top: 16px; font-size: 0.75rem;margin-top: 2px;">
+                                    <div>
+                                        <span style="color: #888;margin-right: 15px;">Arham Jain</span>
+                                    <span style="color: #888;">24/12/2024</span>
+                                    </div>
+                                    <div>
+                                    <a href="blog-post2.html" style="text-decoration: none; font-size: 0.65rem; padding: 5px 8px; color: white; border-radius: 25px; background-color: #426CC1;width: 120px;">Read More</a>
+                                </div>
+                                    <!-- <a href="blog-post.html" style="text-decoration: none; font-size: 0.75rem; padding: 3px 5px; color: white; border-radius: 25px; background-color: #426CC1;">Read More</a> -->
+                                </div>
+                           
+                            </div>
+                        
+                            <!-- Footer -->
+                           
+                        </div>
+                         <!-- Card Template -->
+                         <div class="class-template" style="background-color: #fff; border-radius: 8px; box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); overflow: hidden; display: flex; flex-direction: column; position: relative;height: 270px;width: 265px;">
+                            <!-- Adjusted image -->
+                            <img src="img\blog\Buzzboost Blog Images\Buzzboost Blog Images\Blog 2.png" alt="influencer-pointer" style="width: 100%; height: 150px; object-fit: contain; margin: 0;">
+                        
+                            <!-- Removed extra spacing -->
+                            <div style="padding: 5px 5px; background-color: white; color: black; margin: 0;">
+                                <!-- Compact heading -->
+                                <h3 style="font-size: 1.2rem;letter-spacing: normal; margin: 0;font-weight: 600; color: black; line-height: 1.2; font-weight: 500;">
+                                    <a href="blog-post2.html" style="text-decoration: none; color: inherit;">Top Influencer Marketing Trends To Watch In [2025]</a>
+                                </h3>
+                                <div style="display: flex;justify-content: space-between; align-items: center; padding-top: 16px; font-size: 0.75rem;margin-top: 2px;">
+                                    <div>
+                                        <span style="color: #888;margin-right: 15px;">Arham Jain</span>
+                                    <span style="color: #888;">24/12/2024</span>
+                                    </div>
+                                    <div>
+                                    <a href="blog-post2.html" style="text-decoration: none; font-size: 0.65rem; padding: 5px 8px; color: white; border-radius: 25px; background-color: #426CC1;width: 120px;">Read More</a>
+                                </div>
+                                    <!-- <a href="blog-post.html" style="text-decoration: none; font-size: 0.75rem; padding: 3px 5px; color: white; border-radius: 25px; background-color: #426CC1;">Read More</a> -->
+                                </div>
+                           
+                            </div>
+                        
+                            <!-- Footer -->
+                           
+                        </div>
+                       
+                        <!-- Repeat the card structure 36 times for 6x6 grid -->
                     </div>
-                </div>
-            </section>
+                
+                  </section>
+              </section>
 
-
-   <!-- section blogs carousel -->
-   <section class="container1 carousel-blogs" style="margin:30px auto;">
-    <h3 class="text-center" style="font-size: 40px;color: #426CC1;margin-bottom: 30px;margin-top: 60px;">Other Blogs</h3>
-    <div class="container" style="display: grid; grid-template-columns: repeat(3, 2fr); gap: 50px; padding: 50px;margin-left: 50px;margin-right: 50px;">
-        <!-- Card Template -->
-        <div class="class-template" style="background-color: #fff; border-radius: 8px; box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); overflow: hidden; display: flex; flex-direction: column; position: relative;height: 275px;width: 250px;">
-            <!-- Adjusted image -->
-            <img src="img\blog\Buzzboost Blog Images\Buzzboost Blog Images\Blog 2.png" alt="influencer-pointer" style="width: 100%; height: 150px; object-fit: contain; margin: 0;">
-        
-            <!-- Removed extra spacing -->
-            <div style="padding: 5px 5px; background-color: white; color: black; margin: 0;">
-                <!-- Compact heading -->
-                <h3 style="font-size: 1rem;letter-spacing: normal; margin: 0;font-weight: 600; color: black; line-height: 1.2; font-weight: 500;">
-                    <a href="blog-post2.html" style="text-decoration: none; color: inherit;">Top Influencer Marketing Trends To Watch In [2025]</a>
-                </h3>
-                <div style="display: flex;justify-content: space-between; align-items: center; padding-top: 16px; font-size: 0.75rem;margin-top: 2px;">
-                    <div>
-                        <span style="color: #888;margin-right: 15px;">Arham Jain</span>
-                    <span style="color: #888;">24/12/2024</span>
-                    </div>
-                    <div>
-                    <a href="blog-post2.html" style="text-decoration: none; font-size: 0.65rem; padding: 5px 8px; color: white; border-radius: 25px; background-color: #426CC1;width: 120px;">Read More</a>
-                </div>
-                    <!-- <a href="blog-post.html" style="text-decoration: none; font-size: 0.75rem; padding: 3px 5px; color: white; border-radius: 25px; background-color: #426CC1;">Read More</a> -->
-                </div>
-           
-            </div>
-        
-            <!-- Footer -->
-           
         </div>
-        <!-- Card Template -->
-        <div class="class-template" style="background-color: #fff; border-radius: 8px; box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); overflow: hidden; display: flex; flex-direction: column; position: relative;height: 275px;width: 250px;">
-            <!-- Adjusted image -->
-            <img src="img\blog\Buzzboost Blog Images\Buzzboost Blog Images\Blog 2.png" alt="influencer-pointer" style="width: 100%; height: 150px; object-fit: contain; margin: 0;">
-        
-            <!-- Removed extra spacing -->
-            <div style="padding: 5px 5px; background-color: white; color: black; margin: 0;">
-                <!-- Compact heading -->
-                <h3 style="font-size: 1rem;letter-spacing: normal; margin: 0;font-weight: 600; color: black; line-height: 1.2; font-weight: 500;">
-                    <a href="blog-post2.html" style="text-decoration: none; color: inherit;">Top Influencer Marketing Trends To Watch In [2025]</a>
-                </h3>
-                <div style="display: flex;justify-content: space-between; align-items: center; padding-top: 16px; font-size: 0.75rem;margin-top: 2px;">
-                    <div>
-                        <span style="color: #888;margin-right: 15px;">Arham Jain</span>
-                    <span style="color: #888;">24/12/2024</span>
-                    </div>
-                    <div>
-                    <a href="blog-post2.html" style="text-decoration: none; font-size: 0.65rem; padding: 5px 8px; color: white; border-radius: 25px; background-color: #426CC1;width: 120px;">Read More</a>
-                </div>
-                    <!-- <a href="blog-post.html" style="text-decoration: none; font-size: 0.75rem; padding: 3px 5px; color: white; border-radius: 25px; background-color: #426CC1;">Read More</a> -->
-                </div>
-           
-            </div>
-        
-            <!-- Footer -->
-           
-        </div>
-         <!-- Card Template -->
-         <div class="class-template" style="background-color: #fff; border-radius: 8px; box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); overflow: hidden; display: flex; flex-direction: column; position: relative;height: 275px;width: 250px;">
-            <!-- Adjusted image -->
-            <img src="img\blog\Buzzboost Blog Images\Buzzboost Blog Images\Blog 2.png" alt="influencer-pointer" style="width: 100%; height: 150px; object-fit: contain; margin: 0;">
-        
-            <!-- Removed extra spacing -->
-            <div style="padding: 5px 5px; background-color: white; color: black; margin: 0;">
-                <!-- Compact heading -->
-                <h3 style="font-size: 1rem;letter-spacing: normal; margin: 0;font-weight: 600; color: black; line-height: 1.2; font-weight: 500;">
-                    <a href="blog-post2.html" style="text-decoration: none; color: inherit;">Top Influencer Marketing Trends To Watch In [2025]</a>
-                </h3>
-                <div style="display: flex;justify-content: space-between; align-items: center; padding-top: 16px; font-size: 0.75rem;margin-top: 2px;">
-                    <div>
-                        <span style="color: #888;margin-right: 15px;">Arham Jain</span>
-                    <span style="color: #888;">24/12/2024</span>
-                    </div>
-                    <div>
-                    <a href="blog-post2.html" style="text-decoration: none; font-size: 0.65rem; padding: 5px 8px; color: white; border-radius: 25px; background-color: #426CC1;width: 120px;">Read More</a>
-                </div>
-                    <!-- <a href="blog-post.html" style="text-decoration: none; font-size: 0.75rem; padding: 3px 5px; color: white; border-radius: 25px; background-color: #426CC1;">Read More</a> -->
-                </div>
-           
-            </div>
-        
-            <!-- Footer -->
-           
-        </div>
-       
-        <!-- Repeat the card structure 36 times for 6x6 grid -->
-    </div>
-
-  </section>
-
-
          
 
  <!-- section form 7 -->
@@ -1310,42 +1426,6 @@
 				}
 			});
 		</script>
-    <script>
-document.addEventListener("DOMContentLoaded", () => {
-    const section2 = document.querySelector(".section2");
-
-    // Freeze body scrolling
-    document.body.style.overflow = "hidden";
-
-    // Allow Section 2 to scroll independently
-    section2.addEventListener("scroll", () => {
-        const isFullyScrolled =
-            section2.scrollTop + section2.clientHeight >= section2.scrollHeight;
-
-        if (isFullyScrolled) {
-            // Unlock the main body scroll after Section 2 is fully scrolled
-            document.body.style.overflow = "auto";
-        }
-    });
-
-    // Prevent scrolling on Section 1 and Section 3 completely
-    // const preventScroll = (e) => {
-    //     e.preventDefault();
-    //     e.stopPropagation();
-    //     return false;
-    // };
-
-    // const section1 = document.querySelector(".section1");
-    // const section3 = document.querySelector(".section3");
-
-    // section1.addEventListener("wheel", preventScroll, { passive: false });
-    // section1.addEventListener("touchmove", preventScroll, { passive: false });
-
-    // section3.addEventListener("wheel", preventScroll, { passive: false });
-    // section3.addEventListener("touchmove", preventScroll, { passive: false });
-});
-
-</script>
             
 	</body>
 </html>
