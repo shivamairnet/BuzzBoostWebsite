@@ -452,7 +452,7 @@
 
   .class-template {
     width: 100% !important; /* Make the cards take full width */
-    height:315px !important;
+    height:345px !important;
     padding-top: 5px !important;
     padding-bottom:20px !important;
   }
@@ -468,15 +468,18 @@
   }
 
   .class-template a {
-    display: block !important; /* Makes the <a> a block element for full control */
-    width: 60% !important; /* Reduce the width */
+    /* display: block !important; Makes the <a> a block element for full control */
+    width: 50% !important; /* Reduce the width */
     margin: 0 auto !important; /* Center-align horizontally */
-    font-size: 0.85rem !important; /* Adjust font size if needed */
+    font-size: 1.2rem !important; /* Adjust font size if needed */
     text-align: center !important; /* Ensure text inside the button is centered */
   }
 
   .class-template h3{
-    font-size: 1.1rem !important;
+    font-size: 1.2rem !important;
+    text-align: left !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
     
   }
   .class-template div {
@@ -486,13 +489,29 @@
   }
 
   .class-template div span {
-    display: block !important; /* Stack author and date vertically */
-    color: #666 !important; /* Slightly darker color for better visibility */
-    margin:0 !important;
+   display: none !important;
+
+  }
+
+  .mobile-blog{
+    display: block;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .readmore{
+    width: 50%;
 
   }
  
 }
+
+@media (min-width: 769px) {
+    .mobile-blog{
+    display: none !important;
+  }
+}
+
 
 @media (min-width:1001px) and (max-width: 1299px) {
   .container-blog {
@@ -622,7 +641,7 @@ height: 335rem;
   }
 
   .rightDiv {
-    width: 70% !important; /* Reduce the width */
+    width: 80% !important; /* Reduce the width */
     margin: 0 auto !important; /* Center-align horizontally */
     height: 450px !important;
     margin-top: 2550px !important; /* Keep the vertical margin if necessary */
@@ -1222,15 +1241,16 @@ height: 335rem;
                             <div style="padding: 5px 5px; background-color: white; color: black; margin: 0;">
                                 <!-- Compact heading -->
                                 <h3 style="font-size: 1.1rem;letter-spacing: normal; margin: 0;font-weight: 600; color: black; line-height: 1.25;font-weight: 500;padding-left: 4px;padding-right: 4px;margin-top: 10px;">
-                                    <a href="#" style="text-decoration: none; color: inherit;">Top Influencer Marketing Trends To Watch In [2025]</a>
+                                    <a href="" style="text-decoration: none; color: inherit;">Top Influencer Marketing Trends To Watch In [2025]</a>
                                 </h3>
                                 <div style="display: flex;justify-content: space-between; align-items: center; padding-top: 16px; font-size: 0.75rem;margin-top: 2px;padding-left: 4px;padding-right: 4px;">
                                     <div class="class-templatediv">
                                         <span style="color: #888;margin-right: 15px;">Arham Jain</span>
                                     <span style="color: #888;">24/12/2024</span>
+                                    <p class="mobile-blog">As the technology evolves with each passing year, influencer marketing is...</p>
                                     </div>
                                     <div>
-                                    <a href="#" style="text-decoration: none; font-size: 0.65rem; padding: 5px 8px; color: white; border-radius: 25px; background-color: #426CC1;width: 120px;">Read More</a>
+                                    <a class="readmore" href="" style="text-decoration: none; font-size: 0.65rem; padding: 5px 8px; color: white; border-radius: 25px; background-color: #426CC1;width: 120px;">Read More</a>
                                 </div>
                                     <!-- <a href="blog-post.html" style="text-decoration: none; font-size: 0.75rem; padding: 3px 5px; color: white; border-radius: 25px; background-color: #426CC1;">Read More</a> -->
                                 </div>
@@ -1255,9 +1275,11 @@ height: 335rem;
                                     <div class="class-templatediv">
                                         <span style="color: #888;margin-right: 15px;">Arham Jain</span>
                                     <span style="color: #888;">02/01/2025</span>
+                                    <p class="mobile-blog">In the rapidly evolving digital world, hiring perfect influencers...</p>
+
                                     </div>
                                     <div>
-                                    <a href="" style="text-decoration: none; font-size: 0.65rem; padding: 5px 8px; color: white; border-radius: 25px; background-color: #426CC1;width: 120px;">Read More</a>
+                                    <a class="readmore" href="" style="text-decoration: none; font-size: 0.65rem; padding: 5px 8px; color: white; border-radius: 25px; background-color: #426CC1;width: 120px;">Read More</a>
                                 </div>
                                     <!-- <a href="blog-post.html" style="text-decoration: none; font-size: 0.75rem; padding: 3px 5px; color: white; border-radius: 25px; background-color: #426CC1;">Read More</a> -->
                                 </div>
@@ -1282,9 +1304,11 @@ height: 335rem;
                                     <div class="class-templatediv">
                                         <span style="color: #888;margin-right: 15px;">Arham Jain</span>
                                     <span style="color: #888;">02/01/2025</span>
+                                    <p class="mobile-blog">Are you an influencer looking out for collaborations with...</p>
+
                                     </div>
                                     <div>
-                                    <a href="" style="text-decoration: none; font-size: 0.65rem; padding: 5px 8px; color: white; border-radius: 25px; background-color: #426CC1;width: 120px;">Read More</a>
+                                    <a class="readmore" href="" style="text-decoration: none; font-size: 0.65rem; padding: 5px 8px; color: white; border-radius: 25px; background-color: #426CC1;width: 120px;">Read More</a>
                                 </div>
                                     <!-- <a href="blog-post.html" style="text-decoration: none; font-size: 0.75rem; padding: 3px 5px; color: white; border-radius: 25px; background-color: #426CC1;">Read More</a> -->
                                 </div>

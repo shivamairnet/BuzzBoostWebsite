@@ -465,17 +465,38 @@
   }
 
   .class-template a {
-    display: block !important; /* Makes the <a> a block element for full control */
-    width: 60% !important; /* Reduce the width */
+    /* display: block !important; Makes the <a> a block element for full control */
+    width: 50% !important; /* Reduce the width */
     margin: 0 auto !important; /* Center-align horizontally */
-    font-size: 0.85rem !important; /* Adjust font size if needed */
+    font-size: 1.2rem !important; /* Adjust font size if needed */
     text-align: center !important; /* Ensure text inside the button is centered */
   }
 
   .class-template h3{
-    font-size: 1.1rem !important;
+    font-size: 1.2rem !important;
+    text-align: left !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
     
   }
+
+  
+  .class-template div span {
+   display: none !important;
+
+  }
+
+  .mobile-blog{
+    display: block;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .readmore{
+    width: 50%;
+
+  }
+  
   .class-template div {
 
     font-size: 0.85rem !important; /* Slightly larger font for mobile */
@@ -491,6 +512,12 @@
  
 }
 
+
+@media (min-width: 769px) {
+    .mobile-blog{
+    display: none !important;
+  }
+}
 
 @media (min-width:1300px) and (max-width:2700px){
     .carousel-blogs{
@@ -644,10 +671,17 @@
      /* height:  */
   }
   
-  .rightDiv {
+  /* .rightDiv {
    height:430px !important ;
    margin-top: 3150px !important;
    width: 100% !important;
+  } */
+  .rightDiv {
+    width: 80% !important; /* Reduce the width */
+    margin: 0 auto !important; /* Center-align horizontally */
+    height: 430px !important;
+    margin-top: 3150px !important; /* Keep the vertical margin if necessary */
+    display: block; /* Ensure proper display for centering */
   }
   
 
@@ -1197,9 +1231,11 @@ height: 425rem;
                                 <div class="class-templatediv">
                                     <span style="color: #888;margin-right: 15px;">Arham Jain</span>
                                 <span style="color: #888;">24/12/2024</span>
+                                <p class="mobile-blog">As the technology evolves with each passing year, influencer marketing is...</p>
+
                                 </div>
                                 <div>
-                                <a href="blog-post2.html" style="text-decoration: none; font-size: 0.65rem; padding: 5px 8px; color: white; border-radius: 25px; background-color: #426CC1;width: 120px;">Read More</a>
+                                <a class="readmore" href="blog-post2.html" style="text-decoration: none; font-size: 0.65rem; padding: 5px 8px; color: white; border-radius: 25px; background-color: #426CC1;width: 120px;">Read More</a>
                             </div>
                                 <!-- <a href="blog-post.html" style="text-decoration: none; font-size: 0.75rem; padding: 3px 5px; color: white; border-radius: 25px; background-color: #426CC1;">Read More</a> -->
                             </div>
@@ -1224,9 +1260,11 @@ height: 425rem;
                                 <div class="class-templatediv">
                                     <span style="color: #888;margin-right: 15px;">Arham Jain</span>
                                 <span style="color: #888;">02/01/2025</span>
+                                <p class="mobile-blog">In the rapidly evolving digital world, hiring perfect influencers...</p>
+
                                 </div>
                                 <div>
-                                <a href="" style="text-decoration: none; font-size: 0.65rem; padding: 5px 8px; color: white; border-radius: 25px; background-color: #426CC1;width: 120px;">Read More</a>
+                                <a class="readmore" href="" style="text-decoration: none; font-size: 0.65rem; padding: 5px 8px; color: white; border-radius: 25px; background-color: #426CC1;width: 120px;">Read More</a>
                             </div>
                                 <!-- <a href="blog-post.html" style="text-decoration: none; font-size: 0.75rem; padding: 3px 5px; color: white; border-radius: 25px; background-color: #426CC1;">Read More</a> -->
                             </div>
@@ -1251,9 +1289,11 @@ height: 425rem;
                                 <div class="class-templatediv">
                                     <span style="color: #888;margin-right: 15px;">Arham Jain</span>
                                 <span style="color: #888;">02/01/2025</span>
+                                <p class="mobile-blog">Are you an influencer looking out for collaborations with...</p>
+
                                 </div>
                                 <div>
-                                <a href="" style="text-decoration: none; font-size: 0.65rem; padding: 5px 8px; color: white; border-radius: 25px; background-color: #426CC1;width: 120px;">Read More</a>
+                                <a class="readmore" href="" style="text-decoration: none; font-size: 0.65rem; padding: 5px 8px; color: white; border-radius: 25px; background-color: #426CC1;width: 120px;">Read More</a>
                             </div>
                                 <!-- <a href="blog-post.html" style="text-decoration: none; font-size: 0.75rem; padding: 3px 5px; color: white; border-radius: 25px; background-color: #426CC1;">Read More</a> -->
                             </div>
