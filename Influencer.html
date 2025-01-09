@@ -443,6 +443,10 @@
 
 }
 
+#header .header-nav.header-nav-links:not(.header-nav-light-text) nav > ul > li > a, #header .header-nav.header-nav-line:not(.header-nav-light-text) nav > ul > li > a {
+		color: rgba(255, 255, 255, 0.6)
+	}
+
 		</style>
 
 <script type="text/javascript"
@@ -451,7 +455,10 @@
 <meta name= "robots" content="index, follow">
 
 	</head>
+
 	<body class="alternative-font-7">
+		<div class="landing-section" style="background-image: url('img/BuzzBoostImg/Influencer Page Header.jpg');background-position: center;background-size: cover;background-repeat: no-repeat;">
+
 		<header id="header" class="header-transparent header-desktop-tablet"
 				data-plugin-options="{'stickyScrollUp': false, 'stickyEnabled': false, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 42, 'stickyHeaderContainerHeight': 70}">
 				<div class="header-body header-body-bottom-border border-top-0 h-auto">
@@ -462,8 +469,8 @@
 									<div class="header-logo" style="margin-right: 0px;">
 						 
 											<a href="home.html">
-											<img src="img\BuzzBoost Home Page Images\BuzzBoost Logo.png" class="img-fluid" width="160px"
-												height="70px" alt="BuzzBoost" />
+											<img src="img\BuzzBoost Home Page Images\BuzzBoostLogoWhite.png" class="img-fluid" width="160px"
+												height="50px" alt="BuzzBoost" />
 										</a>
 									</div>
 								</div>
@@ -514,9 +521,9 @@
 									<ul class="header-extra-info d-none d-xxl-block mt-2 mx-3">
 										<li class="d-none d-sm-inline-flex ms-0 font-weight-semibold">
 											<div class="d-flex align-items-center">
-												<i class="icons icon-phone text-8   me-2"></i>
-												<a href="tel:+919796297972 " class="text-3 text-dark"
-													style="color: #000; text-decoration: none; transition: color 0.3s ease;"
+												<i class="icons icon-phone text-8   me-2" style="rgba(255, 255, 255, 0.6);"></i>
+												<a href="tel:+919796297972 " class="text-3"
+													style="color:rgba(255, 255, 255, 0.6); text-decoration: none; transition: color 0.3s ease;"
 													onmouseover="this.style.color='#426CC1'; this.style.textDecoration='underline';"
 													onmouseout="this.style.color='#000'; this.style.textDecoration='none';">
 													+91 9796297972 
@@ -645,7 +652,8 @@
 }
 
 			</script>
-		<div class="body mt-0">
+		<!-- <div class="body mt-0"> -->
+
 			<!-- <div class="notice-top-bar p-relative z-index-1 bg-secondary">
 					<div class="container">
 						<div class="row justify-content-center py-2">
@@ -657,37 +665,35 @@
 				</div> -->
 			
 				<!-- section-1 -->
-				<div class="amplify-section container p-relative" style="margin-top: 85px; padding: 0; margin: 2px auto;">
-					<div class="container p-relative z-index-9 text-center" style="max-height: 700px; max-width: 1200px; width: 100%; margin: 0 auto; padding: 0 20px;">
-						<div class="row justify-content-between align-items-center">
-							<div class="col-xl-6 custom-col-1 appear-animation" data-appear-animation="fadeInUpShorter"
-								data-appear-animation-delay="900" style="padding: 60px 35px; text-align: left;">
-								<h1 class="amplify-head text-black" style="padding-bottom: 20px; font-size: 50px;line-height: normal;">
-									Amplify Your Influence With BuzzBoost  
-								</h1>
-								<p class="amplify-para section-1-text text-black line-height-5" style="padding-bottom: 10px; font-size: 1.5rem;letter-spacing: normal;">
-									Connect with brands that align with your style and voice, and turn your passion into opportunity. 
-								</p>
-								<div class="button-container" style="display: flex; gap: 1rem; margin-top: 5px; flex-wrap: wrap;">
-									<div class="text-left">
-										<a class="button-z custom-btn btn btn-modern btn-primary box-shadow-6 border-0 text-transform-none mt-2 py-3 px-4" onclick="openModal()" style="font-size: large;border-radius: 25px;font-weight: 500;">Enroll With Us</a>
-									</div>
-									<!-- <div class="text-left">
-										<a href="contact.html" class="custom-btn button-2 btn btn-dash btn-modern btn-primary box-shadow-6 border-0 text-transform-none mt-2 py-3 px-3">Get In Touch</a>
-									</div> -->
-								</div>
-							</div>
-							<div class="col-xl-6 hero d-lg-block custom-top-margin" style="text-align: right;">
-								<div class="z-index-7 p-relative appear-animation" data-appear-animation="fadeIn"
-									data-appear-animation-delay="500">
-									<img src="img/Influencer Page Images (2)/InfluencerPageImagenew.png"
-										 style="height: auto; max-height: 700px; max-width:600px; padding-right: 185px;margin-top: 45px;" 
-										 alt="Flexible Contracting Options Image" />
-								</div>
+				<section class="section1" style="margin: 2px auto; padding: 15px;">
+					<div class="section1-div row align-items-center" 
+						style="height: 450px; padding: 0 20px; display: flex; justify-content: center; align-items: center; width: 100%; margin: 2px auto;">
+						
+						<!-- Left Content Section -->
+						<div class="section1-text text-center" style="max-width: 800px;">
+							<h1 class="section1-h1 display-4" 
+								style="font-size: 50px; color: white; margin-bottom: 20px; line-height: 1.2;">
+								Amplify Your Influence With <span style="color: #426CC1;">BuzzBoost</span> 
+
+							</h1>
+				
+							<p class="section1-p lead" 
+								style="font-size: 1.95rem; letter-spacing: normal; color: white; margin-bottom: 30px; line-height: normal;">
+							Connect with brands that align with your style and voice,<br> and turn your passion into opportunity. 
+							</p>
+				
+							<div class="button-align">
+								<a href="contact.html" 
+									class="landing-button section1-btn btn btn-modern box-shadow-6 border-0 text-transform-none mt-2 py-2 px-4" 
+									style="background-color: white; color: #000; font-size: 17px; border-radius: 25px; font-weight: 500;">
+									Get In Touch
+								</a>
 							</div>
 						</div>
 					</div>
-				</div>
+				</section>
+			
+		</div>
 				
 								    
 			<!-- section-2 -->
