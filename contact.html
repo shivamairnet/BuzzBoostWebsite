@@ -244,6 +244,10 @@
 
 }
 
+#header .header-nav.header-nav-links:not(.header-nav-light-text) nav > ul > li > a, #header .header-nav.header-nav-line:not(.header-nav-light-text) nav > ul > li > a {
+		color: rgba(255, 255, 255, 0.6)
+	}
+
     </style>
 
 <script type="text/javascript"
@@ -263,6 +267,8 @@
 					</div>
 				</div>
 			</div> -->
+      
+      <div class="landing-section" style="background-color: black">
 
       <header
         id="header"
@@ -280,8 +286,8 @@
                   <div class="header-logo" style="margin-right: 0px;">
              
                       <a href="home.html">
-                      <img src="img\BuzzBoost Home Page Images\BuzzBoost Logo.png" class="img-fluid" width="160px"
-                        height="70px" alt="BuzzBoost" />
+                      <img src="img\BuzzBoost Home Page Images\BuzzBoostLogoWhite.png" class="img-fluid" width="160px"
+                        height="50px" alt="BuzzBoost" />
                     </a>
                   </div>
                 </div>
@@ -352,11 +358,13 @@
                     </li>
                   </ul>
 
-                  <a
-                    href="contact.html"
-                    class="btn btn-modern box-shadow-6 border-0 text-transform-none ms-3 d-none d-xl-inline-block custom-btn text-2 py-2 " style="border-radius: 25px;font-weight: 500;"
-                    >Get In Touch</a
-                  >
+                  <div class="button-align">
+                    <a href="contact.html" 
+                        class="landing-button section1-btn btn btn-modern box-shadow-6 border-0 text-transform-none mt-2 py-2 px-4" 
+                        style="background-color: white; color: #000; font-size: 17px; border-radius: 25px; font-weight: 500;">
+                        Get In Touch
+                    </a>
+                </div>
 
                   <button
                     class="btn header-btn-collapse-nav"
@@ -389,7 +397,7 @@
                   <!-- Logo Section -->
                   <div class="header-logo">
                       <a href="home.html">
-                          <img src="img/BuzzBoost Home Page Images/BuzzBoost Logo.png" 
+                          <img src="img\BuzzBoost Home Page Images\BuzzBoostLogoWhite.png" 
                               style="width: 160px; height: 50px;" 
                               alt="BuzzBoost" />
                       </a>
@@ -489,6 +497,7 @@
         <section class="page-header page-header-modern bg-transparent">
           <div class="container"></div>
         </section>
+     
 
         <!-- contact form -->
         <!-- flexible section modal -->
@@ -502,8 +511,8 @@
             class="mobile-full-width m-2 text-left flex-grow-1"
             style="flex: 0 0 50%; max-width: 50%"
           >
-            <h4 class="mb-4 text-6" style="font-weight: 400 !important;">Let's Connect!</h4>
-            <p class="mb-4 text-3-5">
+            <h4 class="mb-4 text-6" style="font-weight: 400 !important;color: #fff;">Let's Connect!</h4>
+            <p class="mb-4 text-3-5" style="color: #fff;">
               We would love to hear from you so please get in touch.
             </p>
 
@@ -611,12 +620,13 @@
 
               <!-- Submit Button -->
               <div class="text-center mt-4">
-                <button
-                  type="submit" onclick="sendForm()"
-                  class="btn btn-modern box-shadow-6 border-0 text-transform-none py-3 px-5 custom-btn" style="font-size: large;border-radius: 25px;font-weight: 500 !important;"
-                >
-                  Let's Talk
-                </button>
+                <div class="button-align">
+                  <a href="contact.html"  onclick="sendForm()"
+                      class="landing-button section1-btn btn btn-modern box-shadow-6 border-0 text-transform-none mt-2 py-2 px-4" 
+                      style="background-color: white; color: #000; font-size: 17px; border-radius: 25px; font-weight: 500;">
+                      Let's Talk
+                  </a>
+              </div>
               </div>
             </form>
           </div>
@@ -655,7 +665,7 @@
 
        
       </div>
-
+</div>
       		 <!-- section form -->
            <section class="section m-0 border-0">
             <div class="container">
