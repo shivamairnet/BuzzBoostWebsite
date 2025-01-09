@@ -6,13 +6,13 @@ body {
 
 /* Hover color change */
 .nav-link:hover {
-    color: #648EE2  !important; /* Set hover color */
+    color: white !important; /* Set hover color */
 }
 
 /* Active state underline */
 .nav-link.active {
     position: relative;
-    color: #648EE2  !important; /* Optional, match active color */
+    color: rgb(245, 242, 242)  !important; /* Optional, match active color */
 }
 
 /* Underline effect for active state */
