@@ -200,42 +200,58 @@
   .cta-section {
     margin: 20px auto !important; /* Adjust margins */
     padding: 20px !important; /* Add inner padding */
-    background-color: #426CC1 !important; /* Ensure consistent background */
-    height: 570px !important;
-  }
-
-  .cta-section h3 {
-    font-size: 18px !important; /* Smaller font size for readability */
-    line-height: 1.3 !important; /* Adjust line spacing */
-    text-align: center !important; /* Center-align text */
-    margin-bottom: 15px !important; /* Add spacing below heading */
-    margin-top: 15px !important;
-  }
-
-  .industry-button a {
-    font-size: 14px !important; /* Reduce button font size */
-    padding: 10px 20px !important; /* Adjust button padding */
-    display: inline-block !important; /* Ensure proper alignment */
-    text-align: center !important; /* Center the text inside the button */
-    margin-top: 10px !important;
-  }
-
-  .cta-section .d-flex {
-    flex-direction: column !important; /* Stack elements vertically */
-    align-items: center !important; /* Center-align content */
-    text-align: center !important; /* Center-align text inside */
-  }
-
-  .cta-section .col-7, 
-  .cta-section .col-5 {
-    width: 100% !important; /* Full width for both columns */
-    margin: 0 auto !important; /* Center the columns */
+    background-color: #426CC1 !important; /* Consistent background */
+    height: auto !important; /* Let height adjust dynamically */
+    width: 100% !important;
+    position: relative;
   }
 
   .cta-section img {
-    width: 100% !important; /* Adjust image size */
-    height: auto !important; /* Maintain aspect ratio */
-    margin: 30px 0 !important; /* Add spacing around the image */
+    width: 100% !important; 
+    height: auto !important;
+    margin: 0 auto !important; /* Center image */
+  }
+
+  .cta-section-div {
+    position: static !important; /* Remove absolute positioning for stacking */
+    transform: none !important;
+    color: white !important;
+    padding: 15px !important;
+    font-size: 0.9rem !important; /* Adjust font size */
+    text-align: center !important; /* Center-align text for better readability */
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  .cta-section-div p {
+    font-size: 14px !important; /* Smaller font size for mobile */
+    margin-bottom: 10px !important;
+  }
+
+  .cta-section-div a {
+    display: block !important; /* Make the button take full width */
+    width: auto;
+    margin: 15px auto !important; /* Center the button with margin */
+    text-align: center !important;
+    color: #000 !important;
+    background-color: white !important;
+    border-radius: 25px;
+    padding: 10px 20px !important;
+    font-size: 14px !important;
+  }
+
+  .whatsapp-ptag{
+    font-size: 0.95rem;
+    padding: 3px;
+  }
+
+  .whatsapp-phonetag{
+    font-size: 1.5rem !important;
+    text-align: left !important;
+  }
+
+  .whatsapp-htag{
+    font-size: 2rem !important;
   }
 }
 
@@ -631,7 +647,7 @@ height: 335rem;
   
   .rightDiv {
    height:430px !important ;
-   margin-top: 2450px !important;
+   margin-top: 2380px !important;
    width: 100% !important;
   }
 
@@ -654,6 +670,7 @@ height: 335rem;
   .section3{
     margin-top: 50px !important;
   }
+
 }
 
 @media (min-width:769px) and (max-width: 992px) {
@@ -677,7 +694,7 @@ height: 335rem;
    height:430px !important ;
    /* margin-top: 950px !important; */
    width: 60% !important;
-   margin: 950px auto 0 auto !important;
+   margin: 85px auto 0 auto !important;
    /* display: flex !important;
    justify-content: center !important; */
   }
@@ -710,6 +727,9 @@ height: 335rem;
     width: 120% !important;
   }
 }
+
+
+
 		</style>
         <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
@@ -987,7 +1007,7 @@ height: 335rem;
                             
                                 These days, every successful influencer partnership starts with getting to know the target consumers. The better agencies and businesses understand their target audience, the simpler it becomes to spot and bring on board the right influencers for their business.</p>
                             <div class="text-center">
-                                <img src="img\BlogPage\BuzzBoost Blog 3 Images\Blog 3 Image 1.png" alt="" width="75%" height="230px">
+                                <img src="img\BlogPage\BuzzBoost Blog 3 Images\Blog 3 Image 1.png" alt="" width="75%" height="auto">
                             </div> <br>
                             <h3 style="font-size: 1.5rem;font-weight: 500;color: #000;">
                                 B. Define Clear Campaign Goals</h3>
@@ -1041,9 +1061,9 @@ height: 335rem;
                                 <li style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">Analyze hashtag performance across platforms.</li>
                             </ul>
                             </p>
-                            <div style="position: relative; width: 90%; margin: 0 auto;">
+                            <div style="position: relative; width: 90%; margin: 0 auto;" class="cta-section">
                               <img src="img\BlogPage\BuzzBoost Blog 3 Images\Blog 3 Image 4.png" alt="Blog Image" style="width: 100%; height: auto;">
-                              <div style="position: absolute; top: 50%; left: 35%; transform: translate(-50%, -50%); color: white; padding: 10px 20px; font-size: 1rem; text-align: left !important; border-radius: 5px;">
+                              <div class="cta-section-div" style="position: absolute; top: 50%; left: 35%; transform: translate(-50%, -50%); color: white; padding: 10px 20px; font-size: 1rem; text-align: left !important; border-radius: 5px;">
                                 <p style="color: white !important;text-align: left;font-size: medium;">Looking to connect with the perfect influencers in 2025? </p>
                                 <p style="color: white !important;text-align: left;font-size: medium;">Click the button below to start a conversation with our experts and discover how we can help you identify and collaborate with the right influencers for your brand.</p>
                                 <a class="px-3 py-2" href="contact.html" style="text-align: left; color: #000 !important;background-color: white !important;border-radius: 25px;">Let’s Talk</a>
@@ -1065,7 +1085,7 @@ height: 335rem;
 
     <h2 style="font-size: 2rem;font-weight: 500;color: #000;">Consider the Following When Evaluating Influencers for Your Brand</h2>
      <div class="text-center">
-    <img src="img\BlogPage\BuzzBoost Blog 3 Images\Blog 3 Image 5.png" alt="" width="80%" height="270px">
+    <img src="img\BlogPage\BuzzBoost Blog 3 Images\Blog 3 Image 5.png" alt="" width="80%" height="auto">
 </div><br>
     <h2 style="font-size: 2rem;font-weight: 500;color: #000;" class="warning">Refrain From Hiring or Collaborating With Influencers Who Have:</h3>
     <ul style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
@@ -1219,18 +1239,18 @@ height: 335rem;
     <div class="container">
         <div class="row justify-content-between align-items-center ">
             <div class="col-lg-6 text-center text-lg-start py-5">
-                <h2 class="mb-4 ready-to-transform" style="font-weight:400;font-size: 44px;">
+                <h2 class="whatsapp-htag mb-4 ready-to-transform" style="font-weight:400;font-size: 44px;">
                     Ready To Transform
                     <span>→</span>
                     Let’s Chat on WhatsApp
                 </h2>
-                <p class="text-4  line-height-4 opacity-6 mb-4">Got questions? Need guidance on
+                <p class="whatsapp-ptag text-4  line-height-4 opacity-6 mb-4">Got questions? Need guidance on
                     finding the right influencers? Our team is just a WhatsApp message away!</p>
 
                 <i class="icons icon-phone text-8 text-color-primary me-2"></i>
                 <a href="tel:+919796297972" style="color: #000;"
                 
-                    class="text-6 p-relative bottom-9 text-decoration-none">+91 9796297972
+                    class="whatsapp-phonetag text-6 p-relative bottom-9 text-decoration-none">+91 9796297972
                     </a>
 
             </div>
