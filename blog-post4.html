@@ -51,7 +51,7 @@
 
 		<style>
 			.custom-btn {
-			background-color: #FFBF78;
+			background-color: white;
 			color: #000;
 		}
 
@@ -149,14 +149,19 @@
 			
 		}
 
+    .custom-btn-black {
+			background-color: black !important;
+			color: white !important;	
+		}
+
+		.custom-btn-black:hover {
+			background-color: #426CC1 !important;
+			color: white !important;	
+		}
+
 		#whatsappButton:hover #whatsappIcon {
         content: url('img/whatsapphover.png') !important;
         }
-
-		.custom-btn {
-			background-color: #FFBF78 !important;
-			color: #000 !important;
-		}
 
 		@media (max-width: 768px) {
   .override-inline {
@@ -597,7 +602,7 @@
 .innerDiv {
   width: 60%;
   padding: 5px;
-  height: 550rem;
+  height: auto;
 
 }
 
@@ -824,7 +829,7 @@ height: 555rem;
 								</ul>
 
 								<a href="contact.html"
-									class="btn btn-modern box-shadow-6 border-0 text-transform-none ms-3 d-none d-xl-inline-block landing-button text-2 py-2 " style="background-color: white !important;color:#000 !important; border-radius: 25px;font-weight: 500;">Get
+									class="btn btn-modern box-shadow-6 border-0 text-transform-none ms-3 d-none d-xl-inline-block landing-button text-2 py-2 custom-btn" style="border-radius: 25px;font-weight: 500;">Get
 									In Touch</a>
 
 								<button class="btn header-btn-collapse-nav"
@@ -957,7 +962,7 @@ height: 555rem;
                             <img src="img/BlogPage/user (1) 1.png" alt="user" height="20px" width="20px" style="margin-right: 4px;">Arham Jain
                         </span>
                         <span style="font-size: 1.5rem; margin-right: 30px;">
-                            <img src="img/BlogPage/calendar 1.png" alt="calendar" height="20px" width="20px" style="margin-right: 4px;">02/01/2025
+                            <img src="img/BlogPage/calendar 1.png" alt="calendar" height="20px" width="20px" style="margin-right: 4px;">04/01/2025
                         </span>
                         <span style="font-size: 1.5rem;">
                             <img src="img/BlogPage/wall-clock 1.png" alt="clock" height="20px" width="20px" style="margin-right: 4px;">8 min
@@ -1398,13 +1403,14 @@ From starting with a strong influencer branding to putting into practice strateg
                             <div class="row">
                                 <div class="col"></div>
                                 <div class="form-group col-xl-7 col-lg-9 col-md-6 col-sm-12">
-                                    <div class="d-grid gap-2">
-                                        <button id="whatsappButton" type="button" class="btn btn-sm border-0 text-3-5 p-3 custom-btn" 
-                                            style="color: black;border-radius: 25px;">
-                                            <img id="whatsappIcon" src="img/whatsapp.png" width="20" height="20" alt="WhatsApp Icon" 
-                                                style="margin-right: 8px;">
-                                            Contact Us
-                                        </button>
+                                    <div class="d-grid gap-2 justify-content-center">
+                                      <button id="whatsappButton" type="button"
+                                      class="section1-btn btn btn-modern box-shadow-6 border-0 text-transform-none mt-2 py-2 px-4 custom-btn-black" style="font-size: medium;border-radius: 25px !important;font-weight: 500;" 
+                                        >
+                                                                  <!-- <img id="whatsappIcon" src="img/whatsapp.png" width="20" height="20" alt="WhatsApp Icon"  -->
+                                                                      <!-- style="margin-right: 8px;"> -->
+                                                                  Contact Us
+                                                              </button>
                                     </div>
                                 </div>
                                 <div class="col"></div>

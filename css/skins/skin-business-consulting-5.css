@@ -1084,11 +1084,11 @@ html .overlay-color-light:not(.no-skin):before {
 }
 
 .btn-link {
-	color: #FFBF78;
+	color: #426cc1;
 }
 
 .btn-link:hover {
-	color: #426cc1;
+	color: #000;
 }
 
 .btn-link:active {
