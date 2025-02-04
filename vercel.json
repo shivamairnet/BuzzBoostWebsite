@@ -1,0 +1,17 @@
+{
+  "rewrites": [
+    { "source": "/home", "destination": "/home.html" },
+    { "source": "/about", "destination": "/aboutus.html" },
+    { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/agency", "destination": "/agency.html" },
+    { "source": "/fgh", "destination": "/blog.html" }, 
+    { "source": "/Why Hiring Influencers Can Be a Game-Changer for Your Agency and Business in 2025", "destination": "/blog-post.html" },
+    { "source": "/Top Influencer Marketing Trends To Watch In 2025", "destination": "/blog-post2.html" },
+    { "source": "/How to Reach Out To Right Set Of Influencers in 2025", "destination": "/blog-post3.html" },
+    { "source": "/Influencer Guide: Collaborate with Top Brands in 2025", "destination": "/blog-post4.html" },
+    { "source": "/Guide to Mega, Macro, Micro, And Nano Influencers for Your Campaigns", "destination": "/blog-post5.html" },
+    { "source": "/How Micro Influencers Can Be The Game Changers for Your Agencies and Businesses", "destination": "/blog-post6.html" },
+    { "source": "/business", "destination": "/business.html" },
+    { "source": "/influencer", "destination": "/influencer.html" }
+  ]
+}
