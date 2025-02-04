@@ -16,19 +16,19 @@
 }
 
 a {
-	color: #ff6716;
+	color: #426cc1;
 }
 
 a:hover {
-	color: #ff7830;
+	color: #426cc1;
 }
 
 a:focus {
-	color: #ff7830;
+	color: #426cc1;
 }
 
 a:active {
-	color: #fb5700;
+	color: #426cc1;
 }
 
 html .text-color-primary,
