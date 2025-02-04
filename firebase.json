@@ -12,6 +12,7 @@
       { "source": "/contact", "destination": "/contact.html" },
       { "source": "/agency", "destination": "/agency.html" },
       { "source": "/blog", "destination": "/blog.html" }, 
+      { "source": "/home","destination":"/home.html"},
       { "source": "/Why Hiring Influencers Can Be a Game-Changer for Your Agency and Business in 2025", "destination": "/Why Hiring Influencers Can Be a Game-Changer for Your Agency and Business in 2025.html" },
       { "source": "/Top Influencer Marketing Trends To Watch In 2025", "destination": "/Top Influencer Marketing Trends To Watch In 2025.html" },
       { "source": "/How to Reach Out To Right Set Of Influencers in 2025", "destination": "/How to Reach Out To Right Set Of Influencers in 2025.html" },
