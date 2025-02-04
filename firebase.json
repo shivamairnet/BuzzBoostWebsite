@@ -13,12 +13,12 @@
       { "source": "/agency", "destination": "/agency.html" },
       { "source": "/blog", "destination": "/blog.html" }, 
       { "source": "/home","destination":"/home.html"},
-      { "source": "/Why Hiring Influencers Can Be a Game-Changer for Your Agency and Business in 2025", "destination": "/Why Hiring Influencers Can Be a Game-Changer for Your Agency and Business in 2025.html" },
-      { "source": "/Top Influencer Marketing Trends To Watch In 2025", "destination": "/Top Influencer Marketing Trends To Watch In 2025.html" },
-      { "source": "/How to Reach Out To Right Set Of Influencers in 2025", "destination": "/How to Reach Out To Right Set Of Influencers in 2025.html" },
-      { "source": "/Influencer Guide-Collaborate with Top Brands in 2025", "destination": "/Influencer Guide-Collaborate with Top Brands in 2025.html" },
-      { "source": "/Guide to Mega, Macro, Micro, And Nano Influencers for Your Campaigns", "destination": "/Guide to Mega, Macro, Micro, And Nano Influencers for Your Campaigns.html" },
-      { "source": "/How Micro Influencers Can Be The Game Changers for Your Agencies and Businesses", "destination": "/How Micro Influencers Can Be The Game Changers for Your Agencies and Businesses.html" },
+      { "source": "/why-hiring-influencers-can-be-a-game-changer-for-your-agency-and-business-in-2025", "destination": "/why-hiring-influencers-can-be-a-game-changer-for-your-agency-and-business-in-2025.html" },
+      { "source": "/top-influence-marketing-trends-to-watch-in-2025", "destination": "/top-influence-marketing-trends-to-watch-in-2025.html" },
+      { "source": "/how-to-reach-out-to-right-set-of-influencers-in-2025", "destination": "/how-to-reach-out-to-right-set-of-influencers-in-2025.html" },
+      { "source": "/influencer-guide-collaborate-with-top-brands-in-2025", "destination": "/influencer-guide-collaborate-with-top-brands-in-2025.html" },
+      { "source": "/guide-to-mega-macro-micro-and-nano-influencers-for-your-campaigns", "destination": "/guide-to-mega-macro-micro-and-nano-influencers-for-your-campaigns.html" },
+      { "source": "/how-micro-influencers-can-be-the-game-changers-for-your-agencies-and-businesses", "destination": "/how-micro-influencers-can-be-the-game-changers-for-your-agencies-and-businesses.html" },
       { "source": "/business", "destination": "/business.html" },
       { "source": "/influencer", "destination": "/influencer.html" }
     ]
