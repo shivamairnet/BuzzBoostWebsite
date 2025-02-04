@@ -50,14 +50,15 @@
 		<script src="vendor/modernizr/modernizr.min.js"></script>
 
 		<style>
-			.custom-btn {
+			/* .custom-btn {
 			background-color: #FFBF78;
 			color: #000;
-		}
+		} */
 
 		.custom-btn:hover {
 			background-color: #426CC1;
-			color: #fff;			
+			color: #fff;	
+
 		}
 
 		#whatsappButton:hover #whatsappIcon {
@@ -213,7 +214,7 @@
         }
 
 		.custom-btn {
-			background-color: #FFBF78 !important;
+			background-color: white !important;
 			color: #000 !important;
 		}
 
@@ -325,6 +326,66 @@
 #header .header-nav.header-nav-links:not(.header-nav-light-text) nav > ul > li > a, #header .header-nav.header-nav-line:not(.header-nav-light-text) nav > ul > li > a {
 		color: rgba(255, 255, 255, 0.6)
 	}
+
+	@media (max-width: 768px) {
+  .client-column-section {
+    padding: 20px 0 !important;
+    margin-top: 10px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .client-column-section > div {
+    display: flex !important;
+    flex-direction: column !important; /* Stack text and image vertically */
+    align-items: center !important; /* Ensure everything is horizontally centered */
+    justify-content: center !important;
+    gap: 20px !important;
+    width: 100% !important; /* Ensure full-width alignment */
+    margin: 0 auto !important; /* Center-align container within the viewport */
+    padding: 0 !important;
+  }
+
+  /* Text Column */
+  .client-column-section > div > div:nth-child(1) {
+    text-align: center !important;
+    padding: 0 !important; /* Remove all padding */
+    margin: 0 auto !important; /* Center-align within the container */
+    width: 90% !important; /* Constrain width for better readability */
+  }
+
+  .client-column-section h2 {
+    font-size: 2.5rem !important;
+    margin-bottom: 10px !important;
+    text-align: center !important;
+    padding-left: 0 !important;
+  }
+
+  .client-column-section p {
+    font-size: 1.25rem !important;
+    line-height: 1.5 !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    max-width: 90% !important; /* Constrain text width */
+  }
+
+  /* Image Column */
+  .client-column-section > div > div:nth-child(2) {
+    text-align: center !important;
+    padding: 0 !important;
+    margin: 0 auto !important; /* Center-align within the container */
+    width: 90% !important; /* Constrain image column width */
+  }
+
+  .client-column-section img {
+    max-width: 100% !important; /* Ensure the image is fully responsive */
+    height: auto !important;
+    border-radius: 10px !important;
+    margin: 15px 0 !important; /* Add spacing around the image */
+  }
+}
 		</style>
 		<meta name= "robots" content="index, follow">
 	</head>
@@ -406,9 +467,9 @@
 										<div class="d-flex align-items-center">
 											<i class="icons icon-phone text-8 me-2" style="color: rgba(255, 255, 255, 0.6);"></i>
 											<a href="tel:+91 9796297972" class="text-3"
-												style="color:rgba(255, 255, 255, 0.6); text-decoration: none; transition: color 0.3s ease;"
-												onmouseover="this.style.color='#426CC1'; this.style.textDecoration='underline';"
-												onmouseout="this.style.color='#000'; this.style.textDecoration='none';">
+												style="color:rgba(255, 255, 255, 0.6) !important; text-decoration: none; transition: color 0.3s ease;"
+											>
+												
 												+91 9796297972
 											</a>
 
@@ -417,7 +478,7 @@
 								</ul>
 
 								<a href="contact.html"
-								class="btn btn-modern box-shadow-6 border-0 text-transform-none ms-3 d-none d-xl-inline-block landing-button text-2 py-2 " style="background-color: white !important;color:#000 !important; border-radius: 25px;font-weight: 500;">Get
+								class="custom-btn btn btn-modern box-shadow-6 border-0 text-transform-none ms-3 d-none d-xl-inline-block landing-button text-2 py-2 " style="border-radius: 25px;font-weight: 500;">Get
 								In Touch</a>
 
 								<button class="btn header-btn-collapse-nav"
@@ -547,10 +608,10 @@
 					  At BuzzBoost, we bring brands, influencers, and agencies together to create<br>
 					  impactful collaborations that resonate with audiences.
 					</p>
-					<div class="button-align">
+					<div class="button-align" style="margin: auto;display: flex;justify-content: center;">
 						<a href="contact.html" 
-							class="landing-button section1-btn btn btn-modern box-shadow-6 border-0 text-transform-none mt-2 py-2 px-4" 
-							style="background-color: white; color: #000; font-size: 17px; border-radius: 25px; font-weight: 500;">
+							class="landing-button section1-btn btn btn-modern box-shadow-6 border-0 text-transform-none mt-2 py-2 px-4 custom-btn" 
+							style="background-color: white; color: #000; font-size: 17px; border-radius: 25px; font-weight: 500;z-index: 99;position: absolute;">
 							Get In Touch
 						</a>
 					</div>
@@ -567,9 +628,9 @@
 				<div class="container pt-4 pb-5 mb-5 section-1abt">
 					<div class="row">
 						<div class="col" style="padding-left: 25px;padding-right: 25px;">
-							<h2 class="text-black text-center" style="font-size: 50px;line-height: normal;">Our Purpose and Principles</h2>
-							<p class="section-1abtp11 text-center" style="font-size: 36px;">Connecting Brands, Empowering Influencers, and Creating Impact</p>
-							<p class="section-1abtp1  line-height-5 text-center" style="font-size: 1.5rem;padding-left: 115px;padding-right: 115px;">At BuzzBoost, our purpose is to seamlessly bridge the gap between brands and influencers in the ever-evolving social media landscape. We connect brands with the right voices to represent them, and influencers with the industries they love, fostering partnerships that truly resonate.
+							<h2 class="text-black text-center" style="font-size: 40px;line-height: normal;">Our Purpose and Principles</h2>
+							<p class="section-1abtp11 text-center" style="font-size: 24px;">Connecting Brands, Empowering Influencers, and Creating Impact</p>
+							<p class="section-1abtp1  line-height-5 text-center" style="font-size: 18px;padding-left: 115px;padding-right: 115px;">At BuzzBoost, our purpose is to seamlessly bridge the gap between brands and influencers in the ever-evolving social media landscape. We connect brands with the right voices to represent them, and influencers with the industries they love, fostering partnerships that truly resonate.
 
 							</br></br>	Whether you aim to create brand awareness, drive sales, or launch a new product, our platform is designed to help you thrive. With advanced analytics, an intuitive search feature, and a user-friendly interface, BuzzBoost ensures every campaign is data-driven and impact-focused.
 								
@@ -583,8 +644,8 @@
 				<div class="team-section row align-items-center mt-5 pt-2 mb-5" style="background: linear-gradient(to right, rgba(66, 108, 193, 0.3), rgba(255, 191, 116, 0.3));display: flex;justify-content: center;align-items: center;" >
 						<div class="container" style="display: flex;justify-content: center;align-items: center;padding: 5px;">
 					<div class="col-lg-7 px-xl-5 text-center text-lg-start">
-						<h2 class="text-black" style="font-size: 50px;">Our Team</h2>
-						<p class="text-black" style="font-size: 1.5rem;line-height: 1.5;">At BuzzBoost, our team is dedicated to empowering both brands and influencers with the best possible experience and support by providing them with guidance and personalized support at every step of the way. 
+						<h2 class="text-black" style="font-size: 40px;">Our Team</h2>
+						<p class="text-black" style="font-size: 24px;line-height: 1.5;">At BuzzBoost, our team is dedicated to empowering both brands and influencers with the best possible experience and support by providing them with guidance and personalized support at every step of the way. 
 							Let's boost your brand and your influencer career with BuzzBoost!</p>
 					</div>
 					<div class="col-lg-5 p-relative pt-5 pb-5 max-width-custom-1" style="padding-left: 10px;">
@@ -597,167 +658,40 @@
 				</div>
 
 				 <!-- carousel section -->
-		 <div class="container" style="padding: 10px; padding-top: 45px; padding-bottom: 45px;">			
-			<div class="row">
-				<div class="col text-center">
-					<h3 class="pt-4" style="font-size: 50px;">Trusted Brands Trust BuzzBoost</h3>
-					<p class="mobile-trusted-section text-black" style="padding-top: 20px;" style="font-size: 1.5rem;line-height: 1.5;">
-						We are trusted by industry-leading brands who have successfully grown with</br> 
-						our network of influencers across diverse industries.
-					</p>
-				</div>
+		<!-- client new section -->	
+		<section class="container client-column-section" style="padding: 50px 20px;margin-top: 20px;">
+			<div
+			  style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; justify-content: center;"
+			>
+			  <!-- Text Column -->
+			  <div class="text-column"
+				style="flex: 1; min-width: 300px; text-align: left;padding-left: 50px;padding-right: 20px;margin-top: 20px;"
+			  >
+			  <!-- <h2 class="heading" style="color: #426CC1;font-size: 1.75rem;margin-bottom: 15px;padding-left: 5px;">Partners</h2> -->
+				<h2 class="appear-animation" data-appear-animation="fadeInUpShorter"
+				data-appear-animation-delay="500"
+				  style="font-size: 2.5rem; margin-bottom: 20px; color: black; text-align: left;"
+				>
+				Our Trusted Clients
+				</h2>
+				<p class="appear-animation" data-appear-animation="fadeInUpShorter"
+				data-appear-animation-delay="500"
+				  style="font-size: 1.5rem; line-height: 1.6; color: #666; text-align: left;"
+				>
+				We are trusted by industry-leading brands who have successfully grown with our network of influencers across diverse industries.
+				</p>
+			  </div>
+			  <!-- Image Column -->
+			  <div class="image-column appear-animation" data-appear-animation="fadeInUpShorter"
+			  data-appear-animation-delay="500" style="flex: 1; min-width: 350px; text-align: center;padding-right: 40px;">
+				<img
+				  src="img\BuzzBoostImg\Buzzboostlatest\Client List.png"
+				  alt="Description of the image"
+				  style="max-width: 100%; height: auto;"
+				/>
+			  </div>
 			</div>
-		
-			<!-- carousel for large screens -->
-			<div id="brandCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000" style="padding-top: 60px;height: 300px;">
-				<div class="carousel-inner text-center">
-					<!-- First Slide -->
-					<div class="carousel-item active">
-						<div class="row align-items-center justify-content-center">
-							
-							<div class="col-sm-3 col-xl-2 mb-4">
-								<img src="img/Newclientscarousel/The Besopke Logo.png" alt="fox-hub-black" class="img-fluid" style="max-width: 160px;height: 80px;"/>
-							</div>
-							<div class="col-sm-3 col-xl-2 mb-4">
-								<img src="img/BuzzBoostImg/Aroma Cabinets Logo.png" class="img-fluid" style="max-width: 140px;height: 80px;" alt="Aroma" />
-								<!-- <img src="img/BuzzBoostImg/acme.png" class="img-fluid" style="max-width: 140px;height: 50px;" alt="Acme" /> -->
-							</div>
-							<div class="col-sm-4 col-xl-2 mb-4">
-								<img src="img/Newclientscarousel/themayfairhouse logo.png" alt="fair-house" class="img-fluid" style="max-width: 240px;height: 110px;" />
-							</div>
-							
-							<div class="col-sm-3 col-xl-2 mb-4">
-								<img src="img/Newclientscarousel/pluchdesign logo.png" alt="pluchdesign" class="img-fluid" style="max-width: 250px;height: 130px;" />
-							</div>
-						</div>
-					</div>
-					<!-- Second Slide -->
-					<div class="carousel-item">
-						<div class="row align-items-center justify-content-center">
-							<div class="col-sm-3 col-xl-2 mb-4">
-								<img src="img/Newclientscarousel/educationlane logo.png" alt="educationlane" class="img-fluid" style="max-width: 140px;height: 120px;" />
-							</div>
-							<div class="col-sm-3 col-xl-2 mb-4">
-								<img src="img/BuzzBoostImg/fav1.png" alt="fav1" class="img-fluid" style="max-width: 140px;height: 120px;" />
-							</div>
-							<div class="col-sm-3 col-xl-2 mb-4">
-								<img src="img/BuzzBoostImg/Fireshot Entertainment Logo.png" alt="fireshot" class="img-fluid" style="max-width: 180px;height: 70px;" />
-							</div>
-							
-							<div class="col-sm-4 col-xl-2 mb-4">
-								<img src="img/Newclientscarousel/Magent Co Work Image.png" alt="magnet-co-work" class="img-fluid" style="max-width: 250px;height: 110px;" />
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- Carousel Controls -->
-				<button class="carousel-control-prev" type="button" data-bs-target="#brandCarousel" data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
-				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#brandCarousel" data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
-				</button>
-			</div>
-
-						<!-- carousel for small screens -->
-			 <!-- Carousel Start -->
-			 <div id="smallbrandCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000" style="padding-top: 40px;">
-				<div class="carousel-inner text-center" style="height: 170px;padding-top: 20px;">
-					<!-- First Slide -->
-					<div class="carousel-item active">
-						<div class="row">
-							<div class="col-12 d-flex justify-content-center">
-								<img src="img/BuzzBoostImg/Fireshot Entertainment Logo.png" alt="Fireshot" class="img-fluid" style="max-width: 140px;height: 80px;" />
-							</div>
-						</div>
-					</div>
-					<!-- Second Slide -->
-					
-					<!-- Third Slide -->
-					<div class="carousel-item">
-						<div class="row">
-							<div class="col-12 d-flex justify-content-center">
-								<img src="img/BuzzBoostImg/fox-hub-black.png" alt="fox-hub-black" class="img-fluid" style="max-width: 140px;height: 80px;" />
-							</div>
-						</div>
-					</div>
-					<!-- Fourth Slide -->
-					<div class="carousel-item">
-						<div class="row">
-							<div class="col-12 d-flex justify-content-center">
-								<img src="img/Newclientscarousel/educationlane logo.png" alt="educationlane" class="img-fluid" style="max-width: 140px;height: 80px;" />
-							</div>
-						</div>
-					</div>
-					<!-- Fifth Slide -->
-					<div class="carousel-item">
-						<div class="row">
-							<div class="col-12 d-flex justify-content-center">
-								<img src="img/Newclientscarousel/Magent Co Work Image.png" alt="magnet-co-work" class="img-fluid" style="max-width: 140px;height: 80px;" />
-							</div>
-						</div>
-					</div>
-					<!-- Sixth Slide -->
-					<div class="carousel-item">
-						<div class="row">
-							<div class="col-12 d-flex justify-content-center">
-								<img src="img/Newclientscarousel/themayfairhouse logo.png" alt="themayfairhouse" class="img-fluid" style="max-width: 140px;height: 80px;" />
-							</div>
-						</div>
-					</div>
-					<!-- seventh slide -->
-				
-					<!-- eightth slide -->
-					<div class="carousel-item">
-						<div class="row">
-							<div class="col-12 d-flex justify-content-center">
-								<img src="img/Newclientscarousel/pluchdesign logo.png" alt="pluchdesign" class="img-fluid" style="max-width: 250px;height: 80px;" />	
-							</div>
-						</div>
-					</div>
-					<!-- ninth slide -->
-					
-					<!-- tenth slide -->
-					
-					<!-- eleventh slide -->
-					<div class="carousel-item">
-						<div class="row">
-							<div class="col-12 d-flex justify-content-center">
-								<img src="img/BuzzBoostImg/fav1.png" alt="fav1" class="img-fluid" style="max-width: 140px;height: 80px;" />
-							</div>
-						</div>
-					</div>
-			
-					<!-- twelfth slide -->
-					<div class="carousel-item">
-						<div class="row">
-							<div class="col-12 d-flex justify-content-center">
-								<img src="img/BuzzBoostImg/Aroma Cabinets Logo.png" alt="aroma" class="img-fluid" style="max-width: 140px;height: 80px;" />
-							</div>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="row">
-							<div class="col-12 d-flex justify-content-center">
-								<img src="img/Newclientscarousel/The Besopke Logo.png" alt="aroma" class="img-fluid" style="max-width: 140px;height: 80px;" />
-							</div>
-						</div>
-					</div>
-					<!-- Add More Slides as Needed -->
-				</div>
-				<!-- Carousel Controls -->
-				<button class="carousel-control-prev" type="button" data-bs-target="#brandCarousel" data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
-				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#brandCarousel" data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
-				</button>
-			</div>
-		</div>
+		  </section>
 		
 			
 				 <!-- section form -->
@@ -801,10 +735,10 @@
 									<div class="row">
 										<div class="col"></div>
 										<div class="form-group col-xl-7 col-lg-9 col-md-6 col-sm-12">
-											<div class="d-grid gap-2">
-												<button id="whatsappButton" type="button" class="btn mt-2 py-3 px-2 box-shadow-6 border-0 text-transform-none ms-2 d-xl-inline-block custom-btn" style="font-size: large;color: black; border-radius: 25px;font-weight: 500;">
-													<img id="whatsappIcon" src="img/whatsapp.png" width="20" height="20" alt="WhatsApp Icon" 
-														style="margin-right: 8px;">
+											<div class="d-grid gap-2 justify-content-center">
+												<button type="button" class="btn mt-2 py-2 px-2 box-shadow-6 border-0 text-transform-none ms-2 d-xl-inline-block custom-btn" style="background-color:#FFBF78 !important;color: black !important; font-size: 17px;color: black; border-radius: 25px;font-weight: 500;width: 180px;">
+													<!-- <img id="whatsappIcon" src="img/whatsapp.png" width="20" height="20" alt="WhatsApp Icon" 
+														style="margin-right: 8px;"> -->
 													Contact Us
 												</button>
 											</div>

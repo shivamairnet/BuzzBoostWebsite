@@ -69,13 +69,24 @@
 			color: #fff !important;
 		}
 
+        .custom-btn-black:hover {
+			background-color: #426CC1 !important;
+			color: #fff !important;
+		}
+
+
+		.custom-btn-black {
+			background-color: black !important;
+			color: #fff !important;
+		}
+
         #whatsappButton:hover #whatsappIcon {
         content: url('img/whatsapphover.png');
         }
 
 
 		.custom-btn {
-			background-color: #FFBF78;
+			background-color: white;
 			color: #000;
 		}
 
@@ -593,9 +604,9 @@
 </head>
 
 <body class="alternative-font-7">
-    <div class="body mt-0">
+
  
-        <div class="landing-section" style="background: linear-gradient(to right, #314D91, #426CC1, #8AA2D7)">
+        <div class="landing-section" style="background-image: url('img/Header Images/Agency Page Header.jpg');background-position: center;background-size: cover;background-repeat: no-repeat;">
         <header style="color: #fff;" id="header" class="header-transparent header-desktop-tablet"
             data-plugin-options="{'stickyScrollUp': false, 'stickyEnabled': false, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 42, 'stickyHeaderContainerHeight': 70}">
             <div class="header-body header-body-bottom-border border-top-0 h-auto">
@@ -659,11 +670,10 @@
                                 <ul class="header-extra-info d-none d-xxl-block mt-2 mx-3">
                                     <li class="d-none d-sm-inline-flex ms-0 font-weight-semibold">
                                         <div class="d-flex align-items-center">
-                                            <i class="icons icon-phone text-8   me-2" style="color: rgba(255, 255, 255, 0.6);"></i>
-                                            <a href="tel:+91 9796297972" class="text-3"
-                                                style="color:rgba(255, 255, 255, 0.6); text-decoration: none; transition: color 0.3s ease;"
-                                                onmouseover="this.style.color='#426CC1'; this.style.textDecoration='underline';"
-                                                onmouseout="this.style.color='#000'; this.style.textDecoration='none';">
+                                            <i class="icons icon-phone text-8 me-2" style="color: rgba(255, 255, 255, 0.6);"></i>
+                                            <a href="tel:+91 9796297972" class=""
+                                                style="color:rgba(255, 255, 255, 0.6); text-decoration: none; transition: color 0.3s ease;font-size: 1.2rem;"
+                                                >
                                                 +91 9796297972
                                             </a>
 
@@ -672,8 +682,8 @@
                                 </ul>
 
                                 <a href="contact.html"
-									class="btn btn-modern box-shadow-6 border-0 text-transform-none ms-3 d-none d-xl-inline-block landing-button text-2 py-2 " style="background-color: white !important;color:#000 !important; border-radius: 25px;font-weight: 500;">Get
-									In Touch</a>
+                                class="custom-btn btn btn-modern box-shadow-6 border-0 text-transform-none ms-3 d-none d-xl-inline-block landing-button py-2 px-4 custom-btn" style=" border-radius: 25px;font-weight: 500;font-size: 17px;">Get
+                                In Touch</a>
 
                                 <button class="btn header-btn-collapse-nav"
                                     style="background-color: #426CC1; color: #ffffff; border: none; padding: 10px 15px; border-radius: 5px;"
@@ -792,9 +802,9 @@
 	</script>
 
         <!-- section-1 -->
-               <section class="section1" style="margin: 2px auto; padding: 15px;">
+               <!-- <section class="section1" style="margin: 2px auto; padding: 15px;">
                 <div class="section1-div row align-items-center" style="height: 450px;padding-left: 28px;display: flex; justify-content: center; align-items: center;width: 1290px;margin: 2px auto;">
-                    <!-- Left Content Section -->
+                    
                     <div class="col-lg-6 hero-text text-center text-md-center text-xl-start text-lg-start">
                         <h1 class="section1-h1 display-4 text-white" style="font-size: 50px;font-weight: 500 !important;">Find the Perfect Influencers for Your Next Big Campaign</h1>
                         <p class="section1-p lead line-height-5 text-white" style="font-size: 1.5rem;letter-spacing: normal;">
@@ -809,12 +819,39 @@
                         </div>
                     </div>
             
-                    <!-- Right Image Section -->
+        
                     <div class="section1-img col-lg-6 hero-img d-lg-block" style="text-align: right;">
                         <img class="section1-img1" src="img/BuzzBoostImg/Agency Page Image.png" alt="Agency" width="700px" height="350px" style="padding-right:70px;margin-top: 115px;">
                     </div>
                 </div>
-            </section>
+            </section> -->
+
+            <section class="section1" style="margin: 2px auto; padding: 15px;">
+                <div class="section1-div row align-items-center" 
+                    style="height: 450px; padding: 0 20px; display: flex; justify-content: center; align-items: center; width: 100%; margin: 2px auto;">
+                    
+                    
+                    <div class="section1-text text-center" style="max-width: 800px;">
+                        <h1 class="section1-h1 display-4" 
+                            style="font-size: 50px; color: white; margin-bottom: 20px; line-height: 1.2;">
+                            Find the Perfect Influencers for Your Next Big Campaign
+                        </h1>
+            
+                        <p class="section1-p lead line-height-5" 
+                            style="font-size: 24px; letter-spacing: normal; color: white; margin-bottom: 30px;">
+                            Trusted collaborations with top influencers and creators to elevate your clients' brands. 
+                        </p>
+            
+                        <div class="button-align d-flex justify-content-center">
+                            <a href="contact.html" 
+                                class="custom-btn landing-button section1-btn btn btn-modern box-shadow-6 border-0 text-transform-none mt-2 py-2 px-4" 
+                                style="font-size: 17px; border-radius: 25px; font-weight: 500;margin-right: 10px;">
+                                Get In Touch
+                            </a>                    
+                        </div>
+                    </div>
+                </div>
+            </section>	
     </div>
         
 
@@ -823,10 +860,10 @@
         <section class="section lshead">
             <div class="container text-center large-screen-view">
                 <!-- Section Header -->
-                <h3 class="pt-4" style=" font-size: 50px;">
+                <h3 class="pt-4" style=" font-size: 40px;">
                     Choose From A List Of Influencers For Your Client
                 </h3>
-                <p class="pt-1 influencerimagesection" style="font-size: 1.5rem;">
+                <p class="pt-1 influencerimagesection" style="font-size: 24px;">
                     BuzzBoost offers you to collaborate with the best influencers across industries, styles, and audiences</br> 
                     to find the perfect fit for your brand.
                 </p>
@@ -1173,15 +1210,15 @@
 						<div class="row justify-content-between align-items-center">
 							<div class="col-xl-6 custom-col-1 appear-animation" data-appear-animation="fadeInUpShorter"
 								data-appear-animation-delay="900" style="padding: 60px 35px; text-align: left;margin-top: 20px;">
-								<h3 class="" style=" padding-bottom: 20px;font-size: 50px;color: white;">
+								<h3 class="" style=" padding-bottom: 20px;font-size: 40px;color: white;">
 									Flexible Contracting Options with Influencers
 								</h3>
-								<p class="line-height-5 text-light" style="padding-bottom: 20px; font-size: 1.5rem;margin-top: 15px;">
+								<p class="line-height-5 text-light" style="padding-bottom: 20px; font-size: 24px;margin-top: 15px;">
 									We make collaborations simple! Whether you're planning for a one-time campaign or a long-term contract, BuzzBoost provides you with flexible contracting options so that you can focus on driving results without worrying about the partnerships.
 								</p>
 								<div class="pt-3 pb-5" style="text-align: left;">
-									<a href="contact.html" class="button-section4 btn btn-modern box-shadow-6 border-0 text-transform-none mt-2 py-3 px-5 custom-btn" 
-									   style="padding: 1rem 1.5rem; text-decoration: none;font-size: large;border-radius: 25px;">
+									<a href="contact.html" class="button-section4 btn btn-modern box-shadow-6 border-0 text-transform-none mt-2 py-2 px-4 custom-btn" 
+									   style="text-decoration: none;font-size: 17px;border-radius: 25px;">
 										Get In Touch
 									</a>
 								</div>
@@ -1318,29 +1355,29 @@ document.getElementById('industry-select').addEventListener('change', function()
 </script>
 
         <!-- section-5-zig-zag -->
-        <div class="container" style="margin-top: 48px;">
-			<h3 class="text-center mt-5 mb-15" style="padding-top: 40px;padding-bottom: 40px;font-size: 50px;">Find Your Next Perfect Influencer Match!</h3>
+		<div class="container" style="margin-top: 48px;">
+			<h3 class="text-center mt-5 mb-15" style="padding-top: 40px;padding-bottom: 40px;font-size: 30px;">Find Your Next Perfect Influencer Match!</h3>
 		
 			<!-- Mega Influencers -->
-			<div class="row align-items-center justify-content-center mt-5" id="mega">
+			<div class="row align-items-center justify-content-center mt-5">
 				<div class="col-lg-5 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-1">
 					<div class="p-absolute right-0"></div>
 					<div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
-						<img width="353" height="465" src="img/Types Of Influencers (1)/Mega Influencer (2).png" alt="Mega Influencer" />
+						<img width="353" height="465" src="img/BuzzBoost Home Page Images/Mega Influencers.png" alt="Mega Influencer" />
 					</div>
 				</div>
 				<div class="col-lg-5 text-center text-lg-start order-2 order-lg-2 mt-2">
-					<h3 class="mt-2 pt-2" style="font-size: 50px;">Mega Influencers</h3>
-					<p class="" style="font-size: 28px;color: #FFBF78;">Reach Millions, And Go Viral!</p>
+					<h3 class="mt-2 pt-2" style="font-size: 30px;">Mega Influencers</h3>
+					<p class="" style="font-size: 24px;color: #426CC1;">Reach Millions, And Go Viral!</p>
 					<p style="font-size: 20px;">Mega influencers are the celebrities of the social media world, commanding millions of followers across platforms. Whether launching a new product or amplifying brand awareness, these influencers ensure your message reaches a massive audience with unmatched impact.</p>
 				</div>
 			</div>
 		
 			<!-- Macro Influencers -->
-			<div class="row align-items-center justify-content-center mt-5" id="macro">
+			<div class="row align-items-center justify-content-center mt-5">
 				<div class="col-lg-5 text-center text-lg-start order-2 order-lg-1 mt-2" style="padding-left: 25px;">
-					<h3 class="mt-2 pt-2" style="font-size: 50px;">Macro Influencers</h3>
-					<p class="" style="font-size: 28px;color: #426CC1;">Powerhouse of Engagement And Reach!</p>
+					<h3 class="mt-2 pt-2" style="font-size: 30px;">Macro Influencers</h3>
+					<p class="" style="font-size: 20px;color: #426CC1;">Powerhouse of Engagement And Reach!</p>
 					
 					<p style="font-size: 20px;">With hundreds of thousands of followers, macro influencers blend significant reach with strong audience trust. Macro influencers are perfect for campaigns that require a balance of visibility and engagement, making them ideal for mid to large-scale brands looking to connect with audiences beyond local markets while retaining a personal touch.</p>
 				</div>
@@ -1353,25 +1390,25 @@ document.getElementById('industry-select').addEventListener('change', function()
 			</div>
 		
 			<!-- Micro Influencers -->
-			<div class="row align-items-center justify-content-center mt-5" id="micro">
+			<div class="row align-items-center justify-content-center mt-5">
 				<div class="col-lg-5 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-1">
 					<div class="p-absolute right-0"></div>
 					<div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
-						<img width="353" height="400" src="img/Types Of Influencers (1)/Micro Influencer (2).png" alt="Micro Influencer" />
+						<img width="353" height="450" src="img/BuzzBoost Home Page Images/Micro Influencers.png" alt="Micro Influencer" />
 					</div>
 				</div>
 				<div class="col-lg-5 text-center text-lg-start order-2 order-lg-2 mt-2">
-					<h3 class="mt-2 pt-2" style="font-size: 50px;">Micro Influencers</h3>
-					<p class="" style="font-size: 28px;color: #FFBF78;">Authenticity That Resonates!</p>
+					<h3 class="mt-2 pt-2" style="font-size: 30px;">Micro Influencers</h3>
+					<p class="" style="font-size: 20px;color: #426CC1;">Authenticity That Resonates!</p>
 					<p style="font-size: 20px;">Micro influencers may have tens of thousands of followers, but their real strength lies in the quality of their engagement. Their audiences often view them as relatable and trustworthy, valuing their opinions and recommendations. These influencers are perfect for brands focusing on building deep, meaningful connections with specific communities. </p>
 				</div>
 			</div>
 		
 			<!-- Nano Influencers -->
-			<div class="row align-items-center justify-content-center mt-5" style="margin-bottom: 40px;" id="nano">
+			<div class="row align-items-center justify-content-center mt-5" style="margin-bottom: 40px;">
 				<div class="col-lg-5 text-center text-lg-start order-2 order-lg-1 mt-2" style="padding-left: 25px;">
-					<h3 class="mt-2 pt-2" style="font-size: 50px;">Nano Influencers</h3>
-					<p class="" style="font-size: 28px;color: #426CC1;">Big Impact In Small Communities!</p>
+					<h3 class="mt-2 pt-2" style="font-size: 30px;">Nano Influencers</h3>
+					<p class="" style="font-size: 20px;color: #426CC1;">Big Impact In Small Communities!</p>
 					<p style="font-size: 20px;">Nano influencers may have a smaller following, typically ranging from a few hundred to a few thousand, but their engagement rates are often the highest. These are everyday individuals with a strong influence in their local or niche circles. Ideal for businesses aiming to connect with hyper-specific audiences and establish a personal rapport.</p>
 				</div>
 				<div class="col-lg-5 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-2">
@@ -1426,13 +1463,13 @@ document.getElementById('industry-select').addEventListener('change', function()
                                     <div class="row">
                                         <div class="col"></div>
                                         <div class="form-group col-xl-7 col-lg-9 col-md-6 col-sm-12">
-                                            <div class="d-grid gap-2">
-                                                <button id="whatsappButton" type="button" class="btn btn-sm border-0 text-4 p-3 custom-btn" 
-                                                    style="color: black;border-radius: 25px;">
-                                                    <img id="whatsappIcon" src="img/whatsapp.png" width="20" height="20" alt="WhatsApp Icon" 
-                                                        style="margin-right: 8px;">
-                                                    Contact Us
-                                                </button>
+                                            <div class="d-grid gap-2 justify-content-center">
+                                                <button id="whatsappButton" type="button" class="btn btn-sm border-0 text-3-5 px-4 py-2 custom-btn-black" 
+															style="color: black;border-radius: 25px;">
+															<!-- <img id="whatsappIcon" src="img/whatsapp.png" width="20" height="20" alt="WhatsApp Icon" 
+																style="margin-right: 8px;"> -->
+															Contact Us
+														</button>
                                             </div>
                                         </div>
                                         <div class="col"></div>
@@ -1530,7 +1567,7 @@ document.getElementById('industry-select').addEventListener('change', function()
                      style="width: 100%; height: 100%; border-radius: 50%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); cursor: pointer;" />
             </a>
         </div>
-    </div>
+    
 
         <!-- <script>
             document.getElementById('preferred-industry').addEventListener('change', function () {

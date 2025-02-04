@@ -165,8 +165,19 @@
 		}
 
 .custom-btn {
-			background-color: #FFBF78 !important;
+			background-color: white !important;
 			color: #000 !important;
+		}
+
+		.custom-btn-black:hover {
+			background-color: #426CC1 !important;
+			color: #fff !important;
+		}
+
+
+		.custom-btn-black {
+			background-color: black !important;
+			color: #fff !important;
 		}
 
 		#whatsappButton:hover #whatsappIcon {
@@ -319,6 +330,10 @@
 
 /* General styles for 800px to 1200px screen size */
 @media screen and (min-width: 769px) and (max-width: 1200px) {
+  .amplify-section.container br{
+	display: none;
+  }
+
   .amplify-section.container {
     margin-top: 50px !important; /* Adjust spacing */
     padding: 0 10px !important;  /* Add some padding for a snug fit */
@@ -457,7 +472,7 @@
 	</head>
 
 	<body class="alternative-font-7">
-		<div class="landing-section" style="background-image: url('img/BuzzBoostImg/Influencer Page Header.jpg');background-position: center;background-size: cover;background-repeat: no-repeat;">
+		<div class="landing-section" style="background-image: url('img/Header Images/Influencer Page Header.jpg');background-position: center;background-size: cover;background-repeat: no-repeat;">
 
 		<header id="header" class="header-transparent header-desktop-tablet"
 				data-plugin-options="{'stickyScrollUp': false, 'stickyEnabled': false, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 42, 'stickyHeaderContainerHeight': 70}">
@@ -521,11 +536,10 @@
 									<ul class="header-extra-info d-none d-xxl-block mt-2 mx-3">
 										<li class="d-none d-sm-inline-flex ms-0 font-weight-semibold">
 											<div class="d-flex align-items-center">
-												<i class="icons icon-phone text-8   me-2" style="rgba(255, 255, 255, 0.6);"></i>
+												<i class="icons icon-phone text-8 me-2" style="rgba(255, 255, 255, 0.6);"></i>
 												<a href="tel:+919796297972 " class="text-3"
 													style="color:rgba(255, 255, 255, 0.6); text-decoration: none; transition: color 0.3s ease;"
-													onmouseover="this.style.color='#426CC1'; this.style.textDecoration='underline';"
-													onmouseout="this.style.color='#000'; this.style.textDecoration='none';">
+													>
 													+91 9796297972 
 												</a>
 	
@@ -534,7 +548,7 @@
 									</ul>
 	
 									<a href="contact.html"
-									class="btn btn-modern box-shadow-6 border-0 text-transform-none ms-3 d-none d-xl-inline-block landing-button text-2 py-2 " style="background-color: white !important;color:#000 !important; border-radius: 25px;font-weight: 500;">Get
+									class="custom-btn btn btn-modern box-shadow-6 border-0 text-transform-none ms-3 d-none d-xl-inline-block landing-button text-2 py-2 " style=" border-radius: 25px;font-weight: 500;">Get
 									In Touch</a>
 
                                 <button class="btn header-btn-collapse-nav"
@@ -677,8 +691,8 @@
 
 							</h1>
 				
-							<p class="section1-p lead" 
-								style="font-size: 1.95rem; letter-spacing: normal; color: white; margin-bottom: 30px; line-height: normal;">
+							<p class="section1-p lead line-height-5" 
+								style="font-size: 24px; letter-spacing: normal; color: white; margin-bottom: 30px; line-height: normal;">
 							Connect with brands that align with your style and voice,<br> and turn your passion into opportunity. 
 							</p>
 				
@@ -707,7 +721,7 @@
 					  >
 						<h2
 						  class="text-center mt-3"
-						  style="font-size: 50px;line-height: normal !important;"
+						  style="font-size: 40px;line-height: normal !important;"
 						>
 						  Transform Your Reach Into Profits With Strategic Partnerships
 						</h2>
@@ -897,17 +911,14 @@
 			  
 					  </div>
 					</div>
-			  
-					<div class="pt-1">
-					  <hr class="my-1" />
-					</div>
 				  </div>
 				</div>
 			  </div>
 			  			
                    <!-- section 3 -->
+					<div style="background:linear-gradient(to bottom, hsl(212.9, 48.7%, 85.1%), hsl(30.2, 94%, 91.1%));">
 				   <div class="section-3 container">
-					<h2 class="text-center mt-3" style="font-size: 50px;line-height: normal;">Industries Served By Our Platform</h2>
+					<h2 class="text-center mt-3 pt-5" style="font-size: 40px;line-height: normal;">Industries Served By Our Platform</h2>
 				<div class="row justify-content-end pt-5 pb-4">
 					<div class="col-lg-11">
 						<div class="row">
@@ -965,10 +976,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="pt-5 pb-5 text-center">
-				<a href="home.html#industry-other-button" class="custom-btn btn btn-modern btn-primary box-shadow-6 border-0 text-transform-none mt-2 py-3 px-5" style="background-color: #426CC1;font-size: large;border-radius: 25px;font-weight: 500;">Other Industries</a>
+				<div class="pt-3 pb-5 text-center">
+				<a href="home.html#industry-other-button" class="custom-btn-black btn btn-modern box-shadow-6 border-0 text-transform-none mt-2 py-2 px-4" style="font-size: large;border-radius: 25px;font-weight: 500;">Other Industries</a>
 				</div>		
-			</div> 
+			</div> </div>
 			
 
 					<!-- request a quote section 4 -->
@@ -1154,10 +1165,10 @@ document.getElementById('industry').addEventListener('change', function() {
 				<div class="row">
 				  <div class="col"></div>
 				  <div class="form-group col-xl-7 col-lg-9 col-md-6 col-sm-12">
-					<div class="d-grid gap-2">
-						<button id="whatsappButton" type="button" class="btn mt-2 py-3 px-2 box-shadow-6 border-0 text-transform-none ms-2 d-xl-inline-block custom-btn" style="font-size: large;color: black;border-radius: 25px;font-weight: 500;">
-							<img id="whatsappIcon" src="img/whatsapp.png" width="20" height="20" alt="WhatsApp Icon" 
-								style="margin-right: 8px;">
+					<div class="d-grid gap-2 justify-content-center">
+						<button id="whatsappButton" type="button" class="btn mt-2 py-2 px-4 box-shadow-6 border-0 text-transform-none ms-2 d-xl-inline-block custom-btn" style="font-size: 17px;color: black;border-radius: 25px;font-weight: 500;width: 180px;">
+							<!-- <img id="whatsappIcon" src="img/whatsapp.png" width="20" height="20" alt="WhatsApp Icon" 
+								style="margin-right: 8px;"> -->
 							Contact Us
 						</button>
 					</div>
