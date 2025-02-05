@@ -462,6 +462,15 @@
 		color: rgba(255, 255, 255, 0.6)
 	}
 
+	@media (max-width:768px)
+	{
+	.scrollable-pointers
+	{
+		padding-left:0px !important;
+		padding-right:0px !important;
+	}
+}
+
 		</style>
 
 <script type="text/javascript"
@@ -743,7 +752,7 @@
 						  </div>
 			  
 						  <!-- Scrollable Pointers -->
-						  <div
+						  <div class="scrollable-pointers"
 							id="pointer-container"
 							style="flex: 2; overflow-y: scroll;width: 350px;margin-top: 80px; margin-bottom: 50px; padding-top: 25px;padding-bottom: 250px; height: 50vh; padding-left: 5rem;padding-right: 10rem; scrollbar-color: #426CC1;top: 50px;"
 						  >
@@ -1166,7 +1175,7 @@ document.getElementById('industry').addEventListener('change', function() {
 				  <div class="col"></div>
 				  <div class="form-group col-xl-7 col-lg-9 col-md-6 col-sm-12">
 					<div class="d-grid gap-2 justify-content-center">
-						<button id="whatsappButton" type="button" class="btn mt-2 py-2 px-4 box-shadow-6 border-0 text-transform-none ms-2 d-xl-inline-block custom-btn" style="font-size: 17px;color: black;border-radius: 25px;font-weight: 500;width: 180px;">
+						<button id="whatsappButton" type="button" class="btn mt-2 py-2 px-4 box-shadow-6 border-0 text-transform-none ms-2 d-xl-inline-block custom-btn-black" style="font-size: 17px;color: black;border-radius: 25px;font-weight: 500;width: 180px;">
 							<!-- <img id="whatsappIcon" src="img/whatsapp.png" width="20" height="20" alt="WhatsApp Icon" 
 								style="margin-right: 8px;"> -->
 							Contact Us
