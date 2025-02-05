@@ -91,10 +91,20 @@
         content: url("img/whatsapphover.png");
       }
 
+      .custom-btn-black:hover {
+			background-color: #426CC1 !important;
+			color: #fff !important;
+		}
+
+
+		.custom-btn-black {
+			background-color: black !important;
+			color: #fff !important;
+		}
 
       
       /* for footer mobile responsive */
-      @media (max-width: 768px) {
+      @media (max-width: 992px) {
         /* Stack the columns vertically */
         #footer .row {
           flex-direction: column !important;
@@ -329,7 +339,7 @@
                             </a>
                           </li>
                           <li>
-                            <a href="Influencer" class="nav-link">
+                            <a href="influencer" class="nav-link">
                               Influencer
                             </a>
                           </li>
@@ -349,16 +359,8 @@
                     >
                       <div class="d-flex align-items-center">
                         <i class="icons icon-phone text-8 me-2"></i>
-                        <a
-                          href="tel:+91 9796297972"
-                          class="text-3 text-dark"
-                          style="
-                            color: #000;
-                            text-decoration: none;
-                            transition: color 0.3s ease;
-                          "
-                          onmouseover="this.style.color='#426CC1'; this.style.textDecoration='underline';"
-                          onmouseout="this.style.color='#000'; this.style.textDecoration='none';"
+                        <a href="tel:+91 9796297972" class=""
+                        style="color: rgba(255, 255, 255, 0.6);; text-decoration: none; transition: color 0.3s ease;font-size: 1.2rem;"
                         >
                           +91 9796297972
                         </a>
@@ -724,7 +726,7 @@
                         <div class="row">
                           <div class="col"></div>
                           <div class="form-group col-xl-7 col-lg-9 col-md-6 col-sm-12">
-                            <div class="d-grid gap-2">
+                            <div class="d-grid gap-2 justify-content-center">
                               <button id="whatsappButton" type="button"
                               class="section1-btn btn btn-modern box-shadow-6 border-0 text-transform-none mt-2 py-2 px-4 custom-btn-black" style="font-size: medium;border-radius: 25px !important;font-weight: 500;" 
                                 >
@@ -849,7 +851,7 @@
                     </li>
                     <li>
                       <a
-                        href="Influencer"
+                        href="influencer"
                         class="text-color-light text-color-hover-light"
                         >Influencers</a
                       >
