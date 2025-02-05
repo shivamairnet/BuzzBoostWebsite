@@ -113,7 +113,7 @@
   
 
     			/* for footer mobile responsive */
-	@media (max-width: 768px) {
+	@media (max-width: 992px) {
     /* Stack the columns vertically */
     #footer .row {
         flex-direction: column !important;
@@ -172,6 +172,10 @@
 
   .company, .services {
     margin-bottom: 20px !important; /* Add space between the two sections */
+  }
+
+  .flexible-btn{
+    text-align: center !important;
   }
 
 
@@ -270,69 +274,60 @@
 
 }
 
-/* mobile screen responsiveness for section-1 */
-@media (max-width: 768px) {
-    .section-1 {
-        margin: 0 auto !important; 
-        padding: 15px !important;
-        background: linear-gradient(to right, #314D91, #426CC1, #8AA2D7) !important;
-        max-height: 1200px !important;
-        
-    }
+@media only screen and (max-width: 768px) {
+  .section1 {
+    margin: 10px auto !important;
+    padding: 10px !important;
+  }
 
-    .section1-div {
-        flex-direction: column !important; /* Stack content vertically */
-        height: 850px !important; /* Allow height to adjust based on content */
-        width: 100% !important; /* Ensure full width for mobile */
-        padding: 0 10px !important; /* Adjust padding for mobile */
-        
-    }
+  .section1-div {
+    flex-direction: column !important;
+    height: auto !important;
+    padding: 10px !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
 
-    .section1-h1 {
-        font-size: 40px !important; /* Adjust heading size for mobile */
-        font-weight: 500 !important;
-        margin-top: -220px !important;
-    }
+  .section1-text {
+    padding: 10px !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
 
-    .section1-p {
-        font-size: 1.5rem !important; /* Adjust paragraph size */
-        line-height: 1.5 !important; /* Improve readability */
-        margin-bottom: 4px !important; /* Add spacing below paragraph */
-        margin-top: 370px !important;
-    }
+  .section1-h1 {
+    font-size: 40px !important;
+    line-height: 1.5 !important;
+    text-align: center !important;
+  }
 
-    .section1-btnnew {
-        padding: 10px 20px !important; /* Adjust button size */
-        width: auto !important; /* Allow button to fit content */
-        margin: 0 auto !important; /* Center the button */
-        margin-top: 25px !important;
-    }
+  .section1-p {
+    font-size: 1.5rem !important;
+    text-align: center !important;
+  }
 
-    .section1-img {
-        text-align: center !important; /* Center-align the image */
-        margin-top: -370px !important; /* Add spacing above image */
-        margin-bottom: 40px !important;
+  .section1-btn {
+    font-size: 0.9rem !important;
+    padding: 10px 20px !important;
+    border-radius: 20px !important;
+    display: inline-block !important;
+    margin: 10px auto !important;
+  }
 
-    }
+  .section1-img {
+    text-align: center !important;
+    margin-top: 20px !important;
+    width: 100% !important;
+  }
 
-    .section1-img1 {
-        width: 100% !important; /* Scale image to fit inside screen */
-        max-width: 300px !important; /* Limit maximum width */
-        height: 290px !important; /* Maintain aspect ratio */
-        margin-top: -146px !important;
-        margin-bottom: 20px !important;
-        padding-right: 0px !important;
-    }
-
-    .section1-btn{
-        display: none !important;
-    }
-
-    .lshead{
-        display: none !important;
-    }
-
-   
+  .section1-img1 {
+    width: 100% !important;
+    max-width: 300px !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
 }
 
 
@@ -857,7 +852,7 @@
 
         <!-- section2imp -->
         <!-- large screen carousel -->
-        <section class="section lshead">
+        <section class="section lshead d-none d-md-block">
             <div class="container text-center large-screen-view">
                 <!-- Section Header -->
                 <h3 class="pt-4" style=" font-size: 40px;">
@@ -1216,7 +1211,7 @@
 								<p class="line-height-5 text-light" style="padding-bottom: 20px; font-size: 24px;margin-top: 15px;">
 									We make collaborations simple! Whether you're planning for a one-time campaign or a long-term contract, BuzzBoost provides you with flexible contracting options so that you can focus on driving results without worrying about the partnerships.
 								</p>
-								<div class="pt-3 pb-5" style="text-align: left;">
+								<div class="flexible-btn pt-3 pb-5" style="text-align: left;">
 									<a href="contact" class="button-section4 btn btn-modern box-shadow-6 border-0 text-transform-none mt-2 py-2 px-4 custom-btn" 
 									   style="text-decoration: none;font-size: 17px;border-radius: 25px;">
 										Get In Touch
