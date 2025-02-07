@@ -186,7 +186,6 @@
 		}
 
 
-
 		#whatsappButton:hover #whatsappIcon {
 			content: url('img/whatsapphover.png') !important;
 		}
@@ -227,23 +226,21 @@
 		#header .header-nav.header-nav-line:not(.header-nav-light-text) nav>ul>li>a {
 			color: rgba(255, 255, 255, 0.6)
 		}
+
+        @media (min-width: 1100px) {
+            .container-cards {
+                display: grid !important;
+                grid-template-columns: repeat(3, 1fr) !important; /* Exactly 3 cards per row */
+            }
+        }
+
 	</style>
 	<meta name="robots" content="index, follow">
 </head>
 
 <body class="alternative-font-7">
 	<div class="body mt-0">
-		<!-- <div class="notice-top-bar p-relative z-index-1 bg-secondary">
-				<div class="container">
-					<div class="row justify-content-center py-2">
-						<div class="col-9 col-md-12 text-center">
-							<p class="text-color-light mb-0 font-weight-semibold text-2">Join our Community of Marketers. <a href="#" class="btn btn-link text-decoration-none p-0 m-0 btn-dash ms-1 text-light">Apply Now</a></p>
-						</div>
-					</div>
-				</div>
-			</div> -->
 		<div class="landing-section" style="background: linear-gradient(to right, #426CC2, #5C85DD)">
-
 			<header id="header" class="header-transparent header-desktop-tablet "
 				data-plugin-options="{'stickyScrollUp': false, 'stickyEnabled': false, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 42, 'stickyHeaderContainerHeight': 70}">
 				<div class="header-body header-body-bottom-border border-top-0 h-auto">
@@ -425,7 +422,6 @@
 					</div>
 				</div>
 			</header>
-
 			<script>
 				function toggleSidebar() {
 					const sidebar = document.getElementById('sidebarMenu');
@@ -441,7 +437,7 @@
 				}
 
 			</script>
-
+        </div>
 			<div role="main" class="main">
 				<section class="page-header page-header-modern page-header-lg bg-tertiary border-0 my-0"
 					style="background: linear-gradient(to right, #426CC2, #5C85DD); padding: 50px 0; position: relative; overflow: hidden;">
@@ -465,320 +461,48 @@
 									for Successful Agencies, Businesses &amp; Influencer Collaborations
 								</p>
 							</div>
-							<!-- Breadcrumb -->
-							<!-- <div class="col-md-12 align-self-center order-1">
-							<ul class="breadcrumb breadcrumb-light d-block text-center" style="background: rgba(255, 255, 255, 0.1); padding: 5px 15px; border-radius: 10px; max-width: 250px; margin: 20px auto;">
-								<li><a href="blog.html" style="color: #fff;">Resources</a></li>
-								<li class="active" style="color: #fff;">Blog</li>
-							</ul>
-						</div> -->
 						</div>
 					</div>
 				</section>
 			</div>
-			<section class="section position-relative border-0 m-0" style="background-color: white;">
-				<div class="container py-3">
-					<div class="row">
-						<div class="col-lg-7 mb-5 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter"
-							data-appear-animation-delay="1600">
-							<article class="mb-5">
-								<div class="card border-0 border-radius-0 box-shadow-1 m-4">
-									<div class="card-body p-4 z-index-1">
-										<a
-											href="how-micro-influencers-can-be-the-game-changers-for-your-agencies-and-businesses">
-											<img class="card-img-top border-radius-0 mb-2"
-												src="img/blog-main/Blog 6 (1).jpg" alt="Influencer-blog">
-											<!-- <img class="card-img-top border-radius-0 mb-2" src="img\blog\Buzzboost Blog Images\Buzzboost Blog Images\Blog 1.png" alt="Influencer-blog"> -->
-										</a>
-										<p class="text-uppercase text-color-default text-1 my-2">
-											<time pubdate datetime="2023-01-10">30/01/2025</time>
-											<span class="opacity-3 d-inline-block px-2">|</span>
-											Arham Jain
-										</p>
-										<div class="card-body p-0">
-											<h4 class="card-title text-5 pb-1 mb-2"><a
-													class="text-color-dark text-color-hover-primary text-decoration-none"
-													href="how-micro-influencers-can-be-the-game-changers-for-your-agencies-and-businesses"
-													style="font-weight: 500 !important;line-height: normal;">How Micro
-													Influencers Can Be The Game Changers for Your Agencies and
-													Businesses</a></h4>
-											<p class="card-text mb-2">
-												Is your agency or business struggling to make an impact in this
-												overcrowded world of marketing? Well, if your answer to this question is
-												...</p>
-											<a href="how-micro-influencers-can-be-the-game-changers-for-your-agencies-and-businesses"
-												class="btn btn-link text-decoration-none text-2-5 ps-0"
-												style="font-weight: 500;font-size: medium;">READ MORE</a>
-										</div>
-									</div>
-								</div>
-							</article>
+            <div class="container-cards" style="width: 100%; max-width: 1100px; margin: auto; padding: 25px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                <div class="card" style="border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: flex; flex-direction: column; height: 300px;">
+                    <img src="img\blog\Buzzboost Blog Images\Buzzboost Blog Images\Blog 1.png" alt="Card Image" style="width: 100%; height: 55%; object-fit: cover;">
+                    <div class="card-text" style="height: 45%; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #f7f7f7; font-size: 18px; font-weight: bold; text-align: center;">
+                        <div style="font-size: 15px;font-weight: 600;text-align: left;color: #000 !important;padding-left: 10px;padding-right: 10px;padding-top: 5px;line-height: 1.5rem;letter-spacing: normal;"> <a style="color: #000 !important;" href="why-hiring-influencers-can-be-a-game-changer-for-your-agency-and-business-in-2025"> Why Hiring Influencers Can Be a Game-Changer for Your Agency and Business in [2025] </a> </div>
+                        <div style="font-size: 12px;color: #426CC1;text-align: left;padding-left: 10px;padding-right: 10px;padding-top: 5px;padding-bottom: 5px; line-height: 1.5rem;letter-spacing: normal;"> <a href="why-hiring-influencers-can-be-a-game-changer-for-your-agency-and-business-in-2025"> In the fast-paced world of technology, where every agency and business, be it small... </a> 
+                        </div>
+                    </div>
+                </div>
 
-							<article class="mb-5">
-								<div class="card border-0 border-radius-0 box-shadow-1 m-4">
-									<div class="card-body p-4 z-index-1">
-										<a href="guide-to-mega-macro-micro-and-nano-influencers-for-your-campaigns">
-											<img class="card-img-top border-radius-0 mb-2"
-												src="img/blog-main/Blog 5trend.jpg" alt="Influencer-marketing-trends">
-										</a>
-										<p class="text-uppercase text-color-default text-1 my-2">
-											<time pubdate datetime="2023-01-10">20/01/2025</time>
-
-											<span class="opacity-3 d-inline-block px-2">|</span>
-											Arham Jain
-										</p>
-										<div class="card-body p-0">
-											<h4 class="card-title text-5 pb-1 mb-2"
-												style="font-weight: 500;line-height: normal;"><a
-													class="text-color-dark text-color-hover-primary text-decoration-none"
-													href="guide-to-mega-macro-micro-and-nano-influencers-for-your-campaigns">Guide
-													to Mega, Macro, Micro, And Nano Influencers for Your Campaigns</a>
-											</h4>
-											<p class="card-text mb-2">
-												In an ever-evolving world of social media marketing, one term that has
-												taken the center stage are the influencers. But did you know that not
-												...</p>
-											<a href="guide-to-mega-macro-micro-and-nano-influencers-for-your-campaigns"
-												class="btn btn-link text-decoration-none text-2-5 ps-0"
-												style="font-weight: 500;font-size: medium;">READ MORE</a>
-										</div>
-									</div>
-								</div>
-							</article>
-
-							<ul
-								class="custom-pagination-style-1 pagination pagination-rounded pagination-md justify-content-center">
-								<li class="page-item"><a class="page-link" href="#"><i
-											class="fas fa-angle-left"></i></a></li>
-								<li class="page-item active"><a class="page-link" href="blog.html">1</a></li>
-								<li class="page-item"><a class="page-link" href="other-blogs-page-2">2</a></li>
-								<!-- <li class="page-item"><a class="page-link" href="#">3</a></li> -->
-								<li class="page-item"><a class="page-link" href="#"><i
-											class="fas fa-angle-right"></i></a></li>
-							</ul>
-
-						</div>
-						<div class="blog-sidebar col-lg-5 pt-4 pt-lg-0 appear-animation"
-							data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1800">
-							<aside class="sidebar">
-								<div class="container px-4 mt-4">
-									<h2 class="text-color-quaternary text-capitalize mt-4 mb-4"
-										style="font-weight: 500 !important;font-size: 32px;">Trending Blogs In This
-										Month</h2>
-										<div class="row mb-4">
-											<div class="col-md-4">
-												<img src="img/Blog 8/Blog 8 Footer Image of Blog 7 (1).jpg" alt="Blog Image"
-													class="img-fluid rounded"
-													style="width: 250px !important;margin-top:15px;height: 90px">
-											</div>
-											<div class="col-md-8 d-flex flex-column justify-content-between">
-												<div>
-													<a href="influencer-guide-collaborate-with-top-brands-in-2025">
-														<h4 class="text-color-dark text-4 mb-2"
-															style="font-weight: 500;font-size: 1.2rem;">
-															How Micro Influencers Can Be The Game Changers for Your Agencies & Businesses
-															</h4>
-													</a>
-													<p class="text-color-default text-1 mb-3" style="font-size: 0.7rem;">
-														Have you ever wondered why some influencers demand and charge thousands for a... </p>
-												</div>
-												<!-- <div class="d-flex justify-content-between align-items-center">
-														<a href="#" class="text-color-default text-uppercase text-1">10 Jan 2023 | Arham Jain</a>
-													</div> -->
-												<div class="d-flex justify-content-start">
-													<a href="influencer-guide-collaborate-with-top-brands-in-2025"
-														class="btn btn-sm custom-btn-read"
-														style="border-radius: 25px;width: 100px;background-color: #426CC1;color: white;">Read
-														More</a>
-												</div>
-											</div>
-										</div>
-										<div class="py-1 clearfix">
-											<hr class="my-2">
-										</div>
-									<div class="row mb-4">
-										<div class="col-md-4">
-											<img src="img/blog-main/blog-5trending.png" alt="Blog Image"
-												class="img-fluid rounded"
-												style="width: 250px !important;margin-top:15px;height: 90px">
-										</div>
-										<div class="col-md-8 d-flex flex-column justify-content-between">
-											<div>
-												<a href="influencer-guide-collaborate-with-top-brands-in-2025">
-													<h4 class="text-color-dark text-4 mb-2"
-														style="font-weight: 500;font-size: 1.2rem;">
-														Guide to Mega, Macro, Micro, And Nano Influencers for Your Campaigns
-														</h4>
-												</a>
-												<p class="text-color-default text-1 mb-3" style="font-size: 0.7rem;">
-													In an ever-evolving world of social media marketing, one term that has taken the center stage are... </p>
-											</div>
-											<!-- <div class="d-flex justify-content-between align-items-center">
-													<a href="#" class="text-color-default text-uppercase text-1">10 Jan 2023 | Arham Jain</a>
-												</div> -->
-											<div class="d-flex justify-content-start">
-												<a href="influencer-guide-collaborate-with-top-brands-in-2025"
-													class="btn btn-sm custom-btn-read"
-													style="border-radius: 25px;width: 100px;background-color: #426CC1;color: white;">Read
-													More</a>
-											</div>
-										</div>
-									</div>
-									<div class="py-1 clearfix">
-										<hr class="my-2">
-									</div>
-									<div class="row mb-4">
-										<div class="col-md-4">
-											<img src="img/blog-main/Blog 4-trending.jpg" alt="Blog Image"
-												class="img-fluid rounded"
-												style="width: 250px !important;margin-top:15px;height: 90px">
-										</div>
-										<div class="col-md-8 d-flex flex-column justify-content-between">
-											<div>
-												<a href="influencer-guide-collaborate-with-top-brands-in-2025">
-													<h4 class="text-color-dark text-4 mb-2"
-														style="font-weight: 500;font-size: 1.2rem;">Influencer Guide:
-														Collaborate with Top Brands in [2025]</h4>
-												</a>
-												<p class="text-color-default text-1 mb-3" style="font-size: 0.7rem;">Are
-													you an influencer looking out for collaborations with big agencies
-													and businesses? With... </p>
-											</div>
-											<!-- <div class="d-flex justify-content-between align-items-center">
-												<a href="#" class="text-color-default text-uppercase text-1">10 Jan 2023 | Arham Jain</a>
-											</div> -->
-											<div class="d-flex justify-content-start">
-												<a href="influencer-guide-collaborate-with-top-brands-in-2025"
-													class="btn btn-sm custom-btn-read"
-													style="border-radius: 25px;width: 100px;background-color: #426CC1;color: white;">Read
-													More</a>
-											</div>
-										</div>
-									</div>
-									<div class="py-1 clearfix">
-										<hr class="my-2">
-									</div>
-									<div class="row mb-4">
-										<div class="col-md-4">
-											<img src="img/blog-main/Blog 3-trending.png" alt="Blog Image"
-												class="img-fluid rounded"
-												style="width: 250px !important;margin-top:15px;height: 90px">
-										</div>
-										<div class="col-md-8 d-flex flex-column justify-content-between">
-											<div>
-												<a href="how-to-reach-out-to-right-set-of-influencers-in-2025">
-													<h4 class="text-color-dark text-4 mb-2"
-														style="font-weight: 500;font-size: 1.2rem;">How to Reach Out To
-														Right Set Of Influencers in [2025]</h4>
-												</a>
-												<p class="text-color-default text-1 mb-3" style="font-size: 0.7rem;">In
-													the rapidly evolving digital world, hiring perfect influencers and
-													collaborating with... </p>
-											</div>
-											<!-- <div class="d-flex justify-content-between align-items-center">
-												<a href="#" class="text-color-default text-uppercase text-1">10 Jan 2023 | Arham Jain</a>
-											</div> -->
-											<div class="d-flex justify-content-start">
-												<a href="how-to-reach-out-to-right-set-of-influencers-in-2025"
-													class="btn btn-sm custom-btn-read"
-													style="border-radius: 25px;width: 100px;background-color: #426CC1;color: white;">Read
-													More</a>
-											</div>
-										</div>
-									</div>
-									<div class="py-1 clearfix">
-										<hr class="my-2">
-									</div>
-									<div class="row mb-4">
-										<div class="col-md-4">
-											<img src="img\blog\Buzzboost Blog Images\Buzzboost Blog Images\Blog 2.png"
-												alt="Blog Image" class="img-fluid rounded"
-												style="width: 200px !important;margin-top:15px;height: 90px">
-										</div>
-										<div class="col-md-8 d-flex flex-column justify-content-between">
-											<div>
-												<a href="top-influence-marketing-trends-to-watch-in-2025">
-													<h4 class="text-color-dark text-4 mb-2"
-														style="font-weight: 500;font-size: 1.2rem;">Top Influencer
-														Marketing Trends To Watch In [2025]</h4>
-												</a>
-												<p class="text-color-default text-1 mb-3" style="font-size: 0.7rem;">As
-													the technology evolves with each passing year, influencer marketing
-													is also continuing to evolve ... </p>
-											</div>
-											<!-- <div class="d-flex justify-content-between align-items-center">
-												<a href="#" class="text-color-default text-uppercase text-1">10 Jan 2023 | Arham Jain</a>
-											</div> -->
-											<div class="d-flex justify-content-start">
-												<a href="top-influence-marketing-trends-to-watch-in-2025"
-													class="btn btn-sm custom-btn-read"
-													style="border-radius: 25px;width: 100px;background-color: #426CC1;color: white;">Read
-													More</a>
-											</div>
-										</div>
-									</div>
-									<div class="py-1 clearfix">
-										<hr class="my-2">
-									</div>
-									<div class="row mb-4">
-										<div class="col-md-4">
-											<img src="img\blog\Buzzboost Blog Images\Buzzboost Blog Images\Blog 1.png"
-												alt="Blog Image" class="img-fluid rounded"
-												style="width: 200px !important;margin-top:15px;height: 90px">
-										</div>
-										<div class="col-md-8 d-flex flex-column justify-content-between">
-											<div>
-												<a
-													href="why-hiring-influencers-can-be-a-game-changer-for-your-agency-and-business-in-2025">
-													<h4 class="text-color-dark text-4 mb-2" style="font-weight: 500;"
-														style="font-size:1.2rem">Why Hiring Influencers Can Be a
-														Game-Changer for Your Agency and Business in [2025]</h4>
-												</a>
-												<p class="text-color-default text-1 mb-3" style="font-size: 0.7rem;">In
-													the fast-paced world of technology, where every agency and business,
-													be it small, medium...</p>
-											</div>
-											<!-- <div class="d-flex justify-content-between align-items-center">
-												<a href="#" class="text-color-default text-uppercase text-1">10 Jan 2023 | Arham Jain</a>
-											</div> -->
-											<div class="d-flex justify-content-start">
-												<a href="why-hiring-influencers-can-be-a-game-changer-for-your-agency-and-business-in-2025"
-													class="btn btn-sm custom-btn-read"
-													style="border-radius: 25px;width: 100px;background-color: #426CC1;color: white;">Read
-													More</a>
-											</div>
-										</div>
-									</div>
-									<div class="py-1 clearfix">
-										<hr class="my-2">
-									</div>
-									<!-- <div class="row mb-4">
-										<div class="col-md-4">
-											<img src="path/to/image3.jpg" alt="Blog Image" class="img-fluid rounded">
-										</div>
-										<div class="col-md-8 d-flex flex-column justify-content-between">
-											<div>
-												<h4 class="text-color-dark text-4 mb-2" style="font-weight: 500;">Vivamus sollicitudin nibh luctus</h4>
-												<p class="text-color-default text-1 mb-3">Vivamus sollicitudin nibh luctus, vehicula purus in, viverra massa. Suspendisse potenti.</p>
-											</div>
-											<div class="d-flex justify-content-between align-items-center">
-												<a href="#" class="text-color-default text-uppercase text-1">10 Jan 2023 | Arham Jain</a>
-											</div>
-											<div class="d-flex justify-content-start mt-4">
-												<a href="#" class="btn btn-sm" style="border-radius: 25px;width: 100px;background-color: #426CC1;color: white;">Read More</a>
-											</div>
-										</div>
-									</div> -->
-								</div>
-								<!-- <div class="py-1 clearfix">
-                                    <hr class="my-2">
-                                </div>  -->
-							</aside>
-						</div>
-					</div>
-				</div>
-			</section>
-
+                <!-- code for other blogs -->
+				<div class="card" style="border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: flex; flex-direction: column; height: 300px;">
+                    <img src="img\blog\Buzzboost Blog Images\Buzzboost Blog Images\Blog 1.png" alt="Card Image" style="width: 100%; height: 55%; object-fit: cover;">
+                    <div class="card-text" style="height: 45%; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #f7f7f7; font-size: 18px; font-weight: bold; text-align: center;">
+                        <div style="font-size: 15px;font-weight: 600;text-align: left;color: #000 !important;padding-left: 10px;padding-right: 10px;padding-top: 5px;line-height: 1.5rem;letter-spacing: normal;"> <a style="color: #000 !important;" href="why-hiring-influencers-can-be-a-game-changer-for-your-agency-and-business-in-2025"> Why Hiring Influencers Can Be a Game-Changer for Your Agency and Business in [2025] </a> </div>
+                        <div style="font-size: 12px;color: #426CC1;text-align: left;padding-left: 10px;padding-right: 10px;padding-top: 5px;padding-bottom: 5px; line-height: 1.5rem;letter-spacing: normal;"> <a href="why-hiring-influencers-can-be-a-game-changer-for-your-agency-and-business-in-2025"> In the fast-paced world of technology, where every agency and business, be it small... </a> 
+                        </div>
+                    </div>
+                </div>
+				<div class="card" style="border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: flex; flex-direction: column; height: 300px;">
+                    <img src="img\blog\Buzzboost Blog Images\Buzzboost Blog Images\Blog 1.png" alt="Card Image" style="width: 100%; height: 55%; object-fit: cover;">
+                    <div class="card-text" style="height: 45%; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #f7f7f7; font-size: 18px; font-weight: bold; text-align: center;">
+                        <div style="font-size: 15px;font-weight: 600;text-align: left;color: #000 !important;padding-left: 10px;padding-right: 10px;padding-top: 5px;line-height: 1.5rem;letter-spacing: normal;"> <a style="color: #000 !important;" href="why-hiring-influencers-can-be-a-game-changer-for-your-agency-and-business-in-2025"> Why Hiring Influencers Can Be a Game-Changer for Your Agency and Business in [2025] </a> </div>
+                        <div style="font-size: 12px;color: #426CC1;text-align: left;padding-left: 10px;padding-right: 10px;padding-top: 5px;padding-bottom: 5px; line-height: 1.5rem;letter-spacing: normal;"> <a href="why-hiring-influencers-can-be-a-game-changer-for-your-agency-and-business-in-2025"> In the fast-paced world of technology, where every agency and business, be it small... </a> 
+                        </div>
+                    </div>
+                </div>
+				<div class="card" style="border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: flex; flex-direction: column; height: 300px;">
+                    <img src="img\blog\Buzzboost Blog Images\Buzzboost Blog Images\Blog 1.png" alt="Card Image" style="width: 100%; height: 55%; object-fit: cover;">
+                    <div class="card-text" style="height: 45%; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #f7f7f7; font-size: 18px; font-weight: bold; text-align: center;">
+                        <div style="font-size: 15px;font-weight: 600;text-align: left;color: #000 !important;padding-left: 10px;padding-right: 10px;padding-top: 5px;line-height: 1.5rem;letter-spacing: normal;"> <a style="color: #000 !important;" href="why-hiring-influencers-can-be-a-game-changer-for-your-agency-and-business-in-2025"> Why Hiring Influencers Can Be a Game-Changer for Your Agency and Business in [2025] </a> </div>
+                        <div style="font-size: 12px;color: #426CC1;text-align: left;padding-left: 10px;padding-right: 10px;padding-top: 5px;padding-bottom: 5px; line-height: 1.5rem;letter-spacing: normal;"> <a href="why-hiring-influencers-can-be-a-game-changer-for-your-agency-and-business-in-2025"> In the fast-paced world of technology, where every agency and business, be it small... </a> 
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+		
 			<!-- whatsapp section -->
 			<section class="section m-0 border-0">
 				<div class="container">
@@ -827,8 +551,6 @@
 													<button id="whatsappButton" type="button"
 														class="btn mt-2 py-2 px-4 box-shadow-6 border-0 text-transform-none ms-2 d-xl-inline-block custom-btn-black"
 														style="font-size: 17px;border-radius: 25px;font-weight: 500;width: 180px;">
-														<!-- <img id="whatsappIcon" src="img/whatsapp.png" width="20" height="20" alt="WhatsApp Icon" 
-																	style="margin-right: 8px;"> -->
 														Contact Us
 													</button>
 												</div>
@@ -858,34 +580,7 @@
 											alt="instagram" height="30px" width="30px">
 									</a>
 								</li>
-								<!-- <li class="social-icons-twitter">
-						  <a
-							href="http://www.twitter.com/"
-							target="_blank"
-							title="Twitter"
-						  >
-							<i class="fab fa-twitter"></i>
-						  </a>
-						</li> -->
-
 							</ul>
-							<!-- <ul class="social-icons ">
-						<li class="social-icons-instagram">
-							<a href="http://www.instagram.com/" target="_blank" title="Instagram">
-								<i class="fab fa-instagram"></i>
-							</a>
-						</li>
-						<li class="social-icons-twitter">
-							<a href="http://www.twitter.com/" target="_blank" title="Twitter">
-								<i class="fab fa-twitter"></i>
-							</a>
-						</li>
-						<li class="social-icons-facebook">
-							<a href="http://www.facebook.com/" target="_blank" title="Facebook">
-								<i class="fab fa-facebook-f"></i>
-							</a>
-						</li>
-					</ul> -->
 						</div>
 						<div class="col-lg-8">
 							<div class="row mb-5-5">
@@ -896,10 +591,6 @@
 												style="text-decoration: none;">Home</a></li>
 										<li><a href="about-us" class="text-color-light text-color-hover-light"
 												style="text-decoration: none;">About Us</a></li>
-										<!-- <li><a href="contact.html" class="text-color-light text-color-hover-light" style="text-decoration: none;">Register</a></li> -->
-										<!-- <li><a href="#" class="text-color-grey text-color-hover-primary">Team</a></li> -->
-										<!-- <li><a href="#" class="text-color-light text-color-hover-light">Blog</a></li> -->
-										<!-- <li><a href="#" class="text-color-light text-color-hover-light">Contact Us</a></li> -->
 									</ul>
 								</div>
 								<div class="col-lg-6">
@@ -912,15 +603,13 @@
 												style="text-decoration: none;">Business</a></li>
 										<li><a href="influencer" class="text-color-light text-color-hover-light"
 												style="text-decoration: none;">Influencers</a></li>
-										<!-- <li><a href="#" class="text-color-grey text-color-hover-primary">CRM and Sales</a></li> -->
-										<!-- <li><a href="#" class="text-color-grey text-color-hover-primary">Strategy</a></li> -->
 									</ul>
 									<h4 class="text-color-hover-light font-weight-bold mb-3">Resources<h4>
 											<ul class="list list-unstyled columns-lg-1">
 												<li><a href="blog" class="text-color-light text-color-hover-light"
 														style="text-decoration: none;font-weight: 500;font-size: 15px;">Blog</a>
 												</li>
-											</ul>
+										</ul>
 								</div>
 							</div>
 						</div>
@@ -928,7 +617,6 @@
 				</div>
 				<div class="footer-copyright bg-transparent pb-5">
 					<div class="container">
-						<!-- <hr> -->
 						<div class="row" style="text-align: center;">
 							<div class="col mt-2 mb-2">
 								<p class="text-3 mb-0 text-center text-white">BuzzBoost © 2024. All Rights Reserved.
@@ -990,9 +678,5 @@
 				}
 			});
 		</script>
-
-
-
 </body>
-
 </html>
