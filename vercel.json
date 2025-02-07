@@ -1,0 +1,23 @@
+{
+      "rewrites": [
+        { "source": "/home", "destination": "/home.html" },
+        { "source": "/about-us", "destination": "/about-us.html" },
+        { "source": "/contact", "destination": "/contact.html" },
+        { "source": "/agency", "destination": "/agency.html" },
+        { "source": "/blog", "destination": "/blog.html" }, 
+        { "source": "/home","destination":"/index.html"},
+        { "source": "/why-hiring-influencers-can-be-a-game-changer-for-your-agency-and-business-in-2025", "destination": "/why-hiring-influencers-can-be-a-game-changer-for-your-agency-and-business-in-2025.html" },
+        { "source": "/top-influence-marketing-trends-to-watch-in-2025", "destination": "/top-influence-marketing-trends-to-watch-in-2025.html" },
+        { "source": "/top-factors-influencing-influencer-pricing", "destination": "/top-factors-influencing-influencer-pricing.html" },
+        { "source": "/how-to-reach-out-to-right-set-of-influencers-in-2025", "destination": "/how-to-reach-out-to-right-set-of-influencers-in-2025.html" },
+        { "source": "/influencer-guide-collaborate-with-top-brands-in-2025", "destination": "/influencer-guide-collaborate-with-top-brands-in-2025.html" },
+        { "source": "/guide-to-mega-macro-micro-and-nano-influencers-for-your-campaigns", "destination": "/guide-to-mega-macro-micro-and-nano-influencers-for-your-campaigns.html" },
+        { "source": "/how-micro-influencers-can-be-the-game-changers-for-your-agencies-and-businesses", "destination": "/how-micro-influencers-can-be-the-game-changers-for-your-agencies-and-businesses.html" },
+        { "source": "/top-indicators-you-need-an-influencer-marketing-platform", "destination": "/top-indicators-you-need-an-influencer-marketing-platform.html" },
+        { "source": "/business", "destination": "/business.html" },
+        { "source": "/influencer", "destination": "/Influencer.html" },
+        { "source": "/blog-page-2", "destination": "/blog-page-2.html" }   
+      ]
+
+  }
+  

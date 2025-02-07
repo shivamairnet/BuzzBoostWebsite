@@ -280,10 +280,6 @@
             .page-header {
                 height: 510px !important;
                 padding: 8px 10px !important;
-                align-items: center;
-                justify-content: center;
-                display: flex;
-                flex-direction: column;
             }
 
             .page-header .row {
@@ -342,7 +338,7 @@
 
             .class-template {
                 width: 100% !important;
-                height: 360px !important;
+                height: 400px !important;
                 padding-top: 5px !important;
                 padding-bottom: 20px !important;
             }
@@ -505,11 +501,15 @@
                 flex-direction: column !important;
             }
 
-            .innerDiv {
+            .innerDiv,
+            .rightDiv {
                 width: 100% !important;
                 height: auto;
             }
 
+            .rightDiv {
+                width: 70% !important;
+            }
 
             .leftDiv {
                 display: none !important;
@@ -554,15 +554,9 @@
                 flex-direction: column !important;
             }
 
-            .innerDiv{
-                height: auto;
-                width: 100%;
-            }
-
             .innerDiv,
             .rightDiv {
-                /* width: 100% !important; */
-
+                width: 100% !important;
             }
 
             .leftDiv {
@@ -572,8 +566,7 @@
             .rightDiv {
                 height: 430px !important;
                 width: 60% !important;
-                margin: auto;
-                /* margin: 0px auto 0 auto !important; */
+                margin: 0px auto 0 auto !important;
 
             }
 
@@ -633,20 +626,20 @@
 <body class="alternative-font-7">
     <div class="body mt-0" style="background-color: white !important;">
         <div class="landing-section"
-            style="background-image: url('img/blog/Blog 2 (2)_11zon (1).png');background-position: center;background-size: cover;background-repeat: no-repeat;">
+            style="background-image: url('img/Blog 7/Blog 7 Header (1).jpg');background-position: center;background-size: cover;background-repeat: no-repeat;">
 
             <header id="header" class="header-transparent header-desktop-tablet"
                 data-plugin-options="{'stickyScrollUp': false, 'stickyEnabled': false, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 42, 'stickyHeaderContainerHeight': 70}">
                 <div class="header-body header-body-bottom-border border-top-0 h-auto">
                     <div class="header-container container p-static" style="height: 70px !important;">
-                        <div class="header-row" style="height: 70px !important;">
+                        <div class="header-row" style="height: 70px !important;color:rgba(255, 255, 255, 0.6);">
                             <div class="header-column">
                                 <div class="header-row" style="display: flex;align-items: center;">
                                     <div class="header-logo" style="margin-right: 0px;">
 
                                         <a href="home">
                                             <img src="img\BuzzBoost Home Page Images\BuzzBoostLogoWhite.png"
-                                                class="img-fluid" width="140px" height="50px" alt="BuzzBoost" />
+                                                class="img-fluid" width="160px" height="50px" alt="BuzzBoost" />
                                         </a>
                                     </div>
                                 </div>
@@ -699,7 +692,7 @@
                                             <div class="d-flex align-items-center">
                                                 <i class="icons icon-phone text-8   me-2"></i>
                                                 <a href="tel:+91 9796297972" class="text-3"
-                                                    style="color:rgba(255, 255, 255, 0.6); text-decoration: none; transition: color 0.3s ease;"
+                                                    style="color: rgba(255, 255, 255, 0.6); text-decoration: none; transition: color 0.3s ease;"
                                                     onmouseover="this.style.color='#426CC1'; this.style.textDecoration='underline';"
                                                     onmouseout="this.style.color='#000'; this.style.textDecoration='none';">
                                                     +91 9796297972
@@ -711,7 +704,7 @@
 
                                     <a href="contact"
                                         class="btn btn-modern box-shadow-6 border-0 text-transform-none ms-3 d-none d-xl-inline-block landing-button text-2 py-2 custom-btn"
-                                        style=" border-radius: 25px;font-weight: 500;">Get
+                                        style="border-radius: 25px;font-weight: 500;">Get
                                         In Touch</a>
 
                                     <button class="btn header-btn-collapse-nav"
@@ -740,7 +733,6 @@
                                         style="width: 160px; height: 50px;" alt="BuzzBoost" />
                                 </a>
                             </div>
-
                             <!-- Sidebar Toggle Button -->
                             <button class="btn header-btn-collapse-nav"
                                 style="background-color:white; color: black; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; display: flex; align-items: center; gap: 8px;"
@@ -814,6 +806,7 @@
                             <div id="sidebarOverlay"
                                 style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 1040; display: none;"
                                 onclick="toggleSidebar()"></div>
+
                         </div>
                     </div>
                 </div>
@@ -832,18 +825,18 @@
                         overlay.style.display = 'block'; // Show overlay
                     }
                 }
-
             </script>
+
+
             <section id="section1" class="section-blog">
-                <section class="page-header page-header-modern page-header-lg border-0 my-0 content-height"
-                    style="height: 450px;">
-                    <div class="container d-flex justify-content-center align-items-center">
+                <section class="page-header page-header-modern page-header-lg border-0 my-0">
+                    <div class="container d-flex justify-content-center align-items-center" style="height: 450px;">
                         <div class="row text-center">
                             <div class="col-md-12 align-self-center" style="color: white;">
-                                <h2
-                                    style="color: white; font-size: 48px; margin: 70px 0; line-height: normal; padding: 0 60px;letter-spacing: normal;">
-                                    Top Influencer Marketing Trends <br> To Watch In [2025]
-                                </h2>
+                                <h1 class="first-section"
+                                    style="color: white; font-size: 48px; margin: 70px 0; line-height: normal; padding: 0 60px;">
+                                    Top Factors Influencing Influencer Pricing
+                                </h1>
                                 <div class="d-flex justify-content-center mt-5 mb-5">
                                     <span style="font-size: 1.5rem; margin-right: 30px;">
                                         <img src="img/BlogPage/user (1) 1.png" alt="user" height="20px" width="20px"
@@ -851,17 +844,16 @@
                                     </span>
                                     <span style="font-size: 1.5rem; margin-right: 30px;">
                                         <img src="img/BlogPage/calendar 1.png" alt="calendar" height="20px" width="20px"
-                                            style="margin-right: 4px;">24/12/2024
+                                            style="margin-right: 4px;">03/02/2025
                                     </span>
                                     <span style="font-size: 1.5rem;">
                                         <img src="img/BlogPage/wall-clock 1.png" alt="clock" height="20px" width="20px"
-                                            style="margin-right: 4px;">7 min
+                                            style="margin-right: 4px;">6 min
                                     </span>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </section>
             </section>
 
@@ -871,485 +863,400 @@
             <section id="section2" class="section-blog">
                 <div class="container container-blog">
                     <div class="leftDiv mt-5">
-                        <div class="blog-sidebar pt-4 pt-lg-0" style="display: flex;justify-content: flex-start;"
+                        <div class="blog-sidebar pt-4 pt-lg-0"
+                            style="display: flex;justify-content: flex-start;max-height: 450px;"
                             data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">
                             <aside class="sidebar">
-                                <div class="px-3 mb-4 pt-4 pb-4 pl-3 pr-3 border-right"
-                                    style="background-color: #e7e7e7;border-radius: 12px;">
+                                <div class="px-2 mb-4 pt-4 pb-4 pl-3 pr-3 border-right"
+                                    style="background-color: #e7e7e7; border-radius: 12px;">
                                     <h3 class="text-color-quaternary text-capitalize text-3-5 m-0 mb-3"
-                                        style="text-decoration: underline;text-align: center;">Table Of Contents</h3>
+                                        style="text-decoration: underline; text-align: center;">Table Of Contents</h3>
                                     <div
-                                        style="max-height: 365px;overflow-y: auto;scrollbar-color: #007bff #e7e7e7; scrollbar-width: thin;padding-right: 10px;">
-
+                                        style="max-height: 365px; overflow-y: auto; scrollbar-color: #007bff #e7e7e7; scrollbar-width: thin; padding-right: 10px;">
                                         <p class="mt-2 m-0" style="font-size: 0.85rem;"><a
-                                                href="top-influence-marketing-trends-to-watch-in-2025#introduction">1.
-                                                Introduction</a> </p>
+                                                href="top-factors-influencing-influencer-pricing#introduction">1.
+                                                Introduction</a></p>
                                         <p class="mt-3 m-0" style="font-size: 0.85rem;"><a
-                                                href="top-influence-marketing-trends-to-watch-in-2025#ai">2. Artificial
-                                                Intelligence (AI) Driven Personalizations</a></p>
+                                                href="top-factors-influencing-influencer-pricing#2">2.
+                                                Follower Count And Engagement Rate</a></p>
                                         <ul
                                             style="list-style-type: disc; margin-left: 20px; padding-left: 0; font-size: 0.8rem;">
-                                            <li><a
-                                                    href="top-influence-marketing-trends-to-watch-in-2025#target-influencers">2.1
-                                                    Targeting Right Set of Influencers</a></li>
-                                            <li><a
-                                                    href="top-influence-marketing-trends-to-watch-in-2025#real-time-analytics">2.2
-                                                    Real-Time Analytics</a></li>
+                                            <li><a href="top-factors-influencing-influencer-pricing#2.1">2.1.
+                                                    Understanding The Important of Audience Size</a></li>
+                                            <li><a href="top-factors-influencing-influencer-pricing#2.2">2.2.
+                                                    Measuring Genuine Engagement</a></li>
+                                            <!-- <li><a href="blog-post4.html#social-media">2.3. Leveraging Different Social Media Platforms</a></li> -->
                                         </ul>
                                         <p class="mt-3 m-0" style="font-size: 0.85rem;"><a
-                                                href="top-influence-marketing-trends-to-watch-in-2025#micro-influencer">3.
-                                                Micro & Nano-Influencers Taking The Center Stage</a> </p>
+                                                href="top-factors-influencing-influencer-pricing#3">3.
+                                                Platform & Content Types</a></p>
                                         <ul
                                             style="list-style-type: disc; margin-left: 20px; padding-left: 0; font-size: 0.8rem;">
-                                            <li><a
-                                                    href="top-influence-marketing-trends-to-watch-in-2025#niche-audience">3.1
-                                                    Highly Niche Audiences</a></li>
-                                            <li><a href="top-influence-marketing-trends-to-watch-in-2025#higher-roi">3.2
-                                                    Higher ROI</a></li>
-
+                                            <li><a href="top-factors-influencing-influencer-pricing#3.1">3.1.
+                                                    Difference In Pricing Across Different Social Media Platforms</a>
+                                            </li>
+                                            <li><a href="top-factors-influencing-influencer-pricing#3.2">3.2.
+                                                    Influencer of Content Format (Video, Photos, & Text)</a></li>
+                                            <li><a href="top-factors-influencing-influencer-pricing#3.3">3.3.
+                                                    Niche Specific Pricing Considerations</a></li>
                                         </ul>
                                         <p class="mt-3 m-0" style="font-size: 0.85rem;"><a
-                                                href="top-influence-marketing-trends-to-watch-in-2025#shopping-live-stream">4.
-                                                Shoppable Live Streaming and Social Commerce</a> </p>
+                                                href="top-factors-influencing-influencer-pricing#4">4.
+                                                Influencer's Brand and Reputation</a></p>
                                         <ul
                                             style="list-style-type: disc; margin-left: 20px; padding-left: 0; font-size: 0.8rem;">
-                                            <li><a href="top-influence-marketing-trends-to-watch-in-2025#scenario">4.1
-                                                    Scenario</a></li>
-                                            <li><a
-                                                    href="top-influence-marketing-trends-to-watch-in-2025#live-streaming">4.2
-                                                    Effect of Live Streaming</a></li>
-                                            <li><a href="top-influence-marketing-trends-to-watch-in-2025#outcome">4.3
-                                                    Outcomes of Live Streaming</a></li>
+                                            <li><a href="top-factors-influencing-influencer-pricing#4.1">4.1.
+                                                    Industry Expertise & Relevance</a></li>
+                                            <li><a href="top-factors-influencing-influencer-pricing#4.2">4.2.
+                                                    Personal Brand Growth</a></li>
+                                            <li><a href="top-factors-influencing-influencer-pricing#4.3">4.3.
+                                                    Authenticity & Trustworthiness</a></li>
                                         </ul>
                                         <p class="mt-3 m-0" style="font-size: 0.85rem;"><a
-                                                href="top-influence-marketing-trends-to-watch-in-2025#trust">5. Trust
-                                                Authenticity, Credibility And Transparency</a></p>
+                                                href="top-factors-influencing-influencer-pricing#5">5.
+                                                Campaign Specific</a></p>
+                                        <ul
+                                            style="list-style-type: disc; margin-left: 20px; padding-left: 0; font-size: 0.8rem;">
+                                            <li><a href="top-factors-influencing-influencer-pricing#5.1">5.1.
+                                                    Scope of Work Required</a></li>
+                                            <li><a href="top-factors-influencing-influencer-pricing#5.2">5.2.
+                                                    Campaign Duration</a></li>
+                                            <li><a href="top-factors-influencing-influencer-pricing#5.3">5.3.
+                                                    Usage Rights & Licensing</a></li>
+                                        </ul>
                                         <p class="mt-3 m-0" style="font-size: 0.85rem;"><a
-                                                href="top-influence-marketing-trends-to-watch-in-2025#long-term-influencer">6.
-                                                Long Term Influencer Partnerships</a></p>
+                                                href="top-factors-influencing-influencer-pricing#6">6.
+                                                Influencer's Experience and Professionalism </a></p>
+                                        <ul
+                                            style="list-style-type: disc; margin-left: 20px; padding-left: 0; font-size: 0.8rem;">
+                                            <li><a href="top-factors-influencing-influencer-pricing#6.1">6.1.
+                                                    Years in Industry</a></li>
+                                            <li><a href="top-factors-influencing-influencer-pricing#6.2">6.2.
+                                                    Portfolio Quality</a></li>
+                                            <li><a href="top-factors-influencing-influencer-pricing#6.3">6.3.
+                                                    Business Acumen & Negotiation Ability</a></li>
+                                        </ul>
                                         <p class="mt-3 m-0" style="font-size: 0.85rem;"><a
-                                                href="top-influence-marketing-trends-to-watch-in-2025#metaverse">7. Rise
-                                                of Metaverse and VR Influencers</a></p>
-                                        <p class="mt-3 m-0" style="font-size: 0.85rem;"><a
-                                                href="top-influence-marketing-trends-to-watch-in-2025#conclusion">8.
+                                                href="top-factors-influencing-influencer-pricing#7">7.
                                                 Final Conclusion</a></p>
+
                                     </div>
                                 </div>
-
                             </aside>
-                        </div>
 
+                        </div>
                     </div>
                     <div class="innerDiv mt-5">
                         <div class="innerdivdiv mb-5 mb-lg-0" data-appear-animation="fadeInUpShorter"
-                            data-appear-animation-delay="100" style="margin-right: 10px">
-                            <div class="">
-                                <article>
-                                    <div class="border-0 custom-box-shadow-1">
-                                        <div class="px-4 pb-4 z-index-1">
-
-                                            <div class="p-0" id="introduction">
-
-                                                <h2 class="mb-3"
-                                                    style="padding-top: 2px;padding-bottom: 2px;font-size: 24px;font-weight: 600 !important;border-radius: 15px;">
-                                                    Introduction</h2>
-
-                                                <p
-                                                    style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
-                                                    As the technology evolves with each passing year, influencer
-                                                    marketing is also continuing to evolve at a rapid, fast rate,
-                                                    promising new ways for <a href="agency"
-                                                        style="color: #426CC2;text-decoration: underline;">agencies</a>
-                                                    and <a href="business"
-                                                        style="color: #426CC2;text-decoration: underline;">businesses</a>
-                                                    to connect, inspire, and engage with their audience. 
-
-                                                    In order to stay ahead of the curve and your competitors, it is
-                                                    essential for every agency and business to watch out for these
-                                                    emerging and upcoming <a href="influencer"
-                                                        style="color: #426CC2;text-decoration: underline;">influencer</a>
-                                                    marketing trends, which will help them to not only create their
-                                                    brand awareness among the consumers but also build a sense of
-                                                    authenticity and credibility among them. So, let's deep dive and
-                                                    look for some of the top influencer marketing trends every agency
-                                                    and business should look out for in the upcoming years.
-                                                </p>
-
-                                                <h2 class="mt-3 mb-3" id="ai"
-                                                    style="padding-top: 2px;padding-bottom: 2px;font-size: 24px;font-weight: 600 !important;border-radius: 15px;">
-                                                    Artificial Intelligence (AI) Driven Personalizations</h2>
-                                                <p
-                                                    style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
-                                                    In every industry, artificial intelligence is becoming a
-                                                    game-changer, and so in influencer marketing. AI tools are
-                                                    transforming how agencies and businesses are identifying the right
-                                                    set of <a href="influencer"
-                                                        style="color: #426CC2;text-decoration: underline;">influencers
-                                                    </a> and analyzing their campaign performance, helping them to
-                                                    choose the best and right <a href="influencer"
-                                                        style="color: #426CC2;text-decoration: underline;">influencer</a>
-                                                    for their <a href="agency"
-                                                        style="color: #426CC2;text-decoration: underline;">agency</a>
-                                                    and <a href="business"
-                                                        style="color: #426CC2;text-decoration: underline;">business</a>.
-
-                                                    To have a more better knowledge on the role of AI in influencer
-                                                    marketing, let’s discuss and understand two major points how AI can
-                                                    help agencies and businesses:</p>
-
-                                                <p id="target-influencers"
-                                                    style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
-                                                    <img src="img/BlogPage/Arrow.png" alt="" height="30px" width="70px"
-                                                        style="margin-right: 2px;"><strong> Targeting Right Set of
-                                                        Influencers: </strong>With the help of AI, <a href="agency"
-                                                        style="color: #426CC2;text-decoration: underline;">agencies</a>
-                                                    and <a href="business"
-                                                        style="color: #426CC2;text-decoration: underline;">businesses</a>
-                                                    can easily target the right set of influencers across various
-                                                    demographics whose audience can match with the brand’s services and
-                                                    products.
+                            data-appear-animation-delay="100" style="margin-right: 10px;">
 
 
+                            <h2 id="introduction" style="font-size: 2rem;font-weight: 600;margin-bottom: 10px;">
+                                Introduction</h2>
+                            <p style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
+                                Have you ever wondered why some influencers demand and charge thousands for a single
+                                post on their social media accounts, while some influencers settle for the free? In
+                                today’s digital world, the world of influencer marketing is a complex ecosystem where
+                                pricing can vary dramatically according to the different types of influencers. <br><br>
+                                Whether you're an <a href="agency"> agency </a> or a brand looking to collaborate with
+                                an influencer or an
+                                aspiring <a href="influencer"> influencer </a> aiming to monetize its following,
+                                understanding the factors like
+                                content quality, engagement rates, that drive influencer pricing is very much crucial in
+                                today's digital landscape and staying ahead of your competitors. <br><br>
+                                In this blog, we'll take a look at the key factors that have an impact on how
+                                influencers set their prices. We'll dive into everything from the most crucial stats
+                                like follower numbers to the less important aspects such as where they're based and
+                                market needs. This will give you a full picture of what goes into deciding influencer
+                                rates. By the time you finish reading this blog, you'll have a thorough grasp of how
+                                influencer pricing works and how to handle this always-changing field. Let's break down
+                                these key factors one by one! <br>
+                            </p>
+                            <h2 id="2" style="font-size: 2rem;font-weight: 600;margin-bottom: 10px;">Follower Count And
+                                Engagement Rate</h2>
+                            <h3 id="2.1" style="font-size: 1.5rem;font-weight: 500;">A. Understanding The Important of
+                                Audience Size
+                            </h3>
+                            <p style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">Audience plays
+                                a very crucial role when you decide to collaborate with an influencer. Having an
+                                audience that can understand your services or products and use them is very vital, as
+                                they are the end consumer who will spread the review and recommend them to other users.
+                                Thus the quality and relevance of the audience are very much crucial. Let’s look at the
+                                breakdown of how audience size affects pricing:
+                            </p>
+                            <br>
+                            <div class="text-center">
+                                <img src="img/Blog 7/Blog 7 - Understanding The Important of Audience Size.jpg" alt=""
+                                    width="60%" height="auto">
+                            </div> <br>
+                            <h3 id="2.2" style="font-size: 1.5rem;font-weight: 500;">B. Measuring Genuine Engagement
+                            </h3>
+                            <p style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">Once you know
+                                the right audience for your brand, the next factor that is important for agencies and
+                                businesses to know is the engagement rate of the <a href="influencer"> influencer </a>.
+                                The engagement rate is
+                                usually measured by dividing the total engagement (likes, comments, shares) by the total
+                                followers, expressed in percentage terms. A high engagement rate often includes the
+                                following:
+                            </p>
+                            <ul>
+                                <li style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">Active
+                                    and interested audience.</li>
+                                <li style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">Authentic
+                                    content that resonates.</li>
+                                <li style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">Potential
+                                    for better ROI.</li>
+                            </ul>
+                            <p style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">Agencies &
+                                Businesses often prioritize micro-influencers over any other influencer type as these
+                                influencers usually have a higher engaged audience and they often do not charge way too
+                                much for a single post as the case with mega and macro influencers. To read more about
+                                how micro influencers can be game changer for your agencies or <a href="business">
+                                    business </a>, you can read
+                                our dedicated blog on How Micro Influencers Can Be The Game Changers for Your Agencies
+                                and Businesses.</p>
+                            <br>
 
-                                                    <br><br><img src="img/BlogPage/Arrow.png" alt="" height="30px"
-                                                        width="70px" style="margin-right: 2px;"><strong
-                                                        id="real-time-analytics"> Real-Time Analytics:</strong>
-                                                    AI-powered analytical tools offer in-depth insights about engagement
-                                                    rate, audience preferences, consumer behavioral data and campaign
-                                                    performance, which further enables <a href="agency"
-                                                        style="color: #426CC2;text-decoration: underline;">agencies</a>
-                                                    & <a href="business"
-                                                        style="color: #426CC2;text-decoration: underline;">businesses</a>
-                                                    to optimize their campaigns in a more efficient manner.
-                                                <div class="text-center">
-                                                    <img class="ai-image"
-                                                        src="img/BlogPage/Blog-post2/Artificial Intelligence (AI) Driven Personalizations.png"
-                                                        alt=""
-                                                        style="border-radius: 15px;width: 550px;height: 360px;margin-bottom: 30px;margin-top: 40px;">
-                                                </div>
+                            <h2 id="3" style="font-size: 2rem;font-weight: 600;margin-bottom: 10px;">Platform & Content
+                                Types
+                            </h2>
+                            <h3 id="3.1" style="font-size: 1.5rem;font-weight: 500;">A. Difference In Pricing Across
+                                Different Social Media Platforms</h3>
+                            <p style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">Influencers
+                                charge differently on different social media platforms. Here's the breakdown of the
+                                different pricing structures on the different social platforms:</p>
 
+                            <div class="text-center">
+                                <img src="img/Blog 7/Blog 7 - Difference In Pricing Across Different Social Media Platforms.jpg"
+                                    alt="" height="auto" width="90%">
+                            </div> <br>
 
+                            <h3 id="3.2" style="font-size: 1.5rem;font-weight: 500;">B. Influencer of Content Format
+                                (Video, Photos, & Text)</h3>
+                            <p style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">Content plays
+                                a crucial role in determining the <a href="influencer"> influencer </a> pricing.
+                                Generally the pricing structure of
+                                the content is as follows:</p>
+                            <ul>
+                                <li style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">Video
+                                    content (highest).</li>
+                                <li style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">Photo
+                                    content.</li>
+                                <li style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">Text-only
+                                    content (lowest).</li>
+                                <!-- <li style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">Participate in brand-sponsored hashtag campaigns.</li> -->
+                            </ul>
+                            <p style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">Influencers
+                                charge a high rate for the videos especially for the longer format videos, because of
+                                the increased product efforts and time. Photos and text-only content usually demand less
+                                effort and time, which is why these content types usually don't go much higher in price.
+                            </p>
 
-                                                <p
-                                                    style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;margin-bottom: 40px;">
-                                                    Now, since we have seen some of the advantages AI can offer to
-                                                    agencies and businesses; let's look at a real-life example and a
-                                                    case study of a brand that used AI and marketed their campaign in a
-                                                    more personal, interactive, and fun way. 
+                            <h3 id="3.3" style="font-size: 1.5rem;font-weight: 500;">C. Niche Specific Pricing
+                                Considerations</h3>
+                            <p style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">Niche specific
+                                market can significantly impact influencer pricing. Some factors affecting the niche
+                                specific audience pricing includes:</p>
+                            <ul>
+                                <li style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">Market
+                                    demand</li>
+                                <li style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">Audience
+                                    demographics</li>
+                                <li style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">Industry
+                                    competition</li>
+                                <li style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
+                                    Specialized knowledge required</li>
+                            </ul>
+                            <p style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">For example,
+                                influencers in tech and finance usually charge much higher due to the high value
+                                audience. Now that we have explored how the platforms, and content types affect the
+                                pricing structure, let’s examine the impact of the influencer’s brand and reputation.
+                            </p>
 
-                                                    <strong><br><br>Example:</strong> Burger King's "Million Dollar
-                                                    Whopper" campaign is one such example of the brand who used AI and
-                                                    encouraged their customers to get creative and design their own
-                                                    Whopper burger using an AI-powered personalized tool. Customers can
-                                                    choose their favorite ingredient that they want to add to their
-                                                    Whopper burger, and AI will generate a custom image of their burger
-                                                    with an addition of a personalized jingle for a more unique customer
-                                                    experience. 
+                            <div style="position: relative; width: 90%; margin: 0 auto;">
+                                <img class="blog-5-img" src="img/Blog 7/Blog 7 CTA.jpg" alt="Blog Image"
+                                    style="width: 100%; height: auto;">
 
-                                                </p>
-                                                <div class="text-center">
-                                                    <img class="burger-image"
-                                                        src="img/BlogPage/Blog-post2/Burger King Example.jpg" alt=""
-                                                        height="280px" width="550px">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
+                                <div class="cta-section12"
+                                    style="position: absolute; top: 50%; left: 35%; transform: translate(-50%, -50%); color: white; padding: 10px 20px; font-size: 1rem; text-align: left; border-radius: 5px;">
+                                    <p style="color: white;text-align: left;font-size: medium;">Get the Best Value for
+                                        Your Influencer Campaigns!</p>
+                                    <p style="color: white;text-align: left;font-size: medium;">Explore the key factors
+                                        that impact influencer pricing and make informed decisions for your brand.
 
-
-
-                                <!-- Section micro and nano influencer section -->
-                                <div class="container" style="margin-top: 20px;">
-                                    <h2 class="mt-3 mb-3" id="micro-influencer"
-                                        style="padding-top: 2px;padding-bottom: 2px;font-size: 24px;font-weight: 600 !important;border-radius: 15px;">
-                                        Micro & Nano-Influencers Taking The Center Stage</h2>
-                                    <p style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
-                                        Marketing your service and product in the right demographic with the right set
-                                        of targeted customers is the key component for any agency and business to
-                                        increase their product and brand awareness. Obviously, whenever any agency and
-                                        business want to roll out their new service or a product, they want to target a
-                                        niche audience first, get the required feedback from them, and then accordingly
-                                        change their marketing campaign to target a large demographic and audience.
-
-                                        <br><br>This is where the role of <a href="agency#micro"
-                                            style="color: #426CC2;text-decoration: underline;">micro</a> and <a
-                                            href="agency#nano"
-                                            style="color: #426CC2;text-decoration: underline;">nano</a> influencers
-                                        comes into the picture. These specific types of influencers have a very niche
-                                        audience, and often their audience is genuine and trustworthy enough for <a
-                                            href="agency"
-                                            style="color: #426CC2;text-decoration: underline;">agencies</a> and <a
-                                            href="business"
-                                            style="color: #426CC2;text-decoration: underline;">businesses</a> to test
-                                        their services or products. In the upcoming year, <a href="agency#micro"
-                                            style="color: #426CC2;text-decoration: underline;">micro</a> and <a
-                                            href="agency#nano"
-                                            style="color: #426CC2;text-decoration: underline;">nano</a> influencers will
-                                        become an indispensable asset for the brands. Their trustworthy audience,
-                                        relatable content often drives large engagement for agencies and businesses as
-                                        when compared with mega influencers. 
                                     </p>
-                                    <div class="text-center">
-                                        <img class="micro-macro"
-                                            src="img/BlogPage/Blog-post2/Micro & Nano-Influencers Taking The Center Stage.png"
-                                            alt="" height="400px" width="550px"
-                                            style="margin-bottom: 30px;margin-top: 40px;">
-                                    </div>
-                                    <p style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">Let's
-                                        gather our understand and know why in [2025] brands will prioritize micro and
-                                        nano influencers:
-                                    </p>
-
-                                    <p style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
-                                        <img src="img/BlogPage/Arrow.png" alt="" height="30px" width="70px"
-                                            style="margin-right: 2px;"><strong id="niche-audience">Highly Niche
-                                            Audiences:</strong> As stated, these influencer have very niche audience
-                                        which can help agencies and business to target a specific consumer group from a
-                                        particular demographic circle.
-                                        <br><br><img src="img/BlogPage/Arrow.png" alt="" height="30px" width="70px"
-                                            style="margin-right: 2px;"><strong id="higher-roi">Higher ROI:</strong>
-                                        Micro and Nano-influencers often deliver cost-effective results to agencies and
-                                        businesses with better audience trust.
+                                    <a class="px-3 py-2" href="contact"
+                                        style="text-align: left; color: #000 !important;background-color: white !important;border-radius: 25px;">Let’s
+                                        Talk</a>
                                 </div>
+                            </div> <br>
 
-                                <!-- section-content -->
-                                <section class="container text-center" style="margin-top: 28px;">
+                            <h2 id="4" style="font-size: 2rem;font-weight: 600;margin-bottom: 10px;">Influencer's Brand
+                                and Reputation
+                            </h2>
 
-                                    <div>
-                                        <h2 class="mt-3 mb-3" id="shopping-live-streaming"
-                                            style="padding-top: 2px;padding-bottom: 2px;font-size: 24px;font-weight: 600 !important;border-radius: 15px;text-align: start;">
-                                            Shoppable Live Streaming & Social Commerce</h2>
-                                        <p style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
-                                            With more than 5.22 billion people worldwide using different social media
-                                            platforms, shoppable live streaming and social commerce are set to become
-                                            the powerhouse and revolutionize the influencer marketing trend in 2025.
-                                            This trend blurs the lines between content and commerce, and blends
-                                            entertainment with e-commerce enabling influencers to seamlessly integrate
-                                            product promotions into real-time. Many social media platforms like
-                                            Instagram, TikTok, Youtube are updating their live streaming features, to
-                                            make it easy for influencers to showcase services or products in real-time,
-                                            and enabling their audiences to engage with influencers, ask questions, and
-                                            make purchases directly from the live stream, creating a dynamic and
-                                            immersive shopping experience for them. 
+                            <h3 id="4.1" style="font-size: 1.5rem;font-weight: 500;">A. Industry Expertise & Relevance
+                            </h3>
+                            <p style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">Influencers
+                                who have specific industry expertise and relevance often charge the premium price. Let’s
+                                focus on how influencers with different expertise level influence the pricing:</p>
+                            <div class="text-center">
+                                <img src="img/Blog 7/Blog 7 - Industry Expertise & Relevance.jpg" alt="" width="50%"
+                                    height="auto">
+                            </div> <br>
+                            <h3 id="4.2" style="font-size: 1.5rem;font-weight: 500;">B. Personal Brand Growth</h3>
+                            <p style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">An
+                                influencer’s brand plays a crucial role in determining their pricing. Factors
+                                contributing to the influencer's personal brand are:</p>
+                            <ul>
+                                <li style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
+                                    Consistent messaging.</li>
+                                <li style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
+                                    Distinctive visual identity.</li>
+                                <li style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">Unique
+                                    voice or perspective.</li>
+                                <li style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">Strong
+                                    audience loyalty.</li>
+                            </ul>
+                            <h3 id="4.3" style="font-size: 1.5rem;font-weight: 500;">C. Authenticity & Trustworthiness
+                            </h3>
+                            <p style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">Influencers
+                                who have maintained trust and genuine connection with their audience can often charge
+                                more for their service. This is because:</p>
+                            <ul>
+                                <li style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">Authentic
+                                    content resonates more with audiences.</li>
+                                <li style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
+                                    Trustworthy influencers have higher engagement rates.</li>
+                                <li style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">Genuine
+                                    recommendations lead to better conversion rates.</li>
+                            </ul>
 
-                                            <br><br>In [2025], live streaming of shopping and fashion events is
-                                            predicted to become a major revenue driver for the agencies and businesses.
-                                            According to the reports, 73% of the consumers worldwide are more likely to
-                                            purchase the service or product after watching a live streaming event, and
-                                            out of those 73%, 47% are more likely to make an impulse purchase during the
-                                            ongoing live stream event. In the US, live commerce sales are projected to
-                                            grow by 36% by 2026, and a report by KPMG, social e-commerce in India is
-                                            projected to grow with an astonishing rate of 31% CAGR and reach $37 billion
-                                            by the end of 2025.
+                            <h2 id="5" style="font-size: 2rem;font-weight: 600;margin-bottom: 10px;">Campaign Specific
+                            </h2>
+                            <h3 id="5.1" style="font-size: 1.5rem;font-weight: 500;">A. Scope of Work Required</h3>
+                            <p style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
+                                The scope of work plays a crucial role in determining the pricing of the influencer's
+                                collaborations. The scope of work covers various things that an <a href="influencer">
+                                    influencer </a> needs to
+                                fulfill during the campaign like content creation, number of deliverables, social media
+                                posts, and content scheduling. Below is the scope of the element and how it affects the
+                                pricing.
+                            </p>
+                            <div class="text-center">
+                                <img src="img/Blog 7/Blog 7 - Scope of Work Required.jpg" alt="" width="70%"
+                                    height="auto">
+                            </div> <br>
 
-                                            <br><br>An interesting example of this trend is the brand <strong>Telfar - a
-                                                New York</strong> based <strong>fashion brand</strong> that became the
-                                            standout case who benefitted largely after leveraging the live streaming of
-                                            it;s products.
-                                        </p>
+                            <h3 id="5.2" style="font-size: 1.5rem;font-weight: 500;">B. Campaign Duration</h3>
+                            <p style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
+                                The length of the campaigns also affects the <a href="influencer"> influencer </a>
+                                pricing. Longer campaigns
+                                usually come with discounted rates, while shorter campaigns often result in high prices.
+                                Consider the following factors.
+                            </p>
+                            <ul>
+                                <li style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
+                                    Short-term vs. long-term partnerships.</li>
+                                <li style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
+                                    Frequency of posts or content creation.</li>
+                                <li style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
+                                    Ongoing engagement requirements.</li>
+                                <li style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
+                                    Potential for extended collaborations.</li>
+                            </ul>
 
-                                        <img class="shoppable"
-                                            src="img\BlogPage\Blog-post2\Shoppable Live Streaming Image-new.jpg"
-                                            alt="shopping" height="260px" width="580px"
-                                            style="margin-bottom: 40px;margin-top: 30px;">
-                                        <p
-                                            style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;margin-bottom: 15px;">
-                                            <strong id="scenario"
-                                                style="text-decoration: underline;">Scenario:</strong>Telfar, famous for
-                                            its "Fashion Shopping Bags" (dubbed the "Bushwick Birkin"), faced challenges
-                                            with bots and scalpers buying up the majority of their inventory, leaving
-                                            it's genuine customers unable to purchase their products. To solve this,
-                                            Telfar started introducing it's products on the TV platform.
+                            <h3 id="5.3" style="font-size: 1.5rem;font-weight: 500;">C. Usage Rights & Licensing</h3>
+                            <p style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
+                                The extent of the usage rights and licensing directly affects the influencer pricing.
+                                Important factors include -
+                            </p>
+                            <ul>
+                                <li style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
+                                    Platforms for content distribution.</li>
+                                <li style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
+                                    Duration of content usage.</li>
+                                <li style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
+                                    Geographical limitations.</li>
+                                <li style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
+                                    Repurposing rights for brand-owned channels.</li>
+                            </ul>
+                            <p style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
+                                Now that we have explored the various campaign specifics, now let’s look at the
+                                Influencer's Experience and Professionalism.
+                            </p>
 
-                                            <br><br><strong id="live-streaming"
-                                                style="text-decoration: underline;">Effect of Live Streaming:</strong>
-                                            Telfar used live streaming of it's products to create a more inclusive and
-                                            engaging shopping experience among its customers. Telfar customers watched
-                                            live streams on the TV, catching exclusive product drops and QR codes that
-                                            allowed Telfar customers to pre order their shopping bags in the color and
-                                            size of their choice.
+                            <h2 id="6" style="font-size: 2rem;font-weight: 600;margin-bottom: 10px;">Influencer's
+                                Experience and
+                                Professionalism
+                            </h2>
+                            <h3 id="6.1" style="font-size: 1.5rem;font-weight: 500;">A. Years in Industry</h3>
+                            <p style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
+                                In any industry, the higher the experience level is the higher their price tag will be,
+                                same case is with the influencers. Influencers who have more experience will obviously
+                                charge much, due to their vast amount of industry knowledge and large audience network.
+                                Let’s look at the breakdown of how experience affects the pricing:
+                            </p>
+                            <div class="text-center">
+                                <img src="img/Blog 7/Blog 7 - Years in Industry.jpg" alt="" width="85%" height="auto">
+                            </div> <br>
+                            <h3 id="6.2" style="font-size: 1.5rem;font-weight: 500;">B. Portfolio Quality</h3>
+                            <p style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
+                                The quality of the influencer's portfolio, effects largely the influencer's pricing. The
+                                better the influencer's portfolio, the more they will charge for the collaboration. A
+                                well structured and established portfolio of the influencer include:</p>
+                            <ul>
+                                <li style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
+                                    Consistency in content style.</li>
+                                <li style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
+                                    Diversity of brand collaborations.</li>
+                                <li style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
+                                    High-quality visuals and production value.</li>
+                                <li style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
+                                    Demonstrated results from past campaigns.</li>
+                            </ul>
 
-                                            <br><br><strong id="outcome" style="text-decoration: underline;">Outcomes of
-                                                Live Streaming:</strong>
-                                            <br><strong>1. Community Engagement:</strong> The live stream made the
-                                            shopping experience personalized, interactive, and fun fostering a stronger
-                                            connection between the brand and its loyal customers.
-                                            <br><strong>2. Boost in Sales: </strong>By addressing the scalping problem
-                                            and providing a fair purchasing process for everyone, Telfar’s sales surged
-                                            while enhancing customer satisfaction.
-                                            <br><strong>3. Brand Loyalty:</strong> The transparency and exclusivity of
-                                            the live events strengthened customer trust and loyalty among the brand
+                            <h3 id="6.3" style="font-size: 1.5rem;font-weight: 500;">C. Business Acumen & Negotiation
+                                Ability</h3>
+                            <p style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
+                                Savvy influencers who have strong <a href="business"> business </a> knowledge and skills
+                                can negotiate better and
+                                can command higher prices for collaboration. Key factors include: </p>
+                            <ul>
+                                <li style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
+                                    Understanding market rates.</li>
+                                <li style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
+                                    Ability to articulate unique value propositions.</li>
+                                <li style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
+                                    Flexibility in creating customized packages.</li>
+                                <li style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
+                                    Knowledge of legal and contractual aspects.</li>
+                            </ul>
+                            <p style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
+                                Influencers who demonstrate these skills are often seen as the professional partners
+                                both for agencies and businesses, rather than mere content creators.</p>
 
-                                        </p>
-                                    </div>
+                            <h2 id="7" style="font-size: 2rem;font-weight: 600;margin-bottom: 10px;">Final Conclusion
+                            </h2>
+                            <p style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
+                                Understanding how to price influencer collaborations means looking at many different
+                                things. The number of followers, how much people interact with posts, which social media
+                                platform is used, and what kind of content is made all affect an influencer's worth. An
+                                influencer's reputation, what the campaign needs, what's happening in the market, and
+                                how much experience they have also shape how much they charge.
+                                <br><br>
+                                When companies and marketers team up with influencers, they need to think about all
+                                these things together. To get the most out of your marketing ROI and create real
+                                interesting campaigns that your audience likes, you should find influencers that fit
+                                your brand, especially the product and the service you would like to offer to their
+                                audience, and think about how much they can help. Keep in mind good influencer
+                                partnerships happen when both sides understand each other, know what to expect, and
+                                agree on fair pay.
+                            </p>
 
-                                    <!-- section small cta type -->
-                                    <section class="cta-section styled-section"
-                                        style=" margin: 45px auto; background: linear-gradient(180deg, #1F335C 6%, #426CC2 100%); background-size: cover; background-repeat: no-repeat;height: 238px;">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div
-                                                    class="col-xl-12 col-lg-12 col-md-12 col-sm-12 order-xl-1 order-lg-1 order-2 order-md-2 d-flex flex-column justify-content-center">
-                                                    <div
-                                                        class="row text-md-center text-lg-start text-xl-start text-center">
-                                                        <div class="d-flex">
-                                                            <div class="flex-column col-7">
-                                                                <div>
-                                                                    <h3 class="text-white"
-                                                                        style="line-height: 1.5;font-size: 18px !important;">
-                                                                        Ready to take your agency and business to the
-                                                                        next level? Talk with our experts today and
-                                                                        discover the power of influencer partnerships
-                                                                        for your agency or business!</h3>
-                                                                </div>
-
-                                                                <div class="industry-button text-left">
-                                                                    <a href="contact"
-                                                                        class="btn py-2 px-3 box-shadow-6 border-0 text-transform-none  mb-5 d-xl-inline-block custom-btn"
-                                                                        style="font-size: medium;border-radius: 25px;font-weight: 500;width: 130px;">
-                                                                        Let's Talk
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="text-right col-5"
-                                                                style="text-align: right !important;">
-                                                                <img src="img/BlogPage/Blog-post2/CTA (2).png" alt=""
-                                                                    width="200px" height="220px"
-                                                                    style="margin-bottom: 25px !important;margin-top: -32px;">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </section>
-
-                                    <div>
-                                        <h2 class="mt-3 mb-3" id="trust"
-                                            style="padding-top: 2px;padding-bottom: 2px;font-size: 24px;font-weight: 600 !important;border-radius: 15px;text-align: start;">
-                                            Trust Authenticity, Credibility And Transparency</h2>
-                                        <p style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
-                                            In an interconnected world driven by information and relationships, trust,
-                                            authenticity, credibility, and transparency, consumers are demanding genuine
-                                            partnerships between agencies, businesses and influencers. Therefore it is
-                                            essential for the agencies and businesses to hire the right set of
-                                            influencers, who can authentically advocate their services and products, and
-                                            recommend them to their audience.
-                                            <br>
-                                        <div class="text-center">
-                                            <img class="trust-image" src="img/BlogPage/Blog-post2/trust-image.jpg"
-                                                alt="" height="400px" width="450px"
-                                                style="margin: 0 auto;margin-bottom: 30px;margin-top: 40px;">
-                                        </div>
-                                        <br><br>
-                                        <p class="text-left"
-                                            style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
-                                            <a href="influencer"
-                                                style="color: #426CC2;text-decoration: underline;">Influencers </a>and
-                                            <a href="business" style="color: #426CC2;text-decoration: underline;">
-                                                businesses </a>need to trust one another in order to build a lasting,
-                                            business relationship. Authenticity also ensures that <a href="agency"
-                                                style="color: #426CC2;text-decoration: underline;">agencies </a> and <a
-                                                href="business"
-                                                style="color: #426CC2;text-decoration: underline;">businesses</a> act
-                                            according to the values they want the public to perceive; Consistency is
-                                            what bequeaths credibility; as one maintains integrity and delivers
-                                            results—then automatically the belief his or her word (or action). It
-                                            reinforces accountability, making transparency essential to the promotion of
-                                            openness and honesty.
-                                            As these principles cooperate, they lead to a positive feedback loop. By
-                                            working together to share this information, businesses and <a
-                                                href="influencer"
-                                                style="color: #426CC2;text-decoration: underline;">influencers </a> can
-                                            connect on a more human level fostering stronger alliances based on mutual
-                                            respect.
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <h2 class="mt-3 mb-3" id="long-term-influencer"
-                                            style="padding-top: 2px;padding-bottom: 2px;font-size: 24px;font-weight: 600 !important;border-radius: 15px;text-align: start;">
-                                            Long Term Influencer Partnerships</h2>
-                                        <p style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
-                                            While many different <a href="influencer"
-                                                style="color: #426CC2;text-decoration: underline;">influencers </a>can
-                                            yield different results for <a href="agency"
-                                                style="color: #426CC2;text-decoration: underline;">agencies</a> and <a
-                                                href="business"
-                                                style="color: #426CC2;text-decoration: underline;">businesses</a>,
-                                            building a long-lasting partnership with some <a href="influencer"
-                                                style="color: #426CC2;text-decoration: underline;">influencers </a>can
-                                            actually benefit more and will lead to a broader brand advocacy with more
-                                            sustainable engagement in 2025. With long-term partnerships with the
-                                            influencers, agencies, and businesses can cultivate deeper trust and
-                                            familiarity with their followers, making the influencers' endorsements more
-                                            genuine. This strategy also benefits influencers, allowing them to enhance
-                                            their portfolios, showcase long-term partnerships with brands, and allowing
-                                            them to collaborate with bigger agencies and businesses in the future.</p>
-                                        <img class="influencer-partnership"
-                                            src="img/BlogPage/Blog-post2/Long Term Influencer Partnerships.png"
-                                            alt="long-term-influencer" height="400px" width="540px"
-                                            style="margin-top: 25px;margin-bottom: 35px;">
-                                    </div>
-
-                                    <div>
-                                        <h2 class="mt-3 mb-3" id="metaverse"
-                                            style="padding-top: 2px;padding-bottom: 2px;font-size: 24px;font-weight: 600 !important;border-radius: 15px;text-align: start;">
-                                            Rise of Metaverse and VR Influencers</h2>
-                                        <p style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
-                                            The growing popularity of the metaverse and virtual reality (VR) influencers
-                                            will change how influencer marketing works in 2025. VR influencers provide
-                                            engaging experiences that connect the virtual and real worlds. As platforms
-                                            like Decentraland, Roblox, and Meta Horizons become more popular, VR
-                                            influencers are using these platforms to create special, interactive content
-                                            that attracts their audiences.
-                                            <br><br> These digital characters, like Kyra and Naina, made using AI and
-                                            CGI and often shown as avatars, are changing how businesses work with
-                                            influencers, organize virtual events, and boost online shopping in ways that
-                                            regular influencers can't. By combining creativity with advanced technology,
-                                            these digital figures are building stronger connections with audiences and
-                                            offering new ways to tell stories. AI-powered influencers are also easier
-                                            for brands to manage, which reduces mistakes and the risk of unexpected
-                                            issues compared to traditional influencers. This trend is expected to grow
-                                            even more in the future.
-                                        </p>
-                                        <img class="meta-verse"
-                                            src="img/BlogPage/Blog-post2/Rise of Metaverse and VR Influencers.png"
-                                            alt="" height="350px" width="540px"
-                                            style="margin-top: 20px;margin-bottom: 30px;">
-                                    </div>
-
-                                    <div>
-                                        <h2 class="mt-3 mb-3" id="conclusion"
-                                            style="padding-top: 2px;padding-bottom: 2px;font-size: 24px;font-weight: 600 !important;padding-left:15px;border-radius: 15px;text-align: start;">
-                                            Final Conclusion</h2>
-                                        <p style="font-size: 0.95rem;text-align: left;color: #333;line-height: 23px;">
-                                            As we move forward, in the upcoming years, trends in influencer marketing
-                                            are clearly on the edge of big changes. Trends like AI-driven
-                                            personalization, the role of micro and nano influencers, live streaming of
-                                            events, trust, authenticity and credibility, long-term partnerships with
-                                            influencers, and the rise of VR influencers—all these trends are reshaping
-                                            the way agencies and businesses can connect with the people. Moreover, these
-                                            trends are not only about the technology; they are about meeting and
-                                            targeting new consumers, growing expectations, and the authenticity and
-                                            credibility of their brand among the consumers in a more meaningful way.
-
-                                            <br><br> So, which of these trends will really take off? Will agencies and
-                                            businesses lean more towards AI to deliver highly personalized campaigns to
-                                            their consumers, or will the VR influencers become the driving force? Think
-                                            about which of these trends will best fit your agency and business. Now’s
-                                            the perfect time to explore these trends and decide how they can help your
-                                            agency and business to stay relevant and competitive, connect with people,
-                                            and lead the way in influencer marketing’s next exciting chapter.
-                                        </p>
-                                        <div style="text-align: left !important;">
-                                            <a href="blog" style="color: #0052CD;"><i class="fas fa-arrow-left"></i>
-                                                Return To Blogs</a>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
+                            <a href="blog" style="color: #0052CD;"><i class="fas fa-arrow-left"></i> Return To Blogs</a>
                         </div>
+
                     </div>
                     <div class="rightDiv mt-5">
                         <div class="px-2 ml-5 display-flex justify-content-end"
@@ -1373,7 +1280,7 @@
                                         style="width: 100%; padding: 2px; margin-bottom: 10px; background: transparent; border-bottom: 1px solid white; color: white; outline: none; font-size: 0.9rem;border-top: none;border-left: none;border-right: none;">
 
                                     <button type="submit" onclick="sendForm()" class="custom-btn-blue"
-                                        style="width: 100%; padding: 5px;margin-top: 10px; background: #426CC1; color: #fff; border: none; border-radius: 25px; cursor: pointer;">
+                                        style="width: 100%; padding: 5px;margin-top: 10px; border: none; border-radius: 25px; cursor: pointer;">
                                         Submit
                                     </button>
                                 </form>
@@ -1383,130 +1290,124 @@
                 </div>
             </section>
 
-            <section id="section3" class="section-blog" style="margin-top: 70px;">
+            <section id="section3" class="section-blog" style="margin-top: 80px;">
                 <div class="line" style=" width: 120px;height: 4px;background-color: #426cc1;margin: 0 auto 20px;">
                 </div>
+
                 <section class="container1 carousel-blogs" style="margin:30px auto;">
                     <h3 class="text-center"
                         style="font-size: 40px;color: #426CC1;margin-bottom: 30px;margin-top: 20px;">Other Blogs</h3>
-                    <div
+                    <div class="container"
                         style="display: grid; grid-template-columns: repeat(3, 2fr); gap: 50px; padding: 20px;margin-bottom: 40px;">
+
                         <!-- Card Template -->
                         <div class="class-template"
                             style="background-color: #fff; border-radius: 8px; box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); overflow: hidden; display: flex; flex-direction: column; position: relative;height: 270px;width: 265px;">
                             <!-- Adjusted image -->
-                            <img src="img\blog\Buzzboost Blog Images\Buzzboost Blog Images\Blog 1.png"
-                                alt="influencer-pointer"
-                                style="width: 100%; height: 150px; object-fit: contain; margin: 0;">
+                            <img src="img/Blog 8/Blog 8 Footer Image of Blog 7 (1).jpg" alt="influencer-pointer"
+                                style="width: 100%; height: 150px; object-fit: cover; margin: 0;">
 
                             <!-- Removed extra spacing -->
                             <div style="padding: 5px 5px; background-color: white; color: black; margin: 0;">
                                 <!-- Compact heading -->
                                 <h3
                                     style="font-size: 1.2rem;letter-spacing: normal; margin: 0;font-weight: 600; color: black; line-height: 1.2;font-weight: 500;height: 60px;">
-                                    <a href="why-hiring-influencers-can-be-a-game-changer-for-your-agency-and-business-in-2025"
-                                        style="text-decoration: none; color: inherit;">Why Hiring Influencers Can Be a
-                                        Game-Changer for Your Agency and Business in [2025] </a>
+                                    <a href="guide-to-mega-macro-micro-and-nano-influencers-for-your-campaigns"
+                                        style="text-decoration: none; color: inherit;">
+                                        How Micro Influencers Can Be The Game Changers for Your Agencies & Businesses </a>
                                 </h3>
                                 <div
                                     style="display: flex;justify-content: space-between; align-items: center; padding-top: 16px; font-size: 0.75rem;margin-top: 2px;">
-                                    <div>
+                                    <div class="class-templatediv">
                                         <span style="color: #888;margin-right: 15px;">Arham Jain</span>
-                                        <span style="color: #888;">21/12/2024</span>
+                                        <span style="color: #888;">30/01/2025</span>
+                                        <p class="mobile-blog">Is your agency or business struggling to make an impact...</p>
+
                                     </div>
                                     <div>
-                                        <a href="why-hiring-influencers-can-be-a-game-changer-for-your-agency-and-business-in-2025"
+                                        <a class="readmore"
+                                            href="guide-to-mega-macro-micro-and-nano-influencers-for-your-campaigns"
                                             style="text-decoration: none; font-size: 0.65rem; padding: 5px 8px; color: white; border-radius: 25px; background-color: #426CC1;width: 120px;">Read
                                             More</a>
                                     </div>
                                     <!-- <a href="blog-post.html" style="text-decoration: none; font-size: 0.75rem; padding: 3px 5px; color: white; border-radius: 25px; background-color: #426CC1;">Read More</a> -->
                                 </div>
-
                             </div>
-
-                            <!-- Footer -->
-
                         </div>
                         <!-- Card Template -->
                         <div class="class-template"
-                            style="background-color: #fff; border-radius: 8px; box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); overflow: hidden; display: flex; flex-direction: column; position: relative;height: 275px;width: 265px;">
+                            style="background-color: #fff; border-radius: 8px; box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); overflow: hidden; display: flex; flex-direction: column; position: relative;height: 270px;width: 265px;">
                             <!-- Adjusted image -->
-                            <img src="img\blog\Buzzboost Blog Images\Buzzboost Blog Images\Blog 3 Image (2).png"
-                                alt="influencer-pointer"
+                            <img src="img/blog-main/blog-5trending.png" alt="influencer-pointer"
                                 style="width: 100%; height: 150px; object-fit: cover; margin: 0;">
 
                             <!-- Removed extra spacing -->
                             <div style="padding: 5px 5px; background-color: white; color: black; margin: 0;">
                                 <!-- Compact heading -->
                                 <h3
-                                    style="font-size: 1.1rem;letter-spacing: normal; margin: 0;font-weight: 600; color: black; line-height: 1.2; font-weight: 500;padding-left: 4px;padding-right: 4px;margin-top: 10px;">
-                                    <a href="how-to-reach-out-to-right-set-of-influencers-in-2025"
-                                        style="text-decoration: none; color: inherit;">How to Reach Out To Right Set Of
-                                        Influencers in [2025]</a>
+                                    style="font-size: 1.2rem;letter-spacing: normal; margin: 0;font-weight: 600; color: black; line-height: 1.2;font-weight: 500;height: 60px;">
+                                    <a href="guide-to-mega-macro-micro-and-nano-influencers-for-your-campaigns"
+                                        style="text-decoration: none; color: inherit;">Guide to Mega, Macro, Micro, And
+                                        Nano Influencers for
+                                        Your Campaigns</a>
                                 </h3>
                                 <div
-                                    style="display: flex;justify-content: space-between; align-items: center; padding-top: 16px; font-size: 0.75rem;margin-top: 2px;padding-left: 4px;padding-right: 4px;">
+                                    style="display: flex;justify-content: space-between; align-items: center; padding-top: 16px; font-size: 0.75rem;margin-top: 2px;">
                                     <div class="class-templatediv">
                                         <span style="color: #888;margin-right: 15px;">Arham Jain</span>
-                                        <span style="color: #888;">02/01/2025</span>
-                                        <p class="mobile-blog">In the rapidly evolving digital world, hiring perfect
-                                            influencers and collaborating with them...</p>
+                                        <span style="color: #888;">20/01/2025</span>
+                                        <p class="mobile-blog">In an ever-evolving world of social media...</p>
 
                                     </div>
                                     <div>
-                                        <a class="readmore" href="how-to-reach-out-to-right-set-of-influencers-in-2025"
+                                        <a class="readmore"
+                                            href="guide-to-mega-macro-micro-and-nano-influencers-for-your-campaigns"
                                             style="text-decoration: none; font-size: 0.65rem; padding: 5px 8px; color: white; border-radius: 25px; background-color: #426CC1;width: 120px;">Read
                                             More</a>
                                     </div>
                                     <!-- <a href="blog-post.html" style="text-decoration: none; font-size: 0.75rem; padding: 3px 5px; color: white; border-radius: 25px; background-color: #426CC1;">Read More</a> -->
                                 </div>
-
                             </div>
-
-                            <!-- Footer -->
-
                         </div>
-                        <!-- Card Template -->
-                        <div class="class-template"
-                            style="background-color: #fff; border-radius: 8px; box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); overflow: hidden; display: flex; flex-direction: column; position: relative;height: 275px;width: 265px;">
-                            <!-- Adjusted image -->
-                            <img src="img\blog\Buzzboost Blog Images\Buzzboost Blog Images\blogg.png"
-                                alt="influencer-pointer"
-                                style="width: 100%; height: 150px; object-fit: cover; margin: 0;">
+            
+                         <!-- Card Template -->
+            <div class="class-template"
+            style="background-color: #fff; border-radius: 8px; box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); overflow: hidden; display: flex; flex-direction: column; position: relative;height: 270px;width: 265px;">
+            <!-- Adjusted image -->
+            <img src="img/blog-main/Blog 4-trending.jpg" alt="influencer-pointer"
+              style="width: 100%; height: 150px; object-fit: cover; margin: 0;">
 
-                            <!-- Removed extra spacing -->
-                            <div style="padding: 5px 5px; background-color: white; color: black; margin: 0;">
-                                <!-- Compact heading -->
-                                <h3
-                                    style="font-size: 1.1rem;letter-spacing: normal; margin: 0;font-weight: 600; color: black; line-height: 1.2; font-weight: 500;padding-left: 4px;padding-right: 4px;margin-top: 10px;">
-                                    <a href="influencer-guide-collaborate-with-top-brands-in-2025"
-                                        style="text-decoration: none; color: inherit;">Influencer Guide: Collaborate
-                                        with Top Brands in 2025</a>
-                                </h3>
-                                <div
-                                    style="display: flex;justify-content: space-between; align-items: center; padding-top: 16px; font-size: 0.75rem;margin-top: 2px;padding-left: 4px;padding-right: 4px;">
-                                    <div class="class-templatediv">
-                                        <span style="color: #888;margin-right: 15px;">Arham Jain</span>
-                                        <span style="color: #888;">02/01/2025</span>
-                                        <p class="mobile-blog">Are you an influencer looking out for collaborations
-                                            with...</p>
+            <!-- Removed extra spacing -->
+            <div style="padding: 5px 5px; background-color: white; color: black; margin: 0;">
+              <!-- Compact heading -->
+              <h3
+                style="font-size: 1.2rem;letter-spacing: normal; margin: 0;font-weight: 600; color: black; line-height: 1.2;font-weight: 500;height: 60px;">
+                <a href="influencer-guide-collaborate-with-top-brands-in-2025"
+                  style="text-decoration: none; color: inherit;">Influencer Guide: Collaborate with Top Brands in
+                  [2025] </a>
+              </h3>
+              <div
+                style="display: flex;justify-content: space-between; align-items: center; padding-top: 16px; font-size: 0.75rem;margin-top: 2px;">
+                <div class="class-templatediv">
+                  <span style="color: #888;margin-right: 15px;">Arham Jain</span>
+                  <span style="color: #888;">04/01/2025</span>
+                  <p class="mobile-blog">Are you an influencer looking out for collaborations with big ...</p>
 
-                                    </div>
-                                    <div>
-                                        <a class="readmore" href="influencer-guide-collaborate-with-top-brands-in-2025"
-                                            style="text-decoration: none; font-size: 0.65rem; padding: 5px 8px; color: white; border-radius: 25px; background-color: #426CC1;width: 120px;">Read
-                                            More</a>
-                                    </div>
-                                    <!-- <a href="blog-post.html" style="text-decoration: none; font-size: 0.75rem; padding: 3px 5px; color: white; border-radius: 25px; background-color: #426CC1;">Read More</a> -->
-                                </div>
+                </div>
+                <div>
+                  <a class="readmore" href="influencer-guide-collaborate-with-top-brands-in-2025"
+                    style="text-decoration: none; font-size: 0.65rem; padding: 5px 8px; color: white; border-radius: 25px; background-color: #426CC1;width: 120px;">Read
+                    More</a>
+                </div>
+                <!-- <a href="blog-post.html" style="text-decoration: none; font-size: 0.75rem; padding: 3px 5px; color: white; border-radius: 25px; background-color: #426CC1;">Read More</a> -->
+              </div>
 
-                            </div>
+            </div>
 
-                            <!-- Footer -->
+            <!-- Footer -->
 
-                        </div>
+          </div>
 
-                        <!-- Repeat the card structure 36 times for 6x6 grid -->
                     </div>
 
                 </section>
