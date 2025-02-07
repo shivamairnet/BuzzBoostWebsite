@@ -366,10 +366,8 @@
 
 			.amplify-section.container {
 				margin-top: 50px !important;
-				/* Adjust spacing */
 				padding: 0 10px !important;
-				/* Add some padding for a snug fit */
-				/* max-width: 400px !important; */
+				
 			}
 
 			.amplify-head {
@@ -463,18 +461,14 @@
 			#requestQuoteModal1 #industry-select,
 			#requestQuoteModal1 #other-industry {
 				font-size: 12px !important;
-				/* Adjust dropdown font size */
 				padding: 4px !important;
 			}
 
 			/* Submit button styling */
 			#requestQuoteModal1 .custom-btn {
 				width: 100% !important;
-				/* Full-width button on mobile */
 				font-size: 16px !important;
-				/* Adjust font size */
 				padding: 6px !important;
-				/* Compact padding */
 				position: relative !important;
 				z-index: 10 !important;
 			}
@@ -527,6 +521,10 @@
 			.scrollable-pointers {
 				padding-left: 0px !important;
 				padding-right: 0px !important;
+			}
+
+			.industry{
+				background: none !important;
 			}
 		}
 
@@ -1062,7 +1060,7 @@
 	</div>
 
 	<!-- section 3 -->
-	<div style="background:linear-gradient(to bottom, hsl(212.9, 48.7%, 85.1%), hsl(30.2, 94%, 91.1%));">
+	<div class="industry" style="background:linear-gradient(to bottom, hsl(212.9, 48.7%, 85.1%), hsl(30.2, 94%, 91.1%));">
 		<div class="section-3 container">
 			<h2 class="text-center mt-3 pt-5" style="font-size: 40px;line-height: normal;">Industries Served By Our
 				Platform</h2>
@@ -1279,7 +1277,6 @@
 				firstname: form.firstname.value,
 				lastname: form.lastname.value,
 				industry: form.industry.value,
-
 				email: form.email.value,
 				phone: form.phone.value,
 				instagram: form.instagram.value,

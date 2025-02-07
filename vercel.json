@@ -1,5 +1,4 @@
 {
-    
       "rewrites": [
         { "source": "/home", "destination": "/home.html" },
         { "source": "/about-us", "destination": "/about-us.html" },
@@ -17,9 +16,8 @@
         { "source": "/top-indicators-you-need-an-influencer-marketing-platform", "destination": "/top-indicators-you-need-an-influencer-marketing-platform.html" },
         { "source": "/business", "destination": "/business.html" },
         { "source": "/influencer", "destination": "/Influencer.html" },
-        { "source": "/blog-page-2", "destination": "/blog-page-2.html" }
-        
+        { "source": "/blog-page-2", "destination": "/blog-page-2.html" }   
       ]
-  
+      
   }
   

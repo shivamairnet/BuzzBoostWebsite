@@ -647,14 +647,15 @@
 
       .container-blog {
         flex-direction: column !important;
-        /* Stack the divs vertically */
       }
+
+      /* .innerDiv{
+        height: auto !important;
+      } */
 
       .innerDiv,
       .rightDiv {
         width: 100% !important;
-        /* Full-width for all divs */
-
       }
 
       .leftDiv {
@@ -662,27 +663,17 @@
       }
     }
 
-
-
-    .section-blog {
-      /* min-height: 100vh; */
-      /* padding: 20px; */
-    }
-
     .container-blog {
       display: flex;
-
     }
 
     .leftDiv {
       width: 20%;
       padding: 5px;
       position: -webkit-sticky;
-      /* For Safari */
       position: sticky;
       top: 0;
       align-self: flex-start;
-      /* Ensure it starts at the top */
       height: 420px;
     }
 
@@ -690,7 +681,6 @@
       width: 60%;
       padding: 5px;
       height: auto;
-
     }
 
     .rightDiv {
@@ -833,7 +823,7 @@
     @media (min-width: 769px) and (max-width: 1024px) {
       .carousel-blogs .class-template {
         margin: 0 auto !important;
-        width: 120% !important;
+        width: 105% !important;
       }
 
       .class-templatediv {
@@ -1558,7 +1548,7 @@
           <h3 class="text-center" style="font-size: 40px;color: #426CC1;margin-bottom: 30px;margin-top: 20px;">Other
             Blogs</h3>
           <div class="container"
-            style="display: grid; grid-template-columns: repeat(3, 2fr); gap: 50px; padding: 50px;margin-bottom: 40px;">
+            style="display: grid; grid-template-columns: repeat(3, 2fr); gap: 50px; padding: 20px;margin-bottom: 40px;">
             <!-- Card Template -->
             <div class="class-template"
               style="background-color: #fff; border-radius: 8px; box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); overflow: hidden; display: flex; flex-direction: column; position: relative;height: 270px;width: 265px;">
