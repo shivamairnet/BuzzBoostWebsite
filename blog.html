@@ -238,22 +238,29 @@
                 padding: 5px;
 				margin: auto;
 			}
+/* 
+			.blog-class{
+				display: flex !important;
+				flex-direction: column !important;
+			}
+
+			.class-page{
+				order: 2 ;
+				margin-top: 20px 
+			}
+
+			.class-trend{
+                order: 1 !important;
+
+			} */
 		}
+
 	</style>
 	<meta name="robots" content="index, follow">
 </head>
 
 <body class="alternative-font-7">
 	<div class="body mt-0">
-		<!-- <div class="notice-top-bar p-relative z-index-1 bg-secondary">
-				<div class="container">
-					<div class="row justify-content-center py-2">
-						<div class="col-9 col-md-12 text-center">
-							<p class="text-color-light mb-0 font-weight-semibold text-2">Join our Community of Marketers. <a href="#" class="btn btn-link text-decoration-none p-0 m-0 btn-dash ms-1 text-light">Apply Now</a></p>
-						</div>
-					</div>
-				</div>
-			</div> -->
 		<div class="landing-section" style="background: linear-gradient(to right, #426CC2, #5C85DD)">
 
 			<header id="header" class="header-transparent header-desktop-tablet "
@@ -490,7 +497,7 @@
 			</div>
 			<section class="section position-relative border-0 m-0" style="background-color: white;">
 				<div class="container py-3">
-					<div class="row">
+					<div class="row blog-class">
 						<div class="col-lg-7 mb-5 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter"
 							data-appear-animation-delay="1600">
 							<article class="mb-5">
@@ -556,19 +563,63 @@
 								</div>
 							</article>
 
-							<ul
-								class="custom-pagination-style-1 pagination pagination-rounded pagination-md justify-content-center">
-								<li class="page-item"><a class="page-link" href="#"><i
-											class="fas fa-angle-left"></i></a></li>
-								<li class="page-item active"><a class="page-link" href="blog">1</a></li>
-								<li class="page-item"><a class="page-link" href="blog-page-2">2</a></li>
-								<!-- <li class="page-item"><a class="page-link" href="#">3</a></li> -->
-								<li class="page-item"><a class="page-link" href="#"><i
-											class="fas fa-angle-right"></i></a></li>
+							<ul id="pagination" class="class-page order-2 order-lg-1 custom-pagination-style-1 pagination pagination-rounded pagination-md justify-content-center" style="margin-top: 60px; margin-bottom: 40px;">
+								<li class="page-item">
+									<a class="page-link" onclick="changePage(-1)"><i class="fas fa-angle-left"></i></a>
+								</li>
+								<li class="page-item active"><a class="page-link" href="#">1</a></li>
+								<li class="page-item"><a class="page-link" href="#">2</a></li>
+								<li class="page-item"><a class="page-link" href="#">3</a></li>
+								<li class="page-item"><a class="page-link" href="#">4</a></li>
+								<li class="page-item"><a class="page-link" href="#">5</a></li>
+								<li class="page-item"><a class="page-link" href="#">6</a></li>
+								<li class="page-item"><a class="page-link" href="#">7</a></li>
+								<li class="page-item"><a class="page-link" href="#">8</a></li>
+								<li class="page-item">
+									<a class="page-link" onclick="changePage(1)"><i class="fas fa-angle-right"></i></a>
+								</li>
 							</ul>
+							
+							<script>
+								let currentIndex = 0;
+								const visiblePages = 4;
+								const paginationItems = document.querySelectorAll("#pagination .page-item:not(:first-child):not(:last-child)");
+								const totalItems = paginationItems.length;
+							
+								function updatePagination() {
+									paginationItems.forEach((item, index) => {
+										item.style.display = (index >= currentIndex && index < currentIndex + visiblePages) ? "list-item" : "none";
+									});
+								}
+							
+								function changePage(direction) {
+									let activeItem = document.querySelector("#pagination .page-item.active");
+									let activeIndex = Array.from(paginationItems).indexOf(activeItem);
+							
+									let newIndex = activeIndex + direction;
+									if (newIndex >= 0 && newIndex < totalItems) {
+										// First update the pagination range
+										if (newIndex >= currentIndex + visiblePages) {
+											currentIndex += 1;
+											updatePagination();
+										} else if (newIndex < currentIndex) {
+											currentIndex -= 1;
+											updatePagination();
+										}
+							
+										// Then update the active page
+										activeItem.classList.remove("active");
+										paginationItems[newIndex].classList.add("active");
+									}
+								}
+							
+								// Initial setup
+								updatePagination();
+							</script>
+							
 
 						</div>
-						<div class="blog-sidebar col-lg-5 pt-4 pt-lg-0 appear-animation"
+						<div class="class-trend blog-sidebar order-1 order-lg-2 col-lg-5 pt-4 pt-lg-0 appear-animation"
 							data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1800">
 							<aside class="sidebar">
 								<div class="container px-4 mt-4">
@@ -583,7 +634,7 @@
 											</div>
 											<div class="col-md-8 d-flex flex-column justify-content-between">
 												<div>
-													<a href="influencer-guide-collaborate-with-top-brands-in-2025">
+													<a href="how-micro-influencers-can-be-the-game-changers-for-your-agencies-and-businesses">
 														<h4 class="text-color-dark text-4 mb-2"
 															style="font-weight: 500;font-size: 1.2rem;">
 															How Micro Influencers Can Be The Game Changers for Your Agencies & Businesses
@@ -596,7 +647,7 @@
 														<a href="#" class="text-color-default text-uppercase text-1">10 Jan 2023 | Arham Jain</a>
 													</div> -->
 												<div class="d-flex justify-content-start">
-													<a href="influencer-guide-collaborate-with-top-brands-in-2025"
+													<a href="how-micro-influencers-can-be-the-game-changers-for-your-agencies-and-businesses"
 														class="btn btn-sm custom-btn-read"
 														style="border-radius: 25px;width: 100px;background-color: #426CC1;color: white;">Read
 														More</a>
@@ -614,7 +665,7 @@
 										</div>
 										<div class="col-md-8 d-flex flex-column justify-content-between">
 											<div>
-												<a href="influencer-guide-collaborate-with-top-brands-in-2025">
+												<a href="guide-to-mega-macro-micro-and-nano-influencers-for-your-campaigns">
 													<h4 class="text-color-dark text-4 mb-2"
 														style="font-weight: 500;font-size: 1.2rem;">
 														Guide to Mega, Macro, Micro, And Nano Influencers for Your Campaigns
@@ -627,7 +678,7 @@
 													<a href="#" class="text-color-default text-uppercase text-1">10 Jan 2023 | Arham Jain</a>
 												</div> -->
 											<div class="d-flex justify-content-start">
-												<a href="influencer-guide-collaborate-with-top-brands-in-2025"
+												<a href="guide-to-mega-macro-micro-and-nano-influencers-for-your-campaigns"
 													class="btn btn-sm custom-btn-read"
 													style="border-radius: 25px;width: 100px;background-color: #426CC1;color: white;">Read
 													More</a>
@@ -735,7 +786,8 @@
 								<!-- <div class="py-1 clearfix">
                                     <hr class="my-2">
                                 </div>  -->
-							</aside>
+							</aside>				
+						
 						</div>
 					</div>
 				</div>
@@ -952,8 +1004,7 @@
 				}
 			});
 		</script>
-
-
+			
 
 </body>
 

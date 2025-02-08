@@ -470,8 +470,8 @@
 							Why Hiring Influencers Can Be a Game-Changer for Your Agency and Business in [2025] </a>
 					</div>
 					<div
-						style="font-size: 12px;color: #426CC1;text-align: left;padding-left: 10px;padding-right: 10px;padding-top: 5px;padding-bottom: 5px; line-height: 1.5rem;letter-spacing: normal;">
-						<a href="why-hiring-influencers-can-be-a-game-changer-for-your-agency-and-business-in-2025"> In
+						style="font-size: 12px;color: #777;text-align: left;padding-left: 10px;padding-right: 10px;padding-top: 5px;padding-bottom: 5px; line-height: 1.5rem;letter-spacing: normal;">
+						<a style="color: #777;" href="why-hiring-influencers-can-be-a-game-changer-for-your-agency-and-business-in-2025"> In
 							the fast-paced world of technology, where every agency and business, be it small... </a> 
 					</div>
 				</div>
@@ -537,11 +537,21 @@
 			</div> -->
 		</div>
 
-		<ul class="custom-pagination-style-1 pagination pagination-rounded pagination-md justify-content-center" style="margin-top: 60px;margin-bottom: 40px;">
-			<li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-left"></i></a></li>
+		<ul id="pagination" class="custom-pagination-style-1 pagination pagination-rounded pagination-md justify-content-center" style="margin-top: 60px;margin-bottom: 40px;">
+			<li class="page-item">
+				<a class="page-link" onclick="changePage(-1)"><i class="fas fa-angle-left"></i></a>
+			</li>
 			<li class="page-item"><a class="page-link" href="blog">1</a></li>
 			<li class="page-item active"><a class="page-link" href="blog-page-2">2</a></li>
-			<li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
+			<li class="page-item"><a class="page-link" href="#">3</a></li>
+			<li class="page-item"><a class="page-link" href="#">4</a></li>
+			<li class="page-item"><a class="page-link" href="#">5</a></li>
+			<li class="page-item"><a class="page-link" href="#">6</a></li>
+			<li class="page-item"><a class="page-link" href="#">7</a></li>
+			<li class="page-item"><a class="page-link" href="#">8</a></li>
+			<li class="page-item">
+				<a class="page-link" onclick="changePage(1)"><i class="fas fa-angle-right"></i></a>
+			</li>
 		</ul>
 
 		<!-- whatsapp section -->
@@ -717,6 +727,38 @@
 				alert("Please fill in all the required fields.");
 			}
 		});
+	</script>
+	<script>
+		let currentIndex = 0;
+		const visiblePages = 4;
+		const paginationItems = document.querySelectorAll("#pagination .page-item:not(:first-child):not(:last-child)");
+		const totalItems = paginationItems.length;
+	
+		function updatePagination() {
+			paginationItems.forEach((item, index) => {
+				item.style.display = (index >= currentIndex && index < currentIndex + visiblePages) ? "list-item" : "none";
+			});
+		}
+	
+		function changePage(direction) {
+			let activeItem = document.querySelector("#pagination .page-item.active");
+			let activeIndex = Array.from(paginationItems).indexOf(activeItem);
+	
+			let newIndex = activeIndex + direction;
+			if (newIndex >= 0 && newIndex < totalItems) {
+				activeItem.classList.remove("active");
+				paginationItems[newIndex].classList.add("active");
+	
+				if (newIndex >= currentIndex + visiblePages) {
+					currentIndex += 1;
+				} else if (newIndex < currentIndex) {
+					currentIndex -= 1;
+				}
+				updatePagination();
+			}
+		}
+	
+		updatePagination();
 	</script>
 </body>
 
