@@ -187,6 +187,47 @@
 
 
     @media (max-width: 768px) {
+      .class-template div {
+        /* padding: 10px !important; */
+        margin: 0 !important;
+      }
+
+      .class-template a {
+        width: 50% !important;
+        /* Reduce the width */
+        margin: 0 auto !important;
+        /* Center-align horizontally */
+        font-size: 1.2rem !important;
+        /* Adjust font size if needed */
+        text-align: center !important;
+      }
+
+      .class-template h3 {
+        font-size: 1.2rem !important;
+        text-align: left !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+
+      }
+
+      .class-template div {
+
+        font-size: 0.85rem !important;
+        /* Slightly larger font for mobile */
+        text-align: center !important;
+        /* Center-align all text */
+      }
+
+
+      .class-template div span {
+        display: none !important;
+
+      }
+    
+
+      .crd-name{
+        display: none !important;
+      }
 
       .cta-section12 {
         position: relative !important;
@@ -266,6 +307,10 @@
         /* Let height adjust dynamically */
         width: 100% !important;
         position: relative;
+      }
+
+      .class-templatediv{
+        display: none !important;
       }
 
       .cta-section img {
@@ -565,7 +610,7 @@
       .class-template {
         width: 100% !important;
         /* Make the cards take full width */
-        height: 345px !important;
+        height: 340px !important;
         padding-top: 5px !important;
         padding-bottom: 20px !important;
       }
@@ -582,15 +627,20 @@
       }
 
       .class-template a {
-        font-size: 0.85rem !important;
-        /* Adjust button font size */
-        /* padding: 6px 10px !important; */
-        width: auto !important;
-        /* Allow buttons to fit content */
+        width: 50% !important;
+        /* Reduce the width */
+        margin: 0 auto !important;
+        /* Center-align horizontally */
+        font-size: 1.2rem !important;
+        /* Adjust font size if needed */
+        text-align: center !important;
       }
 
       .class-template h3 {
-        font-size: 1.1rem !important;
+        font-size: 1.2rem !important;
+        text-align: left !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
 
       }
 
@@ -603,13 +653,24 @@
       }
 
       .class-template div span {
-        display: block !important;
-        /* Stack author and date vertically */
-        color: #666 !important;
-        /* Slightly darker color for better visibility */
-        margin: 0 !important;
+        display: none !important;
 
       }
+
+      .mobile-blog {
+        display: block;
+        padding-left: 4px;
+        padding-right: 4px;
+      }
+
+      .readmore {
+        width: 50%;
+
+      }
+      
+
+
+    
 
     }
 
@@ -686,6 +747,10 @@
       .leftDiv {
         display: none !important;
       }
+
+      .class-templatediv {
+                width: 120px;
+            }
     }
 
 
@@ -755,6 +820,11 @@
 
       }
 
+      .readmore {
+                width: 50%;
+
+            }
+
       .innerDiv {
         height: auto;
       }
@@ -778,7 +848,7 @@
       }
 
 
-      h1,
+      
       h2 {
         font-size: 1.2rem;
         /* Adjust heading size for readability */
@@ -799,6 +869,14 @@
 
       .section3 {
         margin-top: 50px !important;
+      }
+
+      h1{
+        font-size: 26px;
+        padding: 0 !important;
+      }
+      h1 br{
+        display: none !important;
       }
 
     }
@@ -1095,9 +1173,9 @@
           <div class="container d-flex justify-content-center align-items-center" style="height: 450px;">
             <div class="row text-center">
               <div class="col-md-12 align-self-center" style="color: white;">
-                <h2 style="color: white; font-size: 48px; margin: 70px 0; line-height: normal; padding: 0 60px;">
+                <h1 style="color: white; font-size: 48px; margin: 70px 0; line-height: normal; padding: 0 60px;">
                   How to Reach Out To Right Set Of <br> Influencers in [2025]
-                </h2>
+                </h1>
                 <div class="d-flex justify-content-center mt-5 mb-5">
                   <span style="font-size: 1.5rem; margin-right: 30px;">
                     <img src="img/BlogPage/user (1) 1.png" alt="user" height="20px" width="20px"
@@ -1292,17 +1370,7 @@
              
               
   
-                  <div class="cta-section12"
-                    style="position: absolute; top: 50%; left: 35%; transform: translate(-50%, -50%); color: white; padding: 10px 20px; font-size: 1rem; text-align: left; border-radius: 5px;">
-                    <p style="color: white !important;text-align: left;font-size: medium;">Click the button below to
-                      start a conversation with our experts and discover how we can help you identify and collaborate
-                      with the right influencers for your brand</p>
-                    <!-- <p style="color: white !important;text-align: left;font-size: medium;">Discover how these Social Media -->
-                      <!-- Gems can elevate your agency and business to new heights. Start leveraging their impact today!</p> -->
-                    <a class="px-3 py-2" href="contact"
-                      style="text-align: left; color: #000 !important;background-color: white !important;border-radius: 25px;">Let’s
-                      Talk</a>
-                  </div>
+                
               
 
                 <br>
@@ -1406,7 +1474,8 @@
         </div>
       </section>
 
-      <section id="section3" class="section-blog" style="margin-top: 40px;">
+     
+      <section id="section3" class="section-blog" style="margin-top: 80px;">
         <div class="line" style=" width: 120px;height: 4px;background-color: #426cc1;margin: 0 auto 20px;"></div>
 
         <section class="container1 carousel-blogs" style="margin:30px auto;">
@@ -1414,11 +1483,12 @@
             Blogs</h3>
           <div class="container"
             style="display: grid; grid-template-columns: repeat(3, 2fr); gap: 50px; padding: 20px;margin-bottom: 40px;">
+
             <!-- Card Template -->
             <div class="class-template"
               style="background-color: #fff; border-radius: 8px; box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); overflow: hidden; display: flex; flex-direction: column; position: relative;height: 270px;width: 265px;">
               <!-- Adjusted image -->
-              <img src="img\blog\Buzzboost Blog Images\Buzzboost Blog Images\Blog 1.png" alt="influencer-pointer"
+              <img src="img/blog-main/blog-5trending.png" alt="influencer-pointer"
                 style="width: 100%; height: 150px; object-fit: cover; margin: 0;">
 
               <!-- Removed extra spacing -->
@@ -1426,69 +1496,32 @@
                 <!-- Compact heading -->
                 <h3
                   style="font-size: 1.2rem;letter-spacing: normal; margin: 0;font-weight: 600; color: black; line-height: 1.2;font-weight: 500;height: 60px;">
-                  <a href="why-hiring-influencers-can-be-a-game-changer-for-your-agency-and-business-in-2025"
-                    style="text-decoration: none; color: inherit;">Why Hiring Influencers Can Be a Game-Changer for Your
-                    Agency and Business in [2025] </a>
+                  <a href="guide-to-mega-macro-micro-and-nano-influencers-for-your-campaigns"
+                    style="text-decoration: none; color: inherit;">Guide to Mega, Macro, Micro, And Nano Influencers for
+                    Your Campaigns</a>
                 </h3>
                 <div
-                  style="display: flex;justify-content: space-between; align-items: center; padding-top: 5px; font-size: 0.75rem;margin-top: 2px;">
-                  <div>
-                    <span style="color: #888;margin-right: 15px;">Arham Jain</span>
-                    <span style="color: #888;">21/12/2024</span>
+                  style="display: flex;justify-content: space-between; align-items: center; padding-top: 16px; font-size: 0.75rem;margin-top: 2px;">
+                  <div class="class-templatediv">
+                    <span class="" style="color: #888;margin-right: 15px;">Arham Jain</span>
+                    <span style="color: #888;">20/01/2025</span>
+                    <!-- <p class="mobile-blog">In an ever-evolving world of social media...</p> -->
+
                   </div>
                   <div>
-                    <a href="why-hiring-influencers-can-be-a-game-changer-for-your-agency-and-business-in-2025"
+                    <a class="readmore" href="guide-to-mega-macro-micro-and-nano-influencers-for-your-campaigns"
                       style="text-decoration: none; font-size: 0.65rem; padding: 5px 8px; color: white; border-radius: 25px; background-color: #426CC1;width: 120px;">Read
                       More</a>
                   </div>
                   <!-- <a href="blog-post.html" style="text-decoration: none; font-size: 0.75rem; padding: 3px 5px; color: white; border-radius: 25px; background-color: #426CC1;">Read More</a> -->
                 </div>
-
               </div>
-
-              <!-- Footer -->
-
             </div>
             <!-- Card Template -->
             <div class="class-template"
               style="background-color: #fff; border-radius: 8px; box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); overflow: hidden; display: flex; flex-direction: column; position: relative;height: 270px;width: 265px;">
               <!-- Adjusted image -->
-              <img src="img\blog\Buzzboost Blog Images\Buzzboost Blog Images\Blog 2.png" alt="influencer-pointer"
-                style="width: 100%; height: 150px; object-fit: cover; margin: 0;">
-
-              <!-- Removed extra spacing -->
-              <div style="padding: 5px 5px; background-color: white; color: black; margin: 0;">
-                <!-- Compact heading -->
-                <h3
-                  style="font-size: 1.2rem;letter-spacing: normal; margin: 0;font-weight: 600; color: black; line-height: 1.2; font-weight: 500;height: 60px;">
-                  <a href="top-influence-marketing-trends-to-watch-in-2025"
-                    style="text-decoration: none; color: inherit;">Top Influencer Marketing Trends To Watch In
-                    [2025]</a>
-                </h3>
-                <div
-                  style="display: flex;justify-content: space-between; align-items: center; padding-top: 5px; font-size: 0.75rem;margin-top: 2px;">
-                  <div>
-                    <span style="color: #888;margin-right: 15px;">Arham Jain</span>
-                    <span style="color: #888;">24/12/2024</span>
-                  </div>
-                  <div>
-                    <a href="top-influence-marketing-trends-to-watch-in-2025"
-                      style="text-decoration: none; font-size: 0.65rem; padding: 5px 8px; color: white; border-radius: 25px; background-color: #426CC1;width: 120px;">Read
-                      More</a>
-                  </div>
-                  <!-- <a href="blog-post.html" style="text-decoration: none; font-size: 0.75rem; padding: 3px 5px; color: white; border-radius: 25px; background-color: #426CC1;">Read More</a> -->
-                </div>
-
-              </div>
-
-              <!-- Footer -->
-
-            </div>
-            <!-- Card Template -->
-            <div class="class-template"
-              style="background-color: #fff; border-radius: 8px; box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); overflow: hidden; display: flex; flex-direction: column; position: relative;height: 270px;width: 265px;">
-              <!-- Adjusted image -->
-              <img src="img\blog\Buzzboost Blog Images\Buzzboost Blog Images\Blog 4.jpg" alt="influencer-pointer"
+              <img src="img\blog-height-set-indicator.png" alt="influencer-pointer"
                 style="width: 100%; height: 150px; object-fit: cover; margin: 0;">
 
               <!-- Removed extra spacing -->
@@ -1497,17 +1530,19 @@
                 <h3
                   style="font-size: 1.2rem;letter-spacing: normal; margin: 0;font-weight: 600; color: black; line-height: 1.2;font-weight: 500;height: 60px;">
                   <a href="influencer-guide-collaborate-with-top-brands-in-2025"
-                    style="text-decoration: none; color: inherit;">Influencer Guide: Collaborate with
-                    Top Brands in [2025] </a>
+                    style="text-decoration: none; color: inherit;">Influencer Guide: Collaborate with Top Brands in
+                    [2025]</a>
                 </h3>
                 <div
-                  style="display: flex;justify-content: space-between; align-items: center; padding-top: 5px; font-size: 0.75rem;margin-top: 2px;">
-                  <div>
+                  style="display: flex;justify-content: space-between; align-items: center; padding-top: 16px; font-size: 0.75rem;margin-top: 2px;">
+                  <div class="class-templatediv">
                     <span style="color: #888;margin-right: 15px;">Arham Jain</span>
-                    <span style="color: #888;">02/01/2025</span>
+                    <span style="color: #888;">04/01/2025</span>
+                    <!-- <p class="mobile-blog">Are you an influencer looking out for collaborations...</p> -->
+
                   </div>
                   <div>
-                    <a href="influencer-guide-collaborate-with-top-brands-in-2025"
+                    <a class="readmore" href="influencer-guide-collaborate-with-top-brands-in-2025"
                       style="text-decoration: none; font-size: 0.65rem; padding: 5px 8px; color: white; border-radius: 25px; background-color: #426CC1;width: 120px;">Read
                       More</a>
                   </div>
@@ -1519,6 +1554,45 @@
               <!-- Footer -->
 
             </div>
+
+            <!-- Card Template -->
+            <div class="class-template"
+              style="background-color: #fff; border-radius: 8px; box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); overflow: hidden; display: flex; flex-direction: column; position: relative;height: 270px;width: 265px;">
+              <!-- Adjusted image -->
+              <img src="img/blog-main/Blog 3-trending.png" alt="influencer-pointer"
+                style="width: 100%; height: 150px; object-fit: cover; margin: 0;">
+
+              <!-- Removed extra spacing -->
+              <div style="padding: 5px 5px; background-color: white; color: black; margin: 0;">
+                <!-- Compact heading -->
+                <h3
+                  style="font-size: 1.2rem;letter-spacing: normal; margin: 0;font-weight: 600; color: black; line-height: 1.2; font-weight: 500;height: 60px;">
+                  <a href="how-to-reach-out-to-right-set-of-influencers-in-2025"
+                    style="text-decoration: none; color: inherit;">How to Reach Out To Right Set Of Influencers in
+                    [2025]</a>
+                </h3>
+                <div
+                  style="display: flex;justify-content: space-between; align-items: center; padding-top: 5px; font-size: 0.75rem;margin-top: 2px;">
+                  <div class="class-templatediv">
+                    <span style="color: #888;margin-right: 15px;">Arham Jain</span>
+                    <span style="color: #888;">02/01/2025</span>
+                    <!-- <p class="mobile-blog">In the rapidly evolving digital world, hiring perfect...</p> -->
+
+                  </div>
+                  <div>
+                    <a class="readmore" href="how-to-reach-out-to-right-set-of-influencers-in-2025"
+                      style="text-decoration: none; font-size: 0.65rem; padding: 5px 8px; color: white; border-radius: 25px; background-color: #426CC1;width: 120px;">Read
+                      More</a>
+                  </div>
+                  <!-- <a href="blog-post.html" style="text-decoration: none; font-size: 0.75rem; padding: 3px 5px; color: white; border-radius: 25px; background-color: #426CC1;">Read More</a> -->
+                </div>
+
+              </div>
+
+              <!-- Footer -->
+
+            </div>
+
 
             <!-- Repeat the card structure 36 times for 6x6 grid -->
           </div>
