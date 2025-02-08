@@ -238,7 +238,23 @@
                 padding: 5px;
 				margin: auto;
 			}
+/* 
+			.blog-class{
+				display: flex !important;
+				flex-direction: column !important;
+			}
+
+			.class-page{
+				order: 2 ;
+				margin-top: 20px 
+			}
+
+			.class-trend{
+                order: 1 !important;
+
+			} */
 		}
+
 	</style>
 	<meta name="robots" content="index, follow">
 </head>
@@ -481,7 +497,7 @@
 			</div>
 			<section class="section position-relative border-0 m-0" style="background-color: white;">
 				<div class="container py-3">
-					<div class="row">
+					<div class="row blog-class">
 						<div class="col-lg-7 mb-5 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter"
 							data-appear-animation-delay="1600">
 							<article class="mb-5">
@@ -547,12 +563,12 @@
 								</div>
 							</article>
 
-							<ul id="pagination" class="custom-pagination-style-1 pagination pagination-rounded pagination-md justify-content-center" style="margin-top: 60px; margin-bottom: 40px;">
+							<ul id="pagination" class="class-page order-2 order-lg-1 custom-pagination-style-1 pagination pagination-rounded pagination-md justify-content-center" style="margin-top: 60px; margin-bottom: 40px;">
 								<li class="page-item">
 									<a class="page-link" onclick="changePage(-1)"><i class="fas fa-angle-left"></i></a>
 								</li>
-								<li class="page-item"><a class="page-link" href="#">1</a></li>
-								<li class="page-item active"><a class="page-link" href="#">2</a></li>
+								<li class="page-item active"><a class="page-link" href="#">1</a></li>
+								<li class="page-item"><a class="page-link" href="#">2</a></li>
 								<li class="page-item"><a class="page-link" href="#">3</a></li>
 								<li class="page-item"><a class="page-link" href="#">4</a></li>
 								<li class="page-item"><a class="page-link" href="#">5</a></li>
@@ -603,7 +619,7 @@
 							
 
 						</div>
-						<div class="blog-sidebar col-lg-5 pt-4 pt-lg-0 appear-animation"
+						<div class="class-trend blog-sidebar order-1 order-lg-2 col-lg-5 pt-4 pt-lg-0 appear-animation"
 							data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1800">
 							<aside class="sidebar">
 								<div class="container px-4 mt-4">
