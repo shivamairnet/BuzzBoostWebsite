@@ -277,9 +277,13 @@
 
     @media(max-width:992px) {
 
-      p,
+      
       h2,
       h3 {
+        text-align: left !important;
+      }
+
+      p{
         text-align: center !important;
       }
 
@@ -845,6 +849,19 @@
         display: none !important;
       }
     }
+
+    .let-talk-btn:hover {
+          background-color: #000 !important;
+          color: white !important;
+          text-decoration: none !important; 
+          }
+
+       .let-talk-btn{
+        background-color: #fff;
+        color: #000;
+       }
+
+
   </style>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
   </script>
@@ -1297,8 +1314,8 @@
                     Micro-Influencers!</p>
                   <p style="color: white !important;text-align: left;font-size: medium;">Discover how these Social Media
                     Gems can elevate your agency and business to new heights. Start leveraging their impact today!</p>
-                  <a class="px-3 py-2" href="contact"
-                    style="text-align: left; color: #000 !important;background-color: white !important;border-radius: 25px;">Let’s
+                  <a class="let-talk-btn px-3 py-2" href="contact"
+                    style="text-align: left; border-radius: 25px;">Let’s
                     Talk</a>
                 </div>
               </div>
@@ -1490,7 +1507,7 @@
                     style="width: 100%; padding: 2px; margin-bottom: 10px; background: transparent; border-bottom: 1px solid white; color: white; outline: none; font-size: 0.9rem;border-top: none;border-left: none;border-right: none;">
 
                   <button type="submit" onclick="sendForm()" class="custom-btn-blue"
-                    style="width: 100%; padding: 5px;margin-top: 10px; background: #426CC1; color: #fff; border: none; border-radius: 25px; cursor: pointer;">
+                    style="width: 100%; padding: 5px;margin-top: 10px; border: none; border-radius: 25px; cursor: pointer;">
                     Submit
                   </button>
                 </form>
@@ -1597,7 +1614,7 @@
                     [2025]</a>
                 </h3>
                 <div
-                  style="display: flex;justify-content: space-between; align-items: center; padding-top: 5px; font-size: 0.75rem;margin-top: 2px;">
+                  style="display: flex;justify-content: space-between; align-items: center; padding-top: 16px; font-size: 0.75rem;margin-top: 2px;">
                   <div class="class-templatediv">
                     <span style="color: #888;margin-right: 15px;">Arham Jain</span>
                     <span style="color: #888;">02/01/2025</span>
