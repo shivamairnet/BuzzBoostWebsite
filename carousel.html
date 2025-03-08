@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seamless Moving Carousel</title>
+  </head>
+ 
+  <style>
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-70%);
+      }
+    }
+  </style>
+  <body>
+    <section class="carousel-influencers">
+            <div class="container text-center large-screen-view">
+                <!-- Section Header -->
+                <h3 class="pt-4" style=" font-size: 40px;">
+                    Choose From A List Of Influencers For Your Client
+                </h3>
+                <p class="pt-1 influencerimagesection" style="font-size: 24px;">
+                    BuzzBoost offers you to collaborate with the best influencers across industries, styles, and
+                    audiences</br>
+                    to find the perfect fit for your brand.
+                </p>
+
+                <div
+                style="
+                  font-family: Arial, sans-serif;
+                  background: #fff;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  height: 70vh;
+                  overflow: hidden;
+                "
+              >
+                <div
+                  style="
+                    width: 100%;
+                    overflow: hidden;
+                    position: relative;
+                    white-space: nowrap;
+                  "
+                >
+                  <div
+                    class="carousel"
+                    style="
+                      display: flex;
+                      gap: 20px;
+                      width: max-content;
+                      animation: scroll 50s linear infinite;
+                    "
+                  >
+                    <!-- Duplicated Cards for Seamless Scroll -->
+                    <div class="cards" style="display: flex; gap: 20px">
+                      <div
+                        style="
+                          background: white;
+                          border-radius: 10px;
+                          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                          padding: 20px;
+                          text-align: center;
+                          min-width: 200px;
+                          flex: none;
+                        "
+                      >
+                        <img
+                          src="img/Agency Page Images/iloveimg-compressed (1)/Frame 89.png"
+                          height="200px"
+                          alt="Influencer 1"
+                          style="width: 100%; border-radius: 10px"
+                        />
+                        <h3 style="margin: 10px 0">John Doe</h3>
+                        <p style="color: #666; margin: 5px 0">Followers: 500K</p>
+                        <p style="color: #666; margin: 5px 0">Category: Fitness</p>
+                        <a
+                          href="https://instagram.com/johndoe"
+                          target="_blank"
+                          style="
+                            display: block;
+                            background: #426cc1;
+                            color: white;
+                            padding: 8px;
+                            border-radius: 5px;
+                            text-decoration: none;
+                            margin-top: 10px;
+                          "
+                          >Follow</a
+                        >
+                      </div>
+                      <div
+                        style="
+                          background: white;
+                          border-radius: 10px;
+                          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                          padding: 20px;
+                          text-align: center;
+                          min-width: 200px;
+                          flex: none;
+                        "
+                      >
+                        <img
+                          src="img/Agency Page Images/iloveimg-compressed (1)/Frame 90.png"
+                          alt="Influencer 2"
+                          height="200px"
+                          style="width: 100%; border-radius: 10px"
+                        />
+                        <h3 style="margin: 10px 0">Jane Smith</h3>
+                        <p style="color: #666; margin: 5px 0">Followers: 800K</p>
+                        <p style="color: #666; margin: 5px 0">Category: Fashion</p>
+                        <a
+                          href="https://instagram.com/janesmith"
+                          target="_blank"
+                          style="
+                            display: block;
+                            background: #426cc1;
+                            color: white;
+                            padding: 8px;
+                            border-radius: 5px;
+                            text-decoration: none;
+                            margin-top: 10px;
+                          "
+                          >Follow</a
+                        >
+                      </div>
+                      <div
+                        style="
+                          background: white;
+                          border-radius: 10px;
+                          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                          padding: 20px;
+                          text-align: center;
+                          min-width: 200px;
+                          flex: none;
+                        "
+                      >
+                        <img
+                          src="img/Agency Page Images/iloveimg-compressed (1)/Frame 98.png"
+                          alt="Influencer 3"
+                          height="200px"
+                          style="width: 100%; border-radius: 10px"
+                        />
+                        <h3 style="margin: 10px 0">Mike Johnson</h3>
+                        <p style="color: #666; margin: 5px 0">Followers: 1M</p>
+                        <p style="color: #666; margin: 5px 0">Category: Travel</p>
+                        <a
+                          href="https://instagram.com/mikejohnson"
+                          target="_blank"
+                          style="
+                            display: block;
+                            background: #426cc1;
+                            color: white;
+                            padding: 8px;
+                            border-radius: 5px;
+                            text-decoration: none;
+                            margin-top: 10px;
+                          "
+                          >Follow</a
+                        >
+                      </div>
+                      <div
+                        style="
+                          background: white;
+                          border-radius: 10px;
+                          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                          padding: 20px;
+                          text-align: center;
+                          min-width: 200px;
+                          flex: none;
+                        "
+                      >
+                        <img
+                          src="img/Agency Page Images/iloveimg-compressed (1)/Frame 91.png"
+                          height="200px"
+                          alt="Influencer 4" height="200px"
+                          style="width: 100%; border-radius: 10px"
+                        />
+                        <h3 style="margin: 10px 0">Emily Clark</h3>
+                        <p style="color: #666; margin: 5px 0">Followers: 600K</p>
+                        <p style="color: #666; margin: 5px 0">Category: Food</p>
+                        <a
+                          href="https://instagram.com/emilyclark"
+                          target="_blank"
+                          style="
+                            display: block;
+                            background: #426cc1;
+                            color: white;
+                            padding: 8px;
+                            border-radius: 5px;
+                            text-decoration: none;
+                            margin-top: 10px;
+                          "
+                          >Follow</a
+                        >
+                      </div>
+                      <div
+                        style="
+                          background: white;
+                          border-radius: 10px;
+                          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                          padding: 20px;
+                          text-align: center;
+                          min-width: 200px;
+                          flex: none;
+                        "
+                      >
+                        <img
+                          src="img/Agency Page Images/iloveimg-compressed (1)/Frame 97.png"
+                          alt="Influencer 5" height="200px"
+                          style="width: 100%; border-radius: 10px"
+                        />
+                        <h3 style="margin: 10px 0">Chris Brown</h3>
+                        <p style="color: #666; margin: 5px 0">Followers: 900K</p>
+                        <p style="color: #666; margin: 5px 0">Category: Tech</p>
+                        <a
+                          href="https://instagram.com/chrisbrown"
+                          target="_blank"
+                          style="
+                            display: block;
+                            background: #426cc1;
+                            color: white;
+                            padding: 8px;
+                            border-radius: 5px;
+                            text-decoration: none;
+                            margin-top: 10px;
+                          "
+                          >Follow</a
+                        >
+                      </div>
+                      <div
+                        style="
+                          background: white;
+                          border-radius: 10px;
+                          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                          padding: 20px;
+                          text-align: center;
+                          min-width: 200px;
+                          flex: none;
+                        "
+                      >
+                        <img
+                          src="img/Agency Page Images/iloveimg-compressed (1)/Frame 89.png"
+                          alt="Influencer 1"
+                          height="200px"
+                          style="width: 100%; border-radius: 10px"
+                        />
+                        <h3 style="margin: 10px 0">John Doe</h3>
+                        <p style="color: #666; margin: 5px 0">Followers: 500K</p>
+                        <p style="color: #666; margin: 5px 0">Category: Fitness</p>
+                        <a
+                          href="https://instagram.com/johndoe"
+                          target="_blank"
+                          style="
+                            display: block;
+                            background: #426cc1;
+                            color: white;
+                            padding: 8px;
+                            border-radius: 5px;
+                            text-decoration: none;
+                            margin-top: 10px;
+                          "
+                          >Follow</a
+                        >
+                      </div>
+                      <div
+                        style="
+                          background: white;
+                          border-radius: 10px;
+                          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                          padding: 20px;
+                          text-align: center;
+                          min-width: 200px;
+                          flex: none;
+                        "
+                      >
+                        <img
+                          src="img/Agency Page Images/iloveimg-compressed (1)/Frame 90.png"
+                          alt="Influencer 2"
+                          height="200px"
+                          style="width: 100%; border-radius: 10px"
+                        />
+                        <h3 style="margin: 10px 0">Jane Smith</h3>
+                        <p style="color: #666; margin: 5px 0">Followers: 800K</p>
+                        <p style="color: #666; margin: 5px 0">Category: Fashion</p>
+                        <a
+                          href="https://instagram.com/janesmith"
+                          target="_blank"
+                          style="
+                            display: block;
+                            background: #426cc1;
+                            color: white;
+                            padding: 8px;
+                            border-radius: 5px;
+                            text-decoration: none;
+                            margin-top: 10px;
+                          "
+                          >Follow</a
+                        >
+                      </div>
+                      <div
+                        style="
+                          background: white;
+                          border-radius: 10px;
+                          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                          padding: 20px;
+                          text-align: center;
+                          min-width: 200px;
+                          flex: none;
+                        "
+                      >
+                        <img
+                          src="img/Agency Page Images/iloveimg-compressed (1)/Frame 98.png"
+                          alt="Influencer 3"
+                          height="200px"
+                          style="width: 100%; border-radius: 10px"
+                        />
+                        <h3 style="margin: 10px 0">Mike Johnson</h3>
+                        <p style="color: #666; margin: 5px 0">Followers: 1M</p>
+                        <p style="color: #666; margin: 5px 0">Category: Travel</p>
+                        <a
+                          href="https://instagram.com/mikejohnson"
+                          target="_blank"
+                          style="
+                            display: block;
+                            background-color: #426cc1;
+                            color: white;
+                            padding: 8px;
+                            border-radius: 5px;
+                            text-decoration: none;
+                            margin-top: 10px;
+                          "
+                          >Follow</a
+                        >
+                      </div>
+                      <div
+                        style="
+                          background: white;
+                          border-radius: 10px;
+                          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                          padding: 20px;
+                          text-align: center;
+                          min-width: 200px;
+                          flex: none;
+                        "
+                      >
+                        <img
+                          src="img/Agency Page Images/iloveimg-compressed (1)/Frame 91.png"
+                          alt="Influencer 4"
+                          height="200px"
+                          style="width: 100%; border-radius: 10px"
+                        />
+                        <h3 style="margin: 10px 0">Emily Clark</h3>
+                        <p style="color: #666; margin: 5px 0">Followers: 600K</p>
+                        <p style="color: #666; margin: 5px 0">Category: Food</p>
+                        <a
+                          href="https://instagram.com/emilyclark"
+                          target="_blank"
+                          style="
+                            display: block;
+                            background: #426cc1;
+                            color: white;
+                            padding: 8px;
+                            border-radius: 5px;
+                            text-decoration: none;
+                            margin-top: 10px;
+                          "
+                          >Follow</a
+                        >
+                      </div>
+                      <div
+                        style="
+                          background: white;
+                          border-radius: 10px;
+                          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                          padding: 20px;
+                          text-align: center;
+                          min-width: 200px;
+                          flex: none;
+                        "
+                      >
+                        <img
+                          src="img/Agency Page Images/iloveimg-compressed (1)/Frame 97.png"
+                          alt="Influencer 5"
+                          height="200px"
+                          style="width: 100%; border-radius: 10px"
+                        />
+                        <h3 style="margin: 10px 0">Chris Brown</h3>
+                        <p style="color: #666; margin: 5px 0">Followers: 900K</p>
+                        <p style="color: #666; margin: 5px 0">Category: Tech</p>
+                        <a
+                          href="https://instagram.com/chrisbrown"
+                          target="_blank"
+                          style="
+                            display: block;
+                            background: #426cc1;
+                            color: white;
+                            padding: 8px;
+                            border-radius: 5px;
+                            text-decoration: none;
+                            margin-top: 10px;
+                          "
+                          >Follow</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>              
+            </div>
+    </section>
+  </body>
+</html>
