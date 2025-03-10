@@ -64,22 +64,31 @@
 
 
 .swiper {
-            width: 90%;
+            width: 100%;
             margin: auto;
+			height: 430px;
         }
 
+		.swipper-wrapper{
+		height: 95% !important;
+	}
+
         .swiper-slide {
+			width: 100%;
             display: flex;
             justify-content: space-between;
+			height: 80% !important;
+			
         }
 
         .card {
             text-align: center;
-            width: 220px;
+            width: 22%;
             padding: 10px;
             background: #fff;
             border-radius: 10px;
             margin: 10px;
+			height: 300px;
         }
 
         .card img {
@@ -88,15 +97,58 @@
             border-radius: 10px;
         }
 
-        .swiper-button-next {
-            right: -1px;
-           
-        }
+/* Wrapper for navigation buttons */
+.swiper-navigation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    padding: 15px; /* Space around buttons */
+    border-radius: 10px; /* Rounded corners */
+    margin-top: 20px; /* Space from slides */
+    width: 40%; /* Adjust width */
+    margin-left: auto;
+    margin-right: auto; /* Center horizontally */
+}
 
-        .swiper-button-prev {
-            left: -2px;
-           
-        } 
+/* Style for navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: black; /* White background */
+    border-radius: 50%; /* Circular buttons */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	color: white;
+   
+    cursor: pointer;
+}
+
+/* Change arrow color */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 20px;
+    color: white; /* Black arrows */
+}
+
+/* Hover effect */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background: #426CC1; /* Highlight color */
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+
+/* Ensure pagination appears below buttons */
+.swiper-pagination {
+    margin-top: 10px !important;
+}
+
+
 
         @media(max-width:768px){
             .card{
@@ -119,12 +171,15 @@
     }
 
     .swiper {
-        width: 90%;
+        width: 100%;
+		
     }
 
     .swiper-button-next {
         right: -30px; 
     }
+
+	
 
     .swiper-button-prev {
         left: -30px; 
@@ -2047,10 +2102,10 @@
 					</p>
 		
 					<!-- Swiper Container -->
-					<div class="swiper mySwiper">
-						<div class="swiper-wrapper">
+					<div class="swiper mySwiper" style="width: 100%;display: flex;flex-direction: column;">
+						<div class="swiper-wrapper" style="width: 100%;">
 							<!-- Slide 1 -->
-							<div class="swiper-slide">
+							<div class="swiper-slide" style="width: 90%;">
 								<div class="card">
 									<img src="img/influencers/vivek.jpg" alt="Influencer 1">
 									<!-- <p>Name: Vivek Chauhan</p> -->
@@ -2082,40 +2137,47 @@
 							</div>
 		
 							<!-- Slide 2 -->
-							<div class="swiper-slide">
+							<div class="swiper-slide" style="width: 90%;">
 								<div class="card">
-									<img src="img/influencers/sam.jpg" alt="Influencer 5">
-									<p>Followers: 900K</p>
-									<p>Category: Tech</p>
-									<a href="https://instagram.com/samtech" target="_blank">Follow</a>
+									<img src="img/influencers/vivek.jpg" alt="Influencer 1">
+									<!-- <p>Name: Vivek Chauhan</p> -->
+									<p style="margin-bottom: 4px;margin-top: 15px;text-align: left;font-size: 14px;">Followers: 1862</p>
+									<p style="margin-bottom: 4px;text-align: left;font-size: 14px;">Category: Lifestyle</p>
+									<!-- <a href="" target="_blank">Follow</a> -->
 								</div>
 								<div class="card">
-									<img src="img/influencers/anna.jpg" alt="Influencer 6">
-									<p>Followers: 1M</p>
-									<p>Category: Food</p>
-									<a href="https://instagram.com/annarecipes" target="_blank">Follow</a>
+									<img src="img/influencers/payalthakur.jpg" alt="Influencer 2">
+									<!-- <p>Name: Payal Thakur</p> -->
+									<p style="margin-bottom: 4px;margin-top: 15px;text-align: left;font-size: 14px;">Followers: 1826</p>
+									<p style="margin-bottom: 4px;text-align: left;font-size: 14px;">Category: Others</p>
+									<!-- <a href="" target="_blank">Follow</a> -->
 								</div>
 								<div class="card">
-									<img src="img/influencers/jack.jpg" alt="Influencer 7">
-									<p>Followers: 750K</p>
-									<p>Category: Gaming</p>
-									<a href="https://instagram.com/jackgamer" target="_blank">Follow</a>
+									<img src="img/influencers/gaurav.jpg" alt="Influencer 3">
+									<!-- <p>Name: Gaurav</p> -->
+									<p style="margin-bottom: 4px;margin-top: 15px;text-align: left;font-size: 14px;">Followers: 149</p>
+									<p style="margin-bottom: 4px;text-align: left;font-size: 14px;">Category: Lifestyle</p>
+									<!-- <a href="" target="_blank">Follow</a> -->
 								</div>
 								<div class="card">
-									<img src="img/influencers/lisa.jpg" alt="Influencer 8">
-									<p>Followers: 850K</p>
-									<p>Category: Beauty</p>
-									<a href="https://instagram.com/lisabeauty" target="_blank">Follow</a>
+									<img src="img/influencers/vanshita.jpg" alt="Influencer 4">
+									<!-- <p>Name: Vanshita</p> -->
+									<p style="margin-bottom: 4px;margin-top: 15px;text-align: left;font-size: 14px;">Followers: 3891</p>
+									<p style="margin-bottom: 4px;text-align: left;font-size: 14px;">Category: Beauty & Fashion</p>
+									<!-- <a href="https://instagram.com/emilydoe" target="_blank">Follow</a> -->
 								</div>
 							</div>
 						</div>
-						<!-- Navigation -->
-						<div class="swiper-button-next"></div>
-						<div class="swiper-button-prev"></div>
-		
+						
+		                <!-- Navigation Buttons Wrapper -->
+<div class="swiper-navigation-container">
+    <div class="swiper-button-prev" style="margin-right: 25px;"></div>
+    <div class="swiper-button-next"></div>
+</div>
 						<!-- Pagination -->
-						<div class="swiper-pagination"></div>
+						<!-- <div class="swiper-pagination" style="margin-top: 10px !important;"></div> -->
 					</div>
+
 		
 				</div>
 			</section>
