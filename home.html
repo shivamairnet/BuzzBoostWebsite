@@ -26,6 +26,8 @@
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="img/BuzzBoostImg/file.png" type="image/x-icon" />
 	<link rel="apple-touch-icon" href="img/BuzzBoostImg/file.png">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
 
 	<!-- Mobile Metas -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
@@ -59,6 +61,89 @@
 	<!-- Theme Custom CSS -->
 	<link rel="stylesheet" href="css/custom.css">
 	<style>
+
+
+.swiper {
+            width: 90%;
+            margin: auto;
+        }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card {
+            text-align: center;
+            width: 220px;
+            padding: 10px;
+            background: #fff;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 215px;
+            border-radius: 10px;
+        }
+
+        .swiper-button-next {
+            right: -1px;
+           
+        }
+
+        .swiper-button-prev {
+            left: -2px;
+           
+        } 
+
+        @media(max-width:768px){
+            .card{
+                width: 80% !important;
+                margin: auto !important;
+            }
+
+            .influencerimagesection{
+                font-size: 21px !important;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+
+    .carousel-influencers.d-md-block {
+        display: block !important;
+    }
+    .carousel-influencers.d-block.d-md-none {
+        display: none !important;
+    }
+
+    .swiper {
+        width: 90%;
+    }
+
+    .swiper-button-next {
+        right: -30px; 
+    }
+
+    .swiper-button-prev {
+        left: -30px; 
+    }
+
+    .swiper-pagination {
+        bottom: -5px !important;
+    }
+
+    .card {
+        width: 220px; 
+        padding: 15px;
+    }
+
+    .card img {
+        height: 260px; 
+    }
+}
+
 		* {
 			margin: 0;
 			padding: 0;
@@ -79,8 +164,6 @@
 				margin-top: 200px;
 			}
 		}
-
-
 
 		.card-new {
 			display: flex;
@@ -1952,10 +2035,9 @@
 				</div>
 			</section>
 
-			<section class="carousel-influencers">
+			<section class="carousel-influencers d-md-block d-none">
 				<div class="container text-center large-screen-view" style="margin-bottom: 40px;">
-					<!-- Section Header -->
-					<h3 class="pt-4" style=" font-size: 40px;">
+					<h3 class="pt-4" style="font-size: 40px;">
 						Choose From A List Of Influencers For Your Client
 					</h3>
 					<p class="pt-1 influencerimagesection" style="font-size: 24px;">
@@ -1963,332 +2045,148 @@
 						audiences</br>
 						to find the perfect fit for your brand.
 					</p>
-	
-					<div
-					style="
-					  font-family: Arial, sans-serif;
-					  background: #fff;
-					  display: flex;
-					  justify-content: center;
-					  align-items: center;
-					  height: 100vh;
-					  overflow: hidden;
-					"
-				  >
-					<div
-					  style="
-						width: 100%;
-						overflow: hidden;
-						position: relative;
-						white-space: nowrap;
-					  "
-					>
-					  <div
-						class="carousel"
-						style="
-						  display: flex;
-						  gap: 20px;
-						  width: max-content;
-						  animation: scroll 50s linear infinite;
-						"
-					  >
-						<!-- Duplicated Cards for Seamless Scroll -->
-						<div class="cards" style="display: flex; gap: 20px">
-						  <div
-							style="
-							  background: white;
-							  border-radius: 10px;
-							  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-							  padding: 20px;
-							  text-align: center;
-							  min-width: 240px;
-							  flex: none;
-							"
-						  >
-							<img
-							  src="img/Agency Page Images/iloveimg-compressed (1)/Frame 89.png"
-							  height="200px"
-							  alt="Influencer 1"
-							  style="width: 100%; border-radius: 10px"
-							/>
-							<!-- <h3 style="margin: 10px 0;font-size: 28px;">John Doe</h3> -->
-							<p style="color: #666; margin: 5px 0">Followers: 500K</p>
-							<p style="color: #666; margin: 5px 0">Category: Fitness</p>
-							<a
-							  href="https://instagram.com/johndoe"
-							  target="_blank"
-							  style="
-								border-radius: 25px; font-size: medium; color: white; background-color: #000; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;
-							  "
-							  >Follow</a
-							>
-						  </div>
-						  <div
-							style="
-							  background: white;
-							  border-radius: 10px;
-							  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-							  padding: 20px;
-							  text-align: center;
-							  min-width: 240px;
-							  flex: none;
-							"
-						  >
-							<img
-							  src="img/Agency Page Images/iloveimg-compressed (1)/Frame 90.png"
-							  alt="Influencer 2"
-							  height="200px"
-							  style="width: 100%; border-radius: 10px"
-							/>
-							<!-- <h3 style="margin: 10px 0;font-size: 28px;">Jane Smith</h3> -->
-							<p style="color: #666; margin: 5px 0">Followers: 800K</p>
-							<p style="color: #666; margin: 5px 0">Category: Fashion</p>
-							<a
-							  href="https://instagram.com/janesmith"
-							  target="_blank"
-							  style="
-								border-radius: 25px; font-size: medium; color: white; background-color: #000; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;
-							  "
-							  >Follow</a
-							>
-						  </div>
-						  <div
-							style="
-							  background: white;
-							  border-radius: 10px;
-							  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-							  padding: 20px;
-							  text-align: center;
-							  min-width: 240px;
-							  flex: none;
-							"
-						  >
-							<img
-							  src="img/Agency Page Images/iloveimg-compressed (1)/Frame 98.png"
-							  alt="Influencer 3"
-							  height="200px"
-							  style="width: 100%; border-radius: 10px"
-							/>
-							<!-- <h3 style="margin: 10px 0;font-size: 28px;">Mike Johnson</h3> -->
-							<p style="color: #666; margin: 5px 0">Followers: 1M</p>
-							<p style="color: #666; margin: 5px 0">Category: Travel</p>
-							<a
-							  href="https://instagram.com/mikejohnson"
-							  target="_blank"
-							  style="
-							  border-radius: 25px; font-size: medium; color: white; background-color: #000; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;
-							"
-							  >Follow</a
-							>
-						  </div>
-						  <div
-							style="
-							  background: white;
-							  border-radius: 10px;
-							  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-							  padding: 20px;
-							  text-align: center;
-							  min-width: 240px;
-							  flex: none;
-							"
-						  >
-							<img
-							  src="img/Agency Page Images/iloveimg-compressed (1)/Frame 91.png"
-							  height="200px"
-							  alt="Influencer 4" height="200px"
-							  style="width: 100%; border-radius: 10px"
-							/>
-							<!-- <h3 style="margin: 10px 0;font-size: 28px;">Emily Clark</h3> -->
-							<p style="color: #666; margin: 5px 0">Followers: 600K</p>
-							<p style="color: #666; margin: 5px 0">Category: Food</p>
-							<a
-							  href="https://instagram.com/emilyclark"
-							  target="_blank"
-							  style="
-							  border-radius: 25px; font-size: medium; color: white; background-color: #000; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;
-							"
-							  >Follow</a
-							>
-						  </div>
-						  <div
-							style="
-							  background: white;
-							  border-radius: 10px;
-							  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-							  padding: 20px;
-							  text-align: center;
-							  min-width: 240px;
-							  flex: none;
-							"
-						  >
-							<img
-							  src="img/Agency Page Images/iloveimg-compressed (1)/Frame 97.png"
-							  alt="Influencer 5" height="200px"
-							  style="width: 100%; border-radius: 10px"
-							/>
-							<!-- <h3 style="margin: 10px 0;font-size: 28px;">Chris Brown</h3> -->
-							<p style="color: #666; margin: 5px 0">Followers: 900K</p>
-							<p style="color: #666; margin: 5px 0">Category: Tech</p>
-							<a
-							  href="https://instagram.com/chrisbrown"
-							  target="_blank"
-							  style="
-							  border-radius: 25px; font-size: medium; color: white; background-color: #000; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;
-							"
-							  >Follow</a
-							>
-						  </div>
-						  <div
-							style="
-							  background: white;
-							  border-radius: 10px;
-							  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-							  padding: 20px;
-							  text-align: center;
-							  min-width: 240px;
-							  flex: none;
-							"
-						  >
-							<img
-							  src="img/Agency Page Images/iloveimg-compressed (1)/Frame 89.png"
-							  alt="Influencer 1"
-							  height="200px"
-							  style="width: 100%; border-radius: 10px"
-							/>
-							<!-- <h3 style="margin: 10px 0;font-size: 28px;">John Doe</h3> -->
-							<p style="color: #666; margin: 5px 0">Followers: 500K</p>
-							<p style="color: #666; margin: 5px 0">Category: Fitness</p>
-							<a
-							  href="https://instagram.com/johndoe"
-							  target="_blank"
-							  style="
-							  border-radius: 25px; font-size: medium; color: white; background-color: #000; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;
-							"
-							  >Follow</a
-							>
-						  </div>
-						  <div
-							style="
-							  background: white;
-							  border-radius: 10px;
-							  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-							  padding: 20px;
-							  text-align: center;
-							  min-width: 240px;
-							  flex: none;
-							"
-						  >
-							<img
-							  src="img/Agency Page Images/iloveimg-compressed (1)/Frame 90.png"
-							  alt="Influencer 2"
-							  height="200px"
-							  style="width: 100%; border-radius: 10px"
-							/>
-							<!-- <h3 style="margin: 10px 0;font-size: 28px;">Jane Smith</h3> -->
-							<p style="color: #666; margin: 5px 0">Followers: 800K</p>
-							<p style="color: #666; margin: 5px 0">Category: Fashion</p>
-							<a
-							  href="https://instagram.com/janesmith"
-							  target="_blank"
-							  style="
-							  border-radius: 25px; font-size: medium; color: white; background-color: #000; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;
-							"
-							  >Follow</a
-							>
-						  </div>
-						  <div
-							style="
-							  background: white;
-							  border-radius: 10px;
-							  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-							  padding: 20px;
-							  text-align: center;
-							  min-width: 240px;
-							  flex: none;
-							"
-						  >
-							<img
-							  src="img/Agency Page Images/iloveimg-compressed (1)/Frame 98.png"
-							  alt="Influencer 3"
-							  height="200px"
-							  style="width: 100%; border-radius: 10px"
-							/>
-							<!-- <h3 style="margin: 10px 0;font-size: 28px;">Mike Johnson</h3> -->
-							<p style="color: #666; margin: 5px 0">Followers: 1M</p>
-							<p style="color: #666; margin: 5px 0">Category: Travel</p>
-							<a
-							  href="https://instagram.com/mikejohnson"
-							  target="_blank"
-							  style="
-							  border-radius: 25px; font-size: medium; color: white; background-color: #000; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;
-							"
-							  >Follow</a
-							>
-						  </div>
-						  <div
-							style="
-							  background: white;
-							  border-radius: 10px;
-							  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-							  padding: 20px;
-							  text-align: center;
-							  min-width: 240px;
-							  flex: none;
-							"
-						  >
-							<img
-							  src="img/Agency Page Images/iloveimg-compressed (1)/Frame 91.png"
-							  alt="Influencer 4"
-							  height="200px"
-							  style="width: 100%; border-radius: 10px"
-							/>
-							<!-- <h3 style="margin: 10px 0;font-size: 28px;">Emily Clark</h3> -->
-							<p style="color: #666; margin: 5px 0">Followers: 600K</p>
-							<p style="color: #666; margin: 5px 0">Category: Food</p>
-							<a
-							  href="https://instagram.com/emilyclark"
-							  target="_blank"
-							  style="
-							  border-radius: 25px; font-size: medium; color: white; background-color: #000; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;
-							"
-							  >Follow</a
-							>
-						  </div>
-						  <div
-							style="
-							  background: white;
-							  border-radius: 10px;
-							  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-							  padding: 20px;
-							  text-align: center;
-							  min-width: 240px;
-							  flex: none;
-							"
-						  >
-							<img
-							  src="img/Agency Page Images/iloveimg-compressed (1)/Frame 97.png"
-							  alt="Influencer 5"
-							  height="200px"
-							  style="width: 100%; border-radius: 10px"
-							/>
-							<!-- <h3 style="margin: 10px;font-size: 28px;">Chris Brown</h3> -->
-							<p style="color: #666; margin: 5px 0">Followers: 900K</p>
-							<p style="color: #666; margin: 5px 0">Category: Tech</p>
-							<a
-							  href="https://instagram.com/chrisbrown"
-							  target="_blank"
-							  style="
-							  border-radius: 25px; font-size: medium; color: white; background-color: #000; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;
-							"
-							  >Follow</a
-							>
-						  </div>
+		
+					<!-- Swiper Container -->
+					<div class="swiper mySwiper">
+						<div class="swiper-wrapper">
+							<!-- Slide 1 -->
+							<div class="swiper-slide">
+								<div class="card">
+									<img src="img/influencers/vivek.jpg" alt="Influencer 1">
+									<!-- <p>Name: Vivek Chauhan</p> -->
+									<p style="margin-bottom: 4px;margin-top: 15px;text-align: left;font-size: 14px;">Followers: 1862</p>
+									<p style="margin-bottom: 4px;text-align: left;font-size: 14px;">Category: Lifestyle</p>
+									<!-- <a href="" target="_blank">Follow</a> -->
+								</div>
+								<div class="card">
+									<img src="img/influencers/payalthakur.jpg" alt="Influencer 2">
+									<!-- <p>Name: Payal Thakur</p> -->
+									<p style="margin-bottom: 4px;margin-top: 15px;text-align: left;font-size: 14px;">Followers: 1826</p>
+									<p style="margin-bottom: 4px;text-align: left;font-size: 14px;">Category: Others</p>
+									<!-- <a href="" target="_blank">Follow</a> -->
+								</div>
+								<div class="card">
+									<img src="img/influencers/gaurav.jpg" alt="Influencer 3">
+									<!-- <p>Name: Gaurav</p> -->
+									<p style="margin-bottom: 4px;margin-top: 15px;text-align: left;font-size: 14px;">Followers: 149</p>
+									<p style="margin-bottom: 4px;text-align: left;font-size: 14px;">Category: Lifestyle</p>
+									<!-- <a href="" target="_blank">Follow</a> -->
+								</div>
+								<div class="card">
+									<img src="img/influencers/vanshita.jpg" alt="Influencer 4">
+									<!-- <p>Name: Vanshita</p> -->
+									<p style="margin-bottom: 4px;margin-top: 15px;text-align: left;font-size: 14px;">Followers: 3891</p>
+									<p style="margin-bottom: 4px;text-align: left;font-size: 14px;">Category: Beauty & Fashion</p>
+									<!-- <a href="https://instagram.com/emilydoe" target="_blank">Follow</a> -->
+								</div>
+							</div>
+		
+							<!-- Slide 2 -->
+							<div class="swiper-slide">
+								<div class="card">
+									<img src="img/influencers/sam.jpg" alt="Influencer 5">
+									<p>Followers: 900K</p>
+									<p>Category: Tech</p>
+									<a href="https://instagram.com/samtech" target="_blank">Follow</a>
+								</div>
+								<div class="card">
+									<img src="img/influencers/anna.jpg" alt="Influencer 6">
+									<p>Followers: 1M</p>
+									<p>Category: Food</p>
+									<a href="https://instagram.com/annarecipes" target="_blank">Follow</a>
+								</div>
+								<div class="card">
+									<img src="img/influencers/jack.jpg" alt="Influencer 7">
+									<p>Followers: 750K</p>
+									<p>Category: Gaming</p>
+									<a href="https://instagram.com/jackgamer" target="_blank">Follow</a>
+								</div>
+								<div class="card">
+									<img src="img/influencers/lisa.jpg" alt="Influencer 8">
+									<p>Followers: 850K</p>
+									<p>Category: Beauty</p>
+									<a href="https://instagram.com/lisabeauty" target="_blank">Follow</a>
+								</div>
+							</div>
 						</div>
-					  </div>
+						<!-- Navigation -->
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+		
+						<!-- Pagination -->
+						<div class="swiper-pagination"></div>
 					</div>
-				  </div>              
+		
 				</div>
-		</section>
+			</section>
+		
+			<section class="carousel-influencers d-block d-md-none">
+				<div class="container text-center large-screen-view" style="margin-bottom: 40px;">
+					<h3 class="pt-4" style="font-size: 40px;">
+						Choose From A List Of Influencers For Your Client
+					</h3>
+					<p class="pt-1 influencerimagesection" style="font-size: 24px;">
+						BuzzBoost offers you to collaborate with the best influencers across industries, styles, and
+						audiences</br>
+						to find the perfect fit for your brand.
+					</p>
+		
+					<!-- Swiper Container -->
+					<div class="swiper mySwiper">
+						<div class="swiper-wrapper">
+		
+							<!-- Slide 1 -->
+							<div class="swiper-slide">
+								<div class="card">
+									<img src="img/influencers/vivek.jpg" alt="Influencer 1">
+									<!-- <p>Name: Vivek Chauhan</p> -->
+									<p style="margin-bottom: 4px;margin-top: 15px;">Followers: 1862</p>
+									<p style="margin-bottom: 4px;">Category: Lifestyle</p>
+									<!-- <a href="" target="_blank">Follow</a> -->
+								</div>
+							</div>
+		
+							<!-- Slide 2 -->
+							<div class="swiper-slide">
+								<div class="card">
+									<img src="img/influencers/payalthakur.jpg" alt="Influencer 2">
+									<!-- <p>Name: Payal Thakur</p> -->
+									<p style="margin-bottom: 4px;margin-top: 15px;">Followers: 1826</p>
+									<p style="margin-bottom: 4px;">Category: Others</p>
+									<!-- <a href="" target="_blank">Follow</a> -->
+								</div>
+							</div>
+		
+							<div class="swiper-slide">
+								<div class="card">
+									<img src="img/influencers/gaurav.jpg" alt="Influencer 3">
+									<!-- <p>Name: Gaurav</p> -->
+									<p style="margin-bottom: 4px;margin-top: 15px;">Followers: 149</p>
+									<p style="margin-bottom: 4px;">Category: Lifestyle</p>
+									<!-- <a href="" target="_blank">Follow</a> -->
+								</div>
+							</div>
+		
+							<div class="swiper-slide">
+								<div class="card">
+									<img src="img/influencers/vanshita.jpg" alt="Influencer 4">
+									<!-- <p>Name: Vanshita</p> -->
+									<p style="margin-bottom: 4px;margin-top: 15px;">Followers: 3891</p>
+									<p style="margin-bottom: 4px;">Category: Beauty & Fashion</p>
+									<!-- <a href="https://instagram.com/emilydoe" target="_blank">Follow</a> -->
+								</div>
+							</div>
+						</div>
+						<!-- Navigation -->
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+		
+						<!-- Pagination -->
+						<div class="swiper-pagination"></div>
+					</div>
+		
+				</div>
+			</section>
 
 
 			<!-- industry section cards -->
@@ -3211,6 +3109,28 @@
 			}
 		});
 	</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+	var swiper = new Swiper(".mySwiper", {
+		slidesPerView: 1,
+		spaceBetween: 20,
+		loop: false,
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		},
+		breakpoints: {
+			// 768: { slidesPerView: 1 }, 
+			1024: { slidesPerView: 1 }, 
+		}
+	});
+</script>
+
+
 
 </body>
 

@@ -22,7 +22,7 @@
             text-align: center;
             width: 220px;
             padding: 10px;
-            background: #f8f8f8;
+            background: #fff;
             border-radius: 10px;
             margin: 10px;
         }
@@ -33,15 +33,11 @@
             border-radius: 10px;
         }
 
-        
-
-        /* Adjust next button to be further right */
         .swiper-button-next {
             right: -1px;
            
         }
 
-        /* Adjust prev button to be further left */
         .swiper-button-prev {
             left: -2px;
            
@@ -59,7 +55,7 @@
         }
 
         @media (min-width: 768px) and (max-width: 1024px) {
-    /* Ensure the large-screen view is hidden and the mobile view is shown */
+
     .carousel-influencers.d-md-block {
         display: block !important;
     }
@@ -67,33 +63,29 @@
         display: none !important;
     }
 
-    /* Adjust Swiper container */
     .swiper {
         width: 90%;
     }
 
-    /* Adjust arrows position */
     .swiper-button-next {
-        right: -30px; /* Adjust for tablets */
+        right: -30px; 
     }
 
     .swiper-button-prev {
-        left: -30px; /* Adjust for tablets */
+        left: -30px; 
     }
 
-    /* Move pagination a bit lower */
     .swiper-pagination {
         bottom: -5px !important;
     }
 
-    /* Card adjustments for better spacing */
     .card {
-        width: 220px; /* Slightly larger cards */
+        width: 220px; 
         padding: 15px;
     }
 
     .card img {
-        height: 260px; /* Adjust image size */
+        height: 260px; 
     }
 }
 
@@ -254,6 +246,67 @@
 
         </div>
     </section>
+
+    <section class="carousel-influencers tablet-view">
+    <div class="container text-center large-screen-view" style="margin-bottom: 40px;">
+        <h3 class="pt-4" style="font-size: 40px;">
+            Choose From A List Of Influencers For Your Client
+        </h3>
+        <p class="pt-1 influencerimagesection" style="font-size: 24px;">
+            BuzzBoost offers you to collaborate with the best influencers across industries, styles, and
+            audiences</br>
+            to find the perfect fit for your brand.
+        </p>
+
+        <!-- Swiper Container -->
+        <div class="swiper myTabletSwiper">
+            <div class="swiper-wrapper">
+
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="img/influencers/vivek.jpg" alt="Influencer 1">
+                        <p style="margin-bottom: 4px;margin-top: 15px;">Followers: 1862</p>
+                        <p style="margin-bottom: 4px;">Category: Lifestyle</p>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="img/influencers/payalthakur.jpg" alt="Influencer 2">
+                        <p style="margin-bottom: 4px;margin-top: 15px;">Followers: 1826</p>
+                        <p style="margin-bottom: 4px;">Category: Others</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="img/influencers/gaurav.jpg" alt="Influencer 3">
+                        <p style="margin-bottom: 4px;margin-top: 15px;">Followers: 149</p>
+                        <p style="margin-bottom: 4px;">Category: Lifestyle</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="img/influencers/vanshita.jpg" alt="Influencer 4">
+                        <p style="margin-bottom: 4px;margin-top: 15px;">Followers: 3891</p>
+                        <p style="margin-bottom: 4px;">Category: Beauty & Fashion</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
