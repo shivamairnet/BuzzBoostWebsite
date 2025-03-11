@@ -66,7 +66,7 @@
 .swiper {
             width: 100%;
             margin: auto;
-			height: 430px;
+			height: 465px;
         }
 
 		.swipper-wrapper{
@@ -88,14 +88,30 @@
             background: #fff;
             border-radius: 10px;
             margin: 10px;
-			height: 300px;
+			height: 350px;
         }
 
         .card img {
             width: 100%;
-            height: 215px;
+            height: 180px;
             border-radius: 10px;
         }
+
+		.info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+	height: 140px;
+}
+
+.info-container p {
+    width: 48%; /* Two columns */
+    margin: 5px 0;
+    font-size: 14px;
+    color: #777;
+    text-align: left;
+}
 
 /* Wrapper for navigation buttons */
 .swiper-navigation-container {
@@ -150,17 +166,25 @@
 
 
 
-        @media(max-width:768px){
+        @media(max-width:1064px){
             .card{
                 width: 80% !important;
                 margin: auto !important;
-				height: 315px !important;
+				height: 350px !important;
             }
 
             .influencerimagesection{
                 font-size: 21px !important;
             }
         }
+
+		@media (min-width: 1025px) and (max-width: 1200px) {
+			.card{
+				height: 370px;
+			}
+		}
+
+
 
         @media (min-width: 768px) and (max-width: 1024px) {
 
@@ -176,7 +200,22 @@
 		
     }
 
+	.paragraph{
+		font: size 11px;
+	}
+    .info-container{
+		height: 180px;
+	}
+
+	.card{
+		height: 380px;
+	}
    
+	.card img {
+            width: 100%;
+            height: 180px;
+            border-radius: 10px;
+        }
 
     
 
@@ -1727,6 +1766,8 @@
 				/* Adjust padding for small screens */
 			}
 		}
+
+	
 	</style>
 	<script src="vendor/modernizr/modernizr.min.js"></script>
 	<meta name="robots" content="index, follow">
@@ -2103,67 +2144,183 @@
 					<div class="swiper mySwiper" style="width: 100%;display: flex;flex-direction: column;">
 						<div class="swiper-wrapper">
 							<!-- Slide 1 -->
-							<div class="swiper-slide" style="width: 1000px;">
+							<div class="swiper-slide" style="width: 1100px;">
+								
+
 								<div class="card">
 									<img src="img/influencers/vivek.jpg" alt="Influencer 1">
 									<!-- <p>Name: Vivek Chauhan</p> -->
-									<p style="margin-bottom: 4px;margin-top: 15px;text-align: left;font-size: 14px;color: #000;">Followers: 1,862</p>
-									<p style="margin-bottom: 4px;text-align: left;font-size: 14px;color: #000;">Category: Lifestyle</p>
+									<div class="info-container">
+									<p style="font-size: 12px;"><strong>Followers:</strong> 1,862</p>
+									
+									<p style="font-size: 12px;"><strong>Est. Reach:</strong> 2,235 </p>
+									<p style="font-size: 12px;"><strong>Region:</strong> North Indian</p>
+									<p style="font-size: 12px;"><strong>Category:</strong> Lifestyle</p>
+									</div>
+									<a href="https://www.instagram.com/__tonight__gamer07?igsh=ZDJ0Z2E4ZDVnYmtm" target="_blank" style="display: inline-block; margin-top: 10px; padding: 8px 15px; font-size: 14px; color: #fff; background-color: #000; text-decoration: none; border-radius: 5px;">Reach Out</a>
+
 									<!-- <a href="" target="_blank">Follow</a> -->
 								</div>
 								<div class="card">
 									<img src="img/influencers/payalthakur.jpg" alt="Influencer 2">
 									<!-- <p>Name: Payal Thakur</p> -->
-									<p style="margin-bottom: 4px;margin-top: 15px;text-align: left;font-size: 14px;color: #000;">Followers: 1,826</p>
-									<p style="margin-bottom: 4px;text-align: left;font-size: 14px;color: #000;">Category: Others</p>
+									<div class="info-container">
+									<p style="font-size: 12px;"><strong>Followers:</strong> 1,826</p>
+									<p style="font-size: 12px;"><strong>Est. Reach:</strong> 2,228 </p>
+									<p style="font-size: 12px;"><strong>Region:</strong> North Indian</p>
+									<p style="font-size: 12px;"><strong>Category:</strong> Others</p>
+									</div>
+									<a href="https://www.instagram.com/_payalthakurr___?igsh=Zm5kcTgzaXkxbWV6" target="_blank" style="display: inline-block; margin-top: 10px; padding: 8px 15px; font-size: 14px; color: #fff; background-color: #000; text-decoration: none; border-radius: 5px;">Reach Out</a>
+
 									<!-- <a href="" target="_blank">Follow</a> -->
 								</div>
 								<div class="card">
 									<img src="img/influencers/gaurav.jpg" alt="Influencer 3">
 									<!-- <p>Name: Gaurav</p> -->
-									<p style="margin-bottom: 4px;margin-top: 15px;text-align: left;font-size: 14px;color: #000;">Followers: 149</p>
-									<p style="margin-bottom: 4px;text-align: left;font-size: 14px;color: #000;">Category: Lifestyle</p>
+									<div class="info-container">
+									<p style="font-size: 12px;"><strong>Followers:</strong> 149</p>
+									<p style="font-size: 12px;"><strong>Est. Reach:</strong> 185 </p>
+									<p style="font-size: 12px;"><strong>Region:</strong> North Indian</p>
+									<p style="font-size: 12px;"><strong>Category:</strong> Lifestyle</p>
+									</div>
+									<a href="https://www.instagram.com/gauravv._.v?igsh=MTA1dXVlOTZmN3Rkdg==" target="_blank" style="display: inline-block; margin-top: 10px; padding: 8px 15px; font-size: 14px; color: #fff; background-color: #000; text-decoration: none; border-radius: 5px;">Reach Out</a>
+
 									<!-- <a href="" target="_blank">Follow</a> -->
 								</div>
 								<div class="card">
 									<img src="img/influencers/vanshita.jpg" alt="Influencer 4">
 									<!-- <p>Name: Vanshita</p> -->
-									<p style="margin-bottom: 4px;margin-top: 15px;text-align: left;font-size: 14px;color: #000;">Followers: 3,891</p>
-									<p style="margin-bottom: 4px;text-align: left;font-size: 14px;color: #000;">Category: Beauty & Fashion</p>
+									<div class="info-container">
+									<p style="font-size: 12px;"><strong>Followers:</strong> 3,891</p>
+									<p style="font-size: 12px;"><strong>Est. Reach:</strong> 4,824 </p>
+									<p style="font-size: 12px;"><strong>Region:</strong> North Indian</p>
+									<p style="font-size: 12px;"><strong>Category:</strong> Beauty & Fashion</p>
+									</div>
+									<a href="https://www.instagram.com/vanshita_81?igsh=aWw1dG90M3BnanNw" target="_blank" style="display: inline-block; margin-top: 10px; padding: 8px 15px; font-size: 14px; color: #fff; background-color: #000; text-decoration: none; border-radius: 5px;">Reach Out</a>
+
 									<!-- <a href="https://instagram.com/emilydoe" target="_blank">Follow</a> -->
 								</div>
 							</div>
 		
 							<!-- Slide 2 -->
-							<div class="swiper-slide" style="width: 1000px;">
+							<div class="swiper-slide" style="width: 1100px;">
+								<div class="card">
+									<img src="img/influencers/virangana.jpg" alt="Influencer 5">
+
+									<div class="info-container">
+										<p style="font-size: 12px;"><strong>Followers:</strong> 39.1K</p>
+										<p style="font-size: 12px;"><strong>Est. Reach:</strong> 48.8K</p>
+										<p style="font-size: 12px;"><strong>Region:</strong> North Indian</p>
+										<p style="font-size: 12px;"><strong>Category:</strong> Fashion & Lifestyle</p>
+									</div>
+									<!-- <p>Name: Vanshita</p> -->
+								
+									<a href="https://www.instagram.com/virangna_dutta?igsh=cXgyZGl1d3E3ZTQz" target="_blank" style="display: inline-block; margin-top: 10px; padding: 8px 15px; font-size: 14px; color: #fff; background-color: #000; text-decoration: none; border-radius: 5px;">Reach Out</a>
+
+									<!-- <a href="https://instagram.com/emilydoe" target="_blank">Follow</a> -->
+								</div>
+								<div class="card">
+									<img src="img/influencers/INFLUENCER-6.jpg" alt="Influencer 1">
+									<!-- <p>Name: Vivek Chauhan</p> -->
+									<div class="info-container">
+									<p style="font-size: 12px;"><strong>Followers:</strong> 34.4K</p>		
+									<p style="font-size: 12px;"><strong>Est. Reach:</strong> 41.2K </p>
+									<p style="font-size: 12px;"><strong>Region:</strong> North Indian</p>
+									<p style="font-size: 12px;"><strong>Category:</strong> Lifestyle</p>
+                                    </div>
+									<a href="https://www.instagram.com/gurbhullar7778?igsh=cDFyeGs0aDQwNnl0" target="_blank" style="display: inline-block; margin-top: 10px; padding: 8px 15px; font-size: 14px; color: #fff; background-color: #000; text-decoration: none; border-radius: 5px;">Reach Out</a>
+
+
+									<!-- <a href="" target="_blank">Follow</a> -->
+								</div>
+								<div class="card">
+									<img src="img/influencers/influencer-7.jpg" alt="Influencer 2">
+									<!-- <p>Name: Payal Thakur</p> -->
+									<div class="info-container">
+									<p style="font-size: 12px;"><strong>Followers:</strong> 5,044</p>
+									<p style="font-size: 12px;"><strong>Reach:</strong> 6,100  </p>
+									<p style="font-size: 12px;"><strong>Region:</strong> North Indian</p>
+									<p style="font-size: 12px;"><strong>Category:</strong> Fitness</p>
+									</div>
+									<a href="https://www.instagram.com/takshu.___?igsh=MWdyczhhZ3A0MzRjdg==" target="_blank" style="display: inline-block; margin-top: 10px; padding: 8px 15px; font-size: 14px; color: #fff; background-color: #000; text-decoration: none; border-radius: 5px;">Reach Out</a>
+
+									<!-- <a href="" target="_blank">Follow</a> -->
+								</div>
+								<div class="card">
+									<img src="img/influencers/influencer-8.jpg" alt="Influencer 3">
+									<!-- <p>Name: Gaurav</p> -->
+									<div class="info-container">
+									<p style="font-size: 12px;"><strong>Followers:</strong> 10.2K</p>
+									<p style="font-size: 12px;"><strong>Est. Reach:</strong> 12.4K</p>
+									<p style="font-size: 12px;"><strong>Region:</strong> North Indian</p>
+									<p style="font-size: 12px;"><strong>Category:</strong> Travel, Foods & Drinks</p>
+									</div>
+									<a href="https://www.instagram.com/ridenomad?igsh=ODkwbmVrbnY0MGV2" target="_blank" style="display: inline-block; margin-top: 10px; padding: 8px 15px; font-size: 14px; color: #fff; background-color: #000; text-decoration: none; border-radius: 5px;">Reach Out</a>
+
+									<!-- <a href="" target="_blank">Follow</a> -->
+								</div>
+						
+							</div>
+
+							<!-- slide-3 -->
+							<div class="swiper-slide" style="width: 1100px;">
+								<div class="card">
+									<img src="img/influencers/influencer-9.jpg" alt="Influencer 1">
+									<!-- <p>Name: Vivek Chauhan</p> -->
+
+									<div class="info-container">
+									<p style="font-size: 12px;"><strong>Followers:</strong> 115K</p>
+									
+									<p style="font-size: 12px;"><strong>Est. Reach:</strong> 138K </p>
+									<p style="font-size: 12px;"><strong>Region:</strong> North Indian</p>
+									<p style="font-size: 12px;"><strong>Category:</strong> Lifestyle</p>
+									</div>
+									<a href="https://www.instagram.com/sanchitmehta_7?igsh=MXFqc2J6MTl6MzRrYw==" target="_blank" style="display: inline-block; margin-top: 10px; padding: 8px 15px; font-size: 14px; color: #fff; background-color: #000; text-decoration: none; border-radius: 5px;">Reach Out</a>
+
+									<!-- <a href="" target="_blank">Follow</a> -->
+								</div>
 								<div class="card">
 									<img src="img/influencers/vivek.jpg" alt="Influencer 1">
 									<!-- <p>Name: Vivek Chauhan</p> -->
-									<p style="margin-bottom: 4px;margin-top: 15px;text-align: left;font-size: 14px;color: #000;">Followers: 1,862</p>
-									<p style="margin-bottom: 4px;text-align: left;font-size: 14px;color: #000;">Category: Lifestyle</p>
+									<div class="info-container">
+									<p style="font-size: 12px;"><strong>Followers:</strong> 1,862</p>
+									
+									<p style="font-size: 12px;"><strong>Est. Reach:</strong> 2,235 </p>
+									<p style="font-size: 12px;"><strong>Region:</strong> North Indian</p>
+									<p style="font-size: 12px;"><strong>Category:</strong> Lifestyle</p>
+									</div>
+									<a href="https://www.instagram.com/__tonight__gamer07?igsh=ZDJ0Z2E4ZDVnYmtm" target="_blank" style="display: inline-block; margin-top: 10px; padding: 8px 15px; font-size: 14px; color: #fff; background-color: #000; text-decoration: none; border-radius: 5px;">Reach Out</a>
+
 									<!-- <a href="" target="_blank">Follow</a> -->
 								</div>
 								<div class="card">
 									<img src="img/influencers/payalthakur.jpg" alt="Influencer 2">
 									<!-- <p>Name: Payal Thakur</p> -->
-									<p style="margin-bottom: 4px;margin-top: 15px;text-align: left;font-size: 14px;color: #000;">Followers: 1,826</p>
-									<p style="margin-bottom: 4px;text-align: left;font-size: 14px;color: #000;">Category: Others</p>
+									<div class="info-container">
+									<p style="font-size: 12px;"><strong>Followers:</strong> 1,826</p>
+									<p style="font-size: 12px;"><strong>Est. Reach:</strong> 2,228 </p>
+									<p style="font-size: 12px;"><strong>Region:</strong> North Indian</p>
+									<p style="font-size: 12px;"><strong>Category:</strong> Others</p>
+									</div>
+									<a href="https://www.instagram.com/_payalthakurr___?igsh=Zm5kcTgzaXkxbWV6" target="_blank" style="display: inline-block; margin-top: 10px; padding: 8px 15px; font-size: 14px; color: #fff; background-color: #000; text-decoration: none; border-radius: 5px;">Reach Out</a>
+
 									<!-- <a href="" target="_blank">Follow</a> -->
 								</div>
 								<div class="card">
 									<img src="img/influencers/gaurav.jpg" alt="Influencer 3">
 									<!-- <p>Name: Gaurav</p> -->
-									<p style="margin-bottom: 4px;margin-top: 15px;text-align: left;font-size: 14px;color: #000;">Followers: 149</p>
-									<p style="margin-bottom: 4px;text-align: left;font-size: 14px;color: #000;">Category: Lifestyle</p>
+									<div class="info-container">
+									<p style="font-size: 12px;"><strong>Followers:</strong> 149</p>
+									<p style="font-size: 12px;"><strong>Est. Reach:</strong> 185 </p>
+									<p style="font-size: 12px;"><strong>Region:</strong> North Indian</p>
+									<p style="font-size: 12px;"><strong>Category:</strong> Lifestyle</p>
+									</div>
+									<a href="https://www.instagram.com/gauravv._.v?igsh=MTA1dXVlOTZmN3Rkdg==" target="_blank" style="display: inline-block; margin-top: 10px; padding: 8px 15px; font-size: 14px; color: #fff; background-color: #000; text-decoration: none; border-radius: 5px;">Reach Out</a>
+
 									<!-- <a href="" target="_blank">Follow</a> -->
 								</div>
-								<div class="card">
-									<img src="img/influencers/vanshita.jpg" alt="Influencer 4">
-									<!-- <p>Name: Vanshita</p> -->
-									<p style="margin-bottom: 4px;margin-top: 15px;text-align: left;font-size: 14px;color: #000;">Followers: 3,891</p>
-									<p style="margin-bottom: 4px;text-align: left;font-size: 14px;color: #000;">Category: Beauty & Fashion</p>
-									<!-- <a href="https://instagram.com/emilydoe" target="_blank">Follow</a> -->
-								</div>
+								
+								
 							</div>
 						</div>
 						
@@ -2200,8 +2357,15 @@
 								<div class="card">
 									<img src="img/influencers/vivek.jpg" alt="Influencer 1">
 									<!-- <p>Name: Vivek Chauhan</p> -->
-									<p style="margin-bottom: 4px;margin-top: 15px;color: #000;">Followers: 1,862</p>
-									<p style="margin-bottom: 4px;color: #000;">Category: Lifestyle</p>
+									<div class="info-container">
+									<p style="font-size: 13px;"><strong>Followers:</strong> 1,862</p>
+									
+									<p style="font-size: 13px;"><strong>Est. Reach:</strong> 2,235 </p>
+									<p style="font-size: 13px;"><strong>Region:</strong> North Indian</p>
+									<p style="font-size: 13px;"><strong>Category:</strong> Lifestyle</p>
+									</div>
+									<a href="https://www.instagram.com/__tonight__gamer07?igsh=ZDJ0Z2E4ZDVnYmtm" target="_blank" style="display: inline-block; margin-top: 10px; padding: 8px 15px; font-size: 14px; color: #fff; background-color: #000; text-decoration: none; border-radius: 5px;">Reach Out</a>
+
 									<!-- <a href="" target="_blank">Follow</a> -->
 								</div>
 							</div>
@@ -2211,8 +2375,14 @@
 								<div class="card">
 									<img src="img/influencers/payalthakur.jpg" alt="Influencer 2">
 									<!-- <p>Name: Payal Thakur</p> -->
-									<p style="margin-bottom: 4px;margin-top: 15px;color: #000;">Followers: 1,826</p>
-									<p style="margin-bottom: 4px;color: #000;">Category: Others</p>
+									<div class="info-container">
+									<p style="font-size: 13px;"><strong>Followers:</strong> 1,826</p>
+									<p style="font-size: 13px;"><strong>Est. Reach:</strong> 2,228 </p>
+									<p style="font-size: 13px;"><strong>Region:</strong> North Indian</p>
+									<p style="font-size: 13px;"><strong>Category:</strong> Others</p>
+									</div>
+									<a href="https://www.instagram.com/_payalthakurr___?igsh=Zm5kcTgzaXkxbWV6" target="_blank" style="display: inline-block; margin-top: 10px; padding: 8px 15px; font-size: 14px; color: #fff; background-color: #000; text-decoration: none; border-radius: 5px;">Reach Out</a>
+
 									<!-- <a href="" target="_blank">Follow</a> -->
 								</div>
 							</div>
@@ -2221,8 +2391,14 @@
 								<div class="card">
 									<img src="img/influencers/gaurav.jpg" alt="Influencer 3">
 									<!-- <p>Name: Gaurav</p> -->
-									<p style="margin-bottom: 4px;margin-top: 15px;color: #000;">Followers: 149</p>
-									<p style="margin-bottom: 4px;color: #000;">Category: Lifestyle</p>
+									<div class="info-container">
+									<p style="font-size: 13px;"><strong>Followers:</strong> 149</p>
+									<p style="font-size: 13px;"><strong>Est. Reach:</strong> 185 </p>
+									<p style="font-size: 13px;"><strong>Region:</strong> North Indian</p>
+									<p style="font-size: 13px;"><strong>Category:</strong> Lifestyle</p>
+									</div>
+									<a href="https://www.instagram.com/gauravv._.v?igsh=MTA1dXVlOTZmN3Rkdg==" target="_blank" style="display: inline-block; margin-top: 10px; padding: 8px 15px; font-size: 14px; color: #fff; background-color: #000; text-decoration: none; border-radius: 5px;">Reach Out</a>
+
 									<!-- <a href="" target="_blank">Follow</a> -->
 								</div>
 							</div>
@@ -2231,9 +2407,95 @@
 								<div class="card">
 									<img src="img/influencers/vanshita.jpg" alt="Influencer 4">
 									<!-- <p>Name: Vanshita</p> -->
-									<p style="margin-bottom: 4px;margin-top: 15px;color: #000;">Followers: 3,891</p>
-									<p style="margin-bottom: 4px;color: #000;">Category: Beauty & Fashion</p>
+									<div class="info-container">
+									<p style="font-size: 13px;"><strong>Followers:</strong> 3,891</p>
+									<p style="font-size: 13px;"><strong>Est. Reach:</strong> 4,824 </p>
+									<p style="font-size: 13px;"><strong>Region:</strong> North Indian</p>
+									<p style="font-size: 13px;"><strong>Category:</strong> Beauty & Fashion</p>
+									</div>
+									<a href="https://www.instagram.com/vanshita_81?igsh=aWw1dG90M3BnanNw" target="_blank" style="display: inline-block; margin-top: 10px; padding: 8px 15px; font-size: 14px; color: #fff; background-color: #000; text-decoration: none; border-radius: 5px;">Reach Out</a>
+
 									<!-- <a href="https://instagram.com/emilydoe" target="_blank">Follow</a> -->
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card">
+									<img src="img/influencers/virangana.jpg" alt="Influencer 5">
+
+									<div class="info-container">
+										<p style="font-size: 13px;"><strong>Followers:</strong> 39.1K</p>
+										<p style="font-size: 13px;"><strong>Est. Reach:</strong> 48.8K</p>
+										<p style="font-size: 13px;"><strong>Region:</strong> North Indian</p>
+										<p style="font-size: 13px;"><strong>Category:</strong> Fashion & Lifestyle</p>
+									</div>
+									<!-- <p>Name: Vanshita</p> -->
+								
+									<a href="https://www.instagram.com/virangna_dutta?igsh=cXgyZGl1d3E3ZTQz" target="_blank" style="display: inline-block; margin-top: 10px; padding: 8px 15px; font-size: 14px; color: #fff; background-color: #000; text-decoration: none; border-radius: 5px;">Reach Out</a>
+
+									<!-- <a href="https://instagram.com/emilydoe" target="_blank">Follow</a> -->
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card">
+									<img src="img/influencers/INFLUENCER-6.jpg" alt="Influencer 1">
+									<!-- <p>Name: Vivek Chauhan</p> -->
+									<div class="info-container">
+									<p style="font-size: 13px;"><strong>Followers:</strong> 34.4K</p>		
+									<p style="font-size: 13px;"><strong>Est. Reach:</strong> 41.2K </p>
+									<p style="font-size: 13px;"><strong>Region:</strong> North Indian</p>
+									<p style="font-size: 13px;"><strong>Category:</strong> Lifestyle</p>
+                                    </div>
+									<a href="https://www.instagram.com/gurbhullar7778?igsh=cDFyeGs0aDQwNnl0" target="_blank" style="display: inline-block; margin-top: 10px; padding: 8px 15px; font-size: 14px; color: #fff; background-color: #000; text-decoration: none; border-radius: 5px;">Reach Out</a>
+
+
+									<!-- <a href="" target="_blank">Follow</a> -->
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card">
+									<img src="img/influencers/influencer-7.jpg" alt="Influencer 2">
+									<!-- <p>Name: Payal Thakur</p> -->
+									<div class="info-container">
+									<p style="font-size: 13px;"><strong>Followers:</strong> 5,044</p>
+									<p style="font-size: 13px;"><strong>Reach:</strong> 6,100  </p>
+									<p style="font-size: 13px;"><strong>Region:</strong> North Indian</p>
+									<p style="font-size: 13px;"><strong>Category:</strong> Fitness</p>
+									</div>
+									<a href="https://www.instagram.com/takshu.___?igsh=MWdyczhhZ3A0MzRjdg==" target="_blank" style="display: inline-block; margin-top: 10px; padding: 8px 15px; font-size: 14px; color: #fff; background-color: #000; text-decoration: none; border-radius: 5px;">Reach Out</a>
+
+									<!-- <a href="" target="_blank">Follow</a> -->
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card">
+									<img src="img/influencers/influencer-8.jpg" alt="Influencer 3">
+									<!-- <p>Name: Gaurav</p> -->
+									<div class="info-container">
+									<p style="font-size: 13px;"><strong>Followers:</strong> 10.2K</p>
+									<p style="font-size: 13px;"><strong>Est. Reach:</strong> 12.4K</p>
+									<p style="font-size: 13px;"><strong>Region:</strong> North Indian</p>
+									<p style="font-size: 13px;"><strong>Category:</strong> Travel, Foods & Drinks</p>
+									</div>
+									<a href="https://www.instagram.com/ridenomad?igsh=ODkwbmVrbnY0MGV2" target="_blank" style="display: inline-block; margin-top: 10px; padding: 8px 15px; font-size: 14px; color: #fff; background-color: #000; text-decoration: none; border-radius: 5px;">Reach Out</a>
+
+									<!-- <a href="" target="_blank">Follow</a> -->
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card">
+									<img src="img/influencers/influencer-9.jpg" alt="Influencer 1">
+									<!-- <p>Name: Vivek Chauhan</p> -->
+
+									<div class="info-container">
+									<p style="font-size: 13px;"><strong>Followers:</strong> 115K</p>
+									
+									<p style="font-size: 13px;"><strong>Est. Reach:</strong> 138K </p>
+									<p style="font-size: 13px;"><strong>Region:</strong> North Indian</p>
+									<p style="font-size: 13px;"><strong>Category:</strong> Lifestyle</p>
+									</div>
+									<a href="https://www.instagram.com/sanchitmehta_7?igsh=MXFqc2J6MTl6MzRrYw==" target="_blank" style="display: inline-block; margin-top: 10px; padding: 8px 15px; font-size: 14px; color: #fff; background-color: #000; text-decoration: none; border-radius: 5px;">Reach Out</a>
+
+									<!-- <a href="" target="_blank">Follow</a> -->
 								</div>
 							</div>
 						</div>
