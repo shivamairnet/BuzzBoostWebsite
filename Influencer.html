@@ -1244,6 +1244,18 @@
 								</select>
 							</div>
 
+							<div class="form-group col-md-12 col text-start">
+								<select name="type" class="form-control text-2-5 p-2" id="type"
+									>
+									<option value="" disabled selected>Select Influencer Type *</option>
+									
+									<option value="Macro Influencer">Macro Influencer</option>
+									<option value="Mega Influencer">Mega Influencer</option>
+									<option value="Micro Influencer">Micro Influencer</option>	
+									<option value="Nano Influencer">Nano Influencer</option>
+								</select>
+							</div>
+
 							<div class="form-group col-md-12 col text-start" id="customindustry" style="display: none;">
 								<input type="text" value="" placeholder="Enter Other Industry" maxlength="100"
 									class="form-control text-2-5 p-2" name="otherindustry" id="other-industry">
@@ -1322,6 +1334,7 @@
 				lastname: form.lastname.value,
 				industry: form.industry.value,
 				email: form.email.value,
+				type: form.type.value,
 				phone: form.phone.value,
 				instagram: form.instagram.value,
 				additional_details: form.additional_details.value,
