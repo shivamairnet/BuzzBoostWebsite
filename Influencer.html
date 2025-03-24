@@ -607,6 +607,44 @@
 			color: white;
 			background-color: #000;
 		}
+
+		select {
+    appearance: none; /* Removes default styling */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: white;
+	color: grey;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    position: relative;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23808080"><path d="M7 10l5 5 5-5z"/></svg>');     background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+}
+
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+select:invalid {
+    color: grey;
+}
+/* Grey color for input placeholders */
+::placeholder {
+    color: grey !important;
+    opacity: 1; /* Ensure full visibility */
+}
+
+/* Grey color for select dropdown placeholder */
+select {
+    color: grey;
+}
+
+
 	</style>
 
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
@@ -1197,7 +1235,7 @@
 							<div class="form-group col-md-6 col text-start">
 								<input type="text" value="" name="firstname" placeholder="First Name *"
 									data-msg-required="Please enter First Name" maxlength="100"
-									class="form-control text-2-5 p-2" name="firstname" id="firstname" required>
+									class="form-control text-2-5 p-2" name="firstname" id="firstname" style="color: grey;" required>
 							</div>
 							<div class="form-group col-md-6 col text-start">
 								<input type="text" value="" name="lastname" placeholder="Last Name *"
@@ -1226,7 +1264,7 @@
 							<div class="form-group col-md-6 col text-start">
 								<input type="text" name="instagram" value="" placeholder="Instagram Link *"
 									data-msg-required="Please enter your instagram link" maxlength="100"
-									class="form-control text-2-5 p-2" name="instagram" id="instagram" required>
+									class="form-control text-2-5 p-2" name="instagram" id="instagram" style="color: grey;" required>
 							</div>
 
 
@@ -1245,9 +1283,9 @@
 							</div>
 
 							<div class="form-group col-md-12 col text-start">
-								<select name="type" class="form-control text-2-5 p-2" id="type"
+								<select name="type" class="form-control text-2-5 p-2" id="type" style="color: grey;"
 									>
-									<option value="" disabled selected>Select Influencer Type *</option>
+									<option value="" disabled selected >Select Influencer Type *</option>
 									
 									<option value="Macro Influencer">Macro Influencer</option>
 									<option value="Mega Influencer">Mega Influencer</option>
