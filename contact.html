@@ -571,7 +571,7 @@
               <!-- Submit Button -->
               <div class="text-center mt-4">
                 <div class="button-align">
-                  <a href="contact" onclick="sendForm()"
+                  <a href="contact" onclick="sendForm(event)"
                     class="landing-button section1-btn btn btn-modern box-shadow-6 border-0 text-transform-none mt-2 py-2 px-4 custom-btn"
                     style="font-size: 17px; border-radius: 25px; font-weight: 500;">
                     Let's Talk
@@ -819,11 +819,13 @@
   <!-- email -->
   <script type="text/javascript">
     // Initialize EmailJS
-    emailjs.init("RA-DC0AgaNqfzUKOG"); // Replace with your actual user ID
+    emailjs.init("xJ0yLHzAyCU0nUx1n"); // Replace with your actual user ID
 
-    function sendForm() {
+    function sendForm(e) {
       // Prevent default form submission
+      e.preventDefault(e); 
       const form = document.getElementById('contact-form');
+      // Prevent the default form submission
       if (!form) {
         console.error("Form element not found!");
         return;
@@ -842,8 +844,10 @@
         // message: form.message.value,
       };
 
-      // Use EmailJS to send the params object
-      emailjs.send("service_x1vdou9", "template_ghvxogn", params)
+      console.log("These are the Form Fields",params)
+
+     
+      emailjs.send("service_uvj6sld", "template_ja9wufg", params)
         // console.log(params)
         .then(function (response) {
           console.log("Success:", response);
@@ -852,79 +856,7 @@
         },);
     }
   </script>
-  <!-- <script>
-      function sendForm() {
-          // Prevent default form submission
-          event.preventDefault();
-  
-          // Get form elements
-          const firstname = document.getElementById("firstname");
-          const lastname = document.getElementById("lastname");
-          const email = document.getElementById("email");
-          const phone = document.getElementById("phone");
-          const country = document.getElementById("country");
-          const subject = document.getElementById("subject");
-          const additionalDetails = document.getElementById("additional_details");
-  
-          let isValid = true;
-  
-          // Clear previous error messages
-          document.querySelectorAll(".error-message").forEach(el => el.remove());
-  
-          // Utility to display error messages
-          function showError(input, message) {
-              isValid = false;
-              const error = document.createElement("small");
-              error.classList.add("error-message", "text-danger");
-              error.textContent = message;
-              input.parentElement.appendChild(error);
-          }
-  
-          // Validate First Name
-          if (firstname.value.trim() === "") {
-              showError(firstname, "First Name is required.");
-          }
-  
-          // Validate Last Name
-          if (lastname.value.trim() === "") {
-              showError(lastname, "Last Name is required.");
-          }
-  
-          // Validate Email
-          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-          if (email.value.trim() === "" || !emailRegex.test(email.value)) {
-              showError(email, "Please enter a valid email.");
-          }
-  
-          // Validate Phone
-          const phoneRegex = /^[0-9]{10,15}$/;
-          if (phone.value.trim() === "" || !phoneRegex.test(phone.value)) {
-              showError(phone, "Please enter a valid phone number (10-15 digits).");
-          }
-  
-          // Validate Country
-          if (country.value.trim() === "") {
-              showError(country, "Country is required.");
-          }
-  
-          // Validate Subject
-          if (subject.value.trim() === "") {
-              showError(subject, "Subject is required.");
-          }
-  
-          // Additional Details (optional)
-          if (additionalDetails.value.trim() !== "" && additionalDetails.value.length > 100) {
-              showError(additionalDetails, "Additional details should not exceed 100 characters.");
-          }
-  
-          // Submit form if valid
-          if (isValid) {
-              alert("Form submitted successfully!");
-              // Add form submission logic here (e.g., AJAX call)
-          }
-      }
-  </script> -->
-
+ 
 
 
 

@@ -60,9 +60,6 @@
 
 	<!-- Theme Custom CSS -->
 	<link rel="stylesheet" href="css/custom.css">
-
-    <link rel="stylesheet" href="./css/mynewmodalstyles.css">
-
 	<style>
 		.swiper {
 			width: 100%;
@@ -85,16 +82,16 @@
 		.card {
 			text-align: center;
 			width: 270px;
-			padding: 0px;
+			padding: 14px;
 			background: #fff;
 			border-radius: 10px;
 			margin: 10px;
-			height: 340px;
+			height: 390px;
 		}
 
 		.card img {
 			width: 100%;
-			height: 340px;
+			height: 210px;
 			border-radius: 10px;
 		}
 
@@ -103,8 +100,7 @@
 			flex-wrap: wrap;
 			justify-content: space-between;
 			margin-top: 17px;
-			height: 120px;
-			margin-top: -130px;
+			height: 140px;
 		}
 
 		.info-container p {
@@ -180,17 +176,15 @@
 			.card {
 				width: 300px !important;
 				margin: auto !important;
-				height: 340px !important;
-			}
-		}
+				height: 410px !important;
+			}}
 
-		@media(max-width:768px) {
+			@media(max-width:768px) {
 			.card {
 				width: 85% !important;
 				margin: auto !important;
-				height: 340px !important;
-			}
-		}
+				height: 410px !important;
+			}}
 
 
 		@media(max-width:1064px) {
@@ -202,7 +196,7 @@
 
 		@media (min-width: 1025px) and (max-width: 1200px) {
 			.card {
-				height: 340px;
+				height: 370px;
 			}
 		}
 
@@ -1801,9 +1795,6 @@
 				/* Adjust padding for small screens */
 			}
 		}
-
-		
-
 	</style>
 	<script src="vendor/modernizr/modernizr.min.js"></script>
 	<meta name="robots" content="index, follow">
@@ -2124,8 +2115,8 @@
 								Discover, manage, and optimize influencer partnerships effortlessly with BuzzBoost.
 							</p>
 							<a class="custom-btn-black" href="agency"
-								style="border-radius: 25px; font-size: medium; color: white; background-color: #000; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;">I'm
-								Agency</a>
+								style="border-radius: 25px; font-size: medium; color: white; background-color: #000; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;">For
+								Agencies</a>
 						</div>
 
 						<!-- Card 2 -->
@@ -2141,7 +2132,7 @@
 								results.
 							</p>
 							<a class="custom-btn-black" href="business"
-								style="border-radius: 25px; font-size: medium; color: white; background-color: #000; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;">I'm
+								style="border-radius: 25px; font-size: medium; color: white; background-color: #000; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;">For
 								Business</a>
 						</div>
 
@@ -2158,8 +2149,8 @@
 								journey.
 							</p>
 							<a class="custom-btn-black" href="influencer"
-								style="border-radius: 25px; font-size: medium; color: white; background-color: #000; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;">I'm
-								Influencer</a>
+								style="border-radius: 25px; font-size: medium; color: white; background-color: #000; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;">For
+								Influencers</a>
 						</div>
 					</div>
 				</div>
@@ -2186,9 +2177,8 @@
 									<!-- <p>Name: Vivek Chauhan</p> -->
 
 									<div class="info-container">
-										<div style="font-size: 12px;
-										width: 80%;
-										margin: auto;
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+										width: 47%;
 										background: white;
 										color: white;
 										border: black;
@@ -2196,31 +2186,87 @@
 										flex-direction: column;
 										align-items: center;
 										justify-content: center;
-										text-align: start;
+										text-align: center;
 										border-radius: 10px;
-										height: 80px; /* Adjust as needed */
-										padding: 20px;"
-                                        >
-											<div class="d-flex flex-column justify-content-center align-items-start ">
-												<p
-													style="margin-bottom: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Type : Nano Influencer
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Category : Others
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Region : North Indian
-												</p>
-
-												
-											</div>
-											
+										height: 42px; /* Adjust as needed */
+										padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Followers</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												1,862</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+							width: 47%;
+							background:white;
+							color: white;
+							border: black;
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							justify-content: center;
+							text-align: center;
+							border-radius: 10px;
+							height: 42px; /* Adjust as needed */
+							padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Est. Reach</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												2,235</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+				width: 47%;
+				background: white;
+				color: white;
+				border: black;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				border-radius: 10px;
+				height: 42px; /* Adjust as needed */
+				padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Region</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												North Indian</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+	width: 47%;
+	background: white;
+	color: white;
+	border: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 10px;
+	height: 42px; /* Adjust as needed */
+	padding: 2px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Category</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												Lifestyle</p>
 										</div>
 									</div>
-
+									<div class="text-center">
+										<a href="contact" target="_blank" class="custom-btn-black-white"
+											style="border-radius: 25px;width: 150px; font-size: medium; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;">Reach
+											Out</a>
+									</div>
 									<!-- <a href="" target="_blank">Follow</a> -->
 								</div>
 								<div class="card"
@@ -2229,478 +2275,28 @@
 									<!-- <p>Name: Payal Thakur</p> -->
 
 									<div class="info-container">
-										<div style="font-size: 12px;
-										width: 80%;
-										margin: auto;
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+										width: 47%;
 										background: white;
 										color: white;
 										border: black;
 										display: flex;
-										justify-content: center;
 										flex-direction: column;
 										align-items: center;
 										justify-content: center;
 										text-align: center;
 										border-radius: 10px;
-										height: 85px; /* Adjust as needed */
+										height: 42px; /* Adjust as needed */
 										padding: 20px;">
-											<div class="d-flex flex-column justify-content-center align-items-center ">
-												<p
-													style="margin-bottom: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Type : Nano Influencer
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Category : Lifestyle
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Region : North Indian
-												</p>
-
-												<!-- <a href="contact" target="_blank" class="reach-out"
-													style="border-radius: 25px;width: 150px; font-size: 12px; border: none; text-decoration: none;margin-bottom: 18px;font-weight: 600;">Reach
-													Out</a> -->
-											</div>
-											<!-- <p
+											<p
 												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-												1,826</p> -->
-										</div>
-
-									</div>
-									<!-- <a href="" target="_blank">Follow</a> -->
-								</div>
-								<div class="card"
-									style="box-shadow: 2px 2px 5px #666;background: linear-gradient(to right, #323268, #1E40AF);">
-									<img src="img/influencers/gaurav.jpg" alt="Influencer 3">
-									<!-- <p>Name: Gaurav</p> -->
-									<div class="info-container">
-										<div style="font-size: 12px;
-										width: 80%;
-										margin: auto;
-										background: white;
-										color: white;
-										border: black;
-										display: flex;
-										justify-content: center;
-										flex-direction: column;
-										align-items: center;
-										justify-content: center;
-										text-align: center;
-										border-radius: 10px;
-										height: 85px; /* Adjust as needed */
-										padding: 20px;">
-											<div class="d-flex flex-column justify-content-center align-items-center ">
-												<p
-													style="margin-bottom: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Type : Nano Influencer
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Category : Beauty & Fashion
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Region : North Indian
-												</p>
-
-												<!-- <a href="contact" target="_blank" class="reach-out"
-													style="border-radius: 25px;width: 150px; font-size: 12px; border: none; text-decoration: none;margin-bottom: 18px;font-weight: 600;">Reach
-													Out</a> -->
-											</div>
-											<!-- <p
+												<strong>Followers</strong>
+											</p>
+											<p
 												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-												1,826</p> -->
+												1,826</p>
 										</div>
-
-
-									</div>
-
-									<!-- <a href="" target="_blank">Follow</a> -->
-								</div>
-								<div class="card"
-									style="box-shadow: 2px 2px 5px #666;background: linear-gradient(to right, #323268, #1E40AF);">
-									<img src="img/influencers/vanshita.jpg" alt="Influencer 4">
-									<!-- <p>Name: Vanshita</p> -->
-									<div class="info-container">
-										<div style="font-size: 12px;
-										width: 80%;
-										margin: auto;
-										background: white;
-										color: white;
-										border: black;
-										display: flex;
-										justify-content: center;
-										flex-direction: column;
-										align-items: center;
-										justify-content: center;
-										text-align: center;
-										border-radius: 10px;
-										height: 85px; /* Adjust as needed */
-										padding: 20px;">
-											<div class="d-flex flex-column justify-content-center align-items-center ">
-												<p
-													style="margin-bottom: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Type : Nano Influencer
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Category : Lifestyle
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Region : North Indian
-												</p>
-
-												<!-- <a href="contact" target="_blank" class="reach-out"
-													style="border-radius: 25px;width: 150px; font-size: 12px; border: none; text-decoration: none;margin-bottom: 18px;font-weight: 600;">Reach
-													Out</a> -->
-											</div>
-											<!-- <p
-												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-												1,826</p> -->
-										</div>
-
-									</div>
-									<!-- <a href="https://instagram.com/emilydoe" target="_blank">Follow</a> -->
-								</div>
-							</div>
-
-							<!-- Slide 2 -->
-							<div class="swiper-slide" style="width: 1100px;">
-								<div class="card"
-									style="box-shadow: 2px 2px 5px #666;background: linear-gradient(to right, #323268, #1E40AF);">
-									<img src="img/influencers/virangana.jpg" alt="Influencer 5">
-
-
-									<div class="info-container">
-										<div style="font-size: 12px;
-										width: 80%;
-										margin: auto;
-										background: white;
-										color: white;
-										border: black;
-										display: flex;
-										justify-content: center;
-										flex-direction: column;
-										align-items: center;
-										justify-content: center;
-										text-align: center;
-										border-radius: 10px;
-										height: 85px; /* Adjust as needed */
-										padding: 20px;">
-											<div class="d-flex flex-column justify-content-center align-items-center ">
-												<p
-													style="margin-bottom: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Type : Micro Influencer
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Category : Fashion & Lifestyle
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Region : North Indian
-												</p>
-
-												<!-- <a href="contact" target="_blank" class="reach-out"
-													style="border-radius: 25px;width: 150px; font-size: 12px; border: none; text-decoration: none;margin-bottom: 18px;font-weight: 600;">Reach
-													Out</a> -->
-											</div>
-											<!-- <p
-												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-												1,826</p> -->
-										</div>
-
-									</div>
-								</div>
-
-								<div class="card"
-									style="box-shadow: 2px 2px 5px #666;background: linear-gradient(to right, #323268, #1E40AF);">
-									<img src="img/influencers/INFLUENCER-6.jpg" alt="Influencer 1">
-									<!-- <p>Name: Vivek Chauhan</p> -->
-
-									<div class="info-container">
-										<div style="font-size: 12px;
-										width: 80%;
-										margin: auto;
-										background: white;
-										color: white;
-										border: black;
-										display: flex;
-										justify-content: center;
-										flex-direction: column;
-										align-items: center;
-										justify-content: center;
-										text-align: center;
-										border-radius: 10px;
-										height: 85px; /* Adjust as needed */
-										padding: 20px;">
-											<div class="d-flex flex-column justify-content-center align-items-center ">
-												<p
-													style="margin-bottom: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Type : Micro Influencer
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Category : Lifestyle
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Region : North Indian
-												</p>
-
-												<!-- <a href="contact" target="_blank" class="reach-out"
-													style="border-radius: 25px;width: 150px; font-size: 12px; border: none; text-decoration: none;margin-bottom: 18px;font-weight: 600;">Reach
-													Out</a> -->
-											</div>
-											<!-- <p
-												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-												1,826</p> -->
-										</div>
-
-									</div>
-
-									<!-- <a href="" target="_blank">Follow</a> -->
-								</div>
-								<div class="card"
-									style="box-shadow: 2px 2px 5px #666;background: linear-gradient(to right, #323268, #1E40AF);">
-									<img src="img/influencers/influencer-7.jpg" alt="Influencer 2">
-									<!-- <p>Name: Payal Thakur</p> -->
-									<div class="info-container">
-										<div style="font-size: 12px;
-										width: 80%;
-										margin: auto;
-										background: white;
-										color: white;
-										border: black;
-										display: flex;
-										justify-content: center;
-										flex-direction: column;
-										align-items: center;
-										justify-content: center;
-										text-align: center;
-										border-radius: 10px;
-										height: 85px; /* Adjust as needed */
-										padding: 20px;">
-											<div class="d-flex flex-column justify-content-center align-items-center ">
-												<p
-													style="margin-bottom: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Type : Nano Influencer
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Category : Fitness
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Region : North Indian
-												</p>
-
-												<!-- <a href="contact" target="_blank" class="reach-out"
-													style="border-radius: 25px;width: 150px; font-size: 12px; border: none; text-decoration: none;margin-bottom: 18px;font-weight: 600;">Reach
-													Out</a> -->
-											</div>
-											<!-- <p
-												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-												1,826</p> -->
-										</div>
-
-									</div>
-									<!-- <a href="" target="_blank">Follow</a> -->
-								</div>
-								<div class="card"
-									style="box-shadow: 2px 2px 5px #666;background: linear-gradient(to right, #323268, #1E40AF);">
-									<img src="img/influencers/influencer-8.jpg" alt="Influencer 3">
-									<!-- <p>Name: Gaurav</p> -->
-									<div class="info-container">
-										<div style="font-size: 12px;
-										width: 80%;
-										margin: auto;
-										background: white;
-										color: white;
-										border: black;
-										display: flex;
-										justify-content: center;
-										flex-direction: column;
-										align-items: center;
-										justify-content: center;
-										text-align: center;
-										border-radius: 10px;
-										height: 85px; /* Adjust as needed */
-										padding: 0px;">
-											<div class="d-flex flex-column justify-content-center align-items-center ">
-												<p
-													style="margin-bottom: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Type : Micro Influencer
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Category : Travel, Foods & Drinks
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Region : North Indian
-												</p>
-
-												<!-- <a href="contact" target="_blank" class="reach-out"
-													style="border-radius: 25px;width: 150px; font-size: 12px; border: none; text-decoration: none;margin-bottom: 18px;font-weight: 600;">Reach
-													Out</a> -->
-											</div>
-											<!-- <p
-												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-												1,826</p> -->
-										</div>
-
-									</div>
-									<!-- <a href="" target="_blank">Follow</a> -->
-								</div>
-
-							</div>
-
-							<!-- slide-3 -->
-							<div class="swiper-slide" style="width: 1100px;">
-								<div class="card"
-									style="box-shadow: 2px 2px 5px #666;background: linear-gradient(to right, #323268, #1E40AF);">
-									<img src="img/influencers/influencer-9.jpg" alt="Influencer 1">
-									<!-- <p>Name: Vivek Chauhan</p> -->
-									<div class="info-container">
-										<div style="font-size: 12px;
-										width: 80%;
-										margin: auto;
-										background: white;
-										color: white;
-										border: black;
-										display: flex;
-										justify-content: center;
-										flex-direction: column;
-										align-items: center;
-										justify-content: center;
-										text-align: center;
-										border-radius: 10px;
-										height: 85px; /* Adjust as needed */
-										padding: 20px;">
-											<div class="d-flex flex-column justify-content-center align-items-center ">
-												<p
-													style="margin-bottom: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Type : Macro Influencer
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Category : Lifestyle
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Region : North Indian
-												</p>
-
-												<!-- <a href="contact" target="_blank" class="reach-out"
-													style="border-radius: 25px;width: 150px; font-size: 12px; border: none; text-decoration: none;margin-bottom: 18px;font-weight: 600;">Reach
-													Out</a> -->
-											</div>
-											<!-- <p
-												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-												1,826</p> -->
-										</div>
-
-									</div>
-									<!-- <a href="" target="_blank">Follow</a> -->
-								</div>
-								<div class="card" style="background: linear-gradient(to right, #323268, #1E40AF);">
-									<img src="img/influencers/vivek.jpg" alt="Influencer 1">
-									<!-- <p>Name: Vivek Chauhan</p> -->
-
-									<div class="info-container">
-										<div style="font-size: 12px;
-										width: 80%;
-										margin: auto;
-										background: white;
-										color: white;
-										border: black;
-										display: flex;
-										justify-content: center;
-										flex-direction: column;
-										align-items: center;
-										justify-content: center;
-										text-align: center;
-										border-radius: 10px;
-										height: 85px; /* Adjust as needed */
-										padding: 20px;">
-											<div class="d-flex flex-column justify-content-center align-items-center ">
-												<p
-													style="margin-bottom: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Type : Nano Influencer
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Category : Lifestyle
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Region : North Indian
-												</p>
-
-												<!-- <a href="contact" target="_blank" class="reach-out"
-													style="border-radius: 25px;width: 150px; font-size: 12px; border: none; text-decoration: none;margin-bottom: 18px;font-weight: 600;">Reach
-													Out</a> -->
-											</div>
-											<!-- <p
-												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-												1,826</p> -->
-										</div>
-
-									</div>
-									<!-- <a href="" target="_blank">Follow</a> -->
-								</div>
-								<div class="card"
-									style="box-shadow: 2px 2px 5px #666;background: linear-gradient(to right, #323268, #1E40AF);">
-									<img src="img/influencers/payalthakur.jpg" alt="Influencer 2">
-									<!-- <p>Name: Payal Thakur</p> -->
-
-									<div class="info-container d-flex flex-column">
-										<div style="font-size: 12px;
-										width: 80%;
-										margin: auto;
-										background: white;
-										color: white;
-										border: black;
-										display: flex;
-										justify-content: center;
-										flex-direction: column;
-										align-items: center;
-										justify-content: center;
-										text-align: center;
-										border-radius: 10px;
-										height: 85px; /* Adjust as needed */
-										padding: 20px;">
-											<div class="d-flex flex-column justify-content-center align-items-center ">
-												<p
-													style="margin-bottom: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Type : Nano Influencer
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Category : Others
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Region : North Indian
-												</p>
-
-												<!-- <a href="contact" target="_blank" class="reach-out"
-													style="border-radius: 25px;width: 150px; font-size: 12px; border: none; text-decoration: none;margin-bottom: 18px;font-weight: 600;">Reach
-													Out</a> -->
-											</div>
-											<!-- <p
-												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-												1,826</p> -->
-										</div>
-										<!-- <div class="text-center">
-											<a href="contact" target="_blank" class="custom-btn-black-white"
-												style="border-radius: 25px;width: 150px; font-size: medium; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;">Reach
-												Out</a>
-										</div> -->
-										<!-- <div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
 							width: 47%;
 							background:white;
 							color: white;
@@ -2762,7 +2358,12 @@
 											<p
 												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
 												Others</p>
-										</div> -->
+										</div>
+									</div>
+									<div class="text-center">
+										<a href="contact" target="_blank" class="custom-btn-black-white"
+											style="border-radius: 25px;width: 150px; font-size: medium; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;">Reach
+											Out</a>
 									</div>
 									<!-- <a href="" target="_blank">Follow</a> -->
 								</div>
@@ -2771,44 +2372,988 @@
 									<img src="img/influencers/gaurav.jpg" alt="Influencer 3">
 									<!-- <p>Name: Gaurav</p> -->
 									<div class="info-container">
-										<div style="font-size: 12px;
-										width: 80%;
-										margin: auto;
+										<div style="font-size: 12px;box-shadow: 1px 1px 2px #666;
+										width: 47%;
 										background: white;
 										color: white;
 										border: black;
 										display: flex;
-										justify-content: center;
 										flex-direction: column;
 										align-items: center;
 										justify-content: center;
 										text-align: center;
 										border-radius: 10px;
-										height: 85px; /* Adjust as needed */
+										height: 42px; /* Adjust as needed */
 										padding: 20px;">
-											<div class="d-flex flex-column justify-content-center align-items-center ">
-												<p
-													style="margin-bottom: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Type : Nano Influencer
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Category : Lifestyle
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Region : North Indian
-												</p>
-
-												<!-- <a href="contact" target="_blank" class="reach-out"
-													style="border-radius: 25px;width: 150px; font-size: 12px; border: none; text-decoration: none;margin-bottom: 18px;font-weight: 600;">Reach
-													Out</a> -->
-											</div>
-											<!-- <p
+											<p
 												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-												1,826</p> -->
+												<strong>Followers</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												149</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 1px 1px 2px #666;
+							width: 47%;
+							background: white;
+							color: white;
+							border: black;
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							justify-content: center;
+							text-align: center;
+							border-radius: 10px;
+							height: 42px; /* Adjust as needed */
+							padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Est. Reach</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												185</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 1px 1px 2px #666;
+				width: 47%;
+				background: white;
+				color: white;
+				border: black;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				border-radius: 10px;
+				height: 42px; /* Adjust as needed */
+				padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Region</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												North Indian</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 1px 1px 2px #666;
+	width: 47%;
+	background: white;
+	color: white;
+	border: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 10px;
+	height: 42px; /* Adjust as needed */
+	padding: 2px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Category</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												Lifestyle</p>
+										</div>
+									</div>
+									<div class="text-center">
+										<a href="contact" target="_blank" class="custom-btn-black-white"
+											style="border-radius: 25px;width: 150px; font-size: medium; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;">Reach
+											Out</a>
+									</div>
+
+									<!-- <a href="" target="_blank">Follow</a> -->
+								</div>
+								<div class="card"
+									style="box-shadow: 2px 2px 5px #666;background: linear-gradient(to right, #323268, #1E40AF);">
+									<img src="img/influencers/vanshita.jpg" alt="Influencer 4">
+									<!-- <p>Name: Vanshita</p> -->
+									<div class="info-container">
+										<div style="font-size: 12px;box-shadow: 1px 1px 2px #666;
+										width: 47%;
+										background:white;
+										color: white;
+										border: black;
+										display: flex;
+										flex-direction: column;
+										align-items: center;
+										justify-content: center;
+										text-align: center;
+										border-radius: 10px;
+										height: 42px; /* Adjust as needed */
+										padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Followers</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												3,891</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 1px 1px 2px #666;
+							width: 47%;
+							background: white;
+							color: white;
+							border: black;
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							justify-content: center;
+							text-align: center;
+							border-radius: 10px;
+							height: 4px; /* Adjust as needed */
+							padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Est. Reach</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												4,824</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 1px 1px 2px #666;
+				width: 47%;
+				background: white;
+				color: white;
+				border: black;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				border-radius: 10px;
+				height: 42px; /* Adjust as needed */
+				padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Region</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												North Indian</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 1px 1px 2px #666;
+	width: 47%;
+	background:white;
+	color: white;
+	border: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 10px;
+	height: 42px; /* Adjust as needed */
+	padding: 2px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Category</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												Beauty & Fashion</p>
 										</div>
 
+									</div>
+									<div class="text-center">
+										<a href="contact" target="_blank" class="custom-btn-black-white"
+											style="border-radius: 25px;width: 150px; font-size: medium; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;">Reach
+											Out</a>
+									</div>
+									<!-- <a href="https://instagram.com/emilydoe" target="_blank">Follow</a> -->
+								</div>
+							</div>
+
+							<!-- Slide 2 -->
+							<div class="swiper-slide" style="width: 1100px;">
+								<div class="card"
+									style="box-shadow: 2px 2px 5px #666;background: linear-gradient(to right, #323268, #1E40AF);">
+									<img src="img/influencers/virangana.jpg" alt="Influencer 5">
+
+
+									<div class="info-container">
+										<div style="font-size: 12px;box-shadow: 1px 1px 2px #666;
+											width: 47%;
+											background: white;
+											color: white;
+											border: black;
+											display: flex;
+											flex-direction: column;
+											align-items: center;
+											justify-content: center;
+											text-align: center;
+											border-radius: 10px;
+											height: 42px; /* Adjust as needed */
+											padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Followers</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												39.1K</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 1px 1px 2px #666;
+								width: 47%;
+								background:white;
+								color: white;
+								border: black;
+								display: flex;
+								flex-direction: column;
+								align-items: center;
+								justify-content: center;
+								text-align: center;
+								border-radius: 10px;
+								height: 42px; /* Adjust as needed */
+								padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Est. Reach</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												48.8K</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 1px 1px 2px #666;
+					width: 47%;
+					background: white;
+					color: white;
+					border: black;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					text-align: center;
+					border-radius: 10px;
+					height: 42px; /* Adjust as needed */
+					padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Region</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												North Indian</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 1px 1px 2px #666;
+		width: 47%;
+		background: white;
+		color: white;
+		border: black;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		border-radius: 10px;
+		height: 42px; /* Adjust as needed */
+		padding: 2px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Category</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												Fashion & Lifestyle</p>
+										</div>
+									</div>
+									<div class="text-center">
+										<a href="contact" target="_blank" class="custom-btn-black-white"
+											style="border-radius: 25px;width: 150px; font-size: medium; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;">Reach
+											Out</a>
+									</div>
+								</div>
+
+								<div class="card"
+									style="box-shadow: 2px 2px 5px #666;background: linear-gradient(to right, #323268, #1E40AF);">
+									<img src="img/influencers/INFLUENCER-6.jpg" alt="Influencer 1">
+									<!-- <p>Name: Vivek Chauhan</p> -->
+
+									<div class="info-container">
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+											width: 47%;
+											background: white;
+											color: white;
+											border: black;
+											display: flex;
+											flex-direction: column;
+											align-items: center;
+											justify-content: center;
+											text-align: center;
+											border-radius: 10px;
+											height: 42px; /* Adjust as needed */
+											padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Followers</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												34.4K</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+								width: 47%;
+								background:white;
+								color: white;
+								border: black;
+								display: flex;
+								flex-direction: column;
+								align-items: center;
+								justify-content: center;
+								text-align: center;
+								border-radius: 10px;
+								height: 42px; /* Adjust as needed */
+								padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Est. Reach</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												41.2K</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+					width: 47%;
+					background: white;
+					color: white;
+					border: black;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					text-align: center;
+					border-radius: 10px;
+					height: 42px; /* Adjust as needed */
+					padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Region</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												North Indian</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+		width: 47%;
+		background: white;
+		color: white;
+		border: black;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		border-radius: 10px;
+		height: 42px; /* Adjust as needed */
+		padding: 2px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Category</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												Lifestyle</p>
+										</div>
+									</div>
+
+									<div class="text-center">
+										<a href="contact" target="_blank" class="custom-btn-black-white"
+											style="border-radius: 25px;width: 150px; font-size: medium; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;">Reach
+											Out</a>
+									</div>
+
+									<!-- <a href="" target="_blank">Follow</a> -->
+								</div>
+								<div class="card"
+									style="box-shadow: 2px 2px 5px #666;background: linear-gradient(to right, #323268, #1E40AF);">
+									<img src="img/influencers/influencer-7.jpg" alt="Influencer 2">
+									<!-- <p>Name: Payal Thakur</p> -->
+									<div class="info-container">
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+										width: 47%;
+										background: white;
+										color: white;
+										border: black;
+										display: flex;
+										flex-direction: column;
+										align-items: center;
+										justify-content: center;
+										text-align: center;
+										border-radius: 10px;
+										height: 42px; /* Adjust as needed */
+										padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Followers</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												5,044</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+							width: 47%;
+							background:white;
+							color: white;
+							border: black;
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							justify-content: center;
+							text-align: center;
+							border-radius: 10px;
+							height: 42px; /* Adjust as needed */
+							padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Est. Reach</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												6,100</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+				width: 47%;
+				background: white;
+				color: white;
+				border: black;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				border-radius: 10px;
+				height: 42px; /* Adjust as needed */
+				padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Region</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												North Indian</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+	width: 47%;
+	background: white;
+	color: white;
+	border: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 10px;
+	height: 42px; /* Adjust as needed */
+	padding: 2px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Category</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												Fitness</p>
+										</div>
+									</div>
+
+									<div class="text-center">
+										<a href="contact" target="_blank" class="custom-btn-black-white"
+											style="border-radius: 25px;width: 150px; font-size: medium; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;">Reach
+											Out</a>
+									</div>
+									<!-- <a href="" target="_blank">Follow</a> -->
+								</div>
+								<div class="card"
+									style="box-shadow: 2px 2px 5px #666;background: linear-gradient(to right, #323268, #1E40AF);">
+									<img src="img/influencers/influencer-8.jpg" alt="Influencer 3">
+									<!-- <p>Name: Gaurav</p> -->
+									<div class="info-container">
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+										width: 47%;
+										background: white;
+										color: white;
+										border: black;
+										display: flex;
+										flex-direction: column;
+										align-items: center;
+										justify-content: center;
+										text-align: center;
+										border-radius: 10px;
+										height: 42px; /* Adjust as needed */
+										padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Followers</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												10.2K</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+							width: 47%;
+							background:white;
+							color: white;
+							border: black;
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							justify-content: center;
+							text-align: center;
+							border-radius: 10px;
+							height: 42px; /* Adjust as needed */
+							padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Est. Reach</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												12.4K</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+				width: 47%;
+				background: white;
+				color: white;
+				border: black;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				border-radius: 10px;
+				height: 42px; /* Adjust as needed */
+				padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Region</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												North Indian</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+	width: 47%;
+	background: white;
+	color: white;
+	border: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 10px;
+	height: 42px; /* Adjust as needed */
+	padding: 2px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Category</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 10.5px;">
+												Travel, Foods & Drinks</p>
+										</div>
+									</div>
+
+									<div class="text-center">
+										<a href="contact" target="_blank" class="custom-btn-black-white"
+											style="border-radius: 25px;width: 150px; font-size: medium; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;">Reach
+											Out</a>
+									</div>
+									<!-- <a href="" target="_blank">Follow</a> -->
+								</div>
+
+							</div>
+
+							<!-- slide-3 -->
+							<div class="swiper-slide" style="width: 1100px;">
+								<div class="card"
+									style="box-shadow: 2px 2px 5px #666;background: linear-gradient(to right, #323268, #1E40AF);">
+									<img src="img/influencers/influencer-9.jpg" alt="Influencer 1">
+									<!-- <p>Name: Vivek Chauhan</p> -->
+									<div class="info-container">
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+										width: 47%;
+										background: white;
+										color: white;
+										border: black;
+										display: flex;
+										flex-direction: column;
+										align-items: center;
+										justify-content: center;
+										text-align: center;
+										border-radius: 10px;
+										height: 42px; /* Adjust as needed */
+										padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Followers</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												115K</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+							width: 47%;
+							background:white;
+							color: white;
+							border: black;
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							justify-content: center;
+							text-align: center;
+							border-radius: 10px;
+							height: 42px; /* Adjust as needed */
+							padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Est. Reach</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												138K </p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+				width: 47%;
+				background: white;
+				color: white;
+				border: black;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				border-radius: 10px;
+				height: 42px; /* Adjust as needed */
+				padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Region</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												North Indian</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+	width: 47%;
+	background: white;
+	color: white;
+	border: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 10px;
+	height: 42px; /* Adjust as needed */
+	padding: 2px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Category</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												Lifestyle</p>
+										</div>
+									</div>
+
+
+									<div class="text-center">
+										<a href="contact" target="_blank" class="custom-btn-black-white"
+											style="border-radius: 25px;width: 150px; font-size: medium; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;">Reach
+											Out</a>
+									</div>
+									<!-- <a href="" target="_blank">Follow</a> -->
+								</div>
+								<div class="card" style="background: linear-gradient(to right, #323268, #1E40AF);">
+									<img src="img/influencers/vivek.jpg" alt="Influencer 1">
+									<!-- <p>Name: Vivek Chauhan</p> -->
+
+									<div class="info-container">
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+										width: 47%;
+										background: white;
+										color: white;
+										border: black;
+										display: flex;
+										flex-direction: column;
+										align-items: center;
+										justify-content: center;
+										text-align: center;
+										border-radius: 10px;
+										height: 42px; /* Adjust as needed */
+										padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Followers</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												1,862</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+							width: 47%;
+							background:white;
+							color: white;
+							border: black;
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							justify-content: center;
+							text-align: center;
+							border-radius: 10px;
+							height: 42px; /* Adjust as needed */
+							padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Est. Reach</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												2,235</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+				width: 47%;
+				background: white;
+				color: white;
+				border: black;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				border-radius: 10px;
+				height: 42px; /* Adjust as needed */
+				padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Region</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												North Indian</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+	width: 47%;
+	background: white;
+	color: white;
+	border: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 10px;
+	height: 42px; /* Adjust as needed */
+	padding: 2px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Category</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												Lifestyle</p>
+										</div>
+									</div>
+									<div class="text-center">
+										<a href="contact" target="_blank" class="custom-btn-black-white"
+											style="border-radius: 25px;width: 150px; font-size: medium; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;">Reach
+											Out</a>
+									</div>
+									<!-- <a href="" target="_blank">Follow</a> -->
+								</div>
+								<div class="card"
+									style="box-shadow: 2px 2px 5px #666;background: linear-gradient(to right, #323268, #1E40AF);">
+									<img src="img/influencers/payalthakur.jpg" alt="Influencer 2">
+									<!-- <p>Name: Payal Thakur</p> -->
+
+									<div class="info-container">
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+										width: 47%;
+										background: white;
+										color: white;
+										border: black;
+										display: flex;
+										flex-direction: column;
+										align-items: center;
+										justify-content: center;
+										text-align: center;
+										border-radius: 10px;
+										height: 42px; /* Adjust as needed */
+										padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Followers</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												1,826</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+							width: 47%;
+							background:white;
+							color: white;
+							border: black;
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							justify-content: center;
+							text-align: center;
+							border-radius: 10px;
+							height: 42px; /* Adjust as needed */
+							padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Est. Reach</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												2,228</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+				width: 47%;
+				background: white;
+				color: white;
+				border: black;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				border-radius: 10px;
+				height: 42px; /* Adjust as needed */
+				padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Region</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												North Indian</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+	width: 47%;
+	background: white;
+	color: white;
+	border: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 10px;
+	height: 42px; /* Adjust as needed */
+	padding: 2px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Category</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												Others</p>
+										</div>
+									</div>
+									<div class="text-center">
+										<a href="contact" target="_blank" class="custom-btn-black-white"
+											style="border-radius: 25px;width: 150px; font-size: medium; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;">Reach
+											Out</a>
+									</div>
+									<!-- <a href="" target="_blank">Follow</a> -->
+								</div>
+								<div class="card"
+									style="box-shadow: 2px 2px 5px #666;background: linear-gradient(to right, #323268, #1E40AF);">
+									<img src="img/influencers/gaurav.jpg" alt="Influencer 3">
+									<!-- <p>Name: Gaurav</p> -->
+									<div class="info-container">
+										<div style="font-size: 12px;box-shadow: 1px 1px 2px #666;
+										width: 47%;
+										background: white;
+										color: white;
+										border: black;
+										display: flex;
+										flex-direction: column;
+										align-items: center;
+										justify-content: center;
+										text-align: center;
+										border-radius: 10px;
+										height: 42px; /* Adjust as needed */
+										padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Followers</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												149</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 1px 1px 2px #666;
+							width: 47%;
+							background: white;
+							color: white;
+							border: black;
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							justify-content: center;
+							text-align: center;
+							border-radius: 10px;
+							height: 42px; /* Adjust as needed */
+							padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Est. Reach</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												185</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 1px 1px 2px #666;
+				width: 47%;
+				background: white;
+				color: white;
+				border: black;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				border-radius: 10px;
+				height: 42px; /* Adjust as needed */
+				padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Region</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												North Indian</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 1px 1px 2px #666;
+	width: 47%;
+	background: white;
+	color: white;
+	border: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 10px;
+	height: 42px; /* Adjust as needed */
+	padding: 2px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Category</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												Lifestyle</p>
+										</div>
+									</div>
+									<div class="text-center">
+										<a href="contact" target="_blank" class="custom-btn-black-white"
+											style="border-radius: 25px;width: 150px; font-size: medium; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;">Reach
+											Out</a>
 									</div>
 
 									<!-- <a href="" target="_blank">Follow</a> -->
@@ -2816,14 +3361,8 @@
 							</div>
 						</div>
 
-                        <div>
-                            <button style="border: none;" id="openCustomModalBtn"><a class="custom-btn-black"
-								style="border-radius: 25px; font-size: medium; color: white; background-color: #000; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;">
-                                Choose Influencer</a></button>
-                        </div>
 						<!-- Navigation Buttons Wrapper -->
 						<div class="swiper-navigation-container">
-                            
 							<div class="swiper-button-prev"
 								style="margin-right: 25px;background-color: #000 !important;"></div>
 							<div class="swiper-button-next" style="background-color: #000 !important;"></div>
@@ -2835,212 +3374,6 @@
 
 				</div>
 			</section>
-
-
-           <!-- Modal Container -->
-<div class="my-modal" id="customModal">
-    <div class="my-modal-content">
-        <span class="my-modal-close" id="closeCustomModalBtn">&times;</span>
-  
-      <!-- Card Grid Wrapper -->
-      <div class="card-grid-wrapper-influencer" id="cardGridWrapper">
-        
-        <!-- Card 1 -->
-        <div class="card-influncer" data-id="vivek-chauhan">
-          <img src="img/influencers/vivek.jpg" alt="Vivek Chauhan">
-          <div class="card-overlay-influncer">
-            <div class="influencer-name-label">
-                <i class="fas fa-camera-retro"></i>
-                Vivek Chauhan
-              </div>
-          </div>
-        </div>
-  
-        <!-- Card 2 -->
-        <div class="card-influncer" data-id="payal-thakur">
-          <img src="img/influencers/payalthakur.jpg" alt="Payal Thakur">
-          <div class="card-overlay-influncer">
-            <div class="influencer-name-label">
-                <i class="fas fa-camera-retro"></i>
-                Payal Thakur
-              </div>
-          </div>
-        </div>
-
-
-        <div class="card-influncer" data-id="gaurav">
-          <img src="img/influencers/gaurav.jpg" alt="Payal Thakur">
-          <div class="card-overlay-influncer">
-            <div class="influencer-name-label" style="left: 37% !important;">
-                <i class="fas fa-camera-retro"></i>
-                Gaurav
-              </div>
-            
-          </div>
-        </div>
-
-        <!-- Vanshita -->
-        <div class="card-influncer" data-id="vanshita">
-          <img src="img/influencers/vanshita.jpg" alt="Payal Thakur">
-          <div class="card-overlay-influncer">
-            <div class="influencer-name-label" style="left: 32% !important;">
-                <i class="fas fa-camera-retro"></i>
-                Vanshita
-              </div>
-            
-          </div>
-        </div>
-
-        <!-- Virangana -->
-        <div class="card-influncer" data-id="virangana">
-          <img src="img/influencers/virangana.jpg" alt="Payal Thakur">
-          <div class="card-overlay-influncer">
-            <div class="influencer-name-label" style="left: 22% !important;">
-                <i class="fas fa-camera-retro"></i>
-                Virangana Dutta
-              </div>
-            
-          </div>
-        </div>
-
-        <!-- Influncer 6 -->
-        <div class="card-influncer" data-id="influencer-6">
-          <img src="img/influencers/INFLUENCER-6.jpg" alt="Payal Thakur">
-          <div class="card-overlay-influncer">
-            <div class="influencer-name-label" style="left: 30% !important;">
-                <i class="fas fa-camera-retro"></i>
-                Gur Bhullar
-              </div>
-            
-          </div>
-        </div>
-
-        <!-- influencer-7 -->
-        <div class="card-influncer" data-id="influencer-7">
-          <img src="img/influencers/influencer-7.jpg" alt="Payal Thakur">
-          <div class="card-overlay-influncer">
-            <div class="influencer-name-label" style="left: 30% !important;">
-                <i class="fas fa-camera-retro"></i>
-                Tushar Pawar
-              </div>
-            
-          </div>
-        </div>
-
-        <!-- influencer-8 -->
-        <div class="card-influncer" data-id="influencer-8">
-          <img src="img/influencers/influencer-8.jpg" alt="Payal Thakur">
-          <div class="card-overlay-influncer">
-            <div class="influencer-name-label" style="left: 30% !important;">
-                <i class="fas fa-camera-retro"></i>
-                Arpit Sood
-              </div>
-            
-          </div>
-        </div>
-
-        <!-- influencer-9 -->
-        <div class="card-influncer" data-id="influencer-9">
-          <img src="img/influencers/influencer-9.jpg" alt="Payal Thakur">
-          <div class="card-overlay-influncer">
-            <div class="influencer-name-label" style="left: 30% !important;">
-                <i class="fas fa-camera-retro"></i>
-                Sanchit Mehta
-              </div>
-            
-          </div>
-        </div>
-  
-
-        
-    </div>
-    <div class="submit-wrapper" id="submitSection">
-        <p id="selectedInfluncerName" class="selected-message" style="display: none;"></p>
-        <button id="submitSelectionBtn" class="custom-btn-black" >Submit Selection</button>
-    </div>
-
-    <div class="myformcss" id="myformactive">
-        <h3 class="pt-4" style="font-size: 40px;">
-            Get In Touch With Us
-        </h3>
-       
-    <form class="contact-form" id="contact-form" method="POST" action="/contact.html">
-        <!-- Success Message -->
-        <div class="contact-form-success alert alert-success d-none mt-4">
-          <strong>Success!</strong> Your message has been sent to us.
-        </div>
-
-        <!-- Error Message -->
-        <div class=" alert alert-danger d-none mt-4">
-          <!-- <strong>Error!</strong> There was an error sending your message. -->
-          <span class="mail-error-message text-1 d-block"></span>
-        </div>
-
-        <!-- Input Fields -->
-        <div class="row">
-          <div class="form-group col-md-12 text-start">
-            <input type="text" id="namefromform" readonly placeholder="Name *" maxlength="100"
-              class="form-control text-2-5 p-3" name="firstname" required
-              style="border-radius: 1.2rem;background-color: rgba(255, 255, 255, 0.85);color: #000 !important;" />
-          </div>
-          <!-- <div class="form-group col-md-6 text-start">
-            <input type="text" id="lastname" placeholder="Last Name *" maxlength="100"
-              class="form-control text-2-5 p-3" name="lastname" required
-              style="border-radius: 1.2rem;background-color: rgba(255, 255, 255, 0.85);color: #000 !important;" />
-          </div>-->
-        </div> 
-
-        <div class="row">
-          <div class="form-group col-md-6 text-start">
-            <input type="email" id="email" placeholder="Email*" maxlength="100" class="form-control text-2-5 p-3"
-              name="email" required
-              style="border-radius: 1.2rem;background-color: rgba(255, 255, 255, 0.85);color: #000 !important;*/" />
-          </div>
-          <div class="form-group col-md-6 text-start">
-            <input type="text" id="phone" placeholder="Phone Number *" maxlength="100"
-              class="form-control text-2-5 p-3" name="phone" required
-              style="border-radius: 1.2rem;background-color: rgba(255, 255, 255, 0.85);color: #000 !important;*" />
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="form-group col-md-6 text-start">
-            <input type="text" id="country" placeholder="Country*" maxlength="100"
-              class="form-control text-2-5 p-3" name="country" required
-              style="border-radius: 1.2rem;background-color: rgba(255, 255, 255, 0.85);color: #000 !important;*/" />
-          </div>
-          <div class="form-group col-md-6 text-start">
-            <input type="text" id="subject" placeholder="Subject*" maxlength="100"
-              class="form-control text-2-5 p-3" name="subject" required
-              style="border-radius: 1.2rem;background-color: rgba(255, 255, 255, 0.85);color: #000 !important;*/" />
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="form-group col-md-12 text-start">
-            <input type="text" id="additional_details" placeholder="Additional Details" maxlength="100"
-              class="form-control text-2-5 p-3" name="additional_details"
-              style="border-radius: 1.2rem;background-color: rgba(255, 255, 255, 0.85);color: #000 !important;*/" />
-          </div>
-        </div>
-
-        <!-- Submit Button -->
-        <div class="text-center mt-4">
-          <div class="button-align">
-            <a href="index.html" onclick="sendForm(event)"
-              class="landing-button myownbtn section1-btn btn btn-modern box-shadow-6 border-0 text-transform-none mt-2 py-2 px-4 custom-btn"
-              style="font-size: 17px; border-radius: 25px; font-weight: 500; background-color: #000 !important; color: white !important;">
-              Let's Talk
-            </a>
-          </div>
-        </div>
-      </form>
-    </div>
-    </div>
-
-
-  </div>
-  
 
 			<section class="carousel-influencers d-block d-lg-none">
 				<div class="container text-center large-screen-view" style="margin-bottom: 40px;">
@@ -3064,45 +3397,96 @@
 									<!-- <p>Name: Vivek Chauhan</p> -->
 
 									<div class="info-container">
-										<div style="font-size: 12px;
-										width: 80%;
-										margin: auto;
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+										width: 47%;
 										background: white;
 										color: white;
 										border: black;
 										display: flex;
-										justify-content: center;
 										flex-direction: column;
 										align-items: center;
 										justify-content: center;
 										text-align: center;
 										border-radius: 10px;
-										height: 85px; /* Adjust as needed */
+										height: 42px; /* Adjust as needed */
 										padding: 20px;">
-											<div class="d-flex flex-column justify-content-center align-items-center ">
-												<p
-													style="margin-bottom: 0;text-align: center;color: black;width: 100%;font-size: 12px;margin-top: 22px;">
-													Type : Nano Influencer
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Category : Others
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Region : North Indian
-												</p>
-
-												<!-- <a href="contact" target="_blank" class="reach-out"
-													style="border-radius: 25px;width: 150px; font-size: 12px; border: none; text-decoration: none;margin-bottom: 18px;font-weight: 600;">Reach
-													Out</a> -->
-											</div>
-											<!-- <p
+											<p
 												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-												1,826</p> -->
+												<strong>Followers</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												1,862</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+							width: 47%;
+							background:white;
+							color: white;
+							border: black;
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							justify-content: center;
+							text-align: center;
+							border-radius: 10px;
+							height: 42px; /* Adjust as needed */
+							padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Est. Reach</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												2,235</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+				width: 47%;
+				background: white;
+				color: white;
+				border: black;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				border-radius: 10px;
+				height: 42px; /* Adjust as needed */
+				padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Region</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												North Indian</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+	width: 47%;
+	background: white;
+	color: white;
+	border: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 10px;
+	height: 42px; /* Adjust as needed */
+	padding: 2px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Category</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												Lifestyle</p>
 										</div>
 									</div>
-
+									<div class="text-center">
+										<a href="contact" target="_blank"
+											style="border-radius: 25px;width: 150px; font-size: medium; color: white; background-color: #000; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;">Reach
+											Out</a>
+									</div>
 									<!-- <a href="" target="_blank">Follow</a> -->
 								</div>
 							</div>
@@ -3115,44 +3499,95 @@
 									<!-- <p>Name: Payal Thakur</p> -->
 
 									<div class="info-container">
-										<div style="font-size: 12px;
-										width: 80%;
-										margin: auto;
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+										width: 47%;
 										background: white;
 										color: white;
 										border: black;
 										display: flex;
-										justify-content: center;
 										flex-direction: column;
 										align-items: center;
 										justify-content: center;
 										text-align: center;
 										border-radius: 10px;
-										height: 85px; /* Adjust as needed */
+										height: 42px; /* Adjust as needed */
 										padding: 20px;">
-											<div class="d-flex flex-column justify-content-center align-items-center ">
-												<p
-													style="margin-bottom: 0;text-align: center;color: black;width: 100%;font-size: 12px;margin-top: 22px;">
-													Type : Nano Influencer
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Category : Lifestyle
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Region : North Indian
-												</p>
-
-												<!-- <a href="contact" target="_blank" class="reach-out"
-													style="border-radius: 25px;width: 150px; font-size: 12px; border: none; text-decoration: none;margin-bottom: 18px;font-weight: 600;">Reach
-													Out</a> -->
-											</div>
-											<!-- <p
+											<p
 												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-												1,826</p> -->
+												<strong>Followers</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												1,826</p>
 										</div>
-
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+							width: 47%;
+							background:white;
+							color: white;
+							border: black;
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							justify-content: center;
+							text-align: center;
+							border-radius: 10px;
+							height: 42px; /* Adjust as needed */
+							padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Est. Reach</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												2,228</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+				width: 47%;
+				background: white;
+				color: white;
+				border: black;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				border-radius: 10px;
+				height: 42px; /* Adjust as needed */
+				padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Region</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												North Indian</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+	width: 47%;
+	background: white;
+	color: white;
+	border: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 10px;
+	height: 42px; /* Adjust as needed */
+	padding: 2px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Category</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												Others</p>
+										</div>
+									</div>
+									<div class="text-center">
+										<a href="contact" target="_blank"
+											style="border-radius: 25px;width: 150px; font-size: medium; color: white; background-color: #000; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;">Reach
+											Out</a>
 									</div>
 									<!-- <a href="" target="_blank">Follow</a> -->
 								</div>
@@ -3164,45 +3599,95 @@
 									<img src="img/influencers/gaurav.jpg" alt="Influencer 3">
 									<!-- <p>Name: Gaurav</p> -->
 									<div class="info-container">
-										<div style="font-size: 12px;
-										width: 80%;
-										margin: auto;
+										<div style="font-size: 12px;box-shadow: 1px 1px 2px #666;
+										width: 47%;
 										background: white;
 										color: white;
 										border: black;
 										display: flex;
-										justify-content: center;
 										flex-direction: column;
 										align-items: center;
 										justify-content: center;
 										text-align: center;
 										border-radius: 10px;
-										height: 85px; /* Adjust as needed */
+										height: 42px; /* Adjust as needed */
 										padding: 20px;">
-											<div class="d-flex flex-column justify-content-center align-items-center ">
-												<p
-													style="margin-bottom: 0;text-align: center;color: black;width: 100%;font-size: 12px;margin-top: 22px;">
-													Type : Nano Influencer
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Category : Beauty & Fashion
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Region : North Indian
-												</p>
-
-												<!-- <a href="contact" target="_blank" class="reach-out"
-													style="border-radius: 25px;width: 150px; font-size: 12px; border: none; text-decoration: none;margin-bottom: 18px;font-weight: 600;">Reach
-													Out</a> -->
-											</div>
-											<!-- <p
+											<p
 												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-												1,826</p> -->
+												<strong>Followers</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												149</p>
 										</div>
-
-
+										<div style="font-size: 12px;box-shadow: 1px 1px 2px #666;
+							width: 47%;
+							background: white;
+							color: white;
+							border: black;
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							justify-content: center;
+							text-align: center;
+							border-radius: 10px;
+							height: 42px; /* Adjust as needed */
+							padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Est. Reach</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												185</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 1px 1px 2px #666;
+				width: 47%;
+				background: white;
+				color: white;
+				border: black;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				border-radius: 10px;
+				height: 42px; /* Adjust as needed */
+				padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Region</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												North Indian</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 1px 1px 2px #666;
+	width: 47%;
+	background: white;
+	color: white;
+	border: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 10px;
+	height: 42px; /* Adjust as needed */
+	padding: 2px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Category</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												Lifestyle</p>
+										</div>
+									</div>
+									<div class="text-center">
+										<a href="contact" target="_blank"
+											style="border-radius: 25px;width: 150px; font-size: medium; color: white; background-color: #000; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;">Reach
+											Out</a>
 									</div>
 
 									<!-- <a href="" target="_blank">Follow</a> -->
@@ -3215,44 +3700,96 @@
 									<img src="img/influencers/vanshita.jpg" alt="Influencer 4">
 									<!-- <p>Name: Vanshita</p> -->
 									<div class="info-container">
-										<div style="font-size: 12px;
-										width: 80%;
-										margin: auto;
-										background: white;
+										<div style="font-size: 12px;box-shadow: 1px 1px 2px #666;
+										width: 47%;
+										background:white;
 										color: white;
 										border: black;
 										display: flex;
-										justify-content: center;
 										flex-direction: column;
 										align-items: center;
 										justify-content: center;
 										text-align: center;
 										border-radius: 10px;
-										height: 85px; /* Adjust as needed */
+										height: 42px; /* Adjust as needed */
 										padding: 20px;">
-											<div class="d-flex flex-column justify-content-center align-items-center ">
-												<p
-													style="margin-bottom: 0;text-align: center;color: black;width: 100%;font-size: 12px;margin-top: 22px;">
-													Type : Nano Influencer
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Category : Lifestyle
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Region : North Indian
-												</p>
-
-												<!-- <a href="contact" target="_blank" class="reach-out"
-													style="border-radius: 25px;width: 150px; font-size: 12px; border: none; text-decoration: none;margin-bottom: 18px;font-weight: 600;">Reach
-													Out</a> -->
-											</div>
-											<!-- <p
+											<p
 												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-												1,826</p> -->
+												<strong>Followers</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												3,891</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 1px 1px 2px #666;
+							width: 47%;
+							background: white;
+							color: white;
+							border: black;
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							justify-content: center;
+							text-align: center;
+							border-radius: 10px;
+							height: 42px; /* Adjust as needed */
+							padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Est. Reach</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												4,824</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 1px 1px 2px #666;
+				width: 47%;
+				background: white;
+				color: white;
+				border: black;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				border-radius: 10px;
+				height: 42px; /* Adjust as needed */
+				padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Region</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												North Indian</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 1px 1px 2px #666;
+	width: 47%;
+	background:white;
+	color: white;
+	border: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 10px;
+	height: 42px; /* Adjust as needed */
+	padding: 2px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Category</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												Beauty & Fashion</p>
 										</div>
 
+									</div>
+									<div class="text-center">
+										<a href="contact" target="_blank"
+											style="border-radius: 25px;width: 150px; font-size: medium; color: white; background-color: #000; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;">Reach
+											Out</a>
 									</div>
 									<!-- <a href="https://instagram.com/emilydoe" target="_blank">Follow</a> -->
 								</div>
@@ -3265,44 +3802,95 @@
 
 
 									<div class="info-container">
-										<div style="font-size: 12px;
-										width: 80%;
-										margin: auto;
-										background: white;
-										color: white;
-										border: black;
-										display: flex;
-										justify-content: center;
-										flex-direction: column;
-										align-items: center;
-										justify-content: center;
-										text-align: center;
-										border-radius: 10px;
-										height: 85px; /* Adjust as needed */
-										padding: 20px;">
-											<div class="d-flex flex-column justify-content-center align-items-center ">
-												<p
-													style="margin-bottom: 0;text-align: center;color: black;width: 100%;font-size: 12px;margin-top: 22px;">
-													Type : Micro Influencer
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Category : Fashion & Lifestyle
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Region : North Indian
-												</p>
-
-												<!-- <a href="contact" target="_blank" class="reach-out"
-													style="border-radius: 25px;width: 150px; font-size: 12px; border: none; text-decoration: none;margin-bottom: 18px;font-weight: 600;">Reach
-													Out</a> -->
-											</div>
-											<!-- <p
+										<div style="font-size: 12px;box-shadow: 1px 1px 2px #666;
+											width: 47%;
+											background: white;
+											color: white;
+											border: black;
+											display: flex;
+											flex-direction: column;
+											align-items: center;
+											justify-content: center;
+											text-align: center;
+											border-radius: 10px;
+											height: 42px; /* Adjust as needed */
+											padding: 20px;">
+											<p
 												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-												1,826</p> -->
+												<strong>Followers</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												39.1K</p>
 										</div>
-
+										<div style="font-size: 12px;box-shadow: 1px 1px 2px #666;
+								width: 47%;
+								background:white;
+								color: white;
+								border: black;
+								display: flex;
+								flex-direction: column;
+								align-items: center;
+								justify-content: center;
+								text-align: center;
+								border-radius: 10px;
+								height: 42px; /* Adjust as needed */
+								padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Est. Reach</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												48.8K</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 1px 1px 2px #666;
+					width: 47%;
+					background: white;
+					color: white;
+					border: black;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					text-align: center;
+					border-radius: 10px;
+					height: 42px; /* Adjust as needed */
+					padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Region</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												North Indian</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 1px 1px 2px #666;
+		width: 47%;
+		background: white;
+		color: white;
+		border: black;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		border-radius: 10px;
+		height: 42px; /* Adjust as needed */
+		padding: 2px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Category</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												Fashion & Lifestyle</p>
+										</div>
+									</div>
+									<div class="text-center">
+										<a href="contact" target="_blank"
+											style="border-radius: 25px;width: 150px; font-size: medium; color: white; background-color: #000; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;">Reach
+											Out</a>
 									</div>
 								</div>
 							</div>
@@ -3313,143 +3901,299 @@
 									<!-- <p>Name: Vivek Chauhan</p> -->
 
 									<div class="info-container">
-										<div style="font-size: 12px;
-										width: 80%;
-										margin: auto;
-										background: white;
-										color: white;
-										border: black;
-										display: flex;
-										justify-content: center;
-										flex-direction: column;
-										align-items: center;
-										justify-content: center;
-										text-align: center;
-										border-radius: 10px;
-										height: 85px; /* Adjust as needed */
-										padding: 20px;">
-											<div class="d-flex flex-column justify-content-center align-items-center ">
-												<p
-													style="margin-bottom: 0;text-align: center;color: black;width: 100%;font-size: 12px;margin-top: 22px;">
-													Type : Micro Influencer
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Category : Lifestyle
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Region : North Indian
-												</p>
-
-												<!-- <a href="contact" target="_blank" class="reach-out"
-													style="border-radius: 25px;width: 150px; font-size: 12px; border: none; text-decoration: none;margin-bottom: 18px;font-weight: 600;">Reach
-													Out</a> -->
-											</div>
-											<!-- <p
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+											width: 47%;
+											background: white;
+											color: white;
+											border: black;
+											display: flex;
+											flex-direction: column;
+											align-items: center;
+											justify-content: center;
+											text-align: center;
+											border-radius: 10px;
+											height: 42px; /* Adjust as needed */
+											padding: 20px;">
+											<p
 												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-												1,826</p> -->
+												<strong>Followers</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												34.4K</p>
 										</div>
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+								width: 47%;
+								background:white;
+								color: white;
+								border: black;
+								display: flex;
+								flex-direction: column;
+								align-items: center;
+								justify-content: center;
+								text-align: center;
+								border-radius: 10px;
+								height: 42px; /* Adjust as needed */
+								padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Est. Reach</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												41.2K</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+					width: 47%;
+					background: white;
+					color: white;
+					border: black;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					text-align: center;
+					border-radius: 10px;
+					height: 42px; /* Adjust as needed */
+					padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Region</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												North Indian</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+		width: 47%;
+		background: white;
+		color: white;
+		border: black;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		border-radius: 10px;
+		height: 42px; /* Adjust as needed */
+		padding: 2px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Category</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												Lifestyle</p>
+										</div>
+									</div>
 
+									<div class="text-center">
+										<a href="contact" target="_blank"
+											style="border-radius: 25px;width: 150px; font-size: medium; color: white; background-color: #000; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;">Reach
+											Out</a>
 									</div>
 
 									<!-- <a href="" target="_blank">Follow</a> -->
 								</div>
 							</div>
-							<div class="swiper-slide">
-								<div class="card"
-									style="box-shadow: 2px 2px 5px #666;background: linear-gradient(to right, #323268, #1E40AF);">
-									<img src="img/influencers/influencer-7.jpg" alt="Influencer 2">
-									<!-- <p>Name: Payal Thakur</p> -->
-									<div class="info-container">
-										<div style="font-size: 12px;
-										width: 80%;
-										margin: auto;
-										background: white;
-										color: white;
-										border: black;
-										display: flex;
-										justify-content: center;
-										flex-direction: column;
-										align-items: center;
-										justify-content: center;
-										text-align: center;
-										border-radius: 10px;
-										height: 85px; /* Adjust as needed */
-										padding: 20px;">
-											<div class="d-flex flex-column justify-content-center align-items-center ">
-												<p
-													style="margin-bottom: 0;text-align: center;color: black;width: 100%;font-size: 12px;margin-top: 22px;">
-													Type : Nano Influencer
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Category : Fitness
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Region : North Indian
-												</p>
-
-												<!-- <a href="contact" target="_blank" class="reach-out"
-													style="border-radius: 25px;width: 150px; font-size: 12px; border: none; text-decoration: none;margin-bottom: 20px;font-weight: 600;">Reach
-													Out</a> -->
-											</div>
-											<!-- <p
-												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-												1,826</p> -->
-										</div>
-
-									</div>
-									<!-- <a href="" target="_blank">Follow</a> -->
-								</div>
-							</div>
-
-
 							<div class="swiper-slide">
 								<div class="card"
 									style="box-shadow: 2px 2px 5px #666;background: linear-gradient(to right, #323268, #1E40AF);">
 									<img src="img/influencers/influencer-8.jpg" alt="Influencer 3">
 									<!-- <p>Name: Gaurav</p> -->
 									<div class="info-container">
-										<div style="font-size: 12px;
-										width: 80%;
-										margin: auto;
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+										width: 47%;
 										background: white;
 										color: white;
 										border: black;
 										display: flex;
-										justify-content: center;
 										flex-direction: column;
 										align-items: center;
 										justify-content: center;
 										text-align: center;
 										border-radius: 10px;
-										height: 85px; /* Adjust as needed */
-										padding: 0px;">
-											<div class="d-flex flex-column justify-content-center align-items-center ">
-												<p
-													style="margin-bottom: 0;text-align: center;color: black;width: 100%;font-size: 12px;margin-top: 22px;">
-													Type : Micro Influencer
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Category : Travel, Foods & Drinks
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Region : North Indian
-												</p>
-
-												<!-- <a href="contact" target="_blank" class="reach-out"
-													style="border-radius: 25px;width: 150px; font-size: 12px; border: none; text-decoration: none;margin-bottom: 20px;font-weight: 600;">Reach
-													Out</a> -->
-											</div>
-											<!-- <p
+										height: 42px; /* Adjust as needed */
+										padding: 20px;">
+											<p
 												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-												1,826</p> -->
+												<strong>Followers</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												10.2K</p>
 										</div>
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+							width: 47%;
+							background:white;
+							color: white;
+							border: black;
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							justify-content: center;
+							text-align: center;
+							border-radius: 10px;
+							height: 42px; /* Adjust as needed */
+							padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Est. Reach</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												12.4K</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+				width: 47%;
+				background: white;
+				color: white;
+				border: black;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				border-radius: 10px;
+				height: 42px; /* Adjust as needed */
+				padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Region</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												North Indian</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+	width: 47%;
+	background: white;
+	color: white;
+	border: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 10px;
+	height: 42px; /* Adjust as needed */
+	padding: 2px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Category</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 10.5px;">
+												Travel, Foods & Drinks</p>
+										</div>
+									</div>
 
+									<div class="text-center">
+										<a href="contact" target="_blank"
+											style="border-radius: 25px;width: 150px; font-size: medium; color: white; background-color: #000; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;">Reach
+											Out</a>
+									</div>
+									<!-- <a href="" target="_blank">Follow</a> -->
+								</div>
+							</div>
+
+
+							<div class="swiper-slide">
+								<div class="card"
+									style="box-shadow: 2px 2px 5px #666;background: linear-gradient(to right, #323268, #1E40AF);">
+									<img src="img/influencers/influencer-7.jpg" alt="Influencer 2">
+									<!-- <p>Name: Payal Thakur</p> -->
+									<div class="info-container">
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+										width: 47%;
+										background: white;
+										color: white;
+										border: black;
+										display: flex;
+										flex-direction: column;
+										align-items: center;
+										justify-content: center;
+										text-align: center;
+										border-radius: 10px;
+										height: 42px; /* Adjust as needed */
+										padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Followers</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												5,044</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+							width: 47%;
+							background:white;
+							color: white;
+							border: black;
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							justify-content: center;
+							text-align: center;
+							border-radius: 10px;
+							height: 42px; /* Adjust as needed */
+							padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Est. Reach</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												6,100</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+				width: 47%;
+				background: white;
+				color: white;
+				border: black;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				border-radius: 10px;
+				height: 42px; /* Adjust as needed */
+				padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Region</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												North Indian</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+	width: 47%;
+	background: white;
+	color: white;
+	border: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 10px;
+	height: 42px; /* Adjust as needed */
+	padding: 2px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Category</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												Fitness</p>
+										</div>
+									</div>
+
+									<div class="text-center">
+										<a href="contact" target="_blank"
+											style="border-radius: 25px;width: 150px; font-size: medium; color: white; background-color: #000; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;">Reach
+											Out</a>
 									</div>
 									<!-- <a href="" target="_blank">Follow</a> -->
 								</div>
@@ -3462,44 +4206,97 @@
 									<img src="img/influencers/influencer-9.jpg" alt="Influencer 1">
 									<!-- <p>Name: Vivek Chauhan</p> -->
 									<div class="info-container">
-										<div style="font-size: 12px;
-										width: 80%;
-										margin: auto;
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+										width: 47%;
 										background: white;
 										color: white;
 										border: black;
 										display: flex;
-										justify-content: center;
 										flex-direction: column;
 										align-items: center;
 										justify-content: center;
 										text-align: center;
 										border-radius: 10px;
-										height: 85px; /* Adjust as needed */
+										height: 42px; /* Adjust as needed */
 										padding: 20px;">
-											<div class="d-flex flex-column justify-content-center align-items-center ">
-												<p
-													style="margin-bottom: 0;text-align: center;color: black;width: 100%;font-size: 12px;margin-top: 22px;">
-													Type : Macro Influencer
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Category : Lifestyle
-												</p>
-												<p
-													style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-													Region : North Indian
-												</p>
-
-												<!-- <a href="contact" target="_blank" class="reach-out"
-													style="border-radius: 25px;width: 150px; font-size: 12px; border: none; text-decoration: none;margin-bottom: 20px;font-weight: 600;">Reach
-													Out</a> -->
-											</div>
-											<!-- <p
+											<p
 												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
-												1,826</p> -->
+												<strong>Followers</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												115K</p>
 										</div>
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+							width: 47%;
+							background:white;
+							color: white;
+							border: black;
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							justify-content: center;
+							text-align: center;
+							border-radius: 10px;
+							height: 42px; /* Adjust as needed */
+							padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Est. Reach</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												138K </p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+				width: 47%;
+				background: white;
+				color: white;
+				border: black;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				border-radius: 10px;
+				height: 42px; /* Adjust as needed */
+				padding: 20px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Region</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												North Indian</p>
+										</div>
+										<div style="font-size: 12px;box-shadow: 2px 2px 5px #666;
+	width: 47%;
+	background: white;
+	color: white;
+	border: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 10px;
+	height: 42px; /* Adjust as needed */
+	padding: 2px;">
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												<strong>Category</strong>
+											</p>
+											<p
+												style="margin: 0;text-align: center;color: black;width: 100%;font-size: 12px;">
+												Lifestyle</p>
+										</div>
+									</div>
 
+
+									<div class="text-center">
+										<a href="contact" target="_blank"
+											style="border-radius: 25px;width: 150px; font-size: medium; color: white; background-color: #000; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;">Reach
+											Out</a>
 									</div>
 									<!-- <a href="" target="_blank">Follow</a> -->
 								</div>
@@ -4324,24 +5121,6 @@
 		</div>
 	</div>
 
-    <script src="./js/influncerSelection.js" defer></script>
-
-    <script>
-        const modal = document.getElementById("customModal");
-        const openBtn = document.getElementById("openCustomModalBtn");
-        const closeBtn = document.getElementById("closeCustomModalBtn");
-
-
-        
-    
-        openBtn.onclick = () => modal.style.display = "block";
-        closeBtn.onclick = () => modal.style.display = "none";
-        // window.onclick = e => {
-        //   if (e.target === modal) modal.style.display = "none";
-        // };
-      </script>
-    
-
 
 	<script>
 		window.addEventListener('scroll', () => {
@@ -4417,9 +5196,6 @@
 		window.addEventListener('DOMContentLoaded', handleScreenSizeChange);
 
 	</script>
-<script type="text/javascript"
-src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
 
 	<!-- Vendor -->
 	<script src="vendor/plugins/js/plugins.min.js"></script>

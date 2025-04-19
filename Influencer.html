@@ -607,6 +607,44 @@
 			color: white;
 			background-color: #000;
 		}
+
+		select {
+    appearance: none; /* Removes default styling */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: white;
+	color: grey;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    position: relative;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23808080"><path d="M7 10l5 5 5-5z"/></svg>');     background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+}
+
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+select:invalid {
+    color: grey;
+}
+/* Grey color for input placeholders */
+::placeholder {
+    color: grey !important;
+    opacity: 1; /* Ensure full visibility */
+}
+
+/* Grey color for select dropdown placeholder */
+select {
+    color: grey;
+}
+
+
 	</style>
 
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
@@ -1197,7 +1235,7 @@
 							<div class="form-group col-md-6 col text-start">
 								<input type="text" value="" name="firstname" placeholder="First Name *"
 									data-msg-required="Please enter First Name" maxlength="100"
-									class="form-control text-2-5 p-2" name="firstname" id="firstname" required>
+									class="form-control text-2-5 p-2" name="firstname" id="firstname" style="color: grey;" required>
 							</div>
 							<div class="form-group col-md-6 col text-start">
 								<input type="text" value="" name="lastname" placeholder="Last Name *"
@@ -1226,7 +1264,7 @@
 							<div class="form-group col-md-6 col text-start">
 								<input type="text" name="instagram" value="" placeholder="Instagram Link *"
 									data-msg-required="Please enter your instagram link" maxlength="100"
-									class="form-control text-2-5 p-2" name="instagram" id="instagram" required>
+									class="form-control text-2-5 p-2" name="instagram" id="instagram" style="color: grey;" required>
 							</div>
 
 
@@ -1241,6 +1279,25 @@
 									<option value="Sports">Sports</option>
 									<option value="Tech Innovators">Tech Innovators</option>
 									<option value="Other">Other</option>
+								</select>
+							</div>
+
+                            <div class="form-group col-md-6 col text-start">
+								<input type="text" name-="reach" value="" placeholder="Mention Estd. Reach *"
+									data-msg-required="Please enter phone number" maxlength="100"
+									class="form-control text-2-5 p-2" name="phone" id="phone" required>
+							</div>
+
+
+							<div class="form-group col-md-6 col text-start">
+								<select name="type" class="form-control text-2-5 p-2" id="type" style="color: grey;"
+									>
+									<option value="" disabled selected >Select Influencer Type *</option>
+									
+									<option value="Mega Influencer">Mega Influencer (1M+)</option>
+									<option value="Macro Influencer">Macro Influencer (100K-1M)</option>
+									<option value="Micro Influencer">Micro Influencer (10K-100K)</option>	
+									<option value="Nano Influencer">Nano Influencer (1K-10K)</option>
 								</select>
 							</div>
 
@@ -1322,6 +1379,7 @@
 				lastname: form.lastname.value,
 				industry: form.industry.value,
 				email: form.email.value,
+				type: form.type.value,
 				phone: form.phone.value,
 				instagram: form.instagram.value,
 				additional_details: form.additional_details.value,
