@@ -3505,13 +3505,23 @@
 								</div>
 							</div>
 						</div>
+                        
+
+                        
 						<!-- Navigation -->
 						<div class="swiper-button-next"></div>
 						<div class="swiper-button-prev"></div>
 
+                      
 						<!-- Pagination -->
 						<div class="swiper-pagination"></div>
+                        
 					</div>
+                    <div>
+                        <button style="border: none;" id="openCustomModalBtnMobile"><a 
+                            style="border-radius: 25px; font-size: medium; color: white; background-color: #000; border: none; padding: 7px 14px; text-decoration: none;margin-bottom: 20px;">
+                            Choose Influencer</a></button>
+                    </div>
 
 				</div>
 			</section>
@@ -4329,12 +4339,14 @@
     <script>
         const modal = document.getElementById("customModal");
         const openBtn = document.getElementById("openCustomModalBtn");
+        const opnmobilemodal=document.getElementById("openCustomModalBtnMobile");
         const closeBtn = document.getElementById("closeCustomModalBtn");
 
 
         
     
         openBtn.onclick = () => modal.style.display = "block";
+        opnmobilemodal.onclick = () => modal.style.display = "block";
         closeBtn.onclick = () => modal.style.display = "none";
         // window.onclick = e => {
         //   if (e.target === modal) modal.style.display = "none";
